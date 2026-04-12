@@ -1,0 +1,13 @@
+name = "send-push"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# Optional: set a shared secret for authentication
+# Uncomment and set a strong random value, then use it in src/index.ts header check
+# [vars]
+# PUSH_SECRET = "your-secret-here"
+
+# Account ID is needed for `wrangler deploy`
+# Run `wrangler login` first, then check .wrangler/account_id or the Cloudflare dashboard.
+# For new projects, account_id can be omitted for `wrangler dev` but IS required for `wrangler deploy`.
+# account_id = "bdae70ebaf88d07bf59a4471ce764a61"

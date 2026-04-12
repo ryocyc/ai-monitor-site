@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "MedReminder",
+    "slug": "medication-reminder-app",
+    "scheme": "medreminder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.medreminder.app",
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "SCHEDULE_EXACT_ALARM"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.medreminder.app"
+    },
+    "plugins": [
+      "expo-notifications"
+    ]
+  }
+}
