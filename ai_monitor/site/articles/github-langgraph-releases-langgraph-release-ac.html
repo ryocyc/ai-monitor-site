@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LangGraph v1.1.9 Fixes ReplayState and Stream Handler Issues | AI Signal Articles</title>
+  <meta name="description" content="LangGraph 1.1.9 resolves a regression where ReplayState was incorrectly propagated to subgraphs on plain resume, and undoes an unintended change in the...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 13:24 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>LangGraph v1.1.9 Patches ReplayState Propagation and Stream Handler Bugs</h1>
+      <p class="standfirst">LangGraph 1.1.9 resolves a regression where ReplayState was incorrectly propagated to subgraphs on plain resume, and undoes an unintended change in the stream handler.</p>
+      <div class="meta">
+        <span>GitHub LangGraph Releases</span>
+        <span>2026-04-22 15:01 UTC</span>
+        <span>Key: github-langgraph-releases::identity::github-langgraph-releases-langgraph-release-ac</span>
+        <span>Confidence: moderate</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>The LangGraph team has released version 1.1.9, addressing two issues introduced in recent releases. The primary fix stops ReplayState from being propagated to subgraphs during a plain resume operation, a bug that could cause unexpected behavior in graph traversal. A second fix reverts unnecessary changes made to the stream handler that had no functional benefit.</p>
+<p>The prior release, v1.1.8, removed a strict `add_handler` type check that was known to break OpenTelemetry (OTel) instrumentation setups. That change was shipped alongside v1.1.7, which had itself addressed time-travel behavior when navigating back to an interrupt node. The v1.1.7 release also bumped the langsmith dependency from 0.6.4 to 0.7.31 across the library.</p>
+<p>Supporting packages received updates in the same window. The CLI advanced to 0.4.24, the prebuilt library to 1.0.10 (fixing handling of injected NotRequired keys), and the checkpoint library to 4.0.2, which added documentation for the LANGGRAPH_STRICT_MSGPACK environment variable.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>ReplayState propagation to subgraphs could silently corrupt graph state during resume operations, making the fix critical for anyone using interruption and replay patterns.</li><li>The OpenTelemetry fix in v1.1.8 confirms LangGraph is actively addressing observability tooling compatibility, which matters for teams running distributed tracing.</li><li>The parallel release of CLI, prebuilt, and checkpoint packages means downstream users of the LangGraph ecosystem should update those libraries in tandem.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This article draws from the LangGraph releases Atom feed (github.com/langchain-ai/langgraph/releases.atom), which provides short, per-commit change descriptions. No detailed release notes, changelog entries, or commit diffs were available in the source, so the analysis is limited to what is explicitly named in each release tag.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/langchain-ai/langgraph/releases.atom" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This article was generated from filtered monitored source changes.
+    </div>
+  </main>
+</body>
+</html>

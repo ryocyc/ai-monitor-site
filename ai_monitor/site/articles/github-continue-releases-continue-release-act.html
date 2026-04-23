@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Continue v1.3.38 Fixes Config File Bug, Adds Session History Filtering | AI Signal Articles</title>
+  <meta name="description" content="The latest release of the Continue VS Code extension addresses a long-standing issue where config.yaml was not properly created on first access, while a...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 13:24 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>Continue IDE Extension v1.3.38 Fixes config.yaml Initialization and Adds Workspace Filtering</h1>
+      <p class="standfirst">The latest release of the Continue VS Code extension addresses a long-standing issue where config.yaml was not properly created on first access, while also adding a new session history filter scoped to the current workspace.</p>
+      <div class="meta">
+        <span>GitHub Continue Releases</span>
+        <span>2026-04-22 15:01 UTC</span>
+        <span>Key: github-continue-releases::identity::github-continue-releases-continue-release-act</span>
+        <span>Confidence: strong</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>Continue has released version 1.3.38 of its VS Code extension (with corresponding releases v1.2.22 for older VS Code and v1.0.67 for JetBrains IDEs), fixing a bug where config.yaml was not properly initialized or populated when first accessed by a user. The fix, submitted by contributor @RomneyDa in pull request #11915, ensures the configuration file is created and populated automatically, removing a friction point for new users setting up the tool.</p>
+<p>The release also introduces session history filtering by workspace directory, allowing developers to view only the conversation history relevant to their current project. This feature was contributed by @mvanhorn in pull request #11813. Separately, the release adds support for a `.continue/configs` directory, enabling more flexible configuration management for users managing multiple project setups.</p>
+<p>The JetBrains-specific release (v1.0.67) includes an additional fix that redirects Winston logger output to stderr to prevent IPC stream corruption and resolves related binary test failures. All three versions carry routine dependency updates across multiple internal packages including handlebars, happy-dom, brace-expansion, and path-to-regexp, and resolve several compatibility issues across the core, CLI, and SDK packages.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>A misconfigured or missing config.yaml could silently block first-time users from getting started; the fix removes that silent failure.</li><li>Workspace-scoped session history makes it easier to find relevant past conversations without scrolling through unrelated project chats.</li><li>The `.continue/configs` support enables per-project configuration overrides, a common need for teams sharing dotfile setups.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This article is based on the Continue project&#x27;s public Atom releases feed. The latest stable release identified is v1.3.38 for the VS Code extension, published on March 27, 2026, along with parallel releases for older VS Code and JetBrains IDE variants. Changelogs were extracted from the feed; no linked release page or release notes body was fetched, so some minor changes may not be fully detailed.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/continuedev/continue/releases.atom" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This article was generated from filtered monitored source changes.
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenHands 1.6.0 and 1.5.0 Bring Task List Panel, Planning Agent, Slash Commands... | AI Signal Articles</title>
+  <meta name="description" content="Two recent releases of the AI coding agent OpenHands introduce a visible agent task list, a dedicated planning agent, slash-command shortcuts, and suppo...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 13:24 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>OpenHands Adds Task List Panel, Planning Agent, Slash Commands, and Bitbucket Support</h1>
+      <p class="standfirst">Two recent releases of the AI coding agent OpenHands introduce a visible agent task list, a dedicated planning agent, slash-command shortcuts, and support for Bitbucket DataCenter alongside several new models.</p>
+      <div class="meta">
+        <span>GitHub OpenHands Releases</span>
+        <span>2026-04-22 15:01 UTC</span>
+        <span>Key: github-openhands-releases::identity::github-openhands-releases-openhands-release-ac</span>
+        <span>Confidence: strong</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>OpenHands 1.5.0 (released 2026-03-11) added a Task List tab in the right panel that displays the agent&#x27;s current task list with real-time status updates, giving users direct visibility into what the agent is working on at any moment. Also new in that release: a Planning Agent that helps the system reason about multi-step tasks before executing them, and a slash command menu accessible by typing &#x27;/&#x27; in the chat input to invoke available agent skills without leaving the conversation. A Git repository can now be attached or changed for existing conversations, which addresses a long-standing workflow gap for users managing multi-repo projects.</p>
+<p>Bitbucket DataCenter support landed in the same release, courtesy of a contribution by @phymbert. This expands OpenHands beyond its prior GitHub and GitLab integrations, opening the door for enterprise teams that run Bitbucket behind a firewall. The release also added support for a raft of new models including Claude Opus 4.6, GLM-4.7, Claude-Sonnet-4-6, GLM-5, Kimi-K2.5, Qwen3-Coder-Next, and Gemini-3.1-Pro-Preview. The microagent management UI was hidden in this release, which the team described as a cleanup of developer-facing controls.</p>
+<p>OpenHands 1.6.0 (2026-03-30) followed two and a half weeks later with a /clear command for V1 conversations that starts a fresh chat history while retaining the current sandbox and configuration, a copy button on code blocks, global skill toggles, and Catalan language support. Multiple CVE fixes landed across both releases through dependency updates, and the team resolved a bug where conversations were occasionally not persisted and a bug in the Export Conversation feature that duplicated events multiple times.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>The Task List panel gives users an unprecedented window into the agent&#x27;s reasoning and progress, addressing a key opacity complaint with autonomous coding agents.</li><li>Bitbucket DataCenter support unlocks OpenHands for enterprise teams that cannot use hosted GitHub or GitLab, significantly expanding its addressable user base.</li><li>The slash command menu and /clear command make the interface more ergonomic for power users who rely on keyboard-driven workflows, while the new model support keeps OpenHands competitive with frontier model releases.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This article draws from the public OpenHands releases Atom feed, which aggregates release notes for multiple versions (1.5.0 through 1.6.0) in reverse chronological order. The feed contains no byline, author, or editorial framing — just structured changelog entries — so context has been inferred directly from those entries. Version numbering and dates are taken verbatim from the feed; individual PR links are referenced by contributor handle only.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/All-Hands-AI/OpenHands/releases.atom" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This article was generated from filtered monitored source changes.
+    </div>
+  </main>
+</body>
+</html>
