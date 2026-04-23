@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-23T15:21:44+00:00",
+  "generated_at": "2026-04-23T15:40:39+00:00",
   "item_count": 14,
   "items": [
     {
-      "timestamp": "2026-04-23T15:00:01+00:00",
+      "timestamp": "2026-04-23T15:37:08+00:00",
       "source_name": "Hugging Face Blog",
       "source_url": "https://huggingface.co/blog",
       "effective_url": "https://huggingface.co/blog",
@@ -251,8 +251,8 @@
       "effective_url": "https://aws.amazon.com/blogs/machine-learning/",
       "target_url": "https://aws.amazon.com/blogs/machine-learning/artificial-intelligence-aws-launches-frontier-agents-for-security-testing-and-cloud-operations/",
       "category": "blog",
-      "headline_en": "AWS Security Agent and DevOps Agent Hit General Availability",
-      "summary_en": "AWS Security Agent (on-demand penetration testing) and DevOps Agent are now generally available. These frontier agents autonomously handle security testing and cloud operations, running persistently for hours or days at scale without human oversight.",
+      "headline_en": "AWS Security Agent and DevOps Agent Exit Preview, Now Generally Available",
+      "summary_en": "AWS Security Agent (on-demand penetration testing) and DevOps Agent are now generally available. These frontier agents autonomously handle security testing and cloud operations at scale, running persistently for hours or days without human oversight. During preview, customers used Security Agent to identify vulnerabilities across cloud infrastructure.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "Artificial Intelligence AWS launches frontier agents for security testing and cloud operations by Swami Sivasubramanian on 31 MAR 2026 in Announcements , Artificial Intelligence , Security & Governance , Thought Leadership Permalink Comments Share I’m excited to announce that AWS Security Agent on-demand penetration testing and AWS DevOps Agent are now generally available, representing a new class of AI capabilities we announced at re:Invent called frontier agents. These autonomous systems work independently to achieve goals, scale massively to tackle concurrent tasks, and run persistently for hours or days without constant human oversight. Together, these agents are changing the way we secure and operate software. In preview, customers and partners report that AWS Security Agent compre...",

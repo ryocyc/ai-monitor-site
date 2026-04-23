@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mistral March 2026: Voxtral TTS, Mistral Small 4, Leanstral, Moderation 2603 | AI Signal Articles</title>
+  <meta name="description" content="Mistral shipped a cluster of notable releases in mid-to-late March spanning speech synthesis, a hybrid instruct-reasoning model, an open-source formal-p...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 15:40 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">docs</span>
+      <h1>Mistral&#x27;s March Releases: Voxtral TTS, Mistral Small 4 (256k Context), Leanstral, and Moderation 2603</h1>
+      <p class="standfirst">Mistral shipped a cluster of notable releases in mid-to-late March spanning speech synthesis, a hybrid instruct-reasoning model, an open-source formal-proof code agent, and an updated moderation model.</p>
+      <div class="meta">
+        <span>Mistral Changelog</span>
+        <span>2026-04-22 23:49 UTC</span>
+        <span>Key: mistral-changelog::identity::mistral-24.09</span>
+        <span>Confidence: strong</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>On March 23, Mistral released Voxtral TTS (voxtral-tts-2603), a state-of-the-art text-to-speech model featuring zero-shot voice cloning, multilingual support, and real-time streaming capabilities. This marks Mistral&#x27;s entry into the speech synthesis space and complements its existing audio transcribe and chat offerings under the Voxtral family.</p>
+<p>On March 16, the company released Mistral Small 4 (mistral-small-2603), a hybrid model that unifies instruct, reasoning, and coding tasks in a single multimodal package with a 256,000-token context window. The same day also saw the debut of Leanstral (labs-leanstral-2603), described as Mistral&#x27;s first open-source code agent purpose-built for Lean 4 formal proof engineering.</p>
+<p>On March 12, Mistral shipped Mistral Moderation 2603 (mistral-moderation-2603) alongside the addition of Custom Guardrails support for Agents and Conversations, allowing guardrails to be configured at the agent level and passed per-request via the POST /v1/conversations and POST /v1/chat/completions endpoints.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>Voxtral TTS expands Mistral&#x27;s audio portfolio into synthesis, competing with established TTS providers using a zero-shot cloning approach.</li><li>Mistral Small 4&#x27;s 256k context window is notably large for a hybrid instruct-reasoning model, enabling longer document and code review workloads.</li><li>Leanstral is Mistral&#x27;s first open-source code agent aimed at formal verification, a niche but growing area in AI-assisted software engineering.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This article draws on Mistral&#x27;s official changelog page, which lists model releases and API updates with model names, brief descriptions, and dates but no external links or deeper documentation within the captured excerpt.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://docs.mistral.ai/getting-started/changelog/" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+</body>
+</html>
