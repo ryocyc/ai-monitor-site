@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy | AI Signal Feed</title>
+  <style>
+    :root {
+      --bg: #f6efe4; --surface: rgba(255,255,255,0.88); --ink: #1a1f18; --muted: #586255;
+      --accent: #0f766e; --accent-soft: rgba(15,118,110,0.12); --border: rgba(15,118,110,0.14);
+      --shadow: 0 18px 40px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; color: var(--ink); background: linear-gradient(180deg, #fbf8f2 0%, var(--bg) 100%); }
+    main { max-width: 900px; margin: 0 auto; padding: 40px 20px 64px; }
+    .card { display: grid; gap: 16px; padding: 24px 26px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }
+    h1, h2, p { margin: 0; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 0.98; letter-spacing: -0.04em; }
+    h2 { font-size: 1.12rem; }
+    p, li { color: var(--muted); line-height: 1.7; }
+    ul { margin: 0; padding-left: 1.2rem; }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .topline, .footer { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; color: var(--muted); margin-bottom: 18px; }
+    .footer { margin-top: 18px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="./index.html">Homepage</a> | <a href="./history.html">History</a></div>
+    </div>
+    <section class="card">
+      <h1>Privacy</h1>
+      
+      <p>This site publishes summaries of publicly available source material and basic source metadata such as timestamps, titles, excerpts, and links.</p>
+      <h2>What this site may process</h2>
+      <ul>
+        <li>Publicly available source-page content used to generate summaries and article pages.</li>
+        <li>Basic usage data that may be collected by GitHub Pages, your browser, or future analytics tools.</li>
+        <li>Contact details you voluntarily send if you email the operator.</li>
+      </ul>
+      <h2>What this site does not currently provide</h2>
+      <ul>
+        <li>No account system.</li>
+        <li>No user login.</li>
+        <li>No guaranteed newsletter or push-notification service yet.</li>
+      </ul>
+      <h2>Third-party services</h2>
+      <p>This site links to third-party source pages. Those services have their own privacy practices and policies.</p>
+      <h2>Changes</h2>
+      <p>This page may be updated as analytics, advertising, subscriptions, or other site features are added.</p>
+    
+    </section>
+    <div class="footer"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></div>
+  </main>
+</body>
+</html>
