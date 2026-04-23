@@ -28,7 +28,7 @@
       margin: 0 auto;
       padding: 32px 18px 56px;
     }
-    .topline, .meta, .links {
+    .topline, .meta {
       display: flex;
       flex-wrap: wrap;
       gap: 10px 14px;
@@ -129,51 +129,48 @@
   <main>
     <div class="topline">
       <div><a href="./index.html">Articles index</a> | <a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 08:15 UTC</div>
+      <div>Generated 2026-04-23 09:04 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">release</span>
       <h1>Open WebUI Fixes Startup Crash from Missing aiosqlite and asyncpg Dependencies</h1>
-      <p class="standfirst">Fixed ModuleNotFoundError on startup by adding missing aiosqlite and asyncpg to pyproject.toml—both were listed in requirements.txt but absent from the published package metadat... reads like a shipped update rather t...</p>
+      <p class="standfirst">Fixed ModuleNotFoundError on startup by adding missing aiosqlite and asyncpg to pyproject.toml—both were listed in requirements.txt but absent from the published package metadata, causing crashes for pip/uv installs and PostgreSQL users....</p>
       <div class="meta">
-        <span>GitHub Open WebUI Releases | source https://github.com/open-webui/open-webui/releases.atom</span>
+        <span>GitHub Open WebUI Releases</span>
         <span>2026-04-22 15:01 UTC</span>
-        <span>Slug: github-open-webui-releases-open-webui-release-a</span>
-        <span>Evidence: strong</span>
-        <span>clear evidence</span>
+        <span>Key: github-open-webui-releases::identity::github-open-webui-releases-open-webui-release-a</span>
+        <span>Confidence: rule-based</span>
+        <span>Mode: local</span>
       </div>
     </article>
     <section class="content">
       
       <section class="section">
         <h2>Article body</h2>
-        <p>Open WebUI Fixes Startup Crash from Missing aiosqlite and asyncpg Dependencies reads like a release-note style update from GitHub Open WebUI Releases, which means the page is framing a shipped change rather than a soft teaser.</p>
-<p>The monitored text points to Fixed ModuleNotFoundError on startup by adding missing aiosqlite and asyncpg to pyproject.toml—both were listed in requirements.txt but absent from the published package metadata, causing crashes for pip/uv installs and PostgreSQL users. Database migrations are included; a backup before upgrade is strongly recommended., but we avoid filling in version details that are not explicitly present.</p>
-<p>The snapshot provides enough context to read this as a real product or editorial update. For release and changelog pages, the useful takeaway is the direction of travel, not a fake level of detail.</p>
-<p>A representative excerpt in the snapshot is content=Fixed 🐛 Missing aiosqlite dependency. Fixed a startup crash ( ModuleNotFoundError: No module named &#x27;aiosqlite&#x27; ) when installing Open WebUI via pip or uv by adding the missing aiosqlite package to pyproject.toml . The dependency....</p>
+        <p>Open WebUI Fixes Startup Crash from Missing aiosqlite and asyncpg Dependencies is the clearest visible signal in the monitored page for GitHub Open WebUI Releases.</p>
+<p>The page text points to Fixed ModuleNotFoundError on startup by adding missing aiosqlite and asyncpg to pyproject.toml—both were listed in requirements.txt but absent from the published package metadat... and we keep the wording close to that evidence instead of inflating it.</p>
+<p>Because this flow is built to stay honest, it does not fill gaps with invented context when the page is thin or noisy.</p>
       </section>
     
-
+      
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Release-style updates often signal user-facing behavior changes before they are heavily documented.</li><li>If the evidence stays strong, this is a useful early indicator of rollout direction.</li><li>If the evidence is noisy, the page still preserves the fact that something changed without overstating it.</li></ul>
+        <ul class="bullets"><li>Specific product, release, and docs signals are more useful than generic homepage churn.</li><li>Filtering out status pages and repeated noise keeps the standalone article set readable.</li><li>A narrow article still preserves the signal even when the source page changes again later.</li></ul>
       </section>
     
-
+      
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>Source: GitHub Open WebUI Releases</li><li>Evidence quality: strong</li><li>This summary is rule-based and uses only the saved monitor snapshot.</li><li>Evidence excerpt: content=Fixed 🐛 Missing aiosqlite dependency. Fixed a startup crash ( ModuleNotFoundError: No module named &#x27;aiosqlite&#x27; ) when installing Open WebUI via pip or uv by adding the missing aiosqlite package to pyproject.to...</li><li>Original link: https://github.com/open-webui/open-webui/releases.atom</li></ul>
+        <ul class="bullets"><li>Source: GitHub Open WebUI Releases</li><li>Category: release</li><li>Source URL: https://github.com/open-webui/open-webui/releases.atom</li><li>Target URL: https://github.com/open-webui/open-webui/releases.atom</li><li>Timestamp: 2026-04-22 15:01 UTC</li><li>Score: 100</li><li>This page was generated from the monitored source data without requiring Claude.</li><li>Evidence excerpt: content=Fixed 🐛 Missing aiosqlite dependency. Fixed a startup crash ( ModuleNotFoundError: No module named &#x27;aiosqlite&#x27; ) when installing Open WebUI via pip or uv by adding the missing aiosqlite package to pyproject.to...</li></ul>
       </section>
     
-
       <section class="section">
         <h2>Original link</h2>
         <p><a href="https://github.com/open-webui/open-webui/releases.atom" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
-    
     </section>
     <div class="footer">
-      This is a rule-based prototype built from existing site data. It stays separate from the live monitor pipeline.
+      This is a separate standalone article flow that only keeps filtered, deduped high-signal pages.
     </div>
   </main>
 </body>
