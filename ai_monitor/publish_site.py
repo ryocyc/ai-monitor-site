@@ -34,7 +34,6 @@ LOG_DIR = BASE_DIR / "logs"
 SITE_DIR = BASE_DIR / "site"
 DATA_DIR = SITE_DIR / "data"
 EVENT_LOG = LOG_DIR / "events.jsonl"
-TAIPEI_TZ = dt.timezone(dt.timedelta(hours=8), name="Asia/Taipei")
 
 PRIORITY_SOURCES = [
     "OpenAI Newsroom",
@@ -66,8 +65,8 @@ def format_display_time(value: str) -> str:
         return value
     if parsed.tzinfo is None:
         parsed = parsed.replace(tzinfo=dt.timezone.utc)
-    local = parsed.astimezone(TAIPEI_TZ)
-    return local.strftime("%b %d, %Y %I:%M %p Taipei")
+    utc_value = parsed.astimezone(dt.timezone.utc)
+    return utc_value.strftime("%Y-%m-%d %H:%M UTC")
 
 
 def read_events() -> list[dict[str, Any]]:
