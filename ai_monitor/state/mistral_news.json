@@ -1,0 +1,11 @@
+{
+  "id": "mistral_news",
+  "name": "Mistral News",
+  "url": "https://mistral.ai/news/",
+  "effective_url": "https://mistral.ai/news/",
+  "content_hash": "948de8c04e551c8ae51aea79a56cd75b01343c5f8a17fa2a58512fbc5e1b23e9",
+  "etag": null,
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:30:56+00:00",
+  "changed": false
+}

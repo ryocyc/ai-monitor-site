@@ -1,0 +1,11 @@
+{
+  "id": "github_langgraph_releases",
+  "name": "GitHub LangGraph Releases",
+  "url": "https://github.com/langchain-ai/langgraph/releases.atom",
+  "effective_url": "https://github.com/langchain-ai/langgraph/releases.atom",
+  "content_hash": "f24d7828f216b3b242cea03d2316da8d9947afa86ad6fd1cc2afd5c67d74071a",
+  "etag": "W/\"70a1fa2371988846e7de15ce253d0ff3\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:32:00+00:00",
+  "changed": false
+}

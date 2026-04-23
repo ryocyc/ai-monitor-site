@@ -1,0 +1,11 @@
+{
+  "id": "aws_ml_blog",
+  "name": "AWS Machine Learning Blog",
+  "url": "https://aws.amazon.com/blogs/machine-learning/",
+  "effective_url": "https://aws.amazon.com/blogs/machine-learning/",
+  "content_hash": "88ef7c3d1e3a1a56d67e26f0b68a0d37ce8742de2d4a8af934afc863629d76e2",
+  "etag": null,
+  "last_modified": "Thu, 23 Apr 2026 02:21:52 GMT",
+  "checked_at": "2026-04-23T02:31:05+00:00",
+  "changed": false
+}

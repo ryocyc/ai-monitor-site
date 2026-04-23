@@ -1,0 +1,59 @@
+title=langgraph-cli==0.4.24
+updated=2026-04-22T18:49:41Z
+link=https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.24
+summary=
+content=Changes since cli==0.4.23 chore: mixup cli formatting ( #7585 ) chore(deps): bump the pip group across 3 directories with 1 update ( #7537 )
+
+title=langgraph==1.1.9
+updated=2026-04-21T13:43:18Z
+link=https://github.com/langchain-ai/langgraph/releases/tag/1.1.9
+summary=
+content=Changes since 1.1.8 chore(langgraph): bump version 1.1.8 -&gt; 1.1.9 ( #7563 ) fix(langgraph): don't propagate ReplayState to subgraphs on plain resume ( #7561 ) chore(langgraph): undo unnecessary changes in stream handler ( #7536 )
+
+title=langgraph==1.1.8
+updated=2026-04-17T19:46:03Z
+link=https://github.com/langchain-ai/langgraph/releases/tag/1.1.8
+summary=
+content=Changes since 1.1.7 release(langgraph): 1.1.8 ( #7545 ) fix(langgraph): remove strict add_handler type check that breaks OTel instrumentation ( #7544 ) release(prebuilt): 1.0.10 ( #7541 ) release(cli): 0.4.23 ( #7542 )
+
+title=langgraph==1.1.7
+updated=2026-04-17T15:25:00Z
+link=https://github.com/langchain-ai/langgraph/releases/tag/1.1.7
+summary=
+content=Changes since 1.1.7a2 release(langgraph): 1.1.7 ( #7540 ) fix: time travel when going back to interrupt node ( #7498 ) chore(deps): bump langsmith from 0.6.4 to 0.7.31 in /libs/langgraph ( #7526 ) release(checkpoint): 4.0.2 ( #7518 )
+
+title=langgraph-prebuilt==1.0.10
+updated=2026-04-17T17:59:59Z
+link=https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.10
+summary=
+content=Changes since prebuilt==1.0.9 release(prebuilt): 1.0.10 ( #7541 ) release(langgraph): 1.1.7 ( #7540 ) fix(prebuilt): handle injected NotRequired keys ( #7392 ) chore(deps): bump langsmith from 0.6.4 to 0.7.31 in /libs/prebuilt ( #7530 ) release(checkpoint): 4.0.2 ( #7518 ) chore(deps): bump pytest from 9.0.2 to 9.0.3 in /libs/prebuilt ( #7505 ) release(langgraph): 1.1.7a2 ( #7511 ) chore: allow passing some metadata only for tracing purposes ( #7383 ) release(langgraph): 1.1.7a1 ( #7476 ) chore(deps-dev): bump the minor-and-patch group in /libs/prebuilt with 3 updates ( #7376 ) release: langgraph 1.1.6 ( #7407 )
+
+title=langgraph-cli==0.4.23
+updated=2026-04-17T17:04:11Z
+link=https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.23
+summary=
+content=Changes since cli==0.4.22 release(cli): 0.4.23 ( #7542 )
+
+title=langgraph-cli==0.4.22
+updated=2026-04-16T18:43:55Z
+link=https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.22
+summary=
+content=Changes since cli==0.4.21 CLI bump chore: start tracking cli deploy source ( #7520 ) chore(deps): bump langsmith from 0.7.26 to 0.7.31 in /libs/cli ( #7529 ) chore(deps): bump the uv group across 2 directories with 1 update ( #7531 ) chore(deps): bump langsmith from 0.5.18 to 0.5.20 in /libs/cli/js-examples ( #7522 ) chore(deps): bump langsmith from 0.5.18 to 0.5.20 in /libs/cli/js-monorepo-example ( #7521 ) chore(deps): bump langchain-core from 1.2.27 to 1.2.28 in /libs/cli ( #7450 ) chore(deps): bump langsmith from 0.5.4 to 0.5.18 in /libs/cli/js-examples ( #7474 ) chore(deps): bump langsmith from 0.5.4 to 0.5.18 in /libs/cli/js-monorepo-example ( #7475 ) chore(deps): bump uv from 0.11.3 to 0.11.6 in /libs/cli ( #7472 ) chore(deps): bump cryptography from 46.0.6 to 46.0.7 in /libs/cli ( #7456 ) chore(deps): bump the uv group across 2 directories with 1 update ( #7458 )
+
+title=langgraph-checkpoint==4.0.2
+updated=2026-04-15T21:03:16Z
+link=https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.0.2
+summary=
+content=Changes since checkpoint==4.0.1 release(checkpoint): 4.0.2 ( #7518 ) docs: document LANGGRAPH_STRICT_MSGPACK for checkpoint security ( #7517 ) chore(deps): bump pytest from 9.0.2 to 9.0.3 in /libs/checkpoint ( #7506 ) chore(deps): bump langchain-core from 1.2.23 to 1.2.28 in /libs/checkpoint ( #7453 ) chore(deps): bump the minor-and-patch group in /libs/checkpoint with 3 updates ( #7373 ) chore(deps): bump pygments from 2.19.2 to 2.20.0 in /libs/checkpoint ( #7348 ) chore(deps): bump the minor-and-patch group in /libs/checkpoint with 2 updates ( #7292 ) chore(deps): bump requests from 2.32.5 to 2.33.0 in /libs/checkpoint ( #7285 ) chore(deps): bump the all-dependencies group in /libs/checkpoint with 2 updates ( #7250 ) chore(deps): bump the all-dependencies group in /libs/checkpoint with 2 updates ( #7198 ) chore(deps): bump orjson from 3.11.5 to 3.11.6 in /libs/checkpoint ( #7146 ) fix(checkpoint): don't add the task to the checkpoint batch if it was… ( #7168 ) chore(deps): bump the all-dependencies group across 1 directory with 4 updates ( #7074 )
+
+title=langgraph==1.1.7a2
+updated=2026-04-14T18:09:56Z
+link=https://github.com/langchain-ai/langgraph/releases/tag/1.1.7a2
+summary=
+content=Changes since 1.1.7a1 chore(deps): bump pytest from 9.0.2 to 9.0.3 in /libs/langgraph ( #7507 ) release(langgraph): 1.1.7a2 ( #7511 ) chore: allow passing some metadata only for tracing purposes ( #7383 ) fix: populate assistant_id from config configurable instead of metadata ( #7468 )
+
+title=langgraph==1.1.7a1
+updated=2026-04-10T21:16:27Z
+link=https://github.com/langchain-ai/langgraph/releases/tag/1.1.7a1
+summary=
+content=Changes since 1.1.6 release(langgraph): 1.1.7a1 ( #7476 ) test(langgraph): use monotonic clock in flaky streaming test ( #7477 ) feat(langgraph): add graph lifecycle callback handlers ( #7429 ) chore(deps): bump cryptography from 46.0.6 to 46.0.7 in /libs/langgraph ( #7457 ) chore: update conformance lint ( #7459 ) chore: uv lock resolution ( #7342 )

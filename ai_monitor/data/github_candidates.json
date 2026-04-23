@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-04-22T23:30:08+00:00",
+  "total_candidates": 6,
+  "candidates": [
+    {
+      "repo": "zilliztech/claude-context",
+      "url": "https://github.com/zilliztech/claude-context",
+      "description": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
+      "language": "TypeScript",
+      "stars_today": 873,
+      "total_stars": null,
+      "why_interesting": "ai coding",
+      "candidate_source_url": "https://github.com/zilliztech/claude-context/releases.atom",
+      "has_releases": true,
+      "discovery_reason": "high_stars_today"
+    },
+    {
+      "repo": "farion1231/cc-switch",
+      "url": "https://github.com/farion1231/cc-switch",
+      "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw & Gemini CLI.",
+      "language": "Rust",
+      "stars_today": 665,
+      "total_stars": null,
+      "why_interesting": "ai coding",
+      "candidate_source_url": "https://github.com/farion1231/cc-switch/releases.atom",
+      "has_releases": true,
+      "discovery_reason": "high_stars_today"
+    },
+    {
+      "repo": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills",
+      "description": "The open agent skills tool - npx skills",
+      "language": "TypeScript",
+      "stars_today": 317,
+      "total_stars": null,
+      "why_interesting": "agent",
+      "candidate_source_url": "https://github.com/vercel-labs/skills/releases.atom",
+      "has_releases": true,
+      "discovery_reason": "github_trending"
+    },
+    {
+      "repo": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars_today": 254,
+      "total_stars": null,
+      "why_interesting": "agent",
+      "candidate_source_url": "https://github.com/mvanhorn/last30days-skill/releases.atom",
+      "has_releases": true,
+      "discovery_reason": "github_trending_language"
+    },
+    {
+      "repo": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "language": "Rust",
+      "stars_today": 234,
+      "total_stars": null,
+      "why_interesting": "ai coding",
+      "candidate_source_url": "https://github.com/openai/codex/releases.atom",
+      "has_releases": true,
+      "discovery_reason": "github_trending_language"
+    },
+    {
+      "repo": "ArvinLovegood/go-stock",
+      "url": "https://github.com/ArvinLovegood/go-stock",
+      "description": "🦄🦄🦄AI赋能股票分析：AI加持的股票分析/选股工具。股票行情获取，AI热点资讯分析，AI资金/财务分析，涨跌报警推送。支持A股，港股，美股。支持市场整体/个股情绪分析，AI辅助选股等。数据全部保留在本地。支持DeepSeek，OpenAI， Ollama，LMStudio，AnythingLLM，硅基流动，火山方舟，阿里云百炼等平台或模型。",
+      "language": "Go",
+      "stars_today": 14,
+      "total_stars": null,
+      "why_interesting": "local llm",
+      "candidate_source_url": "https://github.com/ArvinLovegood/go-stock/releases.atom",
+      "has_releases": true,
+      "discovery_reason": "github_trending_language"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "github_codex_releases",
+  "name": "GitHub Codex Releases",
+  "url": "https://github.com/openai/codex/releases.atom",
+  "effective_url": "https://github.com/openai/codex/releases.atom",
+  "content_hash": "27d7eaee9421a9ee841cfe84656fcd00254a357c3cba3638f352ee9353a5deb1",
+  "etag": "W/\"08601dcbc0d9a7f2861d5a037ca2925e\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:32:15+00:00",
+  "changed": false
+}

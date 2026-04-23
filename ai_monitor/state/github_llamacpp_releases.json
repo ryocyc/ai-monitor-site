@@ -1,0 +1,11 @@
+{
+  "id": "github_llamacpp_releases",
+  "name": "GitHub llama.cpp Releases",
+  "url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+  "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+  "content_hash": "5735174f6127683945970ac75004d5fddf6463adc8fab788ee99bacfee627e5f",
+  "etag": "W/\"4be5d6c252dedad5df3e806f2e7174d0\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:56+00:00",
+  "changed": false
+}

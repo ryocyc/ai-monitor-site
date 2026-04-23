@@ -1,0 +1,11 @@
+{
+  "id": "github_vllm_releases",
+  "name": "GitHub vLLM Releases",
+  "url": "https://github.com/vllm-project/vllm/releases.atom",
+  "effective_url": "https://github.com/vllm-project/vllm/releases.atom",
+  "content_hash": "586adbdced3372f7e5c0d214e226895c2af42a4a7b239c192062b531c093d346",
+  "etag": "W/\"8d525746daf749503643f393a1b618ff\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:57+00:00",
+  "changed": false
+}

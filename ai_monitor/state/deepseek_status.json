@@ -1,0 +1,11 @@
+{
+  "id": "deepseek_status",
+  "name": "DeepSeek System Status",
+  "url": "https://status.deepseek.com/",
+  "effective_url": "https://status.deepseek.com/",
+  "content_hash": "ae65e2181bff712d7f8da3d8c259737a6c86dce4ea3a728721c73d277977e6d5",
+  "etag": "W/\"1071a05ca7d226960bbce66779737f62\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:12+00:00",
+  "changed": false
+}

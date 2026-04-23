@@ -1,0 +1,59 @@
+title=v1.5.1
+updated=2026-04-17T19:08:10Z
+link=https://github.com/vercel-labs/skills/releases/tag/v1.5.1
+summary=
+content=Changelog fix(git): skip LFS smudge during clone to avoid bandwidth bloat ( #952 ) Contributors @jrusso1020
+
+title=v1.5.0
+updated=2026-04-12T02:46:00Z
+link=https://github.com/vercel-labs/skills/releases/tag/v1.5.0
+summary=
+content=Changelog Better updating, project level updating, global level updating copy, single skill update ( #913 ) Contributors @quuu
+
+title=v1.4.9
+updated=2026-04-06T04:09:18Z
+link=https://github.com/vercel-labs/skills/releases/tag/v1.4.9
+summary=
+content=Changelog Warn on openclaw due to number of duplicate and malicious skills ( #865 ) Contributors @quuu
+
+title=v1.4.8
+updated=2026-04-03T19:45:20Z
+link=https://github.com/vercel-labs/skills/releases/tag/v1.4.8
+summary=
+content=Changelog Direct download from snapshot rather than require full git clone ( #853 ) Remove gray-matter as a dependency in favor of simpler front-matter parsing ( #839 ) Contributors @quuu
+
+title=v1.4.7
+updated=2026-03-31T17:31:50Z
+link=https://github.com/vercel-labs/skills/releases/tag/v1.4.7
+summary=
+content=Changelog feat: support branch refs in skill install/update sources ( #814 ) feat: add Firebender as a supported agent ( #372 ) Add IBM Bob agent support ( #335 ) Contributors @Strernd , @caseyg @kevo1ution
+
+title=v1.4.6
+updated=2026-03-23T18:28:49Z
+link=https://github.com/vercel-labs/skills/releases/tag/v1.4.6
+summary=
+content=Changelog Update installation path for Antigravity ( #667 ) fix: list skills installed for undetected agents ( #656 ) feat(agents): add Deep Agents support ( #478 ) feat: indicate which skills failed to update, fix #362 , code cleanup ( #387 ) Contributors @EDM115 , @elliotllliu @joehan , @seanderoiste
+
+title=v1.4.5
+updated=2026-03-13T22:02:06Z
+link=https://github.com/vercel-labs/skills/releases/tag/v1.4.5
+summary=
+content=Changelog fix: preserve SSH source URLs in lock files ( #588 ) fix: skip broken symlinks during skill installation ( #583 ) fix: skip symlink/copy prompt when all agents share one directory ( #582 ) feat(list): add --json flag for machine-readable output ( #558 ) fix: stop excluding underscore-prefixed files during skill installation ( #548 ) docs(find-skills): add quality verification and leaderboard check ( #547 ) fix: sort search results by install count ( #546 ) fix: avoid hardcoded ~/.agents for skill lock file ( #517 ) feat: add Warp as a universal agent ( #516 ) Contributors @bholmesdev , @cwelsys @elliotllliu
+
+title=v1.4.4
+updated=2026-03-05T08:45:51Z
+link=https://github.com/vercel-labs/skills/releases/tag/v1.4.4
+summary=
+content=Changelog fix: pass auth token to fetchSkillFolderHash and fix Windows spawnSync ENOENT ( #487 ) feat: support ssh urls in lock file ( #346 ) Contributors @kopfrechner , @quuu
+
+title=v1.4.3
+updated=2026-02-28T03:26:34Z
+link=https://github.com/vercel-labs/skills/releases/tag/v1.4.3
+summary=
+content=Changelog Contributors
+
+title=v1.4.2
+updated=2026-02-26T19:00:24Z
+link=https://github.com/vercel-labs/skills/releases/tag/v1.4.2
+summary=
+content=Changelog fix: update Cline global skills dir to ~/.agents/skills ( #441 ) feat: move Cline to universal .agents/skills directory ( #440 ) feat: Group skills by plugin in 'skills list' and 'add' output ( #361 ) Contributors @dingruoqian99 , @robinnewhouse

@@ -1,0 +1,11 @@
+{
+  "id": "perplexity_status",
+  "name": "Perplexity System Status",
+  "url": "https://status.perplexity.ai/",
+  "effective_url": "https://status.perplexity.ai/",
+  "content_hash": "0b36a412ff6f6076303bd4bad7da41e44c9295ec58cfd4866a2cab3f560ad91c",
+  "etag": "\"are1j0zb3f2c1q\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:17+00:00",
+  "changed": false
+}

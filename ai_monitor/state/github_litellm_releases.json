@@ -1,0 +1,11 @@
+{
+  "id": "github_litellm_releases",
+  "name": "GitHub LiteLLM Releases",
+  "url": "https://github.com/BerriAI/litellm/releases.atom",
+  "effective_url": "https://github.com/BerriAI/litellm/releases.atom",
+  "content_hash": "5426b07942e12021600dc5999f2f16c5abca7e922c991752578979779ef75b4f",
+  "etag": "W/\"465737c4b77aa6add688722e4da7a01c\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:32:00+00:00",
+  "changed": false
+}

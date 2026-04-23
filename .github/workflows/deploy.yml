@@ -1,0 +1,59 @@
+name: Deploy AI Monitor to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Run monitor
+        run: python ai_monitor/monitor.py
+        continue-on-error: true
+
+      - name: Build site
+        run: |
+          python ai_monitor/publish_site.py --limit 10
+          python ai_monitor/enrich_targets.py --input ai_monitor/site/data/latest.json --limit 10 || true
+          python ai_monitor/enrich_targets.py --input ai_monitor/site/data/archive.json --limit 50 || true
+          python ai_monitor/publish_site.py --limit 10
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ai_monitor/site/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

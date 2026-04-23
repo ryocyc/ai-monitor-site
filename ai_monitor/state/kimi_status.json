@@ -1,0 +1,11 @@
+{
+  "id": "kimi_status",
+  "name": "Moonshot System Status",
+  "url": "https://status.moonshot.cn/",
+  "effective_url": "https://status.moonshot.cn/",
+  "content_hash": "240636b9236ebaaef02d1a471b42049a19a236ec4023f3fade90522bba3ab912",
+  "etag": "W/\"3643b9de63c8b5b08b716641d980bf1b\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:47+00:00",
+  "changed": true
+}

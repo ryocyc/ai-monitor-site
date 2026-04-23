@@ -1,0 +1,59 @@
+title=v0.86.3.dev
+updated=2026-02-12T00:42:25Z
+link=https://github.com/Aider-AI/aider/releases/tag/v0.86.3.dev
+summary=
+content=set version to 0.86.3.dev
+
+title=v0.86.2
+updated=2026-02-12T00:42:24Z
+link=https://github.com/Aider-AI/aider/releases/tag/v0.86.2
+summary=
+content=version bump to 0.86.2
+
+title=v0.86.2.dev
+updated=2025-08-13T15:46:02Z
+link=https://github.com/Aider-AI/aider/releases/tag/v0.86.2.dev
+summary=
+content=set version to 0.86.2.dev
+
+title=v0.86.1
+updated=2025-08-13T15:46:00Z
+link=https://github.com/Aider-AI/aider/releases/tag/v0.86.1
+summary=
+content=version bump to 0.86.1
+
+title=v0.86.1.dev
+updated=2025-08-09T15:55:11Z
+link=https://github.com/Aider-AI/aider/releases/tag/v0.86.1.dev
+summary=
+content=set version to 0.86.1.dev
+
+title=Aider v0.86.0
+updated=2025-08-09T17:42:19Z
+link=https://github.com/Aider-AI/aider/releases/tag/v0.86.0
+summary=
+content=Added support for all GPT-5 models. Added support for Grok-4 via xai/grok-4 and openrouter/x-ai/grok-4 model names. Added support for gemini/gemini-2.5-flash-lite-preview-06-17 model, by Tamir Zahavi-Brunner. /clear now prints “All chat history cleared.” so you know it worked, by Zexin Yuan. /undo output now shows only the first line of each commit message, making it easier to read. Added support for openrouter/moonshotai/kimi-k2 model, by Jack Harrington. Display model announcements with no-arg /model command. Fixed an issue where new settings for an existing model didn't replace the old ones, by Andrew Grigorev. Fixed analytics to support the latest PostHog SDK event-capture API. Bumped dependencies to pick up latest litellm==1.75.0. Aider wrote 88% of the code in this release.
+
+title=v0.85.6.dev
+updated=2025-08-07T20:54:56Z
+link=https://github.com/Aider-AI/aider/releases/tag/v0.85.6.dev
+summary=
+content=set version to 0.85.6.dev
+
+title=v0.85.5
+updated=2025-08-07T20:54:54Z
+link=https://github.com/Aider-AI/aider/releases/tag/v0.85.5
+summary=
+content=version bump to 0.85.5
+
+title=v0.85.5.dev
+updated=2025-08-07T18:33:44Z
+link=https://github.com/Aider-AI/aider/releases/tag/v0.85.5.dev
+summary=
+content=set version to 0.85.5.dev
+
+title=v0.85.4
+updated=2025-08-07T18:33:43Z
+link=https://github.com/Aider-AI/aider/releases/tag/v0.85.4
+summary=
+content=version bump to 0.85.4

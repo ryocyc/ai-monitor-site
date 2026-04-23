@@ -4,3 +4,6 @@ dist/
 web-build/
 .DS_Store
 *.log
+
+# Site output - generated during CI or by publish_to_github.py locally
+ai_monitor/site/

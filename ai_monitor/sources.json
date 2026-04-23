@@ -1,0 +1,644 @@
+[
+  {
+    "id": "openai_newsroom",
+    "name": "OpenAI Newsroom",
+    "url": "https://openai.com/newsroom/",
+    "fallback_url": "https://r.jina.ai/http://openai.com/newsroom/",
+    "type": "html",
+    "headers": {
+      "Accept-Language": "en-US,en;q=0.9",
+      "Cache-Control": "no-cache",
+      "Pragma": "no-cache"
+    },
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>",
+        "<article[\\s\\S]*?</article>"
+      ]
+    }
+  },
+  {
+    "id": "anthropic_news",
+    "name": "Anthropic News",
+    "url": "https://www.anthropic.com/news",
+    "type": "html",
+    "headers": {
+      "Accept-Language": "en-US,en;q=0.9"
+    },
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>",
+        "<article[\\s\\S]*?</article>"
+      ]
+    }
+  },
+  {
+    "id": "minimax_docs_models",
+    "name": "MiniMax Docs Models",
+    "url": "https://platform.minimax.io/docs",
+    "type": "html",
+    "headers": {
+      "Accept-Language": "en-US,en;q=0.9"
+    },
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>",
+        "<article[\\s\\S]*?</article>",
+        "Models[\\s\\S]{0,20000}"
+      ]
+    }
+  },
+  {
+    "id": "google_deepmind_blog",
+    "name": "Google DeepMind Blog",
+    "url": "https://deepmind.google/discover/blog/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "google_ai_blog",
+    "name": "Google AI Blog",
+    "url": "https://blog.google/technology/ai/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "meta_ai_blog",
+    "name": "Meta AI Blog",
+    "url": "https://ai.meta.com/blog/",
+    "fallback_url": "https://r.jina.ai/http://ai.meta.com/blog/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "xai_api",
+    "name": "xAI API",
+    "url": "https://x.ai/api/",
+    "fallback_url": "https://r.jina.ai/http://x.ai/api/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "mistral_news",
+    "name": "Mistral News",
+    "url": "https://mistral.ai/news/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "cohere_blog",
+    "name": "Cohere Blog",
+    "url": "https://cohere.com/blog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "perplexity_blog",
+    "name": "Perplexity Blog",
+    "url": "https://www.perplexity.ai/hub/blog",
+    "fallback_url": "https://r.jina.ai/http://www.perplexity.ai/hub/blog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "huggingface_blog",
+    "name": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "stability_news",
+    "name": "Stability AI News",
+    "url": "https://stability.ai/news",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "replicate_blog",
+    "name": "Replicate Blog",
+    "url": "https://replicate.com/blog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "openrouter_changelog",
+    "name": "OpenRouter Changelog",
+    "url": "https://openrouter.ai/changelog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "groq_news",
+    "name": "Groq News",
+    "url": "https://groq.com/news/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "nvidia_ai_blog",
+    "name": "NVIDIA AI Blog",
+    "url": "https://blogs.nvidia.com/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>",
+        "<body[\\s\\S]*?</body>"
+      ]
+    }
+  },
+  {
+    "id": "aws_ml_blog",
+    "name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>",
+        "<body[\\s\\S]*?</body>"
+      ]
+    }
+  },
+  {
+    "id": "microsoft_ai_blog",
+    "name": "Microsoft AI Blog",
+    "url": "https://blogs.microsoft.com/ai/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>",
+        "<body[\\s\\S]*?</body>"
+      ]
+    }
+  },
+  {
+    "id": "openai_status",
+    "name": "OpenAI System Status",
+    "url": "https://status.openai.com/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>",
+        "<body[\\s\\S]*?</body>"
+      ]
+    }
+  },
+  {
+    "id": "openai_changelog",
+    "name": "OpenAI API Changelog",
+    "url": "https://r.jina.ai/http://platform.openai.com/docs/changelog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "deepseek_home",
+    "name": "DeepSeek Home",
+    "url": "https://www.deepseek.com/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "deepseek_status",
+    "name": "DeepSeek System Status",
+    "url": "https://status.deepseek.com/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "xai_blog",
+    "name": "xAI Blog",
+    "url": "https://r.jina.ai/http://x.ai/blog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "mistral_pricing",
+    "name": "Mistral Pricing",
+    "url": "https://mistral.ai/pricing/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "mistral_changelog",
+    "name": "Mistral Changelog",
+    "url": "https://docs.mistral.ai/getting-started/changelog/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "cohere_pricing",
+    "name": "Cohere Pricing",
+    "url": "https://cohere.com/pricing",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "cohere_changelog",
+    "name": "Cohere Changelog",
+    "url": "https://docs.cohere.com/changelog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "cohere_status",
+    "name": "Cohere System Status",
+    "url": "https://status.cohere.ai/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "perplexity_status",
+    "name": "Perplexity System Status",
+    "url": "https://status.perplexity.ai/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "huggingface_pricing",
+    "name": "Hugging Face Pricing",
+    "url": "https://huggingface.co/pricing",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "huggingface_changelog",
+    "name": "Hugging Face Changelog",
+    "url": "https://huggingface.co/changelog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "replicate_pricing",
+    "name": "Replicate Pricing",
+    "url": "https://replicate.com/pricing",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "replicate_changelog",
+    "name": "Replicate Changelog",
+    "url": "https://replicate.com/changelog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "groq_docs",
+    "name": "Groq Docs",
+    "url": "https://docs.groq.com/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "qwen_blog",
+    "name": "Qwen Blog",
+    "url": "https://qwenlm.github.io/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "qwen_pricing",
+    "name": "Alibaba Model Studio Pricing",
+    "url": "https://bailian.console.aliyun.com/pricing",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "qwen_github",
+    "name": "Qwen GitHub",
+    "url": "https://github.com/QwenLM",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "zhipu_docs",
+    "name": "Zhipu AI Docs",
+    "url": "https://open.bigmodel.cn/dev/how/introduction",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "zhipu_pricing",
+    "name": "Zhipu AI Pricing",
+    "url": "https://open.bigmodel.cn/pricing",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "stepfun_home",
+    "name": "StepFun Home",
+    "url": "https://www.stepfun.com/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "kimi_home",
+    "name": "Kimi Home",
+    "url": "https://kimi.moonshot.cn/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "kimi_pricing",
+    "name": "Kimi Pricing",
+    "url": "https://kimi.moonshot.cn/docs/price",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "kimi_status",
+    "name": "Moonshot System Status",
+    "url": "https://status.moonshot.cn/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "baichuan_home",
+    "name": "Baichuan AI Home",
+    "url": "https://www.baichuan-ai.com/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "yi_home",
+    "name": "01.AI Home",
+    "url": "https://01.ai/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "minimax_news",
+    "name": "MiniMax Blog",
+    "url": "https://www.minimax.io/blog",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "minimax_status",
+    "name": "MiniMax System Status",
+    "url": "https://status.minimax.io/",
+    "type": "html",
+    "extract": {
+      "include_patterns": [
+        "<main[\\s\\S]*?</main>"
+      ]
+    }
+  },
+  {
+    "id": "github_ollama_releases",
+    "name": "GitHub Ollama Releases",
+    "url": "https://github.com/ollama/ollama/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_llamacpp_releases",
+    "name": "GitHub llama.cpp Releases",
+    "url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_vllm_releases",
+    "name": "GitHub vLLM Releases",
+    "url": "https://github.com/vllm-project/vllm/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_openwebui_releases",
+    "name": "GitHub Open WebUI Releases",
+    "url": "https://github.com/open-webui/open-webui/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_litellm_releases",
+    "name": "GitHub LiteLLM Releases",
+    "url": "https://github.com/BerriAI/litellm/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_langgraph_releases",
+    "name": "GitHub LangGraph Releases",
+    "url": "https://github.com/langchain-ai/langgraph/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_openhands_releases",
+    "name": "GitHub OpenHands Releases",
+    "url": "https://github.com/All-Hands-AI/OpenHands/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_n8n_releases",
+    "name": "GitHub n8n Releases",
+    "url": "https://github.com/n8n-io/n8n/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_dify_releases",
+    "name": "GitHub Dify Releases",
+    "url": "https://github.com/langgenius/dify/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_aider_releases",
+    "name": "GitHub aider Releases",
+    "url": "https://github.com/Aider-AI/aider/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_continue_releases",
+    "name": "GitHub Continue Releases",
+    "url": "https://github.com/continuedev/continue/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_sglang_releases",
+    "name": "GitHub SGLang Releases",
+    "url": "https://github.com/sgl-project/sglang/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_claude_context_releases",
+    "name": "GitHub Claude Context Releases",
+    "url": "https://github.com/zilliztech/claude-context/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_cc_switch_releases",
+    "name": "GitHub cc-switch Releases",
+    "url": "https://github.com/farion1231/cc-switch/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_codex_releases",
+    "name": "GitHub Codex Releases",
+    "url": "https://github.com/openai/codex/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_vercel_skills_releases",
+    "name": "GitHub Vercel Skills Releases",
+    "url": "https://github.com/vercel-labs/skills/releases.atom",
+    "type": "rss"
+  },
+  {
+    "id": "github_last30days_skill_releases",
+    "name": "GitHub last30days-skill Releases",
+    "url": "https://github.com/mvanhorn/last30days-skill/releases.atom",
+    "type": "rss"
+  }
+]

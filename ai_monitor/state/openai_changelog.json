@@ -1,0 +1,11 @@
+{
+  "id": "openai_changelog",
+  "name": "OpenAI API Changelog",
+  "url": "https://r.jina.ai/http://platform.openai.com/docs/changelog",
+  "effective_url": "https://r.jina.ai/http://platform.openai.com/docs/changelog",
+  "content_hash": "a5bbe13319e29bc43375b3ada3004925cfcdd75f46bc3edd7e440d57c0a12f18",
+  "etag": null,
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:11+00:00",
+  "changed": false
+}

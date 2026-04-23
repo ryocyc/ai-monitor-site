@@ -1,0 +1,11 @@
+{
+  "id": "openai_newsroom",
+  "name": "OpenAI Newsroom",
+  "url": "https://openai.com/newsroom/",
+  "effective_url": "https://r.jina.ai/http://openai.com/newsroom/",
+  "content_hash": "1a2a4caeaf526e7fa4977019ce7f0a1f3573e0b483597e2e96871dd7c1329d9b",
+  "etag": null,
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:30:47+00:00",
+  "changed": false
+}

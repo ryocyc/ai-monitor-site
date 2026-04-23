@@ -1,0 +1,11 @@
+{
+  "id": "minimax_status",
+  "name": "MiniMax System Status",
+  "url": "https://status.minimax.io/",
+  "effective_url": "https://status.minimax.io/",
+  "content_hash": "22e0be0a20923820ffd38abbfb02e6573825c7da2e5923160e013a564bcfdaa5",
+  "etag": "W/\"ba8b7709dcb52b95143843c1d8178a27\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:54+00:00",
+  "changed": true
+}

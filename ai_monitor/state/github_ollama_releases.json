@@ -1,0 +1,11 @@
+{
+  "id": "github_ollama_releases",
+  "name": "GitHub Ollama Releases",
+  "url": "https://github.com/ollama/ollama/releases.atom",
+  "effective_url": "https://github.com/ollama/ollama/releases.atom",
+  "content_hash": "141b9f99fdd476073d61680b93305822542e1f1b0bd55b7376449d2e22e84bf6",
+  "etag": "W/\"ad1c08ec33989d6737284322aa3c81c6\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:55+00:00",
+  "changed": true
+}

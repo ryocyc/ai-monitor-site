@@ -1,0 +1,11 @@
+{
+  "id": "groq_news",
+  "name": "Groq News",
+  "url": "https://groq.com/news/",
+  "effective_url": "https://groq.com/news/",
+  "content_hash": "401413245c1fa71b98558d5c815d1d0496653dbca83b555ab4b9682c546ab60a",
+  "etag": "\"3f42dd19f6e5548bf8d6639024819ac3\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:04+00:00",
+  "changed": false
+}

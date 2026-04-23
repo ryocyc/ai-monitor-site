@@ -1,0 +1,11 @@
+{
+  "id": "github_n8n_releases",
+  "name": "GitHub n8n Releases",
+  "url": "https://github.com/n8n-io/n8n/releases.atom",
+  "effective_url": "https://github.com/n8n-io/n8n/releases.atom",
+  "content_hash": "7a52843d6ab7991f09d419ef703db99b90fbbf1c4ce02f1aeff988bf357481c2",
+  "etag": "W/\"658fc191122bc59bef0326c2d3487d81\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:32:03+00:00",
+  "changed": false
+}

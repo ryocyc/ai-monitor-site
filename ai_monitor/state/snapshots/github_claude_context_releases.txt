@@ -1,0 +1,59 @@
+title=v0.1.7: docs: add MILVUS_ADDRESS to Claude Code quick-start (#310)
+updated=2026-04-22T04:17:24Z
+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.7
+summary=
+content=Add MILVUS_ADDRESS to Claude Code quick-start for consistency with other client configurations.
+
+title=v0.1.6: chore: bump version to 0.1.6
+updated=2026-03-12T10:53:36Z
+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.6
+summary=
+content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com
+
+title=v0.1.5: chore: bump vscode extension version to 0.1.5
+updated=2026-03-11T15:15:57Z
+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.5
+summary=
+content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com
+
+title=v0.1.4: fix: empty filter query and cloud sync deletion bugs (#279, #251) (#280)
+updated=2026-03-11T06:41:19Z
+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.4
+summary=
+content=Fix empty string filter in vectorDb.query() causing empty results on both gRPC and REST clients by omitting the filter field instead of sending "" Store codebasePath in collection description for reliable extraction during sync, with fallback to query-based extraction for old collections Add safety guards in syncIndexedCodebasesFromCloud: skip deletion when collections list is empty or all extractions fail Add getCollectionDescription to VectorDatabase interface with implementations for both MilvusVectorDatabase and MilvusRestfulVectorDatabase Fix REST API createCollection/createHybridCollection to pass description Bump version to 0.1.4 Signed-off-by: Cheney Zhang chen.zhang@zilliz.com
+
+title=bump version to v0.1.3
+updated=2025-08-21T06:43:27Z
+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.3
+summary=
+content=Signed-off-by: ChengZi chen.zhang@zilliz.com
+
+title=bump version to v0.1.2
+updated=2025-08-20T13:07:52Z
+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.2
+summary=
+content=Signed-off-by: ChengZi chen.zhang@zilliz.com
+
+title=bump version v0.1.1 (#150)
+updated=2025-08-12T02:14:50Z
+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.1
+summary=
+content=Signed-off-by: ChengZi chen.zhang@zilliz.com
+
+title=v0.1.0: bump version to 0.1.0 (#138)
+updated=2025-08-08T04:05:04Z
+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.0
+summary=
+content=Signed-off-by: ChengZi chen.zhang@zilliz.com
+
+title=v0.0.13: bump version to 0.0.13
+updated=2025-08-04T10:07:11Z
+link=https://github.com/zilliztech/claude-context/releases/tag/v0.0.13
+summary=
+content=Signed-off-by: ChengZi chen.zhang@zilliz.com
+
+title=bump version v0.0.12
+updated=2025-08-04T08:27:59Z
+link=https://github.com/zilliztech/claude-context/releases/tag/v0.0.12
+summary=
+content=Signed-off-by: ChengZi chen.zhang@zilliz.com

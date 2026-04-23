@@ -1,0 +1,11 @@
+{
+  "id": "github_continue_releases",
+  "name": "GitHub Continue Releases",
+  "url": "https://github.com/continuedev/continue/releases.atom",
+  "effective_url": "https://github.com/continuedev/continue/releases.atom",
+  "content_hash": "49d914ccea15edeee29bb287f4edb3b706133433f271588c7bdce9f897394388",
+  "etag": "W/\"3f7219cc256140ce3530fb69bcc48019\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:32:08+00:00",
+  "changed": false
+}

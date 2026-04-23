@@ -1,0 +1,11 @@
+{
+  "id": "github_claude_context_releases",
+  "name": "GitHub Claude Context Releases",
+  "url": "https://github.com/zilliztech/claude-context/releases.atom",
+  "effective_url": "https://github.com/zilliztech/claude-context/releases.atom",
+  "content_hash": "5e4192bd8e9962810c28af08a39b9b24c8b11ba379c85dcb27b7232ccddee269",
+  "etag": "W/\"0606ab2b4fbd40951f4211f1ccafd5d5\"",
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:32:13+00:00",
+  "changed": false
+}

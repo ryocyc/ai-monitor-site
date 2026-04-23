@@ -1,0 +1,11 @@
+{
+  "id": "openai_status",
+  "name": "OpenAI System Status",
+  "url": "https://status.openai.com/",
+  "effective_url": "https://status.openai.com/",
+  "content_hash": "b6d9c89b6ff0612d1e96f94d5d8135c1721a20bbe26d12bd60a5761375dc6634",
+  "etag": null,
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:07+00:00",
+  "changed": false
+}

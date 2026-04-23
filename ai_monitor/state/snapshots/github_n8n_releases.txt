@@ -1,0 +1,59 @@
+title=v1: :rocket: Release 1.123.33 (#28879)
+updated=2026-04-22T09:55:06Z
+link=https://github.com/n8n-io/n8n/releases/tag/v1
+summary=
+content=Co-authored-by: Matsuuu 16068444+Matsuuu@users.noreply.github.com
+
+title=stable
+updated=2026-04-22T10:24:34Z
+link=https://github.com/n8n-io/n8n/releases/tag/stable
+summary=
+content=2.17.5 (2026-04-22) Bug Fixes core: Enforce credential access checks in dynamic node parameter requests ( #28861 ) ( 9aadc28 )
+
+title=n8n@2.18.1
+updated=2026-04-22T07:40:19Z
+link=https://github.com/n8n-io/n8n/releases/tag/n8n%402.18.1
+summary=
+content=2.18.1 (2026-04-22)
+
+title=n8n@2.17.5
+updated=2026-04-22T10:25:48Z
+link=https://github.com/n8n-io/n8n/releases/tag/n8n%402.17.5
+summary=
+content=2.17.5 (2026-04-22) Bug Fixes core: Enforce credential access checks in dynamic node parameter requests ( #28861 ) ( 9aadc28 )
+
+title=n8n@2.17.4
+updated=2026-04-22T08:02:58Z
+link=https://github.com/n8n-io/n8n/releases/tag/n8n%402.17.4
+summary=
+content=2.17.4 (2026-04-22) Bug Fixes Alibaba Cloud Chat Model Node: Add credential-level url field for AI gateway compatibility ( #28746 ) ( 60b61ef ) Reverts Make Wait node fully durable by removing in-memory execution path ( #28574 ) ( a4bdc80 )
+
+title=n8n@1.123.33
+updated=2026-04-22T10:22:01Z
+link=https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.33
+summary=
+content=1.123.33 (2026-04-22) Bug Fixes core: Enforce credential access checks in dynamic node parameter requests ( #28862 ) ( e67b44b )
+
+title=n8n@1.123.32
+updated=2026-04-22T06:45:20Z
+link=https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.32
+summary=
+content=1.123.32 (2026-04-22) Bug Fixes core: Preserve NODE_PATH for globally installed npm packages in Docker ( #28781 ) ( a6b3e81 )
+
+title=beta
+updated=2026-04-22T07:39:04Z
+link=https://github.com/n8n-io/n8n/releases/tag/beta
+summary=
+content=2.18.1 (2026-04-22)
+
+title=n8n@2.18.0
+updated=2026-04-21T09:28:17Z
+link=https://github.com/n8n-io/n8n/releases/tag/n8n%402.18.0
+summary=
+content=2.18.0 (2026-04-21) Bug Fixes ai-builder: Increase orchestrator max steps from default 5 to 60 ( #28429 ) ( 3c850f2 ) ai-builder: Scope artifacts panel to resources produced in-thread ( #28678 ) ( 7b3696f ) ai-builder: Use placeholders for user-provided values instead of hardcoding fake addresses ( #28407 ) ( 39c6217 ) Alibaba Cloud Chat Model Node: Add credential-level url field for AI gateway compatibility ( #28697 ) ( dd6c28c ) ClickUp Node: Unclear error message when using OAuth credentials ( #28584 ) ( 19aadf1 ) core: Add required field validation to MCP OAuth client registration ( #28490 ) ( 8716316 ) core: Cascade-cancel dependent planned tasks when a parent task fails ( #28656 ) ( 35f9bed ) core: Enforce credential access checks in dynamic node parameter requests ( #28446 ) ( ac41112 ) core: Ensure single zod instance across workspace packages ( #28604 ) ( 107c48f ) core: Filter stale credentials from setup wizard requests ( #28478 ) ( 657bdf1 ) core: Fix public API package update process ( #28475 ) ( 34430ae ) core: Fix workflow-sdk validation for plain workflow objects ( #28416 ) ( 62dc073 ) core: Guard against undefined config properties in credential overwrites ( #28573 ) ( 77d27bc ) core: Handle git fetch failure during source control startup ( #28422 ) ( fa3299d ) core: Handle invalid percent sequences and equals signs in HTTP response headers ( #27691 ) ( ca71d89 ) core: Implement data tables name collision detection on pull ( #26416 ) ( e5aaeb5 ) core: Prevent nodes tool crash on flattened required fields ( #28670 ) ( 3e72430 ) core: Resolve additional keys lazily in VM expression engine ( #28430 ) ( 98b833a ) core: Skip disabled Azure Key Vault secrets and handle partial fetch failures ( #28325 ) ( 6217d08 ) core: Skip npm outdated check for verified-only community packages ( #28335 ) ( 2959b4d ) Disable axios built-in proxy for OAuth2 token requests ( #28513 ) ( 56f36a6 ) editor: Advance wizard step on Continue instead of applying setup ( #28698 ) ( 3b15e47 ) editor: Center sub-node icons and refresh triggers panel icons ( #28515 ) ( 6739856 ) editor: Display placeholder sentinels as hint text in setup wizard ( #28482 ) ( bb7d137 ) editor: Gate Instance AI input while setup wizard is open ( #28685 ) ( db83a95 ) editor: Hide setup parameter issue icons until user interacts with input ( #28010 ) ( 00b0558 ) editor: Improve disabled Google sign-in button styling and tooltip alignment ( #28536 ) ( e848230 ) editor: Improve setup wizard placeholder detection and card completion scoping ( #28474 ) ( d172113 ) editor: Only show role assignment warning modal when value actually changed ( #28387 ) ( 9c97931 ) editor: Prevent setup wizard disappearing on requestId-driven remount ( #28473 ) ( 04d57c5 ) editor: Re-initialize SSO store after login to populate OIDC redirect URL ( #28386 ) ( 21317b8 ) editor: Refine resource dependency badge ( #28087 ) ( f216fda ) editor: Reset OIDC form dirty state after saving IdP settings ( #28388 ) ( 1042350 ) editor: Reset remote values on credentials change ( #26282 ) ( 5e11197 ) editor: Resolve nodes stuck on loading after execution in instance-ai preview ( #28450 ) ( c97c3b4 ) editor: Restore WASM file paths for cURL import in HTTP Request node ( #28610 ) ( 51bc71e ) editor: Show auth type selector in Instance AI workflow setup ( #28707 ) ( 1b13d32 ) editor: Show relevant node in workflow activation errors ( #26691 ) ( c9cab11 ) Google Cloud Firestore Node: Fix empty array serialization in jsonToDocument ( #28213 ) ( 7094395 ) Google Drive Node: Continue on error support for download file operation ( #28276 ) ( 30128c9 ) Google Gemini Node: Determine the file extention from MIME type for image and video operations ( #28616 ) ( 73659cb ) GraphQL Node: Improve error response handling ( #28209 ) ( 357fb72 ) HubSpot Node: Rename HubSpot "App Token" auth to "Service Key" ( #28479 ) ( 8c3e692 ) HubSpot Trigger Node: Add missing property selectors ( #28595 ) ( d179f66 ) IMAP Node: Fix out-of-memory crash after ECONNRESET on reconnect ( #28290 ) ( 2d0b231 ) Link to n8n website broken in n8n forms ( #28627 ) ( ff950e5 ) LinkedIn Node: Update LinkedIn API version in request headers ( #28564 ) ( 25e07ca ) OpenAI Node: Replace hardcoded models with RLC ( #28226 ) ( 4070930 ) Schedule Node: Use elapsed-time check to self-heal after missed triggers ( #28423 ) ( 5f8ab01 ) Update working memory using tools ( #28467 ) ( 39189c3 ) Features Add deployment_key table, entity, repository, and migration ( #28329 ) ( 59edd6a ) Add Prometheus counters for token exchange ( #28453 ) ( c6534fa ) AI Gateway credentials endpoint instance url ( #28520 ) ( d012346 ) API: Add missing credential endpoints (GET by ID and test) ( #28519 ) ( 9a65549 ) core: Add require-node-description-fields ESLint rule for icon and subtitle ( #28400 ) ( 5504099 ) core: Add KeyManagerService for encryption key lifecycle management ( #28533 ) ( 9dd3e59 ) core: Configure OIDC settings via env vars ( #28185 ) ( 36261fb ) core: Persist deployment_key entries for stability across restarts and key rotation ( #28518 ) ( bb96d2e ) core: Support npm dist-tags in community node installation ( #28067 ) ( ca871cc ) core: Support npm registry token authentication to install private community node packages ( #28228 ) ( 8b105cc ) core: Track workflow action source for external API and MCP requests ( #28483 ) ( 575c34e ) core: Workflow tracing - add workflow version id ( #28424 ) ( 9a22fe5 ) editor: Add favoriting for projects, folders, workflows and data tables ( #26228 ) ( b1a075f ) editor: Enable workflow execution from instance AI preview canvas ( #28412 ) ( 5b376cb ) Enable security policy settings via env vars ( #28321 ) ( 1108467 ) Linear Trigger Node: Add signing secret validation ( #28522 ) ( 3b248ee ) MiniMax Chat Model Node: Add MiniMax Chat Model sub-node ( #28305 ) ( bd927d9 ) Slack Node: Add app_home_opened as a dedicated trigger event ( #28626 ) ( f1dab3e ) Reverts Make Wait node fully durable by removing in-memory execution path ( #28538 ) ( bb9bec3 )
+
+title=n8n@2.17.3
+updated=2026-04-21T09:28:05Z
+link=https://github.com/n8n-io/n8n/releases/tag/n8n%402.17.3
+summary=
+content=2.17.3 (2026-04-20) Bug Fixes core: Guard against undefined config properties in credential overwrites ( #28629 ) ( 5d32052 ) editor: Restore WASM file paths for cURL import in HTTP Request node ( #28619 ) ( c15d6d0 ) LinkedIn Node: Update LinkedIn API version in request headers ( #28668 ) ( ce7d1b7 )

@@ -1,0 +1,11 @@
+{
+  "id": "anthropic_news",
+  "name": "Anthropic News",
+  "url": "https://www.anthropic.com/news",
+  "effective_url": "https://www.anthropic.com/news",
+  "content_hash": "35d4a2fe8632a5488e390bc78352a3da731f18f0aa99f3c00f147962a74d9991",
+  "etag": null,
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:30:50+00:00",
+  "changed": false
+}

@@ -1,0 +1,11 @@
+{
+  "id": "cohere_status",
+  "name": "Cohere System Status",
+  "url": "https://status.cohere.ai/",
+  "effective_url": "https://status.cohere.ai/",
+  "content_hash": "38bd16b131ecbbc3131c7842663e7928d1883efc41c32f3064907e6e93c85e28",
+  "etag": null,
+  "last_modified": null,
+  "checked_at": "2026-04-23T02:31:17+00:00",
+  "changed": false
+}
