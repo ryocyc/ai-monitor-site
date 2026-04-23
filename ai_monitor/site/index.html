@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Signal Feed</title>
+  <style>
+    :root {
+      --bg: #f6efe4; --surface: rgba(255,255,255,0.84); --ink: #1a1f18; --muted: #586255;
+      --accent: #0f766e; --accent-soft: rgba(15,118,110,0.12); --border: rgba(15,118,110,0.14);
+      --shadow: 0 18px 40px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; color: var(--ink); background: linear-gradient(180deg, #fbf8f2 0%, var(--bg) 100%); }
+    main { max-width: 1340px; margin: 0 auto; padding: 40px 20px 64px; }
+    .hero { display: grid; gap: 14px; margin-bottom: 24px; }
+    .eyebrow { display: inline-flex; width: fit-content; padding: 7px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.78rem; }
+    h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 5vw, 4.6rem); line-height: 0.94; letter-spacing: -0.04em; max-width: 860px; }
+    .sub { margin: 0; max-width: 760px; color: var(--muted); font-size: 1.02rem; line-height: 1.55; }
+    .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 26px; color: var(--muted); }
+    .list { display: grid; gap: 18px; }
+    .card { display: grid; gap: 14px; padding: 22px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }
+    .card-top, .card-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--muted); font-size: 0.86rem; }
+    .pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 0.74rem; }
+    .headline { margin: 0; font-size: 1.7rem; line-height: 1.14; letter-spacing: -0.02em; }
+    .summary { margin: 0; color: var(--muted); line-height: 1.7; font-size: 1rem; }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <span class="eyebrow">AI Signal Feed</span>
+      <h1>10 readable AI updates.</h1>
+      <p class="sub">This homepage is built from monitored source changes and shows only English while the homepage quality filter is being stabilized.</p>
+    </section>
+    <section class="toolbar">
+      <div>Last built: 2026-04-23T04:49:19+00:00 - Showing 10 items</div>
+    </section>
+    <p class="sub"><a href="./history.html">Open full history</a></p>
+    <section class="list">
+            <article class="card">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time>2026-04-23T04:39:40+00:00</time>
+              </div>
+              <h2 class="headline">Kimi AI Upgraded to K2.6 with Enhanced Coding and Agent Capabilities</h2>
+              <p class="summary">Moonshot AI&#x27;s Kimi platform has been updated to K2.6, featuring improved coding performance and smarter AI agent functionalities including Kimi Code, Kimi Claw, Agent Swarm, and Deep Research tools.</p>
+              <div class="card-bottom">
+                <span>Kimi Pricing</span>
+                <a href="https://kimi.moonshot.cn/docs/price">Source</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time>2026-04-23T04:39:05+00:00</time>
+              </div>
+              <h2 class="headline">NVIDIA Isaac GR00T N1.7: Open-Source VLA Model for Humanoid Robot Reasoning</h2>
+              <p class="summary">NVIDIA open-sourced Isaac GR00T N1.7, a Vision-Language-Action model built for humanoid robots with reasoning capabilities, now available on Hugging Face.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots">Source</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time>2026-04-23T02:47:15+00:00</time>
+              </div>
+              <h2 class="headline">Codex v0.123.0: Amazon Bedrock Provider, /mcp Verbose Mode, and Plugin Loading Improvements</h2>
+              <p class="summary">Codex v0.123.0 adds a built-in Amazon Bedrock model provider with configurable AWS profiles, a new /mcp verbose command for full MCP diagnostics, and improved .mcp.json plugin loading for background agents.</p>
+              <div class="card-bottom">
+                <span>GitHub Codex Releases</span>
+                <a href="https://github.com/openai/codex/releases.atom">Source</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-23T02:36:21+00:00</time>
+              </div>
+              <h2 class="headline">GPT Image 2 Released: Flexible Sizes, Token Pricing, and 50% Batch Discount</h2>
+              <p class="summary">OpenAI released GPT Image 2, a new image generation and editing model supporting flexible sizes, high-fidelity inputs, token-based pricing, and a Batch API at 50% discount. The Agents SDK also added controlled sandbox execution, customizable test harnesses, and memory control.</p>
+              <div class="card-bottom">
+                <span>OpenAI API Changelog</span>
+                <a href="https://platform.openai.com/docs/models/gpt-5.2">Source</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time>2026-04-23T01:58:52+00:00</time>
+              </div>
+              <h2 class="headline">Microsoft AI Blog: Cricket Australia Uses AI to Enhance Fan Experience</h2>
+              <p class="summary">Microsoft AI Blog highlights how Cricket Australia leverages AI Insights to bring fans closer to the action.</p>
+              <div class="card-bottom">
+                <span>Microsoft AI Blog</span>
+                <a href="https://blogs.microsoft.com/ai/">Source</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time>2026-04-22T23:49:48+00:00</time>
+              </div>
+              <h2 class="headline">MiniMax Launches Music 2.6 with Cover Feature and M2.7 Self-Improving Agent Model</h2>
+              <p class="summary">MiniMax released Music 2.6 with a new Cover feature offering deeper bass and richer instrumentation. Also introduced M2.7, enabling recursive self-improvement for models with significant practical capability gains over M2.5, along with an Agent harness for production-grade coding and office task support.</p>
+              <div class="card-bottom">
+                <span>MiniMax Blog</span>
+                <a href="https://www.minimax.io/blog">Source</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-top">
+                <span class="pill">changelog</span>
+                <time>2026-04-22T23:49:34+00:00</time>
+              </div>
+              <h2 class="headline">Replicate Releases Agent Skills for Claude Code, Codex, and Other Coding Assistants</h2>
+              <p class="summary">Replicate published Agent Skills — markdown instruction files that give coding assistants expert knowledge on model discovery, comparison, API execution, and prompting techniques for image and video generation. Compatible with Claude Code, OpenCode, Codex, and other tools via the open Agent Skills spec. Also added a fallback model option for Nano Banana Pro when Google API is at capacity.</p>
+              <div class="card-bottom">
+                <span>Replicate Changelog</span>
+                <a href="https://replicate.com/changelog">Source</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-22T23:49:28+00:00</time>
+              </div>
+              <h2 class="headline">Cohere Retires Embed v2.0 and Aya Expanse/Vision 8B Models</h2>
+              <p class="summary">As of April 4, 2026, Cohere retired embed-english-v2.0, embed-english-light-v2.0, embed-multilingual-v2.0, c4ai-aya-expanse-8b, and c4ai-aya-vision-8b. Recommended replacements are embed-v4.0 for embeddings and command-a-reasoning-08-2025 for chat tasks.</p>
+              <div class="card-bottom">
+                <span>Cohere Changelog</span>
+                <a href="https://docs.cohere.com/changelog">Source</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-22T23:49:27+00:00</time>
+              </div>
+              <h2 class="headline">Cohere Updates Pricing Page with North, Compass, and Model Vault Enterprise Tiers</h2>
+              <p class="summary">Cohere&#x27;s pricing page details three enterprise products: North (all-in-one AI platform with generative models, search, and agents), Compass (intelligent search with managed index and pre-built connectors), and Model Vault (secure, dedicated model hosting with hourly or per-instance billing).</p>
+              <div class="card-bottom">
+                <span>Cohere Pricing</span>
+                <a href="https://cohere.com/pricing">Source</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time>2026-04-22T23:49:26+00:00</time>
+              </div>
+              <h2 class="headline">Mistral Launches Free Le Chat with Memory, Image Generation, and 40+ Enterprise Connectors</h2>
+              <p class="summary">Mistral&#x27;s free Le Chat personal AI assistant includes access to state-of-the-art models, up to 500 saved memories, image generation, project-based chat organization, and over 40 enterprise connectors.</p>
+              <div class="card-bottom">
+                <span>Mistral Pricing</span>
+                <a href="https://mistral.ai/pricing/">Source</a>
+              </div>
+            </article>
+            </section>
+  </main>
+</body>
+</html>
