@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>llama.cpp b8893 Enables HIP Graphs by Default for AMD GPUs | AI Signal Articles</title>
+  <meta name="description" content="The llama.cpp project has turned on HIP graph execution by default for AMD GPUs, citing positive performance results from ROCm improvements and graph-co...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="./index.html">Articles index</a> | <a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 12:16 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>llama.cpp b8893 Flips HIP Graphs to Default-On for AMD GPUs</h1>
+      <p class="standfirst">The llama.cpp project has turned on HIP graph execution by default for AMD GPUs, citing positive performance results from ROCm improvements and graph-construction refinements.</p>
+      <div class="meta">
+        <span>GitHub llama.cpp Releases</span>
+        <span>2026-04-23 02:36 UTC</span>
+        <span>Key: github-llamacpp-releases::identity::github-llamacpp-releases-llamacpp-release-fee</span>
+        <span>Confidence: moderate</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>Release b8893 of llama.cpp changes the default for GGML_HIP_GRAPHS to enabled on AMD hardware. The toggle was disabled in an earlier revision (#11362) because graph execution hurt performance at the time. The project says that ROCm itself and how the codebase builds and uses graphs have both improved enough to flip that default.</p>
+<p>The release ships prebuilt binaries across a broad set of targets: CUDA 13.1 and 12.4 on Windows, Vulkan on Ubuntu and Windows, ROCm 7.2 on Ubuntu, SYCL and HIP on Windows, OpenVINO on Linux, KleidiAI-enabled builds for Apple Silicon, and iOS XCFramework packages. OpenEuler builds with 310p and 910b (ACL Graph) variants are also listed for both x86 and arm64.</p>
+<p>The commit was signed and verified on GitHub, with the release published on 23 April 2026 at 02:36 UTC. Three community members reacted positively to the announcement.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>AMD GPU users on ROCm can now run llama.cpp with HIP graph execution active out of the box, potentially improving throughput without extra configuration.</li><li>Prebuilt binaries for CUDA 13.1 and Vulkan on Windows lower the barrier to running llama.cpp on those platforms.</li><li>The KleidiAI-enabled Apple Silicon build gives M-series Mac users an additional optimised path for inference.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This article is based on the GitHub release page for llama.cpp b8893. The page is a standard GitHub release with a commit message, a one-paragraph description, and a list of binary assets. No changelog entry, release notes, or issues list is linked from this page.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8893" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This is a separate standalone article flow that only keeps filtered, deduped high-signal pages.
+    </div>
+  </main>
+</body>
+</html>

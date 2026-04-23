@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>last30days-skill v3.1.0 Adds X API v2 OAuth2 Backend and Competitor Auto-Discovery | AI Signal Articles</title>
+  <meta name="description" content="The last30days-skill intelligence-gathering tool ships version 3.1.0, consolidating five point releases and introducing an official X API v2 backend alo...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="./index.html">Articles index</a> | <a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 12:23 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>last30days-skill v3.1.0 Adds X API v2 OAuth2 Backend and Competitor Auto-Discovery</h1>
+      <p class="standfirst">The last30days-skill intelligence-gathering tool ships version 3.1.0, consolidating five point releases and introducing an official X API v2 backend alongside a new competitor comparison flag.</p>
+      <div class="meta">
+        <span>GitHub last30days-skill Releases</span>
+        <span>2026-04-23 05:11 UTC</span>
+        <span>Key: github-last30days-skill-releases::identity::github-last30days-skill-releas-last30days-skill-rel</span>
+        <span>Confidence: strong</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>The open-source last30days-skill tool, used for automated competitive and market intelligence tracking, has released version 3.1.0. The release consolidates changes from versions 3.0.10 through 3.0.14 and adds two notable new capabilities. A contributor under the handle @chaosreload contributed an `xurl` CLI as an alternative X (formerly Twitter) search backend using the official API v2 via OAuth2, replacing any prior unofficial scraping approach. Separately, maintainer @mvanhorn added a `--competitors` flag that enables automatic discovery and comparison fan-out across competitor entities, along with a new &quot;vs mode&quot; that runs multiple full passes and appends a `(/Last30Days)` title tag for clearer output differentiation.</p>
+<p>Beyond these headline features, the release touches several workflow improvements. Evidence lines can now attribute top comments using both `u/` and `@` handles, inline markdown links are rendered in narrative citations, and the Codex module gains a configurable memory directory (contributed by @davemorin). A fix was also applied to Step 0.55&#x27;s category-peer subreddit expansion logic, and the release introduces a canonical `SKILL.md` default alongside a quieter sub-run experience with a default setting of 2.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>The official X API v2 OAuth2 backend replaces potentially fragile scraping with a sanctioned, stable interface, reducing risk of access disruption.</li><li>The new --competitors flag automates comparison fan-out that previously required manual configuration, lowering the barrier for competitive research workflows.</li><li>The consolidation of five point releases (3.0.10–3.0.14) into a single stable tag simplifies upgrade paths for existing users.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This article is based on the v3.1.0 release page on GitHub for the mvanhorn/last30days-skill repository. The page includes a curated changelog of merged pull requests, contributor attributions, and asset links, though detailed patch notes or diffs are not embedded directly in the release page itself. Reaction counts (3 thumbs-up) and repository star counts (~23.7k) are visible but not necessarily representative of broader adoption or review depth.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/mvanhorn/last30days-skill/releases/tag/v3.1.0" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This is a separate standalone article flow that only keeps filtered, deduped high-signal pages.
+    </div>
+  </main>
+</body>
+</html>
