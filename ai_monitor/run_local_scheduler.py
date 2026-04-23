@@ -48,9 +48,13 @@ def run_publish_pipeline() -> bool:
         ("publish-initial", [sys.executable, str(BASE_DIR / "publish_site.py"), "--limit", "10"], 120),
         ("enrich-targets-latest", [sys.executable, str(BASE_DIR / "enrich_targets.py"), "--input", str(BASE_DIR / "site" / "data" / "latest.json"), "--limit", "10"], 180),
         ("enrich-targets-archive", [sys.executable, str(BASE_DIR / "enrich_targets.py"), "--input", str(BASE_DIR / "site" / "data" / "archive.json"), "--limit", "50"], 240),
-        ("claude-latest", [sys.executable, str(BASE_DIR / "enrich_with_claude.py"), "--input", str(BASE_DIR / "site" / "data" / "latest.json"), "--max-budget-usd", "1.0"], 360),
-        ("claude-archive", [sys.executable, str(BASE_DIR / "enrich_with_claude.py"), "--input", str(BASE_DIR / "site" / "data" / "archive.json"), "--max-budget-usd", "3.0"], 600),
+        # Incremental Claude rewrite: only items with needs_cc_refresh=True are processed.
+        # New items and items whose content_fingerprint changed get rewritten.
+        # Items already in archive with no content change have needs_cc_refresh=False
+        # and are skipped, so no time is wasted on unchanged historical data.
+        ("claude-incremental", [sys.executable, str(BASE_DIR / "enrich_with_claude.py"), "--input", str(BASE_DIR / "site" / "data" / "latest.json"), "--max-budget-usd", "1.0"], 360),
         ("publish-final", [sys.executable, str(BASE_DIR / "publish_site.py"), "--limit", "10"], 120),
+        ("standalone-articles", [sys.executable, str(BASE_DIR / "generate_standalone_articles.py"), "--with-claude", "--limit", "10"], 900),
     ]
     ok = True
     for label, args, timeout_seconds in steps:

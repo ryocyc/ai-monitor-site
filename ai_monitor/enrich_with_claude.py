@@ -112,15 +112,22 @@ def chunked(items: list[dict], size: int) -> Iterable[list[dict]]:
 
 
 def needs_enrichment(item: dict) -> bool:
-    has_all_fields = all(
-        [
-            (item.get("headline_en") or "").strip(),
-            (item.get("summary_en") or "").strip(),
-            (item.get("headline_zh") or "").strip(),
-            (item.get("summary_zh") or "").strip(),
-        ]
-    )
-    return (not has_all_fields) or bool(item.get("needs_cc_refresh"))
+    """
+    Returns True only if the item genuinely needs Claude rewrite.
+
+    Uses the needs_cc_refresh flag set by publish_site.py (via apply_existing_content)
+    as the primary signal. This flag is only True when:
+      - The item is brand new (no previous content found)
+      - OR content_fingerprint / merge_key shows the content actually changed
+    Items that are old and unchanged (moved to archive naturally) will have
+    needs_cc_refresh=False and will be skipped here.
+    """
+    if item.get("needs_cc_refresh"):
+        return True
+    # Fallback: item has no English enriched fields at all → needs enrichment
+    has_en = (item.get("headline_en") or "").strip() and (item.get("summary_en") or "").strip()
+    has_zh = (item.get("headline_zh") or "").strip() and (item.get("summary_zh") or "").strip()
+    return not (has_en and has_zh)
 
 
 def main() -> int:

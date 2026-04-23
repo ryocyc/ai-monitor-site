@@ -7,6 +7,7 @@ import html
 import json
 import pathlib
 import re
+import urllib.parse
 from typing import Any
 
 from source_parse_helpers import (
@@ -34,6 +35,8 @@ LOG_DIR = BASE_DIR / "logs"
 SITE_DIR = BASE_DIR / "site"
 DATA_DIR = SITE_DIR / "data"
 EVENT_LOG = LOG_DIR / "events.jsonl"
+ARTICLES_DIR = SITE_DIR / "articles"
+ARTICLE_MAPPING_FILE = ARTICLES_DIR / "article-mapping.json"
 
 PRIORITY_SOURCES = [
     "OpenAI Newsroom",
@@ -67,6 +70,16 @@ def format_display_time(value: str) -> str:
         parsed = parsed.replace(tzinfo=dt.timezone.utc)
     utc_value = parsed.astimezone(dt.timezone.utc)
     return utc_value.strftime("%Y-%m-%d %H:%M UTC")
+
+
+def parse_time(value: str) -> dt.datetime:
+    try:
+        parsed = dt.datetime.fromisoformat(value)
+    except Exception:
+        return dt.datetime.min.replace(tzinfo=dt.timezone.utc)
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=dt.timezone.utc)
+    return parsed
 
 
 def read_events() -> list[dict[str, Any]]:
@@ -114,6 +127,18 @@ def read_previous_latest_generated_at() -> dt.datetime | None:
         return dt.datetime.fromisoformat(generated_at)
     except Exception:
         return None
+
+
+def read_previous_latest_items() -> list[dict[str, Any]]:
+    path = DATA_DIR / "latest.json"
+    if not path.exists():
+        return []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        items = payload.get("items", [])
+        return items if isinstance(items, list) else []
+    except Exception:
+        return []
 
 
 def clean_text(text: str) -> str:
@@ -311,6 +336,99 @@ def _english_only(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return items
 
 
+def _is_github_release_item(item: dict[str, Any]) -> bool:
+    source_name = item.get("source_name", "") or ""
+    return source_name.startswith("GitHub ") and source_name.endswith("Releases")
+
+
+def _github_release_family(item: dict[str, Any]) -> str:
+    if not _is_github_release_item(item):
+        return ""
+    for url in (item.get("target_url", "") or "", item.get("source_url", "") or ""):
+        parsed = urllib.parse.urlparse(url)
+        if "github.com" not in parsed.netloc.lower():
+            continue
+        parts = [part for part in parsed.path.strip("/").split("/") if part]
+        if len(parts) >= 2:
+            return f"github::{parts[0].lower()}/{parts[1].lower()}"
+    return f"github::{release_product_name(item.get('source_name', '')).lower()}"
+
+
+def _homepage_family_key(item: dict[str, Any]) -> str:
+    github_family = _github_release_family(item)
+    if github_family:
+        return github_family
+    source_name = (item.get("source_name", "") or "").strip().lower()
+    category = (item.get("category", "") or "").strip().lower()
+    article_identity = (item.get("article_identity", "") or "").strip().lower()
+    if category == "release" and article_identity:
+        return f"{source_name}::{article_identity}"
+    return source_name
+
+
+def _previous_homepage_release_times(items: list[dict[str, Any]]) -> dict[str, dt.datetime]:
+    families: dict[str, dt.datetime] = {}
+    for item in items:
+        family = _github_release_family(item)
+        if not family:
+            continue
+        item_dt = parse_time(item.get("timestamp", ""))
+        if family not in families or item_dt > families[family]:
+            families[family] = item_dt
+    return families
+
+
+def _github_release_under_cooldown(item: dict[str, Any], previous_release_times: dict[str, dt.datetime]) -> bool:
+    family = _github_release_family(item)
+    if not family:
+        return False
+    previous_dt = previous_release_times.get(family)
+    if previous_dt is None:
+        return False
+    item_dt = parse_time(item.get("timestamp", ""))
+    if item_dt <= previous_dt:
+        return False
+    return (item_dt - previous_dt) < dt.timedelta(hours=HOMEPAGE_GITHUB_RELEASE_COOLDOWN_HOURS)
+
+
+def _select_homepage_candidates(
+    items: list[dict[str, Any]],
+    limit: int | None,
+    previous_release_times: dict[str, dt.datetime],
+    seed_items: list[dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
+    selected: list[dict[str, Any]] = list(seed_items or [])
+    seen_ids = {item["id"] for item in selected}
+    seen_sources = {item.get("source_name", "") for item in selected}
+    seen_families = {_homepage_family_key(item) for item in selected if _homepage_family_key(item)}
+    github_release_count = sum(1 for item in selected if _is_github_release_item(item))
+
+    for item in items:
+        if item["id"] in seen_ids:
+            continue
+        source_name = item.get("source_name", "")
+        family = _homepage_family_key(item)
+        if source_name in seen_sources:
+            continue
+        if family and family in seen_families:
+            continue
+        if _is_github_release_item(item) and github_release_count >= HOMEPAGE_GITHUB_RELEASE_MAX:
+            continue
+        if _github_release_under_cooldown(item, previous_release_times):
+            continue
+        selected.append(item)
+        seen_ids.add(item["id"])
+        seen_sources.add(source_name)
+        if family:
+            seen_families.add(family)
+        if _is_github_release_item(item):
+            github_release_count += 1
+        if limit is not None and len(selected) >= limit:
+            break
+
+    return selected
+
+
 def is_garbled(text: str) -> bool:
     """
     Return True if text appears to be garbled/broken and should be
@@ -421,6 +539,10 @@ def script_json(payload: Any) -> str:
 
 def release_product_name(source_name: str) -> str:
     return source_name.replace("GitHub ", "").replace(" Releases", "").strip()
+
+
+HOMEPAGE_GITHUB_RELEASE_COOLDOWN_HOURS = 12
+HOMEPAGE_GITHUB_RELEASE_MAX = 2
 
 
 def extract_release_item(source_name: str, text: str) -> tuple[str, str, str | None]:
@@ -857,12 +979,14 @@ def build_homepage_items(
     archive_items: list[dict[str, Any]],
     limit: int,
     previous_generated_at: dt.datetime | None = None,
+    previous_latest_items: list[dict[str, Any]] | None = None,
 ) -> list[dict[str, Any]]:
     qualified = [
         item
         for item in sorted(archive_items, key=lambda item: item["timestamp"], reverse=True)
         if _homepage_qualifies(item)
     ]
+    previous_release_times = _previous_homepage_release_times(previous_latest_items or [])
 
     recent_batch: list[dict[str, Any]] = []
     if previous_generated_at is not None:
@@ -874,31 +998,42 @@ def build_homepage_items(
             if item_dt > previous_generated_at:
                 recent_batch.append(item)
 
+    recent_batch = _select_homepage_candidates(
+        recent_batch,
+        None,
+        previous_release_times,
+    )
+
     if len(recent_batch) > limit:
         return _english_only(recent_batch)
 
-    selected: list[dict[str, Any]] = list(recent_batch)
-    seen_ids = {item["id"] for item in selected}
-    seen_sources = {item.get("source_name", "") for item in selected}
-
-    for item in qualified:
-        if item["id"] in seen_ids:
-            continue
-        source_name = item.get("source_name", "")
-        if source_name in seen_sources:
-            continue
-        seen_ids.add(item["id"])
-        seen_sources.add(source_name)
-        selected.append(item)
-        if len(selected) >= limit:
-            break
+    selected = _select_homepage_candidates(
+        qualified,
+        limit,
+        previous_release_times,
+        seed_items=recent_batch,
+    )
 
     return _english_only(selected)
 
 
-def render_index(items: list[dict[str, Any]]) -> str:
+def render_index(items: list[dict[str, Any]], article_mapping: dict[str, str]) -> str:
     cards: list[str] = []
     for item in items:
+        # Look up standalone article page via stable keys
+        article_slug: str | None = None
+        for key_field in ("article_identity", "merge_key", "id"):
+            key_val = item.get(key_field, "") or ""
+            if key_val and key_val in article_mapping:
+                article_slug = article_mapping[key_val]
+                break
+        article_url = f"./articles/{article_slug}.html" if article_slug else None
+        target_url = item.get("target_url") or item.get("source_url") or "#"
+        headline_html = (
+            f'<a href="{html.escape(article_url)}">{html.escape(item["headline_en"])}</a>'
+            if article_url
+            else html.escape(item["headline_en"])
+        )
         cards.append(
             f"""
             <article class="card" data-category="{html.escape(item["category"])}">
@@ -906,11 +1041,11 @@ def render_index(items: list[dict[str, Any]]) -> str:
                 <span class="pill">{html.escape(item["category"])}</span>
                 <time>{html.escape(format_display_time(item["timestamp"]))}</time>
               </div>
-              <h2 class="headline">{html.escape(item["headline_en"])}</h2>
+              <h2 class="headline">{headline_html}</h2>
               <p class="summary">{html.escape(item["summary_en"])}</p>
               <div class="card-bottom">
                 <span>{html.escape(item["source_name"])}</span>
-                <a href="{html.escape(item["target_url"])}">Source</a>
+                <a href="{html.escape(target_url)}">Source</a>
               </div>
             </article>
             """
@@ -1000,9 +1135,10 @@ def render_index(items: list[dict[str, Any]]) -> str:
 """
 
 
-def render_history(items: list[dict[str, Any]]) -> str:
+def render_history(items: list[dict[str, Any]], article_mapping: dict[str, str]) -> str:
     updated_at = format_display_time(utc_now())
     payload_json = script_json(items)
+    mapping_json = script_json(article_mapping)
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -1050,8 +1186,10 @@ def render_history(items: list[dict[str, Any]]) -> str:
     <section id="history-list" class="list"></section>
   </main>
   <script id="archive-data" type="application/json">{payload_json}</script>
+  <script id="article-mapping" type="application/json">{mapping_json}</script>
   <script>
     const archive = JSON.parse(document.getElementById('archive-data').textContent);
+    const articleMapping = JSON.parse(document.getElementById('article-mapping').textContent);
     const perPage = 50;
     let page = 1;
     let categoryFilter = '';
@@ -1106,13 +1244,26 @@ def render_history(items: list[dict[str, Any]]) -> str:
       const slice = items.slice((page - 1) * perPage, page * perPage);
       listNode.innerHTML = '';
       slice.forEach((item) => {{
+        // Look up standalone article page via stable keys
+        let articleSlug = null;
+        for (const key of ['article_identity', 'merge_key', 'id']) {{
+          const k = item[key];
+          if (k && articleMapping[k]) {{
+            articleSlug = articleMapping[k];
+            break;
+          }}
+        }}
+        const articleUrl = articleSlug ? './articles/' + articleSlug + '.html' : null;
+        const headline = articleUrl
+          ? '<a href="' + articleUrl + '">' + item.headline_en + '</a>'
+          : item.headline_en;
         const article = document.createElement('article');
         article.className = 'card';
         article.innerHTML = `
           <div class="row"><span class="pill">${{item.category}}</span><time>${{formatTime(item.timestamp)}}</time></div>
-          <h2>${{item.headline_en}}</h2>
+          <h2>${{headline}}</h2>
           <p>${{item.summary_en}}</p>
-          <div class="row"><span>${{item.source_name}}</span><a href="${{item.target_url}}">Source</a></div>
+          <div class="row"><span>${{item.source_name}}</span><a href="${{item.target_url || item.source_url || '#'}}">Source</a></div>
         `;
         listNode.appendChild(article);
       }});
@@ -1141,16 +1292,25 @@ def main() -> int:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     previous_latest_generated_at = read_previous_latest_generated_at()
+    previous_latest_items = read_previous_latest_items()
     existing_content = read_existing_content()
     events = read_events()
     archive_items = build_archive_items(events, existing_content)
     archive_items = _english_only(archive_items)
-    latest_items = build_homepage_items(archive_items, args.limit, previous_latest_generated_at)
+    latest_items = build_homepage_items(archive_items, args.limit, previous_latest_generated_at, previous_latest_items)
+
+    ARTICLE_MAPPING_FILE = ARTICLES_DIR / "article-mapping.json"
+    article_mapping: dict[str, str] = {}
+    if ARTICLE_MAPPING_FILE.exists():
+        try:
+            article_mapping = json.loads(ARTICLE_MAPPING_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            article_mapping = {}
 
     (DATA_DIR / "latest.json").write_text(json.dumps({"generated_at": utc_now(), "item_count": len(latest_items), "items": latest_items}, ensure_ascii=False, indent=2), encoding="utf-8")
     (DATA_DIR / "archive.json").write_text(json.dumps({"generated_at": utc_now(), "item_count": len(archive_items), "items": archive_items}, ensure_ascii=False, indent=2), encoding="utf-8")
-    (SITE_DIR / "index.html").write_text(render_index(latest_items), encoding="utf-8")
-    (SITE_DIR / "history.html").write_text(render_history(archive_items), encoding="utf-8")
+    (SITE_DIR / "index.html").write_text(render_index(latest_items, article_mapping), encoding="utf-8")
+    (SITE_DIR / "history.html").write_text(render_history(archive_items, article_mapping), encoding="utf-8")
     print(f"Published {len(latest_items)} homepage item(s) and {len(archive_items)} archive item(s) to {SITE_DIR}.")
     return 0
 
