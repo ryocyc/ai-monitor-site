@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T08:23:27+00:00",
+  "generated_at": "2026-04-23T08:39:12+00:00",
   "item_count": 10,
   "items": [
     {
@@ -185,8 +185,8 @@
       "effective_url": "https://bailian.console.aliyun.com/pricing",
       "target_url": "https://bailian.console.aliyun.com/pricing",
       "category": "update",
-      "headline_en": "Alibaba Bailian Pricing Page Unavailable",
-      "summary_en": "The Alibaba Bailian (百炼) model platform pricing page is currently showing a loading error. Pricing details are temporarily inaccessible.",
+      "headline_en": "Alibaba Bailian Pricing Page Temporarily Unavailable",
+      "summary_en": "The Alibaba Bailian (百炼) model platform pricing page is currently showing a loading error. Pricing details for the console are temporarily inaccessible.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "大模型服务平台百炼控制台 Loading...",
@@ -208,7 +208,7 @@
       "target_url": "https://replicate.com/changelog",
       "category": "changelog",
       "headline_en": "Replicate Launches Agent Skills for Coding Assistants",
-      "summary_en": "Replicate released Agent Skills — markdown instruction files that give coding assistants expert knowledge on model discovery, comparison, API execution, and optimized prompting for image and video generation. Supports Claude Code, OpenCode, and OpenAI Codex. Install with `npx skills add replicate/skills`.",
+      "summary_en": "Replicate released Agent Skills — markdown instruction files that give coding assistants expert knowledge on model discovery, comparison, API execution, and prompting techniques for image and video generation. Compatible with Claude Code, OpenCode, and OpenAI Codex. Install via `npx skills add replicate/skills`.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "Changelog RSS Atom li]:pb-8\"> Agent skills for Replicate April 21, 2026 Replicate now publishes agent skills , a collection of markdown instruction files that give coding assistants expert knowledge about working with AI models on Replicate. Skills cover model discovery, comparison, and execution via the API, along with detailed prompting techniques for image generation and video generation models. They follow the open Agent Skills spec and work with Claude Code, OpenCode, OpenAI Codex, and other compatible tools. Install Copy npx skills add replicate/skills This installs all of Replicate’s skills into your project and configures them for your coding assistant automatically. Skills and MCP Skills are complementary to Replicate’s MCP server . MCP gives your coding assistant API tools. Sk...",

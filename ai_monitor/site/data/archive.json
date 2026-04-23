@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-23T08:23:27+00:00",
+  "generated_at": "2026-04-23T08:39:12+00:00",
   "item_count": 100,
   "items": [
     {
-      "timestamp": "2026-04-23T08:09:34+00:00",
+      "timestamp": "2026-04-23T08:24:32+00:00",
       "source_name": "MiniMax System Status",
       "source_url": "https://status.minimax.io/",
       "effective_url": "https://status.minimax.io/",
@@ -25,7 +25,7 @@
       "needs_cc_refresh": false
     },
     {
-      "timestamp": "2026-04-23T08:09:28+00:00",
+      "timestamp": "2026-04-23T08:24:27+00:00",
       "source_name": "Moonshot System Status",
       "source_url": "https://status.moonshot.cn/",
       "effective_url": "https://status.moonshot.cn/",
@@ -44,6 +44,28 @@
       "merge_key": "update||moonshot system status||moonshot ai status subscribe to updates subscribe x get email notifications whenever moonshot ai creates updates or resolves an incident email address enter otp resend otp in secon",
       "id": "evt-0a5d259ae78d149ed30e",
       "content_fingerprint": "moonshot ai status subscribe to updates subscribe x get email notifications whenever moonshot ai creates updates or resolves an incident email address enter otp resend otp in seconds didn t receive the otp resend otp this site is protected by recaptcha and the google privacy policy and terms of service apply get incident updates and maintenance status messages in slack subscribe via slack by subscribing you agree to the atlassian cloud terms of service and acknowledge atlassian s privacy policy get incident updates and maintenance status messages in microsoft teams channel channel s webhook ur",
+      "needs_cc_refresh": false
+    },
+    {
+      "timestamp": "2026-04-23T08:24:14+00:00",
+      "source_name": "Hugging Face Changelog",
+      "source_url": "https://huggingface.co/changelog",
+      "effective_url": "https://huggingface.co/changelog",
+      "target_url": "https://huggingface.co/changelog",
+      "category": "update",
+      "headline_en": "Hugging Face Changelog",
+      "summary_en": "Changelog Keep track of latest changes on the Hugging Face Hub Apr 17, 26 Upvote 100 +95 Apr 17, 26 Spaces agents.md for your coding agents Upvote 100 +95 Every Gradio Space now auto-serves an /agents.md endpoint, a machine-readable API descriptio...",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "Changelog Keep track of latest changes on the Hugging Face Hub Apr 17, 26 Upvote 100 +95 Apr 17, 26 Spaces agents.md for your coding agents Upvote 100 +95 Every Gradio Space now auto-serves an /agents.md endpoint, a machine-readable API description that AI agents can read and call directly. Point your coding agents (like Claude Code, Codex, or Pi) at it and they figure out how to use the Space without any setup. Read the documentation to learn more. Apr 15, 26 Upvote 143 +138 Apr 15, 26 Introducing Kernels Upvote 143 +138 Kernels repositories provide an easy way to use kernels: precompiled, optimized for your exact hardware and PyTorch version, ready for torch.compile, and yields 1.7–2.5× speed-ups over baseline PyTorch. You can now browse and load Kernels from the Kernels Hub . Apr 10,...",
+      "article_identity": "hugging-face-changelog-hugging-face-changel",
+      "target_title": "Changelog - Hugging Face",
+      "target_summary": "Apr 17, 26 Spaces agents.md for your coding agents Upvote 100 +95 Every Gradio Space now auto-serves an /agents.md endpoint, a machine-readable API description that AI agents can read and call directly. Point your coding agents (like Claude Code, Codex, or...",
+      "target_excerpt": "Apr 17, 26 Spaces agents.md for your coding agents Upvote 100 +95 Every Gradio Space now auto-serves an /agents.md endpoint, a machine-readable API description that AI agents can read and call directly. Point your coding agents (like Claude Code, Codex, or Pi) at it and they figure out how to use the Space without any setup. Read the documentation to learn more.",
+      "status": "auto-published-demo",
+      "merge_key": "update||hugging face changelog||changelog keep track of latest changes on the hugging face hub apr 17 26 upvote 100 95 apr 17 26 spaces agents md for your coding agents upvote 100 95 every gradio space now auto s",
+      "id": "evt-495a473961e3ace9eeb3",
+      "content_fingerprint": "changelog keep track of latest changes on the hugging face hub apr 17 26 upvote 100 95 apr 17 26 spaces agents md for your coding agents upvote 100 95 every gradio space now auto serves an agents md endpoint a machine readable api description that ai agents can read and call directly point your coding agents like claude code codex or pi at it and they figure out how to use the space without any setup read the documentation to learn more apr 15 26 upvote 143 138 apr 15 26 introducing kernels upvote 143 138 kernels repositories provide an easy way to use kernels precompiled optimized for your ex",
       "needs_cc_refresh": false
     },
     {
@@ -110,28 +132,6 @@
       "merge_key": "release||github vllm releases||https://github.com/vllm-project/vllm/releases.atom",
       "id": "evt-c256cddaf92a25093af3",
       "content_fingerprint": "title v0 20 0 updated 2026 04 23t07 52 32z content build switch default cuda to 13 0 update cuda architecture lists vllm release feed now shows v0 20 0 the monitored release feed for vllm changed and the newest visible tag is v0 20 0 this looks like a release level update rather than a cosmetic page edit",
-      "needs_cc_refresh": false
-    },
-    {
-      "timestamp": "2026-04-23T07:55:13+00:00",
-      "source_name": "Hugging Face Changelog",
-      "source_url": "https://huggingface.co/changelog",
-      "effective_url": "https://huggingface.co/changelog",
-      "target_url": "https://huggingface.co/changelog",
-      "category": "update",
-      "headline_en": "Hugging Face Changelog",
-      "summary_en": "Changelog Keep track of latest changes on the Hugging Face Hub Apr 17, 26 Upvote 99 +94 Apr 17, 26 Spaces agents.md for your coding agents Upvote 99 +94 Every Gradio Space now auto-serves an /agents.md endpoint, a machine-readable API description...",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "Changelog Keep track of latest changes on the Hugging Face Hub Apr 17, 26 Upvote 99 +94 Apr 17, 26 Spaces agents.md for your coding agents Upvote 99 +94 Every Gradio Space now auto-serves an /agents.md endpoint, a machine-readable API description that AI agents can read and call directly. Point your coding agents (like Claude Code, Codex, or Pi) at it and they figure out how to use the Space without any setup. Read the documentation to learn more. Apr 15, 26 Upvote 143 +138 Apr 15, 26 Introducing Kernels Upvote 143 +138 Kernels repositories provide an easy way to use kernels: precompiled, optimized for your exact hardware and PyTorch version, ready for torch.compile, and yields 1.7–2.5× speed-ups over baseline PyTorch. You can now browse and load Kernels from the Kernels Hub . Apr 10, 2...",
-      "article_identity": "hugging-face-changelog-hugging-face-changel",
-      "target_title": "Changelog - Hugging Face",
-      "target_summary": "Apr 17, 26 Spaces agents.md for your coding agents Upvote 99 +94 Every Gradio Space now auto-serves an /agents.md endpoint, a machine-readable API description that AI agents can read and call directly. Point your coding agents (like Claude Code, Codex, or P...",
-      "target_excerpt": "Apr 17, 26 Spaces agents.md for your coding agents Upvote 99 +94 Every Gradio Space now auto-serves an /agents.md endpoint, a machine-readable API description that AI agents can read and call directly. Point your coding agents (like Claude Code, Codex, or Pi) at it and they figure out how to use the Space without any setup. Read the documentation to learn more.",
-      "status": "auto-published-demo",
-      "merge_key": "update||hugging face changelog||changelog keep track of latest changes on the hugging face hub apr 17 26 upvote 99 94 apr 17 26 spaces agents md for your coding agents upvote 99 94 every gradio space now auto ser",
-      "id": "evt-54bbb59ace8bab40b70d",
-      "content_fingerprint": "changelog keep track of latest changes on the hugging face hub apr 17 26 upvote 99 94 apr 17 26 spaces agents md for your coding agents upvote 99 94 every gradio space now auto serves an agents md endpoint a machine readable api description that ai agents can read and call directly point your coding agents like claude code codex or pi at it and they figure out how to use the space without any setup read the documentation to learn more apr 15 26 upvote 143 138 apr 15 26 introducing kernels upvote 143 138 kernels repositories provide an easy way to use kernels precompiled optimized for your exac",
       "needs_cc_refresh": false
     },
     {
@@ -779,8 +779,8 @@
       "effective_url": "https://bailian.console.aliyun.com/pricing",
       "target_url": "https://bailian.console.aliyun.com/pricing",
       "category": "update",
-      "headline_en": "Alibaba Bailian Pricing Page Unavailable",
-      "summary_en": "The Alibaba Bailian (百炼) model platform pricing page is currently showing a loading error. Pricing details are temporarily inaccessible.",
+      "headline_en": "Alibaba Bailian Pricing Page Temporarily Unavailable",
+      "summary_en": "The Alibaba Bailian (百炼) model platform pricing page is currently showing a loading error. Pricing details for the console are temporarily inaccessible.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "大模型服务平台百炼控制台 Loading...",
@@ -802,7 +802,7 @@
       "target_url": "https://replicate.com/changelog",
       "category": "changelog",
       "headline_en": "Replicate Launches Agent Skills for Coding Assistants",
-      "summary_en": "Replicate released Agent Skills — markdown instruction files that give coding assistants expert knowledge on model discovery, comparison, API execution, and optimized prompting for image and video generation. Supports Claude Code, OpenCode, and OpenAI Codex. Install with `npx skills add replicate/skills`.",
+      "summary_en": "Replicate released Agent Skills — markdown instruction files that give coding assistants expert knowledge on model discovery, comparison, API execution, and prompting techniques for image and video generation. Compatible with Claude Code, OpenCode, and OpenAI Codex. Install via `npx skills add replicate/skills`.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "Changelog RSS Atom li]:pb-8\"> Agent skills for Replicate April 21, 2026 Replicate now publishes agent skills , a collection of markdown instruction files that give coding assistants expert knowledge about working with AI models on Replicate. Skills cover model discovery, comparison, and execution via the API, along with detailed prompting techniques for image generation and video generation models. They follow the open Agent Skills spec and work with Claude Code, OpenCode, OpenAI Codex, and other compatible tools. Install Copy npx skills add replicate/skills This installs all of Replicate’s skills into your project and configures them for your coding assistant automatically. Skills and MCP Skills are complementary to Replicate’s MCP server . MCP gives your coding assistant API tools. Sk...",
