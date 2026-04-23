@@ -18,6 +18,8 @@
     h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 5vw, 4.6rem); line-height: 0.94; letter-spacing: -0.04em; max-width: 860px; }
     .sub { margin: 0; max-width: 760px; color: var(--muted); font-size: 1.02rem; line-height: 1.55; }
     .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 26px; color: var(--muted); }
+    .filters { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 22px; color: var(--muted); }
+    .filters select { padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: white; color: var(--ink); }
     .list { display: grid; gap: 18px; }
     .card { display: grid; gap: 14px; padding: 22px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }
     .card-top, .card-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--muted); font-size: 0.86rem; }
@@ -35,105 +37,112 @@
       <p class="sub">This homepage is built from monitored source changes and shows only English while the homepage quality filter is being stabilized.</p>
     </section>
     <section class="toolbar">
-      <div>Last built: 2026-04-23T05:35:11+00:00 - Showing 10 items</div>
+      <div>Last built: 2026-04-23 05:52 UTC - Showing 10 items</div>
+    </section>
+    <section class="filters">
+      <label for="homepage-category">Category</label>
+      <select id="homepage-category">
+        <option value="">All categories</option>
+      </select>
+      <span id="homepage-count">10 items</span>
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
-            <article class="card">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time>2026-04-23T05:20:53+00:00</time>
-              </div>
-              <h2 class="headline">OpenAI Makes ChatGPT Free for Clinicians, Launches Workspace Agents</h2>
-              <p class="summary">OpenAI rolled out two updates on April 22: ChatGPT is now free for clinicians, and workspace agents have been introduced in ChatGPT to assist with team workflows.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/index/making-chatgpt-better-for-clinicians">Source</a>
-              </div>
-            </article>
-            
-            <article class="card">
+            <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
-                <time>2026-04-23T05:11:36+00:00</time>
+                <time>2026-04-23 05:36 UTC</time>
               </div>
-              <h2 class="headline">last30days-skill v3.1.0 Adds X Search Backend, Competitor Auto-Discovery, and @/u Handle Attribution</h2>
-              <p class="summary">v3.1.0 consolidates releases v3.0.10–3.0.14 and adds a new xurl CLI as an alternative X search backend, a --competitors flag for auto-discovered comparison fan-out, @ and u/ handle attribution in evidence lines, configurable memory directory for Codex, and improved subreddit expansion.</p>
+              <h2 class="headline">OpenAI Codex Rust SDK Updated to v0.124.0-alpha.2</h2>
+              <p class="summary">A new Rust SDK release tag (v0.124.0-alpha.2) was published on the Codex GitHub releases page on 2026-04-23.</p>
               <div class="card-bottom">
-                <span>GitHub last30days-skill Releases</span>
-                <a href="https://github.com/mvanhorn/last30days-skill/releases/tag/v3.1.0">Source</a>
+                <span>GitHub Codex Releases</span>
+                <a href="https://github.com/openai/codex/releases/tag/rust-v0.124.0-alpha.2">Source</a>
               </div>
             </article>
             
-            <article class="card">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time>2026-04-23T04:49:51+00:00</time>
-              </div>
-              <h2 class="headline">OpenAI Releases GPT Image 2 with Flexible Sizing, Token Pricing, and 50% Batch Discount</h2>
-              <p class="summary">GPT Image 2 is a new image generation and editing model supporting flexible output sizes, high-fidelity input, and token-based pricing. The Batch API offers a 50% discount. The Agents SDK also gained controlled sandbox execution, customizable test harnesses, and memory control.</p>
-              <div class="card-bottom">
-                <span>OpenAI API Changelog</span>
-                <a href="https://platform.openai.com/docs/models/gpt-5.2">Source</a>
-              </div>
-            </article>
-            
-            <article class="card">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time>2026-04-23T04:39:40+00:00</time>
-              </div>
-              <h2 class="headline">Moonshot AI Upgrades Kimi to K2.6 with Better Coding and Smarter Agent Tools</h2>
-              <p class="summary">Moonshot AI updated Kimi to K2.6, bringing improved coding performance and smarter AI agent capabilities including Kimi Code, Kimi Claw, Agent Swarm, and Deep Research.</p>
-              <div class="card-bottom">
-                <span>Kimi Pricing</span>
-                <a href="https://kimi.moonshot.cn/docs/price">Source</a>
-              </div>
-            </article>
-            
-            <article class="card">
+            <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
-                <time>2026-04-23T04:39:05+00:00</time>
+                <time>2026-04-23 05:35 UTC</time>
               </div>
               <h2 class="headline">NVIDIA Open-Sources Isaac GR00T N1.7, a Reasoning-Enabled VLA Model for Humanoid Robots</h2>
-              <p class="summary">NVIDIA open-sourced Isaac GR00T N1.7, a Vision-Language-Action model designed for humanoid robots with reasoning capabilities, available on Hugging Face.</p>
+              <p class="summary">NVIDIA open-sourced Isaac GR00T N1.7, a Vision-Language-Action model designed for humanoid robots with reasoning capabilities, on Hugging Face.</p>
               <div class="card-bottom">
                 <span>Hugging Face Blog</span>
                 <a href="https://huggingface.co/blog/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots">Source</a>
               </div>
             </article>
             
-            <article class="card">
+            <article class="card" data-category="news">
               <div class="card-top">
-                <span class="pill">release</span>
-                <time>2026-04-23T02:47:15+00:00</time>
+                <span class="pill">news</span>
+                <time>2026-04-23 05:20 UTC</time>
               </div>
-              <h2 class="headline">OpenAI Codex v0.123.0 Adds Amazon Bedrock Provider, /mcp Verbose Mode, and Plugin Loading Fixes</h2>
-              <p class="summary">Codex v0.123.0 adds a built-in Amazon Bedrock model provider with configurable AWS profiles, a new /mcp verbose command for full MCP diagnostics, and improved .mcp.json plugin loading for background agents.</p>
+              <h2 class="headline">OpenAI Offers ChatGPT Free for Clinicians, Launches Workspace Agents</h2>
+              <p class="summary">OpenAI announced on April 22 that ChatGPT is now free for clinicians and introduced workspace agents in ChatGPT to support team workflows.</p>
               <div class="card-bottom">
-                <span>GitHub Codex Releases</span>
-                <a href="https://github.com/openai/codex/releases.atom">Source</a>
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/making-chatgpt-better-for-clinicians">Source</a>
               </div>
             </article>
             
-            <article class="card">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time>2026-04-23 05:11 UTC</time>
+              </div>
+              <h2 class="headline">last30days-skill v3.1.0 Adds X Search Backend and Competitor Auto-Discovery</h2>
+              <p class="summary">v3.1.0 consolidates releases v3.0.10–3.0.14 and adds an xurl CLI as an alternative X search backend (official API v2 via OAuth2), a --competitors flag for auto-discovered comparison fan-out, @/u handle attribution in evidence lines, configurable memory directory for Codex, and improved subreddit expansion.</p>
+              <div class="card-bottom">
+                <span>GitHub last30days-skill Releases</span>
+                <a href="https://github.com/mvanhorn/last30days-skill/releases/tag/v3.1.0">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-23 04:49 UTC</time>
+              </div>
+              <h2 class="headline">OpenAI API Changelog Updated with GPT Image 2</h2>
+              <p class="summary">The OpenAI API changelog page was updated, featuring GPT Image 2 with flexible output sizing, high-fidelity input support, and token-based pricing. The Batch API offers a 50% discount, and the Agents SDK gains controlled sandbox execution, customizable test harnesses, and memory control.</p>
+              <div class="card-bottom">
+                <span>OpenAI API Changelog</span>
+                <a href="https://platform.openai.com/docs/models/gpt-5.2">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="update">
               <div class="card-top">
                 <span class="pill">update</span>
-                <time>2026-04-23T01:58:52+00:00</time>
+                <time>2026-04-23 04:39 UTC</time>
               </div>
-              <h2 class="headline">Cricket Australia Uses Microsoft AI Insights to Improve Fan Experience</h2>
-              <p class="summary">Microsoft AI Blog highlights how Cricket Australia uses AI Insights to bring fans closer to the action.</p>
+              <h2 class="headline">Moonshot AI Upgrades Kimi to K2.6 with Improved Coding and Smarter Agent Tools</h2>
+              <p class="summary">Moonshot AI updated Kimi to K2.6, featuring improved coding performance, smarter AI agent capabilities (Kimi Code, Kimi Claw, Agent Swarm, and Deep Research), and a revamped platform interface.</p>
+              <div class="card-bottom">
+                <span>Kimi Pricing</span>
+                <a href="https://kimi.moonshot.cn/docs/price">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="update">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time>2026-04-23 01:58 UTC</time>
+              </div>
+              <h2 class="headline">Cricket Australia Leverages Microsoft AI Insights to Enhance Fan Engagement</h2>
+              <p class="summary">Microsoft AI Blog features how Cricket Australia uses AI Insights to improve the fan experience during live matches.</p>
               <div class="card-bottom">
                 <span>Microsoft AI Blog</span>
                 <a href="https://blogs.microsoft.com/ai/">Source</a>
               </div>
             </article>
             
-            <article class="card">
+            <article class="card" data-category="update">
               <div class="card-top">
                 <span class="pill">update</span>
-                <time>2026-04-22T23:49:48+00:00</time>
+                <time>2026-04-22 23:49 UTC</time>
               </div>
               <h2 class="headline">MiniMax Launches Music 2.6 with Cover Feature and M2.7 Self-Improving Agent Model</h2>
               <p class="summary">MiniMax released Music 2.6 with a new Cover feature featuring deeper bass and richer instrumentation. M2.7 enables recursive self-improvement for models with significant practical capability gains over M2.5, alongside an Agent harness for production-grade coding and complex office task support.</p>
@@ -143,26 +152,26 @@
               </div>
             </article>
             
-            <article class="card">
+            <article class="card" data-category="update">
               <div class="card-top">
                 <span class="pill">update</span>
-                <time>2026-04-22T23:49:35+00:00</time>
+                <time>2026-04-22 23:49 UTC</time>
               </div>
-              <h2 class="headline">Alibaba Bailian Pricing Page Unavailable</h2>
-              <p class="summary">The Alibaba Bailian（百煉）model pricing page could not be loaded. Pricing information is currently inaccessible.</p>
+              <h2 class="headline">Alibaba Bailian Pricing Page Failed to Load</h2>
+              <p class="summary">The Alibaba Bailian（百煉）model pricing page returned a loading error. Pricing information is currently inaccessible.</p>
               <div class="card-bottom">
                 <span>Alibaba Model Studio Pricing</span>
                 <a href="https://bailian.console.aliyun.com/pricing">Source</a>
               </div>
             </article>
             
-            <article class="card">
+            <article class="card" data-category="changelog">
               <div class="card-top">
                 <span class="pill">changelog</span>
-                <time>2026-04-22T23:49:34+00:00</time>
+                <time>2026-04-22 23:49 UTC</time>
               </div>
-              <h2 class="headline">Replicate Launches Agent Skills for Claude Code, Codex, and Other Coding Assistants</h2>
-              <p class="summary">Replicate published Agent Skills — markdown instruction files that equip coding assistants with expert knowledge on model discovery, comparison, API execution, and prompting for image and video generation. Built on the open Agent Skills spec, they integrate with Claude Code, OpenCode, OpenAI Codex, and compatible tools via `npx skills add replicate/skills`. Skills complement Replicate&#x27;s MCP server by providing usage guidance alongside API tools.</p>
+              <h2 class="headline">Replicate Releases Agent Skills for Claude Code, Codex, and Other Coding Assistants</h2>
+              <p class="summary">Replicate published Agent Skills — markdown instruction files that let coding assistants discover, compare, and call models via API, plus detailed prompting guides for image and video generation. Install with npx skills add replicate/skills. Compatible with Claude Code, OpenCode, OpenAI Codex, and other tools supporting the open Agent Skills spec. They complement Replicate&#x27;s MCP server, which provides API tools, by teaching assistants how to use those tools effectively.</p>
               <div class="card-bottom">
                 <span>Replicate Changelog</span>
                 <a href="https://replicate.com/changelog">Source</a>
@@ -170,5 +179,32 @@
             </article>
             </section>
   </main>
+  <script>
+    const homepageCategorySelect = document.getElementById('homepage-category');
+    const homepageCountNode = document.getElementById('homepage-count');
+    const homepageCards = Array.from(document.querySelectorAll('.card'));
+    const homepageCategories = [...new Set(homepageCards.map((card) => card.dataset.category).filter(Boolean))].sort();
+
+    homepageCategories.forEach((category) => {
+      const option = document.createElement('option');
+      option.value = category;
+      option.textContent = category;
+      homepageCategorySelect.appendChild(option);
+    });
+
+    function renderHomepageFilter() {
+      const selected = homepageCategorySelect.value;
+      let visible = 0;
+      homepageCards.forEach((card) => {
+        const show = !selected || card.dataset.category === selected;
+        card.style.display = show ? '' : 'none';
+        if (show) visible += 1;
+      });
+      homepageCountNode.textContent = `${visible} item${visible === 1 ? '' : 's'}`;
+    }
+
+    homepageCategorySelect.addEventListener('change', renderHomepageFilter);
+    renderHomepageFilter();
+  </script>
 </body>
 </html>
