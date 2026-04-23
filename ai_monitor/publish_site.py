@@ -26,7 +26,7 @@ from source_parse_helpers import (
     extract_generic,
     make_safe_identity,
 )
-from quality_gates import QualityGate, score_content_specificity
+from quality_gates import QualityGate, score_content_specificity, classify_source_type
 
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
@@ -201,6 +201,91 @@ def _is_homepage_dirty(item: dict[str, Any]) -> bool:
     return _GATE.should_demote_to_archive(item)[0]
 
 
+def _headline_is_generic(headline: str, source_name: str) -> bool:
+    headline = (headline or "").strip()
+    if not headline:
+        return True
+    if headline.lower() == (source_name or "").lower():
+        return True
+    return any(pattern.search(headline) for pattern in GENERIC_HOMEPAGE_HEADLINE_PATTERNS)
+
+
+def _summary_is_generic(summary: str) -> bool:
+    summary = (summary or "").strip()
+    if not summary:
+        return True
+    return any(pattern.search(summary) for pattern in GENERIC_HOMEPAGE_SUMMARY_PATTERNS)
+
+
+def _has_specific_signal(text: str) -> bool:
+    text = text or ""
+    return any(pattern.search(text) for pattern in SPECIFIC_SIGNAL_PATTERNS)
+
+
+def _entry_point_only(item: dict[str, Any]) -> bool:
+    target_url = (item.get("target_url") or "").strip().rstrip("/")
+    source_url = (item.get("source_url") or "").strip().rstrip("/")
+    if not target_url:
+        return True
+    if target_url == source_url:
+        return True
+    source_type = classify_source_type(item.get("source_name", ""), item.get("source_url", "") or "")
+    return source_type in {"homepage", "status", "github_org"}
+
+
+def _homepage_qualifies(item: dict[str, Any]) -> bool:
+    if _is_homepage_dirty(item):
+        return False
+
+    source_name = item.get("source_name", "")
+    headline = item.get("headline_en", "")
+    summary = item.get("summary_en", "")
+    article_identity = (item.get("article_identity") or "").strip()
+    combined = " ".join([headline, summary, article_identity])
+    source_type = classify_source_type(source_name, item.get("source_url", "") or "")
+    entry_point = _entry_point_only(item)
+
+    if source_name.endswith("System Status"):
+        return False
+
+    if source_name.endswith(" Home") and entry_point:
+        return False
+
+    if source_name == "OpenAI Newsroom" and _headline_is_generic(headline, source_name):
+        return False
+
+    if source_name.endswith("Releases"):
+        if _headline_is_generic(headline, source_name):
+            return False
+        if item.get("target_url", "").endswith("releases.atom") and not _has_specific_signal(combined):
+            return False
+
+    if source_type == "docs_api" and entry_point:
+        return False
+
+    if source_type in {"pricing", "changelog", "docs_api", "news_blog", "homepage"}:
+        if entry_point and _headline_is_generic(headline, source_name):
+            return False
+        if entry_point and _summary_is_generic(summary) and not _has_specific_signal(combined):
+            return False
+
+    if not article_identity or len(article_identity) > 80 or article_identity.endswith("-update-detected"):
+        if _headline_is_generic(headline, source_name):
+            return False
+
+    if source_type == "homepage" and entry_point:
+        return False
+
+    return True
+
+
+def _english_only(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    for item in items:
+        item["headline_zh"] = ""
+        item["summary_zh"] = ""
+    return items
+
+
 def is_garbled(text: str) -> bool:
     """
     Return True if text appears to be garbled/broken and should be
@@ -229,6 +314,33 @@ def safe_text(text_en: str, text_zh: str) -> str:
     if text_zh and not is_garbled(text_zh):
         return text_zh
     return text_en
+
+
+GENERIC_HOMEPAGE_HEADLINE_PATTERNS = (
+    re.compile(r"\bupdate detected\b", re.IGNORECASE),
+    re.compile(r"\bpage updated\b", re.IGNORECASE),
+    re.compile(r"\bhomepage updated\b", re.IGNORECASE),
+    re.compile(r"\brelease feed updated\b", re.IGNORECASE),
+    re.compile(r"\bdocs updated\b", re.IGNORECASE),
+)
+
+GENERIC_HOMEPAGE_SUMMARY_PATTERNS = (
+    re.compile(r"no specific .* currently available", re.IGNORECASE),
+    re.compile(r"open the target url to see details", re.IGNORECASE),
+    re.compile(r"page content changed", re.IGNORECASE),
+    re.compile(r"visible update appears to be", re.IGNORECASE),
+)
+
+SPECIFIC_SIGNAL_PATTERNS = (
+    re.compile(r"\bv?\d+\.\d+", re.IGNORECASE),
+    re.compile(r"\bgpt[- ]image\b", re.IGNORECASE),
+    re.compile(r"\bgrok[- ]?\d*", re.IGNORECASE),
+    re.compile(r"\bcodex\b", re.IGNORECASE),
+    re.compile(r"\badvanced\b", re.IGNORECASE),
+    re.compile(r"\benterprise\b", re.IGNORECASE),
+    re.compile(r"\bpro\b", re.IGNORECASE),
+    re.compile(r"\blaunch(es|ed)?\b", re.IGNORECASE),
+)
 
 
 def parse_feed_title(text: str) -> str | None:
@@ -498,16 +610,14 @@ def apply_existing_content(items: list[dict[str, Any]], existing_content: dict[s
             [
                 (existing.get("headline_en") or "").strip(),
                 (existing.get("summary_en") or "").strip(),
-                (existing.get("headline_zh") or "").strip(),
-                (existing.get("summary_zh") or "").strip(),
             ]
         )
         similarity = fingerprint_similarity(previous_fingerprint, current_fingerprint)
         needs_refresh = not has_complete_cached_copy or similarity < 0.72
         item["headline_en"] = existing.get("headline_en", item["headline_en"]) or item["headline_en"]
         item["summary_en"] = existing.get("summary_en", item["summary_en"]) or item["summary_en"]
-        item["headline_zh"] = existing.get("headline_zh", item["headline_zh"])
-        item["summary_zh"] = existing.get("summary_zh", item["summary_zh"])
+        item["headline_zh"] = ""
+        item["summary_zh"] = ""
         item["target_title"] = existing.get("target_title", item.get("target_title", ""))
         item["target_summary"] = existing.get("target_summary", item.get("target_summary", ""))
         item["target_excerpt"] = existing.get("target_excerpt", item.get("target_excerpt", ""))
@@ -718,19 +828,20 @@ def pick_top_items(events: list[dict[str, Any]], limit: int, existing_content: d
     return apply_existing_content(items, existing_content)
 
 
-def build_homepage_items(events: list[dict[str, Any]], limit: int, existing_content: dict[str, dict[str, dict[str, str]]]) -> list[dict[str, Any]]:
-    """
-    Build homepage items with a WHITELIST approach:
-    1. Build all candidate items
-    2. Filter out dirty items FIRST (before any size limit)
-    3. Sort by timestamp and take up to `limit` clean items
-
-    This ensures no dirty items sneak in because we ran out of slots.
-    """
-    all_items = pick_top_items(events, 200, existing_content)  # over-fetch candidates
-    clean_items = [item for item in all_items if not _is_homepage_dirty(item)]
-    clean_items.sort(key=lambda item: item["timestamp"], reverse=True)
-    return clean_items[:limit]
+def build_homepage_items(archive_items: list[dict[str, Any]], limit: int) -> list[dict[str, Any]]:
+    clean_items: list[dict[str, Any]] = []
+    seen_sources: set[str] = set()
+    for item in sorted(archive_items, key=lambda item: item["timestamp"], reverse=True):
+        if not _homepage_qualifies(item):
+            continue
+        source_name = item.get("source_name", "")
+        if source_name in seen_sources:
+            continue
+        seen_sources.add(source_name)
+        clean_items.append(item)
+        if len(clean_items) >= limit:
+            break
+    return _english_only(clean_items)
 
 
 def render_index(items: list[dict[str, Any]]) -> str:
@@ -743,8 +854,8 @@ def render_index(items: list[dict[str, Any]]) -> str:
                 <span class="pill">{html.escape(item["category"])}</span>
                 <time>{html.escape(item["timestamp"])}</time>
               </div>
-              <h2 class="headline" data-en="{html.escape(item['headline_en'])}" data-zh="{html.escape(safe_text(item['summary_en'], item['headline_zh']))}">{html.escape(item["headline_en"])}</h2>
-              <p class="summary" data-en="{html.escape(item['summary_en'])}" data-zh="{html.escape(safe_text(item['summary_en'], item['summary_zh']))}">{html.escape(item["summary_en"])}</p>
+              <h2 class="headline">{html.escape(item["headline_en"])}</h2>
+              <p class="summary">{html.escape(item["summary_en"])}</p>
               <div class="card-bottom">
                 <span>{html.escape(item["source_name"])}</span>
                 <a href="{html.escape(item["target_url"])}">Source</a>
@@ -774,9 +885,6 @@ def render_index(items: list[dict[str, Any]]) -> str:
     h1 {{ margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 5vw, 4.6rem); line-height: 0.94; letter-spacing: -0.04em; max-width: 860px; }}
     .sub {{ margin: 0; max-width: 760px; color: var(--muted); font-size: 1.02rem; line-height: 1.55; }}
     .toolbar {{ display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 26px; color: var(--muted); }}
-    .lang-picker {{ display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.7); border: 1px solid var(--border); border-radius: 14px; padding: 8px 12px; box-shadow: var(--shadow); }}
-    .lang-picker label {{ color: var(--muted); font-size: 0.9rem; font-weight: 700; }}
-    .lang-picker select {{ border: 0; background: transparent; color: var(--ink); font-weight: 700; font-size: 0.95rem; outline: none; cursor: pointer; }}
     .list {{ display: grid; gap: 18px; }}
     .card {{ display: grid; gap: 14px; padding: 22px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }}
     .card-top, .card-bottom {{ display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--muted); font-size: 0.86rem; }}
@@ -791,28 +899,14 @@ def render_index(items: list[dict[str, Any]]) -> str:
     <section class="hero">
       <span class="eyebrow">AI Signal Feed</span>
       <h1>10 readable AI updates.</h1>
-      <p class="sub">This homepage is built from monitored source changes and uses cached content fields when Claude has already rewritten them.</p>
+      <p class="sub">This homepage is built from monitored source changes and shows only English while the homepage quality filter is being stabilized.</p>
     </section>
     <section class="toolbar">
       <div>Last built: {html.escape(updated_at)} - Showing {len(items)} items</div>
-      <div class="lang-picker">
-        <label for="language-select">Language</label>
-        <select id="language-select"><option value="en">English</option><option value="zh">中文</option></select>
-      </div>
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">{''.join(cards)}</section>
   </main>
-  <script>
-    const languageSelect = document.getElementById('language-select');
-    const headlineNodes = Array.from(document.querySelectorAll('.headline'));
-    const summaryNodes = Array.from(document.querySelectorAll('.summary'));
-    function updateLanguage(lang) {{
-      headlineNodes.forEach((node) => {{ node.textContent = node.dataset[lang] || node.dataset.en; }});
-      summaryNodes.forEach((node) => {{ node.textContent = node.dataset[lang] || node.dataset.en; }});
-    }}
-    languageSelect.addEventListener('change', (event) => updateLanguage(event.target.value));
-  </script>
 </body>
 </html>
 """
@@ -857,7 +951,6 @@ def render_history(items: list[dict[str, Any]]) -> str:
       <div><a href="./index.html">Back to homepage</a></div>
     </div>
     <div class="filters">
-      <label>Language <select id="lang-select"><option value="en">English</option><option value="zh">中文</option></select></label>
       <label>Category <select id="category-filter"><option value="">All categories</option></select></label>
       <label>Source <select id="source-filter"><option value="">All sources</option></select></label>
     </div>
@@ -873,14 +966,12 @@ def render_history(items: list[dict[str, Any]]) -> str:
     const archive = JSON.parse(document.getElementById('archive-data').textContent);
     const perPage = 50;
     let page = 1;
-    let language = 'en';
     let categoryFilter = '';
     let sourceFilter = '';
     const listNode = document.getElementById('history-list');
     const pageState = document.getElementById('page-state');
     const prevButton = document.getElementById('prev-page');
     const nextButton = document.getElementById('next-page');
-    const langSelect = document.getElementById('lang-select');
     const categorySelect = document.getElementById('category-filter');
     const sourceSelect = document.getElementById('source-filter');
 
@@ -913,24 +1004,21 @@ def render_history(items: list[dict[str, Any]]) -> str:
       const slice = items.slice((page - 1) * perPage, page * perPage);
       listNode.innerHTML = '';
       slice.forEach((item) => {{
-        const headline = item['headline_' + language] || item.headline_en;
-        const summary = item['summary_' + language] || item.summary_en;
         const article = document.createElement('article');
         article.className = 'card';
         article.innerHTML = `
           <div class="row"><span class="pill">${{item.category}}</span><time>${{item.timestamp}}</time></div>
-          <h2>${{headline}}</h2>
-          <p>${{summary}}</p>
+          <h2>${{item.headline_en}}</h2>
+          <p>${{item.summary_en}}</p>
           <div class="row"><span>${{item.source_name}}</span><a href="${{item.target_url}}">Source</a></div>
         `;
         listNode.appendChild(article);
       }});
-      pageState.textContent = `Page ${{page}} / ${{totalPages}} · ${{items.length}} items`;
+      pageState.textContent = `Page ${{page}} / ${{totalPages}} - ${{items.length}} items`;
       prevButton.disabled = page <= 1;
       nextButton.disabled = page >= totalPages;
     }}
 
-    langSelect.addEventListener('change', (event) => {{ language = event.target.value; render(); }});
     categorySelect.addEventListener('change', (event) => {{ categoryFilter = event.target.value; page = 1; render(); }});
     sourceSelect.addEventListener('change', (event) => {{ sourceFilter = event.target.value; page = 1; render(); }});
     prevButton.addEventListener('click', () => {{ page = Math.max(1, page - 1); render(); }});
@@ -952,8 +1040,9 @@ def main() -> int:
 
     existing_content = read_existing_content()
     events = read_events()
-    latest_items = build_homepage_items(events, args.limit, existing_content)
     archive_items = build_archive_items(events, existing_content)
+    archive_items = _english_only(archive_items)
+    latest_items = build_homepage_items(archive_items, args.limit)
 
     (DATA_DIR / "latest.json").write_text(json.dumps({"generated_at": utc_now(), "item_count": len(latest_items), "items": latest_items}, ensure_ascii=False, indent=2), encoding="utf-8")
     (DATA_DIR / "archive.json").write_text(json.dumps({"generated_at": utc_now(), "item_count": len(archive_items), "items": archive_items}, ensure_ascii=False, indent=2), encoding="utf-8")
