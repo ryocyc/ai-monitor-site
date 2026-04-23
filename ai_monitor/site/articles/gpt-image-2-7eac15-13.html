@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPT-5.2 Model — OpenAI API Reference | AI Signal Articles</title>
+  <meta name="description" content="OpenAI revised the documentation page for its GPT-5.2 model on the developer platform, as tracked in the April 23, 2026 changelog.">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 22:44 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">docs</span>
+      <h1>OpenAI Updates GPT-5.2 Model Reference Page</h1>
+      <p class="standfirst">OpenAI revised the documentation page for its GPT-5.2 model on the developer platform, as tracked in the April 23, 2026 changelog.</p>
+      <div class="meta">
+        <span>OpenAI API Changelog</span>
+        <span>2026-04-23 18:54 UTC</span>
+        <span>Key: openai-api-changelog::identity::gpt-image-2</span>
+        <span>Confidence: weak</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>The GPT-5.2 model reference page on OpenAI&#x27;s developer platform has been updated. The page serves as the main documentation anchor for the model, sitting within a broad API docs structure that covers text and code generation, image and vision, structured outputs, function calling, the Responses API, and tool use.</p>
+<p>The docs hub that houses this page includes sections on reasoning models, realtime API, fine-tuning, deep research, embeddings, and more — reflecting a sprawling product surface. One notable cue in the navigation is a &#x27;Latest: GPT-5.4&#x27; link, implying GPT-5.2 is not the most recent release.</p>
+<p>The actual substantive content of the page — model specifications, capability descriptions, usage parameters — is not visible in the source text provided; what came through is primarily navigation chrome and section headings rather than a full content block. This makes it difficult to pin down what specifically changed in the revision beyond the existence of an update.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>The presence of a changelog entry confirms OpenAI actively maintains its model documentation in near-real-time.</li><li>Developers relying on accurate model specs need to check the live page, as the changelog signals the reference is current as of April 23, 2026.</li><li>The navigation structure hints at an expanding feature set — including agents, realtime capabilities, and fine-tuning — around the GPT-5.2 series, which developers integrating the model will want to be aware of.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>The source text consists almost entirely of navigation headings and page chrome. The changelog entry from April 23, 2026 confirms a revision occurred, but the specific changes to the GPT-5.2 model reference page are not discernible from the content captured here. Developers should consult the live page directly for any updated specifications or parameters.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://platform.openai.com/docs/models/gpt-5.2" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+</body>
+</html>
