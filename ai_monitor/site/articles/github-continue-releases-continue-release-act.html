@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Continue v0.19.x Fixes config.yaml Initialization; Adds Session History Filter | AI Signal Articles</title>
+  <meta name="description" content="v0.19.x fixes a bug where config.yaml was not properly created or populated on access. Also adds session history filtering by workspace. Multiple dev/pr...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta, .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="./index.html">Articles index</a> | <a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 07:57 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>Continue v0.19.x Fixes config.yaml Initialization; Adds Session History Filter</h1>
+      <p class="standfirst">v0.19.x fixes a bug where config.yaml was not properly created or populated on access. Also adds session history filtering by workspace. Multiple dev/production dependencies are updated across the CLI, core, and config-yaml packages.</p>
+      <div class="meta">
+        <span>GitHub Continue Releases | source https://github.com/continuedev/continue/releases.atom</span>
+        <span>2026-04-22 15:01 UTC</span>
+        <span>Slug: github-continue-releases-continue-release-act</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>What we can verify</h2>
+        <p>The monitored source currently surfaces: v0.19.x fixes a bug where config.yaml was not properly created or populated on access. Also adds session history filtering by workspace. Multiple dev/production dependencies are updated across the CLI, core, and config-yaml packages.</p>
+      </section>
+    
+
+      <section class="section">
+        <h2>Why it looks like a release update</h2>
+        <p>The page is grouped as release, so this prototype treats it as a release-style page. We are not inferring details beyond the snapshot.</p>
+      </section>
+    
+
+      <section class="section">
+        <h2>Evidence note</h2>
+        <p>Relevant excerpt: content=What&#x27;s Changed fix: ensure config.yaml exists and is populated when accessed by @RomneyDa in #11915 chore: jb-67-vs-38 by @RomneyDa in #11916 chore(deps-dev): bump happy-dom from 20.0.2 to 20.8.9 in /extensions/cli by @dependabot [bot] in #11910 chore(deps): bump handlebars from 4.7.8 to 4.7.9 in /core by @dependabot [bot] in #11911 chore(deps-dev): bump handlebars from 4.7.8 to 4.7.9 in /packages/llm-info...</p>
+      </section>
+    
+
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/continuedev/continue/releases.atom" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    
+    </section>
+    <div class="footer">
+      This is a rule-based prototype built from existing site data. It stays separate from the live monitor pipeline.
+    </div>
+  </main>
+</body>
+</html>
