@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Replicate Launches Agent Skills for AI Coding Assistants | AI Signal Articles</title>
+  <meta name="description" content="Replicate now offers markdown instruction files called agent skills that give coding assistants expert-level knowledge of its model catalog, API, and pr...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 18:56 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">changelog</span>
+      <h1>Replicate Publishes Agent Skills for Claude Code, Codex, and OpenCode</h1>
+      <p class="standfirst">Replicate now offers markdown instruction files called agent skills that give coding assistants expert-level knowledge of its model catalog, API, and prompting techniques.</p>
+      <div class="meta">
+        <span>Replicate Changelog</span>
+        <span>2026-04-22 23:49 UTC</span>
+        <span>Key: replicate-changelog::identity::replicate-update</span>
+        <span>Confidence: moderate</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>Replicate has published a collection of agent skills — markdown instruction files designed to give AI coding assistants specialized knowledge about working with its platform. The skills cover model discovery, model comparison, and API execution, along with detailed prompting guidance for image generation and video generation models. They follow the open Agent Skills spec and are compatible with Claude Code, OpenCode, OpenAI Codex, and other tools that support the spec.</p>
+<p>The skills are installed via a single npm command that pulls all available instructions into a project and configures them for the coding assistant automatically. Replicate positions the skills as a complement to its existing MCP server: while the MCP server provides the actual API tools, the skills supply the know-how to use those tools effectively — including which models to pick for a given task, how to write prompts for them, and what tradeoffs to expect.</p>
+<p>The changelog also notes several other recent additions to the platform, including a fallback model option for Nano Banana Pro that routes to ByteDance Seedream 5.0 lite when Google&#x27;s API is at capacity, and a filter on the predictions API to show only results created through the web interface. Replicate&#x27;s MCP server also gained automatic discoverability through the official MCP Registry, accessible via a standard /.well-known/mcp/server.json endpoint.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>Agent skills turn Replicate into a first-class partner for AI coding tools, reducing the trial-and-error needed to pick the right model or write effective prompts.</li><li>The open Agent Skills spec means these instructions are portable — developers using Claude Code, Codex, or OpenCode all benefit from the same curated knowledge.</li><li>Pairing MCP&#x27;s API tools with the new skills gives coding assistants a full stack of both capabilities and judgment, potentially automating more of the model-selection workflow end-to-end.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This article draws on the public changelog at replicate.com/changelog, which lists multiple platform updates including the new agent skills (April 21, 2026), a fallback model for Nano Banana Pro (March 2, 2026), MCP server auto-discovery (February 10, 2026), and a predictions API filter (January 14, 2026). The page is a straightforward changelog feed with some entries providing fairly granular detail and others offering only a brief summary.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://replicate.com/changelog" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+</body>
+</html>

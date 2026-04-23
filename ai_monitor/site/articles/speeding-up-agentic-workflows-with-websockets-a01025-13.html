@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenAI Responses API Now Supports WebSockets for Agentic Workflows | AI Signal Articles</title>
+  <meta name="description" content="OpenAI has added WebSocket support to its Responses API, cutting end-to-end latency for agentic AI workflows by up to 40% and enabling inference speeds...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 18:56 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">news</span>
+      <h1>OpenAI Responses API Now Supports WebSockets for Faster Agentic Workflows</h1>
+      <p class="standfirst">OpenAI has added WebSocket support to its Responses API, cutting end-to-end latency for agentic AI workflows by up to 40% and enabling inference speeds that were previously obscured by API overhead.</p>
+      <div class="meta">
+        <span>OpenAI Newsroom</span>
+        <span>2026-04-22 21:57 UTC</span>
+        <span>Key: openai-newsroom::identity::speeding-up-agentic-workflows-with-websockets</span>
+        <span>Confidence: strong</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>When an AI coding agent like Codex fixes a bug, it fires dozens of back-and-forth requests to the Responses API — each one carrying the full conversation history, re-validating context, and re-rendering tokens that changed little or not at all. As model inference has grown faster, that accumulated API overhead became the new bottleneck. OpenAI&#x27;s engineering team set out to close that gap, and their solution is WebSocket mode: a persistent connection to the Responses API that caches reusable state — prior input and output items, tool definitions, and previously rendered tokens — for the lifetime of the connection, so follow-up requests only send what&#x27;s new.</p>
+<p>The design deliberately keeps the familiar API shape developers already know. Rather than adopting a new interaction mode, callers continue using `response.create` with the same request body; the only addition is a `previous_response_id` that lets the server pull cached state from the in-memory connection-scoped cache. This enables targeted optimizations: safety classifiers and request validators now process only new input rather than replaying the full history, rendered tokens are cached and appended to rather than recomputed, and non-blocking postinference work like billing can overlap with subsequent requests.</p>
+<p>After a two-month alpha with key coding agent startups, WebSocket mode shipped broadly. Codex moved the majority of its Responses API traffic onto it almost immediately, and GPT-5.3-Codex-Spark hit the 1,000 tokens-per-second target — with bursts up to 4,000 TPS in production traffic. Third-party integrators felt the shift too: Vercel&#x27;s AI SDK saw latency drop by up to 40%, Cline&#x27;s multi-file workflows ran 39% faster, and Cursor reported up to 30% speedups on OpenAI models.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>As model inference speeds approach thousands of tokens per second, API overhead becomes the dominant latency source — WebSockets address this at the transport layer without requiring developers to rewrite their API integration.</li><li>The 40% end-to-end latency reduction for agentic workflows translates directly to faster, more responsive AI coding assistants and agentic tools used by developers daily.</li><li>The persistent connection and in-memory state caching approach is portable in concept, suggesting similar transport-level optimizations could arrive in other LLM API platforms.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This article is based on the full-text engineering blog post published on openai.com on April 22, 2026, authored by Brian Yu and Ashwin Nathan of OpenAI&#x27;s technical staff. The post describes the design rationale, implementation details, and measured outcomes of WebSocket mode in the Responses API, citing specific latency figures and third-party integration results.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://openai.com/index/speeding-up-agentic-workflows-with-websockets" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+</body>
+</html>
