@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hugging Face Gradio Spaces Now Auto-Serve /agents.md Endpoints for AI Coding Ag... | AI Signal Articles</title>
-  <meta name="description" content="Every Gradio Space on Hugging Face now automatically serves an /agents.md endpoint, allowing AI coding agents to read and use the Space without any manu...">
+  <title>Hugging Face Gradio Spaces Now Auto-Serve /agents.md for AI Coding Agents | AI Signal Articles</title>
+  <meta name="description" content="Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents like Claude Code, Codex, and Pi interact w...">
   <style>
     :root {
       --bg: #f6efe4;
@@ -129,17 +129,17 @@
   <main>
     <div class="topline">
       <div><a href="./index.html">Articles index</a> | <a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 10:56 UTC</div>
+      <div>Generated 2026-04-23 11:12 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">update</span>
-      <h1>Gradio Spaces Auto-Serve /agents.md Endpoints for AI Coding Agents</h1>
-      <p class="standfirst">Every Gradio Space on Hugging Face now automatically serves an /agents.md endpoint, allowing AI coding agents to read and use the Space without any manual configuration.</p>
+      <h1>Gradio Spaces Now Auto-Serve /agents.md Endpoints for AI Coding Agents</h1>
+      <p class="standfirst">Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents like Claude Code, Codex, and Pi interact with the Space without any manual configuration.</p>
       <div class="meta">
         <span>Hugging Face Changelog</span>
         <span>2026-04-23 10:43 UTC</span>
         <span>Key: hugging-face-changelog::identity::hugging-face-changelog-hugging-face-changel</span>
-        <span>Confidence: strong</span>
+        <span>Confidence: moderate</span>
         <span>Mode: claude</span>
       </div>
     </article>
@@ -147,19 +147,21 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>Hugging Face has quietly added a capability to every Gradio Space that changes how AI coding agents interact with hosted demos. Every Space now automatically serves an /agents.md endpoint — a machine-readable API description that agents can parse and call directly, no setup or documentation hunting required. Developers can simply point their agent at the endpoint and the agent figures out how to use the Space autonomously. The change is designed to be frictionless on the Space owner&#x27;s side as well, requiring no additional configuration. Examples cited by Hugging Face include Claude Code, Codex, and Pi, covering the major commercial and research AI coding agents currently in use.</p>
+        <p>Hugging Face has quietly enabled a new feature that makes Gradio Spaces far easier for AI agents to consume programmatically. Every Space now automatically serves an /agents.md endpoint — a machine-readable API description that AI coding agents can parse and call directly, without requiring human setup or custom integrations. The change applies globally across all existing and new Gradio Spaces.</p>
+<p>Agents such as Claude Code, Codex, and Pi can now point themselves at a Space&#x27;s /agents.md endpoint and automatically understand how to use the Space&#x27;s interface. The system handles the discovery and invocation layer, eliminating the need for developers to write custom wrappers or documentation parsers to bridge agents with Spaces.</p>
+<p>The feature is documented in Hugging Face&#x27;s official documentation. It has gathered modest community interest, with the changelog entry collecting around 100 upvotes and 95 net positive votes as of mid-April 2026. The changelog entry is part of a broader set of recent updates, including a new Kernels Hub for GPU-optimised precompiled kernels and an Agent Traces upload feature for logging agent sessions to Hugging Face Datasets.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Eliminates manual API discovery for AI agents — they can read /agents.md and know exactly how to interact with a Space without human intervention.</li><li>No extra configuration required from Space creators — the endpoint is served automatically for every Gradio Space on the platform.</li><li>Enables agents to use third-party Gradio Spaces in real time, opening up the Hub as a live toolkit for AI-assisted development workflows.</li></ul>
+        <ul class="bullets"><li>Removes a key friction point: AI coding agents can now discover and interact with Gradio Spaces without bespoke setup or wrapper code.</li><li>Standardises how agents understand Spaces, potentially lowering the barrier to building agent-powered applications on the Hugging Face platform.</li><li>Complements other recent agent-focused updates — Agent Traces upload and ZeroGPU overquota credits — suggesting a coordinated push to make the Hub a first-class agent environment.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This changelog entry comes from the public Hugging Face Changelog page. The evidence covers the announcement, the basic mechanics of the endpoint, the agents mentioned (Claude Code, Codex, Pi), and a link to documentation. No pricing, limits, or technical implementation details were provided in this particular entry.</li></ul>
+        <ul class="bullets"><li>This article is based on the official Hugging Face Changelog at huggingface.co/changelog, captured on 26 April 2026. The source is a changelog feed listing multiple product updates; the /agents.md entry includes the core description and a link to documentation, but no additional implementation details or usage examples were provided in the source text.</li></ul>
       </section>
     
       <section class="section">
