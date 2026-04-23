@@ -108,6 +108,15 @@
       color: var(--muted);
       line-height: 1.72;
     }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
     a { color: var(--accent); text-decoration: none; font-weight: 700; }
     .footer {
       margin-top: 18px;
@@ -120,41 +129,40 @@
   <main>
     <div class="topline">
       <div><a href="./index.html">Articles index</a> | <a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 07:57 UTC</div>
+      <div>Generated 2026-04-23 08:15 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">release</span>
       <h1>llama.cpp b8888 Boosts SYCL Memory Efficiency with BF16 Fast Path</h1>
-      <p class="standfirst">llama.cpp b8888 resizes mul_mat_id staging buffers by routed rows to eliminate over-allocation on Level Zero for MoE models, and introduces a DNNL-based BF16 fast path to prevent large f32 dequantization on large-vocabulary models (#22119).</p>
+      <p class="standfirst">llama.cpp b8888 resizes mul_mat_id staging buffers by routed rows to eliminate over-allocation on Level Zero for MoE models, and introduces a DNNL-based BF16 fast path to preven... reads like a shipped update rather t...</p>
       <div class="meta">
         <span>GitHub llama.cpp Releases | monitored from https://github.com/ggml-org/llama.cpp/releases.atom</span>
         <span>2026-04-22 22:12 UTC</span>
         <span>Slug: github-llamacpp-releases-llamacpp-release-fee-129c3d</span>
+        <span>Evidence: strong</span>
+        <span>clear evidence</span>
       </div>
     </article>
     <section class="content">
       
       <section class="section">
-        <h2>What we can verify</h2>
-        <p>The monitored source currently surfaces: llama.cpp b8888 resizes mul_mat_id staging buffers by routed rows to eliminate over-allocation on Level Zero for MoE models, and introduces a DNNL-based BF16 fast path to prevent large f32 dequantization on large-vocabulary models (#22119).</p>
+        <h2>Article body</h2>
+        <p>llama.cpp b8888 Boosts SYCL Memory Efficiency with BF16 Fast Path reads like a release-note style update from GitHub llama.cpp Releases, which means the page is framing a shipped change rather than a soft teaser.</p>
+<p>The monitored text points to llama.cpp b8888 resizes mul_mat_id staging buffers by routed rows to eliminate over-allocation on Level Zero for MoE models, and introduces a DNNL-based BF16 fast path to prevent large f32 dequantization on large-vocabulary models (#22119)., but we avoid filling in version details that are not explicitly present.</p>
+<p>The snapshot provides enough context to read this as a real product or editorial update. For release and changelog pages, the useful takeaway is the direction of travel, not a fake level of detail.</p>
+<p>A representative excerpt in the snapshot is title=b8888 updated=2026-04-22T22:11:02Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8888 summary= content=sycl: Improve mul_mat_id memory efficiency and add BF16 fast path ( #22119 ) sycl: size mul_mat_id staging buffers by....</p>
       </section>
     
 
       <section class="section">
-        <h2>Why it looks like a release update</h2>
-        <p>The page is grouped as release, so this prototype treats it as a release-style page. The visible target title is b8888. We are not inferring details beyond the snapshot.</p>
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>Release-style updates often signal user-facing behavior changes before they are heavily documented.</li><li>If the evidence stays strong, this is a useful early indicator of rollout direction.</li><li>If the evidence is noisy, the page still preserves the fact that something changed without overstating it.</li></ul>
       </section>
     
 
       <section class="section">
-        <h2>Evidence note</h2>
-        <p>Relevant excerpt: title=b8888 updated=2026-04-22T22:11:02Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8888 summary= content=sycl: Improve mul_mat_id memory efficiency and add BF16 fast path ( #22119 ) sycl: size mul_mat_id staging buffers by routed rows Previously src1_contiguous/dst_contiguous in ggml_sycl_mul_mat_id were sized to ggml_nelements(src1/dst), which over-allocates when ne12 &gt; 1 and can fail with UR_RESUL...</p>
-      </section>
-    
-
-      <section class="section">
-        <h2>Source detail</h2>
-        <p>b8888 sycl: Improve mul_mat_id memory efficiency and add BF16 fast path ( #22119 ) sycl: size mul_mat_id staging buffers by routed rows Previously src1_contiguous/dst_contiguous in ggml_sycl_mul_mat_id were sized to ggml_nelements(src1/dst), which over-allocates...</p>
+        <h2>Source note</h2>
+        <ul class="bullets"><li>Source: GitHub llama.cpp Releases</li><li>Evidence quality: strong</li><li>This summary is rule-based and uses only the saved monitor snapshot.</li><li>Target title: b8888</li><li>Target summary: sycl: Improve mul_mat_id memory efficiency and add BF16 fast path ( #22119 ) sycl: size mul_mat_id staging buffers by routed rows Previously src1_contiguous/...</li><li>Target excerpt: sycl: Improve mul_mat_id memory efficiency and add BF16 fast path ( #22119 ) sycl: size mul_mat_id staging buffers by routed rows Previously src1_contiguous/...</li><li>Evidence excerpt: title=b8888 updated=2026-04-22T22:11:02Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8888 summary= content=sycl: Improve mul_mat_id memory efficiency and add BF16 fast path ( #22119 ) sycl: size mul_mat_i...</li><li>Original link: https://github.com/ggml-org/llama.cpp/releases/tag/b8888</li></ul>
       </section>
     
 
