@@ -901,7 +901,7 @@ def render_index(items: list[dict[str, Any]]) -> str:
     for item in items:
         cards.append(
             f"""
-            <article class="card">
+            <article class="card" data-category="{html.escape(item["category"])}">
               <div class="card-top">
                 <span class="pill">{html.escape(item["category"])}</span>
                 <time>{html.escape(format_display_time(item["timestamp"]))}</time>
@@ -937,6 +937,8 @@ def render_index(items: list[dict[str, Any]]) -> str:
     h1 {{ margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 5vw, 4.6rem); line-height: 0.94; letter-spacing: -0.04em; max-width: 860px; }}
     .sub {{ margin: 0; max-width: 760px; color: var(--muted); font-size: 1.02rem; line-height: 1.55; }}
     .toolbar {{ display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 26px; color: var(--muted); }}
+    .filters {{ display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 22px; color: var(--muted); }}
+    .filters select {{ padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: white; color: var(--ink); }}
     .list {{ display: grid; gap: 18px; }}
     .card {{ display: grid; gap: 14px; padding: 22px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }}
     .card-top, .card-bottom {{ display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--muted); font-size: 0.86rem; }}
@@ -956,9 +958,43 @@ def render_index(items: list[dict[str, Any]]) -> str:
     <section class="toolbar">
       <div>Last built: {html.escape(updated_at)} - Showing {len(items)} items</div>
     </section>
+    <section class="filters">
+      <label for="homepage-category">Category</label>
+      <select id="homepage-category">
+        <option value="">All categories</option>
+      </select>
+      <span id="homepage-count">{len(items)} items</span>
+    </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">{''.join(cards)}</section>
   </main>
+  <script>
+    const homepageCategorySelect = document.getElementById('homepage-category');
+    const homepageCountNode = document.getElementById('homepage-count');
+    const homepageCards = Array.from(document.querySelectorAll('.card'));
+    const homepageCategories = [...new Set(homepageCards.map((card) => card.dataset.category).filter(Boolean))].sort();
+
+    homepageCategories.forEach((category) => {{
+      const option = document.createElement('option');
+      option.value = category;
+      option.textContent = category;
+      homepageCategorySelect.appendChild(option);
+    }});
+
+    function renderHomepageFilter() {{
+      const selected = homepageCategorySelect.value;
+      let visible = 0;
+      homepageCards.forEach((card) => {{
+        const show = !selected || card.dataset.category === selected;
+        card.style.display = show ? '' : 'none';
+        if (show) visible += 1;
+      }});
+      homepageCountNode.textContent = `${{visible}} item${{visible === 1 ? '' : 's'}}`;
+    }}
+
+    homepageCategorySelect.addEventListener('change', renderHomepageFilter);
+    renderHomepageFilter();
+  </script>
 </body>
 </html>
 """
