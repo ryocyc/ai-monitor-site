@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T06:37:42+00:00",
+  "generated_at": "2026-04-23T06:52:52+00:00",
   "item_count": 10,
   "items": [
     {
@@ -164,7 +164,7 @@
       "target_url": "https://www.minimax.io/blog",
       "category": "update",
       "headline_en": "MiniMax Releases Music 2.6 with Cover Feature and M2.7 Self-Improving Agent Model",
-      "summary_en": "MiniMax released Music 2.6 with a new Cover feature featuring deeper bass and richer instrumentation. M2.7 enables recursive self-improvement for models with significant practical capability gains over M2.5, alongside an Agent harness for production-grade coding and complex office task support.",
+      "summary_en": "MiniMax released Music 2.6 with a new Cover feature featuring deeper bass and richer instrumentation, and introduced M2.7 which enables recursive self-improvement with significant practical capability gains over M2.5, alongside an Agent harness for production-grade coding and complex office task support.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "MiniMax Music 2.6 Bring any melody back to life with Cover, powered by deeper bass and richer instrumentation Access API Learn More Cover New Pop Pop Melody Hyperpop New Dance Club Electronic New Drive Sports Trap New Video Scoring EDM New Epic Game Cover New Pop Pop Melody Hyperpop New Dance Club Electronic New Drive Sports Trap New Video Scoring EDM New Epic Game Cover New Pop Pop Melody Hyperpop New Dance Club Electronic New Drive Sports Access API MiniMax M2.7 Enable Self-Improvement for Models, with Significant Improvement in Practical Capabilities Compared to M2.5 Access API Now Try Agent Now Learn More Agent Harness Capabilities Build self-improvement Agent harness Powerful Engineering & Coding Capabilities A model that truly understands production systems Office Scenarios Suppor...",
@@ -207,7 +207,7 @@
       "effective_url": "https://replicate.com/changelog",
       "target_url": "https://replicate.com/changelog",
       "category": "changelog",
-      "headline_en": "Replicate Releases Agent Skills for AI Coding Assistants",
+      "headline_en": "Replicate Launches Agent Skills for AI Coding Assistants",
       "summary_en": "Replicate published Agent Skills — markdown instruction files that help coding assistants discover models, compare options, and execute API calls with optimized prompts for image and video generation. Install via npx skills add replicate/skills. Compatible with Claude Code, OpenCode, OpenAI Codex, and other MCP-compatible tools.",
       "headline_zh": "",
       "summary_zh": "",
