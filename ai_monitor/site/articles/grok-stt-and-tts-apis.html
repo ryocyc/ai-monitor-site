@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>xAI Launches Grok Speech-to-Text and Text-to-Speech APIs | AI Signal Articles</title>
+  <meta name="description" content="xAI has released two standalone audio APIs—Grok Speech to Text and Grok Text to Speech—bringing its speech technology to developers outside the Grok cha...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="./index.html">Articles index</a> | <a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 13:06 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">blog</span>
+      <h1>xAI Launches Grok Speech-to-Text and Text-to-Speech APIs with Multilingual Support</h1>
+      <p class="standfirst">xAI has released two standalone audio APIs—Grok Speech to Text and Grok Text to Speech—bringing its speech technology to developers outside the Grok chatbot for the first time.</p>
+      <div class="meta">
+        <span>xAI Blog</span>
+        <span>2026-04-22 23:49 UTC</span>
+        <span>Key: xai-blog::identity::grok-stt-and-tts-apis</span>
+        <span>Confidence: strong</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>The APIs, announced April 17, 2026, are built on the same speech stack used by Grok Voice, Tesla vehicles, and Starlink customer support. Grok STT offers both a REST API for batch transcription and a WebSocket API for real-time streaming, and the company benchmarks it against ElevenLabs, Deepgram, and AssemblyAI. On a Word Error Rate benchmark across phone calls, video and podcasts, meetings, and telephony, Grok STT scored 6.9% overall—lower, and thus better, than all three competitors, with particularly strong results on phone call entity extraction at 5.0%.</p>
+<p>The Text to Speech API distinguishes itself through inline speech tags such as `[laugh]`, `[sigh]`, `[whisper]`, and emotion and pace modifiers, which xAI says allow developers to add natural prosody without complex markup. Both APIs support 25 or more languages. Grok STT also includes speaker diarization with word-level speaker IDs and intelligent Inverse Text Normalization that converts raw spoken output into structured text with proper numbers, dates, and currencies.</p>
+<p>Pricing is tiered by use case: STT batch transcription costs $0.10 per audio hour and streaming transcription costs $0.20 per hour, while TTS is priced at $4.20 per million characters. All rates are available in the xAI API console alongside current rate limits. Links to the API documentation and the voice playground are included in the announcement.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>xAI is moving its speech technology out of the Grok chatbot and into standalone developer endpoints for the first time, competing directly with established speech API providers.</li><li>Grok STT&#x27;s benchmark figures show a meaningful accuracy gap over leading rivals on phone call and entity-heavy tasks, which are common in enterprise workflows like compliance, CRM, and support analytics.</li><li>The inclusion of speech tags for TTS gives developers a lightweight way to add expressive delivery—something most TTS APIs lack without custom model fine-tuning.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>The full announcement was published on xAI&#x27;s blog on April 17, 2026. It includes an interactive voice demo, comparison benchmarks, and links to the xAI API console and developer documentation for both endpoints.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://x.ai/news/grok-stt-and-tts-apis" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This is a separate standalone article flow that only keeps filtered, deduped high-signal pages.
+    </div>
+  </main>
+</body>
+</html>
