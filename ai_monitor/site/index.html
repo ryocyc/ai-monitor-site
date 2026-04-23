@@ -51,7 +51,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-23 18:21 UTC - Showing 9 items</div>
+        <div id="last-built-label">Last built: 2026-04-23 18:38 UTC - Showing 9 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -71,6 +71,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time>2026-04-23 18:36 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots-de206a.html">NVIDIA Open-Sources Isaac GR00T N1.7: Vision-Language-Action Model for Humanoid Robots</a></h2>
+              <p class="summary">Isaac GR00T N1.7 is an open-source VLA model with built-in open reasoning, released on Hugging Face for humanoid robotics applications.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -81,19 +94,6 @@
               <div class="card-bottom">
                 <span>OpenAI API Changelog</span>
                 <a href="https://platform.openai.com/docs/models/gpt-5.2">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time>2026-04-23 18:01 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots-de206a.html">NVIDIA Open-Sources Isaac GR00T N1.7: Open Reasoning VLA Model for Humanoid Robots</a></h2>
-              <p class="summary">Isaac GR00T N1.7 is an open-source vision-language-action (VLA) model with built-in open reasoning, released on Hugging Face for humanoid robotics applications.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots">Source</a>
               </div>
             </article>
             
@@ -180,8 +180,8 @@
                 <span class="pill">blog</span>
                 <time>2026-04-22 23:49 UTC</time>
               </div>
-              <h2 class="headline"><a href="./articles/grok-stt-and-tts-apis.html">xAI Launches Grok Speech-to-Text and Text-to-Speech APIs</a></h2>
-              <p class="summary">Grok STT and TTS APIs now support multilingual voice input and output, offering fast transcription and natural expressive voices at simple flat-rate pricing.</p>
+              <h2 class="headline"><a href="./articles/grok-stt-and-tts-apis.html">xAI Launches Grok Speech-to-Text and Text-to-Speech APIs with Multilingual Support</a></h2>
+              <p class="summary">Grok STT and TTS APIs offer fast transcription and natural, expressive voices with simple flat-rate pricing, supporting multiple languages.</p>
               <div class="card-bottom">
                 <span>xAI Blog</span>
                 <a href="https://x.ai/news/grok-stt-and-tts-apis">Source</a>
@@ -201,7 +201,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-23 18:21 UTC";
+    const currentGeneratedAt = "2026-04-23 18:38 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
