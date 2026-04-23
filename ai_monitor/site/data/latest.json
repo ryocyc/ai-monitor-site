@@ -1,9 +1,31 @@
 {
-  "generated_at": "2026-04-23T22:04:22+00:00",
+  "generated_at": "2026-04-23T22:27:13+00:00",
   "item_count": 9,
   "items": [
     {
-      "timestamp": "2026-04-23T22:01:31+00:00",
+      "timestamp": "2026-04-23T22:25:35+00:00",
+      "source_name": "xAI Blog",
+      "source_url": "https://r.jina.ai/http://x.ai/blog",
+      "effective_url": "https://r.jina.ai/http://x.ai/blog",
+      "target_url": "https://x.ai/news/grok-voice-think-fast-1",
+      "category": "blog",
+      "headline_en": "Grok Voice Think Fast 1.0",
+      "summary_en": "xAI blog updated. Recent post: \"Grok Voice Think Fast 1.0\".",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "Title: xAI — Creators of Grok, the AI Chatbot URL Source: http://x.ai/blog Markdown Content: # News: Research, Product & Company Updates | xAI [](http://x.ai/) * [Grok](http://x.ai/grok) * [API](http://x.ai/api) * [Company](http://x.ai/company) * [Colossus](http://x.ai/colossus) * [Careers](http://x.ai/careers) * [News](http://x.ai/news) * [Shop](https://shop.x.ai/) * [SpaceX](https://spacex.com/) * [𝕏](https://x.com/) [Try Grok](https://grok.com/?referrer=website) [What's new] # Latest news Read about our latest product and research announcements. April 23, 2026 ### [Grok Voice Think Fast 1.0](http://x.ai/news/grok-voice-think-fast-1) Our most capable voice agent is now available via API. grok voice Read #### [Grok Speech to Text and Text to Speech APIs](http://x.ai/news/grok-stt-and-t...",
+      "article_identity": "grok-voice-think-fast-1",
+      "target_title": "",
+      "target_summary": "",
+      "target_excerpt": "",
+      "status": "auto-published-demo",
+      "merge_key": "blog||xai blog||https://x.ai/news/grok-voice-think-fast-1",
+      "id": "evt-de5038e546936fc4e832",
+      "content_fingerprint": "title xai creators of grok the ai chatbot url source http x ai blog markdown content news research product company updates xai http x ai grok http x ai grok api http x ai api company http x ai company colossus http x ai colossus careers http x ai careers news http x ai news shop https shop x ai spacex https spacex com https x com try grok https grok com referrer website what s new latest news read about our latest product and research announcements april 23 2026 grok voice think fast 1 0 http x ai news grok voice think fast 1 our most capable voice agent is now available via api grok voice rea",
+      "needs_cc_refresh": false
+    },
+    {
+      "timestamp": "2026-04-23T22:25:22+00:00",
       "source_name": "Hugging Face Blog",
       "source_url": "https://huggingface.co/blog",
       "effective_url": "https://huggingface.co/blog",
@@ -13,7 +35,7 @@
       "summary_en": "NVIDIA released Isaac GR00T N1.7 on Hugging Face — a vision-language-action (VLA) model bringing open reasoning capabilities to humanoid robotics.",
       "headline_zh": "",
       "summary_zh": "",
-      "evidence_excerpt": "Community Blog & Articles New Article community guide open source collab partnerships research NLP Audio CV RL ethics Diffusion Game Development RLHF Leaderboard Case Studies LeRobot Inference Providers Community Articles view all DenseOn with the LateOn: Open State-of-the-Art Single and Multi-Vector Models 2 days ago • 30 Building a Fast Multilingual OCR Model with Synthetic Data 6 days ago • 28 How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas 3 days ago • 22 ML Intern Takes Our Post-Training Internship Test about 7 hours ago • 12 KV Caching Explained: Optimizing Transformer Inference Efficiency Jan 30, 2025 • 304 NVIDIA Isaac GR00T N1.7: Open Reasoning VLA Model for Humanoid Robots 6 days ago • 10 How we OCR'ed 30,000 papers using Codex, open OCR models and...",
+      "evidence_excerpt": "Community Blog & Articles New Article community guide open source collab partnerships research NLP Audio CV RL ethics Diffusion Game Development RLHF Leaderboard Case Studies LeRobot Inference Providers Community Articles view all DenseOn with the LateOn: Open State-of-the-Art Single and Multi-Vector Models 2 days ago • 30 Building a Fast Multilingual OCR Model with Synthetic Data 6 days ago • 28 How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas 3 days ago • 22 ML Intern Takes Our Post-Training Internship Test about 7 hours ago • 13 KV Caching Explained: Optimizing Transformer Inference Efficiency Jan 30, 2025 • 304 NVIDIA Isaac GR00T N1.7: Open Reasoning VLA Model for Humanoid Robots 6 days ago • 10 How we OCR'ed 30,000 papers using Codex, open OCR models and...",
       "article_identity": "nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots",
       "target_title": "",
       "target_summary": "",
@@ -21,7 +43,7 @@
       "status": "auto-published-demo",
       "merge_key": "blog||hugging face blog||nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots",
       "id": "evt-a7bd7d4f21b48dde206a",
-      "content_fingerprint": "community blog articles new article community guide open source collab partnerships research nlp audio cv rl ethics diffusion game development rlhf leaderboard case studies lerobot inference providers community articles view all denseon with the lateon open state of the art single and multi vector models 2 days ago 30 building a fast multilingual ocr model with synthetic data 6 days ago 28 how to ground a korean ai agent in real demographics with synthetic personas 3 days ago 22 ml intern takes our post training internship test about 7 hours ago 12 kv caching explained optimizing transformer i",
+      "content_fingerprint": "community blog articles new article community guide open source collab partnerships research nlp audio cv rl ethics diffusion game development rlhf leaderboard case studies lerobot inference providers community articles view all denseon with the lateon open state of the art single and multi vector models 2 days ago 30 building a fast multilingual ocr model with synthetic data 6 days ago 28 how to ground a korean ai agent in real demographics with synthetic personas 3 days ago 22 ml intern takes our post training internship test about 7 hours ago 13 kv caching explained optimizing transformer i",
       "needs_cc_refresh": false
     },
     {
@@ -176,28 +198,6 @@
       "merge_key": "docs||mistral changelog||v24 09 mistral s changelog updated latest v24 09 developers resources changelog changelog find out about all the latest changes to our tool you may filter by date and type of relea",
       "id": "evt-fc9868ef2a08180dbead",
       "content_fingerprint": "developers resources changelog changelog find out about all the latest changes to our tool you may filter by date and type of release mar 26 march 23 we released voxtral tts voxtral tts 2603 our state of the art text to speech model with zero shot voice cloning multilingual support and real time streaming model released march 16 we released mistral small 4 mistral small 2603 a hybrid model unifying instruct reasoning and coding in a single multimodal model with a 256k context window model released we released leanstral labs leanstral 2603 our first open source code agent designed for lean 4 fo",
-      "needs_cc_refresh": false
-    },
-    {
-      "timestamp": "2026-04-22T23:49:25+00:00",
-      "source_name": "xAI Blog",
-      "source_url": "https://r.jina.ai/http://x.ai/blog",
-      "effective_url": "https://r.jina.ai/http://x.ai/blog",
-      "target_url": "https://x.ai/news/grok-stt-and-tts-apis",
-      "category": "blog",
-      "headline_en": "xAI Launches Grok STT & TTS APIs with Simple Flat-Rate Pricing",
-      "summary_en": "xAI released Grok speech-to-text and text-to-speech APIs on April 17, 2026. The APIs offer fast, accurate transcription and natural, expressive voices, with multilingual support and straightforward flat-rate pricing.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "Title: xAI — Creators of Grok, the AI Chatbot URL Source: http://x.ai/blog Markdown Content: # News: Research, Product & Company Updates | xAI [](http://x.ai/) * [Grok](http://x.ai/grok) * [API](http://x.ai/api) * [Company](http://x.ai/company) * [Colossus](http://x.ai/colossus) * [Careers](http://x.ai/careers) * [News](http://x.ai/news) * [Shop](https://shop.x.ai/) * [SpaceX](https://spacex.com/) * [𝕏](https://x.com/) [Try Grok](https://grok.com/?referrer=website) [What's new] # Latest news Read about our latest product and research announcements. April 17, 2026 ### [Grok Speech to Text and Text to Speech APIs](http://x.ai/news/grok-stt-and-tts-apis) Fast and accurate. Natural, expressive voices. Simple pricing. Multilingual support. grok voice Read #### [xAI joins SpaceX](http://x.ai/...",
-      "article_identity": "grok-stt-and-tts-apis",
-      "target_title": "",
-      "target_summary": "",
-      "target_excerpt": "",
-      "status": "auto-published-demo",
-      "merge_key": "blog||xai blog||https://x.ai/news/grok-stt-and-tts-apis",
-      "id": "evt-4e298aa2d0dfa4ad3b9a",
-      "content_fingerprint": "title xai creators of grok the ai chatbot url source http x ai blog markdown content news research product company updates xai http x ai grok http x ai grok api http x ai api company http x ai company colossus http x ai colossus careers http x ai careers news http x ai news shop https shop x ai spacex https spacex com https x com try grok https grok com referrer website what s new latest news read about our latest product and research announcements april 17 2026 grok speech to text and text to speech apis http x ai news grok stt and tts apis fast and accurate natural expressive voices simple p",
       "needs_cc_refresh": false
     }
   ]
