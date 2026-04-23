@@ -34,6 +34,7 @@ LOG_DIR = BASE_DIR / "logs"
 SITE_DIR = BASE_DIR / "site"
 DATA_DIR = SITE_DIR / "data"
 EVENT_LOG = LOG_DIR / "events.jsonl"
+TAIPEI_TZ = dt.timezone(dt.timedelta(hours=8), name="Asia/Taipei")
 
 PRIORITY_SOURCES = [
     "OpenAI Newsroom",
@@ -56,6 +57,17 @@ PRIORITY_SOURCES = [
 
 def utc_now() -> str:
     return dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+
+
+def format_display_time(value: str) -> str:
+    try:
+        parsed = dt.datetime.fromisoformat(value)
+    except Exception:
+        return value
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=dt.timezone.utc)
+    local = parsed.astimezone(TAIPEI_TZ)
+    return local.strftime("%b %d, %Y %I:%M %p Taipei")
 
 
 def read_events() -> list[dict[str, Any]]:
@@ -893,7 +905,7 @@ def render_index(items: list[dict[str, Any]]) -> str:
             <article class="card">
               <div class="card-top">
                 <span class="pill">{html.escape(item["category"])}</span>
-                <time>{html.escape(item["timestamp"])}</time>
+                <time>{html.escape(format_display_time(item["timestamp"]))}</time>
               </div>
               <h2 class="headline">{html.escape(item["headline_en"])}</h2>
               <p class="summary">{html.escape(item["summary_en"])}</p>
@@ -905,7 +917,7 @@ def render_index(items: list[dict[str, Any]]) -> str:
             """
         )
 
-    updated_at = utc_now()
+    updated_at = format_display_time(utc_now())
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -954,7 +966,7 @@ def render_index(items: list[dict[str, Any]]) -> str:
 
 
 def render_history(items: list[dict[str, Any]]) -> str:
-    updated_at = utc_now()
+    updated_at = format_display_time(utc_now())
     payload_json = script_json(items)
     return f"""<!doctype html>
 <html lang="en">
@@ -1016,6 +1028,20 @@ def render_history(items: list[dict[str, Any]]) -> str:
     const categorySelect = document.getElementById('category-filter');
     const sourceSelect = document.getElementById('source-filter');
 
+    function formatTime(value) {{
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return value;
+      return new Intl.DateTimeFormat('en-US', {{
+        timeZone: 'Asia/Taipei',
+        year: 'numeric',
+        month: 'short',
+        day: '2-digit',
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true
+      }}).format(date) + ' Taipei';
+    }}
+
     function uniqueValues(key) {{
       return [...new Set(archive.map((item) => item[key]).filter(Boolean))].sort();
     }}
@@ -1048,7 +1074,7 @@ def render_history(items: list[dict[str, Any]]) -> str:
         const article = document.createElement('article');
         article.className = 'card';
         article.innerHTML = `
-          <div class="row"><span class="pill">${{item.category}}</span><time>${{item.timestamp}}</time></div>
+          <div class="row"><span class="pill">${{item.category}}</span><time>${{formatTime(item.timestamp)}}</time></div>
           <h2>${{item.headline_en}}</h2>
           <p>${{item.summary_en}}</p>
           <div class="row"><span>${{item.source_name}}</span><a href="${{item.target_url}}">Source</a></div>

@@ -71,18 +71,6 @@
     }
   },
   {
-    "id": "meta_ai_blog",
-    "name": "Meta AI Blog",
-    "url": "https://ai.meta.com/blog/",
-    "fallback_url": "https://r.jina.ai/http://ai.meta.com/blog/",
-    "type": "html",
-    "extract": {
-      "include_patterns": [
-        "<main[\\s\\S]*?</main>"
-      ]
-    }
-  },
-  {
     "id": "xai_api",
     "name": "xAI API",
     "url": "https://x.ai/api/",
