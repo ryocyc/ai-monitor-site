@@ -91,6 +91,20 @@ def read_existing_content() -> dict[str, dict[str, dict[str, str]]]:
     return result
 
 
+def read_previous_latest_generated_at() -> dt.datetime | None:
+    path = DATA_DIR / "latest.json"
+    if not path.exists():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        generated_at = payload.get("generated_at")
+        if not generated_at:
+            return None
+        return dt.datetime.fromisoformat(generated_at)
+    except Exception:
+        return None
+
+
 def clean_text(text: str) -> str:
     text = html.unescape(text)
     text = text.replace("\uFFFD", " ")
@@ -828,20 +842,47 @@ def pick_top_items(events: list[dict[str, Any]], limit: int, existing_content: d
     return apply_existing_content(items, existing_content)
 
 
-def build_homepage_items(archive_items: list[dict[str, Any]], limit: int) -> list[dict[str, Any]]:
-    clean_items: list[dict[str, Any]] = []
-    seen_sources: set[str] = set()
-    for item in sorted(archive_items, key=lambda item: item["timestamp"], reverse=True):
-        if not _homepage_qualifies(item):
+def build_homepage_items(
+    archive_items: list[dict[str, Any]],
+    limit: int,
+    previous_generated_at: dt.datetime | None = None,
+) -> list[dict[str, Any]]:
+    qualified = [
+        item
+        for item in sorted(archive_items, key=lambda item: item["timestamp"], reverse=True)
+        if _homepage_qualifies(item)
+    ]
+
+    recent_batch: list[dict[str, Any]] = []
+    if previous_generated_at is not None:
+        for item in qualified:
+            try:
+                item_dt = dt.datetime.fromisoformat(item["timestamp"])
+            except Exception:
+                continue
+            if item_dt > previous_generated_at:
+                recent_batch.append(item)
+
+    if len(recent_batch) > limit:
+        return _english_only(recent_batch)
+
+    selected: list[dict[str, Any]] = list(recent_batch)
+    seen_ids = {item["id"] for item in selected}
+    seen_sources = {item.get("source_name", "") for item in selected}
+
+    for item in qualified:
+        if item["id"] in seen_ids:
             continue
         source_name = item.get("source_name", "")
         if source_name in seen_sources:
             continue
+        seen_ids.add(item["id"])
         seen_sources.add(source_name)
-        clean_items.append(item)
-        if len(clean_items) >= limit:
+        selected.append(item)
+        if len(selected) >= limit:
             break
-    return _english_only(clean_items)
+
+    return _english_only(selected)
 
 
 def render_index(items: list[dict[str, Any]]) -> str:
@@ -1038,11 +1079,12 @@ def main() -> int:
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
+    previous_latest_generated_at = read_previous_latest_generated_at()
     existing_content = read_existing_content()
     events = read_events()
     archive_items = build_archive_items(events, existing_content)
     archive_items = _english_only(archive_items)
-    latest_items = build_homepage_items(archive_items, args.limit)
+    latest_items = build_homepage_items(archive_items, args.limit, previous_latest_generated_at)
 
     (DATA_DIR / "latest.json").write_text(json.dumps({"generated_at": utc_now(), "item_count": len(latest_items), "items": latest_items}, ensure_ascii=False, indent=2), encoding="utf-8")
     (DATA_DIR / "archive.json").write_text(json.dumps({"generated_at": utc_now(), "item_count": len(archive_items), "items": archive_items}, ensure_ascii=False, indent=2), encoding="utf-8")
