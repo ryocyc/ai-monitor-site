@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hugging Face Gradio Spaces Now Auto-Serve /agents.md for AI Coding Agents | AI Signal Articles</title>
-  <meta name="description" content="Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents like Claude Code, Codex, and Pi interact w...">
+  <title>Gradio Spaces Now Auto-Serve /agents.md Endpoints for AI Coding Agents | AI Signal Articles</title>
+  <meta name="description" content="Hugging Face now makes every Gradio Space directly callable by AI coding agents through a built-in, machine-readable endpoint.">
   <style>
     :root {
       --bg: #f6efe4;
@@ -129,15 +129,15 @@
   <main>
     <div class="topline">
       <div><a href="./index.html">Articles index</a> | <a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 11:12 UTC</div>
+      <div>Generated 2026-04-23 11:22 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">update</span>
-      <h1>Gradio Spaces Now Auto-Serve /agents.md Endpoints for AI Coding Agents</h1>
-      <p class="standfirst">Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents like Claude Code, Codex, and Pi interact with the Space without any manual configuration.</p>
+      <h1>Every Gradio Space Auto-Serves an /agents.md Endpoint for AI Coding Agents</h1>
+      <p class="standfirst">Hugging Face now makes every Gradio Space directly callable by AI coding agents through a built-in, machine-readable endpoint.</p>
       <div class="meta">
         <span>Hugging Face Changelog</span>
-        <span>2026-04-23 10:43 UTC</span>
+        <span>2026-04-23 11:17 UTC</span>
         <span>Key: hugging-face-changelog::identity::hugging-face-changelog-hugging-face-changel</span>
         <span>Confidence: moderate</span>
         <span>Mode: claude</span>
@@ -147,21 +147,21 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>Hugging Face has quietly enabled a new feature that makes Gradio Spaces far easier for AI agents to consume programmatically. Every Space now automatically serves an /agents.md endpoint — a machine-readable API description that AI coding agents can parse and call directly, without requiring human setup or custom integrations. The change applies globally across all existing and new Gradio Spaces.</p>
-<p>Agents such as Claude Code, Codex, and Pi can now point themselves at a Space&#x27;s /agents.md endpoint and automatically understand how to use the Space&#x27;s interface. The system handles the discovery and invocation layer, eliminating the need for developers to write custom wrappers or documentation parsers to bridge agents with Spaces.</p>
-<p>The feature is documented in Hugging Face&#x27;s official documentation. It has gathered modest community interest, with the changelog entry collecting around 100 upvotes and 95 net positive votes as of mid-April 2026. The changelog entry is part of a broader set of recent updates, including a new Kernels Hub for GPU-optimised precompiled kernels and an Agent Traces upload feature for logging agent sessions to Hugging Face Datasets.</p>
+        <p>Hugging Face has quietly added a significant automation to its Gradio Spaces platform: every Space now automatically serves an `/agents.md` endpoint. This endpoint is a machine-readable API description that AI coding agents can read, interpret, and call without any manual setup or configuration on the developer&#x27;s part. The feature was flagged on the changelog on April 17, 2026, and has already drawn over 100 upvotes from the community.</p>
+<p>The practical implication is that developers who want their Gradio demos to work with tools like Claude Code, Codex, or Pi no longer need to provide any instructions or scaffolding. Point an agent at the Space&#x27;s `/agents.md` URL, and the agent figures out the available inputs, outputs, and capabilities entirely on its own. This effectively closes a gap that made many public Gradio demos opaque to autonomous coding assistants.</p>
+<p>The feature is documented in Hugging Face&#x27;s regular documentation. While the changelog entry itself is brief, the upvote count and community reaction suggest this is seen as a meaningful quality-of-life improvement for anyone building AI-assisted or agent-driven workflows on top of the Hugging Face ecosystem.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Removes a key friction point: AI coding agents can now discover and interact with Gradio Spaces without bespoke setup or wrapper code.</li><li>Standardises how agents understand Spaces, potentially lowering the barrier to building agent-powered applications on the Hugging Face platform.</li><li>Complements other recent agent-focused updates — Agent Traces upload and ZeroGPU overquota credits — suggesting a coordinated push to make the Hub a first-class agent environment.</li></ul>
+        <ul class="bullets"><li>Eliminates the need for developers to manually describe Space capabilities to AI agents.</li><li>Enables autonomous coding tools like Claude Code, Codex, and Pi to interact with Gradio Spaces out of the box.</li><li>Reduces friction for building agent-based workflows that rely on shared Gradio demos or tools.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This article is based on the official Hugging Face Changelog at huggingface.co/changelog, captured on 26 April 2026. The source is a changelog feed listing multiple product updates; the /agents.md entry includes the core description and a link to documentation, but no additional implementation details or usage examples were provided in the source text.</li></ul>
+        <ul class="bullets"><li>This article is based on the April 17, 2026 entry on the public Hugging Face Changelog page. The changelog entry itself is concise, offering no implementation details or examples beyond a link to documentation. Other simultaneous changelog entries cover Kernels, ZeroGPU billing, and Agent Trace uploads, indicating this is one of several platform updates released around the same time.</li></ul>
       </section>
     
       <section class="section">
