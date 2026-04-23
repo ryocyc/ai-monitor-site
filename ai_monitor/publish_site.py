@@ -14,6 +14,7 @@ from source_parse_helpers import (
     extract_openai_changelog,
     extract_huggingface_blog,
     extract_aws_ml_blog,
+    extract_xai_api,
     extract_xai_blog,
     extract_cohere_changelog,
     extract_cohere_pricing,
@@ -23,7 +24,9 @@ from source_parse_helpers import (
     extract_qwen_blog,
     extract_mistral_changelog,
     extract_generic,
+    make_safe_identity,
 )
+from quality_gates import QualityGate, score_content_specificity
 
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
@@ -121,6 +124,111 @@ def clip(text: str, limit: int) -> str:
     if len(text) <= limit:
         return text
     return text[: limit - 3].rstrip() + "..."
+
+
+def sanitize_item_identity(
+    article_identity: str | None,
+    source_name: str,
+    headline: str,
+) -> str:
+    """
+    Clean up article_identity to prevent entry-point page noise from
+    polluting the dedupe key space.
+
+    Falls back to a short source-derived key if the proposed identity
+    looks like a full page dump, generic landing-page text, or a nav chunk.
+    """
+    return make_safe_identity(source_name, headline, article_identity, max_length=80)
+
+
+# Known noisy source names that should NEVER appear on the homepage.
+# These are hard blocks applied after build_item so even legacy events
+# (e.g. old Qwen GitHub org-page events still in events.jsonl) get filtered.
+# Hard-block: source names that must NEVER appear on homepage regardless of content.
+# NOTE: Qwen GitHub = old HTML org-page source (now replaced by Qwen GitHub Releases RSS).
+_HOMEPAGE_HARD_BLOCK_SOURCES = frozenset([
+    "Qwen GitHub",              # old org-page source
+    "Moonshot System Status",   # status homepage noise
+    "MiniMax System Status",    # status homepage noise
+    "Hugging Face Changelog",   # changelog index with no specific entry
+    "GitHub llama.cpp Releases", # generic RSS feed with no specific release tag
+])
+
+# Extra patterns for GitHub RSS feeds that produce generic headlines without a tag
+_GITHUB_RSS_GENERIC_PATTERNS = (
+    re.compile(r"^.+\s+(release feed updated|updated|changed)$"),
+    re.compile(r"^[^a-zA-Z]+", re.IGNORECASE),  # starts with non-letter (e.g. numbers)
+)
+
+# Global quality gate for entry-point sources.
+_GATE = QualityGate(homepage_score_min=55, allow_generic_fallback=False)
+
+
+def _is_homepage_dirty(item: dict[str, Any]) -> bool:
+    """
+    Return True if the item has dirty/noisy content that should NOT appear
+    on the homepage.
+
+    Three layers of defense:
+    1. Hard block by known noisy source name
+    2. Hard block by generic fallback identity chains
+    3. QualityGate generic check
+    """
+    # Layer 1: hard block by known noisy source name
+    if item.get("source_name", "") in _HOMEPAGE_HARD_BLOCK_SOURCES:
+        return True
+
+    # Layer 2: reject generic fallback identity chains.
+    article_identity = item.get("article_identity", "") or ""
+    source_name = item.get("source_name", "")
+    if article_identity and source_name:
+        from source_parse_helpers import title_to_slug
+        source_slug = title_to_slug(source_name).lower()
+        id_lower = article_identity.lower()
+        # If identity starts with the source slug and contains it again, it's a noisy fallback.
+        if id_lower.startswith(source_slug):
+            second_pos = id_lower.find(source_slug, len(source_slug))
+            if second_pos != -1:
+                return True
+        # Also catch the case where identity is just "-{source_slug}"
+        if id_lower == f'-{source_slug}':
+            return True
+        # Also catch the case where identity is just the source slug with a leading dash
+        if id_lower.startswith('-') and id_lower.lstrip('-') == source_slug:
+            return True
+
+    # Layer 3: generic quality gate
+    return _GATE.should_demote_to_archive(item)[0]
+
+
+def is_garbled(text: str) -> bool:
+    """
+    Return True if text appears to be garbled/broken and should be
+    replaced with English fallback. Checks for:
+    - High ratio of replacement characters (U+FFFD)
+    - High ratio of private-use / control characters
+    - Very short strings that are mostly non-Latin
+    """
+    if not text or len(text.strip()) < 3:
+        return True
+    # Count replacement characters and private-use characters
+    bad_chars = sum(1 for c in text if c in ("\ufffd", "\uf000", "\uf001", "\uf002") or (0xE000 <= ord(c) <= 0xF8FF))
+    if bad_chars / max(len(text), 1) > 0.03:
+        return True
+    # Check for broken Chinese: mostly CJK but very short and no space (typical garble)
+    cjk_count = sum(1 for c in text if "\u4e00" <= c <= "\u9fff")
+    if cjk_count > 5 and cjk_count / max(len(text), 1) > 0.7 and len(text) < 30:
+        return True
+    return False
+
+
+def safe_text(text_en: str, text_zh: str) -> str:
+    """
+    Return text_zh if it is readable, otherwise fall back to text_en.
+    """
+    if text_zh and not is_garbled(text_zh):
+        return text_zh
+    return text_en
 
 
 def parse_feed_title(text: str) -> str | None:
@@ -303,6 +411,9 @@ def build_item(event: dict[str, Any]) -> dict[str, Any]:
     elif source_name == "AWS Machine Learning Blog":
         headline, summary, target_url, article_identity = extract_aws_ml_blog(body)
         category = "blog"
+    elif source_name == "xAI API":
+        headline, summary, target_url, article_identity = extract_xai_api(body)
+        category = "docs"
     elif source_name == "xAI Blog":
         headline, summary, target_url, article_identity = extract_xai_blog(body)
         category = "blog"
@@ -344,6 +455,7 @@ def build_item(event: dict[str, Any]) -> dict[str, Any]:
         category = "update"
 
     timestamp = event.get("timestamp", utc_now())
+    article_identity = sanitize_item_identity(article_identity, source_name, headline)
     return {
         "timestamp": timestamp,
         "source_name": source_name,
@@ -606,6 +718,21 @@ def pick_top_items(events: list[dict[str, Any]], limit: int, existing_content: d
     return apply_existing_content(items, existing_content)
 
 
+def build_homepage_items(events: list[dict[str, Any]], limit: int, existing_content: dict[str, dict[str, dict[str, str]]]) -> list[dict[str, Any]]:
+    """
+    Build homepage items with a WHITELIST approach:
+    1. Build all candidate items
+    2. Filter out dirty items FIRST (before any size limit)
+    3. Sort by timestamp and take up to `limit` clean items
+
+    This ensures no dirty items sneak in because we ran out of slots.
+    """
+    all_items = pick_top_items(events, 200, existing_content)  # over-fetch candidates
+    clean_items = [item for item in all_items if not _is_homepage_dirty(item)]
+    clean_items.sort(key=lambda item: item["timestamp"], reverse=True)
+    return clean_items[:limit]
+
+
 def render_index(items: list[dict[str, Any]]) -> str:
     cards: list[str] = []
     for item in items:
@@ -616,8 +743,8 @@ def render_index(items: list[dict[str, Any]]) -> str:
                 <span class="pill">{html.escape(item["category"])}</span>
                 <time>{html.escape(item["timestamp"])}</time>
               </div>
-              <h2 class="headline" data-en="{html.escape(item['headline_en'])}" data-zh="{html.escape(item['headline_zh'])}">{html.escape(item["headline_en"])}</h2>
-              <p class="summary" data-en="{html.escape(item['summary_en'])}" data-zh="{html.escape(item['summary_zh'])}">{html.escape(item["summary_en"])}</p>
+              <h2 class="headline" data-en="{html.escape(item['headline_en'])}" data-zh="{html.escape(safe_text(item['summary_en'], item['headline_zh']))}">{html.escape(item["headline_en"])}</h2>
+              <p class="summary" data-en="{html.escape(item['summary_en'])}" data-zh="{html.escape(safe_text(item['summary_en'], item['summary_zh']))}">{html.escape(item["summary_en"])}</p>
               <div class="card-bottom">
                 <span>{html.escape(item["source_name"])}</span>
                 <a href="{html.escape(item["target_url"])}">Source</a>
@@ -825,7 +952,7 @@ def main() -> int:
 
     existing_content = read_existing_content()
     events = read_events()
-    latest_items = pick_top_items(events, args.limit, existing_content)
+    latest_items = build_homepage_items(events, args.limit, existing_content)
     archive_items = build_archive_items(events, existing_content)
 
     (DATA_DIR / "latest.json").write_text(json.dumps({"generated_at": utc_now(), "item_count": len(latest_items), "items": latest_items}, ensure_ascii=False, indent=2), encoding="utf-8")

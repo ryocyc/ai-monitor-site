@@ -14,6 +14,15 @@ from typing import Any
 # Shared utilities
 # -------------------------------------------------------------------
 
+# Noise terms used by make_safe_identity
+_IDENTITY_NOISE_PATTERNS = (
+    re.compile(r"^(overview|introduction|summary|home|index|welcome)$", re.IGNORECASE),
+    re.compile(r"(docs|documentation|guide|tutorial|api|reference|changelog|releases?)\s*(updated?|changed|page|index|content)$", re.IGNORECASE),
+    re.compile(r"(update|updated|change|modified|refresh|announcement)\s*(detected|page|content|site)?$", re.IGNORECASE),
+    re.compile(r"(get started|quickstart|installation|setup|configuration|authentication)$", re.IGNORECASE),
+)
+
+
 def clean_text(text: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
@@ -108,6 +117,51 @@ def title_to_slug(title: str) -> str:
     slug = re.sub(r"-+", "-", slug)
     slug = slug.strip("-")
     return slug
+
+
+def make_safe_identity(
+    source_name: str,
+    fallback_key: str,
+    proposed_identity: str | None,
+    max_length: int = 80,
+) -> str:
+    """
+    Produce a clean, stable article identity.
+
+    If proposed_identity is clean (not too long, not a generic page title,
+    not dominated by nav noise), use it. Otherwise fall back to a short
+    source-derived key.
+
+    This prevents entry-point pages from polluting the dedupe key space with
+    long noisy strings like "Overview Models API Documentation Pricing".
+    """
+    identity = ""
+    if proposed_identity:
+        identity = proposed_identity.strip()
+        # Reject: too long (suggests page dump, not article title)
+        if len(identity) > max_length:
+            identity = ""
+        # Reject: matches generic page patterns
+        elif any(p.match(identity) for p in _IDENTITY_NOISE_PATTERNS):
+            identity = ""
+        # Reject: too generic (single common word)
+        elif len(identity) < 4 or identity.lower() in (
+            "update", "news", "blog", "home", "index", "overview", "announcement"
+        ):
+            identity = ""
+
+    if not identity:
+        # Build a stable short key from source name + fallback
+        source_slug = title_to_slug(source_name)[:30]
+        key_slug = title_to_slug(fallback_key)[:20] if fallback_key else "update"
+        identity = f"{source_slug}-{key_slug}"
+        # If the fallback identity itself is still noisy (too long, or matches
+        # a generic page pattern), suppress it entirely so downstream gates
+        # correctly treat this item as having no specific identity.
+        if len(identity) > max_length or any(p.match(identity) for p in _IDENTITY_NOISE_PATTERNS):
+            identity = ""
+
+    return identity if identity else None
 
 
 # -------------------------------------------------------------------
@@ -337,6 +391,44 @@ def extract_aws_ml_blog(text: str) -> tuple[str, str, str | None, str | None]:
     article_identity = result["article_identity"]
     summary = f"AWS Machine Learning Blog changed. Recent post: \"{clip(headline, 90)}\"."
     return headline, clip(summary, 250), target_url, article_identity
+
+
+# -------------------------------------------------------------------
+# xAI API
+# -------------------------------------------------------------------
+
+def extract_xai_api(text: str) -> tuple[str, str, str | None, str | None]:
+    """
+    Parse xAI API landing page (x.ai/api/).
+
+    This page is primarily a marketing/API reference landing page, not a blog.
+    We look for specific API-model or feature mentions, and fall back to a
+    generic "API reference update" headline that does NOT include large
+    chunks of nav/docs text.
+    """
+    combined = " ".join(text) if isinstance(text, list) else text
+
+    # Look for specific model names, API features, or parameter mentions
+    model_or_feature = first_match(combined, [
+        r"(?:Grok|grok)-([123][\w]*)",
+        r"(?:model|endpoint|feature|parameter)[:\s]+([\w\-.]{3,40})",
+        r"(?:API|api)[-\s]+(?:v|version)?\s*([0-9][\w.-]*)",
+    ])
+
+    if model_or_feature:
+        headline = f"xAI API update: Grok-{model_or_feature}" if "grok" in model_or_feature.lower() else f"xAI API update: {model_or_feature}"
+        target_url = "https://x.ai/api/"
+        identity = f"xai-api-{title_to_slug(model_or_feature)}"
+        summary = f"xAI API reference page updated. Recent change mentions: {model_or_feature}."
+    else:
+        # No specific model/feature detected — produce a generic docs-style update
+        # WITHOUT using any large text chunks from the page
+        headline = "xAI API reference page updated"
+        target_url = "https://x.ai/api/"
+        identity = "xai-api-reference-update"
+        summary = "xAI API reference page content changed. Check the page for new models, endpoints, or documentation updates."
+
+    return clip(headline, 120), clip(summary, 250), target_url, identity
 
 
 # -------------------------------------------------------------------

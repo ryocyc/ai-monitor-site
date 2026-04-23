@@ -419,15 +419,10 @@
     }
   },
   {
-    "id": "qwen_github",
-    "name": "Qwen GitHub",
-    "url": "https://github.com/QwenLM",
-    "type": "html",
-    "extract": {
-      "include_patterns": [
-        "<main[\\s\\S]*?</main>"
-      ]
-    }
+    "id": "qwen_github_releases",
+    "name": "Qwen GitHub Releases",
+    "url": "https://github.com/QwenLM/Qwen/releases.atom",
+    "type": "rss"
   },
   {
     "id": "zhipu_docs",
