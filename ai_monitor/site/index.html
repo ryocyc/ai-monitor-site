@@ -18,6 +18,14 @@
     h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 5vw, 4.6rem); line-height: 0.94; letter-spacing: -0.04em; max-width: 860px; }
     .sub { margin: 0; max-width: 760px; color: var(--muted); font-size: 1.02rem; line-height: 1.55; }
     .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 26px; color: var(--muted); }
+    .toolbar-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .live-indicator { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 999px; background: #eef8f1; color: #17663a; font-size: 0.84rem; font-weight: 700; }
+    .live-dot { width: 8px; height: 8px; border-radius: 999px; background: #1da159; box-shadow: 0 0 0 0 rgba(29, 161, 89, 0.35); animation: pulse 1.8s infinite; }
+    .refresh-banner { display: none; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; padding: 14px 16px; border: 1px solid #b7d7ff; background: #eef5ff; color: #143a63; border-radius: 16px; }
+    .refresh-banner.show { display: flex; }
+    .refresh-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .refresh-button { appearance: none; border: 0; border-radius: 999px; padding: 10px 14px; background: var(--accent); color: white; font-weight: 700; cursor: pointer; }
+    .refresh-button.secondary { background: white; color: var(--accent); border: 1px solid var(--border); }
     .filters { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 22px; color: var(--muted); }
     .filters select { padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: white; color: var(--ink); }
     .list { display: grid; gap: 18px; }
@@ -27,6 +35,11 @@
     .headline { margin: 0; font-size: 1.7rem; line-height: 1.14; letter-spacing: -0.02em; }
     .summary { margin: 0; color: var(--muted); line-height: 1.7; font-size: 1rem; }
     a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(29, 161, 89, 0.35); }
+      70% { box-shadow: 0 0 0 8px rgba(29, 161, 89, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(29, 161, 89, 0); }
+    }
   </style>
 </head>
 <body>
@@ -37,7 +50,17 @@
       <p class="sub">A live feed of notable AI product, release, pricing, research, and developer updates gathered from monitored public sources.</p>
     </section>
     <section class="toolbar">
-      <div>Last built: 2026-04-23 14:37 UTC - Showing 10 items</div>
+      <div class="toolbar-meta">
+        <div id="last-built-label">Last built: 2026-04-23 14:45 UTC - Showing 10 items</div>
+        <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
+      </div>
+    </section>
+    <section id="refresh-banner" class="refresh-banner">
+      <div id="refresh-message">New updates are available.</div>
+      <div class="refresh-actions">
+        <button id="refresh-now" class="refresh-button" type="button">Refresh now</button>
+        <button id="refresh-dismiss" class="refresh-button secondary" type="button">Later</button>
+      </div>
     </section>
     <section class="filters">
       <label for="homepage-category">Category</label>
@@ -51,7 +74,7 @@
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
-                <time>2026-04-23 14:23 UTC</time>
+                <time>2026-04-23 14:41 UTC</time>
               </div>
               <h2 class="headline"><a href="./articles/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots-de206a.html">NVIDIA Open-Sources Isaac GR00T N1.7: Reasoning VLA Model for Humanoid Robots on Hugging Face</a></h2>
               <p class="summary">NVIDIA open-sourced Isaac GR00T N1.7 on Hugging Face — a vision-language-action model with built-in reasoning capabilities purpose-built for humanoid robotics.</p>
@@ -79,8 +102,8 @@
                 <span class="pill">docs</span>
                 <time>2026-04-23 12:30 UTC</time>
               </div>
-              <h2 class="headline"><a href="./articles/gpt-image-2-7eac15.html">OpenAI API Changelog Updated</a></h2>
-              <p class="summary">OpenAI API changelog was updated with new entries. Visit the changelog for the latest additions and changes.</p>
+              <h2 class="headline"><a href="./articles/gpt-image-2-7eac15.html">OpenAI API Documentation: GPT-5.2 Model Page Updated</a></h2>
+              <p class="summary">The OpenAI API GPT-5.2 model documentation page was updated. Check the changelog for the latest additions.</p>
               <div class="card-bottom">
                 <span>OpenAI API Changelog</span>
                 <a href="https://platform.openai.com/docs/models/gpt-5.2">Source</a>
@@ -105,8 +128,8 @@
                 <span class="pill">news</span>
                 <time>2026-04-23 07:07 UTC</time>
               </div>
-              <h2 class="headline"><a href="./articles/making-chatgpt-better-for-clinicians-7afa51.html">OpenAI Enhances ChatGPT for Verified Healthcare Professionals</a></h2>
-              <p class="summary">OpenAI published new product updates for verified clinicians, introducing features designed to better support clinical workflows and decision-making.</p>
+              <h2 class="headline"><a href="./articles/making-chatgpt-better-for-clinicians-7afa51.html">OpenAI Launches ChatGPT Features for Verified Clinicians</a></h2>
+              <p class="summary">OpenAI launched new ChatGPT features tailored for verified healthcare professionals, aimed at supporting clinical workflows and decision-making.</p>
               <div class="card-bottom">
                 <span>OpenAI Newsroom</span>
                 <a href="https://openai.com/index/making-chatgpt-better-for-clinicians">Source</a>
@@ -157,8 +180,8 @@
                 <span class="pill">update</span>
                 <time>2026-04-22 23:49 UTC</time>
               </div>
-              <h2 class="headline">Alibaba Bailian Pricing Page Stuck Loading</h2>
-              <p class="summary">The pricing page for Alibaba&#x27;s Bailian (百炼) model platform is stuck in a loading state, blocking access to cost and plan details.</p>
+              <h2 class="headline">Alibaba Bailian Pricing Page Unavailable</h2>
+              <p class="summary">The pricing page for Alibaba&#x27;s Bailian (百炼) model platform is currently stuck in a loading state, preventing access to cost and plan information.</p>
               <div class="card-bottom">
                 <span>Alibaba Model Studio Pricing</span>
                 <a href="https://bailian.console.aliyun.com/pricing">Source</a>
@@ -185,6 +208,16 @@
     const homepageCountNode = document.getElementById('homepage-count');
     const homepageCards = Array.from(document.querySelectorAll('.card'));
     const homepageCategories = [...new Set(homepageCards.map((card) => card.dataset.category).filter(Boolean))].sort();
+    const refreshBanner = document.getElementById('refresh-banner');
+    const refreshMessage = document.getElementById('refresh-message');
+    const refreshNowButton = document.getElementById('refresh-now');
+    const refreshDismissButton = document.getElementById('refresh-dismiss');
+    const lastBuiltLabel = document.getElementById('last-built-label');
+    const liveStatus = document.getElementById('live-status');
+    const currentGeneratedAt = "2026-04-23 14:45 UTC";
+    const autoRefreshCheckMs = 5 * 60 * 1000;
+    let autoRefreshTimeout = null;
+    let dismissedGeneration = null;
 
     homepageCategories.forEach((category) => {
       const option = document.createElement('option');
@@ -206,6 +239,60 @@
 
     homepageCategorySelect.addEventListener('change', renderHomepageFilter);
     renderHomepageFilter();
+
+    function triggerHomepageReload() {
+      window.location.reload();
+    }
+
+    function clearAutoRefreshTimer() {
+      if (autoRefreshTimeout) {
+        window.clearTimeout(autoRefreshTimeout);
+        autoRefreshTimeout = null;
+      }
+    }
+
+    function showRefreshBanner(nextGeneratedAt, itemCount) {
+      if (dismissedGeneration === nextGeneratedAt) {
+        return;
+      }
+      refreshMessage.textContent = `New updates are available (${itemCount} items in the latest feed).`;
+      refreshBanner.classList.add('show');
+      liveStatus.textContent = 'Fresh updates found. Auto-refreshing soon.';
+      clearAutoRefreshTimer();
+      autoRefreshTimeout = window.setTimeout(triggerHomepageReload, 8000);
+    }
+
+    async function checkForHomepageUpdates() {
+      try {
+        const response = await fetch(`./data/latest.json?ts=${Date.now()}`, { cache: 'no-store' });
+        if (!response.ok) {
+          liveStatus.textContent = 'Auto-check temporarily unavailable';
+          return;
+        }
+        const payload = await response.json();
+        const nextGeneratedAt = payload.generated_at || '';
+        const itemCount = Array.isArray(payload.items) ? payload.items.length : 0;
+        if (nextGeneratedAt && nextGeneratedAt !== currentGeneratedAt) {
+          lastBuiltLabel.textContent = `Last built: ${nextGeneratedAt} - Showing ${itemCount} items`;
+          showRefreshBanner(nextGeneratedAt, itemCount);
+          return;
+        }
+        liveStatus.textContent = 'Watching for fresh updates';
+      } catch (error) {
+        liveStatus.textContent = 'Auto-check temporarily unavailable';
+      }
+    }
+
+    refreshNowButton.addEventListener('click', triggerHomepageReload);
+    refreshDismissButton.addEventListener('click', () => {
+      const label = lastBuiltLabel.textContent || '';
+      dismissedGeneration = label.replace(/^Last built: /, '').split(' - ')[0];
+      refreshBanner.classList.remove('show');
+      liveStatus.textContent = 'Fresh updates found. Refresh when ready.';
+      clearAutoRefreshTimer();
+    });
+
+    window.setInterval(checkForHomepageUpdates, autoRefreshCheckMs);
   </script>
 </body>
 </html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>n8n v2.17.6 Released: User Search Bug Fix in ProjectSettings | AI Signal Articles</title>
+  <meta name="description" content="The n8n &quot;stable&quot; release tag was updated on April 23, 2026 to version 2.17.6, addressing a bug in user search functionality within ProjectSettings.">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 14:44 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>n8n Stable Updated to v2.17.6: User Search Fix in ProjectSettings</h1>
+      <p class="standfirst">The n8n &quot;stable&quot; release tag was updated on April 23, 2026 to version 2.17.6, addressing a bug in user search functionality within ProjectSettings.</p>
+      <div class="meta">
+        <span>GitHub n8n Releases</span>
+        <span>2026-04-23 09:25 UTC</span>
+        <span>Key: github-n8n-releases::identity::github-n8n-releases-n8n-release-feed-now</span>
+        <span>Confidence: moderate</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>On April 23, 2026, the n8n project tagged version 2.17.6 as the latest stable release. The single change in this release is a bug fix to core user search functionality used within ProjectSettings, linked to pull request #28949 and committed as d388990. The fix resolves an issue where user search behavior was not functioning correctly in that particular settings context.</p>
+<p>Simultaneously, n8n published version 2.18.2 on the same day, which includes the same user search fix alongside additional changes: an AI-builder improvement to validate merge node connections against the &#x27;numberInputs&#x27; parameter (PR #28857), and a new standalone MiniMax vendor node (PR #28868). The MiniMax addition signals continued expansion of n8n&#x27;s third-party integrations.</p>
+<p>Because v2.18.2 landed on the same date with overlapping fixes, users already on v2.18.2 effectively received the same correction. Those pinned to the stable tag who are running v2.17.6 or earlier should note that the user search fix in ProjectSettings is the primary change here, with no new features introduced in this specific release.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>The user search bug in ProjectSettings could have caused issues for teams managing multi-user n8n workspaces, making this a functional fix for collaborative setups.</li><li>The stable tag page shows only a single commit, suggesting a targeted, low-risk fix rather than a major refactor or feature addition.</li><li>The nearly simultaneous release of v2.18.2 means teams not pinned to stable can access both the fix and new features (including a MiniMax Node) in one upgrade.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>The source is the official GitHub releases page for the n8n stable tag. Information is thin—only one bug-fix commit is directly visible, with no full changelog, release notes, or detailed description. The v2.18.2 details were inferred from a parallel feed entry on the same date; the stable page itself did not surface them.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/n8n-io/n8n/releases/tag/stable" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+</body>
+</html>
