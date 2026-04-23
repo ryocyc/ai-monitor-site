@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SGLang v0.5.10.post1 Patches FlashInfer Dependency Issue | AI Signal Articles</title>
+  <meta name="description" content="A small patch for the SGLang LLM serving framework has landed, upgrading an internal dependency to fix a JIT cubin downloader problem.">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-23 13:38 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>SGLang v0.5.10.post1 Released</h1>
+      <p class="standfirst">A small patch for the SGLang LLM serving framework has landed, upgrading an internal dependency to fix a JIT cubin downloader problem.</p>
+      <div class="meta">
+        <span>GitHub SGLang Releases</span>
+        <span>2026-04-22 12:45 UTC</span>
+        <span>Key: github-sglang-releases::identity::github-sglang-releases-sglang-release-feed-</span>
+        <span>Confidence: moderate</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>SGLang v0.5.10.post1 was published on April 9, 2026 by contributor Kangyan-Zhou. The release contains a single substantive change: the FlashInfer dependency is bumped from version v0.6.7.post2 to v0.6.7.post3, addressing a known issue in FlashInfer&#x27;s just-in-time compiled cubin downloader. No additional release notes or changelog entries were published alongside this tag. The release follows v0.5.10 (April 6) and precedes several other recent tags in the project&#x27;s history, including gateway-focused releases.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>FlashInfer is a critical kernel library in SGLang&#x27;s inference stack, so updating it even in a patch release signals a real, non-trivial fix was needed.</li><li>Users running v0.5.10 who encounter JIT cubin download failures should upgrade to v0.5.10.post1 to regain stability.</li><li>The near-total absence of published release notes makes it hard to assess whether other implicit changes exist beyond the stated FlashInfer bump.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This article is based on the GitHub release page for SGLang v0.5.10.post1. The page displays the release tag, author (Kangyan-Zhou), date (April 9, 2026), commit count (631), and one change description: a FlashInfer dependency bump to resolve a JIT cubin downloader issue. No detailed release notes or changelog are provided on the page itself, making it impossible to confirm whether other modifications are bundled in this patch.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/sgl-project/sglang/releases/tag/v0.5.10.post1" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This article was generated from filtered monitored source changes.
+    </div>
+  </main>
+</body>
+</html>
