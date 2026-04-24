@@ -445,6 +445,24 @@
       ],
       "article_confidence": "weak",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-b535994874500cd729e9",
+      "article_h1": "OpenHands Releases Cloud-1.23.0 with MCP Config Normalization Fix",
+      "article_standfirst": "OpenHands has published version cloud-1.23.0, addressing a normalization issue with legacy Model Context Protocol (MCP) configurations during database migration #108.",
+      "article_body": [
+        "The OpenHands team released cloud-1.23.0 on 24 April 2026, tagged as a fix for normalizing legacy MCP (Model Context Protocol) configuration handling in database migration #108 (PR #14116). The release was co-authored by the OpenHands project account and pushed to the official repository at 17:12:16 UTC.\n\nMCP, the Model Context Protocol, is a key integration layer in OpenHands enabling agents to connect to external tools and data sources. The fix targets legacy configuration formats that could cause failures or inconsistencies when migrating existing setups to newer versions of the platform.\n\nThis release follows the project's standard cloud-versioning scheme and continues a pattern of incremental stability improvements, with the change limited to migration logic rather than broader agent behaviour or interface changes."
+      ],
+      "article_why_matters": [
+        "Users with existing MCP tool integrations may encounter migration errors if their legacy config format is not normalized — this patch resolves that specific failure path.",
+        "The fix is scoped to migration #108, meaning it affects data-upgrade scenarios without requiring users to reconfigure tools from scratch.",
+        "Staying current with OpenHands releases ensures agentic workflows relying on MCP connections remain stable across platform updates."
+      ],
+      "article_source_note": [
+        "The release information was captured from the official GitHub releases feed and the cloud-1.23.0 tag page (github.com/OpenHands/OpenHands/releases/tag/cloud-1.23.0), timestamped 2026-04-24T17:12:16Z. No additional technical details or changelog entry were visible beyond the PR reference and co-authorship note; users should monitor the full PR #14116 for complete context on the normalization changes."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"
