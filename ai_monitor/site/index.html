@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-24 23:14 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-24 23:47 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,32 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time>2026-04-24 23:46 UTC</time>
+              </div>
+              <h2 class="headline">llama.cpp Patch Release b8925 Fixes Structured Output Parser Bug</h2>
+              <p class="summary">The llama.cpp project shipped a quick bug-fix release on April 24, 2026, addressing a critical flaw in its structured output parser.</p>
+              <div class="card-bottom">
+                <span>GitHub llama.cpp Releases</span>
+                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8925">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-24 23:21 UTC</time>
+              </div>
+              <h2 class="headline">GLM-5.1 Agentic Engineering Model Launches on DeepInfra Cloud Platform</h2>
+              <p class="summary">DeepInfra has added GLM-5.1, described as a state-of-the-art agentic engineering model, to its cloud inference catalogue.</p>
+              <div class="card-bottom">
+                <span>DeepInfra Pricing</span>
+                <a href="https://deepinfra.com/pricing">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -133,19 +159,6 @@
               <div class="card-bottom">
                 <span>Together AI Pricing</span>
                 <a href="https://www.together.ai/pricing">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time>2026-04-24 18:19 UTC</time>
-              </div>
-              <h2 class="headline">LangGraph Prebuilt 1.0.11 Brings Flexible Tool Returns and ToolRuntime Exposure</h2>
-              <p class="summary">LangChain AI released langgraph-prebuilt version 1.0.11 on April 24, adding support for ToolNode tools that return structured lists of commands or messages.</p>
-              <div class="card-bottom">
-                <span>GitHub LangGraph Releases</span>
-                <a href="https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.11">Source</a>
               </div>
             </article>
             
@@ -200,19 +213,6 @@
                 <a href="https://research.perplexity.ai/articles">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time>2026-04-24 12:11 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/xai-api-playground.html">xAI Launches API Playground for Grok 4.20, Expands Voice and Image APIs</a></h2>
-              <p class="summary">xAI has updated its API reference page with a new Playground interface for Grok 4.20, alongside expanded voice and image generation tools.</p>
-              <div class="card-bottom">
-                <span>xAI API</span>
-                <a href="https://x.ai/api/">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-24 23:14 UTC";
+    const currentGeneratedAt = "2026-04-24 23:47 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
