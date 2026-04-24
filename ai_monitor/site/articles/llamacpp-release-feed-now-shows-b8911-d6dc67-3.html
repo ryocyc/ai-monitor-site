@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GPT-5.2 Model Reference — OpenAI API Specs and Pricing | AI Signal Articles</title>
-  <meta name="description" content="The OpenAI platform reference page for GPT-5.2 documents it as the previous-generation frontier model with configurable reasoning effort and a 400,000-t...">
+  <title>llama.cpp b8911: Hexagon Profiler Overhaul for Qualcomm DSP | AI Signal Articles</title>
+  <meta name="description" content="Release b8911 of llama.cpp lands a sweeping set of changes to its Hexagon (Qualcomm DSP) profiler, including async profiling, configurable PMU counters,...">
   <style>
     :root {
       --bg: #f6efe4;
@@ -129,17 +129,17 @@
   <main>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-24 02:32 UTC</div>
+      <div>Generated 2026-04-24 02:18 UTC</div>
     </div>
     <article class="hero">
-      <span class="chip">docs</span>
-      <h1>GPT-5.2 Model Reference and Capabilities on OpenAI</h1>
-      <p class="standfirst">The OpenAI platform reference page for GPT-5.2 documents it as the previous-generation frontier model with configurable reasoning effort and a 400,000-token context window.</p>
+      <span class="chip">release</span>
+      <h1>llama.cpp Release b8911 Brings Major Hexagon Profiler Improvements</h1>
+      <p class="standfirst">Release b8911 of llama.cpp lands a sweeping set of changes to its Hexagon (Qualcomm DSP) profiler, including async profiling, configurable PMU counters, and a new post-processing tool.</p>
       <div class="meta">
-        <span>OpenAI API Changelog</span>
-        <span>2026-04-24 02:16 UTC</span>
-        <span>Key: openai-api-changelog::identity::gpt-image-2</span>
-        <span>Confidence: moderate</span>
+        <span>GitHub llama.cpp Releases</span>
+        <span>2026-04-24 01:24 UTC</span>
+        <span>Key: github-llamacpp-releases::identity::b8911</span>
+        <span>Confidence: strong</span>
         <span>Mode: claude</span>
       </div>
     </article>
@@ -147,26 +147,26 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The GPT-5.2 model reference page on the OpenAI developer platform describes it as the previous frontier model for professional work, sitting one tier below the newer GPT-5.4. The page explicitly directs developers to the latest model guide for GPT-5.4, signaling that GPT-5.2 is now the older recommended option for those not on the newest release.</p>
-<p>The specification lists reasoning effort as configurable across five levels—none, low, medium, high, and xhigh—with reasoning set at the highest level by default and speed at medium. The model accepts text and image inputs but outputs text only; audio and video are listed as unsupported. The context window caps at 400,000 tokens, and the maximum output is 128,000 tokens, with a knowledge cutoff of August 31, 2025.</p>
-<p>Pricing is laid out per million tokens at $1.75 for input, $0.175 for cached input, and $14.00 for output on the standard API. The batch API offers a lower rate. The page confirms support across the Chat Completions v1, Responses v1, and Realtime v1 endpoints. A quick pricing comparison table shows GPT-5.4 at $2.50 input per million tokens and GPT-5 mini at $0.25, placing GPT-5.2 mid-range between the two.</p>
+        <p>Release b8911 of llama.cpp, published on 24 April via GitHub Actions, is entirely devoted to improving the Hexagon backend&#x27;s profiling subsystem. The headline addition is support for both basic and extended operation profiling on Qualcomm DSP hardware (PR #22269), along with restored PMU (Performance Monitoring Unit) support and a redesigned op-queuing mechanism with separate profile descriptors.</p>
+<p>The release renames the old &quot;opmask&quot; concept to &quot;opstage&quot; and eliminates the &quot;opsync&quot; wrapper, citing that the profiler is now fully async and the old naming was misleading. A new configurable profiler mode makes PMU counter collection optional, since reading those counters on older devices carries a meaningful performance cost. The release also introduces interface hooks allowing the host to enable the profiler externally.</p>
+<p>A companion tool, `ggml-hexagon-profile.py`, gains the ability to read logs from stdin, simplified output formatting, and environment-variable control over PMU event selection. The `GGML_HEXAGON_PROFILE` environment variable is now documented. Contributions came from Sigbjørn Skjæret, Trivikram Reddy (Qualcomm), and others, touching `ggml/src/ggml-hexagon/htp/htp-ops.h` among other files.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>GPT-5.2 is positioned as the go-to previous-generation model for developers who need frontier-level capability without adopting the very latest release.</li><li>Configurable reasoning effort—spanning five levels from none to xhigh—gives developers fine-grained control over how the model allocates compute for different tasks.</li><li>The 400k context window and 128k max output token limit make GPT-5.2 a candidate for long-document workflows where the newer GPT-5.4 may be overkill or more expensive.</li></ul>
+        <ul class="bullets"><li>Hexagon backend users can now profile with greater fidelity, including async op-stage tracking and configurable PMU events without full overhead on older hardware.</li><li>The rename from &quot;opmask&quot; to &quot;opstage&quot; and removal of &quot;opsync&quot; reflect a cleaner internal model for how llama.cpp schedules and measures operations on Qualcomm DSPs.</li><li>A documented environment variable and a post-proc script that accepts stdin make it practical to integrate Hexagon profiling into real-world CI or performance-tuning workflows.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>The source captured is the live GPT-5.2 model reference page on the OpenAI developer platform. The page itself contains no changelog timestamp or revision history, so the precise date it was updated is not visible from this source alone. The page structure is a reference spec, not a news or announcement post.</li></ul>
+        <ul class="bullets"><li>The release page confirms b8911 was created on GitHub.com on 24 April 2026 and signed with GitHub&#x27;s verified GPG key. All visible changes pertain exclusively to the Hexagon backend; no changes to other backends (CUDA, Vulkan, Metal, etc.) are listed in this release. Binary artifacts are available for a wide range of platforms, though no specific version bumps to library files are mentioned.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://platform.openai.com/docs/models/gpt-5.2" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8911" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">

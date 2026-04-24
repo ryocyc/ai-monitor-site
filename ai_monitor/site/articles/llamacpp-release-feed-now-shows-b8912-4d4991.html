@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GPT-5.2 Model Reference — OpenAI API Specs and Pricing | AI Signal Articles</title>
-  <meta name="description" content="The OpenAI platform reference page for GPT-5.2 documents it as the previous-generation frontier model with configurable reasoning effort and a 400,000-t...">
+  <title>llama.cpp b8912 Removes Redundant CLI Sampling Variables | AI Signal Articles</title>
+  <meta name="description" content="A new llama.cpp release targets the CLI layer, removing local struct variables that are now handled by the centralized defaults.sampling configuration.">
   <style>
     :root {
       --bg: #f6efe4;
@@ -129,17 +129,17 @@
   <main>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-24 02:32 UTC</div>
+      <div>Generated 2026-04-24 02:18 UTC</div>
     </div>
     <article class="hero">
-      <span class="chip">docs</span>
-      <h1>GPT-5.2 Model Reference and Capabilities on OpenAI</h1>
-      <p class="standfirst">The OpenAI platform reference page for GPT-5.2 documents it as the previous-generation frontier model with configurable reasoning effort and a 400,000-token context window.</p>
+      <span class="chip">release</span>
+      <h1>llama.cpp Release b8912 Cleans Up Redundant Sampling Logic in CLI</h1>
+      <p class="standfirst">A new llama.cpp release targets the CLI layer, removing local struct variables that are now handled by the centralized defaults.sampling configuration.</p>
       <div class="meta">
-        <span>OpenAI API Changelog</span>
-        <span>2026-04-24 02:16 UTC</span>
-        <span>Key: openai-api-changelog::identity::gpt-image-2</span>
-        <span>Confidence: moderate</span>
+        <span>GitHub llama.cpp Releases</span>
+        <span>2026-04-24 02:00 UTC</span>
+        <span>Key: github-llamacpp-releases::identity::b8912</span>
+        <span>Confidence: strong</span>
         <span>Mode: claude</span>
       </div>
     </article>
@@ -147,26 +147,26 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The GPT-5.2 model reference page on the OpenAI developer platform describes it as the previous frontier model for professional work, sitting one tier below the newer GPT-5.4. The page explicitly directs developers to the latest model guide for GPT-5.4, signaling that GPT-5.2 is now the older recommended option for those not on the newest release.</p>
-<p>The specification lists reasoning effort as configurable across five levels—none, low, medium, high, and xhigh—with reasoning set at the highest level by default and speed at medium. The model accepts text and image inputs but outputs text only; audio and video are listed as unsupported. The context window caps at 400,000 tokens, and the maximum output is 128,000 tokens, with a knowledge cutoff of August 31, 2025.</p>
-<p>Pricing is laid out per million tokens at $1.75 for input, $0.175 for cached input, and $14.00 for output on the standard API. The batch API offers a lower rate. The page confirms support across the Chat Completions v1, Responses v1, and Realtime v1 endpoints. A quick pricing comparison table shows GPT-5.4 at $2.50 input per million tokens and GPT-5 mini at $0.25, placing GPT-5.2 mid-range between the two.</p>
+        <p>The ggml-org/llama.cpp project shipped release b8912 on April 24, 2026, authored via GitHub Actions and signed with the project&#x27;s verified GPG key (B5690EEEBB952194). The core change cleans up redundant local variables in the CLI module that became unnecessary once the sampling-related fields—reasoning budget token count and reasoning budget message—were consolidated into defaults.sampling.</p>
+<p>This update traces back to issue #20429, which outlined three targeted refactoring steps. Release b8912 implements the third and final stage of that cleanup. PRs #20429 and #22264 were merged into commit fa0b8a7.</p>
+<p>Prebuilt binaries for b8912 cover a broad range of platforms: macOS (Apple Silicon, Intel, KleidiAI-enabled arm64), iOS, Linux across multiple CPU architectures and GPU backends (Vulkan, ROCm, OpenVINO, SYCL), Android arm64, Windows (CPU, CUDA 12/13, Vulkan, SYCL, HIP), and openEuler (x86 and aarch64), indicating this is a full release rather than a patch targeting a specific OS or hardware variant.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>GPT-5.2 is positioned as the go-to previous-generation model for developers who need frontier-level capability without adopting the very latest release.</li><li>Configurable reasoning effort—spanning five levels from none to xhigh—gives developers fine-grained control over how the model allocates compute for different tasks.</li><li>The 400k context window and 128k max output token limit make GPT-5.2 a candidate for long-document workflows where the newer GPT-5.4 may be overkill or more expensive.</li></ul>
+        <ul class="bullets"><li>It completes a planned three-step refactor of CLI sampling logic initiated by the maintainer community.</li><li>Prebuilt binaries for 20+ platform combinations make the update immediately accessible without recompiling from source.</li><li>The change removes code duplication in the CLI, which can reduce maintenance burden and lower the risk of divergent behavior between struct-level and defaults-level sampling settings.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>The source captured is the live GPT-5.2 model reference page on the OpenAI developer platform. The page itself contains no changelog timestamp or revision history, so the precise date it was updated is not visible from this source alone. The page structure is a reference spec, not a news or announcement post.</li></ul>
+        <ul class="bullets"><li>The release page was captured from the GitHub release tag page at https://github.com/ggml-org/llama.cpp/releases/tag/b8912. The page loaded successfully and shows the release description, signed commit metadata, and the full binary asset list across platforms.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://platform.openai.com/docs/models/gpt-5.2" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8912" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">

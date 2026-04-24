@@ -1,4 +1,7 @@
 {
+  "gpt-image-2": "gpt-image-2-7eac15",
+  "docs||openai api changelog||https://platform.openai.com/docs/models/gpt-5.2": "gpt-image-2-7eac15",
+  "evt-ceea01a9408e0f7eac15": "gpt-image-2-7eac15",
   "grok-voice-think-fast-1": "grok-voice-think-fast-1-c4e832-4",
   "blog||xai blog||https://x.ai/news/grok-voice-think-fast-1": "grok-voice-think-fast-1-c4e832-4",
   "evt-de5038e546936fc4e832": "grok-voice-think-fast-1-c4e832-4",
@@ -70,7 +73,6 @@
   "making-chatgpt-better-for-clinicians": "making-chatgpt-better-for-clinicians-7afa51",
   "github-last30days-skill-releas-last30days-skill-rel": "github-last30days-skill-releas-last30days-skill-rel-6a8391",
   "github-llamacpp-releases-llamacpp-release-fee": "github-llamacpp-releases-llamacpp-release-fee-590217",
-  "gpt-image-2": "gpt-image-2-7eac15",
   "github-codex-releases-codex-release-feed-n": "github-codex-releases-codex-release-feed-n-45d1aa",
   "nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots": "nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots-de206a",
   "github-n8n-releases-n8n-release-feed-now": "github-n8n-releases-n8n-release-feed-now",

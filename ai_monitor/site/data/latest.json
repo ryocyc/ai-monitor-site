@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-04-24T02:08:14+00:00",
+  "generated_at": "2026-04-24T02:18:39+00:00",
   "item_count": 8,
   "items": [
+    {
+      "timestamp": "2026-04-24T02:16:52+00:00",
+      "source_name": "OpenAI API Changelog",
+      "source_url": "https://r.jina.ai/http://platform.openai.com/docs/changelog",
+      "effective_url": "https://r.jina.ai/http://platform.openai.com/docs/changelog",
+      "target_url": "https://platform.openai.com/docs/models/gpt-5.2",
+      "category": "docs",
+      "headline_en": "OpenAI Updates GPT-5.2 Model Reference Page",
+      "summary_en": "OpenAI revised the GPT-5.2 model reference documentation in its April 23, 2026 developer changelog.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "Title: Changelog | OpenAI API URL Source: http://platform.openai.com/docs/changelog Published Time: Fri, 24 Apr 2026 02:16:55 GMT Markdown Content: # Changelog | OpenAI API [![Image 1: OpenAI Developers](http://platform.openai.com/OpenAI_Developers.svg)](http://platform.openai.com/) [Home](http://platform.openai.com/) [API](http://platform.openai.com/api) [Docs Guides and concepts for the OpenAI API](http://platform.openai.com/api/docs)[API reference Endpoints, parameters, and responses](http://platform.openai.com/api/reference/overview) [Codex](http://platform.openai.com/codex) [Docs Guides, concepts, and product docs for Codex](http://platform.openai.com/codex)[Use cases Example workflows and tasks teams hand to Codex](http://platform.openai.com/codex/use-cases) [ChatGPT](http://platf...",
+      "article_identity": "gpt-image-2",
+      "target_title": "GPT-5.2 Model | OpenAI API",
+      "target_summary": "Models GPT-5.2 Default Previous frontier model for professional work with configurable reasoning effort Previous frontier model for professional work with configurable reasoning effort Compare Try in Playground Reasoning Highest Speed Medium Price $1.75 • $...",
+      "target_excerpt": "Models GPT-5.2 Default Previous frontier model for professional work with configurable reasoning effort Previous frontier model for professional work with configurable reasoning effort Compare Try in Playground Reasoning Highest Speed Medium Price $1.75 • $14 Input • Output Input Text, image Output Text GPT-5.2 is our previous frontier model for complex professional work. We recommend using the latest GPT-5.4 . Learn more in our latest model guide . Reasoning.effort supports: none (default), low, medium, high and xhigh. 400,000 context window 128,000 max output tokens Aug 31, 2025 knowledge cutoff Reasoning token support Pricing Pricing is based on the number of tokens used, or other metrics based on the model type. For tool-specific models, like search and computer use, there’s a fee per tool call. See details in the pricing page . Text tokens Per 1M tokens ∙ Batch API price Input $1.75 Cached input $0.175 Output $14.00 Quick comparison Input Cached input Output GPT-5.4 $ 2.50 GPT-5.2 $ 1.75 GPT-5 mini $ 0.25 Modalities Text Input and output Image Input only Audio Not supported Video Not supported Endpoints Chat Completions v1/chat/completions Responses v1/responses Realtime v1...",
+      "status": "auto-published-demo",
+      "merge_key": "docs||openai api changelog||https://platform.openai.com/docs/models/gpt-5.2",
+      "id": "evt-ceea01a9408e0f7eac15",
+      "content_fingerprint": "title changelog openai api url source http platform openai com docs changelog published time fri 24 apr 2026 02 16 55 gmt markdown content changelog openai api image 1 openai developers http platform openai com openai developers svg http platform openai com home http platform openai com api http platform openai com api docs guides and concepts for the openai api http platform openai com api docs api reference endpoints parameters and responses http platform openai com api reference overview codex http platform openai com codex docs guides concepts and product docs for codex http platform opena",
+      "needs_cc_refresh": false,
+      "target_fetched_url": "https://developers.openai.com/api/docs/models/gpt-5.2"
+    },
     {
       "timestamp": "2026-04-24T01:59:14+00:00",
       "source_name": "Hugging Face Blog",
@@ -22,7 +45,8 @@
       "merge_key": "blog||hugging face blog||nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots",
       "id": "evt-a7bd7d4f21b48dde206a",
       "content_fingerprint": "community blog articles new article community guide open source collab partnerships research nlp audio cv rl ethics diffusion game development rlhf leaderboard case studies lerobot inference providers community articles view all denseon with the lateon open state of the art single and multi vector models 2 days ago 30 building a fast multilingual ocr model with synthetic data 6 days ago 28 how to ground a korean ai agent in real demographics with synthetic personas 3 days ago 22 ml intern takes our post training internship test about 11 hours ago 13 nvidia isaac gr00t n1 7 open reasoning vla m",
-      "needs_cc_refresh": false
+      "needs_cc_refresh": false,
+      "target_fetch_error": "HTTP Error 404: Not Found"
     },
     {
       "timestamp": "2026-04-24T01:24:41+00:00",
@@ -88,29 +112,8 @@
       "merge_key": "blog||xai blog||https://x.ai/news/grok-voice-think-fast-1",
       "id": "evt-de5038e546936fc4e832",
       "content_fingerprint": "title xai creators of grok the ai chatbot url source http x ai blog markdown content news research product company updates xai http x ai grok http x ai grok api http x ai api company http x ai company colossus http x ai colossus careers http x ai careers news http x ai news shop https shop x ai spacex https spacex com https x com try grok https grok com referrer website what s new latest news read about our latest product and research announcements april 23 2026 grok voice think fast 1 0 http x ai news grok voice think fast 1 our most capable voice agent is now available via api grok voice rea",
-      "needs_cc_refresh": false
-    },
-    {
-      "timestamp": "2026-04-23T18:54:20+00:00",
-      "source_name": "OpenAI API Changelog",
-      "source_url": "https://r.jina.ai/http://platform.openai.com/docs/changelog",
-      "effective_url": "https://r.jina.ai/http://platform.openai.com/docs/changelog",
-      "target_url": "https://platform.openai.com/docs/models/gpt-5.2",
-      "category": "docs",
-      "headline_en": "OpenAI Updates GPT-5.2 Model Reference Page",
-      "summary_en": "OpenAI revised the GPT-5.2 model reference documentation in its April 23, 2026 developer changelog.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "Title: Changelog | OpenAI API URL Source: http://platform.openai.com/docs/changelog Published Time: Thu, 23 Apr 2026 18:51:03 GMT Markdown Content: # Changelog | OpenAI API [![Image 1: OpenAI Developers](http://platform.openai.com/OpenAI_Developers.svg)](http://platform.openai.com/) [Home](http://platform.openai.com/) [API](http://platform.openai.com/api) [Docs Guides and concepts for the OpenAI API](http://platform.openai.com/api/docs)[API reference Endpoints, parameters, and responses](http://platform.openai.com/api/reference/overview) [Codex](http://platform.openai.com/codex) [Docs Guides, concepts, and product docs for Codex](http://platform.openai.com/codex)[Use cases Example workflows and tasks teams hand to Codex](http://platform.openai.com/codex/use-cases) [ChatGPT](http://platf...",
-      "article_identity": "gpt-image-2",
-      "target_title": "",
-      "target_summary": "",
-      "target_excerpt": "",
-      "status": "auto-published-demo",
-      "merge_key": "docs||openai api changelog||https://platform.openai.com/docs/models/gpt-5.2",
-      "id": "evt-ceea01a9408e0f7eac15",
-      "content_fingerprint": "title changelog openai api url source http platform openai com docs changelog published time thu 23 apr 2026 18 51 03 gmt markdown content changelog openai api image 1 openai developers http platform openai com openai developers svg http platform openai com home http platform openai com api http platform openai com api docs guides and concepts for the openai api http platform openai com api docs api reference endpoints parameters and responses http platform openai com api reference overview codex http platform openai com codex docs guides concepts and product docs for codex http platform opena",
-      "needs_cc_refresh": false
+      "needs_cc_refresh": false,
+      "target_fetch_error": "HTTP Error 403: Forbidden"
     },
     {
       "timestamp": "2026-04-23T17:08:22+00:00",
@@ -132,7 +135,8 @@
       "merge_key": "blog||aws machine learning blog||aws-machine-learning-blog-artificial-intellige",
       "id": "evt-d5797cd5b4e986cb6b26",
       "content_fingerprint": "artificial intelligence aws launches frontier agents for security testing and cloud operations by swami sivasubramanian on 31 mar 2026 in announcements artificial intelligence security governance thought leadership permalink comments share i m excited to announce that aws security agent on demand penetration testing and aws devops agent are now generally available representing a new class of ai capabilities we announced at re invent called frontier agents these autonomous systems work independently to achieve goals scale massively to tackle concurrent tasks and run persistently for hours or da",
-      "needs_cc_refresh": false
+      "needs_cc_refresh": false,
+      "target_fetch_error": "HTTP Error 404: "
     },
     {
       "timestamp": "2026-04-23T07:07:11+00:00",
@@ -154,7 +158,8 @@
       "merge_key": "news||openai newsroom||making-chatgpt-better-for-clinicians",
       "id": "evt-4268d8c51b16b97afa51",
       "content_fingerprint": "title openai news url source http openai com newsroom markdown content switch cards to show media switch cards to hide media image 1 making chatgpt free for clinicians https images ctfassets net kftzwdyauwt9 3zeoomxwfemreyddv6jmk7 02362f802128d38891b74c74d8d0b7e1 art card 1080x1080 png w 3840 q 90 fm webp making chatgpt better for clinicians product apr 22 2026 https openai com index making chatgpt better for clinicians image 2 websocket cover image https images ctfassets net kftzwdyauwt9 6losfleprovpjlqhxlumui ae6df51e50a6ad0b238d55c0dfcaf5a0 websocket art card 1x1 png w 3840 q 90 fm webp spe",
-      "needs_cc_refresh": false
+      "needs_cc_refresh": false,
+      "target_fetch_error": "HTTP Error 403: Forbidden"
     },
     {
       "timestamp": "2026-04-22T23:49:34+00:00",

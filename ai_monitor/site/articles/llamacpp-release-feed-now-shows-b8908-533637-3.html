@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GPT-5.2 Model Reference — OpenAI API Specs and Pricing | AI Signal Articles</title>
-  <meta name="description" content="The OpenAI platform reference page for GPT-5.2 documents it as the previous-generation frontier model with configurable reasoning effort and a 400,000-t...">
+  <title>llama.cpp Patches Critical Heap Overflow in Server (CVE-2026-21869) | AI Signal Articles</title>
+  <meta name="description" content="The llama.cpp project has shipped a security fix for a heap-buffer-overflow triggered by a negative n_discard value in the server component, closing a h...">
   <style>
     :root {
       --bg: #f6efe4;
@@ -129,17 +129,17 @@
   <main>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-24 02:32 UTC</div>
+      <div>Generated 2026-04-24 02:18 UTC</div>
     </div>
     <article class="hero">
-      <span class="chip">docs</span>
-      <h1>GPT-5.2 Model Reference and Capabilities on OpenAI</h1>
-      <p class="standfirst">The OpenAI platform reference page for GPT-5.2 documents it as the previous-generation frontier model with configurable reasoning effort and a 400,000-token context window.</p>
+      <span class="chip">release</span>
+      <h1>llama.cpp release b8908 patches heap-buffer-overflow in server</h1>
+      <p class="standfirst">The llama.cpp project has shipped a security fix for a heap-buffer-overflow triggered by a negative n_discard value in the server component, closing a high-severity vulnerability with CVSS 8.8.</p>
       <div class="meta">
-        <span>OpenAI API Changelog</span>
-        <span>2026-04-24 02:16 UTC</span>
-        <span>Key: openai-api-changelog::identity::gpt-image-2</span>
-        <span>Confidence: moderate</span>
+        <span>GitHub llama.cpp Releases</span>
+        <span>2026-04-23 23:18 UTC</span>
+        <span>Key: github-llamacpp-releases::identity::b8908</span>
+        <span>Confidence: strong</span>
         <span>Mode: claude</span>
       </div>
     </article>
@@ -147,26 +147,26 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The GPT-5.2 model reference page on the OpenAI developer platform describes it as the previous frontier model for professional work, sitting one tier below the newer GPT-5.4. The page explicitly directs developers to the latest model guide for GPT-5.4, signaling that GPT-5.2 is now the older recommended option for those not on the newest release.</p>
-<p>The specification lists reasoning effort as configurable across five levels—none, low, medium, high, and xhigh—with reasoning set at the highest level by default and speed at medium. The model accepts text and image inputs but outputs text only; audio and video are listed as unsupported. The context window caps at 400,000 tokens, and the maximum output is 128,000 tokens, with a knowledge cutoff of August 31, 2025.</p>
-<p>Pricing is laid out per million tokens at $1.75 for input, $0.175 for cached input, and $14.00 for output on the standard API. The batch API offers a lower rate. The page confirms support across the Chat Completions v1, Responses v1, and Realtime v1 endpoints. A quick pricing comparison table shows GPT-5.4 at $2.50 input per million tokens and GPT-5 mini at $0.25, placing GPT-5.2 mid-range between the two.</p>
+        <p>Release b8908, published on April 23, addresses a heap-buffer-overflow vulnerability in llama.cpp&#x27;s server component. The flaw lives in the update_slots() context-shift loop, where a negative n_discard value passed in client JSON can cause out-of-bounds memory access. The issue has been assigned CVE-2026-21869 and classified under CWE-787, with a CVSS score of 8.8 — placing it in the High severity range.</p>
+<p>The fix applies a two-part mitigation. First, the root cause is patched directly in the update_slots() loop. Second, as a hardening measure at the JSON parse boundary, n_discard is clamped to non-negative values at ingress. The advisory notes that n_discard=0 already triggers an auto-discard fallback (n_left/2), so clamping to 0 is safe and does not alter expected behavior. The fix references GitHub Security Advisory GHSA-8947-pfff-2f3c and is co-authored by Georgi Gerganov.</p>
+<p>The release ships pre-built binaries across a broad range of platforms: macOS (Apple Silicon, KleidiAI-enabled Apple Silicon, Intel), iOS, multiple Linux distributions and CPU architectures (x64, arm64, s390x) with support for Vulkan, ROCm 7.2, OpenVINO, and SYCL, plus Android arm64, Windows (CPU, CUDA 12/13, Vulkan, SYCL, HIP), and openEuler builds for both x86 and aarch64. Note that some UI elements on the release page failed to load fully, so asset links were not accessible at capture time.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>GPT-5.2 is positioned as the go-to previous-generation model for developers who need frontier-level capability without adopting the very latest release.</li><li>Configurable reasoning effort—spanning five levels from none to xhigh—gives developers fine-grained control over how the model allocates compute for different tasks.</li><li>The 400k context window and 128k max output token limit make GPT-5.2 a candidate for long-document workflows where the newer GPT-5.4 may be overkill or more expensive.</li></ul>
+        <ul class="bullets"><li>A heap-buffer-overflow (CWE-787) can be exploited to read or write adjacent memory, potentially allowing an attacker to crash the server or achieve code execution.</li><li>The CVSS 8.8 score means the vulnerability is reachable over the network without special privileges, making it a realistic risk for any llama.cpp server exposed to untrusted input.</li><li>The fix is delivered as a single tagged release with platform-native binaries for every major OS and accelerator backend, lowering the barrier to patching.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>The source captured is the live GPT-5.2 model reference page on the OpenAI developer platform. The page itself contains no changelog timestamp or revision history, so the precise date it was updated is not visible from this source alone. The page structure is a reference spec, not a news or announcement post.</li></ul>
+        <ul class="bullets"><li>This article is based on the llama.cpp release page at github.com/ggml-org/llama.cpp/releases/tag/b8908. The release was published on 23 April 2026 and signed with GitHub&#x27;s verified GPG signature (key ID B5690EEEBB952194). The release notes list the CVE, the technical root cause, the mitigation approach, and a full list of pre-built binaries — but the downloadable asset links themselves did not render in the captured page, likely due to a JavaScript loading error on GitHub. The binary listings should be verified directly on the release page before downloading.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://platform.openai.com/docs/models/gpt-5.2" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8908" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">
