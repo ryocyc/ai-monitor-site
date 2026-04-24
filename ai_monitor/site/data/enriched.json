@@ -261,6 +261,60 @@
       ],
       "article_confidence": "weak",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-6b72744028a32f3bea47",
+      "article_h1": "xAI Blog Update Detected — Content Not Available",
+      "article_standfirst": "The AI Monitor system detected a change on xAI's blog, but the full article content could not be captured.",
+      "article_body": [
+        "On 2026-04-24, the AI Monitor system flagged an update to xAI's blog at https://x.ai/blog and its developer release notes page at https://docs.x.ai/developers/release-notes. However, the actual article text was not successfully fetched or stored in the event payload, leaving the specific content of the update unknown. xAI, founded by Elon Musk, has been actively shipping updates to its Grok family of AI models and developer-facing APIs in recent months. The blog is a key channel for the company to announce model improvements, API changes, and new features."
+      ],
+      "article_why_matters": [
+        "xAI's blog is one of the primary channels for official announcements about Grok model capabilities and API changes.",
+        "Developers building on xAI's platform need to track these updates to keep integrations current and avoid breaking changes.",
+        "Without the captured article text, readers cannot verify what specific changes xAI announced in this update."
+      ],
+      "article_source_note": [
+        "The source text for this event was not populated in the monitor's event payload. The update was detected by the monitor system on 2026-04-24, but the actual content of the xAI blog post remains unavailable. Readers interested in the full details should visit https://x.ai/blog or https://docs.x.ai/developers/release-notes directly."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-9a0f8d828a5876c27db7",
+      "article_h1": "Perplexity Research Publishes New Paper on Search-Augmented Language Models",
+      "article_standfirst": "Perplexity has added a new research article titled 'Advancing Search-Augmented Language Models,' expanding its published body of work on search, reasoning, agents, and systems.",
+      "article_body": [
+        "Perplexity Research published a new article on April 22, 2026, titled 'Advancing Search-Augmented Language Models,' marking the latest addition to its open research catalogue. The post was published at 4:34 PM UTC that same day. The article falls under Perplexity's broader research mission, which the organisation describes as an effort to 'transform how we navigate the internet and the wider world through frontier research in search, reasoning, agents, and systems.'\n\nAlongside this update, the research page also lists a February 26, 2026 release of pplx-embed — two text embedding models, pplx-embed-v1 and pplx-embed-context-v1, described as built for real-world, web-scale retrieval. A February 4, 2026 entry covers the DRACO Benchmark, a cross-domain evaluation for deep research accuracy, completeness, and objectivity. An earlier December 2025 article, BrowseSafe, addressed prompt injection threats to AI browser agents, including a defence architecture and detection model.\n\nThe listings suggest Perplexity is maintaining an active publication cadence across several core research vectors: search-augmented generation, embedding and retrieval, benchmarking, and AI agent security. The Research page also signals active hiring across the team."
+      ],
+      "article_why_matters": [
+        "Perplexity's research publications offer rare public insight into the technical foundations behind its search product, a competitive differentiator as AI-native search becomes a crowded market.",
+        "The release of pplx-embed-v1 directly competes with established embedding model providers and could signal Perplexity's push into developer-facing infrastructure beyond consumer search.",
+        "The BrowseSafe paper on prompt injection defence highlights a growing industry concern — securing AI agents operating autonomously in open web environments — an area where published benchmarks remain scarce."
+      ],
+      "article_source_note": [
+        "This article draws on the public Perplexity Research listing page at https://research.perplexity.ai/articles. The full text of the 'Advancing Search-Augmented Language Models' article is not yet available in this capture; readers should visit the page directly to read the paper in full. The hiring signals referenced come from repeated 'We're Hiring' callouts on the listing page."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-18d659ca8e3c02b977d2",
+      "article_h1": "n8n Releases Bug Fix v1.123.36 Addressing CLI Cron Deregistration in Multi-Main Setups",
+      "article_standfirst": "Workflow automation platform n8n has shipped version 1.123.36, patching a bug in the CLI where imported workflows failed to properly deregister scheduled jobs for deactivated workflows in multi-main environments.",
+      "article_body": [
+        "n8n released version 1.123.36 on April 24, 2026, closing issue #29079 with commit 1d67911. The patch corrects the n8n workflow import CLI, which previously did not deregister cron jobs associated with deactivated workflows in multi-main deployments. Left unfixed, the bug could leave orphaned scheduled jobs running or consuming resources even after a workflow had been intentionally disabled. The release is tagged on GitHub under pull request #29083."
+      ],
+      "article_why_matters": [
+        "Multi-main n8n users who frequently import and deactivate workflows may have accumulated stale cron entries, which this release resolves.",
+        "The fix prevents unintended automation behaviour and resource waste caused by orphaned scheduled jobs after workflow deactivation.",
+        "As a point release, it is a low-risk upgrade that only corrects a specific edge case without altering core functionality."
+      ],
+      "article_source_note": [
+        "This information is drawn directly from the official n8n GitHub releases page at https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.36, which lists the single bug fix (commit 1d67911, PR #29079) included in this release."
+      ],
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"
