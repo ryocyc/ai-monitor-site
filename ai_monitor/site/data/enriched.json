@@ -371,6 +371,44 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-528cfbed23bf2074ed9d",
+      "article_h1": "Together AI Brings Inference, Agents, Voice AI, and Open Models to NVIDIA GTC 2026",
+      "article_standfirst": "Together AI announced a slate of new launches across AI inference, agents, voice AI, and open models at NVIDIA GTC 2026, alongside technical sessions led by its research and engineering teams.",
+      "article_body": [
+        "Together AI is appearing at NVIDIA GTC 2026 with a broad set of product and research announcements spanning four key areas: AI inference, agents, voice AI, and open models. The company says the showcase reflects its push to close the gap between raw GPU hardware and production-ready AI systems.",
+        "The announcement also spotlights Together AI's kernels team — the group behind well-known optimizations such as FlashAttention and the ThunderKittens library. According to the company, these researchers work to extract maximum performance from GPU hardware for real-world AI workloads.",
+        "Additional highlights on the blog include a post on 'AI Native Cloud' infrastructure, which the company frames as infrastructure purpose-built for model inference rather than adapted from legacy cloud architectures, and an introduction to Mamba-3, described as a state-space model (SSM) targeting inference efficiency with faster decode than Transformers."
+      ],
+      "article_why_matters": [
+        "NVIDIA GTC is one of the most closely watched venues for AI infrastructure news; Together AI's presence signals it is competing directly with hyperscalers in inference and model serving.",
+        "The kernels team's FlashAttention work is already widely adopted in training pipelines — its focus on production inference optimization suggests Together AI is targeting cost and latency-sensitive deployment scenarios.",
+        "The breadth of the announcement — covering inference, agents, voice AI, and open models — indicates Together AI is positioning itself as a full-stack AI cloud provider rather than a narrow tooling vendor."
+      ],
+      "article_source_note": [
+        "Information drawn from the Together AI blog landing page (together.ai/blog), last published on 23 April 2026. The page lists announcements and research highlights but does not yet include full technical details or release dates for individual products — readers should monitor the blog for follow-up posts with specifics on each launch."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-7c5618a461f782e052dc",
+      "article_h1": "CrewAI Releases Version 1.14.3 with Checkpoint Lifecycle Events and Standalone Agent Support",
+      "article_standfirst": "CrewAI has shipped version 1.14.3, bringing checkpoint lifecycle events, DayBreak sandbox tool integration, Bedrock V4 support, and fork capabilities for standalone agents.",
+      "article_body": [
+        "CrewAI has released version 1.14.3, dated 2026-04-24. The update introduces lifecycle events for checkpoint operations and adds checkpoint and fork support to standalone agents, expanding the framework's ability to pause and resume agent execution flows. Also new is support for Daytona sandbox tools, enabling enhanced sandboxed development environments within CrewAI pipelines.\n\nOn the cloud integration side, the release adds Bedrock V4 support and improves Azure integration by falling back to DefaultAzureCredential when no explicit API key is provided, reducing friction for users with existing Azure credentials configured in their environment. Support for the e2b execution environment has also been added.\n\nSeveral bugs were addressed in this release, including separating execution_id from state.id, fixing replay of recorded method events on checkpoint resume, correcting serialization of initial_state class references as JSON schema, and preserving metadata-only agent skills. Batch initialization handling and Task class-reference serialization were also patched."
+      ],
+      "article_why_matters": [
+        "Checkpoint lifecycle events and fork support for standalone agents give developers fine-grained control over long-running AI workflows, enabling partial resumption without full restarts.",
+        "Bedrock V4 and Daytona sandbox tool integrations expand CrewAI's compatibility with major cloud AI platforms and development environments, broadening deployment options.",
+        "Azure credential fallback and e2b support lower the barrier to entry for teams already embedded in those ecosystems, reducing configuration overhead."
+      ],
+      "article_source_note": [
+        "This information is drawn from the official GitHub releases page for crewAIInc/crewAI, specifically the 1.14.3 tag published on 2026-04-24 at 16:13:51Z. Details were extracted from the release tag page and the syndicated release feed. As this is a single release snapshot, further context on breaking changes or migration steps is not available here."
+      ],
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"
