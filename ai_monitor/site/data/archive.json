@@ -1,7 +1,34 @@
 {
-  "generated_at": "2026-04-24T15:58:15+00:00",
-  "item_count": 62,
+  "generated_at": "2026-04-24T16:13:19+00:00",
+  "item_count": 63,
   "items": [
+    {
+      "timestamp": "2026-04-24T16:09:05+00:00",
+      "source_name": "StepFun Home",
+      "source_url": "https://www.stepfun.com/",
+      "effective_url": "https://www.stepfun.com/",
+      "target_url": "https://www.stepfun.com/",
+      "category": "update",
+      "headline_en": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Have a good night. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers update detected",
+      "summary_en": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Have a good night. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to g...",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Have a good night. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1 +1 @@",
+        "-阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Good evening. How can I assist you? What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers",
+        "+阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Have a good night. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers"
+      ],
+      "article_identity": "stepfun-home-ai-new-conversation-",
+      "is_page_error": false,
+      "status": "auto-published-demo",
+      "merge_key": "update||stepfun home||ai conversation stepclaw please log in to access your history log in log in have a good night what do you want to know tap to explore more web search tool knowledge base q a focus ",
+      "id": "evt-550fd507e2b89bd0aff3",
+      "content_fingerprint": "ai new conversation stepclaw please log in to access your history log in log in have a good night what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio studio lightning fast asr new deploy stepclaw about stepfun careers ai new conversation stepclaw please log in to access your history log in log in have a good night what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to ",
+      "needs_cc_refresh": true
+    },
     {
       "timestamp": "2026-04-24T15:49:01+00:00",
       "source_name": "GitHub n8n Releases",
