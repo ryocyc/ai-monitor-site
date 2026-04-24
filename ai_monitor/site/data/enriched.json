@@ -1,0 +1,173 @@
+{
+  "items": [
+    {
+      "id": "evt-fd03c756eb2bc57f97f9",
+      "article_h1": "Open WebUI v0.9.2 Brings OCR Document Extraction, Firecrawl v2 API, and Custom Calendar Reminders",
+      "article_standfirst": "Open WebUI has released version v0.9.2, adding PaddleOCR-vl for document processing, upgrading to the Firecrawl v2 API with robust retry logic, and introducing configurable calendar event reminder settings.",
+      "article_body": [
+        "Open WebUI v0.9.2 shipped on April 24, 2026, introducing three notable enhancements to its open-source web interface for large language models. The headline feature is the addition of PaddleOCR-vl document extraction, giving administrators a new content extraction engine for document processing with configurable API URL and token settings.\n\nThe release also upgrades Firecrawl web loading to use the v2 API directly, implementing proper retry logic, exponential backoff on rate limits, and configurable timeout handling. These changes are aimed at improving reliability for both cloud and self-hosted Firecrawl deployments.\n\nA third new capability is configurable calendar event reminders: the `reminder_minutes` parameter can now be customized instead of defaulting to 10-minute notifications, allowing AI models to set tailored reminder durations for calendar events."
+      ],
+      "article_why_matters": [
+        "PaddleOCR-vl gives Open WebUI users a native, configurable OCR option for processing PDFs and scanned documents directly within the interface, reducing dependence on external services.",
+        "Firecrawl v2 API with exponential backoff and timeout handling significantly improves reliability for automated web content extraction, especially in self-hosted environments prone to rate limiting.",
+        "Customizable calendar reminder durations let AI models set more useful, context-aware notifications — a practical quality-of-life improvement for users relying on Open WebUI as a daily driver."
+      ],
+      "article_source_note": [
+        "This information comes from the official GitHub release page for Open WebUI v0.9.2 (tag page and Atom feed, fetched 2026-04-24). The release notes include linked issue numbers (#23945, #23934) and partial mention of a third feature (calendar reminders), though the full changelog may contain additional changes not captured in this feed excerpt."
+      ],
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-a7bd7d4f21b48dde206a",
+      "article_h1": "NVIDIA Releases Isaac GR00T N1.7 Open-Weight VLA Model for Humanoid Robots on Hugging Face",
+      "article_standfirst": "NVIDIA has open-sourced Isaac GR00T N1.7, an open-weight Vision-Language-Action model designed to bring autonomous reasoning and physical control capabilities to humanoid robots, on Hugging Face.",
+      "article_body": [
+        "NVIDIA has published Isaac GR00T N1.7, a new open-weight Vision-Language-Action (VLA) model aimed squarely at humanoid robotics applications, making it available directly on Hugging Face. The model is a descendant of the GR00T lineage and focuses on enabling robots to perceive their environment, reason about tasks, and execute physical actions in a unified framework.",
+        "The release positions the open-source community and robotics developers to experiment with and fine-tune a production-oriented VLA model without needing to build from scratch. Isaac GR00T N1.7 is described as an 'open reasoning' model, indicating it goes beyond fixed policy execution to handle more flexible, context-aware decision-making in real-world environments.",
+        "The arrival of GR00T N1.7 on Hugging Face underscores a broader industry shift toward democratizing access to foundation models for physical AI, a domain historically dominated by proprietary, hardware-locked stacks. Developers can now download, fine-tune, and evaluate the model on their own humanoid platforms."
+      ],
+      "article_why_matters": [
+        "An open-weight VLA model for humanoid robots gives researchers and startups a meaningful starting point without licensing barriers, potentially accelerating the field.",
+        "Humanoid robots require tight integration of vision, language understanding, and motor control — a combination that has been largely inaccessible to the open-source community until now.",
+        "Wider access to models like GR00T N1.7 could lower the cost of entry for developing general-purpose humanoid applications in logistics, manufacturing, and service roles."
+      ],
+      "article_source_note": "The article was identified via the Hugging Face Blog listing page. The listing provides the title, a brief description, and a 7-day-old publication timestamp, but the full article body was not retrieved. Claims about the model's technical capabilities and use cases are inferred from the available metadata and NVIDIA's GR00T model family; readers should consult the Hugging Face model card and associated documentation for authoritative specifications.",
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-05cd2501b2fe60e4d9c6",
+      "article_h1": "Ollama v0.21.3-rc0 Bridges OpenAI Reasoning Effort to Native Think Parameter",
+      "article_standfirst": "Ollama's latest release candidate introduces a compatibility layer mapping OpenAI's \"reasoning_effort\" parameter to Ollama's native \"think\" setting.",
+      "article_body": [
+        "Ollama has tagged v0.21.3-rc0 as its newest pre-release, published on 24 April 2026. The standout change in this release is a pull request (#15789) that maps OpenAI's \"reasoning_effort\" parameter onto Ollama's own \"think\" configuration, giving developers a direct compatibility shim when migrating or proxying OpenAI API calls through Ollama.",
+        "The change is oriented toward OpenAI-compatible endpoints, allowing workloads that rely on the upstream \"reasoning_effort\" field to pass through Ollama without code modification. This is particularly relevant for applications using the OpenAI SDK or any service that generates request bodies referencing that parameter.",
+        "As a release candidate, v0.21.3-rc0 is subject to further testing before a stable tag is issued. Users are encouraged to test the release against their specific model and inference configurations and report any regressions in the project's issue tracker."
+      ],
+      "article_why_matters": [
+        "Developers running OpenAI-shaped workloads through Ollama no longer need to strip or transform the \"reasoning_effort\" field manually — the shim handles it natively.",
+        "This improves Ollama's drop-in compatibility with a wide range of existing tools, agents, and SDKs designed around OpenAI's API surface.",
+        "Release candidates are the last quality gate before a stable release; early testing helps surface issues before they reach downstream users."
+      ],
+      "article_source_note": [
+        "The release information was drawn from the GitHub Ollama releases feed and the v0.21.3-rc0 tag page. The evidence is limited to the tag title, timestamp, and the single commit description — no full changelog or release notes were available at crawl time, so the practical scope of the change may extend beyond what is documented here."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-49d75874624582b98815",
+      "article_h1": "Unable to generate article — source content unavailable",
+      "article_standfirst": "The source page capture provided no readable text content for GPT-5.5.",
+      "article_body": [
+        "The page capture for OpenAI's 'Introducing GPT-5.5' article returned no extractable source text, making it impossible to write a factual article from primary evidence.",
+        "The target URL (https://openai.com/index/introducing-gpt-5-5) was visited, but the source_text field is empty in the provided data.",
+        "To produce a credible article, the actual article body, model specifications, or product details from that page need to be provided."
+      ],
+      "article_why_matters": [
+        "Without source text, any article written would be speculative, not factual.",
+        "OpenAI publishes significant product announcements via this newsroom — this is a high-interest topic.",
+        "Using fabricated details would violate the journalist integrity expected of this role."
+      ],
+      "article_source_note": [
+        "The capture confirmed the headline 'Introducing GPT-5.5' dated April 23, 2026 on the OpenAI Newsroom, but no article body content was present in the captured source text. A re-fetch of the target URL would be needed to obtain the actual source material."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-ceea01a9408e0f7eac15",
+      "article_h1": "OpenAI Updates GPT-5.2 Model Reference Page in April 2026 Developer Changelog",
+      "article_standfirst": "OpenAI revised the GPT-5.2 model reference documentation on its developer platform, reflecting ongoing updates to its model lineup.",
+      "article_body": [
+        "OpenAI has updated the reference documentation for its GPT-5.2 model on the official developer platform, according to an entry in the platform's April 2026 changelog. The change, logged on April 24, 2026, signals that the company continues to refine documentation for its latest model tier accessible to developers via the API. The updated documentation can be found at platform.openai.com/docs/models/gpt-5.2.\n\nThe changelog, which tracks documentation and API-level changes for OpenAI's developer-facing platform, recorded this update at 02:45:09 GMT on April 24. The GPT-5.2 model is part of OpenAI's broader effort to offer a layered model family, with the page revision suggesting refinements to how the model is described or how its capabilities are presented to developers.\n\nNo specific details about the nature of the documentation changes — such as added capabilities, parameter updates, or usage guidance — were available in the source material reviewed. Developers who rely on the GPT-5.2 reference page are encouraged to review the live documentation directly for the full scope of any changes."
+      ],
+      "article_why_matters": [
+        "Developers integrating GPT-5.2 via the API depend on accurate reference documentation to build reliable applications; any revision could affect implementation details.",
+        "OpenAI's changelog is the authoritative source for tracking documentation and API changes, making this update a signal worth noting for teams using the GPT-5.2 model.",
+        "Regular documentation updates for frontier models reflect how quickly AI capabilities and API interfaces are evolving, requiring developers to stay current."
+      ],
+      "article_source_note": [
+        "This article is based on the OpenAI API Changelog entry dated April 24, 2026 at 02:45:09 GMT. The source provided navigation and page metadata but did not include the specific content of the GPT-5.2 documentation revision itself. Readers should consult the live page at platform.openai.com/docs/models/gpt-5.2 for full details of any changes."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-de5038e546936fc4e832",
+      "article_h1": "xAI Makes Grok Voice Think Fast 1.0 Available via Public API",
+      "article_standfirst": "xAI has released Grok Voice Think Fast 1.0, its most capable voice agent, as a public API alongside complementary speech-to-text and text-to-speech tools.",
+      "article_body": [
+        "xAI announced on April 23, 2026, that Grok Voice Think Fast 1.0, its most advanced voice-capable AI agent, is now available to developers through a public API. The release marks xAI's most capable voice agent being offered as a standalone product for external integration. Alongside the voice agent launch, xAI released Grok Speech-to-Text (STT) and Text-to-Speech (TTS) APIs, enabling developers to build end-to-end voice pipelines using the company's own speech models. The announcement was published on the company's official news page at x.ai, alongside an item covering the new speech APIs."
+      ],
+      "article_why_matters": [
+        "Developers can now integrate xAI's voice agent into third-party applications without relying on third-party voice infrastructure, opening new integration possibilities.",
+        "The bundled STT and TTS APIs give xAI full control over the voice pipeline from input to output, potentially improving coherence across stages.",
+        "The move signals xAI's continued expansion beyond text-only AI into real-time multimodal interaction — a space dominated by OpenAI and Google."
+      ],
+      "article_source_note": [
+        "This report is based solely on the xAI blog listing for April 23, 2026, which announces the API availability of Grok Voice Think Fast 1.0 and Grok STT/TTS APIs. Full technical specifications, pricing, and rate limits were not included in the source excerpt and have not been verified. Readers should consult x.ai/api for the latest API documentation and access terms."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-d5797cd5b4e986cb6b26",
+      "article_h1": "AWS Security Agent and DevOps Agent Exit Preview, Enter General Availability",
+      "article_standfirst": "Amazon has made its autonomous frontier agents — the AWS Security Agent for on-demand penetration testing and the AWS DevOps Agent — generally available, signaling a major step toward AI-driven cloud security and operations at scale.",
+      "article_body": [
+        "Amazon Web Services has officially moved two of its flagship autonomous AI systems out of preview and into general availability. The AWS Security Agent, which provides on-demand penetration testing capabilities, and the AWS DevOps Agent are now broadly accessible to customers and partners, the company announced on 31 March 2026. Both agents fall under AWS's newly defined category of \"frontier agents,\" a class of AI systems capable of working independently to achieve complex, long-running goals without continuous human oversight.",
+        "These frontier agents are designed to operate persistently for hours or even days, scaling concurrently across multiple tasks to handle security testing and cloud operations at a scale previously impractical for human-led teams. AWS previewed the capabilities as part of its re:Invent announcements, where early customers and partners reported that the Security Agent was able to comprehensively handle penetration testing workflows autonomously.",
+        "The release marks a deliberate shift in how AWS positions AI within enterprise cloud environments — not as a point-in-time assistant, but as a persistent, autonomous actor capable of carrying out extended security and operational workflows. Together, the two agents aim to change the way organizations both secure and operate their software on AWS infrastructure."
+      ],
+      "article_why_matters": [
+        "Organizations can now automate penetration testing on demand, potentially reducing the cost and turnaround time of routine security assessments without relying solely on external consultants.",
+        "DevOps teams gain an AI agent capable of handling extended, multi-step cloud operations autonomously, freeing engineers from repetitive operational tasks and enabling them to focus on higher-value work.",
+        "The general availability signals that AWS views autonomous, long-running AI agents as a core product category — not an experimental feature — signaling a broader industry shift toward AI systems that act independently over hours or days rather than responding to single prompts."
+      ],
+      "article_source_note": [
+        "This reporting is based on an official announcement published on the AWS Machine Learning Blog by AWS Vice President Swami Sivasubramanian on 31 March 2026. The post marks the general availability of two frontier agents announced at re:Invent. Details on pricing, regional availability, and specific capability limitations were not included in the available excerpt and have not been independently verified."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-02e973171010f0e2250e",
+      "article_h1": "Replicate Launches Agent Skills: Pre-Built Markdown Instructions for AI Coding Assistants",
+      "article_standfirst": "Replicate has published a set of agent skills — ready-made markdown instruction files that give AI coding assistants expert-level knowledge of its platform without manual configuration.",
+      "article_body": [
+        "Replicate released a new feature called Agent Skills on April 21, 2026, making it easier for AI coding assistants like Claude Code, OpenAI Codex, and OpenCode to work with its AI models. The skills are a collection of markdown files that embed detailed knowledge about model discovery, model comparison, API execution, and specialized prompting for image and video generation tasks. Installing them requires a single command: `npx skills add replicate/skills`, which pulls all available skills into a project and automatically configures the coding assistant.\n\nThe skills follow the open Agent Skills specification, meaning they are designed to be compatible with any toolchain that adopts the same standard. Replicate emphasizes that agent skills are complementary to its existing MCP (Model Context Protocol) server: while MCP provides API-level tools to a coding assistant, agent skills provide the contextual knowledge needed to use those tools effectively. Together, the two features are meant to reduce the manual setup burden on developers integrating Replicate into automated workflows.\n\nThe announcement positions Replicate as a platform that supports the growing ecosystem of AI agents operating autonomously on behalf of developers. By publishing its knowledge base as a portable, open-standard markdown collection, Replicate lowers the barrier for any compatible coding assistant to accurately select models, call APIs, and produce outputs — without requiring users to research or configure anything themselves."
+      ],
+      "article_why_matters": [
+        "Developers can now add Replicate model expertise to AI coding assistants with a single command, removing manual configuration entirely.",
+        "The open Agent Skills spec means tools beyond Replicate's own ecosystem can benefit, potentially standardizing how AI agents learn platform-specific knowledge.",
+        "Combined with Replicate's MCP server, the skills create a two-layer system — knowledge plus tooling — that makes AI-driven workflows on Replicate far more autonomous."
+      ],
+      "article_source_note": [
+        "This information comes directly from Replicate's official changelog page (replicate.com/changelog), dated April 21, 2026. The changelog entry is concise and provides installation instructions, compatibility details, and a clear explanation of how skills differ from the existing MCP server, but does not include usage examples or broader adoption metrics."
+      ],
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-8dd610c1aea3ae6dc54d",
+      "article_h1": "OpenAI Ships Codex Rust Release 0.125.0-alpha.1",
+      "article_standfirst": "OpenAI has published a new pre-release version of its Codex coding assistant, tagged rust-v0.125.0-alpha.1, updated on 24 April 2026.",
+      "article_body": [
+        "OpenAI has tagged a new pre-release of its Codex coding assistant, labelled rust-v0.125.0-alpha.1, with the release page last updated at 10:16 UTC on 24 April 2026. The release appears in the monitored GitHub atom feed as of 06:36 UTC the same day, confirming it is a live release-level publication rather than a metadata edit. No detailed release notes or changelog are currently surfaced in the captured page, leaving the scope of changes unknown."
+      ],
+      "article_why_matters": [
+        "Frequent alpha releases signal active development on Codex's Rust codebase, suggesting ongoing improvements to the agentic coding tool.",
+        "Pre-release tags give developers an early window into upcoming changes, useful for integration planning and feedback.",
+        "The absence of published release notes means the community will need to inspect the repository directly to understand what changed."
+      ],
+      "article_source_note": [
+        "Information is drawn from the OpenAI Codex GitHub releases page (github.com/openai/codex/releases/tag/rust-v0.125.0-alpha.1) captured via an automated Atom feed monitor. The page contained minimal structured detail at time of capture; further investigation of the repository's commit history would be needed for a fuller picture of this release."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    }
+  ],
+  "generated_at": "TODO"
+}
