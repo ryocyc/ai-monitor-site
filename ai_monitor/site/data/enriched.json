@@ -315,6 +315,24 @@
       ],
       "article_confidence": "strong",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-94fae51ef96a32ed2d6f",
+      "article_h1": "Together AI Expands Serverless Inference Catalog with New Chinese Frontier Models",
+      "article_standfirst": "Together AI has updated its serverless inference pricing to include latest versions of leading Chinese AI models including MiniMax M2.7, Kimi K2.6, and GLM-5.1 alongside established open-weight options like Gemma 4 and Qwen3.5.",
+      "article_body": [
+        "Together AI has refreshed its serverless inference pricing page with updated model listings and new price points. The update includes the latest iterations of high-profile Chinese models: MiniMax M2.7 now priced at $0.30 per million input tokens (with cached hits at $0.06) and $1.20 for output; Kimi K2.6 at $1.20 input and $4.50 output; and GLM-5.1 at $1.40 input and $4.40 output. Batch API pricing is also listed, offering significantly reduced rates for asynchronous workloads.\n\nThe platform continues to offer a broad range of models spanning chat, vision, image, audio, transcription, embeddings, reranking, and moderation categories. Open-weight models like Gemma 4 31B remain competitively priced at $0.20 input and $0.50 output per million tokens, while the recently listed gpt-oss-120B is priced at $0.15 input and $0.60 output. The LFM2 24B A2B model appears as one of the lowest-cost options on the board at $0.03 input per million tokens.\n\nTogether AI positions serverless inference as the entry point for most teams, with a migration path to dedicated endpoints as usage scales. The pricing page notes that most teams start serverless before moving to dedicated infrastructure at higher volumes."
+      ],
+      "article_why_matters": [
+        "Chinese frontier models like Kimi K2.6 and GLM-5.1 have gained significant traction globally, and their availability on Together AI gives developers a managed serverless option without self-hosting overhead.",
+        "The $0.03 per million tokens price on LFM2 24B A2B represents one of the most aggressive pricing points in the current serverless inference market, potentially making large-scale batch processing economically viable for more teams.",
+        "The continued expansion of Together AI's model catalog reinforces the platform's strategy as a broad aggregator of inference providers, competing directly with Azure AI Foundry, AWS Bedrock, and Fireworks AI on model variety and pricing transparency."
+      ],
+      "article_source_note": [
+        "All pricing data is sourced directly from Together AI's public pricing page (together.ai/pricing) as captured on April 23–24, 2026. Prices are subject to change; batch API rates apply to asynchronous processing and may require separate account configuration. Several model entries (e.g., Qwen3.5 variants) were truncated in the source capture and complete pricing was not available."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"

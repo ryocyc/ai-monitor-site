@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-24 14:12 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-24 14:28 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="update">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time>2026-04-24 14:18 UTC</time>
+              </div>
+              <h2 class="headline">Together AI Expands Serverless Inference Catalog with New Chinese Frontier Models</h2>
+              <p class="summary">Together AI has updated its serverless inference pricing to include latest versions of leading Chinese AI models including MiniMax M2.7, Kimi K2.6, and GLM-5.1 alongside established open-weight options like Gemma 4 and Qwen3.5.</p>
+              <div class="card-bottom">
+                <span>Together AI Pricing</span>
+                <a href="https://www.together.ai/pricing">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -175,6 +188,19 @@
               </div>
             </article>
             
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time>2026-04-24 11:39 UTC</time>
+              </div>
+              <h2 class="headline">Codex release feed now shows rust-v0.125.0-alpha.3</h2>
+              <p class="summary">The monitored release feed for Codex changed and the newest visible tag is rust-v0.125.0-alpha.3. The feed timestamp is 2026-04-24T11:36:30Z. This looks like a release-level update rather than a cosmetic page edit.</p>
+              <div class="card-bottom">
+                <span>GitHub Codex Releases</span>
+                <a href="https://github.com/openai/codex/releases/tag/rust-v0.125.0-alpha.3">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="update">
               <div class="card-top">
                 <span class="pill">update</span>
@@ -185,32 +211,6 @@
               <div class="card-bottom">
                 <span>Portkey Blog</span>
                 <a href="https://portkey.ai/blog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time>2026-04-24 10:34 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/blog-update.html">Replicate Pricing Page Captured — Dynamic Content Limits Story Depth</a></h2>
-              <p class="summary">A capture of Replicate&#x27;s pricing page on April 24, 2026, reveals the page&#x27;s navigation structure and branding, though actual pricing tiers loaded dynamically and are not reflected in the static source text.</p>
-              <div class="card-bottom">
-                <span>Replicate Pricing</span>
-                <a href="https://replicate.com/pricing">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time>2026-04-24 10:17 UTC</time>
-              </div>
-              <h2 class="headline">OpenAI Ships Codex Rust Release 0.125.0-alpha.1</h2>
-              <p class="summary">OpenAI has published a new pre-release version of its Codex coding assistant, tagged rust-v0.125.0-alpha.1, updated on 24 April 2026.</p>
-              <div class="card-bottom">
-                <span>GitHub Codex Releases</span>
-                <a href="https://github.com/openai/codex/releases/tag/rust-v0.125.0-alpha.1">Source</a>
               </div>
             </article>
             </section>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-24 14:12 UTC";
+    const currentGeneratedAt = "2026-04-24 14:28 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
