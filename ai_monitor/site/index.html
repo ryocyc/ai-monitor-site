@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-24 19:13 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-24 19:28 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="update">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time>2026-04-24 19:20 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/portkey-blog-latest-who-owns-clau.html">Portkey Publishes Platform Team Guide to Managing Claude Code, Cursor, and Codex at Scale</a></h2>
+              <p class="summary">Portkey has released a practical guide aimed at platform engineering teams responsible for governing multiple AI coding agents across an engineering organization.</p>
+              <div class="card-bottom">
+                <span>Portkey Blog</span>
+                <a href="https://portkey.ai/blog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="update">
               <div class="card-top">
                 <span class="pill">update</span>
@@ -200,19 +213,6 @@
                 <a href="https://research.perplexity.ai/articles">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time>2026-04-24 12:16 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/introducing-gpt-5-5.html">Unable to generate article — source content unavailable</a></h2>
-              <p class="summary">The source page capture provided no readable text content for GPT-5.5.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/index/introducing-gpt-5-5">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-24 19:13 UTC";
+    const currentGeneratedAt = "2026-04-24 19:28 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
