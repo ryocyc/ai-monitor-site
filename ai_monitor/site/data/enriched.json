@@ -333,6 +333,24 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-0c617303e95cbe292e3a",
+      "article_h1": "OpenAI Ships Codex Rust SDK Alpha Update v0.125.0",
+      "article_standfirst": "OpenAI has pushed a new alpha release of its Rust-based Codex SDK, tagged rust-v0.125.0-alpha.3, to its public GitHub repository.",
+      "article_body": [
+        "The release appeared on the OpenAI Codex GitHub repository on 24 April 2026, bearing the tag rust-v0.125.0-alpha.3 and a timestamp of 11:36 UTC. Unlike minor metadata edits, this is classified as a genuine release-level update, meaning code or packaged artifacts were published to the repository. The Rust language tag in the version identifier signals this is part of OpenAI's effort to provide first-class Rust bindings for developers building Codex-powered applications."
+      ],
+      "article_why_matters": [
+        "Developers using Rust for AI-integrated projects can track this release for API changes, performance improvements, or new endpoints relevant to Codex.",
+        "Frequent alpha bumps on language-specific SDKs often signal active development toward a stable 1.0 — worth monitoring for breaking changes.",
+        "The pre-release status means features may still shift; teams already integrating this SDK should review the diff closely before updating."
+      ],
+      "article_source_note": [
+        "This report is drawn directly from the OpenAI Codex releases feed on GitHub (github.com/openai/codex). No detailed changelog or release notes were present in the captured page — only the release tag, timestamp, and title 'Release 0.125.0-alpha.3'. Readers wishing to see what changed should consult the release page directly for any attached commit diffs or assets."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"
