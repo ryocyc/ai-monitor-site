@@ -427,6 +427,24 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-022746daaab2549e50c7",
+      "article_h1": "OpenAI Tags Codex Rust Release 0.125.0",
+      "article_standfirst": "OpenAI has published a new version 0.125.0 of its Codex project, tagged rust-v0.125.0 on GitHub.",
+      "article_body": [
+        "OpenAI has pushed a new release, tagged rust-v0.125.0, to its public codex repository on GitHub. The release page was updated on 24 April 2026 at 16:55 UTC. The GitHub Atom feed for Codex releases reflected the new tag as the latest entry, confirming this is a live, published release rather than a draft or a page edit.\n\nThe repository has not yet disclosed detailed release notes for this version on the page itself, beyond the minimal tag label \"Release 0.125.0\". Developers tracking the Codex project will need to inspect the repository commits or attached assets to determine what changes this release introduces.\n\nThis update marks the latest in what has been an active release cadence for OpenAI's Codex, the AI-powered coding assistant originally introduced as part of the Claude model's coding capabilities and later built out as a standalone product."
+      ],
+      "article_why_matters": [
+        "Frequent releases of OpenAI Codex signal ongoing investment in its AI coding capabilities, which directly affect developers who rely on it for productivity.",
+        "Version 0.125.0 is the newest tracked release and may include bug fixes, performance improvements, or new features not yet publicly documented.",
+        "Release feeds are a primary signal for staying current with tooling — teams using Codex in CI/CD or IDE integrations need to know when new versions drop."
+      ],
+      "article_source_note": [
+        "This report is based on the public GitHub Atom release feed for the openai/codex repository and the corresponding release tag page (rust-v0.125.0), both accessed on 24 April 2026. Full release notes or a changelog have not yet been surfaced on the page itself, so readers should monitor the repository for additional detail."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"
