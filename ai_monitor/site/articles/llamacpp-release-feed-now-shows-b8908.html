@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mistral March Releases: Voxtral TTS, Mistral Small 4, Leanstral, and More | AI Signal Articles</title>
-  <meta name="description" content="Mistral AI shipped four notable model releases in March, including a new text-to-speech system, a hybrid instruct/reasoning/coding model, and its first...">
+  <title>llama.cpp Patches Critical Heap Overflow in Server (CVE-2026-21869) | AI Signal Articles</title>
+  <meta name="description" content="Release b8908 patches a heap-buffer-overflow vulnerability in llama.cpp&#x27;s server component that could be triggered by sending a negative n_discard value...">
   <style>
     :root {
       --bg: #f6efe4;
@@ -129,16 +129,16 @@
   <main>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 23:19 UTC</div>
+      <div>Generated 2026-04-24 01:26 UTC</div>
     </div>
     <article class="hero">
-      <span class="chip">docs</span>
-      <h1>Mistral&#x27;s March Releases: Voxtral TTS, Mistral Small 4, Leanstral, and Moderation 2603</h1>
-      <p class="standfirst">Mistral AI shipped four notable model releases in March, including a new text-to-speech system, a hybrid instruct/reasoning/coding model, and its first open-source Lean 4 proof agent.</p>
+      <span class="chip">release</span>
+      <h1>llama.cpp b8908 fixes heap-buffer-overflow in server&#x27;s n_discard handling</h1>
+      <p class="standfirst">Release b8908 patches a heap-buffer-overflow vulnerability in llama.cpp&#x27;s server component that could be triggered by sending a negative n_discard value in client JSON.</p>
       <div class="meta">
-        <span>Mistral Changelog</span>
-        <span>2026-04-22 23:49 UTC</span>
-        <span>Key: mistral-changelog::identity::mistral-24.09</span>
+        <span>GitHub llama.cpp Releases</span>
+        <span>2026-04-23 23:18 UTC</span>
+        <span>Key: github-llamacpp-releases::identity::b8908</span>
         <span>Confidence: strong</span>
         <span>Mode: claude</span>
       </div>
@@ -147,24 +147,26 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The changelog is presented as a straightforward chronological list with entries tagged by type — MODEL RELEASED, API UPDATED, SECURITY, and OTHER — and is filterable by date and release type. Entries are minimal by design; each model release gets a single descriptive sentence, and API changes are listed as enumerated bullet points without expanded rationale or example usage. This means readers looking for implementation details, performance benchmarks, or pricing implications will need to follow the embedded model links to separate documentation pages.</p>
+        <p>The ggml-org/llama.cpp project issued release b8908 on April 23 to address a heap-buffer-overflow in the server&#x27;s update_slots() context-shift loop. The flaw stems from a negative n_discard value accepted from client JSON, which causes memory corruption. The fix clamps n_discard to a non-negative value at the JSON parse boundary, with n_discard=0 already triggering the existing auto-discard behaviour (n_left/2). The vulnerability is classified as CWE-787 (out-of-bounds write) with a CVSS score of 8.8, and is tracked as CVE-2026-21869 (GHSA-8947-pfff-2f3c).</p>
+<p>Beyond the two core code fixes, the release ships pre-built binaries for a wide range of platforms: macOS Apple Silicon (arm64, with and without KleidiAI), macOS Intel (x64), iOS XCFramework, multiple Linux builds across Ubuntu and openEuler architectures (x86, arm64, s390x) with CPU, Vulkan, ROCm 7.2, OpenVINO, and SYCL backends, Android arm64, and Windows x64/arm64 with CPU, CUDA 12/13, Vulkan, SYCL, and HIP support.</p>
+<p>The release was co-authored by Georgi Gerganov and signed with a GitHub verified GPG key. Assets failed to load in the source page capture, so the full binary listing and any additional notes in the release body could not be confirmed.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Voxtral TTS is Mistral&#x27;s first dedicated text-to-speech model, marking a new vertical beyond its core text and multimodal work.</li><li>Mistral Small 4&#x27;s 256k context window puts it among the longest-context hybrid models available from a single provider.</li><li>Leanstral is a notable addition for the formal methods community, offering an open-source option for Lean 4 proof assistance where alternatives are scarce.</li></ul>
+        <ul class="bullets"><li>CVSS 8.8 is a high-severity score; heap-buffer-overflow can potentially be exploited for memory corruption or information disclosure in server deployments.</li><li>The flaw is trivially reachable over the network — any client that sends crafted JSON to a llama.cpp server can trigger it without authentication mentioned in the release notes.</li><li>Binary assets cover 20+ platform/architecture combinations, indicating this is a widely-used server component that users likely run as an API endpoint.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This article draws on Mistral AI&#x27;s public changelog at docs.mistral.ai/getting-started/changelog/. The page lists releases chronologically with one-line descriptions and type tags; no expanded rationale, benchmark data, or pricing details are included in the changelog itself.</li></ul>
+        <ul class="bullets"><li>The article is drawn directly from the GitHub release page for ggml-org/llama.cpp tag b8908, released 23 April 2026. Binary asset links were present in the page markup but the assets panel failed to load in the source capture, so the full file list could not be verified. The two CVE references (CVE-2026-21869, GHSA-8947-pfff-2f3c) and the CVSS/CWE details are the most concrete technical information available from this page.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://docs.mistral.ai/getting-started/changelog/" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8908" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">

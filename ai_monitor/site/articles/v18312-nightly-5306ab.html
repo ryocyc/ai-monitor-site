@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mistral March Releases: Voxtral TTS, Mistral Small 4, Leanstral, and More | AI Signal Articles</title>
-  <meta name="description" content="Mistral AI shipped four notable model releases in March, including a new text-to-speech system, a hybrid instruct/reasoning/coding model, and its first...">
+  <title>LiteLLM v1.83.12-nightly: Moonshot/kimi-k2.6 Added, Docker Images Now Signed wi... | AI Signal Articles</title>
+  <meta name="description" content="The latest nightly release of LiteLLM adds the Moonshot/kimi-k2.6 model to its registry, introduces adaptive routing, and verifies all Docker images via...">
   <style>
     :root {
       --bg: #f6efe4;
@@ -129,16 +129,16 @@
   <main>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 23:19 UTC</div>
+      <div>Generated 2026-04-24 01:43 UTC</div>
     </div>
     <article class="hero">
-      <span class="chip">docs</span>
-      <h1>Mistral&#x27;s March Releases: Voxtral TTS, Mistral Small 4, Leanstral, and Moderation 2603</h1>
-      <p class="standfirst">Mistral AI shipped four notable model releases in March, including a new text-to-speech system, a hybrid instruct/reasoning/coding model, and its first open-source Lean 4 proof agent.</p>
+      <span class="chip">release</span>
+      <h1>LiteLLM v1.83.12-nightly Lands Moonshot/kimi-k2.6 and Cosign-Signed Docker Images</h1>
+      <p class="standfirst">The latest nightly release of LiteLLM adds the Moonshot/kimi-k2.6 model to its registry, introduces adaptive routing, and verifies all Docker images via cosign.</p>
       <div class="meta">
-        <span>Mistral Changelog</span>
-        <span>2026-04-22 23:49 UTC</span>
-        <span>Key: mistral-changelog::identity::mistral-24.09</span>
+        <span>GitHub LiteLLM Releases</span>
+        <span>2026-04-24 01:24 UTC</span>
+        <span>Key: github-litellm-releases::identity::v18312-nightly</span>
         <span>Confidence: strong</span>
         <span>Mode: claude</span>
       </div>
@@ -147,24 +147,26 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The changelog is presented as a straightforward chronological list with entries tagged by type — MODEL RELEASED, API UPDATED, SECURITY, and OTHER — and is filterable by date and release type. Entries are minimal by design; each model release gets a single descriptive sentence, and API changes are listed as enumerated bullet points without expanded rationale or example usage. This means readers looking for implementation details, performance benchmarks, or pricing implications will need to follow the embedded model links to separate documentation pages.</p>
+        <p>LiteLLM&#x27;s v1.83.12-nightly release adds the Moonshot/kimi-k2.6 model to its model registry, giving users access to that provider through LiteLLM&#x27;s unified interface. The release also ships a new adaptive routing feature, which allows the library to dynamically direct requests across model deployments based on real-time conditions.</p>
+<p>A notable infrastructure change is the addition of cosign-based signature verification for all LiteLLM Docker images hosted on ghcr.io. The signing key was introduced in commit 0112e53 and all images for this release carry that signature. Users can verify authenticity either by pinning to the commit hash or by using the release tag, both documented with the full cosign verify command.</p>
+<p>The release also includes fixes and improvements spanning Docker caching behavior for pre-uv Prisma paths, CI migration from CircleCI to GitHub Actions, spend accuracy test stabilization, and a fix for wildcard ordering fallback to higher-order deployments. The GPG signature on the release commit was verified with GitHub&#x27;s own key (ID: B5690EEEBB952194).</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Voxtral TTS is Mistral&#x27;s first dedicated text-to-speech model, marking a new vertical beyond its core text and multimodal work.</li><li>Mistral Small 4&#x27;s 256k context window puts it among the longest-context hybrid models available from a single provider.</li><li>Leanstral is a notable addition for the formal methods community, offering an open-source option for Lean 4 proof assistance where alternatives are scarce.</li></ul>
+        <ul class="bullets"><li>Cosign signatures on Docker images give operators a cryptographically verifiable chain of trust, reducing the risk of pulling tampered or unofficial images.</li><li>Adaptive routing in LiteLLM can improve reliability and cost efficiency by steering traffic away from degraded or overloaded model deployments automatically.</li><li>The addition of Moonshot/kimi-k2.6 expands the roster of supported providers, benefiting users who rely on that model&#x27;s capabilities.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This article draws on Mistral AI&#x27;s public changelog at docs.mistral.ai/getting-started/changelog/. The page lists releases chronologically with one-line descriptions and type tags; no expanded rationale, benchmark data, or pricing details are included in the changelog itself.</li></ul>
+        <ul class="bullets"><li>The source for this release is the GitHub release page for BerriAI/litellm tag v1.83.12-nightly. The page lists 14 numbered changes and is signed with a GitHub verified GPG key. The cosign verification instructions and the What&#x27;s Changed list are the primary content; some page elements (asset downloads, tag comparison filter) show loading errors in the captured text, so the full file-level changelog beyond the listed items cannot be confirmed from the source alone.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://docs.mistral.ai/getting-started/changelog/" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/BerriAI/litellm/releases/tag/v1.83.12-nightly" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">

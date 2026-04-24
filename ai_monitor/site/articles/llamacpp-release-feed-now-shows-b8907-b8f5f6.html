@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mistral March Releases: Voxtral TTS, Mistral Small 4, Leanstral, and More | AI Signal Articles</title>
-  <meta name="description" content="Mistral AI shipped four notable model releases in March, including a new text-to-speech system, a hybrid instruct/reasoning/coding model, and its first...">
+  <title>llama.cpp b8907 updates LibreSSL vendor dependency to 4.3.1 | AI Signal Articles</title>
+  <meta name="description" content="Release b8907 of llama.cpp updates the bundled LibreSSL dependency to version 4.3.1 via PR #22285.">
   <style>
     :root {
       --bg: #f6efe4;
@@ -129,17 +129,17 @@
   <main>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 23:19 UTC</div>
+      <div>Generated 2026-04-24 01:43 UTC</div>
     </div>
     <article class="hero">
-      <span class="chip">docs</span>
-      <h1>Mistral&#x27;s March Releases: Voxtral TTS, Mistral Small 4, Leanstral, and Moderation 2603</h1>
-      <p class="standfirst">Mistral AI shipped four notable model releases in March, including a new text-to-speech system, a hybrid instruct/reasoning/coding model, and its first open-source Lean 4 proof agent.</p>
+      <span class="chip">release</span>
+      <h1>llama.cpp release b8907 vendors LibreSSL 4.3.1 update</h1>
+      <p class="standfirst">Release b8907 of llama.cpp updates the bundled LibreSSL dependency to version 4.3.1 via PR #22285.</p>
       <div class="meta">
-        <span>Mistral Changelog</span>
-        <span>2026-04-22 23:49 UTC</span>
-        <span>Key: mistral-changelog::identity::mistral-24.09</span>
-        <span>Confidence: strong</span>
+        <span>GitHub llama.cpp Releases</span>
+        <span>2026-04-23 23:00 UTC</span>
+        <span>Key: github-llamacpp-releases::identity::b8907</span>
+        <span>Confidence: moderate</span>
         <span>Mode: claude</span>
       </div>
     </article>
@@ -147,24 +147,26 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The changelog is presented as a straightforward chronological list with entries tagged by type — MODEL RELEASED, API UPDATED, SECURITY, and OTHER — and is filterable by date and release type. Entries are minimal by design; each model release gets a single descriptive sentence, and API changes are listed as enumerated bullet points without expanded rationale or example usage. This means readers looking for implementation details, performance benchmarks, or pricing implications will need to follow the embedded model links to separate documentation pages.</p>
+        <p>Release b8907 of llama.cpp (ggml-org/llama.cpp) was published on 23 April 2026 at 23:00 UTC. The commit, 12568ca, is signed with GitHub&#x27;s verified signature and carries the subject line &#x27;vendor: update LibreSSL to 4.3.1 (#22285)&#x27;, signed off by Adrien Gallouët.</p>
+<p>The release ships prebuilt binaries across a wide platform range. macOS users can choose Apple Silicon (with or without KleidiAI support) or Intel builds; iOS distributes an XCFramework. Linux builds cover Ubuntu on x64 and arm64 across CPU, Vulkan, ROCm 7.2, OpenVINO, and SYCL (FP32 and FP16) targets, plus s390x. Android arm64, Windows (CPU, CUDA 12 and 13, Vulkan, SYCL, HIP), and openEuler for both x86 and aarch64 are also available.</p>
+<p>The page text does not include a detailed changelog or release notes beyond the LibreSSL update; the concrete change is the vendor dependency version bump and the corresponding rebuilt platform binaries.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Voxtral TTS is Mistral&#x27;s first dedicated text-to-speech model, marking a new vertical beyond its core text and multimodal work.</li><li>Mistral Small 4&#x27;s 256k context window puts it among the longest-context hybrid models available from a single provider.</li><li>Leanstral is a notable addition for the formal methods community, offering an open-source option for Lean 4 proof assistance where alternatives are scarce.</li></ul>
+        <ul class="bullets"><li>Updating the bundled LibreSSL version directly affects the TLS and crypto foundation that llama.cpp uses on every platform it ships for, making security and compatibility patching a concrete user-visible change.</li><li>The expanded binary matrix — including CUDA 13, s390x Linux, and openEuler targets — reflects active maintenance across a broader hardware and OS surface than most projects of this scale sustain.</li><li>Because the release is GitHub-verified signed and the commit is traceable to a specific PR (#22285), users can audit the exact change in the upstream LibreSSL release without guessing.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This article draws on Mistral AI&#x27;s public changelog at docs.mistral.ai/getting-started/changelog/. The page lists releases chronologically with one-line descriptions and type tags; no expanded rationale, benchmark data, or pricing details are included in the changelog itself.</li></ul>
+        <ul class="bullets"><li>The GitHub release page at github.com/ggml-org/llama.cpp/releases/tag/b8907 confirms the release title, timestamp, verified commit hash (12568ca), the LibreSSL 4.3.1 version, and the full list of binary assets across macOS, iOS, Linux, Android, Windows, and openEuler. No separate changelog or release notes section was present on the page itself.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://docs.mistral.ai/getting-started/changelog/" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8907" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">

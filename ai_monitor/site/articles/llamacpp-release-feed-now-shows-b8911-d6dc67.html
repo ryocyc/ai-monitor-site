@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mistral March Releases: Voxtral TTS, Mistral Small 4, Leanstral, and More | AI Signal Articles</title>
-  <meta name="description" content="Mistral AI shipped four notable model releases in March, including a new text-to-speech system, a hybrid instruct/reasoning/coding model, and its first...">
+  <title>llama.cpp Release b8911 Brings Major Hexagon Profiler Overhaul | AI Signal Articles</title>
+  <meta name="description" content="The llama.cpp project tagged release b8911 on April 24, 2026, delivering a sweeping set of improvements to its Qualcomm Hexagon DSP backend with a new a...">
   <style>
     :root {
       --bg: #f6efe4;
@@ -129,16 +129,16 @@
   <main>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 23:19 UTC</div>
+      <div>Generated 2026-04-24 01:43 UTC</div>
     </div>
     <article class="hero">
-      <span class="chip">docs</span>
-      <h1>Mistral&#x27;s March Releases: Voxtral TTS, Mistral Small 4, Leanstral, and Moderation 2603</h1>
-      <p class="standfirst">Mistral AI shipped four notable model releases in March, including a new text-to-speech system, a hybrid instruct/reasoning/coding model, and its first open-source Lean 4 proof agent.</p>
+      <span class="chip">release</span>
+      <h1>llama.cpp Release b8911 Revamps Hexagon DSP Profiling</h1>
+      <p class="standfirst">The llama.cpp project tagged release b8911 on April 24, 2026, delivering a sweeping set of improvements to its Qualcomm Hexagon DSP backend with a new async profiler, configurable PMU counters, and a post-processing tool.</p>
       <div class="meta">
-        <span>Mistral Changelog</span>
-        <span>2026-04-22 23:49 UTC</span>
-        <span>Key: mistral-changelog::identity::mistral-24.09</span>
+        <span>GitHub llama.cpp Releases</span>
+        <span>2026-04-24 01:24 UTC</span>
+        <span>Key: github-llamacpp-releases::identity::b8911</span>
         <span>Confidence: strong</span>
         <span>Mode: claude</span>
       </div>
@@ -147,24 +147,26 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The changelog is presented as a straightforward chronological list with entries tagged by type — MODEL RELEASED, API UPDATED, SECURITY, and OTHER — and is filterable by date and release type. Entries are minimal by design; each model release gets a single descriptive sentence, and API changes are listed as enumerated bullet points without expanded rationale or example usage. This means readers looking for implementation details, performance benchmarks, or pricing implications will need to follow the embedded model links to separate documentation pages.</p>
+        <p>Release b8911 of llama.cpp, published on April 24, 2026 via GitHub Actions and signed with the project&#x27;s verified GPG key, centers almost entirely on the Hexagon DSP backend. The headline change is a rebuilt profiling pipeline: the existing op profiling is restored and extended, PMU (Performance Monitoring Unit) counters are enabled, and a new async profiler replaces the older blocking approach. opsync has been removed and the confusingly named &quot;opmask&quot; has been renamed &quot;opstage&quot; to better reflect its role in the pipeline.</p>
+<p>Several changes make the profiler more developer-friendly in practice. Profiler mode is now optional on older hardware, since reading PMU counters on those devices carries a real performance cost. The release adds interface hooks so the host can enable the profiler externally, and the GGML_HEXAGON_PROFILE environment variable is now documented for configuration. Output formatting has been cleaned up and a companion post-processing script (hex-prof) is included, capable of reading logs from stdin.</p>
+<p>Beyond profiling, the release also restores HTP_OPMASK_QUEUE and ensures that OPMASK_SKIP_COMPUTE is properly honored in hmx-matmul operations. The opbatch queue handling has been refactored, and several linter warnings in the htp-ops header have been fixed. Co-authorship from Qualcomm contributors Sigbjørn Skjæret and Trivikram Reddy signals direct vendor involvement in these changes.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Voxtral TTS is Mistral&#x27;s first dedicated text-to-speech model, marking a new vertical beyond its core text and multimodal work.</li><li>Mistral Small 4&#x27;s 256k context window puts it among the longest-context hybrid models available from a single provider.</li><li>Leanstral is a notable addition for the formal methods community, offering an open-source option for Lean 4 proof assistance where alternatives are scarce.</li></ul>
+        <ul class="bullets"><li>The async profiler and configurable PMU mode give developers a way to profile Hexagon performance without distorting the results they are trying to measure.</li><li>Renaming &quot;opmask&quot; to &quot;opstage&quot; and adding documentation for GGML_HEXAGON_PROFILE make the backend easier to understand and tune.</li><li>Vendor-adjacent contributors (Qualcomm) appearing in the commit history suggests these Hexagon improvements are becoming a more intentional, supported part of the project.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This article draws on Mistral AI&#x27;s public changelog at docs.mistral.ai/getting-started/changelog/. The page lists releases chronologically with one-line descriptions and type tags; no expanded rationale, benchmark data, or pricing details are included in the changelog itself.</li></ul>
+        <ul class="bullets"><li>The source is a GitHub release page for tag b8911 in the ggml-org/llama.cpp repository. The release notes are detailed and list specific code files and pull requests (#22269) affected. Pre-built binary assets are listed for a wide range of platforms (macOS, Linux, Android, Windows, openEuler) but the asset list itself failed to load in this capture, so no file names or sizes could be confirmed.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://docs.mistral.ai/getting-started/changelog/" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8911" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">

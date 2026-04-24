@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mistral March Releases: Voxtral TTS, Mistral Small 4, Leanstral, and More | AI Signal Articles</title>
-  <meta name="description" content="Mistral AI shipped four notable model releases in March, including a new text-to-speech system, a hybrid instruct/reasoning/coding model, and its first...">
+  <title>llama.cpp Release b8905 Fixes SYCL Release Build Number | AI Signal Articles</title>
+  <meta name="description" content="The llama.cpp project published a new release tag, b8905, correcting a build number for the SYCL release binary.">
   <style>
     :root {
       --bg: #f6efe4;
@@ -129,17 +129,17 @@
   <main>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 23:19 UTC</div>
+      <div>Generated 2026-04-24 01:26 UTC</div>
     </div>
     <article class="hero">
-      <span class="chip">docs</span>
-      <h1>Mistral&#x27;s March Releases: Voxtral TTS, Mistral Small 4, Leanstral, and Moderation 2603</h1>
-      <p class="standfirst">Mistral AI shipped four notable model releases in March, including a new text-to-speech system, a hybrid instruct/reasoning/coding model, and its first open-source Lean 4 proof agent.</p>
+      <span class="chip">release</span>
+      <h1>llama.cpp Release b8905</h1>
+      <p class="standfirst">The llama.cpp project published a new release tag, b8905, correcting a build number for the SYCL release binary.</p>
       <div class="meta">
-        <span>Mistral Changelog</span>
-        <span>2026-04-22 23:49 UTC</span>
-        <span>Key: mistral-changelog::identity::mistral-24.09</span>
-        <span>Confidence: strong</span>
+        <span>GitHub llama.cpp Releases</span>
+        <span>2026-04-23 21:48 UTC</span>
+        <span>Key: github-llamacpp-releases::identity::b8905</span>
+        <span>Confidence: moderate</span>
         <span>Mode: claude</span>
       </div>
     </article>
@@ -147,24 +147,26 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The changelog is presented as a straightforward chronological list with entries tagged by type — MODEL RELEASED, API UPDATED, SECURITY, and OTHER — and is filterable by date and release type. Entries are minimal by design; each model release gets a single descriptive sentence, and API changes are listed as enumerated bullet points without expanded rationale or example usage. This means readers looking for implementation details, performance benchmarks, or pricing implications will need to follow the embedded model links to separate documentation pages.</p>
+        <p>The ggml-org/llama.cpp repository tagged a new release under the identifier b8905 on 23 April 2026. The release was pushed via a GitHub Actions workflow and signed with the project&#x27;s verified GitHub GPG key (ID: B5690EEEBB952194). The single change bundled in this release is described as &quot;fix build number for sycl release&quot; and references pull request #22283.</p>
+<p>The release ships pre-built binary assets across a broad range of platforms and hardware configurations. Supported targets include macOS (Apple Silicon arm64 with an optional KleidiAI build, plus Intel x64), iOS as an XCFramework, and Linux variants covering Ubuntu on multiple CPU architectures as well as Vulkan, ROCm 7.2, OpenVINO, SYCL (FP32 and FP16), and openEuler targets. Windows binaries cover CPU, CUDA 12 and 13, Vulkan, SYCL, and HIP backends, while Android is represented by an arm64 CPU build.</p>
+<p>The GitHub releases page showed loading errors for the binary asset list at the time of capture, meaning the exact filenames and checksums of the attached artifacts could not be confirmed from the page directly.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Voxtral TTS is Mistral&#x27;s first dedicated text-to-speech model, marking a new vertical beyond its core text and multimodal work.</li><li>Mistral Small 4&#x27;s 256k context window puts it among the longest-context hybrid models available from a single provider.</li><li>Leanstral is a notable addition for the formal methods community, offering an open-source option for Lean 4 proof assistance where alternatives are scarce.</li></ul>
+        <ul class="bullets"><li>SYCL is an increasingly important backend for running LLMs on Intel GPUs and heterogeneous hardware, making any build-number correction relevant to users relying on those binaries.</li><li>The release ships 30 binary assets across a wide platform matrix, reflecting llama.cpp&#x27;s role as a cornerstone inference engine for researchers and engineers on nearly any operating system.</li><li>The inclusion of CUDA 13 support alongside CUDA 12 indicates continued upstream tracking of NVIDIA&#x27;s driver ecosystem.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This article draws on Mistral AI&#x27;s public changelog at docs.mistral.ai/getting-started/changelog/. The page lists releases chronologically with one-line descriptions and type tags; no expanded rationale, benchmark data, or pricing details are included in the changelog itself.</li></ul>
+        <ul class="bullets"><li>The source is a standard GitHub releases page for a tagged commit. The page content is largely GitHub interface chrome; the substantive release notes consist of one line describing a build-number fix. Binary asset filenames and checksums were not visible at capture time due to a loading error, and no commit diff or changelog narrative was provided beyond the PR reference.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://docs.mistral.ai/getting-started/changelog/" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8905" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">
