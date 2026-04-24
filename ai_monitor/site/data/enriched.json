@@ -167,6 +167,44 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-6d30b88eacb385817347",
+      "article_h1": "Portkey Publishes Platform Team Guide to Managing Claude Code, Cursor, and Codex at Scale",
+      "article_standfirst": "Portkey has released a practical guide aimed at platform engineering teams responsible for governing multiple AI coding agents across an engineering organization.",
+      "article_body": [
+        "Portkey, an AI infrastructure company, has published a new guide addressing how platform teams can own and manage AI coding agents — including Anthropic's Claude Code, Cursor, and OpenAI's Codex — across their engineering organization.",
+        "The guide, titled 'Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale,' was authored by Siddharth Sambharia and published on April 24, 2026. The piece carries the tagline 'The harness is converging. Context is what separates teams,' suggesting the guide focuses on governance, context management, and standardization as organizations scale agent usage.",
+        "The release is part of Portkey's broader 'Production Guides' content track, alongside recent posts covering Skills Registry, OpenAI Codex best practices, AI Agent governance, and an introduction to the Agent Gateway — indicating a coordinated editorial focus on enterprise AI agent operations."
+      ],
+      "article_why_matters": [
+        "As AI coding agents proliferate across engineering teams, questions of ownership, governance, and standardization are becoming acute; this guide directly addresses who inside an organization should own that responsibility.",
+        "The simultaneous publication of related pieces on Skills Registry, Agent Gateway, and AI Agent governance suggests Portkey is building out a cohesive framework for enterprise AI agent management.",
+        "Engineering leaders deploying multiple agents — Claude Code, Cursor, Codex — in parallel will need structured guidance on integration, access control, and observability to avoid fragmented, ungoverned adoption."
+      ],
+      "article_source_note": [
+        "This article is based on the Portkey Blog listing page for April 24, 2026. The guide's full content was not retrieved, so this story is limited to the post's title, author, date, excerpt, and tag metadata. Readers should consult the full post at portkey.ai/blog/platfrom-guide-to-coding-agents/ for the complete analysis and recommendations."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-d386a1e0c18dae94358e",
+      "article_h1": "Replicate Pricing Page Captured — Dynamic Content Limits Story Depth",
+      "article_standfirst": "A capture of Replicate's pricing page on April 24, 2026, reveals the page's navigation structure and branding, though actual pricing tiers loaded dynamically and are not reflected in the static source text.",
+      "article_body": [
+        "Replicate, a platform that lets developers run open-source AI models via an API, had its pricing page captured on April 24, 2026. The page capture confirms Replicate's core billing philosophy — users pay only for what they use, with some models billed by compute time and others by input and output tokens. The page also featured a promotional banner for ByteDance's Seedance 2.0 video generation model, highlighting the platform's role as a host for both frontier and open-weight models from a wide range of providers.\n\nThe source capture includes the page's HTML scaffold, navigation structure, and metadata, along with preloaded asset references for models including Claude 3.7 and Flux 1.1. However, the actual pricing tables — showing cost-per-second, per-token, or per-image figures for specific models — are not present in the static HTML, suggesting they are rendered client-side via JavaScript after page load.\n\nThis points to a broader challenge in monitoring AI platform pricing: billing structures change frequently, and static page captures often miss the very data that matters most to developers making cost decisions."
+      ],
+      "article_why_matters": [
+        "Developers building on Replicate need up-to-date pricing data to estimate project costs, and static captures may silently omit the figures they rely on.",
+        "AI platform pricing pages are increasingly dynamic, making independent monitoring and archiving more technically complex.",
+        "The presence of a ByteDance Seedance 2.0 banner signals that Replicate continues to expand its model catalogue with frontier-level models from major labs."
+      ],
+      "article_source_note": [
+        "The source text is the full HTML response from https://replicate.com/pricing captured at page load. It contains the page's meta tags, navigation structure, promotional banner markup, and JavaScript asset preloads, but the substantive pricing table content — likely rendered by a client-side JavaScript framework — is absent from the capture."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"
