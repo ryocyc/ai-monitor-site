@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>llama.cpp Release b8911: Hexagon Profiler Overhaul | AI Signal Articles</title>
+  <meta name="description" content="Release b8911 of llama.cpp delivers a sweeping set of changes to its Hexagon DSP backend, centering on a rebuilt profiling system with async operation t...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-24 02:01 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>llama.cpp b8911 Revamps Hexagon DSP Profiling Infrastructure</h1>
+      <p class="standfirst">Release b8911 of llama.cpp delivers a sweeping set of changes to its Hexagon DSP backend, centering on a rebuilt profiling system with async operation tracking, optional PMU counters, and a new post-processing tool.</p>
+      <div class="meta">
+        <span>GitHub llama.cpp Releases</span>
+        <span>2026-04-24 01:24 UTC</span>
+        <span>Key: github-llamacpp-releases::identity::b8911</span>
+        <span>Confidence: strong</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>The GitHub Actions release, tagged b8911 (commit 5d2b52d, signed GitHub GPG key B5690EEEBB952194), lands on 24 April 2026 and targets the Hexagon DSP backend used in Qualcomm-powered devices. The headline change is a refactored profiler: operations previously guarded by an &quot;opsync&quot; mechanism are now fully asynchronous, and the old &quot;opmask&quot; label has been replaced with the more accurate &quot;opstage&quot; to reflect how queue elements are tracked through execution stages rather than masking behavior.</p>
+<p>A key practical change is making performance monitoring unit (PMU) counters optional on older hardware, where retrieving them was found to be expensive. Users can now set which PMU events to collect via an environment variable and tune profiler mode to suit their device. The release also introduces a lightweight post-processing script (`scripts/snapdragon/ggml-hexagon-profile.py`) that accepts logs from stdin, and the `GGML_HEXAGON_PROFILE` environment variable is now formally documented.</p>
+<p>Several supporting refinements round out the release: op-queuing logic is simplified with separate profile descriptors, an opbatch queue handler is refactored, host-facing interface hooks are added to toggle the profiler from outside the device, and linting issues in the Hexagon ops header are cleaned up. Co-authorship includes Sigbjørn Skjæret and Trivikram Reddy.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>Developers running llama.cpp on Qualcomm Hexagon hardware — common in Android devices and always-on AI profiles — now get a measurably better debugging story, with lower overhead on constrained hardware.</li><li>The switch from opsync/async to fully async profiling, plus the renamed opstage, signals a maturing of the Hexagon backend that could feed into broader stability and correctness improvements.</li><li>The new post-proc tool and documented `GGML_HEXAGON_PROFILE` env var make it practical for non-experts to profile neural network kernels on-device for the first time.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>The release page was fetched from GitHub&#x27;s release tag page for b8911, published via GitHub Actions on 24 April 2026. The commit is signed and verified. Binary assets (prebuilt builds for macOS, Linux, Windows, Android, and openEuler across multiple hardware targets) are listed but their download links were not fully rendered in the page capture.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8911" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+</body>
+</html>

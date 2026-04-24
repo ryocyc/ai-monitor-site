@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LiteLLM v1.83.12-nightly: Moonshot k2.6 Model and Docker Cosign Signing | AI Signal Articles</title>
+  <meta name="description" content="This nightly build integrates the Moonshot/kimi-k2.6 model into LiteLLM&#x27;s registry and begins signing all Docker images with Cosign for supply-chain ver...">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-24 02:01 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>LiteLLM v1.83.12-nightly Adds Moonshot k2.6 and Cosign Docker Signing</h1>
+      <p class="standfirst">This nightly build integrates the Moonshot/kimi-k2.6 model into LiteLLM&#x27;s registry and begins signing all Docker images with Cosign for supply-chain verification.</p>
+      <div class="meta">
+        <span>GitHub LiteLLM Releases</span>
+        <span>2026-04-24 01:24 UTC</span>
+        <span>Key: github-litellm-releases::identity::v18312-nightly</span>
+        <span>Confidence: strong</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>The release adds the Moonshot/kimi-k2.6 model to LiteLLM&#x27;s model registry, expanding the library&#x27;s growing roster of supported providers. Two pull requests authored by Ishaan Berri (#26203, #26213) introduced the model and a related branch, while contributor @krrish-berri-2 contributed adaptive routing logic that can route requests across multiple model deployments dynamically.</p>
+<p>A notable infrastructure addition is Cosign-based Docker image signing for all LiteLLM images published to ghcr.io. Verification can be performed using a pinned Git commit hash (recommended) or a release tag, both resolving to the same signing key committed in 0112e53. The release notes include the full Cosign verification commands for each method.</p>
+<p>Other changes in the release include fixes for spend accuracy test flakiness and a Redis buffer data-loss path, a Prisma cache path restoration for Docker builds, migration of more CI jobs from CircleCI to GitHub Actions, Bedrock guardrail spend-log improvements in the proxy, wildcard routing fallback logic, a numeric UID fix for Kubernetes non-root runs, and a per-member spend tracking feature for team memberships.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>Docker image signing with Cosign adds a verifiable supply-chain layer, letting users cryptographically confirm they are pulling genuine LiteLLM images rather than tampered ones.</li><li>The addition of Moonshot/kimi-k2.6 expands LiteLLM&#x27;s multi-model orchestration to another frontier model provider, broadening supported use cases.</li><li>The adaptive routing feature enables LiteLLM to route requests across deployments intelligently, potentially improving reliability and cost efficiency for production deployments.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>The source is a GitHub release page for LiteLLM v1.83.12-nightly, authored by the github-actions account and timestamped April 23, 2026 at 23:29 UTC. The page lists 14 changes spanning model additions, infrastructure improvements, and bug fixes across multiple contributors.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/BerriAI/litellm/releases/tag/v1.83.12-nightly" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+</body>
+</html>

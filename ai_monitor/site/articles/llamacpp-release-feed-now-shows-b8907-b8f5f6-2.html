@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>llama.cpp b8907: LibreSSL Updated to 4.3.1 in Latest Release | AI Signal Articles</title>
+  <meta name="description" content="The llama.cpp project tagged release b8907, bumping its LibreSSL vendor dependency to version 4.3.1.">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated 2026-04-24 02:01 UTC</div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>llama.cpp Release b8907 Updates LibreSSL Dependency to 4.3.1</h1>
+      <p class="standfirst">The llama.cpp project tagged release b8907, bumping its LibreSSL vendor dependency to version 4.3.1.</p>
+      <div class="meta">
+        <span>GitHub llama.cpp Releases</span>
+        <span>2026-04-23 23:00 UTC</span>
+        <span>Key: github-llamacpp-releases::identity::b8907</span>
+        <span>Confidence: strong</span>
+        <span>Mode: claude</span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>The ggml-org/llama.cpp project released tag b8907 on 23 April 2026. The sole change in this release is a vendor update bumping LibreSSL to version 4.3.1, tracked as pull request #22285. The commit was signed off by Adrien Gallouët of Hugging Face and verified with GitHub&#x27;s vigilant mode signature.</p>
+<p>The release ships prebuilt binaries across a wide range of platforms: macOS (Apple Silicon with and without KleidiAI, and Intel x64), iOS as an XCFramework, and Linux builds for Ubuntu on x64 and arm64 CPUs with optional Vulkan, ROCm 7.2, OpenVINO, and SYCL acceleration. Windows builds cover CPU, CUDA 12 and 13, Vulkan, SYCL, and HIP backends. Android arm64, openEuler variants, and Ubuntu s390x are also included.</p>
+<p>No functional changes to llama.cpp&#x27;s inference code are associated with this tag. The update brings the bundled LibreSSL version forward, which typically carries security fixes and compatibility improvements for TLS and cryptographic operations used within the project.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>LibreSSL updates commonly include security patches for TLS and cryptography that affect how llama.cpp handles network requests and secure model downloads.</li><li>This release propagates the dependency bump across all officially distributed binary archives, so users on macOS, Windows, Linux, iOS, and Android get the same baseline LibreSSL version.</li><li>The update covers CUDA 13 (with 13.1 DLLs) and ROCm 7.2, indicating continued alignment with the latest GPU compute stacks supported by llama.cpp.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This article is based on the GitHub release page for llama.cpp tag b8907. The page confirms the LibreSSL version bump and lists the full set of platform binaries, but does not elaborate on what specific LibreSSL changes are included in 4.3.1 or any downstream impact on llama.cpp behavior.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8907" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+</body>
+</html>
