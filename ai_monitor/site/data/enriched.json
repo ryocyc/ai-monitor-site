@@ -463,6 +463,24 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-80dc677e366832c9835d",
+      "article_h1": "LangGraph Prebuilt 1.0.11 Brings Flexible Tool Returns and ToolRuntime Exposure",
+      "article_standfirst": "LangChain AI released langgraph-prebuilt version 1.0.11 on April 24, adding support for ToolNode tools that return structured lists of commands or messages.",
+      "article_body": [
+        "LangChain AI has published langgraph-prebuilt version 1.0.11 to GitHub, marking a minor release that advances the prebuilt agent toolkit's tool-calling capabilities. The update, timestamped 2026-04-24T18:18:45Z, introduces a new feature allowing ToolNode tools to return a list of Command or ToolMessage objects — a flexibility that gives developers finer control over agent orchestration logic. The release also includes a new capability to expose available tools on the ToolRuntime object, making tool discovery more transparent at runtime. Under the hood, LangGraph itself was bumped from version 1.1.8 to 1.1.9 as part of this release cycle."
+      ],
+      "article_why_matters": [
+        "Developers building multi-step agents can now structure ToolNode responses with greater granularity, enabling more complex dialogue and control-flow patterns without custom wrappers.",
+        "Exposing available tools on ToolRuntime improves introspectability, helping teams debug and document which tools an agent has access to at any given point.",
+        "The release is a straightforward minor version update with minimal migration risk, but teams currently on prebuilt==1.0.10 should evaluate the new return-type contract for ToolNode."
+      ],
+      "article_source_note": [
+        "This information comes from the official LangGraph releases page on GitHub and its associated Atom feed. The changelog is explicit and includes linked pull request numbers (#7596, #7563, #7512, #7545), which can be cross-referenced for deeper implementation detail. No higher-level roadmap context is provided in the release notes."
+      ],
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"

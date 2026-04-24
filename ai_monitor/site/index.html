@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-24 18:14 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-24 18:29 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,32 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time>2026-04-24 18:19 UTC</time>
+              </div>
+              <h2 class="headline">LangGraph Prebuilt 1.0.11 Brings Flexible Tool Returns and ToolRuntime Exposure</h2>
+              <p class="summary">LangChain AI released langgraph-prebuilt version 1.0.11 on April 24, adding support for ToolNode tools that return structured lists of commands or messages.</p>
+              <div class="card-bottom">
+                <span>GitHub LangGraph Releases</span>
+                <a href="https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.11">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-24 18:19 UTC</time>
+              </div>
+              <h2 class="headline">OpenAI API Changelog Refreshed; GPT-Image-1 Entry Appears at Top</h2>
+              <p class="summary">OpenAI&#x27;s public API changelog page now surfaces a new top entry under the GPT-Image-1 heading, signalling a recent update to its image generation capabilities.</p>
+              <div class="card-bottom">
+                <span>OpenAI API Changelog</span>
+                <a href="https://platform.openai.com/docs/changelog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -120,19 +146,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Blog</span>
                 <a href="https://huggingface.co/blog/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time>2026-04-24 16:59 UTC</time>
-              </div>
-              <h2 class="headline">OpenAI Tags Codex Rust Release 0.125.0</h2>
-              <p class="summary">OpenAI has published a new version 0.125.0 of its Codex project, tagged rust-v0.125.0 on GitHub.</p>
-              <div class="card-bottom">
-                <span>GitHub Codex Releases</span>
-                <a href="https://github.com/openai/codex/releases/tag/rust-v0.125.0">Source</a>
               </div>
             </article>
             
@@ -200,19 +213,6 @@
                 <a href="https://openai.com/index/introducing-gpt-5-5">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time>2026-04-24 12:11 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/xai-api-playground.html">xAI Launches API Playground for Grok 4.20, Expands Voice and Image APIs</a></h2>
-              <p class="summary">xAI has updated its API reference page with a new Playground interface for Grok 4.20, alongside expanded voice and image generation tools.</p>
-              <div class="card-bottom">
-                <span>xAI API</span>
-                <a href="https://x.ai/api/">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-24 18:14 UTC";
+    const currentGeneratedAt = "2026-04-24 18:29 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
