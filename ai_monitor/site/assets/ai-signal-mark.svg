@@ -1,0 +1,32 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="panel" x1="36" y1="28" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#F2E9DA"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="76" y1="176" x2="186" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#14978E"/>
+    </linearGradient>
+    <filter id="shadow" x="10" y="8" width="236" height="236" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="14"/>
+      <feGaussianBlur stdDeviation="13"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.102 0 0 0 0 0.122 0 0 0 0 0.094 0 0 0 0.15 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="36" y="28" width="184" height="184" rx="44" fill="url(#panel)"/>
+    <rect x="37" y="29" width="182" height="182" rx="43" stroke="#0F766E" stroke-opacity="0.16" stroke-width="2"/>
+  </g>
+
+  <path d="M78 156C94 140 110.667 132 128 132C145.333 132 162 140 178 156" stroke="url(#signal)" stroke-width="11" stroke-linecap="round"/>
+  <path d="M88 125C100.667 112.333 114 106 128 106C142 106 155.333 112.333 168 125" stroke="url(#signal)" stroke-opacity="0.85" stroke-width="9" stroke-linecap="round"/>
+  <path d="M98 96C106.667 87.3333 116.667 83 128 83C139.333 83 149.333 87.3333 158 96" stroke="url(#signal)" stroke-opacity="0.68" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="128" cy="170" r="17" fill="#0F766E"/>
+  <circle cx="128" cy="170" r="31" stroke="#0F766E" stroke-opacity="0.16" stroke-width="7"/>
+</svg>
