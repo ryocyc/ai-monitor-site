@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T10:43:50+00:00",
+  "generated_at": "2026-04-24T11:05:33+00:00",
   "item_count": 10,
   "items": [
     {
@@ -9,8 +9,8 @@
       "effective_url": "https://portkey.ai/blog",
       "target_url": "https://portkey.ai/blog",
       "category": "update",
-      "headline_en": "Latest Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale The harness is converging. Context is what separates teams. A platform team's guide to owning Claude Code, Cursor, and Codex across your engineering org. Siddharth Sambharia 24 Apr 2026 Introducing Skills Registry Siddharth Sambharia 23 Apr 2026 Your First AI Agent Will Go Fine. Your Fiftieth Is Where Things Get Interesting. Swetha Sridhar 22 Apr 2026 n8n Best Practices Drishti Shah 21 Apr 2026 Introducing the Agent Gateway Rohit Agarwal, Ayush 21 Apr 2026 OpenAI Codex best practices Drishti Shah 20 Apr 2026 AI Agent governance Drishti Shah 19 Apr 2026 Show more Production Guides Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale The harness is converging. Context is what separates teams. A platform team's guide to owning Claude Code, Cursor, and Codex across your engineering org. Siddharth Sambharia 24 Apr 2026 Architecting for Trust: A Strategic Perspective on the MCP Registry for the Enterprise Rohit Agarwal, Vrushank Vyas 09 Sep 2025 Everything We Know About Claude Code Limits Rohit Agarwal, Narendranath Gogineni, Siddharth Sambharia 29 Jul 2025 Beyond the Hype: The Enterprise AI Blueprint You Need Now (And Why Your AI Gateway is Non-Negotiable) Rohit Agarwal 08 Apr 2025 Launching Prompt Engineering Studio Vrushank Vyas 17 Mar 2025 OpenAI's New Agent Tools: Navigating Strategic Implications for Enterprise AI Vrushank Vyas 12 Mar 2025 The State of AI FinOps 2025: Key Insights from FinOps Foundation's Latest Report Vrushank Vyas 20 Feb 2025 Show more Conversations Jamming on Event-Driven Architecture and MCP for Multi-Agentic Systems Insights from Portkey's AI Practitioners Meetup on building scalable multi-agent systems. Learn about Event-Driven Architecture patterns, Model Context Protocol implementation, and real-world experiences building multi-agents system. Siddharth Sambharia 13 Jan 2025 LLMs in Prod Comes to Bangalore Vrushank Vyas 29 Jul 2024 Transforming E-Commerce Search with Semantic Cache: Insights from Walmart's Journey Rohit Agarwal 09 Feb 2024 Unpacking Semantic Caching at Walmart Vrushank Vyas 05 Feb 2024 Dive into what is LLMOps Vrushank Vyas 01 Jul 2023 The Confidence Checklist for LLMs in Production Vrushank Vyas 01 Jul 2023 Show more Announcements Introducing the MCP Gateway Your interns need three approvals to touch production. Your AI agents? Zero. With MCP, agents can take real action – connect to databases, trigger workflows, access internal systems. The protocol just works. But here's what we kept hearing from teams actually running MCP in production: \"How do I Rohit Agarwal, Ayush, Drishti Shah 21 Jan 2026 We Tracked $93M in LLM Spends Last Year. Now the Data is Yours. Vrushank Vyas 12 Jan 2026 August at Portkey: 2 BILLION Requests, Guardrails, Tracing, and More Vrushank Vyas 05 Sep 2024 Open Sourcing Guardrails on the Gateway Framework Rohit Agarwal, Ayush 14 Aug 2024 Show more paper summaries More Evaluating Long-Context LLMs Multi-LLM Text Summarization Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference - Summary Mixtral of Experts - Summary LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models - Summary Benchmarks More Benchmarking the new moderation model from OpenAI GPT-4 is Getting Faster 🐇 Home Production Guides New Releases Talks Upcoming Events Portkey Docs Sign in Subscribe Latest Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale The harness is converging. Context is what separates teams. A platform team's guide to owning Claude Code, Cursor, and Codex across your engineering org. Siddharth Sambharia 24 Apr 2026 Introducing Skills Registry Siddharth Sambharia 23 Apr 2026 Your First AI Agent Will Go Fine. Your Fiftieth Is Where Things Get Interesting. Swetha Sridhar 22 Apr 2026 n8n Best Practices Drishti Shah 21 Apr 2026 Introducing the Agent Gateway Rohit Agarwal, Ayush 21 Apr 2026 OpenAI Codex best practices Drishti Shah 20 Apr 2026 AI Agent governance Drishti Shah 19 Apr 2026 Show more Production Guides Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale The harness is converging. Context is what separates teams. A platform team's guide to owning Claude Code, Cursor, and Codex across your engineering org. Siddharth Sambharia 24 Apr 2026 Architecting for Trust: A Strategic Perspective on the MCP Registry for the Enterprise Rohit Agarwal, Vrushank Vyas 09 Sep 2025 Everything We Know About Claude Code Limits Rohit Agarwal, Narendranath Gogineni, Siddharth Sambharia 29 Jul 2025 Beyond the Hype: The Enterprise AI Blueprint You Need Now (And Why Your AI Gateway is Non-Negotiable) Rohit Agarwal 08 Apr 2025 Launching Prompt Engineering Studio Vrushank Vyas 17 Mar 2025 OpenAI's New Agent Tools: Navigating Strategic Implications for Enterprise AI Vrushank Vyas 12 Mar 2025 The State of AI FinOps 2025: Key Insights from FinOps Foundation's Latest Report Vrushank Vyas 20 Feb 2025 Show more Conversations Jamming on Event-Driven Architecture and MCP for Multi-Agentic Systems Insights from Portkey's AI Practitioners Meetup on building scalable multi-agent systems. Learn about Event-Driven Architecture patterns, Model Context Protocol implementation, and real-world experiences building multi-agents system. Siddharth Sambharia 13 Jan 2025 LLMs in Prod Comes to Bangalore Vrushank Vyas 29 Jul 2024 Transforming E-Commerce Search with Semantic Cache: Insights from Walmart's Journey Rohit Agarwal 09 Feb 2024 Unpacking Semantic Caching at Walmart Vrushank Vyas 05 Feb 2024 Dive into what is LLMOps Vrushank Vyas 01 Jul 2023 The Confidence Checklist for LLMs in Production Vrushank Vyas 01 Jul 2023 Show more Announcements Introducing the MCP Gateway Your interns need three approvals to touch production. Your AI agents? Zero. With MCP, agents can take real action – connect to databases, trigger workflows, access internal systems. The protocol just works. But here's what we kept hearing from teams actually running MCP in production: \"How do I Rohit Agarwal, Ayush, Drishti Shah 21 Jan 2026 We Tracked $93M in LLM Spends Last Year. Now the Data is Yours. Vrushank Vyas 12 Jan 2026 August at Portkey: 2 BILLION Requests, Guardrails, Tracing, and More Vrushank Vyas 05 Sep 2024 Open Sourcing Guardrails on the Gateway Framework Rohit Agarwal, Ayush 14 Aug 2024 Show more paper summaries More Evaluating Long-Context LLMs Multi-LLM Text Summarization Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference - Summary Mixtral of Experts - Summary LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models - Summary Benchmarks More Benchmarking the new moderation model from OpenAI GPT-4 is Getting Faster 🐇 Subscribe to Portkey Blog Subscribe now Blog Home Portkey Website Portkey Blog © 2026. Powered by Ghost blog listing updated",
-      "summary_en": "The Latest Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale The harness is converging. Context is what separates teams. A platform team's guide to owning Claude Code, Cursor, and Codex across your engineering org. Siddharth Sambharia 24 Apr 2026 Introducing Skills Registry Siddharth Sambharia 23 Apr 2026 Your First AI Agent Will Go Fine. Your Fiftieth Is Where Things Get Interesting. Swetha Sridhar 22 Apr 2026 n8n Best Practices Drishti Shah 21 Apr 2026 Introducing the Agent Gateway Rohit Agarwal, Ayush 21 Apr 2026 OpenAI Codex best practices Drishti Shah 20 Apr 2026 AI Agent governance Drishti Shah 19 Apr 2026 Show more Production Guides Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale The harness is converging. Context is what separates teams. A platform team's guide to owning Claude Code, Cursor, and Codex across your engineering org. Siddharth Sambharia 24 Apr 2026 Architecting for Trust: A Strategic Perspective on the MCP Registry for the Enterprise Rohit Agarwal, Vrushank Vyas 09 Sep 2025 Everything We Know About Claude Code Limits Rohit Agarwal, Narendranath Gogineni, Siddharth Sambharia 29 Jul 2025 Beyond the Hype: The Enterprise AI Blueprint You Need Now (And Why Your AI Gateway is Non-Negotiable) Rohit Agarwal 08 Apr 2025 Launching Prompt Engineering Studio Vrushank Vyas 17 Mar 2025 OpenAI's New Agent Tools: Navigating Strategic Implications for Enterprise AI Vrushank Vyas 12 Mar 2025 The State of AI FinOps 2025: Key Insights from FinOps Foundation's Latest Report Vrushank Vyas 20 Feb 2025 Show more Conversations Jamming on Event-Driven Architecture and MCP for Multi-Agentic Systems Insights from Portkey's AI Practitioners Meetup on building scalable multi-agent systems. Learn about Event-Driven Architecture patterns, Model Context Protocol implementation, and real-world experiences building multi-agents system. Siddharth Sambharia 13 Jan 2025 LLMs in Prod Comes to Bangalore Vrushank Vyas 29 Jul 2024 Transforming E-Commerce Search with Semantic Cache: Insights from Walmart's Journey Rohit Agarwal 09 Feb 2024 Unpacking Semantic Caching at Walmart Vrushank Vyas 05 Feb 2024 Dive into what is LLMOps Vrushank Vyas 01 Jul 2023 The Confidence Checklist for LLMs in Production Vrushank Vyas 01 Jul 2023 Show more Announcements Introducing the MCP Gateway Your interns need three approvals to touch production. Your AI agents? Zero. With MCP, agents can take real action – connect to databases, trigger workflows, access internal systems. The protocol just works. But here's what we kept hearing from teams actually running MCP in production: \"How do I Rohit Agarwal, Ayush, Drishti Shah 21 Jan 2026 We Tracked $93M in LLM Spends Last Year. Now the Data is Yours. Vrushank Vyas 12 Jan 2026 August at Portkey: 2 BILLION Requests, Guardrails, Tracing, and More Vrushank Vyas 05 Sep 2024 Open Sourcing Guardrails on the Gateway Framework Rohit Agarwal, Ayush 14 Aug 2024 Show more paper summaries More Evaluating Long-Context LLMs Multi-LLM Text Summarization Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference - Summary Mixtral of Experts - Summary LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models - Summary Benchmarks More Benchmarking the new moderation model from OpenAI GPT-4 is Getting Faster 🐇 Home Production Guides New Releases Talks Upcoming Events Portkey Docs Sign in Subscribe Latest Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale The harness is converging. Context is what separates teams. A platform team's guide to owning Claude Code, Cursor, and Codex across your engineering org. Siddharth Sambharia 24 Apr 2026 Introducing Skills Registry Siddharth Sambharia 23 Apr 2026 Your First AI Agent Will Go Fine. Your Fiftieth Is Where Things Get Interesting. Swetha Sridhar 22 Apr 2026 n8n Best Practices Drishti Shah 21 Apr 2026 Introducing the Agent Gateway Rohit Agarwal, Ayush 21 Apr 2026 OpenAI Codex best practices Drishti Shah 20 Apr 2026 AI Agent governance Drishti Shah 19 Apr 2026 Show more Production Guides Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale The harness is converging. Context is what separates teams. A platform team's guide to owning Claude Code, Cursor, and Codex across your engineering org. Siddharth Sambharia 24 Apr 2026 Architecting for Trust: A Strategic Perspective on the MCP Registry for the Enterprise Rohit Agarwal, Vrushank Vyas 09 Sep 2025 Everything We Know About Claude Code Limits Rohit Agarwal, Narendranath Gogineni, Siddharth Sambharia 29 Jul 2025 Beyond the Hype: The Enterprise AI Blueprint You Need Now (And Why Your AI Gateway is Non-Negotiable) Rohit Agarwal 08 Apr 2025 Launching Prompt Engineering Studio Vrushank Vyas 17 Mar 2025 OpenAI's New Agent Tools: Navigating Strategic Implications for Enterprise AI Vrushank Vyas 12 Mar 2025 The State of AI FinOps 2025: Key Insights from FinOps Foundation's Latest Report Vrushank Vyas 20 Feb 2025 Show more Conversations Jamming on Event-Driven Architecture and MCP for Multi-Agentic Systems Insights from Portkey's AI Practitioners Meetup on building scalable multi-agent systems. Learn about Event-Driven Architecture patterns, Model Context Protocol implementation, and real-world experiences building multi-agents system. Siddharth Sambharia 13 Jan 2025 LLMs in Prod Comes to Bangalore Vrushank Vyas 29 Jul 2024 Transforming E-Commerce Search with Semantic Cache: Insights from Walmart's Journey Rohit Agarwal 09 Feb 2024 Unpacking Semantic Caching at Walmart Vrushank Vyas 05 Feb 2024 Dive into what is LLMOps Vrushank Vyas 01 Jul 2023 The Confidence Checklist for LLMs in Production Vrushank Vyas 01 Jul 2023 Show more Announcements Introducing the MCP Gateway Your interns need three approvals to touch production. Your AI agents? Zero. With MCP, agents can take real action – connect to databases, trigger workflows, access internal systems. The protocol just works. But here's what we kept hearing from teams actually running MCP in production: \"How do I Rohit Agarwal, Ayush, Drishti Shah 21 Jan 2026 We Tracked $93M in LLM Spends Last Year. Now the Data is Yours. Vrushank Vyas 12 Jan 2026 August at Portkey: 2 BILLION Requests, Guardrails, Tracing, and More Vrushank Vyas 05 Sep 2024 Open Sourcing Guardrails on the Gateway Framework Rohit Agarwal, Ayush 14 Aug 2024 Show more paper summaries More Evaluating Long-Context LLMs Multi-LLM Text Summarization Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference - Summary Mixtral of Experts - Summary LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models - Summary Benchmarks More Benchmarking the new moderation model from OpenAI GPT-4 is Getting Faster 🐇 Subscribe to Portkey Blog Subscribe now Blog Home Portkey Website Portkey Blog © 2026. Powered by Ghost blog listing changed. Open it to see new posts.",
+      "headline_en": "Portkey Publishes Platform Team Guide to Managing Claude Code, Cursor, and Codex at Scale",
+      "summary_en": "Portkey has released a practical guide aimed at platform engineering teams responsible for governing multiple AI coding agents across an engineering organization.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "Latest Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale The harness is converging. Context is what separates teams. A platform team's guide to owning Claude Code, Cursor, and Codex across your engineering org. Siddharth Sambharia 24 Apr 2026 Introducing Skills Registry Siddharth Sambharia 23 Apr 2026 Your First AI Agent Will Go Fine. Your Fiftieth Is Where Things Get Interesting. Swetha Sridhar 22 Apr 2026 n8n Best Practices Drishti Shah 21 Apr 2026 Introducing the Agent Gateway Rohit Agarwal, Ayush 21 Apr 2026 OpenAI Codex best practices Drishti Shah 20 Apr 2026 AI Agent governance Drishti Shah 19 Apr 2026 Show more Production Guides Who owns Claude Code at your company? A platform team's guide to managing coding agents at scale The harne...",
@@ -27,7 +27,11 @@
       "merge_key": "update||portkey blog||latest who owns claude code at your company a platform team s guide to managing coding agents at scale the harness is converging context is what separates teams a platform team s g",
       "id": "evt-6d30b88eacb385817347",
       "content_fingerprint": "latest who owns claude code at your company a platform team s guide to managing coding agents at scale the harness is converging context is what separates teams a platform team s guide to owning claude code cursor and codex across your engineering org siddharth sambharia 24 apr 2026 introducing skills registry siddharth sambharia 23 apr 2026 your first ai agent will go fine your fiftieth is where things get interesting swetha sridhar 22 apr 2026 n8n best practices drishti shah 21 apr 2026 introducing the agent gateway rohit agarwal ayush 21 apr 2026 openai codex best practices drishti shah 20 ",
-      "needs_cc_refresh": true
+      "needs_cc_refresh": true,
+      "article_h1": "Portkey Publishes Platform Team Guide to Managing Claude Code, Cursor, and Codex at Scale",
+      "article_standfirst": "Portkey has released a practical guide aimed at platform engineering teams responsible for governing multiple AI coding agents across an engineering organization.",
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     },
     {
       "timestamp": "2026-04-24T10:34:12+00:00",
@@ -36,8 +40,8 @@
       "effective_url": "https://replicate.com/pricing",
       "target_url": "https://replicate.com/pricing",
       "category": "update",
-      "headline_en": "blog listing updated",
-      "summary_en": "The blog listing changed. Open it to see new posts.",
+      "headline_en": "Replicate Pricing Page Captured — Dynamic Content Limits Story Depth",
+      "summary_en": "A capture of Replicate's pricing page on April 24, 2026, reveals the page's navigation structure and branding, though actual pricing tiers loaded dynamically and are not reflected in the static source text.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "",
@@ -53,7 +57,11 @@
       "merge_key": "update||replicate pricing||listing updated the listing changed open it to see posts",
       "id": "evt-d386a1e0c18dae94358e",
       "content_fingerprint": "blog listing updated the blog listing changed open it to see new posts",
-      "needs_cc_refresh": true
+      "needs_cc_refresh": true,
+      "article_h1": "Replicate Pricing Page Captured — Dynamic Content Limits Story Depth",
+      "article_standfirst": "A capture of Replicate's pricing page on April 24, 2026, reveals the page's navigation structure and branding, though actual pricing tiers loaded dynamically and are not reflected in the static source text.",
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     },
     {
       "timestamp": "2026-04-24T10:32:48+00:00",
@@ -62,8 +70,8 @@
       "effective_url": "https://huggingface.co/blog",
       "target_url": "https://huggingface.co/blog/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots",
       "category": "blog",
-      "headline_en": "NVIDIA Isaac GR00T N1.7: Open-Weight VLA Model for Humanoid Robots Released on Hugging Face",
-      "summary_en": "NVIDIA open-sourced Isaac GR00T N1.7 on Hugging Face — a Vision-Language-Action model for autonomous reasoning and control in humanoid robotics.",
+      "headline_en": "NVIDIA Releases Isaac GR00T N1.7 Open-Weight VLA Model for Humanoid Robots on Hugging Face",
+      "summary_en": "NVIDIA has open-sourced Isaac GR00T N1.7, an open-weight Vision-Language-Action model designed to bring autonomous reasoning and physical control capabilities to humanoid robots, on Hugging Face.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "Community Blog & Articles New Article community guide open source collab partnerships research NLP Audio CV RL ethics Diffusion Game Development RLHF Leaderboard Case Studies LeRobot Inference Providers Community Articles view all DenseOn with the LateOn: Open State-of-the-Art Single and Multi-Vector Models 3 days ago • 31 Building a Fast Multilingual OCR Model with Synthetic Data 7 days ago • 28 How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas 3 days ago • 23 ML Intern Takes Our Post-Training Internship Test about 20 hours ago • 18 NVIDIA Isaac GR00T N1.7: Open Reasoning VLA Model for Humanoid Robots 7 days ago • 10 KV Caching Explained: Optimizing Transformer Inference Efficiency Jan 30, 2025 • 304 How we OCR'ed 30,000 papers using Codex, open OCR models an...",
@@ -80,7 +88,11 @@
       "merge_key": "blog||hugging face blog||nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots",
       "id": "evt-a7bd7d4f21b48dde206a",
       "content_fingerprint": "community blog articles new article community guide open source collab partnerships research nlp audio cv rl ethics diffusion game development rlhf leaderboard case studies lerobot inference providers community articles view all denseon with the lateon open state of the art single and multi vector models 3 days ago 31 building a fast multilingual ocr model with synthetic data 7 days ago 28 how to ground a korean ai agent in real demographics with synthetic personas 3 days ago 23 ml intern takes our post training internship test about 20 hours ago 18 nvidia isaac gr00t n1 7 open reasoning vla m",
-      "needs_cc_refresh": false
+      "needs_cc_refresh": false,
+      "article_h1": "NVIDIA Releases Isaac GR00T N1.7 Open-Weight VLA Model for Humanoid Robots on Hugging Face",
+      "article_standfirst": "NVIDIA has open-sourced Isaac GR00T N1.7, an open-weight Vision-Language-Action model designed to bring autonomous reasoning and physical control capabilities to humanoid robots, on Hugging Face.",
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     },
     {
       "timestamp": "2026-04-24T10:17:13+00:00",
@@ -89,8 +101,8 @@
       "effective_url": "https://github.com/openai/codex/releases.atom",
       "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.125.0-alpha.1",
       "category": "release",
-      "headline_en": "Codex release feed now shows 0.125.0-alpha.1",
-      "summary_en": "The monitored release feed for Codex changed and the newest visible tag is 0.125.0-alpha.1. The feed timestamp is 2026-04-24T06:36:27Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_en": "OpenAI Ships Codex Rust Release 0.125.0-alpha.1",
+      "summary_en": "OpenAI has published a new pre-release version of its Codex coding assistant, tagged rust-v0.125.0-alpha.1, updated on 24 April 2026.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "title=rust-v0.125.0-alpha.1 updated=2026-04-24T10:16:07Z link=https://github.com/openai/codex/releases/tag/rust-v0.125.0-alpha.1 summary= content=Release 0.125.0-alpha.1",
@@ -122,7 +134,11 @@
       "merge_key": "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.125.0-alpha.1",
       "id": "evt-8dd610c1aea3ae6dc54d",
       "content_fingerprint": "title rust v0 125 0 alpha 1 updated 2026 04 24t10 16 07z link https github com openai codex releases tag rust v0 125 0 alpha 1 summary content release 0 125 0 alpha 1 codex release feed now shows rust v0 125 0 alpha 1 the monitored release feed for codex changed and the newest visible tag is rust v0 125 0 alpha 1 the feed timestamp is 2026 04 24t10 16 07z this looks like a release level update rather than a cosmetic page edit",
-      "needs_cc_refresh": false
+      "needs_cc_refresh": false,
+      "article_h1": "OpenAI Ships Codex Rust Release 0.125.0-alpha.1",
+      "article_standfirst": "OpenAI has published a new pre-release version of its Codex coding assistant, tagged rust-v0.125.0-alpha.1, updated on 24 April 2026.",
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     },
     {
       "timestamp": "2026-04-24T09:56:18+00:00",
@@ -131,8 +147,8 @@
       "effective_url": "https://github.com/open-webui/open-webui/releases.atom",
       "target_url": "https://github.com/open-webui/open-webui/releases/tag/v0.9.2",
       "category": "release",
-      "headline_en": "Open WebUI release feed now shows v0.9.2",
-      "summary_en": "The monitored release feed for Open WebUI changed and the newest visible tag is v0.9.2. The feed timestamp is 2026-04-24T09:56:14Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_en": "Open WebUI v0.9.2 Brings OCR Document Extraction, Firecrawl v2 API, and Custom Calendar Reminders",
+      "summary_en": "Open WebUI has released version v0.9.2, adding PaddleOCR-vl for document processing, upgrading to the Firecrawl v2 API with robust retry logic, and introducing configurable calendar event reminder settings.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "title=v0.9.2 updated=2026-04-24T09:56:14Z link=https://github.com/open-webui/open-webui/releases/tag/v0.9.2 summary= content=Added 🧠 PaddleOCR-vl document extraction. Administrators can now use PaddleOCR-vl as a content extraction engine for document processing, with configurable API URL and token settings in document retrieval configuration. #23945 🔥 Firecrawl v2 API. Firecrawl web loading now uses the v2 API directly with proper retry logic, exponential backoff on rate limits, and configurable timeout handling, improving reliability for both cloud and self-hosted Firecrawl setups. #23934 ⏰ Calendar event reminder customization. Calendar events now support a configurable reminder_minutes parameter, allowing models to set custom reminder durations instead of the default 10-minute notifi...",
@@ -164,7 +180,11 @@
       "merge_key": "release||github open webui releases||https://github.com/open-webui/open-webui/releases/tag/v0.9.2",
       "id": "evt-fd03c756eb2bc57f97f9",
       "content_fingerprint": "title v0 9 2 updated 2026 04 24t09 56 14z link https github com open webui open webui releases tag v0 9 2 summary content added paddleocr vl document extraction administrators can now use paddleocr vl as a content extraction engine for document processing with configurable api url and token settings in document retrieval configuration 23945 firecrawl v2 api firecrawl web loading now uses the v2 api directly with proper retry logic exponential backoff on rate limits and configurable timeout handling improving reliability for both cloud and self hosted firecrawl setups 23934 calendar event remin",
-      "needs_cc_refresh": true
+      "needs_cc_refresh": true,
+      "article_h1": "Open WebUI v0.9.2 Brings OCR Document Extraction, Firecrawl v2 API, and Custom Calendar Reminders",
+      "article_standfirst": "Open WebUI has released version v0.9.2, adding PaddleOCR-vl for document processing, upgrading to the Firecrawl v2 API with robust retry logic, and introducing configurable calendar event reminder settings.",
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
     },
     {
       "timestamp": "2026-04-24T04:44:11+00:00",
@@ -173,8 +193,8 @@
       "effective_url": "https://r.jina.ai/http://openai.com/newsroom/",
       "target_url": "https://openai.com/index/introducing-gpt-5-5",
       "category": "news",
-      "headline_en": "Introducing GPT-5.5 Product Apr 23, 2026",
-      "summary_en": "OpenAI newsroom changed. Most visible article: \"Introducing GPT-5.5 Product Apr 23, 2026\".",
+      "headline_en": "Unable to generate article — source content unavailable",
+      "summary_en": "The source page capture provided no readable text content for GPT-5.5.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "Title: OpenAI News URL Source: http://openai.com/newsroom/ Markdown Content: # OpenAI News | OpenAI [Skip to main content](http://openai.com/newsroom/#main) [](http://openai.com/) * [Research](http://openai.com/research/index/) * Products * [Business](http://openai.com/business/) * [Developers](http://openai.com/api/) * [Company](http://openai.com/about/) * [Foundation(opens in a new window)](https://openaifoundation.org/) Log in[Try ChatGPT(opens in a new window)](https://chatgpt.com/) * Research * Products * Business * Developers * Company * [Foundation(opens in a new window)](https://openaifoundation.org/) [Try ChatGPT(opens in a new window)](https://chatgpt.com/)Login OpenAI ## All * [Company](http://openai.com/news/company-announcements/) * [Research](http://openai.com/news/researc...",
@@ -187,7 +207,11 @@
       "id": "evt-49d75874624582b98815",
       "content_fingerprint": "title openai news url source http openai com newsroom markdown content openai news openai skip to main content http openai com newsroom main http openai com research http openai com research index products business http openai com business developers http openai com api company http openai com about foundation opens in a new window https openaifoundation org log in try chatgpt opens in a new window https chatgpt com research products business developers company foundation opens in a new window https openaifoundation org try chatgpt opens in a new window https chatgpt com login openai all compa",
       "needs_cc_refresh": true,
-      "target_fetch_error": "HTTP Error 403: Forbidden"
+      "target_fetch_error": "HTTP Error 403: Forbidden",
+      "article_h1": "Unable to generate article — source content unavailable",
+      "article_standfirst": "The source page capture provided no readable text content for GPT-5.5.",
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     },
     {
       "timestamp": "2026-04-24T03:58:06+00:00",
@@ -196,8 +220,8 @@
       "effective_url": "https://r.jina.ai/http://platform.openai.com/docs/changelog",
       "target_url": "https://platform.openai.com/docs/models/gpt-5.2",
       "category": "docs",
-      "headline_en": "OpenAI Updates GPT-5.2 Model Reference Page",
-      "summary_en": "OpenAI revised the GPT-5.2 model reference documentation in its April 23, 2026 developer changelog.",
+      "headline_en": "OpenAI Updates GPT-5.2 Model Reference Page in April 2026 Developer Changelog",
+      "summary_en": "OpenAI revised the GPT-5.2 model reference documentation on its developer platform, reflecting ongoing updates to its model lineup.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "Title: Changelog | OpenAI API URL Source: http://platform.openai.com/docs/changelog Published Time: Fri, 24 Apr 2026 02:45:09 GMT Markdown Content: # Changelog | OpenAI API [![Image 1: OpenAI Developers](http://platform.openai.com/OpenAI_Developers.svg)](http://platform.openai.com/) [Home](http://platform.openai.com/) [API](http://platform.openai.com/api) [Docs Guides and concepts for the OpenAI API](http://platform.openai.com/api/docs)[API reference Endpoints, parameters, and responses](http://platform.openai.com/api/reference/overview) [Codex](http://platform.openai.com/codex) [Docs Guides, concepts, and product docs for Codex](http://platform.openai.com/codex)[Use cases Example workflows and tasks teams hand to Codex](http://platform.openai.com/codex/use-cases) [ChatGPT](http://platf...",
@@ -209,7 +233,11 @@
       "merge_key": "docs||openai api changelog||https://platform.openai.com/docs/models/gpt-5.2",
       "id": "evt-ceea01a9408e0f7eac15",
       "content_fingerprint": "title changelog openai api url source http platform openai com docs changelog published time fri 24 apr 2026 02 45 09 gmt markdown content changelog openai api image 1 openai developers http platform openai com openai developers svg http platform openai com home http platform openai com api http platform openai com api docs guides and concepts for the openai api http platform openai com api docs api reference endpoints parameters and responses http platform openai com api reference overview codex http platform openai com codex docs guides concepts and product docs for codex http platform opena",
-      "needs_cc_refresh": false
+      "needs_cc_refresh": false,
+      "article_h1": "OpenAI Updates GPT-5.2 Model Reference Page in April 2026 Developer Changelog",
+      "article_standfirst": "OpenAI revised the GPT-5.2 model reference documentation on its developer platform, reflecting ongoing updates to its model lineup.",
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     },
     {
       "timestamp": "2026-04-23T22:25:35+00:00",
@@ -218,8 +246,8 @@
       "effective_url": "https://r.jina.ai/http://x.ai/blog",
       "target_url": "https://x.ai/news/grok-voice-think-fast-1",
       "category": "blog",
-      "headline_en": "xAI Grok Voice Think Fast 1.0 Now Available via API",
-      "summary_en": "xAI's Grok Voice Think Fast 1.0 voice agent is now live via API, alongside Grok STT and TTS APIs for speech recognition and synthesis.",
+      "headline_en": "xAI Makes Grok Voice Think Fast 1.0 Available via Public API",
+      "summary_en": "xAI has released Grok Voice Think Fast 1.0, its most capable voice agent, as a public API alongside complementary speech-to-text and text-to-speech tools.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "Title: xAI — Creators of Grok, the AI Chatbot URL Source: http://x.ai/blog Markdown Content: # News: Research, Product & Company Updates | xAI [](http://x.ai/) * [Grok](http://x.ai/grok) * [API](http://x.ai/api) * [Company](http://x.ai/company) * [Colossus](http://x.ai/colossus) * [Careers](http://x.ai/careers) * [News](http://x.ai/news) * [Shop](https://shop.x.ai/) * [SpaceX](https://spacex.com/) * [𝕏](https://x.com/) [Try Grok](https://grok.com/?referrer=website) [What's new] # Latest news Read about our latest product and research announcements. April 23, 2026 ### [Grok Voice Think Fast 1.0](http://x.ai/news/grok-voice-think-fast-1) Our most capable voice agent is now available via API. grok voice Read #### [Grok Speech to Text and Text to Speech APIs](http://x.ai/news/grok-stt-and-t...",
@@ -232,7 +260,11 @@
       "id": "evt-de5038e546936fc4e832",
       "content_fingerprint": "title xai creators of grok the ai chatbot url source http x ai blog markdown content news research product company updates xai http x ai grok http x ai grok api http x ai api company http x ai company colossus http x ai colossus careers http x ai careers news http x ai news shop https shop x ai spacex https spacex com https x com try grok https grok com referrer website what s new latest news read about our latest product and research announcements april 23 2026 grok voice think fast 1 0 http x ai news grok voice think fast 1 our most capable voice agent is now available via api grok voice rea",
       "needs_cc_refresh": false,
-      "target_fetch_error": "HTTP Error 403: Forbidden"
+      "target_fetch_error": "HTTP Error 403: Forbidden",
+      "article_h1": "xAI Makes Grok Voice Think Fast 1.0 Available via Public API",
+      "article_standfirst": "xAI has released Grok Voice Think Fast 1.0, its most capable voice agent, as a public API alongside complementary speech-to-text and text-to-speech tools.",
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     },
     {
       "timestamp": "2026-04-23T17:08:22+00:00",
@@ -241,8 +273,8 @@
       "effective_url": "https://aws.amazon.com/blogs/machine-learning/",
       "target_url": "https://aws.amazon.com/blogs/machine-learning/artificial-intelligence-aws-launches-frontier-agents-for-security-testing-and-cloud-operations/",
       "category": "blog",
-      "headline_en": "AWS Security Agent and DevOps Agent Exit Preview, Now Generally Available",
-      "summary_en": "AWS Security Agent (on-demand penetration testing) and DevOps Agent are now generally available. These frontier agents run autonomously for hours or days to handle security testing and cloud operations at scale.",
+      "headline_en": "AWS Security Agent and DevOps Agent Exit Preview, Enter General Availability",
+      "summary_en": "Amazon has made its autonomous frontier agents — the AWS Security Agent for on-demand penetration testing and the AWS DevOps Agent — generally available, signaling a major step toward AI-driven cloud security and operations at scale.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "Artificial Intelligence AWS launches frontier agents for security testing and cloud operations by Swami Sivasubramanian on 31 MAR 2026 in Announcements , Artificial Intelligence , Security & Governance , Thought Leadership Permalink Comments Share I’m excited to announce that AWS Security Agent on-demand penetration testing and AWS DevOps Agent are now generally available, representing a new class of AI capabilities we announced at re:Invent called frontier agents. These autonomous systems work independently to achieve goals, scale massively to tackle concurrent tasks, and run persistently for hours or days without constant human oversight. Together, these agents are changing the way we secure and operate software. In preview, customers and partners report that AWS Security Agent compre...",
@@ -255,7 +287,11 @@
       "id": "evt-d5797cd5b4e986cb6b26",
       "content_fingerprint": "artificial intelligence aws launches frontier agents for security testing and cloud operations by swami sivasubramanian on 31 mar 2026 in announcements artificial intelligence security governance thought leadership permalink comments share i m excited to announce that aws security agent on demand penetration testing and aws devops agent are now generally available representing a new class of ai capabilities we announced at re invent called frontier agents these autonomous systems work independently to achieve goals scale massively to tackle concurrent tasks and run persistently for hours or da",
       "needs_cc_refresh": false,
-      "target_fetch_error": "HTTP Error 404: "
+      "target_fetch_error": "HTTP Error 404: ",
+      "article_h1": "AWS Security Agent and DevOps Agent Exit Preview, Enter General Availability",
+      "article_standfirst": "Amazon has made its autonomous frontier agents — the AWS Security Agent for on-demand penetration testing and the AWS DevOps Agent — generally available, signaling a major step toward AI-driven cloud security and operations at scale.",
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     },
     {
       "timestamp": "2026-04-22T23:49:34+00:00",
@@ -264,8 +300,8 @@
       "effective_url": "https://replicate.com/changelog",
       "target_url": "https://replicate.com/changelog",
       "category": "changelog",
-      "headline_en": "Replicate Publishes Agent Skills: Markdown Instructions for AI Coding Assistants",
-      "summary_en": "Replicate published Agent Skills — markdown instruction files that give coding assistants (Claude Code, OpenAI Codex, OpenCode) expert knowledge on model selection, API execution, and prompting for image and video generation. They complement Replicate's MCP server.",
+      "headline_en": "Replicate Launches Agent Skills: Pre-Built Markdown Instructions for AI Coding Assistants",
+      "summary_en": "Replicate has published a set of agent skills — ready-made markdown instruction files that give AI coding assistants expert-level knowledge of its platform without manual configuration.",
       "headline_zh": "",
       "summary_zh": "",
       "evidence_excerpt": "Changelog RSS Atom li]:pb-8\"> Agent skills for Replicate April 21, 2026 Replicate now publishes agent skills , a collection of markdown instruction files that give coding assistants expert knowledge about working with AI models on Replicate. Skills cover model discovery, comparison, and execution via the API, along with detailed prompting techniques for image generation and video generation models. They follow the open Agent Skills spec and work with Claude Code, OpenCode, OpenAI Codex, and other compatible tools. Install Copy npx skills add replicate/skills This installs all of Replicate’s skills into your project and configures them for your coding assistant automatically. Skills and MCP Skills are complementary to Replicate’s MCP server . MCP gives your coding assistant API tools. Sk...",
@@ -277,7 +313,11 @@
       "merge_key": "changelog||replicate changelog||updated latest entry changelog rss atom li pb 8 agent skills for replicate april 21 2026 replicate now publishes agent skills a collection of markdown instruction files that give c",
       "id": "evt-02e973171010f0e2250e",
       "content_fingerprint": "changelog rss atom li pb 8 agent skills for replicate april 21 2026 replicate now publishes agent skills a collection of markdown instruction files that give coding assistants expert knowledge about working with ai models on replicate skills cover model discovery comparison and execution via the api along with detailed prompting techniques for image generation and video generation models they follow the open agent skills spec and work with claude code opencode openai codex and other compatible tools install copy npx skills add replicate skills this installs all of replicate s skills into your ",
-      "needs_cc_refresh": false
+      "needs_cc_refresh": false,
+      "article_h1": "Replicate Launches Agent Skills: Pre-Built Markdown Instructions for AI Coding Assistants",
+      "article_standfirst": "Replicate has published a set of agent skills — ready-made markdown instruction files that give AI coding assistants expert-level knowledge of its platform without manual configuration.",
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
     }
   ]
 }
