@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Signal Feed</title>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
+       crossorigin="anonymous"></script>
+
   <style>
     :root {
       --bg: #f6efe4; --surface: rgba(255,255,255,0.84); --ink: #1a1f18; --muted: #586255;
@@ -14,6 +18,9 @@
     body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; color: var(--ink); background: linear-gradient(180deg, #fbf8f2 0%, var(--bg) 100%); }
     main { max-width: 1340px; margin: 0 auto; padding: 40px 20px 64px; }
     .hero { display: grid; gap: 14px; margin-bottom: 24px; }
+    .top-ad { margin-bottom: 18px; padding: 12px 14px; border: 1px dashed rgba(15,118,110,0.28); border-radius: 16px; background: rgba(255,255,255,0.68); }
+    .ad-label { color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; margin-bottom: 8px; }
+    .ad-slot { min-height: 70px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: rgba(15,118,110,0.08); color: var(--muted); font-weight: 700; }
     .eyebrow { display: inline-flex; width: fit-content; padding: 7px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.78rem; }
     h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 5vw, 4.6rem); line-height: 0.94; letter-spacing: -0.04em; max-width: 860px; }
     .sub { margin: 0; max-width: 760px; color: var(--muted); font-size: 1.02rem; line-height: 1.55; }
@@ -44,6 +51,12 @@
 </head>
 <body>
   <main>
+
+    <section class="top-ad" aria-label="Advertisement">
+      <div class="ad-label">Advertisement</div>
+      <div class="ad-slot">Top banner ad slot</div>
+    </section>
+
     <section class="hero">
       <span class="eyebrow">AI Signal Feed</span>
       <h1>10 readable AI updates.</h1>
@@ -51,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-24 13:16 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-24 13:28 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -74,7 +87,7 @@
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
-                <time>2026-04-24 13:01 UTC</time>
+                <time>2026-04-24 13:27 UTC</time>
               </div>
               <h2 class="headline"><a href="./articles/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots-de206a.html">NVIDIA Releases Isaac GR00T N1.7 Open-Weight VLA Model for Humanoid Robots on Hugging Face</a></h2>
               <p class="summary">NVIDIA has open-sourced Isaac GR00T N1.7, an open-weight Vision-Language-Action model designed to bring autonomous reasoning and physical control capabilities to humanoid robots, on Hugging Face.</p>
@@ -214,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-24 13:16 UTC";
+    const currentGeneratedAt = "2026-04-24 13:28 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
