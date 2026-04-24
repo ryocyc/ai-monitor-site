@@ -225,6 +225,42 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-92a3ec41822dc5168867",
+      "article_h1": "xAI Launches API Playground for Grok 4.20, Expands Voice and Image APIs",
+      "article_standfirst": "xAI has updated its API reference page with a new Playground interface for Grok 4.20, alongside expanded voice and image generation tools.",
+      "article_body": [
+        "xAI has updated its public API reference page, introducing a Playground interface for its flagship Grok 4.20 language model. The Playground is described as \"coming soon\" and will allow developers to interactively test the model through the xAI developer portal. Grok 4.20 is positioned by xAI as \"the most truth-seeking large language model in the world,\" with support for a 1 million token context window on both input and output.\n\nAlongside the Playground update, xAI has detailed its Voice API and Imagine API offerings. The Voice API supports real-time conversation, generation, and transcription with three modes: Agent, TTS, and STT, priced at $3.00 per hour for realtime use and $4.20 per million characters for text-to-speech. The Imagine API covers image generation and editing alongside video generation, with per-image and per-second video pricing listed on the documentation page.\n\nThe updated reference page also includes guidance to help developers select the appropriate model for their specific use case, noting that xAI provides dedicated models and APIs for audio, image, and video capabilities."
+      ],
+      "article_why_matters": [
+        "Grok 4.20's 1 million token context window is among the largest available, enabling long-document processing and extended conversational memory in a single API call.",
+        "The new Playground will lower the barrier to entry for developers evaluating xAI's models, providing an interactive alternative to direct API calls.",
+        "Expanded voice and image API options give developers a broader toolkit for building multimodal applications through a single provider."
+      ],
+      "article_source_note": [
+        "This information comes from xAI's API reference page at x.ai/api/, which was recently updated. Pricing details are listed on the documentation site. The Playground for Grok 4.20 is noted as \"coming soon,\" so the full feature set and availability date remain to be confirmed."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-e8aa28567b329c41f805",
+      "article_h1": "OpenAI API Changelog Refreshed; GPT-Image-1 Entry Appears at Top",
+      "article_standfirst": "OpenAI's public API changelog page now surfaces a new top entry under the GPT-Image-1 heading, signalling a recent update to its image generation capabilities.",
+      "article_body": [
+        "OpenAI has updated its developer-facing API changelog page, placing a new entry at the top of the feed bearing the title 'OpenAI API changelog: gpt-image-1'. The change was captured during a routine page inspection of the platform's changelog at platform.openai.com/docs/changelog. The entry appears alongside a refreshed listing of available models in the documentation, including the latest frontier models such as GPT-5.4, GPT-5.4 mini, and GPT-5.4 nano. The full substance of the changelog entry — what specific API changes, parameter additions, or behaviour updates are included — is not visible in the captured excerpt, leaving the precise nature of the update to be confirmed directly via the page or official channels."
+      ],
+      "article_why_matters": [
+        "Developers using OpenAI's image generation APIs need to track updates to avoid unexpected behaviour changes in production.",
+        "The presence of a new top-level changelog entry suggests at least one active, recently committed change to the image API surface.",
+        "Confirmation of what exactly changed helps teams plan migration or testing cycles for image-related workflows."
+      ],
+      "article_source_note": [
+        "The source for this item is the publicly accessible OpenAI API changelog page at platform.openai.com/docs/changelog, captured as part of an automated monitoring pass. The excerpt contains navigation text and model listings; the gpt-image-1 entry is visible as the latest changelog title, but no body copy or version-diff details were included in the capture. Developers should refer directly to the live changelog page for the full update text."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"
