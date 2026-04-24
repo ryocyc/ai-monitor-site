@@ -205,6 +205,26 @@
       ],
       "article_confidence": "weak",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-4268d8c51b16b97afa51",
+      "article_h1": "OpenAI Makes ChatGPT Free for Verified Clinicians on iOS and Android",
+      "article_standfirst": "OpenAI is offering free ChatGPT access to verified healthcare professionals on mobile, aiming to integrate AI directly into clinical workflows.",
+      "article_body": [
+        "OpenAI has announced that verified clinicians on iOS and Android can now access ChatGPT for free, lowering the barrier to using AI tools in healthcare settings. The initiative is part of a broader effort to expand AI adoption among medical professionals.",
+        "The announcement highlights the availability of ChatGPT on mobile platforms, allowing clinicians to interact with the AI tool directly from their devices. Verification requirements ensure that access is limited to qualified healthcare professionals.",
+        "The April 22, 2026 announcement from OpenAI positions the free offering as a step toward making AI assistance more accessible in day-to-day clinical practice, though full details on feature limitations have not yet been disclosed."
+      ],
+      "article_why_matters": [
+        "Free access removes a cost barrier for clinicians who may want to explore AI-assisted workflows in their practice.",
+        "Mobile availability means clinicians can interact with ChatGPT at the point of care, not just at a desktop workstation.",
+        "Verification requirements signal OpenAI's intentional approach to deploying AI responsibly in sensitive healthcare environments."
+      ],
+      "article_source_note": [
+        "This information comes from OpenAI's public newsroom page and product announcement dated April 22, 2026. The announcement card provides the headline and general direction but contains limited technical detail; additional specifics about feature scope, data handling, and availability timelines would require consulting the full announcement page directly."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"
