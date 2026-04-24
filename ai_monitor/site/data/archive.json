@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-04-24T04:37:07+00:00",
-  "item_count": 46,
+  "generated_at": "2026-04-24T04:49:42+00:00",
+  "item_count": 47,
   "items": [
+    {
+      "timestamp": "2026-04-24T04:44:11+00:00",
+      "source_name": "OpenAI Newsroom",
+      "source_url": "https://openai.com/newsroom/",
+      "effective_url": "https://r.jina.ai/http://openai.com/newsroom/",
+      "target_url": "https://openai.com/index/introducing-gpt-5-5",
+      "category": "news",
+      "headline_en": "Introducing GPT-5.5 Product Apr 23, 2026",
+      "summary_en": "OpenAI newsroom changed. Most visible article: \"Introducing GPT-5.5 Product Apr 23, 2026\".",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "Title: OpenAI News URL Source: http://openai.com/newsroom/ Markdown Content: # OpenAI News | OpenAI [Skip to main content](http://openai.com/newsroom/#main) [](http://openai.com/) * [Research](http://openai.com/research/index/) * Products * [Business](http://openai.com/business/) * [Developers](http://openai.com/api/) * [Company](http://openai.com/about/) * [Foundation(opens in a new window)](https://openaifoundation.org/) Log in[Try ChatGPT(opens in a new window)](https://chatgpt.com/) * Research * Products * Business * Developers * Company * [Foundation(opens in a new window)](https://openaifoundation.org/) [Try ChatGPT(opens in a new window)](https://chatgpt.com/)Login OpenAI ## All * [Company](http://openai.com/news/company-announcements/) * [Research](http://openai.com/news/researc...",
+      "article_identity": "introducing-gpt-5-5",
+      "target_title": "",
+      "target_summary": "",
+      "target_excerpt": "",
+      "status": "auto-published-demo",
+      "merge_key": "news||openai newsroom||introducing-gpt-5-5",
+      "id": "evt-49d75874624582b98815",
+      "content_fingerprint": "title openai news url source http openai com newsroom markdown content openai news openai skip to main content http openai com newsroom main http openai com research http openai com research index products business http openai com business developers http openai com api company http openai com about foundation opens in a new window https openaifoundation org log in try chatgpt opens in a new window https chatgpt com research products business developers company foundation opens in a new window https openaifoundation org try chatgpt opens in a new window https chatgpt com login openai all compa",
+      "needs_cc_refresh": true,
+      "target_fetch_error": "HTTP Error 403: Forbidden"
+    },
     {
       "timestamp": "2026-04-24T04:34:21+00:00",
       "source_name": "Hugging Face Blog",
