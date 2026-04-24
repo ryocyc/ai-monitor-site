@@ -351,6 +351,26 @@
       ],
       "article_confidence": "weak",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-2032606cb5200c8f2202",
+      "article_h1": "Zilliz releases Claude Context v0.1.8 with version bump commit",
+      "article_standfirst": "Zilliz has published v0.1.8 of its Claude Context tool, a minor version increment tagged 2026-04-24 with no functional release notes beyond a version bump.",
+      "article_body": [
+        "Zilliz shipped v0.1.8 of Claude Context on 24 April 2026, updating the project's version tag at 15:22 UTC. The release — tagged on Git commit 45d45fb — is the latest entry in a series of rapid minor releases spanning v0.1.4 through v0.1.8, following a similar pace to the previous v0.1.x line.",
+        "The sole content of the v0.1.8 release note reads \"chore: bump version to 0.1.8,\" indicating no change log entry was produced for this tag beyond a standard version increment. The commit was made by the zilliztech organisation, which maintains the public repository for the project.",
+        "The v0.1.8 tag follows v0.1.7 (commit 6a51b08) and appears to be part of a sustained release cadence rather than a single milestone update. Users watching the repository feed for substantive changes may wish to inspect the diff between the v0.1.7 and v0.1.8 commits directly on GitHub."
+      ],
+      "article_why_matters": [
+        "Claude Context is a developer tool for enhancing context windows in Claude workflows; version changes can affect functionality or compatibility for users who pin to specific releases.",
+        "The rapid v0.1.4–v0.1.8 release sequence suggests active development, and tracking which commits introduce features versus pure version bumps helps users decide when to update.",
+        "Without a meaningful change log, users must independently inspect the commit diff to determine whether v0.1.8 carries any practical change beyond the version number."
+      ],
+      "article_source_note": [
+        "This article is based on the GitHub release feed for zilliztech/claude-context (https://github.com/zilliztech/claude-context/releases.atom) and confirmed via the GitHub tags API. The v0.1.8 release contains no published change log beyond a version-bump commit note."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"
