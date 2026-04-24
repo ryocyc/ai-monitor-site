@@ -409,6 +409,24 @@
       ],
       "article_confidence": "strong",
       "article_generation_mode": "claude"
+    },
+    {
+      "id": "evt-279c23cdace0c9366ab1",
+      "article_h1": "n8n Releases Version 1.123.37 with Multi-Main CLI Bug Fix",
+      "article_standfirst": "Workflow automation platform n8n has shipped version 1.123.37, patching a bug in its multi-main CLI command that caused InstanceSettings.isMultiMain to incorrectly return false.",
+      "article_body": [
+        "n8n, the open-source workflow automation tool, released version 1.123.37 on 24 April 2026. The update addresses a single bug: the InstanceSettings.isMultiMain method was incorrectly returning false when invoked via the multi-main CLI command, even in multi-main environments where it should return true. The fix is tied to pull request #29101 and was committed under hash 31f5508. The release was co-authored by contributor konstantintieber and arrived via the project's public GitHub release feed."
+      ],
+      "article_why_matters": [
+        "Multi-main setups are a key clustering feature for production n8n deployments, so a misreported state in InstanceSettings could cause incorrect runtime behaviour or silent failures in high-availability environments.",
+        "Operators relying on CLI commands to probe multi-main status can now trust the output, reducing debugging friction in distributed setups.",
+        "The single-fix nature of this release signals a focused maintenance cycle, suggesting the project is actively tending to production-stability issues even between larger feature releases."
+      ],
+      "article_source_note": [
+        "Information is drawn directly from the n8n GitHub releases page (tag n8n@1.123.37) and the associated Atom feed. Details beyond the bug description — such as the severity or user impact — are not documented in the source and have not been inferred."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
   "generated_at": "TODO"
