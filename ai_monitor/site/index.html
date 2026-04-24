@@ -51,7 +51,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-24 03:40 UTC - Showing 8 items</div>
+        <div id="last-built-label">Last built: 2026-04-24 03:52 UTC - Showing 8 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -71,10 +71,36 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time>2026-04-24 03:48 UTC</time>
+              </div>
+              <h2 class="headline">Vercel AI release feed now shows @ai-sdk/xai@4.0.0-beta.43</h2>
+              <p class="summary">The monitored release feed for Vercel AI changed and the newest visible tag is @ai-sdk/xai@4.0.0-beta.43. The feed timestamp is 2026-04-17T22:09:59Z. This looks like a release-level update rather than a cosmetic page edit.</p>
+              <div class="card-bottom">
+                <span>GitHub Vercel AI Releases</span>
+                <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%404.0.0-beta.43">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time>2026-04-24 03:48 UTC</time>
+              </div>
+              <h2 class="headline">Flowise release feed now shows flowise-ui@3.1.2: Release/3.1.2 (#6215)</h2>
+              <p class="summary">The monitored release feed for Flowise changed and the newest visible tag is flowise-ui@3.1.2: Release/3.1.2 (#6215). The feed timestamp is 2026-04-14T10:42:44Z. This looks like a release-level update rather than a cosmetic page edit.</p>
+              <div class="card-bottom">
+                <span>GitHub Flowise Releases</span>
+                <a href="https://github.com/FlowiseAI/Flowise/releases/tag/flowise-ui%403.1.2">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
-                <time>2026-04-24 03:36 UTC</time>
+                <time>2026-04-24 03:46 UTC</time>
               </div>
               <h2 class="headline"><a href="./articles/nvidia-isaac-gr00t-n17-open-reasoning-vla-model-humanoid-robots-de206a.html">NVIDIA Isaac GR00T N1.7: Open-Weight VLA Model for Humanoid Robots Released on Hugging Face</a></h2>
               <p class="summary">NVIDIA open-sourced Isaac GR00T N1.7 on Hugging Face — a Vision-Language-Action model for autonomous reasoning and control in humanoid robotics.</p>
@@ -94,32 +120,6 @@
               <div class="card-bottom">
                 <span>OpenAI API Changelog</span>
                 <a href="https://platform.openai.com/docs/models/gpt-5.2">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time>2026-04-24 01:24 UTC</time>
-              </div>
-              <h2 class="headline">LiteLLM v1.83.12-nightly: Moonshot/kimi-k2.6 Added, Docker Images Now Signed with Cosign</h2>
-              <p class="summary">This nightly adds Moonshot/kimi-k2.6 to the model registry, introduces adaptive routing, and ships Docker image signature verification via cosign for all LiteLLM images.</p>
-              <div class="card-bottom">
-                <span>GitHub LiteLLM Releases</span>
-                <a href="https://github.com/BerriAI/litellm/releases/tag/v1.83.12-nightly">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time>2026-04-24 01:24 UTC</time>
-              </div>
-              <h2 class="headline">Ollama v0.21.2-rc1: Bundled OpenClaw Powers Native Web Search</h2>
-              <p class="summary">This RC bundles OpenClaw to enable native ollama web search, and adds documentation for structured outputs and Ollama Cloud.</p>
-              <div class="card-bottom">
-                <span>GitHub Ollama Releases</span>
-                <a href="https://github.com/ollama/ollama/releases/tag/v0.21.2-rc1">Source</a>
               </div>
             </article>
             
@@ -188,7 +188,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-24 03:40 UTC";
+    const currentGeneratedAt = "2026-04-24 03:52 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
