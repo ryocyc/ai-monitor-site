@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 03:59 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 04:10 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="update">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time>2026-04-25 04:09 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/stepfun-home.html">StepFun Launches StepClaw AI Assistant with Web Search and Knowledge Base Tools</a></h2>
+              <p class="summary">StepFun has introduced StepClaw, a new conversational AI assistant on its platform offering web search, knowledge base Q&amp;A, and image generation capabilities.</p>
+              <div class="card-bottom">
+                <span>StepFun Home</span>
+                <a href="https://www.stepfun.com/">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -200,19 +213,6 @@
                 <a href="https://deepinfra.com/pricing">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time>2026-04-24 22:30 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/rust-v01260-alpha1.html">Codex release feed now shows rust-v0.126.0-alpha.1</a></h2>
-              <p class="summary">The monitored release feed for Codex changed and the newest visible tag is rust-v0.126.0-alpha.1. The feed timestamp is 2026-04-24T22:30:09Z. This looks like a release-level update rather than a cosmetic page edit.</p>
-              <div class="card-bottom">
-                <span>GitHub Codex Releases</span>
-                <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.1">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 03:59 UTC";
+    const currentGeneratedAt = "2026-04-25 04:10 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;

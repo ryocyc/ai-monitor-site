@@ -2435,7 +2435,51 @@
       ],
       "article_confidence": "strong",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-25T04:09:35+00:00",
+      "source_name": "StepFun Home",
+      "source_url": "https://www.stepfun.com/",
+      "effective_url": "https://www.stepfun.com/",
+      "target_url": "https://www.stepfun.com/",
+      "category": "update",
+      "headline_en": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Afternoon. Take a little break. What do you want to kno...",
+      "summary_en": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Afternoon. Take a little break. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Stud...",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Afternoon. Take a little break. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1 +1 @@",
+        "-阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Morning. How can I assist you today? What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers",
+        "+阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Afternoon. Take a little break. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers"
+      ],
+      "article_identity": "StepFun Home",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "update||stepfun home||ai conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to kno ai conversation stepclaw please log in to access y",
+      "id": "evt-69bd4309cabae41dda76",
+      "content_fingerprint": "ai new conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio studio lightning fast asr new deploy stepclaw about stepfun careers ai new conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to kno ai new conversation stepclaw please log in to access your history log in log in afternoon tak",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "ai new conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to kno ai new conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio stud ai new conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio studio lightning fast asr new deploy stepclaw about stepfun careers",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "StepFun Launches StepClaw AI Assistant with Web Search and Knowledge Base Tools",
+      "article_standfirst": "StepFun has introduced StepClaw, a new conversational AI assistant on its platform offering web search, knowledge base Q&A, and image generation capabilities.",
+      "article_body": [
+        "StepFun, the company behind the 阶跃AI (StepFun AI) personal efficiency assistant, has launched StepClaw — a new feature accessible via a login-gated interface at stepfun.com. StepClaw presents users with a conversational interface featuring a '@' tap to explore additional tools. The assistant supports web search, knowledge base Q&A, image creation via text prompts, and a newly added Step Audio Studio module that offers lightning-fast automatic speech recognition (ASR)."
+      ],
+      "article_why_matters": [
+        "StepClaw consolidates multiple AI capabilities — search, Q&A, image generation, and speech recognition — into a single interface, potentially streamlining workflows for Chinese-language users.",
+        "The addition of a dedicated ASR tool (Step Audio Studio) signals StepFun's expansion beyond text-based AI into multimodal offerings.",
+        "The platform positions itself as a broad personal efficiency assistant covering knowledge acquisition, language learning, coding, and creative tasks."
+      ],
+      "article_source_note": [
+        "The homepage at stepfun.com presents these features behind a login wall. Key details — including StepClaw, Step Audio Studio, and the platform's core capabilities — are visible in the page's HTML, navigation elements, and meta description. No pricing, model names, or technical benchmarks were available in the captured source text."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-25T03:48:59+00:00"
+  "generated_at": "2026-04-25T04:10:34+00:00"
 }

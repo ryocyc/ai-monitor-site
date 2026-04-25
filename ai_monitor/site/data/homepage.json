@@ -1,7 +1,51 @@
 {
-  "generated_at": "2026-04-25T03:59:26+00:00",
+  "generated_at": "2026-04-25T04:10:34+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-25T04:09:35+00:00",
+      "source_name": "StepFun Home",
+      "source_url": "https://www.stepfun.com/",
+      "effective_url": "https://www.stepfun.com/",
+      "target_url": "https://www.stepfun.com/",
+      "category": "update",
+      "headline_en": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Afternoon. Take a little break. What do you want to kno...",
+      "summary_en": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Afternoon. Take a little break. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Stud...",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Afternoon. Take a little break. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1 +1 @@",
+        "-阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Morning. How can I assist you today? What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers",
+        "+阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Afternoon. Take a little break. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers"
+      ],
+      "article_identity": "StepFun Home",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "update||stepfun home||ai conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to kno ai conversation stepclaw please log in to access y",
+      "id": "evt-69bd4309cabae41dda76",
+      "content_fingerprint": "ai new conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio studio lightning fast asr new deploy stepclaw about stepfun careers ai new conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to kno ai new conversation stepclaw please log in to access your history log in log in afternoon tak",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "ai new conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to kno ai new conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio stud ai new conversation stepclaw please log in to access your history log in log in afternoon take a little break what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio studio lightning fast asr new deploy stepclaw about stepfun careers",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "StepFun Launches StepClaw AI Assistant with Web Search and Knowledge Base Tools",
+      "article_standfirst": "StepFun has introduced StepClaw, a new conversational AI assistant on its platform offering web search, knowledge base Q&A, and image generation capabilities.",
+      "article_body": [
+        "StepFun, the company behind the 阶跃AI (StepFun AI) personal efficiency assistant, has launched StepClaw — a new feature accessible via a login-gated interface at stepfun.com. StepClaw presents users with a conversational interface featuring a '@' tap to explore additional tools. The assistant supports web search, knowledge base Q&A, image creation via text prompts, and a newly added Step Audio Studio module that offers lightning-fast automatic speech recognition (ASR)."
+      ],
+      "article_why_matters": [
+        "StepClaw consolidates multiple AI capabilities — search, Q&A, image generation, and speech recognition — into a single interface, potentially streamlining workflows for Chinese-language users.",
+        "The addition of a dedicated ASR tool (Step Audio Studio) signals StepFun's expansion beyond text-based AI into multimodal offerings.",
+        "The platform positions itself as a broad personal efficiency assistant covering knowledge acquisition, language learning, coding, and creative tasks."
+      ],
+      "article_source_note": [
+        "The homepage at stepfun.com presents these features behind a login wall. Key details — including StepClaw, Step Audio Studio, and the platform's core capabilities — are visible in the page's HTML, navigation elements, and meta description. No pricing, model names, or technical benchmarks were available in the captured source text."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-25T03:48:15+00:00",
       "source_name": "Hugging Face Blog",
@@ -416,48 +460,6 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-24T22:30:49+00:00",
-      "source_name": "GitHub Codex Releases",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "effective_url": "https://github.com/openai/codex/releases.atom",
-      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.1",
-      "category": "release",
-      "headline_en": "Codex release feed now shows rust-v0.126.0-alpha.1",
-      "summary_en": "The monitored release feed for Codex changed and the newest visible tag is rust-v0.126.0-alpha.1. The feed timestamp is 2026-04-24T22:30:09Z. This looks like a release-level update rather than a cosmetic page edit.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=rust-v0.126.0-alpha.1 updated=2026-04-24T22:30:09Z link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.1 summary= content=Release 0.126.0-alpha.1",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,8 @@",
-        "+title=rust-v0.126.0-alpha.1",
-        "+updated=2026-04-24T22:30:09Z",
-        "+link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.1",
-        "+summary=",
-        "+content=Release 0.126.0-alpha.1",
-        "+",
-        " title=0.125.0",
-        " updated=2026-04-24T18:01:13Z",
-        "@@ -52,8 +58,2 @@",
-        " summary=",
-        " content=New Features Added a built-in amazon-bedrock model provider with configurable AWS profile support ( #18744 ). Added /mcp verbose for full MCP server diagnostics, resources, and resource templates while keeping plain /mcp fast ( #18610 ). Made plugin MCP loading accept both mcpServers and top-level server maps in .mcp.json ( #18780 ). Improved realtime handoffs so background agents receive transcript deltas and can explicitly stay silent when appropriate ( #18597 , #18761 , #18635 ). Added host-specific remote_sandbox_config requirements for remote environments ( #18763 ). Refreshed bundled model metadata, including the current gpt-5.4 default ( #18586 , #18388 , #18719 ). Bug Fixes Fixed /copy after rollback so it copies the latest visible assistant response, not a pre-rollback response ( #18739 ). Queued normal follow-up text submitted while a manual shell command is running, preventing stuck Working states ( #18820 ). Fixed Unicode/dead-key input in VS Code WSL terminals by disabling the enhanced keyboard mode there ( #18741 ). Prevented stale proxy environment variables from being restored from shell snapshots ( #17271 ). Made codex exec inherit root-level shared flags such as sandbox and model options ( #18630 ). Removed leaked review prompts from TUI transcripts ( #18659 ). Documentation Added and tightened the Code Review skill instructions used by Codex-driven reviews ( #18746 , #18818 ). Documented intentional await-across-lock cases and enabled Clippy linting for them ( #18423 , #18698 ). Updated app-server protocol docs for threadless MCP resource reads and namespaced dynamic tools ( #18292 , #18413 ). Chores Fixed high-severity dependency alerts by pinning patched JS and Rust dependencies ( #18167 ). Reduced Rust dev build debug-info overhead while preserving useful backtraces ( #18844 ). Refreshed generated Python app-server SDK types from the current schema ( #18862 ). Changelog Full Changelog: rust-v0.122.0...rust-v0.123.0 #18662 feat: add metric to track the number of turns with memory usage @jif-oai #18659 chore: drop review prompt from TUI UX @jif-oai #18661 feat: log client use min log level @jif-oai #18094 [codex] Use background agent task auth for backend calls @adrian-openai #18441 Avoid false shell snapshot cleanup warnings @etraut-openai #18260 [codex] Use background task auth for additional backend calls @adrian-openai #18657 fix: auth.json leak in tests @jif-oai #18610 Add verbose diagnostics for /mcp @etraut-openai #18633 Use app server thread names in TUI picker @etraut-openai #18591 Surface parent thread status in side conversations @etraut-openai #18361 codex: move thread/name/set and thread/memoryModeSet into ThreadStore @wiltzius-openai #18274 protocol: canonicalize file system permissions @bolinfest #18403 refactor: use semaphores for async serialization gates @bolinfest #18586 Update models.json @aibrahim-oai #18289 Wire the PatchUpdated events through app_server @akshaynathan #18631 Remove simple TUI legacy_core reexports @etraut-openai #18697 [codex] Fix agent identity auth test fixture @adrian-openai #18388 Update models.json @github-actions #18167 [codex] Fix high severity dependency alerts @caseysilver-oai #17692 [codex-analytics] guardian review analytics schema polishing @rhan-oai #18722 chore(guardian) disable mcps and plugins @dylan-hurd-oai #18597 Update realtime handoff transcript handling @guinness-oai #18627 Surface TUI skills refresh failures @etraut-openai #18719 Fix stale model test fixtures @aibrahim-oai #18714 Add experimental remote thread store config @wiltzius-openai #18739 fix(tui): keep /copy aligned with rollback @fcoury-oai #18701 [codex] prefer inherited spawn agent model @tibo-openai #18632 Use app server metadata for fork parent titles @etraut-openai #18112 feat: cascade thread archive @jif-oai #18716 Read conversation summaries through thread store @wiltzius-openai #18635 Add realtime silence tool @guinness-oai #18254 uds: add async Unix socket crate @euroelessar #18746 Add Code Review skill @pakrym-oai #18208 Add session config loader interface @rasmusrygaard #18753 Refactor TUI app module into submodules @etraut-openai #18630 Fix exec inheritance of root shared flags @etraut-openai #18027 [6/6] Fail exec client operations after disconnect @aibrahim-oai #17271 fix: fix stale proxy env restoration after shell snapshots @viyatb-oai #18602 Warn when trusting Git subdirectories @etraut-openai #18761 [codex] Send realtime transcript deltas on handoff @guinness-oai #18435 /statusline & /title - Shared preview values @canvrno-oai #18744 feat: add a built-in Amazon Bedrock model provider @celia-oai #18581 [1/4] Add executor HTTP request protocol @aibrahim-oai #18418 refactor: narrow async lock scopes @bolinfest #18780 feat: Support more plugin MCP file shapes. @xl-openai #18713 protocol: preserve glob scan depth in permission profiles @bolinfest #18795 fix(guardian) Dont hard error on feature disable @dylan-hurd-oai #18292 Make MCP resource read threadless @mzeng-openai #18786 Fallback display names for TUI skill mentions @canvrno-oai #18807 chore(app-server) linguist-generated @dylan-hurd-oai #18393 feat(auto-review) Handle request_permissions calls @dylan-hurd-oai #18763 Add remote_sandbox_config to our config requirements @abhinav-oai #18794 Organize context fragments @pakrym-oai #18423 chore: document intentional await-holding cases @bolinfest #18698 chore: enable await-holding clippy lints @bolinfest #18413 [tool search] support namespaced deferred dynamic tools @pash-openai #18818 [codex] Tighten code review skill wording @pakrym-oai #18271 show bash mode in the TUI @abhinav-oai #18741 fix(tui): disable enhanced keys for VS Code WSL @fcoury-oai #18850 Move external agent config out of core @pakrym-oai #18844 build: reduce Rust dev debuginfo @bolinfest #18848 feat: baseline lib @jif-oai #18846 core: make test-log a dev dependency @bolinfest #18428 app-server: define device key v2 protocol @euroelessar #18093 Propagate thread id in MCP tool metadata @rennie-openai #17836 [codex] Add tmux-aware OSC 9 notifications @caseychow-oai #18820 Queue follow-up input during user shell commands @etraut-openai #18858 Stabilize debug clear memories integration test @jif-oai #18799 Move TUI app tests to modules they cover @etraut-openai #18442 Refactor app-server config loading into ConfigManager @pakrym-oai #18813 Split DeveloperInstructions into individual fragments. @pakrym-oai #18275 sandboxing: intersect permission profiles semantically @bolinfest #18862 Refresh generated Python app-server SDK types @sdcoffey #15578 Add Windows sandbox unified exec runtime support @iceweasel-oai #18429 app-server: add codex-device-key crate @euroelessar #18872 app-server: fix Bazel clippy in tracing tests @euroelessar #18885 skip busted tests while I fix them @iceweasel-oai #18873 chore: default multi-agent v2 fork to all @jif-oai",
-        "-",
-        "-title=0.123.0-alpha.10",
-        "-updated=2026-04-22T23:09:10Z",
-        "-link=https://github.com/openai/codex/releases/tag/rust-v0.123.0-alpha.10",
-        "-summary=",
-        "-content=Release 0.123.0-alpha.10"
-      ],
-      "article_identity": "rust-v01260-alpha1",
-      "is_page_error": false,
-      "status": "auto-published-demo",
-      "merge_key": "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.1",
-      "id": "evt-3fe7d36fdc01707d5e07",
-      "content_fingerprint": "title rust v0 126 0 alpha 1 updated 2026 04 24t22 30 09z link https github com openai codex releases tag rust v0 126 0 alpha 1 summary content release 0 126 0 alpha 1 codex release feed now shows rust v0 126 0 alpha 1 the monitored release feed for codex changed and the newest visible tag is rust v0 126 0 alpha 1 the feed timestamp is 2026 04 24t22 30 09z this looks like a release level update rather than a cosmetic page edit",
-      "needs_cc_refresh": true
     }
   ]
 }
