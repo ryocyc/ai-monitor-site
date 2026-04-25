@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 12:51 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 13:02 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-25 13:01 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/deepseek-docs.html">DeepSeek API Consolidates to V4 Models, Sunsetting Legacy Chat and Reasoner Endpoints</a></h2>
+              <p class="summary">DeepSeek has announced that its legacy deepseek-chat and deepseek-reasoner model identifiers will be retired on July 24, 2026, consolidating its API lineup around deepseek-v4-flash and deepseek-v4-pro.</p>
+              <div class="card-bottom">
+                <span>DeepSeek Docs</span>
+                <a href="https://api.deepseek.com/chat/completions">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -200,19 +213,6 @@
                 <a href="https://fal.ai/dashboard/apps/{username}/{appname}/runners">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time>2026-04-24 23:46 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/github-llamacpp-releases.html">llama.cpp Patch Release b8925 Fixes Structured Output Parser Bug</a></h2>
-              <p class="summary">The llama.cpp project shipped a quick bug-fix release on April 24, 2026, addressing a critical flaw in its structured output parser.</p>
-              <div class="card-bottom">
-                <span>GitHub llama.cpp Releases</span>
-                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8925">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 12:51 UTC";
+    const currentGeneratedAt = "2026-04-25 13:02 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
