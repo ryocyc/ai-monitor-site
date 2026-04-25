@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 13:02 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 13:13 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -136,6 +136,19 @@
               </div>
             </article>
             
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time>2026-04-25 09:39 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/github-llamacpp-releases.html">llama.cpp Shifts Default Quantization from Q5_1 to Q8_0 in Release b8929</a></h2>
+              <p class="summary">The llama.cpp project has changed its default model quantization format from Q5_1 to the higher-fidelity Q8_0, a shift that affects any tool relying on the library&#x27;s default quantization settings.</p>
+              <div class="card-bottom">
+                <span>GitHub llama.cpp Releases</span>
+                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8929">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -200,19 +213,6 @@
                 <a href="https://api.fal.ai/v1/models/pricing?endpoint_id=fal-ai/flux/dev">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time>2026-04-25 02:00 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/fal-changelog.html">fal.ai Adds Runner Termination Reason to Serverless Dashboard</a></h2>
-              <p class="summary">fal.ai has updated its serverless platform dashboard with a new feature that displays why a runner was terminated directly alongside the runner&#x27;s state.</p>
-              <div class="card-bottom">
-                <span>fal Changelog</span>
-                <a href="https://fal.ai/dashboard/apps/{username}/{appname}/runners">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 13:02 UTC";
+    const currentGeneratedAt = "2026-04-25 13:13 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
