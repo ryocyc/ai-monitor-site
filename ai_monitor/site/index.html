@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 08:57 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 09:08 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time>2026-04-25 09:07 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/hugging-face-blog.html">DeepSeek-V4 Surfaces on Hugging Face Hot Feed, Showcasing Million-Token Context for AI Agents</a></h2>
+              <p class="summary">DeepSeek-V4, a model with a claimed one-million-token context window, has appeared in the Hot articles section of the Hugging Face community blog, signaling growing community interest in extended-context models for agentic workflows.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Changelog</span>
                 <a href="https://huggingface.co/changelog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time>2026-04-25 06:39 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/hugging-face-blog.html">DeepSeek-V4 Appears on Hugging Face Community Blog Hot Feed, Drawing Attention to Its Million-Token Context Window</a></h2>
-              <p class="summary">DeepSeek-V4, a model notable for its one-million-token context window, has surfaced in the Hugging Face community blog&#x27;s Hot articles section, signaling strong community interest in the model&#x27;s long-context capabilities.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 08:57 UTC";
+    const currentGeneratedAt = "2026-04-25 09:08 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
