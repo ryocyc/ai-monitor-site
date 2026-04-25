@@ -2766,7 +2766,54 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-25T08:25:07+00:00",
+      "source_name": "GitHub llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "category": "release",
+      "headline_en": "GitHub llama.cpp Releases changed",
+      "summary_en": "updated=2026-04-25T08:14:28Z",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "updated=2026-04-25T08:14:28Z",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,4 +1,4 @@",
+        " title=b8926",
+        "-updated=2026-04-25T08:14:00Z",
+        "+updated=2026-04-25T08:14:28Z",
+        " link=https://github.com/ggml-org/llama.cpp/releases/tag/b8926",
+        " summary="
+      ],
+      "article_identity": "GitHub llama.cpp Releases",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases.atom",
+      "id": "evt-72a898dc51e976ad606b",
+      "content_fingerprint": "updated 2026 04 25t08 14 28z github llama cpp releases changed updated 2026 04 25t08 14 28z",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "github llama cpp releases changed updated 2026 04 25t08 14 28z updated 2026 04 25t08 14 28z",
+      "github_release_signal_fingerprint": "github llama cpp releases changed updated 2026 04 25t08 14 28z updated 2026 04 25t08 14 28z",
+      "article_h1": "llama.cpp Releases b8926 and b8925 with WebGPU SSM_SCAN Support and Parser Fix",
+      "article_standfirst": "The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a structured-output parsing bug.",
+      "article_body": [
+        "The llama.cpp project tagged two releases on April 25, 2026. The first, b8925, landed on April 24 and carried a parser fix for a structured-output bug (PR #22302), which the release notes describe with tongue-in-cheek brevity: \"Things just cannot be too easy.\" The second, b8926, arrived the next morning and introduces SSM_SCAN support to the ggml-webgpu backend via PR #22327, alongside removal of blocking calls in graph_compute and updated operator support for WebGPU.\n\nBuild artifacts for both releases span an unusually wide matrix: macOS (Apple Silicon with optional KleidiAI acceleration, Intel x64, and iOS XCFramework), Linux (Ubuntu on CPU, Vulkan, ROCm 7.2, OpenVINO 2026.0, and SYCL in FP32/FP16), Android, Windows (CPU, CUDA 12.4, CUDA 13.1, Vulkan, SYCL, and HIP for Radeon GPUs), and a notable addition — openEuler builds for both 310p and 910b (with ACL Graph) on x86 and aarch64.\n\nCUDA support on Windows continues to ship dual CUDA version variants (12.4 and 13.1), reflecting the fragmented GPU driver landscape developers must navigate. The inclusion of KleidiAI-enabled macOS binaries also signals ongoing Apple Silicon optimization work beyond standard ARM64 builds."
+      ],
+      "article_why_matters": [
+        "SSM_SCAN support in WebGPU brings state-space model inference to browser and cross-platform GPU environments without relying on CUDA or Metal.",
+        "The parser fix for structured output directly impacts developers using llama.cpp as a backend for structured AI responses, a common production use case.",
+        "The growing openEuler support signals expanding reach into Chinese and enterprise Linux ecosystems beyond mainstream Ubuntu and Debian."
+      ],
+      "article_source_note": [
+        "This report is based on the official llama.cpp releases Atom feed (ggml-org/llama.cpp). Both b8926 and b8925 were published by github-actions[bot] on April 24–25, 2026. Binary assets span macOS, Linux, Android, Windows, and openEuler across multiple accelerator backends. Details on the SSM_SCAN and parser fixes are limited to the changelog entries; full technical context requires reviewing linked PRs #22327 and #22302."
+      ],
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-25T08:15:00+00:00"
+  "generated_at": "2026-04-25T08:25:48+00:00"
 }
