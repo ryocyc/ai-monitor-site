@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AWS Security Agent and DevOps Agent Exit Preview, Enter General Availability | AI Signal Articles</title>
   <meta name="description" content="Amazon has made its autonomous frontier agents — the AWS Security Agent for on-demand penetration testing and the AWS DevOps Agent — generally available...">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
+       crossorigin="anonymous"></script>
   <style>
     :root {
       --bg: #f6efe4;
@@ -35,6 +37,31 @@
       align-items: center;
     }
     .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .top-ad {
+      margin-bottom: 18px;
+      padding: 12px 14px;
+      border: 1px dashed rgba(15,118,110,0.28);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.68);
+    }
+    .ad-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .ad-slot {
+      min-height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15,118,110,0.08);
+      color: var(--muted);
+      font-weight: 700;
+    }
     .chip {
       display: inline-flex;
       align-items: center;
@@ -86,6 +113,34 @@
       color: var(--muted);
       font-size: 0.92rem;
     }
+    .hero-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .share-button {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+    .share-button:hover {
+      transform: translateY(-1px);
+      background: rgba(15,118,110,0.18);
+    }
+    .share-status {
+      color: var(--muted);
+      font-size: 0.88rem;
+      min-height: 1.2em;
+    }
     .content {
       margin-top: 20px;
       display: grid;
@@ -127,9 +182,13 @@
 </head>
 <body>
   <main>
+    <section class="top-ad" aria-label="Advertisement">
+      <div class="ad-label">Advertisement</div>
+      <div class="ad-slot">Top banner ad slot</div>
+    </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-24 10:32 UTC</div>
+      <div>Generated 2026-04-25 00:36 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">blog</span>
@@ -137,10 +196,14 @@
       <p class="standfirst">Amazon has made its autonomous frontier agents — the AWS Security Agent for on-demand penetration testing and the AWS DevOps Agent — generally available, signaling a major step toward AI-driven cloud security and operations at scale.</p>
       <div class="meta">
         <span>AWS Machine Learning Blog</span>
-        <span>2026-04-23 17:08 UTC</span>
+        <span>2026-04-24 18:09 UTC</span>
         <span>Key: aws-machine-learning-blog::identity::aws-machine-learning-blog-artificial-intellige</span>
         <span>Confidence: moderate</span>
         <span>Mode: claude</span>
+      </div>
+      <div class="hero-actions">
+        <button class="share-button" type="button" id="share-button">Share</button>
+        <span class="share-status" id="share-status" aria-live="polite"></span>
       </div>
     </article>
     <section class="content">
@@ -174,5 +237,50 @@
       <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
       </div>
   </main>
+  <script>
+    (() => {
+      const button = document.getElementById("share-button");
+      const status = document.getElementById("share-status");
+      if (!button || !status) return;
+      const shareData = {
+        title: document.title,
+        text: "Amazon has made its autonomous frontier agents \u2014 the AWS Security Agent for on-demand penetration testing and the AWS DevOps Agent \u2014 gene...",
+        url: window.location.href
+      };
+      const setStatus = (message) => {
+        status.textContent = message;
+        if (message) {
+          window.clearTimeout(setStatus._timer);
+          setStatus._timer = window.setTimeout(() => {
+            status.textContent = "";
+          }, 2400);
+        }
+      };
+      button.addEventListener("click", async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+            setStatus("Shared.");
+            return;
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(window.location.href);
+            setStatus("Link copied.");
+            return;
+          }
+        } catch (error) {
+          setStatus("Share cancelled.");
+          return;
+        }
+        const helper = document.createElement("input");
+        helper.value = window.location.href;
+        document.body.appendChild(helper);
+        helper.select();
+        document.execCommand("copy");
+        helper.remove();
+        setStatus("Link copied.");
+      });
+    })();
+  </script>
 </body>
 </html>
