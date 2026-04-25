@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 05:45 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 06:08 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,32 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="update">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time>2026-04-25 06:06 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/stepfun-home.html">StepFun Login Page Captured; No New Public Content on StepFun Home</a></h2>
+              <p class="summary">The StepFun homepage at stepfun.com returns only a login wall with no publicly accessible content, making it impossible to extract fresh news or product updates.</p>
+              <div class="card-bottom">
+                <span>StepFun Home</span>
+                <a href="https://www.stepfun.com/">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time>2026-04-25 06:06 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/hugging-face-blog.html">Hugging Face Community Blog Showcases Recent AI Research Articles Across NLP, Vision, and Agents</a></h2>
+              <p class="summary">The Hugging Face community blog&#x27;s recent posts highlight advances in sparse models, multilingual OCR, agent grounding, and inference optimization, with no DeepSeek-V4 article visible in the captured page.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -94,32 +120,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Changelog</span>
                 <a href="https://huggingface.co/changelog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time>2026-04-25 04:20 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/hugging-face-blog.html">DeepSeek-V4 Appears on Hugging Face Hot Feed, Showcasing Million-Token Context for AI Agents</a></h2>
-              <p class="summary">DeepSeek-V4, the latest model from Chinese AI lab DeepSeek with a one-million-token context window, has surfaced in the Hot articles section of the Hugging Face community blog.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time>2026-04-25 04:09 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/stepfun-home.html">StepFun Launches StepClaw AI Assistant with Web Search and Knowledge Base Tools</a></h2>
-              <p class="summary">StepFun has introduced StepClaw, a new conversational AI assistant on its platform offering web search, knowledge base Q&amp;A, and image generation capabilities.</p>
-              <div class="card-bottom">
-                <span>StepFun Home</span>
-                <a href="https://www.stepfun.com/">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 05:45 UTC";
+    const currentGeneratedAt = "2026-04-25 06:08 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
