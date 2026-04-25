@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>llama.cpp Patch Release b8925 Fixes Structured Output Parser Bug | AI Signal Articles</title>
-  <meta name="description" content="The llama.cpp project shipped a quick bug-fix release on April 24, 2026, addressing a critical flaw in its structured output parser.">
+  <title>llama.cpp Ships SSM_SCAN Support for WebGPU Backend in Release b8926 | AI Signal Articles</title>
+  <meta name="description" content="The llama.cpp project released version b8926 on April 25, 2026, adding State Space Model scan support to its WebGPU backend alongside broader platform a...">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
   <style>
@@ -188,17 +188,17 @@
     </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-25 08:46 UTC</div>
+      <div>Generated 2026-04-25 08:57 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">release</span>
-      <h1>llama.cpp Patch Release b8925 Fixes Structured Output Parser Bug</h1>
-      <p class="standfirst">The llama.cpp project shipped a quick bug-fix release on April 24, 2026, addressing a critical flaw in its structured output parser.</p>
+      <h1>llama.cpp Ships SSM_SCAN Support for WebGPU Backend in Release b8926</h1>
+      <p class="standfirst">The llama.cpp project released version b8926 on April 25, 2026, adding State Space Model scan support to its WebGPU backend alongside broader platform and CUDA compatibility updates.</p>
       <div class="meta">
         <span>GitHub llama.cpp Releases</span>
-        <span>2026-04-24 23:46 UTC</span>
+        <span>2026-04-25 08:14 UTC</span>
         <span>Key: github-llamacpp-releases::identity::GitHub llama.cpp Releases</span>
-        <span>Confidence: strong</span>
+        <span>Confidence: moderate</span>
         <span>Mode: claude</span>
       </div>
       <div class="hero-actions">
@@ -210,26 +210,28 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The ggml-org/llama.cpp repository published release b8925 on Thursday, April 24, 2026, resolving a structured output bug reported as issue #22302. The fix is straightforward — the release notes describe it simply as &quot;fix very stupid structured output bug&quot; — but the issue had enough impact to warrant its own point release outside the normal cadence.</p>
-<p>Alongside the parser fix, this release continues llama.cpp&#x27;s tradition of distributing prebuilt binaries across a vast range of platforms. Available builds span macOS (Apple Silicon with optional KleidiAI acceleration, and Intel x64), iOS as an XCFramework, Linux across multiple CPU architectures (x64, arm64, s390x) with backend options including Vulkan, ROCm 7.2, OpenVINO, and SYCL in both FP32 and FP16 variants, Android arm64, Windows in x64 and arm64 with CPU, CUDA 12 and 13, Vulkan, SYCL, and HIP backends, and even openEuler x86.</p>
-<p>Structured output — the ability to force LLM inference to emit JSON or other machine-readable formats — is a frequently used feature in AI tooling. A parser-level bug in that path could silently corrupt output or cause inference loops, making a targeted patch like this one high priority for developers relying on llama.cpp for production applications.</p>
+        <p>The llama.cpp project, maintained under ggml-org, has published release b8926, introducing support for the SSM_SCAN operation within its WebGPU backend. This addition, tracked as PR #22327, also disables error checking for the set_rows function in that context, and includes binding fixes and updated operator support to improve compatibility. The release further removes blocking behaviour in graph_compute and introduces set_rows validation checks in other compute paths.
+
+Beyond the WebGPU work, b8926 ships expanded CUDA support on Windows, including pre-built DLLs for CUDA 12.4 and CUDA 13.1 (13.1 DLLs specifically), alongside ongoing Vulkan support. Linux builds continue to cover a wide range of targets — CPU variants across x64, arm64, and s390x architectures, Vulkan builds for x64 and arm64, ROCm 7.2, OpenVINO, and SYCL configurations in both FP32 and FP16 precisions. macOS/iOS builds are maintained for Apple Silicon (including KleidiAI-enabled builds) and Intel x64, while Android and Windows ARM64 CPU builds remain part of the release matrix.
+
+The release was tagged on GitHub at 08:14 UTC on April 25, 2026, reflecting a continued rapid iteration cadence for the open-source inference engine, which is widely used for running large language models in resource-constrained environments.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Structured output bugs can cause silent failures in AI pipelines, producing malformed JSON that downstream code cannot parse.</li><li>The breadth of platforms covered by llama.cpp&#x27;s binary distribution means this fix impacts a wide ecosystem of desktop, mobile, server, and edge deployments.</li><li>Developers using llama.cpp for JSON-constrained inference in agents, tools, or RAG pipelines will want to update immediately to avoid corrupted outputs.</li></ul>
+        <ul class="bullets"><li>SSM_SCAN support in WebGPU enables efficient state space model inference in browser and cross-platform GPU environments without relying on proprietary CUDA or Metal backends.</li><li>The expanded CUDA 13.1 DLLs on Windows give developers access to the latest NVIDIA toolkit features and performance improvements directly through llama.cpp binaries.</li><li>Continued broad platform coverage — from s390x Linux to Android arm64 — ensures llama.cpp remains one of the most portable LLM inference runtimes available.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This article is based on the official llama.cpp GitHub release page at https://github.com/ggml-org/llama.cpp/releases/tag/b8925, which was published on April 24, 2026 at 23:41 UTC. The release contains only one code change — the structured output parser fix (issue #22302) — alongside updated prebuilt binaries for all supported platforms.</li></ul>
+        <ul class="bullets"><li>This article is based on the public GitHub release page for llama.cpp tag b8926 (https://github.com/ggml-org/llama.cpp/releases/tag/b8926), published on April 25, 2026 at 08:14 UTC. The release notes list specific changes and supported platform configurations, though full commit-level details and the complete changelog were not captured in this source capture. Readers wishing to explore the underlying PR #22327 or review the full commit history for this release can do so via the linked GitHub release and pull request pages.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8925" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8926" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">
@@ -244,7 +246,7 @@
       if (!button || !status) return;
       const shareData = {
         title: document.title,
-        text: "The llama.cpp project shipped a quick bug-fix release on April 24, 2026, addressing a critical flaw in its structured output parser.",
+        text: "The llama.cpp project released version b8926 on April 25, 2026, adding State Space Model scan support to its WebGPU backend alongside bro...",
         url: window.location.href
       };
       const setStatus = (message) => {
