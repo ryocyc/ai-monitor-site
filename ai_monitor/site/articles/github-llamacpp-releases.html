@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>llama.cpp Releases b8926 and b8925 with WebGPU SSM_SCAN Support and Parser Fix | AI Signal Articles</title>
-  <meta name="description" content="The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a structured-out...">
+  <title>llama.cpp Lands Release b8931 with CUDA Stream-K Overhead Reduction | AI Signal Articles</title>
+  <meta name="description" content="The ggml-org/llama.cpp project issued release b8931 on April 25, 2026, cutting MMQ stream-k overhead on CUDA builds by switching to 32-bit integers for...">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
   <style>
@@ -188,17 +188,17 @@
     </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-25 15:41 UTC</div>
+      <div>Generated 2026-04-25 15:49 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">release</span>
-      <h1>llama.cpp Releases b8926 and b8925 with WebGPU SSM_SCAN Support and Parser Fix</h1>
-      <p class="standfirst">The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a structured-output parsing bug.</p>
+      <h1>llama.cpp Lands Release b8931 with CUDA Stream-K Overhead Reduction</h1>
+      <p class="standfirst">The ggml-org/llama.cpp project issued release b8931 on April 25, 2026, cutting MMQ stream-k overhead on CUDA builds by switching to 32-bit integers for kernel-bound computation.</p>
       <div class="meta">
         <span>GitHub llama.cpp Releases</span>
-        <span>2026-04-25 08:25 UTC</span>
-        <span>Key: github-llamacpp-releases::identity::GitHub llama.cpp Releases</span>
-        <span>Confidence: strong</span>
+        <span>2026-04-25 14:57 UTC</span>
+        <span>Key: github-llamacpp-releases::url::ggml-org-llamacpp-releases-tag-b8931</span>
+        <span>Confidence: moderate</span>
         <span>Mode: claude</span>
       </div>
       <div class="hero-actions">
@@ -210,28 +210,28 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The llama.cpp project tagged two releases on April 25, 2026. The first, b8925, landed on April 24 and carried a parser fix for a structured-output bug (PR #22302), which the release notes describe with tongue-in-cheek brevity: &quot;Things just cannot be too easy.&quot; The second, b8926, arrived the next morning and introduces SSM_SCAN support to the ggml-webgpu backend via PR #22327, alongside removal of blocking calls in graph_compute and updated operator support for WebGPU.
+        <p>llama.cpp, the widely-used open-source LLM inference engine, tagged release b8931 on April 25, 2026. The headline change is a CUDA optimisation for multi-query merging (MMQ) stream-k code paths, using 32-bit integers for the kernel-bound computation (`kbc`), which should reduce the per-kernel overhead on supported NVIDIA hardware.
 
-Build artifacts for both releases span an unusually wide matrix: macOS (Apple Silicon with optional KleidiAI acceleration, Intel x64, and iOS XCFramework), Linux (Ubuntu on CPU, Vulkan, ROCm 7.2, OpenVINO 2026.0, and SYCL in FP32/FP16), Android, Windows (CPU, CUDA 12.4, CUDA 13.1, Vulkan, SYCL, and HIP for Radeon GPUs), and a notable addition — openEuler builds for both 310p and 910b (with ACL Graph) on x86 and aarch64.
+The release ships pre-built binaries across a broad set of platforms: macOS Apple Silicon (with and without KleidiAI), macOS Intel, iOS XCFramework, multiple Linux distributions (Ubuntu CPU, Vulkan, ROCm, OpenVINO, SYCL variants), Android arm64, and Windows (CPU, CUDA 12, CUDA 13, Vulkan, SYCL, HIP). An openEuler x86 (310p) target is also listed.
 
-CUDA support on Windows continues to ship dual CUDA version variants (12.4 and 13.1), reflecting the fragmented GPU driver landscape developers must navigate. The inclusion of KleidiAI-enabled macOS binaries also signals ongoing Apple Silicon optimization work beyond standard ARM64 builds.</p>
+No formal release notes or changelog entry is visible beyond the brief commit summary; users seeking detailed technical notes should monitor the project&#x27;s GitHub releases page for an updated description.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>SSM_SCAN support in WebGPU brings state-space model inference to browser and cross-platform GPU environments without relying on CUDA or Metal.</li><li>The parser fix for structured output directly impacts developers using llama.cpp as a backend for structured AI responses, a common production use case.</li><li>The growing openEuler support signals expanding reach into Chinese and enterprise Linux ecosystems beyond mainstream Ubuntu and Debian.</li></ul>
+        <ul class="bullets"><li>CUDA MMQ stream-k users should see lower kernel-launch overhead, improving throughput on multi-GPU or large-batch workloads.</li><li>The new CUDA 12 and CUDA 13 DLL builds ensure the optimisation is available to Windows developers using the latest NVIDIA toolchains.</li><li>Broad platform coverage — including KleidiAI-enabled Apple Silicon and HIP backends — signals llama.cpp&#x27;s continued push for hardware-agnostic performance.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This report is based on the official llama.cpp releases Atom feed (ggml-org/llama.cpp). Both b8926 and b8925 were published by github-actions[bot] on April 24–25, 2026. Binary assets span macOS, Linux, Android, Windows, and openEuler across multiple accelerator backends. Details on the SSM_SCAN and parser fixes are limited to the changelog entries; full technical context requires reviewing linked PRs #22327 and #22302.</li></ul>
+        <ul class="bullets"><li>This information is drawn from the raw HTML of GitHub tag page https://github.com/ggml-org/llama.cpp/releases/tag/b8931 fetched on 2026-04-25. No formal release description is present in the page; the summary is inferred from the tag name and listed build targets. Readers should check the releases page or linked PR #22298 for full technical details.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://github.com/ggml-org/llama.cpp/releases.atom" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8931" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">
@@ -246,7 +246,7 @@ CUDA support on Windows continues to ship dual CUDA version variants (12.4 and 1
       if (!button || !status) return;
       const shareData = {
         title: document.title,
-        text: "The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a...",
+        text: "The ggml-org/llama.cpp project issued release b8931 on April 25, 2026, cutting MMQ stream-k overhead on CUDA builds by switching to 32-bi...",
         url: window.location.href
       };
       const setStatus = (message) => {
