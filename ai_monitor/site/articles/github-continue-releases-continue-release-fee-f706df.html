@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Continue v1.3.38 for VS Code: Config Fix, Session Filtering, and .continue/configs | AI Signal Articles</title>
-  <meta name="description" content="The Continue VS Code extension ships a config.yaml fix, a session history filter by workspace directory, and new support for .continue/configs directories.">
+  <title>Continue release feed now shows v1.3.38-vscode | AI Signal Articles</title>
+  <meta name="description" content="The monitored release feed for Continue changed and the newest visible tag is v1.3.38-vscode. The feed timestamp is 2026-03-27T21:34:07Z. This looks lik...">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
+       crossorigin="anonymous"></script>
   <style>
     :root {
       --bg: #f6efe4;
@@ -35,6 +37,31 @@
       align-items: center;
     }
     .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .top-ad {
+      margin-bottom: 18px;
+      padding: 12px 14px;
+      border: 1px dashed rgba(15,118,110,0.28);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.68);
+    }
+    .ad-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .ad-slot {
+      min-height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15,118,110,0.08);
+      color: var(--muted);
+      font-weight: 700;
+    }
     .chip {
       display: inline-flex;
       align-items: center;
@@ -86,6 +113,34 @@
       color: var(--muted);
       font-size: 0.92rem;
     }
+    .hero-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .share-button {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+    .share-button:hover {
+      transform: translateY(-1px);
+      background: rgba(15,118,110,0.18);
+    }
+    .share-status {
+      color: var(--muted);
+      font-size: 0.88rem;
+      min-height: 1.2em;
+    }
     .content {
       margin-top: 20px;
       display: grid;
@@ -127,40 +182,47 @@
 </head>
 <body>
   <main>
+    <section class="top-ad" aria-label="Advertisement">
+      <div class="ad-label">Advertisement</div>
+      <div class="ad-slot">Top banner ad slot</div>
+    </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 14:26 UTC</div>
+      <div>Generated 2026-04-25 00:46 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">release</span>
-      <h1>Continue v1.3.38 for VS Code Released</h1>
-      <p class="standfirst">The Continue VS Code extension ships a config.yaml fix, a session history filter by workspace directory, and new support for .continue/configs directories.</p>
+      <h1>Continue release feed now shows v1.3.38-vscode</h1>
+      <p class="standfirst">The monitored release feed for Continue changed and the newest visible tag is v1.3.38-vscode. The feed timestamp is 2026-03-27T21:34:07Z. This looks like a release-level update rather than a cosmetic page edit.</p>
       <div class="meta">
         <span>GitHub Continue Releases</span>
         <span>2026-04-22 12:43 UTC</span>
-        <span>Key: github-continue-releases::identity::github-continue-releases-continue-release-fee</span>
+        <span>Key: github-continue-releases::identity::v1338-vscode</span>
         <span>Confidence: moderate</span>
         <span>Mode: claude</span>
+      </div>
+      <div class="hero-actions">
+        <button class="share-button" type="button" id="share-button">Share</button>
+        <span class="share-status" id="share-status" aria-live="polite"></span>
       </div>
     </article>
     <section class="content">
       
       <section class="section">
         <h2>Article body</h2>
-        <p>Continue v1.3.38 for VS Code landed on 27 March 2026, bringing a small but practical set of changes. The headline fix ensures that config.yaml is created and populated correctly when first accessed — a quality-of-life improvement for users setting up the extension for the first time. A new feature introduced by contributor mvanhorn adds the ability to filter session history by workspace directory, making it easier to stay organized when working across multiple projects.</p>
-<p>On the feature side, a new .continue/configs support layer was added by RomneyDa, likely expanding how the extension handles configuration across different contexts. The release also bundled a raft of dependency updates — handlebars patched across multiple packages, path-to-regexp bumped in the continue-sdk, brace-expansion updated in both core and binary, and happy-dom bumped in the CLI — along with a JetBrains-vs-VSCode chore reference (jb-67-vs-38) that hints at ongoing parity work between the two IDE extensions.</p>
+        
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>The config.yaml fix removes a potential setup blocker for new users who hit an unpopulated config on first launch.</li><li>Session history filtering by workspace directory directly improves multi-project workflow ergonomics.</li><li>Expanded .continue/configs support signals a broader configuration architecture that may unlock more flexible setups going forward.</li></ul>
+        <p>No bullet points were generated for this page.</p>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>The release page on GitHub loaded with a few UI errors obscuring some asset links and tag comparisons, but the core &#x27;What&#x27;s Changed&#x27; list and contributor attributions were fully readable. No structured changelog or release notes file is linked from this page — the changes are inferred directly from the commit descriptions listed on the release.</li></ul>
+        <p>No bullet points were generated for this page.</p>
       </section>
     
       <section class="section">
@@ -169,8 +231,54 @@
       </section>
     </section>
     <div class="footer">
-      This article was generated from filtered monitored source changes.
-    </div>
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
   </main>
+  <script>
+    (() => {
+      const button = document.getElementById("share-button");
+      const status = document.getElementById("share-status");
+      if (!button || !status) return;
+      const shareData = {
+        title: document.title,
+        text: "The monitored release feed for Continue changed and the newest visible tag is v1.3.38-vscode. The feed timestamp is 2026-03-27T21:34:07Z....",
+        url: window.location.href
+      };
+      const setStatus = (message) => {
+        status.textContent = message;
+        if (message) {
+          window.clearTimeout(setStatus._timer);
+          setStatus._timer = window.setTimeout(() => {
+            status.textContent = "";
+          }, 2400);
+        }
+      };
+      button.addEventListener("click", async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+            setStatus("Shared.");
+            return;
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(window.location.href);
+            setStatus("Link copied.");
+            return;
+          }
+        } catch (error) {
+          setStatus("Share cancelled.");
+          return;
+        }
+        const helper = document.createElement("input");
+        helper.value = window.location.href;
+        document.body.appendChild(helper);
+        helper.select();
+        document.execCommand("copy");
+        helper.remove();
+        setStatus("Link copied.");
+      });
+    })();
+  </script>
 </body>
 </html>

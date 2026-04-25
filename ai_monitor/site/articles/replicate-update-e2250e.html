@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Replicate Publishes Agent Skills: Markdown Instructions for AI Coding Assistants | AI Signal Articles</title>
-  <meta name="description" content="Replicate published Agent Skills — markdown instruction files that give coding assistants (Claude Code, OpenAI Codex, OpenCode) expert knowledge on mode...">
+  <title>Replicate Launches Agent Skills: Pre-Built Markdown Instructions for AI Coding Assistants | AI Signal Articles</title>
+  <meta name="description" content="Replicate has published a set of agent skills — ready-made markdown instruction files that give AI coding assistants expert-level knowledge of its platf...">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
+       crossorigin="anonymous"></script>
   <style>
     :root {
       --bg: #f6efe4;
@@ -35,6 +37,31 @@
       align-items: center;
     }
     .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .top-ad {
+      margin-bottom: 18px;
+      padding: 12px 14px;
+      border: 1px dashed rgba(15,118,110,0.28);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.68);
+    }
+    .ad-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .ad-slot {
+      min-height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15,118,110,0.08);
+      color: var(--muted);
+      font-weight: 700;
+    }
     .chip {
       display: inline-flex;
       align-items: center;
@@ -86,6 +113,34 @@
       color: var(--muted);
       font-size: 0.92rem;
     }
+    .hero-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .share-button {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+    .share-button:hover {
+      transform: translateY(-1px);
+      background: rgba(15,118,110,0.18);
+    }
+    .share-status {
+      color: var(--muted);
+      font-size: 0.88rem;
+      min-height: 1.2em;
+    }
     .content {
       margin-top: 20px;
       display: grid;
@@ -127,39 +182,51 @@
 </head>
 <body>
   <main>
+    <section class="top-ad" aria-label="Advertisement">
+      <div class="ad-label">Advertisement</div>
+      <div class="ad-slot">Top banner ad slot</div>
+    </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-24 09:56 UTC</div>
+      <div>Generated 2026-04-25 00:46 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">changelog</span>
-      <h1>Replicate Publishes Agent Skills: Markdown Instructions for AI Coding Assistants</h1>
-      <p class="standfirst">Replicate published Agent Skills — markdown instruction files that give coding assistants (Claude Code, OpenAI Codex, OpenCode) expert knowledge on model selection, API execution, and prompting for image and video generation. They complement Replicate&#x27;s MCP server.</p>
+      <h1>Replicate Launches Agent Skills: Pre-Built Markdown Instructions for AI Coding Assistants</h1>
+      <p class="standfirst">Replicate has published a set of agent skills — ready-made markdown instruction files that give AI coding assistants expert-level knowledge of its platform without manual configuration.</p>
       <div class="meta">
         <span>Replicate Changelog</span>
         <span>2026-04-22 23:49 UTC</span>
         <span>Key: replicate-changelog::identity::replicate-update</span>
-        <span>Confidence: moderate</span>
+        <span>Confidence: strong</span>
         <span>Mode: claude</span>
+      </div>
+      <div class="hero-actions">
+        <button class="share-button" type="button" id="share-button">Share</button>
+        <span class="share-status" id="share-status" aria-live="polite"></span>
       </div>
     </article>
     <section class="content">
       
       <section class="section">
         <h2>Article body</h2>
-        
+        <p>Replicate released a new feature called Agent Skills on April 21, 2026, making it easier for AI coding assistants like Claude Code, OpenAI Codex, and OpenCode to work with its AI models. The skills are a collection of markdown files that embed detailed knowledge about model discovery, model comparison, API execution, and specialized prompting for image and video generation tasks. Installing them requires a single command: `npx skills add replicate/skills`, which pulls all available skills into a project and automatically configures the coding assistant.
+
+The skills follow the open Agent Skills specification, meaning they are designed to be compatible with any toolchain that adopts the same standard. Replicate emphasizes that agent skills are complementary to its existing MCP (Model Context Protocol) server: while MCP provides API-level tools to a coding assistant, agent skills provide the contextual knowledge needed to use those tools effectively. Together, the two features are meant to reduce the manual setup burden on developers integrating Replicate into automated workflows.
+
+The announcement positions Replicate as a platform that supports the growing ecosystem of AI agents operating autonomously on behalf of developers. By publishing its knowledge base as a portable, open-standard markdown collection, Replicate lowers the barrier for any compatible coding assistant to accurately select models, call APIs, and produce outputs — without requiring users to research or configure anything themselves.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <p>No bullet points were generated for this page.</p>
+        <ul class="bullets"><li>Developers can now add Replicate model expertise to AI coding assistants with a single command, removing manual configuration entirely.</li><li>The open Agent Skills spec means tools beyond Replicate&#x27;s own ecosystem can benefit, potentially standardizing how AI agents learn platform-specific knowledge.</li><li>Combined with Replicate&#x27;s MCP server, the skills create a two-layer system — knowledge plus tooling — that makes AI-driven workflows on Replicate far more autonomous.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <p>No bullet points were generated for this page.</p>
+        <ul class="bullets"><li>This information comes directly from Replicate&#x27;s official changelog page (replicate.com/changelog), dated April 21, 2026. The changelog entry is concise and provides installation instructions, compatibility details, and a clear explanation of how skills differ from the existing MCP server, but does not include usage examples or broader adoption metrics.</li></ul>
       </section>
     
       <section class="section">
@@ -172,5 +239,50 @@
       <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
       </div>
   </main>
+  <script>
+    (() => {
+      const button = document.getElementById("share-button");
+      const status = document.getElementById("share-status");
+      if (!button || !status) return;
+      const shareData = {
+        title: document.title,
+        text: "Replicate has published a set of agent skills \u2014 ready-made markdown instruction files that give AI coding assistants expert-level knowled...",
+        url: window.location.href
+      };
+      const setStatus = (message) => {
+        status.textContent = message;
+        if (message) {
+          window.clearTimeout(setStatus._timer);
+          setStatus._timer = window.setTimeout(() => {
+            status.textContent = "";
+          }, 2400);
+        }
+      };
+      button.addEventListener("click", async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+            setStatus("Shared.");
+            return;
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(window.location.href);
+            setStatus("Link copied.");
+            return;
+          }
+        } catch (error) {
+          setStatus("Share cancelled.");
+          return;
+        }
+        const helper = document.createElement("input");
+        helper.value = window.location.href;
+        document.body.appendChild(helper);
+        helper.select();
+        document.execCommand("copy");
+        helper.remove();
+        setStatus("Link copied.");
+      });
+    })();
+  </script>
 </body>
 </html>
