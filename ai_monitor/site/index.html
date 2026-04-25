@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 07:01 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 07:12 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -87,10 +87,10 @@
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
-                <time>2026-04-25 07:00 UTC</time>
+                <time>2026-04-25 07:11 UTC</time>
               </div>
-              <h2 class="headline"><a href="./articles/hugging-face-changelog.html">Hugging Face Adds Auto-Generated /agents.md Endpoints to All Gradio Spaces</a></h2>
-              <p class="summary">Hugging Face now gives every Gradio Space a machine-readable API description at /agents.md, letting AI coding agents like Claude Code and Codex interact with Spaces without manual setup.</p>
+              <h2 class="headline"><a href="./articles/hugging-face-changelog.html">Hugging Face Gradio Spaces Now Serve Machine-Readable API Docs for AI Agents</a></h2>
+              <p class="summary">Every Gradio Space on Hugging Face now auto-generates an /agents.md endpoint, letting AI coding agents such as Claude Code, Codex, and Pi discover and use Spaces without manual setup.</p>
               <div class="card-bottom">
                 <span>Hugging Face Changelog</span>
                 <a href="https://huggingface.co/changelog">Source</a>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 07:01 UTC";
+    const currentGeneratedAt = "2026-04-25 07:12 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
