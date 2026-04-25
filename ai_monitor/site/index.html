@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 01:18 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 01:28 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-25 01:28 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/hugging-face-changelog.html">Hugging Face Gradio Spaces Now Auto-Serve AI-Agent-Readable API Endpoints</a></h2>
+              <p class="summary">Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents interact with any Space directly without manual configuration.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Changelog</span>
+                <a href="https://huggingface.co/changelog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -200,19 +213,6 @@
                 <a href="https://aws.amazon.com/blogs/machine-learning/artificial-intelligence-aws-launches-frontier-agents-for-security-testing-and-cloud-operations/">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time>2026-04-24 16:19 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/together-ai-blog-blog-company-what-is.html">Together AI Brings Inference, Agents, Voice AI, and Open Models to NVIDIA GTC 2026</a></h2>
-              <p class="summary">Together AI announced a slate of new launches across AI inference, agents, voice AI, and open models at NVIDIA GTC 2026, alongside technical sessions led by its research and engineering teams.</p>
-              <div class="card-bottom">
-                <span>Together AI Blog</span>
-                <a href="https://www.together.ai/blog">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 01:18 UTC";
+    const currentGeneratedAt = "2026-04-25 01:28 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
