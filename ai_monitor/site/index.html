@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 09:51 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 10:02 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="update">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time>2026-04-25 10:01 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/stepfun-home.html">StepFun&#x27;s AI Assistant Homepage Shows Login Wall, Reveals Product Suite Including StepClaw and Step Audio Studio</a></h2>
+              <p class="summary">StepFun&#x27;s public homepage at stepfun.com presents a login gate with no public-facing content, though metadata and page elements indicate an active product lineup including the StepClaw chatbot and a newly flagged Step Audio Studio ASR tool.</p>
+              <div class="card-bottom">
+                <span>StepFun Home</span>
+                <a href="https://www.stepfun.com/">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -107,19 +120,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Blog</span>
                 <a href="https://huggingface.co/blog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time>2026-04-25 06:06 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/stepfun-home.html">StepFun Login Page Captured; No New Public Content on StepFun Home</a></h2>
-              <p class="summary">The StepFun homepage at stepfun.com returns only a login wall with no publicly accessible content, making it impossible to extract fresh news or product updates.</p>
-              <div class="card-bottom">
-                <span>StepFun Home</span>
-                <a href="https://www.stepfun.com/">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 09:51 UTC";
+    const currentGeneratedAt = "2026-04-25 10:02 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;

@@ -1,7 +1,51 @@
 {
-  "generated_at": "2026-04-25T09:51:13+00:00",
+  "generated_at": "2026-04-25T10:02:08+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-25T10:01:22+00:00",
+      "source_name": "StepFun Home",
+      "source_url": "https://www.stepfun.com/",
+      "effective_url": "https://www.stepfun.com/",
+      "target_url": "https://www.stepfun.com/",
+      "category": "update",
+      "headline_en": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Good evening. How can I assist you? What do you want to...",
+      "summary_en": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Good evening. How can I assist you? What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio...",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Good evening. How can I assist you? What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1 +1 @@",
+        "-阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Good afternoon. How can I assist you? What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers",
+        "+阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Good evening. How can I assist you? What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers"
+      ],
+      "article_identity": "StepFun Home",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "update||stepfun home||ai conversation stepclaw please log in to access your history log in log in good evening how can i assist you what do you want to ai conversation stepclaw please log in to access y",
+      "id": "evt-cf91f24a3cd918f29d09",
+      "content_fingerprint": "ai new conversation stepclaw please log in to access your history log in log in good evening how can i assist you what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio studio lightning fast asr new deploy stepclaw about stepfun careers ai new conversation stepclaw please log in to access your history log in log in good evening how can i assist you what do you want to ai new conversation stepclaw please log in to access your history log in log in good even",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "ai new conversation stepclaw please log in to access your history log in log in good evening how can i assist you what do you want to ai new conversation stepclaw please log in to access your history log in log in good evening how can i assist you what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio ai new conversation stepclaw please log in to access your history log in log in good evening how can i assist you what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio studio lightning fast asr new deploy stepclaw about stepfun careers",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "StepFun's AI Assistant Homepage Shows Login Wall, Reveals Product Suite Including StepClaw and Step Audio Studio",
+      "article_standfirst": "StepFun's public homepage at stepfun.com presents a login gate with no public-facing content, though metadata and page elements indicate an active product lineup including the StepClaw chatbot and a newly flagged Step Audio Studio ASR tool.",
+      "article_body": [
+        "Visitors to stepfun.com, the web portal for Chinese AI company StepFun (阶跃), encounter a login wall with no publicly accessible homepage content. The page renders a StepClaw-branded chat interface behind an authentication gate, with no visible public-facing information beyond the login prompt. Page metadata describes 阶跃AI as a \"smart and reliable personal efficiency assistant\" that helps users acquire knowledge, query information, learn languages, generate creative writing, and write code across work, study, and life scenarios. A menu element references Step Audio Studio, described as offering \"Lightning-fast ASR\" — automatic speech recognition — labelled as a new feature. The site is built on a Next.js stack with multiple bundled assets served from static.stepfun.com, suggesting a substantial underlying application, but all of it sits behind a login barrier on the main domain."
+      ],
+      "article_why_matters": [
+        "StepFun is a notable player in China's AI ecosystem, and the homepage's product lineup — spanning a general AI assistant, a conversational tool (StepClaw), and an ASR product — indicates a broad, multi-product strategy.",
+        "The lack of a public-facing homepage means potential new users cannot evaluate the platform's capabilities before creating an account, which is atypical for consumer AI products.",
+        "The Step Audio Studio ASR product, flagged as NEW in the UI, suggests StepFun is actively expanding its feature set beyond text-based interactions into voice AI."
+      ],
+      "article_source_note": [
+        "This information was captured directly from the live stepfun.com homepage on 2026-04-25. The page is a login wall with no public content visible to unauthenticated visitors. The product names, descriptions, and features (StepClaw, Step Audio Studio) were inferred from visible UI elements, page metadata, and bundled asset references within the HTML source, not from authenticated or private areas of the platform."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-25T09:50:29+00:00",
       "source_name": "Hugging Face Changelog",
@@ -89,50 +133,6 @@
       "article_generation_mode": "claude",
       "source_content_fingerprint": "deepseek v4 enters hugging face hot feed highlighting million token context for agents deepseek v4 a model supporting a one million token context window has appeared in the hot articles section of the hugging face community blog community blog articles new article community guide open source collab partnerships research nlp audio cv rl ethics diffusion game development rlhf leaderboard case studies lerobot inference providers community articles view all denseon with the lateon open state of the art single and multi vector models 4 days ago 31 ml intern takes our post training internship test 2 days ago 24 building a fast multilingual ocr model with synthetic data 8 days ago 28 how to ground a korean ai agent in real demographics with synthetic personas 4 days ago 23 kv caching explained optimizing transformer inference efficiency jan 30 2025 305 nvidia isaac gr00t n1 7 open reasoning vla model for humanoid robots 8 days ago 10 multilingual tool calling in 70 languages on device 5 days ago",
       "github_release_signal_fingerprint": ""
-    },
-    {
-      "timestamp": "2026-04-25T06:06:23+00:00",
-      "source_name": "StepFun Home",
-      "source_url": "https://www.stepfun.com/",
-      "effective_url": "https://www.stepfun.com/",
-      "target_url": "https://www.stepfun.com/",
-      "category": "update",
-      "headline_en": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Good afternoon. How can I assist you? What do you want...",
-      "summary_en": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Good afternoon. How can I assist you? What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audi...",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Good afternoon. How can I assist you? What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1 +1 @@",
-        "-阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Afternoon. Take a little break. What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers",
-        "+阶跃AI New conversation StepClaw Please log in to access your history Log in Log in Good afternoon. How can I assist you? What do you want to know? Tap @ to explore more. Web Search Tool Knowledge Base Q&A Focus on knowledge base Q&A Image creation Describe image to generate Knowledge Base Q&A Image creation Step Audio Studio | Lightning-fast ASR NEW Deploy StepClaw About StepFun Careers"
-      ],
-      "article_identity": "StepFun Home",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "update||stepfun home||ai conversation stepclaw please log in to access your history log in log in good afternoon how can i assist you what do you want ai conversation stepclaw please log in to access yo",
-      "id": "evt-a43a2d3168fe6eaee313",
-      "content_fingerprint": "ai new conversation stepclaw please log in to access your history log in log in good afternoon how can i assist you what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio studio lightning fast asr new deploy stepclaw about stepfun careers ai new conversation stepclaw please log in to access your history log in log in good afternoon how can i assist you what do you want ai new conversation stepclaw please log in to access your history log in log in good aft",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "ai new conversation stepclaw please log in to access your history log in log in good afternoon how can i assist you what do you want ai new conversation stepclaw please log in to access your history log in log in good afternoon how can i assist you what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audi ai new conversation stepclaw please log in to access your history log in log in good afternoon how can i assist you what do you want to know tap to explore more web search tool knowledge base q a focus on knowledge base q a image creation describe image to generate knowledge base q a image creation step audio studio lightning fast asr new deploy stepclaw about stepfun careers",
-      "github_release_signal_fingerprint": "",
-      "article_h1": "StepFun Login Page Captured; No New Public Content on StepFun Home",
-      "article_standfirst": "The StepFun homepage at stepfun.com returns only a login wall with no publicly accessible content, making it impossible to extract fresh news or product updates.",
-      "article_body": [
-        "A page capture of stepfun.com on 2026-04-25 shows the site redirecting visitors to a login prompt, with no publicly visible news, product announcements, or updates accessible without an account. The page identifies StepFun as an AI-powered personal efficiency assistant capable of knowledge retrieval, creative writing, and coding assistance, but offers no fresh public information beyond its meta description. The site appears to gate all interactive content — including its \"StepClaw\" agent and \"Step Audio Studio\" ASR tool — behind user authentication."
-      ],
-      "article_why_matters": [
-        "StepFun is an active Chinese AI developer, and its homepage normally showcases products like StepClaw and Step Audio Studio; login gating blocks public monitoring of its public-facing announcements.",
-        "Journalists and researchers tracking AI developments in China cannot monitor StepFun's public roadmap without inside access.",
-        "The gating suggests StepFun may be shifting toward a logged-in-first experience, similar to how some Western AI platforms reserve product updates for authenticated users."
-      ],
-      "article_source_note": [
-        "The source consists of the raw HTML of stepfun.com captured on 2026-04-25. All visible public content is limited to a login interface and the site's SEO meta description, which describes StepFun as a personal efficiency AI assistant. No substantive news, changelog, or product update content was accessible in this capture."
-      ],
-      "article_confidence": "weak",
-      "article_generation_mode": "claude"
     },
     {
       "timestamp": "2026-04-25T03:26:02+00:00",
