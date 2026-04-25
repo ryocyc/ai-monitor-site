@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 01:28 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 01:39 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,32 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-25 01:39 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/fal-pricing.html">fal AI Publishes Flux Dev Model Pricing Details via API Endpoint</a></h2>
+              <p class="summary">fal AI has made detailed pricing information for its Flux Dev image generation model accessible through a dedicated API endpoint, enabling developers to programmatically check usage costs.</p>
+              <div class="card-bottom">
+                <span>fal Pricing</span>
+                <a href="https://api.fal.ai/v1/models/pricing?endpoint_id=fal-ai/flux/dev">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-25 01:39 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/fal-changelog.html">fal.ai Adds Runner Termination Reason Diagnostics and Observability Tools to Serverless Platform</a></h2>
+              <p class="summary">fal.ai has introduced runner termination reason diagnostics and expanded scaling and observability features on its serverless AI inference platform, according to an April 23, 2026 changelog update.</p>
+              <div class="card-bottom">
+                <span>fal Changelog</span>
+                <a href="https://fal.ai/dashboard/apps/{username}/{appname}/runners">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -187,32 +213,6 @@
                 <a href="https://www.together.ai/pricing">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time>2026-04-24 18:19 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/gpt-image-1.html">OpenAI API Changelog Refreshed; GPT-Image-1 Entry Appears at Top</a></h2>
-              <p class="summary">OpenAI&#x27;s public API changelog page now surfaces a new top entry under the GPT-Image-1 heading, signalling a recent update to its image generation capabilities.</p>
-              <div class="card-bottom">
-                <span>OpenAI API Changelog</span>
-                <a href="https://platform.openai.com/docs/changelog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time>2026-04-24 18:09 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/aws-machine-learning-blog-artificial-intellige.html">AWS Security Agent and DevOps Agent Exit Preview, Enter General Availability</a></h2>
-              <p class="summary">Amazon has made its autonomous frontier agents — the AWS Security Agent for on-demand penetration testing and the AWS DevOps Agent — generally available, signaling a major step toward AI-driven cloud security and operations at scale.</p>
-              <div class="card-bottom">
-                <span>AWS Machine Learning Blog</span>
-                <a href="https://aws.amazon.com/blogs/machine-learning/artificial-intelligence-aws-launches-frontier-agents-for-security-testing-and-cloud-operations/">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 01:28 UTC";
+    const currentGeneratedAt = "2026-04-25 01:39 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
