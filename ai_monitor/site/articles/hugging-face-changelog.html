@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hugging Face Rolls Out Auto-Served Agent Endpoints for All Gradio Spaces | AI Signal Articles</title>
-  <meta name="description" content="Hugging Face has enabled every Gradio Space to automatically serve a machine-readable /agents.md endpoint, letting AI coding agents like Claude Code, Co...">
+  <title>Hugging Face Gradio Spaces Now Auto-Serve AI-Agent-Readable API Endpoints | AI Signal Articles</title>
+  <meta name="description" content="Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents interact with any Space directly without m...">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
   <style>
@@ -188,15 +188,15 @@
     </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-25 07:12 UTC</div>
+      <div>Generated 2026-04-25 07:43 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">docs</span>
-      <h1>Hugging Face Rolls Out Auto-Served Agent Endpoints for All Gradio Spaces</h1>
-      <p class="standfirst">Hugging Face has enabled every Gradio Space to automatically serve a machine-readable /agents.md endpoint, letting AI coding agents like Claude Code, Codex, and others interact with Spaces without manual setup.</p>
+      <h1>Hugging Face Gradio Spaces Now Auto-Serve AI-Agent-Readable API Endpoints</h1>
+      <p class="standfirst">Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents interact with any Space directly without manual configuration.</p>
       <div class="meta">
         <span>Hugging Face Changelog</span>
-        <span>2026-04-25 02:22 UTC</span>
+        <span>2026-04-25 01:28 UTC</span>
         <span>Key: hugging-face-changelog::identity::Hugging Face Changelog</span>
         <span>Confidence: strong</span>
         <span>Mode: claude</span>
@@ -210,21 +210,23 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>Hugging Face announced on April 17, 2026, that every Gradio Space now automatically serves an /agents.md endpoint — a machine-readable API description that AI agents can read and invoke directly. Developers can point coding agents such as Claude Code, Codex, or Pi at a Space, and the agents will figure out how to use it without any configuration. The feature drew significant community interest, receiving 122 upvotes and a gain of 117 on the day of release.
+        <p>Hugging Face has introduced a new /agents.md endpoint automatically served by every Gradio Space, giving AI coding agents a standardized, machine-readable way to understand and call a Space&#x27;s API without any manual setup. The change was announced in the platform&#x27;s April 17, 2026 changelog.
 
-Separately, Hugging Face introduced Kernels on April 15, 2026 — precompiled, hardware-optimized kernel repositories ready for use with torch.compile. Kernels are matched to the user&#x27;s exact hardware and PyTorch version, and the company reports speed-ups of 1.7× to 2.5× over baseline PyTorch. Users can browse and load Kernels directly from the new Kernels Hub.</p>
+The /agents.md endpoint acts as a self-describing interface — AI agents such as Claude Code, Codex, or Pi can read it to determine how to interact with a Space, effectively eliminating the friction of configuration or wrapper code for developers who want agents to use their applications.
+
+The feature is live immediately for all Gradio Spaces on the platform. Hugging Face&#x27;s changelog links to full documentation for developers who want to learn how the endpoint works and how to build compatible Spaces.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>The /agents.md endpoint removes the friction of manually configuring AI agents to use Gradio Spaces, potentially opening thousands of community-built Spaces to agentic workflows out of the box.</li><li>Precompiled Kernels with 1.7–2.5× speed-ups could meaningfully accelerate model training and inference for researchers and developers without custom kernel engineering expertise.</li><li>Both features expand the breadth of tools and infrastructure available on the Hugging Face Hub, strengthening its position as a central platform for both human and AI-driven AI development.</li></ul>
+        <ul class="bullets"><li>Removes the need for developers to write custom wrappers or API glue code just to let AI agents interact with their Gradio Spaces.</li><li>Enables AI agents to autonomously discover and use Spaces without human-guided setup, bringing closer the goal of fully agentic tooling pipelines.</li><li>Establishes a de facto standard for how AI agents consume interactive web-hosted tools, which could influence how the broader ecosystem structures agent-facing APIs.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>These developments come from the official Hugging Face Changelog (huggingface.co/changelog) covering entries posted April 15 and April 17, 2026. The /agents.md feature was upvoted 122 times with a net gain of 117 on the day of its release, and the Kernels announcement received 146 upvotes. Full documentation for both features is available through the Hugging Face Hub.</li></ul>
+        <ul class="bullets"><li>This information is drawn from the official Hugging Face changelog page (https://huggingface.co/changelog) dated April 17, 2026, which explicitly describes the /agents.md endpoint feature and links to supporting documentation. No further press release or blog post was found at time of capture.</li></ul>
       </section>
     
       <section class="section">
@@ -244,7 +246,7 @@ Separately, Hugging Face introduced Kernels on April 15, 2026 — precompiled, h
       if (!button || !status) return;
       const shareData = {
         title: document.title,
-        text: "Hugging Face has enabled every Gradio Space to automatically serve a machine-readable /agents.md endpoint, letting AI coding agents like...",
+        text: "Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents interact with any Space dir...",
         url: window.location.href
       };
       const setStatus = (message) => {
