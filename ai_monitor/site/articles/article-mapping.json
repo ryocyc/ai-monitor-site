@@ -1,4 +1,6 @@
 {
+  "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.2": "rust-v01260-alpha2",
+  "evt-eb7665bf2253d21abd77": "rust-v01260-alpha2",
   "blog||hugging face blog||hugging face blog": "hugging-face-blog",
   "evt-38ca4372270f25f05c55": "hugging-face-blog",
   "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8931": "github-llamacpp-releases",

@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 20:46 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 21:07 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time>2026-04-25 21:07 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/rust-v01260-alpha2.html">OpenAI Ships codex Release rust-v0.126.0-alpha.2</a></h2>
+              <p class="summary">OpenAI has published a new alpha release of its codex Rust SDK, tagged rust-v0.126.0-alpha.2, adding to its rapid pre-release cadence.</p>
+              <div class="card-bottom">
+                <span>GitHub Codex Releases</span>
+                <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.2">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -200,19 +213,6 @@
                 <a href="https://www.baseten.co/changelog/">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time>2026-04-25 02:43 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/fireworks-blog-excited-to-announce-that-fireworks-training-is-now-in-preview-train-and-deploy-fr.html">Fireworks AI Launches Training Platform Preview, Enabling End-to-End Frontier Model Development</a></h2>
-              <p class="summary">Fireworks AI has entered the model training space with a new platform preview that lets teams train and deploy frontier-scale models on a single unified system.</p>
-              <div class="card-bottom">
-                <span>Fireworks AI Blog</span>
-                <a href="https://fireworks.ai/blog">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 20:46 UTC";
+    const currentGeneratedAt = "2026-04-25 21:07 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
