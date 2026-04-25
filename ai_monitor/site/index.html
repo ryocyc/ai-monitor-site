@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 00:46 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 00:57 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time>2026-04-25 00:56 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/fireworks-ai-blog.html">Fireworks AI Launches Training Platform in Preview for Frontier Model Development</a></h2>
+              <p class="summary">Fireworks AI has released its training platform in preview, enabling teams to train and deploy frontier AI models end-to-end on a single unified system.</p>
+              <div class="card-bottom">
+                <span>Fireworks AI Blog</span>
+                <a href="https://fireworks.ai/blog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -200,19 +213,6 @@
                 <a href="https://www.together.ai/blog">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time>2026-04-24 12:22 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/perplexity-blog-update.html">Perplexity Research Publishes New Paper on Search-Augmented Language Models</a></h2>
-              <p class="summary">Perplexity has added a new research article titled &#x27;Advancing Search-Augmented Language Models,&#x27; expanding its published body of work on search, reasoning, agents, and systems.</p>
-              <div class="card-bottom">
-                <span>Perplexity Blog</span>
-                <a href="https://research.perplexity.ai/articles">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 00:46 UTC";
+    const currentGeneratedAt = "2026-04-25 00:57 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;

@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LiteLLM v1.83.11-nightly Released: Bedrock Mantle Support, Prompt Compression,... | AI Signal Articles</title>
-  <meta name="description" content="The latest nightly build of the popular LLM proxy library adds a new Bedrock Mantle endpoint, introduces prompt compression directly into the proxy laye...">
+  <title>LiteLLM release feed now shows v1.83.11-nightly | AI Signal Articles</title>
+  <meta name="description" content="The monitored release feed for LiteLLM changed and the newest visible tag is v1.83.11-nightly. The feed timestamp is 2026-04-22T06:47:13Z. This looks li...">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
+       crossorigin="anonymous"></script>
   <style>
     :root {
       --bg: #f6efe4;
@@ -35,6 +37,31 @@
       align-items: center;
     }
     .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .top-ad {
+      margin-bottom: 18px;
+      padding: 12px 14px;
+      border: 1px dashed rgba(15,118,110,0.28);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.68);
+    }
+    .ad-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .ad-slot {
+      min-height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15,118,110,0.08);
+      color: var(--muted);
+      font-weight: 700;
+    }
     .chip {
       display: inline-flex;
       align-items: center;
@@ -86,6 +113,34 @@
       color: var(--muted);
       font-size: 0.92rem;
     }
+    .hero-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .share-button {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+    .share-button:hover {
+      transform: translateY(-1px);
+      background: rgba(15,118,110,0.18);
+    }
+    .share-status {
+      color: var(--muted);
+      font-size: 0.88rem;
+      min-height: 1.2em;
+    }
     .content {
       margin-top: 20px;
       display: grid;
@@ -127,41 +182,47 @@
 </head>
 <body>
   <main>
+    <section class="top-ad" aria-label="Advertisement">
+      <div class="ad-label">Advertisement</div>
+      <div class="ad-slot">Top banner ad slot</div>
+    </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-23 14:26 UTC</div>
+      <div>Generated 2026-04-25 00:57 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">release</span>
-      <h1>LiteLLM v1.83.11-nightly Lands Bedrock Mantle Endpoint and Proxy-Level Prompt Compression</h1>
-      <p class="standfirst">The latest nightly build of the popular LLM proxy library adds a new Bedrock Mantle endpoint, introduces prompt compression directly into the proxy layer, and patches a critical 503 loop that could occur when the database is unreachable.</p>
+      <h1>LiteLLM release feed now shows v1.83.11-nightly</h1>
+      <p class="standfirst">The monitored release feed for LiteLLM changed and the newest visible tag is v1.83.11-nightly. The feed timestamp is 2026-04-22T06:47:13Z. This looks like a release-level update rather than a cosmetic page edit.</p>
       <div class="meta">
         <span>GitHub LiteLLM Releases</span>
         <span>2026-04-22 12:43 UTC</span>
-        <span>Key: github-litellm-releases::identity::github-litellm-releases-litellm-release-feed</span>
-        <span>Confidence: strong</span>
+        <span>Key: github-litellm-releases::identity::v18311-nightly</span>
+        <span>Confidence: moderate</span>
         <span>Mode: claude</span>
+      </div>
+      <div class="hero-actions">
+        <button class="share-button" type="button" id="share-button">Share</button>
+        <span class="share-status" id="share-status" aria-live="polite"></span>
       </div>
     </article>
     <section class="content">
       
       <section class="section">
         <h2>Article body</h2>
-        <p>BerriAI released LiteLLM v1.83.11-nightly on April 22, 2026, bringing a cluster of proxy-focused improvements alongside a new AWS Bedrock endpoint variant. The standout addition is a `--reload` flag for uvicorn that enables hot reload during development, along with native prompt compression baked into the proxy itself. The release also marks the debut of an opt-in v2 migration resolver for the proxy tier.</p>
-<p>On the cloud provider side, Scaleway gains first-class audio support, and a new Bedrock Mantle endpoint (tagged as a Claude Mythos Preview) is now available. A related fix tightens Bedrock invoke body allowlisting, filtering all `anthropic-beta` values for safety.</p>
-<p>Several reliability fixes round out the release. A notable regression — a 503 loop triggered by `/health/readiness` when the database is unreachable — has been patched. OAuth endpoint access controls for the MCP broker were hardened, and both user and org budget spend checks were aligned using an atomic counter pattern to prevent race conditions.</p>
+        
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Prompt compression in the proxy layer can reduce token costs and latency without application-level changes.</li><li>The Bedrock Mantle endpoint opens access to a new Claude model variant via AWS infrastructure.</li><li>The 503 health-loop fix prevents a cascading failure scenario in proxy deployments with transient database connectivity.</li></ul>
+        <p>No bullet points were generated for this page.</p>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This article is based on the GitHub release page for v1.83.11-nightly on the BerriAI/litellm repository. The page lists all changes but does not include detailed commit messages or a full changelog beyond the summary list. This is a nightly build; the current stable release is v1.83.7. Docker images are cosign-signed, and the release commit is GPG-verified.</li></ul>
+        <p>No bullet points were generated for this page.</p>
       </section>
     
       <section class="section">
@@ -170,8 +231,54 @@
       </section>
     </section>
     <div class="footer">
-      This article was generated from filtered monitored source changes.
-    </div>
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
   </main>
+  <script>
+    (() => {
+      const button = document.getElementById("share-button");
+      const status = document.getElementById("share-status");
+      if (!button || !status) return;
+      const shareData = {
+        title: document.title,
+        text: "The monitored release feed for LiteLLM changed and the newest visible tag is v1.83.11-nightly. The feed timestamp is 2026-04-22T06:47:13Z...",
+        url: window.location.href
+      };
+      const setStatus = (message) => {
+        status.textContent = message;
+        if (message) {
+          window.clearTimeout(setStatus._timer);
+          setStatus._timer = window.setTimeout(() => {
+            status.textContent = "";
+          }, 2400);
+        }
+      };
+      button.addEventListener("click", async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+            setStatus("Shared.");
+            return;
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(window.location.href);
+            setStatus("Link copied.");
+            return;
+          }
+        } catch (error) {
+          setStatus("Share cancelled.");
+          return;
+        }
+        const helper = document.createElement("input");
+        helper.value = window.location.href;
+        document.body.appendChild(helper);
+        helper.select();
+        document.execCommand("copy");
+        helper.remove();
+        setStatus("Link copied.");
+      });
+    })();
+  </script>
 </body>
 </html>
