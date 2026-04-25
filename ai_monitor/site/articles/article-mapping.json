@@ -1,4 +1,6 @@
 {
+  "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8933": "github-llamacpp-releases-3708e8",
+  "evt-bb5f9afc54e59c3708e8": "github-llamacpp-releases-3708e8",
   "blog||hugging face blog||hugging face blog": "hugging-face-blog",
   "evt-38ca4372270f25f05c55": "hugging-face-blog",
   "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8931": "github-llamacpp-releases",
