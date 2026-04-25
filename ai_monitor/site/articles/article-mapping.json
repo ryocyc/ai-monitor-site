@@ -1,8 +1,8 @@
 {
-  "release||github codex releases||https://github.com/openai/codex/releases.atom": "github-codex-releases",
-  "evt-ac4506b679b944ac7aa1": "github-codex-releases",
   "blog||hugging face blog||hugging face blog": "hugging-face-blog",
   "evt-38ca4372270f25f05c55": "hugging-face-blog",
+  "release||github codex releases||https://github.com/openai/codex/releases.atom": "github-codex-releases",
+  "evt-ac4506b679b944ac7aa1": "github-codex-releases",
   "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8931": "github-llamacpp-releases",
   "evt-77887f17939ce89ffee2": "github-llamacpp-releases",
   "docs||deepseek docs||https://api.deepseek.com/chat/completions": "deepseek-docs",
