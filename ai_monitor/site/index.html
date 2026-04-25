@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 11:25 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 11:47 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-25 11:46 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/fireworks-ai-pricing.html">Fireworks AI Launches Training Platform Preview, Enabling End-to-End Model Development</a></h2>
+              <p class="summary">Fireworks AI has entered the model training market with a preview release that lets developers train and deploy frontier AI models on a single unified platform.</p>
+              <div class="card-bottom">
+                <span>Fireworks AI Pricing</span>
+                <a href="https://fireworks.ai/pricing">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="update">
               <div class="card-top">
                 <span class="pill">update</span>
@@ -97,19 +110,6 @@
               </div>
             </article>
             
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time>2026-04-25 09:50 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/hugging-face-changelog.html">Hugging Face Gradio Spaces Now Serve Auto-Generated API Docs for AI Coding Agents</a></h2>
-              <p class="summary">Hugging Face has quietly turned every Gradio Space into a self-documenting API that AI coding agents can read and act on without any manual configuration.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Changelog</span>
-                <a href="https://huggingface.co/changelog">Source</a>
-              </div>
-            </article>
-            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -120,6 +120,19 @@
               <div class="card-bottom">
                 <span>Hugging Face Blog</span>
                 <a href="https://huggingface.co/blog">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-25 07:11 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/hugging-face-changelog.html">Hugging Face Gradio Spaces Now Serve Machine-Readable API Docs for AI Agents</a></h2>
+              <p class="summary">Every Gradio Space on Hugging Face now auto-generates an /agents.md endpoint, letting AI coding agents such as Claude Code, Codex, and Pi discover and use Spaces without manual setup.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Changelog</span>
+                <a href="https://huggingface.co/changelog">Source</a>
               </div>
             </article>
             
@@ -200,19 +213,6 @@
                 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8925">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time>2026-04-24 23:21 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/deepinfra-pricing.html">GLM-5.1 Agentic Engineering Model Launches on DeepInfra Cloud Platform</a></h2>
-              <p class="summary">DeepInfra has added GLM-5.1, described as a state-of-the-art agentic engineering model, to its cloud inference catalogue.</p>
-              <div class="card-bottom">
-                <span>DeepInfra Pricing</span>
-                <a href="https://deepinfra.com/pricing">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 11:25 UTC";
+    const currentGeneratedAt = "2026-04-25 11:47 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
