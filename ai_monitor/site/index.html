@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label">Last built: 2026-04-25 03:15 UTC - Showing 10 items</div>
+        <div id="last-built-label">Last built: 2026-04-25 03:27 UTC - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,45 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-25 03:26 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/baseten-pricing.html">Baseten Refreshes Inference Pricing With Free Tier, New Pro and Enterprise Options</a></h2>
+              <p class="summary">Baseten has updated its model inference platform with a restructured three-tier pricing model — Basic ($0/month pay-as-you-go), Pro, and Enterprise — adding HIPAA compliance, priority GPU access, and self-host deployment options.</p>
+              <div class="card-bottom">
+                <span>Baseten Pricing</span>
+                <a href="https://www.baseten.co/pricing">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-25 03:26 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/baseten-changelog.html">Baseten Deprecates DeepSeek v3 0324 and GLM 4.6 Model APIs on May 1</a></h2>
+              <p class="summary">Baseten has announced the deprecation of two model APIs while simultaneously launching discounted cache token pricing for all remaining model endpoints.</p>
+              <div class="card-bottom">
+                <span>Baseten Changelog</span>
+                <a href="https://www.baseten.co/changelog/">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time>2026-04-25 03:25 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/hugging-face-changelog.html">Hugging Face Adds Auto-Served /agents.md Endpoint to All Gradio Spaces</a></h2>
+              <p class="summary">Every Gradio Space on Hugging Face now automatically serves a machine-readable /agents.md endpoint, allowing AI coding agents like Claude Code, Codex, and Pi to interact with Spaces without manual setup.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Changelog</span>
+                <a href="https://huggingface.co/changelog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -107,19 +146,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Blog</span>
                 <a href="https://huggingface.co/blog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time>2026-04-25 02:22 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/hugging-face-changelog.html">Hugging Face Rolls Out Auto-Served Agent Endpoints for All Gradio Spaces</a></h2>
-              <p class="summary">Hugging Face has enabled every Gradio Space to automatically serve a machine-readable /agents.md endpoint, letting AI coding agents like Claude Code, Codex, and others interact with Spaces without manual setup.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Changelog</span>
-                <a href="https://huggingface.co/changelog">Source</a>
               </div>
             </article>
             
@@ -187,32 +213,6 @@
                 <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.1">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time>2026-04-24 19:20 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/portkey-blog-latest-who-owns-clau.html">Portkey Publishes Platform Team Guide to Managing Claude Code, Cursor, and Codex at Scale</a></h2>
-              <p class="summary">Portkey has released a practical guide aimed at platform engineering teams responsible for governing multiple AI coding agents across an engineering organization.</p>
-              <div class="card-bottom">
-                <span>Portkey Blog</span>
-                <a href="https://portkey.ai/blog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time>2026-04-24 18:50 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/together-ai-pricing-inference-serverless.html">Together AI Expands Serverless Inference Catalog with New Chinese Frontier Models</a></h2>
-              <p class="summary">Together AI has updated its serverless inference pricing to include latest versions of leading Chinese AI models including MiniMax M2.7, Kimi K2.6, and GLM-5.1 alongside established open-weight options like Gemma 4 and Qwen3.5.</p>
-              <div class="card-bottom">
-                <span>Together AI Pricing</span>
-                <a href="https://www.together.ai/pricing">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-25 03:15 UTC";
+    const currentGeneratedAt = "2026-04-25 03:27 UTC";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;

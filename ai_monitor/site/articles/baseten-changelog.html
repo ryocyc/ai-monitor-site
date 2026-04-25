@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hugging Face Gradio Spaces Now Auto-Serve AI-Agent-Readable API Endpoints | AI Signal Articles</title>
-  <meta name="description" content="Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents interact with any Space directly without m...">
+  <title>Baseten Deprecates DeepSeek v3 0324 and GLM 4.6 Model APIs on May 1 | AI Signal Articles</title>
+  <meta name="description" content="Baseten has announced the deprecation of two model APIs while simultaneously launching discounted cache token pricing for all remaining model endpoints.">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
   <style>
@@ -192,12 +192,12 @@
     </div>
     <article class="hero">
       <span class="chip">docs</span>
-      <h1>Hugging Face Gradio Spaces Now Auto-Serve AI-Agent-Readable API Endpoints</h1>
-      <p class="standfirst">Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents interact with any Space directly without manual configuration.</p>
+      <h1>Baseten Deprecates DeepSeek v3 0324 and GLM 4.6 Model APIs on May 1</h1>
+      <p class="standfirst">Baseten has announced the deprecation of two model APIs while simultaneously launching discounted cache token pricing for all remaining model endpoints.</p>
       <div class="meta">
-        <span>Hugging Face Changelog</span>
-        <span>2026-04-25 01:28 UTC</span>
-        <span>Key: hugging-face-changelog::identity::Hugging Face Changelog</span>
+        <span>Baseten Changelog</span>
+        <span>2026-04-25 03:26 UTC</span>
+        <span>Key: baseten-changelog::identity::Baseten Changelog</span>
         <span>Confidence: strong</span>
         <span>Mode: claude</span>
       </div>
@@ -210,28 +210,28 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>Hugging Face has introduced a new /agents.md endpoint automatically served by every Gradio Space, giving AI coding agents a standardized, machine-readable way to understand and call a Space&#x27;s API without any manual setup. The change was announced in the platform&#x27;s April 17, 2026 changelog.
+        <p>Baseten will retire the DeepSeek v3 0324 and GLM 4.6 Model APIs at 5pm PT on May 1st, 2026. The deprecation was announced via the company&#x27;s changelog on April 17th, giving developers roughly two weeks&#x27; notice before the cutoff. Any applications still routing requests through these endpoints will need to migrate before the deadline to avoid service disruption.
 
-The /agents.md endpoint acts as a self-describing interface — AI agents such as Claude Code, Codex, or Pi can read it to determine how to interact with a Space, effectively eliminating the friction of configuration or wrapper code for developers who want agents to use their applications.
+On the pricing side, Baseten introduced cache token pricing for Model APIs effective April 16th, 2026. Cached input tokens now attract a discounted billing rate across all models, with the sole exception of GPT-OSS. The discounted rate applies automatically to the relevant portion of each request, requiring no manual configuration from users.
 
-The feature is live immediately for all Gradio Spaces on the platform. Hugging Face&#x27;s changelog links to full documentation for developers who want to learn how the endpoint works and how to build compatible Spaces.</p>
+A third changelog entry, published April 6th, added a quality-of-life improvement to Baseten&#x27;s logs viewer. Users can now copy logs directly to their clipboard or download them as CSV or JSON files via a new export menu positioned next to the search box.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Removes the need for developers to write custom wrappers or API glue code just to let AI agents interact with their Gradio Spaces.</li><li>Enables AI agents to autonomously discover and use Spaces without human-guided setup, bringing closer the goal of fully agentic tooling pipelines.</li><li>Establishes a de facto standard for how AI agents consume interactive web-hosted tools, which could influence how the broader ecosystem structures agent-facing APIs.</li></ul>
+        <ul class="bullets"><li>Applications still calling the DeepSeek v3 0324 or GLM 4.6 endpoints will break after May 1st unless developers update their integrations beforehand.</li><li>The new cache token pricing can reduce inference costs significantly for workloads with repeated or predictable input tokens, making Baseten more cost-competitive.</li><li>The logs export feature streamlines debugging and audit workflows, removing a manual step that teams frequently needed to work around.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This information is drawn from the official Hugging Face changelog page (https://huggingface.co/changelog) dated April 17, 2026, which explicitly describes the /agents.md endpoint feature and links to supporting documentation. No further press release or blog post was found at time of capture.</li></ul>
+        <ul class="bullets"><li>This report is based on Baseten&#x27;s public changelog page as of the fetch date. The deprecation notice and pricing changes contain specific dates and model names, providing strong factual grounding. Details on replacement models or migration paths were not included in the excerpt and would require a closer look at the full changelog entry or Baseten&#x27;s documentation.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://huggingface.co/changelog" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://www.baseten.co/changelog/" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">
@@ -246,7 +246,7 @@ The feature is live immediately for all Gradio Spaces on the platform. Hugging F
       if (!button || !status) return;
       const shareData = {
         title: document.title,
-        text: "Every Gradio Space on Hugging Face now automatically exposes an /agents.md endpoint, letting AI coding agents interact with any Space dir...",
+        text: "Baseten has announced the deprecation of two model APIs while simultaneously launching discounted cache token pricing for all remaining m...",
         url: window.location.href
       };
       const setStatus = (message) => {
