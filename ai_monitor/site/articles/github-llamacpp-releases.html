@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>llama.cpp Releases b8926 and b8925 with WebGPU SSM_SCAN Support and Parser Fix | AI Signal Articles</title>
-  <meta name="description" content="The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a structured-out...">
+  <title>llama.cpp Ships SSM_SCAN Support for WebGPU Backend in Release b8926 | AI Signal Articles</title>
+  <meta name="description" content="The llama.cpp project released version b8926 on April 25, 2026, adding State Space Model scan support to its WebGPU backend alongside broader platform a...">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
   <style>
@@ -188,17 +188,17 @@
     </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-25 11:58 UTC</div>
+      <div>Generated 2026-04-25 12:08 UTC</div>
     </div>
     <article class="hero">
       <span class="chip">release</span>
-      <h1>llama.cpp Releases b8926 and b8925 with WebGPU SSM_SCAN Support and Parser Fix</h1>
-      <p class="standfirst">The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a structured-output parsing bug.</p>
+      <h1>llama.cpp Ships SSM_SCAN Support for WebGPU Backend in Release b8926</h1>
+      <p class="standfirst">The llama.cpp project released version b8926 on April 25, 2026, adding State Space Model scan support to its WebGPU backend alongside broader platform and CUDA compatibility updates.</p>
       <div class="meta">
         <span>GitHub llama.cpp Releases</span>
-        <span>2026-04-25 08:25 UTC</span>
+        <span>2026-04-25 08:14 UTC</span>
         <span>Key: github-llamacpp-releases::identity::GitHub llama.cpp Releases</span>
-        <span>Confidence: strong</span>
+        <span>Confidence: moderate</span>
         <span>Mode: claude</span>
       </div>
       <div class="hero-actions">
@@ -210,28 +210,28 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The llama.cpp project tagged two releases on April 25, 2026. The first, b8925, landed on April 24 and carried a parser fix for a structured-output bug (PR #22302), which the release notes describe with tongue-in-cheek brevity: &quot;Things just cannot be too easy.&quot; The second, b8926, arrived the next morning and introduces SSM_SCAN support to the ggml-webgpu backend via PR #22327, alongside removal of blocking calls in graph_compute and updated operator support for WebGPU.
+        <p>The llama.cpp project, maintained under ggml-org, has published release b8926, introducing support for the SSM_SCAN operation within its WebGPU backend. This addition, tracked as PR #22327, also disables error checking for the set_rows function in that context, and includes binding fixes and updated operator support to improve compatibility. The release further removes blocking behaviour in graph_compute and introduces set_rows validation checks in other compute paths.
 
-Build artifacts for both releases span an unusually wide matrix: macOS (Apple Silicon with optional KleidiAI acceleration, Intel x64, and iOS XCFramework), Linux (Ubuntu on CPU, Vulkan, ROCm 7.2, OpenVINO 2026.0, and SYCL in FP32/FP16), Android, Windows (CPU, CUDA 12.4, CUDA 13.1, Vulkan, SYCL, and HIP for Radeon GPUs), and a notable addition — openEuler builds for both 310p and 910b (with ACL Graph) on x86 and aarch64.
+Beyond the WebGPU work, b8926 ships expanded CUDA support on Windows, including pre-built DLLs for CUDA 12.4 and CUDA 13.1 (13.1 DLLs specifically), alongside ongoing Vulkan support. Linux builds continue to cover a wide range of targets — CPU variants across x64, arm64, and s390x architectures, Vulkan builds for x64 and arm64, ROCm 7.2, OpenVINO, and SYCL configurations in both FP32 and FP16 precisions. macOS/iOS builds are maintained for Apple Silicon (including KleidiAI-enabled builds) and Intel x64, while Android and Windows ARM64 CPU builds remain part of the release matrix.
 
-CUDA support on Windows continues to ship dual CUDA version variants (12.4 and 13.1), reflecting the fragmented GPU driver landscape developers must navigate. The inclusion of KleidiAI-enabled macOS binaries also signals ongoing Apple Silicon optimization work beyond standard ARM64 builds.</p>
+The release was tagged on GitHub at 08:14 UTC on April 25, 2026, reflecting a continued rapid iteration cadence for the open-source inference engine, which is widely used for running large language models in resource-constrained environments.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>SSM_SCAN support in WebGPU brings state-space model inference to browser and cross-platform GPU environments without relying on CUDA or Metal.</li><li>The parser fix for structured output directly impacts developers using llama.cpp as a backend for structured AI responses, a common production use case.</li><li>The growing openEuler support signals expanding reach into Chinese and enterprise Linux ecosystems beyond mainstream Ubuntu and Debian.</li></ul>
+        <ul class="bullets"><li>SSM_SCAN support in WebGPU enables efficient state space model inference in browser and cross-platform GPU environments without relying on proprietary CUDA or Metal backends.</li><li>The expanded CUDA 13.1 DLLs on Windows give developers access to the latest NVIDIA toolkit features and performance improvements directly through llama.cpp binaries.</li><li>Continued broad platform coverage — from s390x Linux to Android arm64 — ensures llama.cpp remains one of the most portable LLM inference runtimes available.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This report is based on the official llama.cpp releases Atom feed (ggml-org/llama.cpp). Both b8926 and b8925 were published by github-actions[bot] on April 24–25, 2026. Binary assets span macOS, Linux, Android, Windows, and openEuler across multiple accelerator backends. Details on the SSM_SCAN and parser fixes are limited to the changelog entries; full technical context requires reviewing linked PRs #22327 and #22302.</li></ul>
+        <ul class="bullets"><li>This article is based on the public GitHub release page for llama.cpp tag b8926 (https://github.com/ggml-org/llama.cpp/releases/tag/b8926), published on April 25, 2026 at 08:14 UTC. The release notes list specific changes and supported platform configurations, though full commit-level details and the complete changelog were not captured in this source capture. Readers wishing to explore the underlying PR #22327 or review the full commit history for this release can do so via the linked GitHub release and pull request pages.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://github.com/ggml-org/llama.cpp/releases.atom" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8926" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">
@@ -246,7 +246,7 @@ CUDA support on Windows continues to ship dual CUDA version variants (12.4 and 1
       if (!button || !status) return;
       const shareData = {
         title: document.title,
-        text: "The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a...",
+        text: "The llama.cpp project released version b8926 on April 25, 2026, adding State Space Model scan support to its WebGPU backend alongside bro...",
         url: window.location.href
       };
       const setStatus = (message) => {
