@@ -1987,7 +1987,7 @@
       "article_generation_mode": "claude"
     },
     {
-      "timestamp": "2026-04-25T21:49:47+00:00",
+      "timestamp": "2026-04-26T07:05:58+00:00",
       "source_name": "GitHub Codex Releases",
       "source_url": "https://github.com/openai/codex/releases.atom",
       "effective_url": "https://github.com/openai/codex/releases.atom",
@@ -1997,16 +1997,16 @@
       "summary_en": "title=0.126.0-alpha.1 updated=2026-04-24T23:15:36Z",
       "headline_zh": "",
       "summary_zh": "",
-      "evidence_excerpt": "title=0.126.0-alpha.2 updated=2026-04-25T21:45:37Z",
+      "evidence_excerpt": "title=0.126.0-alpha.3 updated=2026-04-26T07:05:58Z",
       "diff_excerpt": [
         "--- previous",
         "+++ current",
         "@@ -1,4 +1,4 @@",
-        "-title=rust-v0.126.0-alpha.2",
-        "-updated=2026-04-25T21:02:24Z",
-        "+title=0.126.0-alpha.2",
-        "+updated=2026-04-25T21:45:37Z",
-        " link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.2",
+        "-title=rust-v0.126.0-alpha.3",
+        "-updated=2026-04-26T05:09:36Z",
+        "+title=0.126.0-alpha.3",
+        "+updated=2026-04-26T07:05:58Z",
+        " link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3",
         " summary="
       ],
       "article_identity": "GitHub Codex Releases",
@@ -2016,25 +2016,23 @@
       "id": "evt-ac4506b679b944ac7aa1",
       "content_fingerprint": "title 0 126 0 alpha 1 updated 2026 04 24t23 15 36z 0 126 0 alpha 1 title 0 126 0 alpha 1 updated 2026 04 24t23 15 36z",
       "needs_cc_refresh": false,
-      "article_h1": "GitHub Releases Codex 0.125.0 with Unix Socket Transport, Remote Plugin Support, and Rollout Tracing",
-      "article_standfirst": "OpenAI shipped a new stable release of its coding agent, GitHub Codex, featuring app-server integrations for Unix sockets, remote plugin installation, and expanded rollout tracing across multi-agent sessions.",
+      "article_h1": "OpenAI Codex Ships Unix Socket Transport, Remote Plugin Management, and Multi-Agent Tracing in v0.125.0",
+      "article_standfirst": "OpenAI's open-source coding agent framework gains production-oriented networking, plugin, and observability features that tighten its fit for team and CI/CD environments.",
       "article_body": [
-        "OpenAI published GitHub Codex version 0.125.0 on April 24, 2026, the latest stable release for its AI-powered coding agent. The update introduces several infrastructure-level improvements to the app-server integration layer, including Unix socket transport support, pagination-friendly resume and fork operations, sticky environments, and remote thread configuration and store plumbing. These additions are designed to give enterprise and self-hosted users more flexibility in how Codex connects to backend services.",
-        "The release also brings remote plugin management capabilities, allowing users to install and upgrade plugins from remote sources and configured marketplaces. Permission profiles now persist correctly across TUI sessions, user turns, MCP sandbox state, shell escalation, and app-server APIs, resolving a long-standing consistency issue. Additionally, model providers now own model discovery, with AWS and Bedrock account state exposed directly to application clients, streamlining multi-cloud setups. For programmatic consumers, `codex exec --json` now reports reasoning-token usage.",
-        "Rollout tracing has been expanded to record tool, code-mode, session, and multi-agent relationships, with a new debug reducer command for inspection. On the bug-fix side, interrupting `/review` and exiting the TUI no longer wedges the interface, and the exec-server no longer drops buffered output after process exit."
+        "OpenAI has published release 0.125.0 of its open-source Codex framework, the most feature-rich update in the recent release train. Among the headline additions, app-server integrations now support Unix socket transport, pagination-friendly resume and fork operations, sticky environments, and remote thread configuration plumbing. The update also enables plugin management to install remote plugins and upgrade configured marketplaces directly.\n\nThe release deepens AWS integration by exposing Bedrock account state to app clients, and it shifts model discovery responsibility to model providers themselves. Observability gets a significant boost: rollout tracing now records tool, code-mode, session, and multi-agent relationships, with a dedicated debug reducer command for inspection. For programmatic users, `codex exec --json` now surfaces reasoning-token usage. Permission profiles have also been stabilized to round-trip cleanly across TUI sessions, user turns, MCP sandbox state, shell escalation, and app-server APIs.\n\nThese changes position Codex more firmly as a backend coding-agent runtime rather than a pure CLI tool. Teams integrating it into CI pipelines, internal dev tools, or multi-agent orchestration stacks will benefit most from the networking refinements, improved tracing, and the remote plugin upgrade path. The reasoning-token reporting in `codex exec --json` gives MLOps and evaluation engineers a handle on token consumption they previously lacked."
       ],
       "article_why_matters": [
-        "Unix socket transport and sticky environments make Codex more suitable for production and containerized deployment scenarios where network configuration is constrained.",
-        "Remote plugin management and AWS/Bedrock integration widen the paths for enterprise users to customize and extend Codex within their existing cloud infrastructure.",
-        "Rollout tracing improvements give developers and platform teams better visibility into how Codex executes across tools, sessions, and multi-agent contexts."
+        "Unix socket transport and sticky environments make Codex more deployable in containerized and production-sidecar roles where TCP overhead or session routing are constraints.",
+        "Remote plugin installation and marketplace upgrades give platform teams a controlled path to distribute and maintain Codex tooling across teams without manual client updates.",
+        "Multi-agent rollout tracing with a debug reducer provides the observability layer needed to audit and debug agentic code generation workflows in CI and prod environments."
       ],
       "article_source_note": [
-        "Release notes sourced from the official GitHub Codex releases Atom feed (github.com/openai/codex/releases.atom). The feed only provides internal pull request issue numbers rather than full descriptions, so the significance of individual changes is inferred from the pull request titles and the changelog structure. Two bug fixes listed in the 0.125.0 changelog are partially truncated in the source text."
+        "Information is drawn from the public GitHub releases.atom feed for the openai/codex repository. The 0.126.0-alpha releases (alpha.1 through alpha.3) contain no changelog content beyond version tags. The substantive release notes come from version 0.125.0, which OpenAI's CI bot published on April 24, 2026. Pull request titles are gated behind GitHub's permission system, so specific implementation details are not available from the feed alone."
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude",
-      "source_content_fingerprint": "0 126 0 alpha 1 title 0 126 0 alpha 1 updated 2026 04 24t23 15 36z title 0 126 0 alpha 2 updated 2026 04 25t21 45 37z",
-      "github_release_signal_fingerprint": "version title version updated 2026 04 24t23 15 36z title version updated 2026 04 25t21 45 37z"
+      "source_content_fingerprint": "0 126 0 alpha 1 title 0 126 0 alpha 1 updated 2026 04 24t23 15 36z title 0 126 0 alpha 3 updated 2026 04 26t07 05 58z",
+      "github_release_signal_fingerprint": "version title version updated 2026 04 24t23 15 36z title version updated 2026 04 26t07 05 58z"
     },
     {
       "timestamp": "2026-04-25T00:56:41+00:00",
@@ -3943,5 +3941,5 @@
       "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-26T06:55:52+00:00"
+  "generated_at": "2026-04-26T07:06:30+00:00"
 }

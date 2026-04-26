@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GitHub Releases Codex 0.125.0 with Unix Socket Transport, Remote Plugin Support, and Rollout Tracing | AI Signal Articles</title>
-  <meta name="description" content="OpenAI shipped a new stable release of its coding agent, GitHub Codex, featuring app-server integrations for Unix sockets, remote plugin installation, a...">
+  <title>OpenAI Codex Ships Unix Socket Transport, Remote Plugin Management, and Multi-Agent Tracing in v0.125.0 | AI Signal Articles</title>
+  <meta name="description" content="OpenAI&#x27;s open-source coding agent framework gains production-oriented networking, plugin, and observability features that tighten its fit for team and C...">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
   <style>
@@ -188,15 +188,15 @@
     </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated <span data-utc="2026-04-26T00:49:26+00:00">2026-04-26 00:49 UTC</span></div>
+      <div>Generated <span data-utc="2026-04-26T07:06:30+00:00">2026-04-26 07:06 UTC</span></div>
     </div>
     <article class="hero">
       <span class="chip">release</span>
-      <h1>GitHub Releases Codex 0.125.0 with Unix Socket Transport, Remote Plugin Support, and Rollout Tracing</h1>
-      <p class="standfirst">OpenAI shipped a new stable release of its coding agent, GitHub Codex, featuring app-server integrations for Unix sockets, remote plugin installation, and expanded rollout tracing across multi-agent sessions.</p>
+      <h1>OpenAI Codex Ships Unix Socket Transport, Remote Plugin Management, and Multi-Agent Tracing in v0.125.0</h1>
+      <p class="standfirst">OpenAI&#x27;s open-source coding agent framework gains production-oriented networking, plugin, and observability features that tighten its fit for team and CI/CD environments.</p>
       <div class="meta">
         <span>GitHub Codex Releases</span>
-        <span>&lt;span data-utc=&quot;2026-04-25T21:49:47+00:00&quot;&gt;2026-04-25 21:49 UTC&lt;/span&gt;</span>
+        <span>&lt;span data-utc=&quot;2026-04-26T07:05:58+00:00&quot;&gt;2026-04-26 07:05 UTC&lt;/span&gt;</span>
         <span>Key: evt-ac4506b679b944ac7aa1</span>
         <span>Confidence: moderate</span>
         <span>Mode: claude</span>
@@ -210,21 +210,23 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>OpenAI published GitHub Codex version 0.125.0 on April 24, 2026, the latest stable release for its AI-powered coding agent. The update introduces several infrastructure-level improvements to the app-server integration layer, including Unix socket transport support, pagination-friendly resume and fork operations, sticky environments, and remote thread configuration and store plumbing. These additions are designed to give enterprise and self-hosted users more flexibility in how Codex connects to backend services.</p>
-<p>The release also brings remote plugin management capabilities, allowing users to install and upgrade plugins from remote sources and configured marketplaces. Permission profiles now persist correctly across TUI sessions, user turns, MCP sandbox state, shell escalation, and app-server APIs, resolving a long-standing consistency issue. Additionally, model providers now own model discovery, with AWS and Bedrock account state exposed directly to application clients, streamlining multi-cloud setups. For programmatic consumers, `codex exec --json` now reports reasoning-token usage.</p>
-<p>Rollout tracing has been expanded to record tool, code-mode, session, and multi-agent relationships, with a new debug reducer command for inspection. On the bug-fix side, interrupting `/review` and exiting the TUI no longer wedges the interface, and the exec-server no longer drops buffered output after process exit.</p>
+        <p>OpenAI has published release 0.125.0 of its open-source Codex framework, the most feature-rich update in the recent release train. Among the headline additions, app-server integrations now support Unix socket transport, pagination-friendly resume and fork operations, sticky environments, and remote thread configuration plumbing. The update also enables plugin management to install remote plugins and upgrade configured marketplaces directly.
+
+The release deepens AWS integration by exposing Bedrock account state to app clients, and it shifts model discovery responsibility to model providers themselves. Observability gets a significant boost: rollout tracing now records tool, code-mode, session, and multi-agent relationships, with a dedicated debug reducer command for inspection. For programmatic users, `codex exec --json` now surfaces reasoning-token usage. Permission profiles have also been stabilized to round-trip cleanly across TUI sessions, user turns, MCP sandbox state, shell escalation, and app-server APIs.
+
+These changes position Codex more firmly as a backend coding-agent runtime rather than a pure CLI tool. Teams integrating it into CI pipelines, internal dev tools, or multi-agent orchestration stacks will benefit most from the networking refinements, improved tracing, and the remote plugin upgrade path. The reasoning-token reporting in `codex exec --json` gives MLOps and evaluation engineers a handle on token consumption they previously lacked.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Unix socket transport and sticky environments make Codex more suitable for production and containerized deployment scenarios where network configuration is constrained.</li><li>Remote plugin management and AWS/Bedrock integration widen the paths for enterprise users to customize and extend Codex within their existing cloud infrastructure.</li><li>Rollout tracing improvements give developers and platform teams better visibility into how Codex executes across tools, sessions, and multi-agent contexts.</li></ul>
+        <ul class="bullets"><li>Unix socket transport and sticky environments make Codex more deployable in containerized and production-sidecar roles where TCP overhead or session routing are constraints.</li><li>Remote plugin installation and marketplace upgrades give platform teams a controlled path to distribute and maintain Codex tooling across teams without manual client updates.</li><li>Multi-agent rollout tracing with a debug reducer provides the observability layer needed to audit and debug agentic code generation workflows in CI and prod environments.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>Release notes sourced from the official GitHub Codex releases Atom feed (github.com/openai/codex/releases.atom). The feed only provides internal pull request issue numbers rather than full descriptions, so the significance of individual changes is inferred from the pull request titles and the changelog structure. Two bug fixes listed in the 0.125.0 changelog are partially truncated in the source text.</li></ul>
+        <ul class="bullets"><li>Information is drawn from the public GitHub releases.atom feed for the openai/codex repository. The 0.126.0-alpha releases (alpha.1 through alpha.3) contain no changelog content beyond version tags. The substantive release notes come from version 0.125.0, which OpenAI&#x27;s CI bot published on April 24, 2026. Pull request titles are gated behind GitHub&#x27;s permission system, so specific implementation details are not available from the feed alone.</li></ul>
       </section>
     
       <section class="section">
@@ -244,7 +246,7 @@
       if (!button || !status) return;
       const shareData = {
         title: document.title,
-        text: "OpenAI shipped a new stable release of its coding agent, GitHub Codex, featuring app-server integrations for Unix sockets, remote plugin...",
+        text: "OpenAI's open-source coding agent framework gains production-oriented networking, plugin, and observability features that tighten its fit...",
         url: window.location.href
       };
       const setStatus = (message) => {
