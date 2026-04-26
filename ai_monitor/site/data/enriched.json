@@ -3548,7 +3548,68 @@
       ],
       "article_confidence": "strong",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-26T17:43:25+00:00",
+      "source_name": "GitHub llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8941",
+      "category": "release",
+      "headline_en": "llama.cpp release feed now shows b8941",
+      "summary_en": "The monitored release feed for llama.cpp changed and the newest visible tag is b8941. The feed timestamp is 2026-04-26T17:43:26Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=b8941 updated=2026-04-26T17:43:26Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8941 summary= content=add performance-portable tuning for register-tile and subgroup matmul ( #22241 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEul...",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=b8941",
+        "+updated=2026-04-26T17:43:26Z",
+        "+link=https://github.com/ggml-org/llama.cpp/releases/tag/b8941",
+        "+summary=",
+        "+content=add performance-portable tuning for register-tile and subgroup matmul ( #22241 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "+",
+        " title=b8940",
+        " updated=2026-04-26T13:24:05Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=[SYCL] Optimize Q4_0 mul_mat for Arc770, add scripts ( #22291 ) opt arc770 for Q4_0 add for Q4_0 update the script add help script for windows update guide fix format issue convert from dos to unix for format issue fix missed -sm parameter macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "-",
+        "-title=b8926",
+        "-updated=2026-04-25T08:14:28Z",
+        "-link=https://github.com/ggml-org/llama.cpp/releases/tag/b8926",
+        "-summary=",
+        "-content=ggml-webgpu: support for SSM_SCAN and disable set_rows error checking ( #22327 ) Implement ssm_scan Remove blocking in graph_compute and check for set rows Fix bindings Update op support macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)"
+      ],
+      "article_identity": "b8941",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8941",
+      "id": "evt-0e19980e618ed0aea787",
+      "content_fingerprint": "llama cpp release feed now shows b8941 the monitored release feed for llama cpp changed and the newest visible tag is b8941 the feed timestamp is 2026 04 26t17 43 26z this looks like a release level update rather than a cosmetic page edit title b8941 updated 2026 04 26t17 43 26z link https github com ggml org llama cpp releases tag b8941 summary content add performance portable tuning for register tile and subgroup matmul 22241 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeul",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "llama cpp release feed now shows b8941 the monitored release feed for llama cpp changed and the newest visible tag is b8941 the feed timestamp is 2026 04 26t17 43 26z this looks like a release level update rather than a cosmetic page edit title b8941 updated 2026 04 26t17 43 26z link https github com ggml org llama cpp releases tag b8941 summary content add performance portable tuning for register tile and subgroup matmul 22241 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeul",
+      "github_release_signal_fingerprint": "llama cpp release feed now shows version the monitored release feed for llama cpp changed and the newest visible tag is version the feed timestamp is 2026 04 26t17 43 26z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 26t17 43 26z link https github com ggml org llama cpp releases tag version summary content add performance portable tuning for register tile and subgroup matmul 22241 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm version ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda version dlls windows x64 cuda 13 cuda version dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeul",
+      "article_h1": "llama.cpp Lands Performance-Portable Tuning for Register-Tile and Subgroup Matmul",
+      "article_standfirst": "The ggml-org/llama.cpp project shipped release b8941 on April 26, adding performance-portable matrix multiply optimizations tied to pull request #22241, with prebuilt binaries across a wide range of desktop, mobile, and accelerator platforms.",
+      "article_body": [
+        "llama.cpp release b8941 landed on April 26, 2026, introducing performance-portable tuning for register-tile and subgroup matrix multiply operations, merged via pull request #22241. The release ships prebuilt binaries for macOS (Apple Silicon with optional KleidiAI support, and Intel x64), iOS XCFramework, Linux (Ubuntu across CPU, Vulkan, ROCm 7.2, OpenVINO, and SYCL variants on x64 and arm64, plus s390x), Android arm64, Windows (CPU, CUDA 12 and 13, Vulkan, SYCL, and HIP), and openEuler on x86 and arm-based Huawei Ascend silicon.",
+        "The core change targets the low-level matmul kernels that sit at the heart of the library's inference engine. Performance-portable tuning means the kernels are structured to adapt across hardware microarchitectures — covering CPUs from Intel and AMD, Apple's Neural Engine and ARM cores, NVIDIA GPUs via CUDA, AMD accelerators via HIP and ROCm, Intel GPUs via OpenVINO and SYCL, and Huawei Ascend NPUs — without requiring hardware-specific hand-tuning for every target.",
+        "For inference engineers and developers running models locally via llama.cpp, the tuning directly affects throughput and latency across hardware configurations. Teams deploying on mixed fleets — or standardizing a single build target — benefit from improved kernel efficiency without needing to recompile or patch per platform."
+      ],
+      "article_why_matters": [
+        "The library underpins a large share of local LLM inference tooling; kernel-level matmul improvements translate to faster token generation on the hardware most teams already run.",
+        "Expanded openEuler and Huawei Ascend support signals a deepening of the project beyond Western-centric compute stacks, with prebuilt binaries for a Chinese enterprise Linux distribution and NPUs.",
+        "Prebuilt XCFramework binaries for iOS mean mobile app developers can ship faster inference without maintaining custom build pipelines."
+      ],
+      "article_source_note": [
+        "Information drawn from the GitHub release page for ggml-org/llama.cpp tag b8941 (2026-04-26T17:43:26Z) and the associated feed entry. The release note does not include a written description beyond the PR reference #22241; platform coverage and binary availability are listed explicitly, but no performance benchmarks or usage guidance are provided in the release text."
+      ],
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-26T15:38:08+00:00"
+  "generated_at": "2026-04-26T17:44:13+00:00"
 }
