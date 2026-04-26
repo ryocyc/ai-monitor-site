@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-26T03:33:05+00:00">Last built: <span data-utc="2026-04-26T03:33:05+00:00">2026-04-26 03:33 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-26T03:54:21+00:00">Last built: <span data-utc="2026-04-26T03:54:21+00:00">2026-04-26 03:54 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-04-26T03:53:30+00:00" data-utc="2026-04-26T03:53:30+00:00">2026-04-26 03:53 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-38ca4372270f25f05c55.html">DeepSeek-V4 Draws Attention on Hugging Face Community Blog Amid Focus on Million-Token Context</a></h2>
+              <p class="summary">DeepSeek-V4, a model notable for its one-million-token context window, has surfaced in the Hugging Face community blog&#x27;s Hot feed, signaling renewed builder interest in long-context reasoning capabilities.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>GitHub llama.cpp Releases</span>
                 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8934">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-04-26T03:09:54+00:00" data-utc="2026-04-26T03:09:54+00:00">2026-04-26 03:09 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-38ca4372270f25f05c55.html">DeepSeek-V4&#x27;s Million-Token Context Window Draws Fresh Attention on Hugging Face Community Feed</a></h2>
-              <p class="summary">DeepSeek-V4, a large language model supporting a one-million-token context window, has surfaced in the Hugging Face community blog&#x27;s featured articles, drawing renewed focus on extended-context capabilities for agentic workflows.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-26T03:33:05+00:00";
+    const currentGeneratedAt = "2026-04-26T03:54:21+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
