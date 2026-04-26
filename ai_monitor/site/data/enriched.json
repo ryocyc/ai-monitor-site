@@ -2770,7 +2770,7 @@
       "article_generation_mode": "claude"
     },
     {
-      "timestamp": "2026-04-25T08:25:07+00:00",
+      "timestamp": "2026-04-26T06:23:13+00:00",
       "source_name": "GitHub llama.cpp Releases",
       "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
       "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
@@ -2780,40 +2780,47 @@
       "summary_en": "updated=2026-04-25T08:14:28Z",
       "headline_zh": "",
       "summary_zh": "",
-      "evidence_excerpt": "updated=2026-04-25T08:14:28Z",
+      "evidence_excerpt": "title=b8935 updated=2026-04-26T06:19:33Z content=opencl: add iq4_nl support ( #22272 ) opencl: add general support for iq4_nl opencl: add iq4_nl gemm/gemv for adreno opencl: pack 2 lut entries into a uint macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) ope...",
       "diff_excerpt": [
         "--- previous",
         "+++ current",
-        "@@ -1,4 +1,4 @@",
-        " title=b8926",
-        "-updated=2026-04-25T08:14:00Z",
-        "+updated=2026-04-25T08:14:28Z",
-        " link=https://github.com/ggml-org/llama.cpp/releases/tag/b8926",
-        " summary="
+        "@@ -1,7 +1,7 @@",
+        "-title=b8935: opencl: add iq4_nl support (#22272)",
+        "-updated=2026-04-26T04:21:58Z",
+        "+title=b8935",
+        "+updated=2026-04-26T06:19:33Z",
+        " link=https://github.com/ggml-org/llama.cpp/releases/tag/b8935",
+        " summary=",
+        "-content=opencl: add general support for iq4_nl opencl: add iq4_nl gemm/gemv for adreno opencl: pack 2 lut entries into a uint",
+        "+content=opencl: add iq4_nl support ( #22272 ) opencl: add general support for iq4_nl opencl: add iq4_nl gemm/gemv for adreno opencl: pack 2 lut entries into a uint macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        " ",
+        " title=b8934"
       ],
       "article_identity": "GitHub llama.cpp Releases",
       "is_page_error": false,
       "status": "staging-for-cc",
       "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases.atom",
       "id": "evt-72a898dc51e976ad606b",
-      "content_fingerprint": "updated 2026 04 25t08 14 28z github llama cpp releases changed updated 2026 04 25t08 14 28z",
+      "content_fingerprint": "title b8935 updated 2026 04 26t06 19 33z content opencl add iq4 nl support 22272 opencl add general support for iq4 nl opencl add iq4 nl gemm gemv for adreno opencl pack 2 lut entries into a uint macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cud",
       "needs_cc_refresh": true,
-      "source_content_fingerprint": "github llama cpp releases changed updated 2026 04 25t08 14 28z updated 2026 04 25t08 14 28z",
-      "github_release_signal_fingerprint": "github llama cpp releases changed updated 2026 04 25t08 14 28z updated 2026 04 25t08 14 28z",
-      "article_h1": "llama.cpp Releases b8926 and b8925 with WebGPU SSM_SCAN Support and Parser Fix",
-      "article_standfirst": "The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a structured-output parsing bug.",
+      "source_content_fingerprint": "github llama cpp releases changed updated 2026 04 25t08 14 28z title b8935 updated 2026 04 26t06 19 33z content opencl add iq4 nl support 22272 opencl add general support for iq4 nl opencl add iq4 nl gemm gemv for adreno opencl pack 2 lut entries into a uint macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph ope",
+      "github_release_signal_fingerprint": "github llama cpp releases changed updated 2026 04 25t08 14 28z title version updated 2026 04 26t06 19 33z content opencl add iq4 nl support 22272 opencl add general support for iq4 nl opencl add iq4 nl gemm gemv for adreno opencl pack 2 lut entries into a uint macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm version ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda version dlls windows x64 cuda 13 cuda version dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph ope",
+      "article_h1": "llama.cpp release adds OpenCL acceleration for iq4_nl quantized models",
+      "article_standfirst": "The llama.cpp project shipped OpenCL support for the iq4_nl quantization format in release b8935, extending hardware-accelerated inference for this memory-efficient scheme beyond CUDA-dependent GPUs.",
       "article_body": [
-        "The llama.cpp project tagged two releases on April 25, 2026. The first, b8925, landed on April 24 and carried a parser fix for a structured-output bug (PR #22302), which the release notes describe with tongue-in-cheek brevity: \"Things just cannot be too easy.\" The second, b8926, arrived the next morning and introduces SSM_SCAN support to the ggml-webgpu backend via PR #22327, alongside removal of blocking calls in graph_compute and updated operator support for WebGPU.\n\nBuild artifacts for both releases span an unusually wide matrix: macOS (Apple Silicon with optional KleidiAI acceleration, Intel x64, and iOS XCFramework), Linux (Ubuntu on CPU, Vulkan, ROCm 7.2, OpenVINO 2026.0, and SYCL in FP32/FP16), Android, Windows (CPU, CUDA 12.4, CUDA 13.1, Vulkan, SYCL, and HIP for Radeon GPUs), and a notable addition — openEuler builds for both 310p and 910b (with ACL Graph) on x86 and aarch64.\n\nCUDA support on Windows continues to ship dual CUDA version variants (12.4 and 13.1), reflecting the fragmented GPU driver landscape developers must navigate. The inclusion of KleidiAI-enabled macOS binaries also signals ongoing Apple Silicon optimization work beyond standard ARM64 builds."
+        "The llama.cpp project published release b8935 on April 26, 2026, adding three OpenCL-backed changes for the iq4_nl quantization format via pull request #22272: general iq4_nl support on OpenCL, GEMM/GEMV kernels optimized for Adreno GPUs, and a memory-efficiency improvement that packs two lookup-table entries into a single unsigned integer.",
+        "iq4_nl is a 4-bit integer quantization scheme within the GGUF model format designed to reduce memory footprint and speed up inference on compatible hardware while preserving model quality. The llama.cpp project is a C/C++ inference engine that runs GGUF-format large language models locally across a wide range of hardware backends including CPU, CUDA, Vulkan, HIP/ROCm, SYCL, OpenCL, and OpenVINO — covering macOS, Linux, Windows, Android, and iOS.",
+        "These changes let developers and teams run iq4_nl-quantized models on any OpenCL-capable hardware — including older AMD GPUs, integrated graphics, and mobile SoCs — without requiring CUDA. Inference engineers and application developers running local models at scale can expect lower memory costs on compatible hardware, and the same llama.cpp binary now handles multiple accelerator backends for this quantization type."
       ],
       "article_why_matters": [
-        "SSM_SCAN support in WebGPU brings state-space model inference to browser and cross-platform GPU environments without relying on CUDA or Metal.",
-        "The parser fix for structured output directly impacts developers using llama.cpp as a backend for structured AI responses, a common production use case.",
-        "The growing openEuler support signals expanding reach into Chinese and enterprise Linux ecosystems beyond mainstream Ubuntu and Debian."
+        "iq4_nl is a practical middle ground between model quality and memory efficiency; extending it to OpenCL hardware opens inference to a broader set of devices beyond CUDA-dependent GPUs.",
+        "Adreno-optimized GEMM/GEMV kernels in OpenCL can meaningfully improve throughput on Qualcomm-based hardware, including Android devices and Windows arm64 PCs.",
+        "The packed LUT optimization reduces memory overhead per quantized layer, which matters most for larger models or memory-constrained deployment scenarios."
       ],
       "article_source_note": [
-        "This report is based on the official llama.cpp releases Atom feed (ggml-org/llama.cpp). Both b8926 and b8925 were published by github-actions[bot] on April 24–25, 2026. Binary assets span macOS, Linux, Android, Windows, and openEuler across multiple accelerator backends. Details on the SSM_SCAN and parser fixes are limited to the changelog entries; full technical context requires reviewing linked PRs #22327 and #22302."
+        "This information comes from the official llama.cpp GitHub releases atom feed (ggml-org/llama.cpp). The primary code change is documented via a pull request link (#22272); no additional release notes or changelog narrative beyond the binary asset listings were present in the source, limiting context on performance impact."
       ],
-      "article_confidence": "strong",
+      "article_confidence": "moderate",
       "article_generation_mode": "claude"
     },
     {
@@ -3936,5 +3943,5 @@
       "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-26T06:02:41+00:00"
+  "generated_at": "2026-04-26T06:24:07+00:00"
 }

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>llama.cpp Releases b8926 and b8925 with WebGPU SSM_SCAN Support and Parser Fix | AI Signal Articles</title>
-  <meta name="description" content="The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a structured-out...">
+  <title>llama.cpp release adds OpenCL acceleration for iq4_nl quantized models | AI Signal Articles</title>
+  <meta name="description" content="The llama.cpp project shipped OpenCL support for the iq4_nl quantization format in release b8935, extending hardware-accelerated inference for this memo...">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
   <style>
@@ -188,17 +188,17 @@
     </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated 2026-04-25 15:49 UTC</div>
+      <div>Generated <span data-utc="2026-04-26T06:24:07+00:00">2026-04-26 06:24 UTC</span></div>
     </div>
     <article class="hero">
       <span class="chip">release</span>
-      <h1>llama.cpp Releases b8926 and b8925 with WebGPU SSM_SCAN Support and Parser Fix</h1>
-      <p class="standfirst">The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a structured-output parsing bug.</p>
+      <h1>llama.cpp release adds OpenCL acceleration for iq4_nl quantized models</h1>
+      <p class="standfirst">The llama.cpp project shipped OpenCL support for the iq4_nl quantization format in release b8935, extending hardware-accelerated inference for this memory-efficient scheme beyond CUDA-dependent GPUs.</p>
       <div class="meta">
         <span>GitHub llama.cpp Releases</span>
-        <span>2026-04-25 08:25 UTC</span>
-        <span>Key: github-llamacpp-releases::merge::releasegithub-llamacpp-releaseshttpsgithubcomggml-orgllamacppreleasesatom</span>
-        <span>Confidence: strong</span>
+        <span>&lt;span data-utc=&quot;2026-04-26T06:23:13+00:00&quot;&gt;2026-04-26 06:23 UTC&lt;/span&gt;</span>
+        <span>Key: evt-72a898dc51e976ad606b</span>
+        <span>Confidence: moderate</span>
         <span>Mode: claude</span>
       </div>
       <div class="hero-actions">
@@ -210,23 +210,21 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>The llama.cpp project tagged two releases on April 25, 2026. The first, b8925, landed on April 24 and carried a parser fix for a structured-output bug (PR #22302), which the release notes describe with tongue-in-cheek brevity: &quot;Things just cannot be too easy.&quot; The second, b8926, arrived the next morning and introduces SSM_SCAN support to the ggml-webgpu backend via PR #22327, alongside removal of blocking calls in graph_compute and updated operator support for WebGPU.
-
-Build artifacts for both releases span an unusually wide matrix: macOS (Apple Silicon with optional KleidiAI acceleration, Intel x64, and iOS XCFramework), Linux (Ubuntu on CPU, Vulkan, ROCm 7.2, OpenVINO 2026.0, and SYCL in FP32/FP16), Android, Windows (CPU, CUDA 12.4, CUDA 13.1, Vulkan, SYCL, and HIP for Radeon GPUs), and a notable addition — openEuler builds for both 310p and 910b (with ACL Graph) on x86 and aarch64.
-
-CUDA support on Windows continues to ship dual CUDA version variants (12.4 and 13.1), reflecting the fragmented GPU driver landscape developers must navigate. The inclusion of KleidiAI-enabled macOS binaries also signals ongoing Apple Silicon optimization work beyond standard ARM64 builds.</p>
+        <p>The llama.cpp project published release b8935 on April 26, 2026, adding three OpenCL-backed changes for the iq4_nl quantization format via pull request #22272: general iq4_nl support on OpenCL, GEMM/GEMV kernels optimized for Adreno GPUs, and a memory-efficiency improvement that packs two lookup-table entries into a single unsigned integer.</p>
+<p>iq4_nl is a 4-bit integer quantization scheme within the GGUF model format designed to reduce memory footprint and speed up inference on compatible hardware while preserving model quality. The llama.cpp project is a C/C++ inference engine that runs GGUF-format large language models locally across a wide range of hardware backends including CPU, CUDA, Vulkan, HIP/ROCm, SYCL, OpenCL, and OpenVINO — covering macOS, Linux, Windows, Android, and iOS.</p>
+<p>These changes let developers and teams run iq4_nl-quantized models on any OpenCL-capable hardware — including older AMD GPUs, integrated graphics, and mobile SoCs — without requiring CUDA. Inference engineers and application developers running local models at scale can expect lower memory costs on compatible hardware, and the same llama.cpp binary now handles multiple accelerator backends for this quantization type.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>SSM_SCAN support in WebGPU brings state-space model inference to browser and cross-platform GPU environments without relying on CUDA or Metal.</li><li>The parser fix for structured output directly impacts developers using llama.cpp as a backend for structured AI responses, a common production use case.</li><li>The growing openEuler support signals expanding reach into Chinese and enterprise Linux ecosystems beyond mainstream Ubuntu and Debian.</li></ul>
+        <ul class="bullets"><li>iq4_nl is a practical middle ground between model quality and memory efficiency; extending it to OpenCL hardware opens inference to a broader set of devices beyond CUDA-dependent GPUs.</li><li>Adreno-optimized GEMM/GEMV kernels in OpenCL can meaningfully improve throughput on Qualcomm-based hardware, including Android devices and Windows arm64 PCs.</li><li>The packed LUT optimization reduces memory overhead per quantized layer, which matters most for larger models or memory-constrained deployment scenarios.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This report is based on the official llama.cpp releases Atom feed (ggml-org/llama.cpp). Both b8926 and b8925 were published by github-actions[bot] on April 24–25, 2026. Binary assets span macOS, Linux, Android, Windows, and openEuler across multiple accelerator backends. Details on the SSM_SCAN and parser fixes are limited to the changelog entries; full technical context requires reviewing linked PRs #22327 and #22302.</li></ul>
+        <ul class="bullets"><li>This information comes from the official llama.cpp GitHub releases atom feed (ggml-org/llama.cpp). The primary code change is documented via a pull request link (#22272); no additional release notes or changelog narrative beyond the binary asset listings were present in the source, limiting context on performance impact.</li></ul>
       </section>
     
       <section class="section">
@@ -246,7 +244,7 @@ CUDA support on Windows continues to ship dual CUDA version variants (12.4 and 1
       if (!button || !status) return;
       const shareData = {
         title: document.title,
-        text: "The llama.cpp project shipped two new releases in under 24 hours, adding state-space model scanning to its WebGPU backend and squashing a...",
+        text: "The llama.cpp project shipped OpenCL support for the iq4_nl quantization format in release b8935, extending hardware-accelerated inferenc...",
         url: window.location.href
       };
       const setStatus = (message) => {
@@ -281,6 +279,22 @@ CUDA support on Windows continues to ship dual CUDA version variants (12.4 and 1
         document.execCommand("copy");
         helper.remove();
         setStatus("Link copied.");
+      });
+
+      document.querySelectorAll('[data-utc]').forEach((node) => {
+        const value = node.dataset.utc;
+        if (!value) return;
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return;
+        node.textContent = new Intl.DateTimeFormat(undefined, {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false,
+          timeZoneName: 'short'
+        }).format(date);
       });
     })();
   </script>
