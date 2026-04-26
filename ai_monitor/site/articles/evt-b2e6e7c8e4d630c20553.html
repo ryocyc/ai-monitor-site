@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hugging Face Gives Every Gradio Space a Machine-Readable Agent API by Default | AI Signal Articles</title>
-  <meta name="description" content="Hugging Face now auto-generates an /agents.md endpoint for every Gradio Space, letting coding agents like Claude Code, Codex, and Pi discover and intera...">
+  <title>Hugging Face Gradio Spaces Now Auto-Expose AI-Agent-Friendly API Endpoints | AI Signal Articles</title>
+  <meta name="description" content="Hugging Face has updated Gradio Spaces so every hosted Space automatically serves a machine-readable /agents.md endpoint, allowing AI coding agents to d...">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
   <style>
@@ -188,15 +188,15 @@
     </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated <span data-utc="2026-04-26T18:36:51+00:00">2026-04-26 18:36 UTC</span></div>
+      <div>Generated <span data-utc="2026-04-26T20:01:11+00:00">2026-04-26 20:01 UTC</span></div>
     </div>
     <article class="hero">
       <span class="chip">docs</span>
-      <h1>Hugging Face Gives Every Gradio Space a Machine-Readable Agent API by Default</h1>
-      <p class="standfirst">Hugging Face now auto-generates an /agents.md endpoint for every Gradio Space, letting coding agents like Claude Code, Codex, and Pi discover and interact with Spaces without manual configuration.</p>
+      <h1>Hugging Face Gradio Spaces Now Auto-Expose AI-Agent-Friendly API Endpoints</h1>
+      <p class="standfirst">Hugging Face has updated Gradio Spaces so every hosted Space automatically serves a machine-readable /agents.md endpoint, allowing AI coding agents to discover and interact with a Space without any manual configuration.</p>
       <div class="meta">
         <span>Hugging Face Changelog</span>
-        <span>&lt;span data-utc=&quot;2026-04-26T18:36:13+00:00&quot;&gt;2026-04-26 18:36 UTC&lt;/span&gt;</span>
+        <span>&lt;span data-utc=&quot;2026-04-26T20:00:25+00:00&quot;&gt;2026-04-26 20:00 UTC&lt;/span&gt;</span>
         <span>Key: evt-b2e6e7c8e4d630c20553</span>
         <span>Confidence: moderate</span>
         <span>Mode: claude</span>
@@ -210,21 +210,21 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>Hugging Face has quietly made a meaningful change to how its Gradio Spaces platform works for AI agents. Starting this month, every Space on the platform automatically serves an /agents.md endpoint — a structured, machine-readable API description that AI agents can parse to understand what the Space does, what inputs it accepts, and how to call it.</p>
-<p>The /agents.md file acts as a self-documenting interface layer. Rather than requiring developers to manually configure agent integrations or write custom tooling for each Space, the endpoint gives coding agents — including Claude Code, OpenAI&#x27;s Codex, and Agentic&#x27;s Pi — a standardized way to read a Space&#x27;s capabilities and invoke it on the fly. No setup is required on the agent side beyond pointing it at the Space&#x27;s URL.</p>
-<p>For developers building AI-powered applications or workflows that rely on Gradio Spaces, the change removes a common friction point: agents that previously couldn&#x27;t reliably discover what a Space offered or how to call it can now do so automatically. For the broader ecosystem, it signals that Hugging Face is positioning Gradio Spaces not just as human-facing demos but as composable, agent-native building blocks.</p>
+        <p>Starting April 17, 2026, every Gradio Space hosted on Hugging Face automatically generates an /agents.md endpoint alongside its standard web interface. This endpoint provides a structured, machine-readable description of the Space&#x27;s capabilities, inputs, and outputs, functioning as a self-documenting API manifest that AI agents can parse directly.</p>
+<p>The /agents.md system is designed to work out of the box with existing coding agents: pointing a tool like Claude Code, OpenAI Codex, or Pi at a Space&#x27;s URL causes the agent to read the manifest and invoke the Space&#x27;s functions without any developer-written glue code or custom integration. The changelog entry, which garnered 142 upvotes on the Hugging Face platform, links to full documentation for the feature.</p>
+<p>For developers building agentic workflows, the change removes a previously manual step: rather than writing custom wrappers to connect an agent to a hosted Gradio demo, the Space now presents its interface to agents natively. This could accelerate adoption of Gradio Spaces as components in AI-powered coding pipelines and reduce the friction of mixing third-party hosted models or demos into agent toolchains.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Every Gradio Space is now implicitly a tool that coding agents can use without per-Space configuration, which could dramatically expand the addressable surface for agentic workflows built on Hugging Face.</li><li>The move aligns Gradio Spaces with the emerging pattern of machine-readable interface documents (similar to OpenAPI specs or /well-known/agent files), making the platform more composable for developers building multi-agent pipelines.</li><li>Developers of Spaces no longer need to publish separate integration guides or SDKs for agent consumption — the endpoint is generated automatically at no additional cost.</li></ul>
+        <ul class="bullets"><li>Gradio Spaces are among the most widely used hosted ML demo platforms, and making them agent-readable turns every Space into a potential tool for AI agents without additional setup.</li><li>Developers integrating coding agents into their workflows no longer need to write custom adapters for each Gradio Space they want to use.</li><li>The feature is opt-out rather than opt-in — all Spaces receive the endpoint by default — which means the agent-accessible tool library grows automatically with every new Space deployment.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>This brief is based on an entry on the official Hugging Face Changelog (huggingface.co/changelog), dated April 17, 2026. The changelog provides a concise description of the feature and a link to documentation, but does not include technical implementation details, scope limitations, or rollback/experimental flags. The entry received 141 community upvotes, indicating moderate user interest. The source is considered thin on technical specifics, so confidence is rated moderate.</li></ul>
+        <ul class="bullets"><li>This brief is drawn from the official Hugging Face Changelog entry dated April 17, 2026. The source provides a concise description of the /agents.md endpoint and its function but does not include implementation details, API schemas, or error-handling behavior. Additional documentation is referenced in the changelog but was not retrieved as part of this capture.</li></ul>
       </section>
     
       <section class="section">
@@ -244,7 +244,7 @@
       if (!button || !status) return;
       const shareData = {
         title: document.title,
-        text: "Hugging Face now auto-generates an /agents.md endpoint for every Gradio Space, letting coding agents like Claude Code, Codex, and Pi disc...",
+        text: "Hugging Face has updated Gradio Spaces so every hosted Space automatically serves a machine-readable /agents.md endpoint, allowing AI cod...",
         url: window.location.href
       };
       const setStatus = (message) => {
