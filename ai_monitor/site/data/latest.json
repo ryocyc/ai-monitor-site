@@ -1,5 +1,48 @@
 {
-  "generated_at": "2026-04-26T13:19:24+00:00",
-  "item_count": 0,
-  "items": []
+  "generated_at": "2026-04-26T13:30:04+00:00",
+  "item_count": 1,
+  "items": [
+    {
+      "timestamp": "2026-04-26T13:29:33+00:00",
+      "source_name": "GitHub llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8940",
+      "category": "release",
+      "headline_en": "llama.cpp release feed now shows b8940",
+      "summary_en": "The monitored release feed for llama.cpp changed and the newest visible tag is b8940. The feed timestamp is 2026-04-26T13:24:05Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=b8940 updated=2026-04-26T13:24:05Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8940 summary= content=Fix recurrent state serialization for partial reads and writes ( #22362 ) The previous code worked only for full tensor reads and writes and was hitting GGML_ASSERT(size == ggml_nbytes(tensor)); assert when tested with llama-server. macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUD...",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=b8940",
+        "+updated=2026-04-26T13:24:05Z",
+        "+link=https://github.com/ggml-org/llama.cpp/releases/tag/b8940",
+        "+summary=",
+        "+content=Fix recurrent state serialization for partial reads and writes ( #22362 ) The previous code worked only for full tensor reads and writes and was hitting GGML_ASSERT(size == ggml_nbytes(tensor)); assert when tested with llama-server. macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "+",
+        " title=b8937",
+        " updated=2026-04-26T09:29:16Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=ggml-webgpu: support for SSM_SCAN and disable set_rows error checking ( #22327 ) Implement ssm_scan Remove blocking in graph_compute and check for set rows Fix bindings Update op support macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "-",
+        "-title=b8925",
+        "-updated=2026-04-24T23:41:07Z",
+        "-link=https://github.com/ggml-org/llama.cpp/releases/tag/b8925",
+        "-summary=",
+        "-content=parser: fix structured output bug ( #22302 ) fix very stupid structured output bug Things just cannot be too easy. macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)"
+      ],
+      "article_identity": "b8940",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8940",
+      "id": "evt-bbf9ffb2b2ac27e165d7",
+      "content_fingerprint": "title b8940 updated 2026 04 26t13 24 05z link https github com ggml org llama cpp releases tag b8940 summary content fix recurrent state serialization for partial reads and writes 22362 the previous code worked only for full tensor reads and writes and was hitting ggml assert size ggml nbytes tensor assert when tested with llama server macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp",
+      "needs_cc_refresh": true
+    }
+  ]
 }
