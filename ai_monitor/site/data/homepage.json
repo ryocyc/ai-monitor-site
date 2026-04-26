@@ -1,7 +1,66 @@
 {
-  "generated_at": "2026-04-26T00:52:18+00:00",
+  "generated_at": "2026-04-26T00:53:19+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-26T00:52:48+00:00",
+      "source_name": "GitHub Claude Context Releases",
+      "source_url": "https://github.com/zilliztech/claude-context/releases.atom",
+      "effective_url": "https://github.com/zilliztech/claude-context/releases.atom",
+      "target_url": "https://github.com/zilliztech/claude-context/releases/tag/v0.1.9",
+      "category": "release",
+      "headline_en": "v0.1.9: chore: bump version to 0.1.9",
+      "summary_en": "title=v0.1.9: chore: bump version to 0.1.9 updated=2026-04-26T00:51:44Z link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.9 summary= content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=v0.1.9: chore: bump version to 0.1.9 updated=2026-04-26T00:51:44Z link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.9 summary= content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=v0.1.9: chore: bump version to 0.1.9",
+        "+updated=2026-04-26T00:51:44Z",
+        "+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.9",
+        "+summary=",
+        "+content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com",
+        "+",
+        " title=v0.1.8",
+        " updated=2026-04-24T15:22:45Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=Signed-off-by: ChengZi chen.zhang@zilliz.com",
+        "-",
+        "-title=v0.0.13: bump version to 0.0.13",
+        "-updated=2025-08-04T10:07:11Z",
+        "-link=https://github.com/zilliztech/claude-context/releases/tag/v0.0.13",
+        "-summary=",
+        "-content=Signed-off-by: ChengZi chen.zhang@zilliz.com"
+      ],
+      "article_identity": "GitHub Claude Context Releases",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github claude context releases||https://github.com/zilliztech/claude-context/releases/tag/v0.1.9",
+      "id": "evt-74efd2c0b65170795912",
+      "content_fingerprint": "title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com v0 1 9 chore bump version to 0 1 9 title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "v0 1 9 chore bump version to 0 1 9 title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com",
+      "github_release_signal_fingerprint": "version chore bump version to version title version chore bump version to version updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag version summary content signed off by cheney zhang chen zhang zilliz com title version chore bump version to version updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag version summary content signed off by cheney zhang chen zhang zilliz com",
+      "article_h1": "Zilliz Publishes claude-context v0.1.9 Release",
+      "article_standfirst": "Zilliz has tagged version 0.1.9 of its claude-context project on GitHub, marking a routine version bump with no accompanying changelog.",
+      "article_body": [
+        "Zilliz released v0.1.9 of its claude-context repository on GitHub on April 26, 2026. The release, tagged and signed off by Cheney Zhang, consists solely of a version-number bump — no changelog, release notes, or description of changes are included in the release page. The repository, which appears to be an open-source tool for managing context with Claude, has now incremented to the 0.1.9 patch release. This follows an active period of releases on the zilliztech GitHub organisation, with v0.1.8 and earlier versions also publicly available."
+      ],
+      "article_why_matters": [
+        "Users tracking claude-context for updates will want to note that this release carries no documented changes beyond the version number itself.",
+        "The lack of a changelog makes it difficult to determine whether any actual code changes occurred, or if this is purely a versioning ceremony.",
+        "Following the project closely remains the only reliable way to understand what is actually changing between versions."
+      ],
+      "article_source_note": [
+        "This information is drawn directly from the GitHub release page for v0.1.9 on the zilliztech/claude-context repository, accessed on April 26, 2026. The release page contains only the version tag and a signed-off attribution to Cheney Zhang — no diff, no release notes, and no description of changes."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-25T23:56:12+00:00",
       "source_name": "Hugging Face Blog",
@@ -321,65 +380,6 @@
         "This reporting is based on the public pricing page at fireworks.ai/pricing, which included an announcement banner for the training preview alongside details on serverless inference, fine-tuning, and on-demand GPU deployment pricing tiers. No official press release or blog post was captured as part of this source."
       ],
       "article_confidence": "moderate",
-      "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-25T09:39:45+00:00",
-      "source_name": "GitHub llama.cpp Releases",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8929",
-      "category": "release",
-      "headline_en": "b8929",
-      "summary_en": "title=b8929 updated=2026-04-25T09:32:36Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8929 summary= content=llama-quant : default ftype param Q5_1 --> Q8_0 ( #20828 ) Change the default ftype in llama_model_quantize_params from LLAMA_FTYPE_MOSTLY_Q5_1 to LLAMA_FTYPE_MOSTLY_Q8_0 . In case some external pr...",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=b8929 updated=2026-04-25T09:32:36Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8929 summary= content=llama-quant : default ftype param Q5_1 --> Q8_0 ( #20828 ) Change the default ftype in llama_model_quantize_params from LLAMA_FTYPE_MOSTLY_Q5_1 to LLAMA_FTYPE_MOSTLY_Q8_0 . In case some external program naively uses the default quantization params, we should probably default to a known-good type like Q8_0 rather than Q5_1, which is rather old. macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android a...",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,8 @@",
-        "+title=b8929",
-        "+updated=2026-04-25T09:32:36Z",
-        "+link=https://github.com/ggml-org/llama.cpp/releases/tag/b8929",
-        "+summary=",
-        "+content=llama-quant : default ftype param Q5_1 --&gt; Q8_0 ( #20828 ) Change the default ftype in llama_model_quantize_params from LLAMA_FTYPE_MOSTLY_Q5_1 to LLAMA_FTYPE_MOSTLY_Q8_0 . In case some external program naively uses the default quantization params, we should probably default to a known-good type like Q8_0 rather than Q5_1, which is rather old. macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
-        "+",
-        " title=b8927",
-        " updated=2026-04-25T08:58:59Z",
-        "@@ -52,8 +58,2 @@",
-        " summary=",
-        " content=jinja : remove unused header ( #22310 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
-        "-",
-        "-title=b8916",
-        "-updated=2026-04-24T11:44:54Z",
-        "-link=https://github.com/ggml-org/llama.cpp/releases/tag/b8916",
-        "-summary=",
-        "-content=server : fix swa-full logic ( #22288 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)"
-      ],
-      "article_identity": "GitHub llama.cpp Releases",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8929",
-      "id": "evt-8928a113795f1b42c41d",
-      "content_fingerprint": "title b8929 updated 2026 04 25t09 32 36z link https github com ggml org llama cpp releases tag b8929 summary content llama quant default ftype param q5 1 q8 0 20828 change the default ftype in llama model quantize params from llama ftype mostly q5 1 to llama ftype mostly q8 0 in case some external program naively uses the default quantization params we should probably default to a known good type like q8 0 rather than q5 1 which is rather old macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubun",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "b8929 title b8929 updated 2026 04 25t09 32 36z link https github com ggml org llama cpp releases tag b8929 summary content llama quant default ftype param q5 1 q8 0 20828 change the default ftype in llama model quantize params from llama ftype mostly q5 1 to llama ftype mostly q8 0 in case some external pr title b8929 updated 2026 04 25t09 32 36z link https github com ggml org llama cpp releases tag b8929 summary content llama quant default ftype param q5 1 q8 0 20828 change the default ftype in llama model quantize params from llama ftype mostly q5 1 to llama ftype mostly q8 0 in case some external program naively uses the default quantization params we should probably default to a known good type like q8 0 rather than q5 1 which is rather old macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android a",
-      "github_release_signal_fingerprint": "version title version updated 2026 04 25t09 32 36z link https github com ggml org llama cpp releases tag version summary content llama quant default ftype param q5 1 q8 0 20828 change the default ftype in llama model quantize params from llama ftype mostly q5 1 to llama ftype mostly q8 0 in case some external pr title version updated 2026 04 25t09 32 36z link https github com ggml org llama cpp releases tag version summary content llama quant default ftype param q5 1 q8 0 20828 change the default ftype in llama model quantize params from llama ftype mostly q5 1 to llama ftype mostly q8 0 in case some external program naively uses the default quantization params we should probably default to a known good type like q8 0 rather than q5 1 which is rather old macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm version ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android a",
-      "article_h1": "llama.cpp Shifts Default Quantization from Q5_1 to Q8_0 in Release b8929",
-      "article_standfirst": "The llama.cpp project has changed its default model quantization format from Q5_1 to the higher-fidelity Q8_0, a shift that affects any tool relying on the library's default quantization settings.",
-      "article_body": [
-        "Release b8929 of llama.cpp, published on April 25, 2026, introduces a change to the project's default quantization parameter used during model conversion. The `llama_model_quantize_params` function now defaults to `LLAMA_FTYPE_MOSTLY_Q8_0` instead of the previous `LLAMA_FTYPE_MOSTLY_Q5_1`, a switch driven by pull request #20828. The developers concluded that Q8_0 represents a more reliably \"known-good\" default than Q5_1, which they described as a format that has grown comparatively old. Release b8929 ships pre-built binaries across a wide range of platforms, including macOS (Apple Silicon with optional KleidiAI support, and Intel x64), iOS, multiple Linux distributions spanning Ubuntu across x64, arm64, and s390x CPUs, with Vulkan, ROCm 7.2, OpenVINO, and SYCL (both FP32 and FP16) backends, as well as Android."
-      ],
-      "article_why_matters": [
-        "Any external software that calls `llama_model_quantize_params` without explicitly specifying a quantization type will now produce Q8_0 models by default, yielding higher accuracy at the cost of larger file sizes.",
-        "Users running quantized LLMs on memory-constrained hardware should be aware that models quantized with the new default will consume more RAM and storage compared to Q5_1.",
-        "The change reflects an ongoing maturation of llama.cpp's quantization defaults, signaling that the project considers Q8_0 the safer, more production-ready choice for out-of-the-box usage."
-      ],
-      "article_source_note": [
-        "Information is drawn directly from the GitHub release page for llama.cpp tag b8929 (https://github.com/ggml-org/llama.cpp/releases/tag/b8929), updated at 09:32 UTC on April 25, 2026. No additional commit-level or changelog context was available on the release page itself."
-      ],
-      "article_confidence": "strong",
       "article_generation_mode": "claude"
     },
     {

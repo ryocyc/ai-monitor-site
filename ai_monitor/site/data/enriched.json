@@ -3644,7 +3644,66 @@
       ],
       "article_confidence": "strong",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-26T00:52:48+00:00",
+      "source_name": "GitHub Claude Context Releases",
+      "source_url": "https://github.com/zilliztech/claude-context/releases.atom",
+      "effective_url": "https://github.com/zilliztech/claude-context/releases.atom",
+      "target_url": "https://github.com/zilliztech/claude-context/releases/tag/v0.1.9",
+      "category": "release",
+      "headline_en": "v0.1.9: chore: bump version to 0.1.9",
+      "summary_en": "title=v0.1.9: chore: bump version to 0.1.9 updated=2026-04-26T00:51:44Z link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.9 summary= content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=v0.1.9: chore: bump version to 0.1.9 updated=2026-04-26T00:51:44Z link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.9 summary= content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=v0.1.9: chore: bump version to 0.1.9",
+        "+updated=2026-04-26T00:51:44Z",
+        "+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.9",
+        "+summary=",
+        "+content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com",
+        "+",
+        " title=v0.1.8",
+        " updated=2026-04-24T15:22:45Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=Signed-off-by: ChengZi chen.zhang@zilliz.com",
+        "-",
+        "-title=v0.0.13: bump version to 0.0.13",
+        "-updated=2025-08-04T10:07:11Z",
+        "-link=https://github.com/zilliztech/claude-context/releases/tag/v0.0.13",
+        "-summary=",
+        "-content=Signed-off-by: ChengZi chen.zhang@zilliz.com"
+      ],
+      "article_identity": "GitHub Claude Context Releases",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github claude context releases||https://github.com/zilliztech/claude-context/releases/tag/v0.1.9",
+      "id": "evt-74efd2c0b65170795912",
+      "content_fingerprint": "title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com v0 1 9 chore bump version to 0 1 9 title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "v0 1 9 chore bump version to 0 1 9 title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com",
+      "github_release_signal_fingerprint": "version chore bump version to version title version chore bump version to version updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag version summary content signed off by cheney zhang chen zhang zilliz com title version chore bump version to version updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag version summary content signed off by cheney zhang chen zhang zilliz com",
+      "article_h1": "Zilliz Publishes claude-context v0.1.9 Release",
+      "article_standfirst": "Zilliz has tagged version 0.1.9 of its claude-context project on GitHub, marking a routine version bump with no accompanying changelog.",
+      "article_body": [
+        "Zilliz released v0.1.9 of its claude-context repository on GitHub on April 26, 2026. The release, tagged and signed off by Cheney Zhang, consists solely of a version-number bump — no changelog, release notes, or description of changes are included in the release page. The repository, which appears to be an open-source tool for managing context with Claude, has now incremented to the 0.1.9 patch release. This follows an active period of releases on the zilliztech GitHub organisation, with v0.1.8 and earlier versions also publicly available."
+      ],
+      "article_why_matters": [
+        "Users tracking claude-context for updates will want to note that this release carries no documented changes beyond the version number itself.",
+        "The lack of a changelog makes it difficult to determine whether any actual code changes occurred, or if this is purely a versioning ceremony.",
+        "Following the project closely remains the only reliable way to understand what is actually changing between versions."
+      ],
+      "article_source_note": [
+        "This information is drawn directly from the GitHub release page for v0.1.9 on the zilliztech/claude-context repository, accessed on April 26, 2026. The release page contains only the version tag and a signed-off attribution to Cheney Zhang — no diff, no release notes, and no description of changes."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-25T23:57:05+00:00"
+  "generated_at": "2026-04-26T00:53:18+00:00"
 }

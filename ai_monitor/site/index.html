@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-26T00:52:18+00:00">Last built: <span data-utc="2026-04-26T00:52:18+00:00">2026-04-26 00:52 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-26T00:53:19+00:00">Last built: <span data-utc="2026-04-26T00:53:19+00:00">2026-04-26 00:53 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-26T00:52:48+00:00" data-utc="2026-04-26T00:52:48+00:00">2026-04-26 00:52 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-74efd2c0b65170795912.html">Zilliz Publishes claude-context v0.1.9 Release</a></h2>
+              <p class="summary">Zilliz has tagged version 0.1.9 of its claude-context project on GitHub, marking a routine version bump with no accompanying changelog.</p>
+              <div class="card-bottom">
+                <span>GitHub Claude Context Releases</span>
+                <a href="https://github.com/zilliztech/claude-context/releases/tag/v0.1.9">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -175,19 +188,6 @@
               </div>
             </article>
             
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-25T09:39:45+00:00" data-utc="2026-04-25T09:39:45+00:00">2026-04-25 09:39 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/github-llamacpp-releases-42c41d.html">llama.cpp Shifts Default Quantization from Q5_1 to Q8_0 in Release b8929</a></h2>
-              <p class="summary">The llama.cpp project has changed its default model quantization format from Q5_1 to the higher-fidelity Q8_0, a shift that affects any tool relying on the library&#x27;s default quantization settings.</p>
-              <div class="card-bottom">
-                <span>GitHub llama.cpp Releases</span>
-                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8929">Source</a>
-              </div>
-            </article>
-            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-26T00:52:18+00:00";
+    const currentGeneratedAt = "2026-04-26T00:53:19+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
