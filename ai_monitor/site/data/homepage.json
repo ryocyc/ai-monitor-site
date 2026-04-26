@@ -1,7 +1,68 @@
 {
-  "generated_at": "2026-04-26T05:09:02+00:00",
+  "generated_at": "2026-04-26T05:20:10+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-26T05:19:11+00:00",
+      "source_name": "GitHub Codex Releases",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "effective_url": "https://github.com/openai/codex/releases.atom",
+      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3",
+      "category": "release",
+      "headline_en": "rust-v0.126.0-alpha.3",
+      "summary_en": "title=rust-v0.126.0-alpha.3 updated=2026-04-26T05:09:36Z link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3 summary= content=Release 0.126.0-alpha.3",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=rust-v0.126.0-alpha.3 updated=2026-04-26T05:09:36Z link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3 summary= content=Release 0.126.0-alpha.3",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=rust-v0.126.0-alpha.3",
+        "+updated=2026-04-26T05:09:36Z",
+        "+link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3",
+        "+summary=",
+        "+content=Release 0.126.0-alpha.3",
+        "+",
+        " title=0.126.0-alpha.2",
+        " updated=2026-04-25T21:45:37Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=Release 0.124.0-alpha.2",
+        "-",
+        "-title=0.124.0-alpha.1",
+        "-updated=2026-04-23T02:44:31Z",
+        "-link=https://github.com/openai/codex/releases/tag/rust-v0.124.0-alpha.1",
+        "-summary=",
+        "-content=Release 0.124.0-alpha.1"
+      ],
+      "article_identity": "GitHub Codex Releases",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3",
+      "id": "evt-6e38b7eb01a094bff735",
+      "content_fingerprint": "title rust v0 126 0 alpha 3 updated 2026 04 26t05 09 36z link https github com openai codex releases tag rust v0 126 0 alpha 3 summary content release 0 126 0 alpha 3 rust v0 126 0 alpha 3 title rust v0 126 0 alpha 3 updated 2026 04 26t05 09 36z link https github com openai codex releases tag rust v0 126 0 alpha 3 summary content release 0 126 0 alpha 3",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "rust v0 126 0 alpha 3 title rust v0 126 0 alpha 3 updated 2026 04 26t05 09 36z link https github com openai codex releases tag rust v0 126 0 alpha 3 summary content release 0 126 0 alpha 3 title rust v0 126 0 alpha 3 updated 2026 04 26t05 09 36z link https github com openai codex releases tag rust v0 126 0 alpha 3 summary content release 0 126 0 alpha 3",
+      "github_release_signal_fingerprint": "version title version updated 2026 04 26t05 09 36z link https github com openai codex releases tag version summary content release version title version updated 2026 04 26t05 09 36z link https github com openai codex releases tag version summary content release version",
+      "article_h1": "OpenAI Releases Codex Rust SDK Alpha 0.126.0",
+      "article_standfirst": "OpenAI has tagged a new alpha release of its Codex Rust SDK, but public release notes are absent, leaving builders to infer changes from the version bump alone.",
+      "article_body": [
+        "OpenAI published release rust-v0.126.0-alpha.3 to its public Codex repository on April 26, 2026, marking the latest iteration of the project's Rust implementation. No accompanying changelog, commit summary, or release notes are visible on the public release page at this time.",
+        "The Codex repository hosts OpenAI's official client SDK for integrating its AI models into software products. The Rust SDK gives engineers a typed, memory-safe interface to interact with Codex endpoints, fitting into build pipelines and backend services that prefer Rust's performance and safety guarantees. The alpha tag signals this version is pre-stable and subject to breaking changes.",
+        "For developers relying on the Rust SDK in production or prototyping workflows, the lack of release notes means the safest path is to review the actual commits or diff in the repository before upgrading. Teams already pinning to a specific prior release should treat this as a heads-up rather than a green light to update."
+      ],
+      "article_why_matters": [
+        "Rust SDK users have no public changelog for this release, making it difficult to assess whether it fixes bugs, introduces new APIs, or changes behavior without inspecting the commit history directly.",
+        "The alpha tag means the package is not yet stable — teams on strict compatibility requirements should wait for a stable release tag.",
+        "The release was published at 05:09 UTC on April 26, 2026, indicating active development is ongoing even as the broader repository remains in a pre-release state."
+      ],
+      "article_source_note": [
+        "This brief is based on the public GitHub release page for the openai/codex repository. The release tag and timestamp are the only substantive data points available; no changelog, commit messages, or release description are present on the page, which limits what can be reported with confidence."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-26T04:25:24+00:00",
       "source_name": "Hugging Face Blog",
@@ -153,65 +214,6 @@
         "This information comes from the official Hugging Face Changelog, dated April 17, 2026, which received 136 upvotes (131 net). The changelog entry is brief and does not include the full technical specification for /agents.md; readers looking to implement against it should consult the linked documentation directly."
       ],
       "article_confidence": "strong",
-      "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-26T00:52:48+00:00",
-      "source_name": "GitHub Claude Context Releases",
-      "source_url": "https://github.com/zilliztech/claude-context/releases.atom",
-      "effective_url": "https://github.com/zilliztech/claude-context/releases.atom",
-      "target_url": "https://github.com/zilliztech/claude-context/releases/tag/v0.1.9",
-      "category": "release",
-      "headline_en": "v0.1.9: chore: bump version to 0.1.9",
-      "summary_en": "title=v0.1.9: chore: bump version to 0.1.9 updated=2026-04-26T00:51:44Z link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.9 summary= content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=v0.1.9: chore: bump version to 0.1.9 updated=2026-04-26T00:51:44Z link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.9 summary= content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,8 @@",
-        "+title=v0.1.9: chore: bump version to 0.1.9",
-        "+updated=2026-04-26T00:51:44Z",
-        "+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.9",
-        "+summary=",
-        "+content=Signed-off-by: Cheney Zhang chen.zhang@zilliz.com",
-        "+",
-        " title=v0.1.8",
-        " updated=2026-04-24T15:22:45Z",
-        "@@ -52,8 +58,2 @@",
-        " summary=",
-        " content=Signed-off-by: ChengZi chen.zhang@zilliz.com",
-        "-",
-        "-title=v0.0.13: bump version to 0.0.13",
-        "-updated=2025-08-04T10:07:11Z",
-        "-link=https://github.com/zilliztech/claude-context/releases/tag/v0.0.13",
-        "-summary=",
-        "-content=Signed-off-by: ChengZi chen.zhang@zilliz.com"
-      ],
-      "article_identity": "GitHub Claude Context Releases",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "release||github claude context releases||https://github.com/zilliztech/claude-context/releases/tag/v0.1.9",
-      "id": "evt-74efd2c0b65170795912",
-      "content_fingerprint": "title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com v0 1 9 chore bump version to 0 1 9 title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "v0 1 9 chore bump version to 0 1 9 title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com title v0 1 9 chore bump version to 0 1 9 updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag v0 1 9 summary content signed off by cheney zhang chen zhang zilliz com",
-      "github_release_signal_fingerprint": "version chore bump version to version title version chore bump version to version updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag version summary content signed off by cheney zhang chen zhang zilliz com title version chore bump version to version updated 2026 04 26t00 51 44z link https github com zilliztech claude context releases tag version summary content signed off by cheney zhang chen zhang zilliz com",
-      "article_h1": "Zilliz Publishes claude-context v0.1.9 Release",
-      "article_standfirst": "Zilliz has tagged version 0.1.9 of its claude-context project on GitHub, marking a routine version bump with no accompanying changelog.",
-      "article_body": [
-        "Zilliz released v0.1.9 of its claude-context repository on GitHub on April 26, 2026. The release, tagged and signed off by Cheney Zhang, consists solely of a version-number bump — no changelog, release notes, or description of changes are included in the release page. The repository, which appears to be an open-source tool for managing context with Claude, has now incremented to the 0.1.9 patch release. This follows an active period of releases on the zilliztech GitHub organisation, with v0.1.8 and earlier versions also publicly available."
-      ],
-      "article_why_matters": [
-        "Users tracking claude-context for updates will want to note that this release carries no documented changes beyond the version number itself.",
-        "The lack of a changelog makes it difficult to determine whether any actual code changes occurred, or if this is purely a versioning ceremony.",
-        "Following the project closely remains the only reliable way to understand what is actually changing between versions."
-      ],
-      "article_source_note": [
-        "This information is drawn directly from the GitHub release page for v0.1.9 on the zilliztech/claude-context repository, accessed on April 26, 2026. The release page contains only the version tag and a signed-off attribution to Cheney Zhang — no diff, no release notes, and no description of changes."
-      ],
-      "article_confidence": "weak",
       "article_generation_mode": "claude"
     },
     {

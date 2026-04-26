@@ -3812,7 +3812,129 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-26T05:19:11+00:00",
+      "source_name": "GitHub Codex Releases",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "effective_url": "https://github.com/openai/codex/releases.atom",
+      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3",
+      "category": "release",
+      "headline_en": "rust-v0.126.0-alpha.3",
+      "summary_en": "title=rust-v0.126.0-alpha.3 updated=2026-04-26T05:09:36Z link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3 summary= content=Release 0.126.0-alpha.3",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=rust-v0.126.0-alpha.3 updated=2026-04-26T05:09:36Z link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3 summary= content=Release 0.126.0-alpha.3",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=rust-v0.126.0-alpha.3",
+        "+updated=2026-04-26T05:09:36Z",
+        "+link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3",
+        "+summary=",
+        "+content=Release 0.126.0-alpha.3",
+        "+",
+        " title=0.126.0-alpha.2",
+        " updated=2026-04-25T21:45:37Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=Release 0.124.0-alpha.2",
+        "-",
+        "-title=0.124.0-alpha.1",
+        "-updated=2026-04-23T02:44:31Z",
+        "-link=https://github.com/openai/codex/releases/tag/rust-v0.124.0-alpha.1",
+        "-summary=",
+        "-content=Release 0.124.0-alpha.1"
+      ],
+      "article_identity": "GitHub Codex Releases",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3",
+      "id": "evt-6e38b7eb01a094bff735",
+      "content_fingerprint": "title rust v0 126 0 alpha 3 updated 2026 04 26t05 09 36z link https github com openai codex releases tag rust v0 126 0 alpha 3 summary content release 0 126 0 alpha 3 rust v0 126 0 alpha 3 title rust v0 126 0 alpha 3 updated 2026 04 26t05 09 36z link https github com openai codex releases tag rust v0 126 0 alpha 3 summary content release 0 126 0 alpha 3",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "rust v0 126 0 alpha 3 title rust v0 126 0 alpha 3 updated 2026 04 26t05 09 36z link https github com openai codex releases tag rust v0 126 0 alpha 3 summary content release 0 126 0 alpha 3 title rust v0 126 0 alpha 3 updated 2026 04 26t05 09 36z link https github com openai codex releases tag rust v0 126 0 alpha 3 summary content release 0 126 0 alpha 3",
+      "github_release_signal_fingerprint": "version title version updated 2026 04 26t05 09 36z link https github com openai codex releases tag version summary content release version title version updated 2026 04 26t05 09 36z link https github com openai codex releases tag version summary content release version",
+      "article_h1": "OpenAI Releases Codex Rust SDK Alpha 0.126.0",
+      "article_standfirst": "OpenAI has tagged a new alpha release of its Codex Rust SDK, but public release notes are absent, leaving builders to infer changes from the version bump alone.",
+      "article_body": [
+        "OpenAI published release rust-v0.126.0-alpha.3 to its public Codex repository on April 26, 2026, marking the latest iteration of the project's Rust implementation. No accompanying changelog, commit summary, or release notes are visible on the public release page at this time.",
+        "The Codex repository hosts OpenAI's official client SDK for integrating its AI models into software products. The Rust SDK gives engineers a typed, memory-safe interface to interact with Codex endpoints, fitting into build pipelines and backend services that prefer Rust's performance and safety guarantees. The alpha tag signals this version is pre-stable and subject to breaking changes.",
+        "For developers relying on the Rust SDK in production or prototyping workflows, the lack of release notes means the safest path is to review the actual commits or diff in the repository before upgrading. Teams already pinning to a specific prior release should treat this as a heads-up rather than a green light to update."
+      ],
+      "article_why_matters": [
+        "Rust SDK users have no public changelog for this release, making it difficult to assess whether it fixes bugs, introduces new APIs, or changes behavior without inspecting the commit history directly.",
+        "The alpha tag means the package is not yet stable — teams on strict compatibility requirements should wait for a stable release tag.",
+        "The release was published at 05:09 UTC on April 26, 2026, indicating active development is ongoing even as the broader repository remains in a pre-release state."
+      ],
+      "article_source_note": [
+        "This brief is based on the public GitHub release page for the openai/codex repository. The release tag and timestamp are the only substantive data points available; no changelog, commit messages, or release description are present on the page, which limits what can be reported with confidence."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-26T05:19:10+00:00",
+      "source_name": "GitHub llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8935",
+      "category": "release",
+      "headline_en": "b8935: opencl: add iq4_nl support (#22272)",
+      "summary_en": "title=b8935: opencl: add iq4_nl support (#22272) updated=2026-04-26T04:21:58Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8935 summary= content=opencl: add general support for iq4_nl opencl: add iq4_nl gemm/gemv for adreno opencl: pack 2 lut entries into a uint",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=b8935: opencl: add iq4_nl support (#22272) updated=2026-04-26T04:21:58Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8935 summary= content=opencl: add general support for iq4_nl opencl: add iq4_nl gemm/gemv for adreno opencl: pack 2 lut entries into a uint",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=b8935: opencl: add iq4_nl support (#22272)",
+        "+updated=2026-04-26T04:21:58Z",
+        "+link=https://github.com/ggml-org/llama.cpp/releases/tag/b8935",
+        "+summary=",
+        "+content=opencl: add general support for iq4_nl opencl: add iq4_nl gemm/gemv for adreno opencl: pack 2 lut entries into a uint",
+        "+",
+        " title=b8934",
+        " updated=2026-04-26T03:07:40Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=ggml-webgpu: enable FLASH_ATTN_EXT on browser without subgroup matrix ( #22199 ) ggml-webgpu: add tile flash attention fallback ggml-webgpu: add new fields and discard usage of mnk for tile version ggml-webgpu: modify the vec path to discard the mnk parameter ggml-webgpu: enable flash attention vec and tile version for broswer ggml-webgpu: stagging KV for flash attention tile version formatting turn on subgroup uniformity check remove Q_TILE as it is always 1 for vec path make row_max and exp_sum to local register make different bindings with same underlying buffer to have the same usage flags move path selection into the shader library and have the host consume a single flash-attn decision object. turn off skip_validation and address buffer overlapping when nwg==1 formatting merge binding when kv overlap macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "-",
+        "-title=b8920",
+        "-updated=2026-04-24T15:26:54Z",
+        "-link=https://github.com/ggml-org/llama.cpp/releases/tag/b8920",
+        "-summary=",
+        "-content=metal : print GPU description ( #22318 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)"
+      ],
+      "article_identity": "GitHub llama.cpp Releases",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8935",
+      "id": "evt-e9ec8990c2cf213f0b6c",
+      "content_fingerprint": "title b8935 opencl add iq4 nl support 22272 updated 2026 04 26t04 21 58z link https github com ggml org llama cpp releases tag b8935 summary content opencl add general support for iq4 nl opencl add iq4 nl gemm gemv for adreno opencl pack 2 lut entries into a uint b8935 opencl add iq4 nl support 22272 title b8935 opencl add iq4 nl support 22272 updated 2026 04 26t04 21 58z link https github com ggml org llama cpp releases tag b8935 summary content opencl add general support for iq4 nl opencl add iq4 nl gemm gemv for adreno opencl pack 2 lut entries into a uint",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "b8935 opencl add iq4 nl support 22272 title b8935 opencl add iq4 nl support 22272 updated 2026 04 26t04 21 58z link https github com ggml org llama cpp releases tag b8935 summary content opencl add general support for iq4 nl opencl add iq4 nl gemm gemv for adreno opencl pack 2 lut entries into a uint title b8935 opencl add iq4 nl support 22272 updated 2026 04 26t04 21 58z link https github com ggml org llama cpp releases tag b8935 summary content opencl add general support for iq4 nl opencl add iq4 nl gemm gemv for adreno opencl pack 2 lut entries into a uint",
+      "github_release_signal_fingerprint": "version opencl add iq4 nl support 22272 title version opencl add iq4 nl support 22272 updated 2026 04 26t04 21 58z link https github com ggml org llama cpp releases tag version summary content opencl add general support for iq4 nl opencl add iq4 nl gemm gemv for adreno opencl pack 2 lut entries into a uint title version opencl add iq4 nl support 22272 updated 2026 04 26t04 21 58z link https github com ggml org llama cpp releases tag version summary content opencl add general support for iq4 nl opencl add iq4 nl gemm gemv for adreno opencl pack 2 lut entries into a uint",
+      "article_h1": "llama.cpp Adds OpenCL Support for IQ4_NL Quantization in New Commit",
+      "article_standfirst": "The llama.cpp project merged a commit enabling the IQ4_NL quantization format over OpenCL, extending GPU-accelerated inference to a broader range of hardware including Qualcomm Adreno chips.",
+      "article_body": [
+        "A new commit to the llama.cpp repository (tag b8935) adds OpenCL support for the IQ4_NL quantization format, closing pull request #22272. The changes cover general IQ4_NL support via OpenCL, specialized GEMM/GEMV kernels for Qualcomm Adreno GPUs, and an optimization that packs two lookup table entries into a single unsigned integer value.",
+        "IQ4_NL is a quantized integer format used to reduce the memory footprint and computational cost of large language models run locally. llama.cpp is a standalone, dependency-free C/C++ inference engine for running LLMs on CPU and GPU; it is widely used by developers who want to run models without relying on cloud APIs or vendor SDKs. OpenCL support broadens hardware reach beyond NVIDIA (CUDA) and Apple Silicon (Metal) to GPUs and accelerators that expose the OpenCL compute API.",
+        "For inference engineers and app developers running models on non-standard or embedded GPU hardware, the Adreno-specific GEMM/GEMV kernels are the most concrete addition. The lookup-table packing optimization is a low-level memory efficiency tweak that benefits any OpenCL backend. Builders working on local AI tooling, quantized model servers, or edge deployments are the primary audience for this change."
+      ],
+      "article_why_matters": [
+        "IQ4_NL quantization can significantly reduce VRAM and RAM requirements for running large models locally, and this commit makes that format accessible on OpenCL-capable hardware.",
+        "Adreno GPU kernels expand the set of supported mobile and embedded GPUs beyond the existing CUDA and Metal backends in llama.cpp.",
+        "The lookup-table packing optimization tightens memory bandwidth usage, which can improve throughput on memory-constrained or integrated GPU setups."
+      ],
+      "article_source_note": [
+        "This brief is drawn from the GitHub release tag page for llama.cpp commit b8935. The source is thin—it contains only a short list of technical changes with no rationale, performance data, or links to the underlying pull request discussion. Who would notice or benefit most from these changes depends on factors not present in the source text."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-26T04:26:22+00:00"
+  "generated_at": "2026-04-26T05:20:09+00:00"
 }

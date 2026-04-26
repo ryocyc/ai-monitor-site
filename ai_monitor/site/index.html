@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-26T05:09:02+00:00">Last built: <span data-utc="2026-04-26T05:09:02+00:00">2026-04-26 05:09 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-26T05:20:10+00:00">Last built: <span data-utc="2026-04-26T05:20:10+00:00">2026-04-26 05:20 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-26T05:19:11+00:00" data-utc="2026-04-26T05:19:11+00:00">2026-04-26 05:19 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-6e38b7eb01a094bff735.html">OpenAI Releases Codex Rust SDK Alpha 0.126.0</a></h2>
+              <p class="summary">OpenAI has tagged a new alpha release of its Codex Rust SDK, but public release notes are absent, leaving builders to infer changes from the version bump alone.</p>
+              <div class="card-bottom">
+                <span>GitHub Codex Releases</span>
+                <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Changelog</span>
                 <a href="https://huggingface.co/changelog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-26T00:52:48+00:00" data-utc="2026-04-26T00:52:48+00:00">2026-04-26 00:52 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-74efd2c0b65170795912.html">Zilliz Publishes claude-context v0.1.9 Release</a></h2>
-              <p class="summary">Zilliz has tagged version 0.1.9 of its claude-context project on GitHub, marking a routine version bump with no accompanying changelog.</p>
-              <div class="card-bottom">
-                <span>GitHub Claude Context Releases</span>
-                <a href="https://github.com/zilliztech/claude-context/releases/tag/v0.1.9">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-26T05:09:02+00:00";
+    const currentGeneratedAt = "2026-04-26T05:20:10+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
