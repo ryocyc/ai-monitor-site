@@ -1,7 +1,89 @@
 {
-  "generated_at": "2026-04-26T23:00:43+00:00",
+  "generated_at": "2026-04-26T23:11:30+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-26T23:10:47+00:00",
+      "source_name": "OpenAI Newsroom",
+      "source_url": "https://openai.com/news/rss.xml",
+      "effective_url": "https://openai.com/news/rss.xml",
+      "target_url": "https://openai.com/index/our-principles",
+      "category": "news",
+      "headline_en": "Our Principles",
+      "summary_en": "OpenAI newsroom changed. Most visible article: \"Our Principles\".",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=Our Principles published=Sun, 26 Apr 2026 16:00:00 GMT link=https://openai.com/index/our-principles description=Our mission is to ensure that AGI benefits all of humanity. Sam Altman shares five principles that guide our work.",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,6 +1,6 @@",
+        "-title=Introducing GPT-5.5",
+        "-published=Thu, 23 Apr 2026 11:00:00 GMT",
+        "-link=https://openai.com/index/introducing-gpt-5-5",
+        "-description=Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.",
+        "+title=Our Principles",
+        "+published=Sun, 26 Apr 2026 16:00:00 GMT",
+        "+link=https://openai.com/index/our-principles",
+        "+description=Our mission is to ensure that AGI benefits all of humanity. Sam Altman shares five principles that guide our work.",
+        " ",
+        " title=GPT-5.5 System Card",
+        "@@ -9,8 +9,8 @@",
+        " description=",
+        " ",
+        "-title=Automations",
+        "-published=Thu, 23 Apr 2026 10:00:00 GMT",
+        "-link=https://openai.com/academy/codex-automations",
+        "-description=Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort.",
+        "... DIFF TRUNCATED ...",
+        "+",
+        " title=Workspace agents",
+        " published=Wed, 22 Apr 2026 10:00:00 GMT",
+        " link=https://openai.com/academy/workspace-agents",
+        " description=Learn how to build, use, and scale workspace agents in ChatGPT to automate repeatable workflows, connect tools, and streamline team operations.",
+        "-",
+        "-title=Speeding up agentic workflows with WebSockets in the Responses API",
+        "-published=Wed, 22 Apr 2026 10:00:00 GMT",
+        "-link=https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+        "-description=A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency.",
+        " ",
+        " title=Introducing workspace agents in ChatGPT",
+        "@@ -93,7 +98,2 @@",
+        " link=https://openai.com/index/codex-for-almost-everything",
+        " description=The updated Codex app for macOS and Windows adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows.",
+        "-",
+        "-title=Introducing GPT-Rosalind for life sciences research",
+        "-published=Thu, 16 Apr 2026 01:00:00 GMT",
+        "-link=https://openai.com/index/introducing-gpt-rosalind",
+        "-description=OpenAI introduces GPT-Rosalind, a frontier reasoning model built to accelerate drug discovery, genomics analysis, protein reasoning, and scientific research workflows."
+      ],
+      "article_identity": "our-principles",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "news||openai newsroom||our-principles",
+      "id": "evt-35f2e09a48d7b940877d",
+      "content_fingerprint": "our principles openai newsroom changed most visible article our principles title our principles published sun 26 apr 2026 16 00 00 gmt link https openai com index our principles description our mission is to ensure that agi benefits all of humanity sam altman shares five principles that guide our work",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "our principles openai newsroom changed most visible article our principles title our principles published sun 26 apr 2026 16 00 00 gmt link https openai com index our principles description our mission is to ensure that agi benefits all of humanity sam altman shares five principles that guide our work",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "OpenAI Publishes \"Our Principles\" Essay, Outlining Five Guiding Tenets for AGI Development",
+      "article_standfirst": "OpenAI on April 26 published a new \"Our Principles\" piece authored by Sam Altman, laying out five principles the company says will govern its work as it pursues artificial general intelligence.",
+      "article_body": [
+        "OpenAI published an essay titled \"Our Principles\" on Sunday, April 26, 2026, authored by CEO Sam Altman. The piece marks a visible update to the company's public communications around how it approaches AGI development, and was promoted via the OpenAI Newsroom RSS feed as the most prominent new entry that day.",
+        "According to the brief description accompanying the post, the five principles are framed as the cornerstone of OpenAI's mission — described in the piece as ensuring that AGI benefits all of humanity. No further detail on the specific principles is available from the source text.",
+        "For builders and developers working with OpenAI's models and APIs, public-facing principles documents can signal shifts in strategic priorities, safety commitments, or product direction that may eventually affect API access, model behavior, or enterprise agreements. The essay is accessible at openai.com/index/our-principles."
+      ],
+      "article_why_matters": [
+        "Sam Altman personally authored the piece, signaling top-level executive commitment to a stated ethical framework as OpenAI scales its systems.",
+        "The \"Our Principles\" framing directly addresses the company's stated mission of broad human benefit — language that shapes investor, developer, and regulator expectations of OpenAI.",
+        "Without a full article text available in the source, readers should treat the principles as framed by OpenAI's own communications and seek the original post for the complete five-point framework."
+      ],
+      "article_source_note": [
+        "This brief is based on the OpenAI Newsroom RSS feed entry for April 26, 2026. The source provides the article title, author (Sam Altman), publication date, and a short description — the full text of the principles essay is not included in the captured source. The target URL (openai.com/index/our-principles) was the source of the RSS metadata, but the full article content was not fetched."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-26T21:45:37+00:00",
       "source_name": "Hugging Face Blog",
@@ -420,50 +502,6 @@
         "Information drawn from DeepSeek's official API documentation at api-docs.deepseek.com, which specifies the deprecation timeline, base URLs, and current model lineup. Developers should monitor the same documentation for any updates to the July 24, 2026 cutoff date."
       ],
       "article_confidence": "strong",
-      "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-25T11:46:30+00:00",
-      "source_name": "Fireworks AI Pricing",
-      "source_url": "https://fireworks.ai/pricing",
-      "effective_url": "https://fireworks.ai/pricing",
-      "target_url": "https://fireworks.ai/pricing",
-      "category": "docs",
-      "headline_en": "Excited to announce that Fireworks Training is now in preview. Train and deploy frontier models on one platform. Learn more Platform Mode...",
-      "summary_en": "Excited to announce that Fireworks Training is now in preview. Train and deploy frontier models on one platform. Learn more Platform Models Developers Pricing Training Partners Resources Company Log In Get Started Pricing to seamlessly scale from idea to enterprise Start building in seconds, self-serve. Contact us f...",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "Excited to announce that Fireworks Training is now in preview. Train and deploy frontier models on one platform. Learn more Platform Models Developers Pricing Training Partners Resources Company Log In Get Started Pricing to seamlessly scale from idea to enterprise Start building in seconds, self-serve. Contact us for enterprise deployments with faster speeds, lower costs, and higher rate limits. Get started Contact Us Serverless Inference Get started in seconds with per token pricing, zero setup and no cold starts See Pricing Fine Tuning Customize open models with your own data with minimal setup See Pricing On Demand Deployments Pay per GPU second for faster speeds, higher rate limits, and lower costs at scale See Pricing Serverless Pricing Pay per token, with high rate limits and pos...",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1 +1 @@",
-        "-Excited to announce that Fireworks Training is now in preview. Train and deploy frontier models on one platform. Learn more Platform Models Developers Pricing Training Partners Resources Company Log In Get Started Pricing to seamlessly scale from idea to enterprise Start building in seconds, self-serve. Contact us for enterprise deployments with faster speeds, lower costs, and higher rate limits. Get started Contact Us Serverless Inference Get started in seconds with per token pricing, zero setup and no cold starts See Pricing Fine Tuning Customize open models with your own data with minimal setup See Pricing On Demand Deployments Pay per GPU second for faster speeds, higher rate limits, and lower costs at scale See Pricing Serverless Pricing Pay per token, with high rate limits and postpaid billing. Get started with $1 in free credits. Text and Vision Base model $ / 1M tokens Less than 4B parameters $0.10 4B - 16B parameters $0.20 More than 16B parameters $0.90 MoE 0B - 56B parameters (e.g. Mixtral 8x7B) $0.50 MoE 56.1B - 176B parameters (e.g. DBRX, Mixtral 8x22B) $1.20 DeepSeek V3 family $0.56 input, $1.68 output GLM-4.7 $0.60 input, $2.20 output GLM-5 $1.00 input, $0.20 cached input, $3.20 output GLM-5.1 $1.40 input, $0.26 cached input, $4.40 output Qwen3 VL 30B A3B $0.15 input, $0.60 output Kimi K2.5 $0.60 input, $0.10 cached input, $3.00 output Kimi K2.5 Turbo (Preview) $0.99 input, $0.16 cached input, $4.94 output Kimi K2.6 $0.95 input, $0.16 cached input, $4.00 output Kimi K2.6 Priority (Preview) $1.50 input, $0.22 cached input, $6.00 output Kimi K2.6 Turbo (Preview) $2.00 input, $0.30 cached input, $8.00 output OpenAI gpt-oss-120b $0.15 input, $0.60 output OpenAI gpt-oss-20b $0.07 input, $0.30 output MiniMax 2.5 $0.30 input, $0.03 cached input, $1.20 output MiniMax 2.7 $0.30 input, $0.06 cached input, $1.20 output • Cached input tokens are priced at 50% for all text and vision language models, unless otherwise specified above • Batch inference is priced at 50% of our serverless pricing for both input and output tokens. Learn more here . Speech to Text (STT) Pay per second of audio input Model $ / audio minute (billed per second) Whisper-v3-large $0.0015 Whisper-v3-large-turbo $0.0009 • Diarization adds a 40% surcharge to pricing • Batch API prices are reduced 40% Image Generation Image model name $ / step Approx $ / image All Non-Flux Models (SDXL, Playground, etc) $0.00013 per step ($0.0039 per 30 step image) $0.0002 per step ($0.006 per 30 step image) FLUX.1 [dev] $0.0005 per step ($0.014 per 28 step image) N/A on serverless FLUX.1 [schnell] $0.00035 per step ($0.0014 per 4 step image) N/A on serverless FLUX.1 Kontext Pro $0.04 per image N/A FLUX.1 Kontext Max $0.08 per image N/A • All models besides the Flux Kontext models are charged by the number of inference steps (denoising iterations). The Flux Kontext models are charged a flat rate per generated image. Embeddings Base model parameter count $ / 1M input tokens up to 150M $0.008 150M - 350M $0.016 Qwen3 8B $0.1 Fine Tuning Pricing Serve fine-tuned models for the same price as base models. Supervised & Preference Fine Tuning Priced per 1M training tokens Base Model LoRA SFT LoRA DPO Full Param SFT Full Param DPO Models up to 16B parameters $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $24.00 Models &gt;300B (e.g. DeepSeek V3, Kimi K2) $10.00 $20.00 $20.00 $40.00 • SFT and DPO prices are shown in $ per 1M training tokens. Training tokens can be estimated with number of tokens in training dataset * number of epochs. Estimation should be multiplied by the average number conversation turns /2 for tuning with intermediate thinking traces. • Please note that when fine-tuning with reasoning traces, including the reasoning_content field for assistant turns will increase the total number of tuned tokens because multi-turn conversations are unrolled into user, assistant, and thinking traces. For further details, please refer to example 2 in the documentation about SFT fine tuning . • Fine-tuning with images (VLM supervised fine-tuning) is also billed per 1M tokens. See this FAQ on calculating image tokens. Reinforcement Fine Tuning Reinforcement fine tuning jobs are priced per GPU hour (billed per second), at the same price as Fireworks on-demand deployment. Please see the section below for details on RFT pricing. On-Demand Pricing Pay per GPU second, with no extra charges for start-up times On demand deployments Note: prices will increase by $1/hour per GPU type starting May 1, 2026. GPU Type Current ($ / hour) through Apr 30, 2026 Upcoming ($ / hour) from May 1, 2026 H100 80 GB GPU $6.00 $7.00 H200 141 GB GPU $6.00 $7.00 B200 180 GB GPU $9.00 $10.00 B300 288 GB GPU $11.00 $12.00 • For estimates of per-token prices, see this blog . Results vary by use case, but we often observe improvements like ~250% higher throughput and 50% faster speed on Fireworks compared to open source inference engines. Platform AI Native Enterprise Customers Use Cases Code Assistance Conversational AI Agentic Systems Search Multimodal Enterprise RAG Developers Model Library Docs CLI API Changelog Pricing Serverless On-Demand Fine Tuning Enterprise Partners Cloud and Infrastructure Consulting and Services Technology Fireworks for Startups Resources Blog Demos Cookbooks Company Leadership Investors Careers Trust Center © 2026 Fireworks AI, Inc. All rights reserved.",
-        "+Excited to announce that Fireworks Training is now in preview. Train and deploy frontier models on one platform. Learn more Platform Models Developers Pricing Training Partners Resources Company Log In Get Started Pricing to seamlessly scale from idea to enterprise Start building in seconds, self-serve. Contact us for enterprise deployments with faster speeds, lower costs, and higher rate limits. Get started Contact Us Serverless Inference Get started in seconds with per token pricing, zero setup and no cold starts See Pricing Fine Tuning Customize open models with your own data with minimal setup See Pricing On Demand Deployments Pay per GPU second for faster speeds, higher rate limits, and lower costs at scale See Pricing Serverless Pricing Pay per token, with high rate limits and postpaid billing. Get started with $1 in free credits. Text and Vision Base model $ / 1M tokens Less than 4B parameters $0.10 4B - 16B parameters $0.20 More than 16B parameters $0.90 MoE 0B - 56B parameters (e.g. Mixtral 8x7B) $0.50 MoE 56.1B - 176B parameters (e.g. DBRX, Mixtral 8x22B) $1.20 DeepSeek V3 family $0.56 input, $1.68 output GLM-4.7 $0.60 input, $2.20 output GLM-5 $1.00 input, $0.20 cached input, $3.20 output GLM-5.1 $1.40 input, $0.26 cached input, $4.40 output Qwen3 VL 30B A3B $0.15 input, $0.60 output Kimi K2.5 $0.60 input, $0.10 cached input, $3.00 output Kimi K2.5 Turbo (Preview) $0.99 input, $0.16 cached input, $4.94 output Kimi K2.6 $0.95 input, $0.16 cached input, $4.00 output Kimi K2.6 Priority (Preview) $1.50 input, $0.22 cached input, $6.00 output Kimi K2.6 Turbo (Preview) $2.00 input, $0.30 cached input, $8.00 output OpenAI gpt-oss-120b $0.15 input, $0.60 output OpenAI gpt-oss-20b $0.07 input, $0.30 output MiniMax 2.5 $0.30 input, $0.03 cached input, $1.20 output MiniMax 2.7 $0.30 input, $0.06 cached input, $1.20 output • Cached input tokens are priced at 50% for all text and vision language models, unless otherwise specified above • Batch inference is priced at 50% of our serverless pricing for both input and output tokens. Learn more here . Speech to Text (STT) Pay per second of audio input Model $ / audio minute (billed per second) Whisper-v3-large $0.0015 Whisper-v3-large-turbo $0.0009 • Diarization adds a 40% surcharge to pricing • Batch API prices are reduced 40% Image Generation Image model name $ / step Approx $ / image All Non-Flux Models (SDXL, Playground, etc) $0.00013 per step ($0.0039 per 30 step image) $0.0002 per step ($0.006 per 30 step image) FLUX.1 [dev] $0.0005 per step ($0.014 per 28 step image) N/A on serverless FLUX.1 [schnell] $0.00035 per step ($0.0014 per 4 step image) N/A on serverless FLUX.1 Kontext Pro $0.04 per image N/A FLUX.1 Kontext Max $0.08 per image N/A • All models besides the Flux Kontext models are charged by the number of inference steps (denoising iterations). The Flux Kontext models are charged a flat rate per generated image. Embeddings Base model parameter count $ / 1M input tokens up to 150M $0.008 150M - 350M $0.016 Qwen3 8B $0.1 Fine Tuning Pricing Serve fine-tuned models for the same price as base models. Supervised & Preference Fine Tuning Priced per 1M training tokens Base Model LoRA SFT LoRA DPO Full Param SFT Full Param DPO Models up to 16B parameters $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $24.00 Models &gt;300B (e.g. DeepSeek V3, Kimi K2) $10.00 $20.00 $20.00 $40.00 • SFT and DPO prices are shown in $ per 1M training tokens. Training tokens can be estimated with number of tokens in training dataset * number of epochs. Estimation should be multiplied by the average number conversation turns /2 for tuning with intermediate thinking traces. • Please note that when fine-tuning with reasoning traces, including the reasoning_content field for assistant turns will increase the total number of tuned tokens because multi-turn conversations are unrolled into user, assistant, and thinking traces. For further details, please refer to example 2 in the documentation about SFT fine tuning . • Fine-tuning with images (VLM supervised fine-tuning) is also billed per 1M tokens. See this FAQ on calculating image tokens. Reinforcement Fine Tuning Reinforcement fine tuning jobs are priced per GPU hour (billed per second), at the same price as Fireworks on-demand deployment. Please see the section below for details on RFT pricing. On-Demand Pricing Pay per GPU second, with no extra charges for start-up times On demand deployments Note: prices will increase by $1/hour per GPU type starting May 1, 2026. GPU Type Current ($ / hour) through Apr 30, 2026 Upcoming ($ / hour) from May 1, 2026 H100 80 GB GPU $6.00 $7.00 H200 141 GB GPU $6.00 $7.00 B200 180 GB GPU $9.00 $10.00 B300 288 GB GPU $11.00 $12.00 • For estimates of per-token prices, see this blog . Results vary by use case, but we often observe improvements like ~250% higher throughput and 50% faster speed on Fireworks compared to open source inference engines. Platform AI Native Enterprise Customers Use Cases Code Assistance Conversational AI Agentic Systems Search Multimodal Enterprise RAG Developers Model Library Docs CLI API Changelog Pricing Serverless On-Demand Fine Tuning Enterprise Partners Cloud and Infrastructure Consulting and Services Technology Fireworks for Startups Resources Blog Demos Cookbooks Company Leadership Investors Careers Trust Center © 2026 Fireworks AI, Inc. All rights reserved. Fireworks - Pricing"
-      ],
-      "article_identity": "Fireworks AI Pricing",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "docs||fireworks ai pricing||excited to announce that fireworks training is now in preview train and deploy frontier models on one platform learn more platform mode excited to announce that fireworks training ",
-      "id": "evt-4b5982aebe054af935d8",
-      "content_fingerprint": "excited to announce that fireworks training is now in preview train and deploy frontier models on one platform learn more platform models developers pricing training partners resources company log in get started pricing to seamlessly scale from idea to enterprise start building in seconds self serve contact us for enterprise deployments with faster speeds lower costs and higher rate limits get started contact us serverless inference get started in seconds with per token pricing zero setup and no cold starts see pricing fine tuning customize open models with your own data with minimal setup see",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "excited to announce that fireworks training is now in preview train and deploy frontier models on one platform learn more platform mode excited to announce that fireworks training is now in preview train and deploy frontier models on one platform learn more platform models developers pricing training partners resources company log in get started pricing to seamlessly scale from idea to enterprise start building in seconds self serve contact us f excited to announce that fireworks training is now in preview train and deploy frontier models on one platform learn more platform models developers pricing training partners resources company log in get started pricing to seamlessly scale from idea to enterprise start building in seconds self serve contact us for enterprise deployments with faster speeds lower costs and higher rate limits get started contact us serverless inference get started in seconds with per token pricing zero setup and no cold starts see pricing fine tuning customize open models with your own data with minimal setup see pricing on demand deployments pay per gpu second for faster speeds higher rate limits and lower costs at scale see pricing serverless pricing pay per",
-      "github_release_signal_fingerprint": "",
-      "article_h1": "Fireworks AI Launches Training Platform Preview, Enabling End-to-End Model Development",
-      "article_standfirst": "Fireworks AI has entered the model training market with a preview release that lets developers train and deploy frontier AI models on a single unified platform.",
-      "article_body": [
-        "Fireworks AI has announced that its training capability is now available in preview, allowing users to train and deploy frontier AI models on a single platform. The addition positions Fireworks as a more complete end-to-end provider, covering both inference and training workloads. The announcement appeared as a prominent banner across the company's pricing page, with a call-to-action directing visitors to learn more at a dedicated training page.\n\nThe pricing page outlines multiple service tiers to serve different customer needs. Serverless Inference offers per-token pricing with zero setup and no cold starts. Fine Tuning allows customization of open models with a user's own data and minimal configuration. On Demand Deployments are billed per GPU second, promising faster speeds, higher rate limits, and lower costs at scale. For larger deployments, the company invites users to contact its team directly.\n\nFor enterprise customers, Fireworks is offering direct sales engagement, promising faster speeds, lower costs, and higher rate limits compared to its self-serve tiers. The platform's tagline frames its pricing strategy around helping users \"seamlessly scale from idea to enterprise.\""
-      ],
-      "article_why_matters": [
-        "Developers can now handle both training and inference within a single provider, simplifying MLOps workflows and reducing vendor fragmentation.",
-        "The per-GPU-second On Demand tier directly competes with cloud GPU providers and could lower the cost barrier for training large models.",
-        "Fireworks' entry into training signals increasing competition in the AI infrastructure space, potentially driving down prices and expanding capabilities across the board."
-      ],
-      "article_source_note": [
-        "This reporting is based on the public pricing page at fireworks.ai/pricing, which included an announcement banner for the training preview alongside details on serverless inference, fine-tuning, and on-demand GPU deployment pricing tiers. No official press release or blog post was captured as part of this source."
-      ],
-      "article_confidence": "moderate",
       "article_generation_mode": "claude"
     }
   ]

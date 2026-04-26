@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-26T23:00:43+00:00">Last built: <span data-utc="2026-04-26T23:00:43+00:00">2026-04-26 23:00 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-26T23:11:30+00:00">Last built: <span data-utc="2026-04-26T23:11:30+00:00">2026-04-26 23:11 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-04-26T23:10:47+00:00" data-utc="2026-04-26T23:10:47+00:00">2026-04-26 23:10 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-35f2e09a48d7b940877d.html">OpenAI Publishes &quot;Our Principles&quot; Essay, Outlining Five Guiding Tenets for AGI Development</a></h2>
+              <p class="summary">OpenAI on April 26 published a new &quot;Our Principles&quot; piece authored by Sam Altman, laying out five principles the company says will govern its work as it pursues artificial general intelligence.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/our-principles">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -200,19 +213,6 @@
                 <a href="https://api.deepseek.com/chat/completions">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time datetime="2026-04-25T11:46:30+00:00" data-utc="2026-04-25T11:46:30+00:00">2026-04-25 11:46 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-4b5982aebe054af935d8.html">Fireworks AI Launches Training Platform Preview, Enabling End-to-End Model Development</a></h2>
-              <p class="summary">Fireworks AI has entered the model training market with a preview release that lets developers train and deploy frontier AI models on a single unified platform.</p>
-              <div class="card-bottom">
-                <span>Fireworks AI Pricing</span>
-                <a href="https://fireworks.ai/pricing">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-26T23:00:43+00:00";
+    const currentGeneratedAt = "2026-04-26T23:11:30+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
