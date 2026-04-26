@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T00:53:19+00:00",
+  "generated_at": "2026-04-26T01:03:52+00:00",
   "item_count": 10,
   "items": [
     {
@@ -150,64 +150,64 @@
       "article_generation_mode": "claude"
     },
     {
-      "timestamp": "2026-04-25T21:07:03+00:00",
-      "source_name": "GitHub Codex Releases",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "effective_url": "https://github.com/openai/codex/releases.atom",
-      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.2",
+      "timestamp": "2026-04-25T21:28:12+00:00",
+      "source_name": "GitHub llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8933",
       "category": "release",
-      "headline_en": "rust-v0.126.0-alpha.2",
-      "summary_en": "title=rust-v0.126.0-alpha.2 updated=2026-04-25T21:02:24Z link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.2 summary= content=Release 0.126.0-alpha.2",
+      "headline_en": "b8933",
+      "summary_en": "title=b8933 updated=2026-04-25T21:20:10Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8933 summary= content=chat: fix handling of space in reasoning markers ( #22353 ) chat: fix handling of space in reasoning markers fix tests whitespace macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64,...",
       "headline_zh": "",
       "summary_zh": "",
-      "evidence_excerpt": "title=rust-v0.126.0-alpha.2 updated=2026-04-25T21:02:24Z link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.2 summary= content=Release 0.126.0-alpha.2",
+      "evidence_excerpt": "title=b8933 updated=2026-04-25T21:20:10Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8933 summary= content=chat: fix handling of space in reasoning markers ( #22353 ) chat: fix handling of space in reasoning markers fix tests whitespace macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x...",
       "diff_excerpt": [
         "--- previous",
         "+++ current",
         "@@ -1,2 +1,8 @@",
-        "+title=rust-v0.126.0-alpha.2",
-        "+updated=2026-04-25T21:02:24Z",
-        "+link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.2",
+        "+title=b8933",
+        "+updated=2026-04-25T21:20:10Z",
+        "+link=https://github.com/ggml-org/llama.cpp/releases/tag/b8933",
         "+summary=",
-        "+content=Release 0.126.0-alpha.2",
+        "+content=chat: fix handling of space in reasoning markers ( #22353 ) chat: fix handling of space in reasoning markers fix tests whitespace macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
         "+",
-        " title=0.126.0-alpha.1",
-        " updated=2026-04-24T23:15:36Z",
+        " title=b8931",
+        " updated=2026-04-25T14:55:55Z",
         "@@ -52,8 +58,2 @@",
         " summary=",
-        " content=Release 0.124.0-alpha.1",
+        " content=common : fix jinja warnings with clang 21 ( #22313 ) Signed-off-by: Adrien Gallouët angt@huggingface.co macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
         "-",
-        "-title=0.123.0",
-        "-updated=2026-04-23T01:26:41Z",
-        "-link=https://github.com/openai/codex/releases/tag/rust-v0.123.0",
+        "-title=b8918",
+        "-updated=2026-04-24T13:31:44Z",
+        "-link=https://github.com/ggml-org/llama.cpp/releases/tag/b8918",
         "-summary=",
-        "-content=New Features Added a built-in amazon-bedrock model provider with configurable AWS profile support ( #18744 ). Added /mcp verbose for full MCP server diagnostics, resources, and resource templates while keeping plain /mcp fast ( #18610 ). Made plugin MCP loading accept both mcpServers and top-level server maps in .mcp.json ( #18780 ). Improved realtime handoffs so background agents receive transcript deltas and can explicitly stay silent when appropriate ( #18597 , #18761 , #18635 ). Added host-specific remote_sandbox_config requirements for remote environments ( #18763 ). Refreshed bundled model metadata, including the current gpt-5.4 default ( #18586 , #18388 , #18719 ). Bug Fixes Fixed /copy after rollback so it copies the latest visible assistant response, not a pre-rollback response ( #18739 ). Queued normal follow-up text submitted while a manual shell command is running, preventing stuck Working states ( #18820 ). Fixed Unicode/dead-key input in VS Code WSL terminals by disabling the enhanced keyboard mode there ( #18741 ). Prevented stale proxy environment variables from being restored from shell snapshots ( #17271 ). Made codex exec inherit root-level shared flags such as sandbox and model options ( #18630 ). Removed leaked review prompts from TUI transcripts ( #18659 ). Documentation Added and tightened the Code Review skill instructions used by Codex-driven reviews ( #18746 , #18818 ). Documented intentional await-across-lock cases and enabled Clippy linting for them ( #18423 , #18698 ). Updated app-server protocol docs for threadless MCP resource reads and namespaced dynamic tools ( #18292 , #18413 ). Chores Fixed high-severity dependency alerts by pinning patched JS and Rust dependencies ( #18167 ). Reduced Rust dev build debug-info overhead while preserving useful backtraces ( #18844 ). Refreshed generated Python app-server SDK types from the current schema ( #18862 ). Changelog Full Changelog: rust-v0.122.0...rust-v0.123.0 #18662 feat: add metric to track the number of turns with memory usage @jif-oai #18659 chore: drop review prompt from TUI UX @jif-oai #18661 feat: log client use min log level @jif-oai #18094 [codex] Use background agent task auth for backend calls @adrian-openai #18441 Avoid false shell snapshot cleanup warnings @etraut-openai #18260 [codex] Use background task auth for additional backend calls @adrian-openai #18657 fix: auth.json leak in tests @jif-oai #18610 Add verbose diagnostics for /mcp @etraut-openai #18633 Use app server thread names in TUI picker @etraut-openai #18591 Surface parent thread status in side conversations @etraut-openai #18361 codex: move thread/name/set and thread/memoryModeSet into ThreadStore @wiltzius-openai #18274 protocol: canonicalize file system permissions @bolinfest #18403 refactor: use semaphores for async serialization gates @bolinfest #18586 Update models.json @aibrahim-oai #18289 Wire the PatchUpdated events through app_server @akshaynathan #18631 Remove simple TUI legacy_core reexports @etraut-openai #18697 [codex] Fix agent identity auth test fixture @adrian-openai #18388 Update models.json @github-actions #18167 [codex] Fix high severity dependency alerts @caseysilver-oai #17692 [codex-analytics] guardian review analytics schema polishing @rhan-oai #18722 chore(guardian) disable mcps and plugins @dylan-hurd-oai #18597 Update realtime handoff transcript handling @guinness-oai #18627 Surface TUI skills refresh failures @etraut-openai #18719 Fix stale model test fixtures @aibrahim-oai #18714 Add experimental remote thread store config @wiltzius-openai #18739 fix(tui): keep /copy aligned with rollback @fcoury-oai #18701 [codex] prefer inherited spawn agent model @tibo-openai #18632 Use app server metadata for fork parent titles @etraut-openai #18112 feat: cascade thread archive @jif-oai #18716 Read conversation summaries through thread store @wiltzius-openai #18635 Add realtime silence tool @guinness-oai #18254 uds: add async Unix socket crate @euroelessar #18746 Add Code Review skill @pakrym-oai #18208 Add session config loader interface @rasmusrygaard #18753 Refactor TUI app module into submodules @etraut-openai #18630 Fix exec inheritance of root shared flags @etraut-openai #18027 [6/6] Fail exec client operations after disconnect @aibrahim-oai #17271 fix: fix stale proxy env restoration after shell snapshots @viyatb-oai #18602 Warn when trusting Git subdirectories @etraut-openai #18761 [codex] Send realtime transcript deltas on handoff @guinness-oai #18435 /statusline & /title - Shared preview values @canvrno-oai #18744 feat: add a built-in Amazon Bedrock model provider @celia-oai #18581 [1/4] Add executor HTTP request protocol @aibrahim-oai #18418 refactor: narrow async lock scopes @bolinfest #18780 feat: Support more plugin MCP file shapes. @xl-openai #18713 protocol: preserve glob scan depth in permission profiles @bolinfest #18795 fix(guardian) Dont hard error on feature disable @dylan-hurd-oai #18292 Make MCP resource read threadless @mzeng-openai #18786 Fallback display names for TUI skill mentions @canvrno-oai #18807 chore(app-server) linguist-generated @dylan-hurd-oai #18393 feat(auto-review) Handle request_permissions calls @dylan-hurd-oai #18763 Add remote_sandbox_config to our config requirements @abhinav-oai #18794 Organize context fragments @pakrym-oai #18423 chore: document intentional await-holding cases @bolinfest #18698 chore: enable await-holding clippy lints @bolinfest #18413 [tool search] support namespaced deferred dynamic tools @pash-openai #18818 [codex] Tighten code review skill wording @pakrym-oai #18271 show bash mode in the TUI @abhinav-oai #18741 fix(tui): disable enhanced keys for VS Code WSL @fcoury-oai #18850 Move external agent config out of core @pakrym-oai #18844 build: reduce Rust dev debuginfo @bolinfest #18848 feat: baseline lib @jif-oai #18846 core: make test-log a dev dependency @bolinfest #18428 app-server: define device key v2 protocol @euroelessar #18093 Propagate thread id in MCP tool metadata @rennie-openai #17836 [codex] Add tmux-aware OSC 9 notifications @caseychow-oai #18820 Queue follow-up input during user shell commands @etraut-openai #18858 Stabilize debug clear memories integration test @jif-oai #18799 Move TUI app tests to modules they cover @etraut-openai #18442 Refactor app-server config loading into ConfigManager @pakrym-oai #18813 Split DeveloperInstructions into individual fragments. @pakrym-oai #18275 sandboxing: intersect permission profiles semantically @bolinfest #18862 Refresh generated Python app-server SDK types @sdcoffey #15578 Add Windows sandbox unified exec runtime support @iceweasel-oai #18429 app-server: add codex-device-key crate @euroelessar #18872 app-server: fix Bazel clippy in tracing tests @euroelessar #18885 skip busted tests while I fix them @iceweasel-oai #18873 chore: default multi-agent v2 fork to all @jif-oai"
+        "-content=ggml : minor coding style ( #22308 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)"
       ],
-      "article_identity": "GitHub Codex Releases",
+      "article_identity": "GitHub llama.cpp Releases",
       "is_page_error": false,
       "status": "staging-for-cc",
-      "merge_key": "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.2",
-      "id": "evt-eb7665bf2253d21abd77",
-      "content_fingerprint": "title rust v0 126 0 alpha 2 updated 2026 04 25t21 02 24z link https github com openai codex releases tag rust v0 126 0 alpha 2 summary content release 0 126 0 alpha 2 rust v0 126 0 alpha 2 title rust v0 126 0 alpha 2 updated 2026 04 25t21 02 24z link https github com openai codex releases tag rust v0 126 0 alpha 2 summary content release 0 126 0 alpha 2",
+      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8933",
+      "id": "evt-bb5f9afc54e59c3708e8",
+      "content_fingerprint": "title b8933 updated 2026 04 25t21 20 10z link https github com ggml org llama cpp releases tag b8933 summary content chat fix handling of space in reasoning markers 22353 chat fix handling of space in reasoning markers fix tests whitespace macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu window",
       "needs_cc_refresh": true,
-      "source_content_fingerprint": "rust v0 126 0 alpha 2 title rust v0 126 0 alpha 2 updated 2026 04 25t21 02 24z link https github com openai codex releases tag rust v0 126 0 alpha 2 summary content release 0 126 0 alpha 2 title rust v0 126 0 alpha 2 updated 2026 04 25t21 02 24z link https github com openai codex releases tag rust v0 126 0 alpha 2 summary content release 0 126 0 alpha 2",
-      "github_release_signal_fingerprint": "version title version updated 2026 04 25t21 02 24z link https github com openai codex releases tag version summary content release version title version updated 2026 04 25t21 02 24z link https github com openai codex releases tag version summary content release version",
-      "article_h1": "OpenAI Ships codex Release rust-v0.126.0-alpha.2",
-      "article_standfirst": "OpenAI has published a new alpha release of its codex Rust SDK, tagged rust-v0.126.0-alpha.2, adding to its rapid pre-release cadence.",
+      "source_content_fingerprint": "b8933 title b8933 updated 2026 04 25t21 20 10z link https github com ggml org llama cpp releases tag b8933 summary content chat fix handling of space in reasoning markers 22353 chat fix handling of space in reasoning markers fix tests whitespace macos ios macos apple silicon arm64 macos apple silicon arm64 title b8933 updated 2026 04 25t21 20 10z link https github com ggml org llama cpp releases tag b8933 summary content chat fix handling of space in reasoning markers 22353 chat fix handling of space in reasoning markers fix tests whitespace macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x",
+      "github_release_signal_fingerprint": "version title version updated 2026 04 25t21 20 10z link https github com ggml org llama cpp releases tag version summary content chat fix handling of space in reasoning markers 22353 chat fix handling of space in reasoning markers fix tests whitespace macos ios macos apple silicon arm64 macos apple silicon arm64 title version updated 2026 04 25t21 20 10z link https github com ggml org llama cpp releases tag version summary content chat fix handling of space in reasoning markers 22353 chat fix handling of space in reasoning markers fix tests whitespace macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm version ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda version dlls windows x64 cuda 13 cuda version dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x",
+      "article_h1": "llama.cpp patch release b8933 fixes chat reasoning marker whitespace bug",
+      "article_standfirst": "The llama.cpp project shipped a bugfix release on April 25, correcting how the chat interface handles spaces in reasoning markers.",
       "article_body": [
-        "OpenAI released codex version rust-v0.126.0-alpha.2 on April 25, 2026, according to the project's GitHub releases page. The release is labeled as an alpha build, reflecting its pre-production status.",
-        "The release appears to be part of an ongoing series of Rust SDK pre-releases under the codex umbrella, though no public changelog or release notes were included on the tag page at the time of capture.",
-        "Developers tracking the project can monitor the GitHub releases feed for further updates, as OpenAI continues to iterate on its codex tooling through short-cycle alpha releases."
+        "The ggml-org/llama.cpp project released version b8933 on April 25, 2026, addressing a whitespace handling issue in the chat module's reasoning markers. The fix, tied to GitHub issue #22353, corrects how the system processes and displays spaces in chain-of-thought and structured output markers used by the chat interface.",
+        "The release includes updated test cases to prevent regression and ships prebuilt binaries across a wide range of platforms. Supported targets include macOS Apple Silicon (with and without KleidiAI acceleration), macOS Intel, iOS XCFramework, and Android arm64. On Linux, builds are available for Ubuntu across multiple CPU architectures (x64, arm64, s390x) as well as Vulkan, ROCm 7.2, OpenVINO, and SYCL variants.",
+        "Windows users are covered with CPU, Vulkan, CUDA (both 12 and 13 series), SYCL, and HIP builds. An openEuler target is also listed in the release assets. No breaking changes or new features were introduced — the release is purely a correctness and robustness fix."
       ],
       "article_why_matters": [
-        "OpenAI's codex is the backbone of its autonomous coding capabilities, so each release — even alpha builds — signals progress in the model's coding agent performance.",
-        "The Rust SDK specifically targets developers integrating codex-powered features into Rust-based projects or infrastructure.",
-        "The lack of a public changelog means the community cannot yet assess what changed, making it harder to plan integration updates."
+        "Reasoning markers are a core part of how modern LLMs generate structured, interpretable outputs; even a minor whitespace bug can corrupt downstream parsing or display.",
+        "The breadth of platform support — from mobile (iOS/Android) to high-performance GPU backends (CUDA, ROCm, HIP) — means the fix benefits nearly every llama.cpp deployment.",
+        "Developers using llama.cpp for production chat or agentic pipelines should upgrade to prevent potential output corruption or test failures in their workflows."
       ],
       "article_source_note": [
-        "This report is based on the GitHub tag page for rust-v0.126.0-alpha.2 on the OpenAI/codex repository. No release description, changelog, or commit-level detail was present on the page at the time of capture, limiting the depth of this report."
+        "Information drawn from the llama.cpp release page at github.com/ggml-org/llama.cpp/releases/tag/b8933, published April 25, 2026. The full commit message and source code diff are accessible via the linked GitHub issue #22353."
       ],
-      "article_confidence": "weak",
+      "article_confidence": "strong",
       "article_generation_mode": "claude"
     },
     {
