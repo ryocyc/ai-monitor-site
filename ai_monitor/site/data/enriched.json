@@ -4093,7 +4093,68 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-26T09:35:58+00:00",
+      "source_name": "GitHub llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8937",
+      "category": "release",
+      "headline_en": "b8937",
+      "summary_en": "title=b8937 updated=2026-04-26T09:29:16Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8937 summary= content=ggml-cpu : re-enable fast gelu_quick_f16 ( #22339 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ub...",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=b8937 updated=2026-04-26T09:29:16Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8937 summary= content=ggml-cpu : re-enable fast gelu_quick_f16 ( #22339 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler a...",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=b8937",
+        "+updated=2026-04-26T09:29:16Z",
+        "+link=https://github.com/ggml-org/llama.cpp/releases/tag/b8937",
+        "+summary=",
+        "+content=ggml-cpu : re-enable fast gelu_quick_f16 ( #22339 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "+",
+        " title=b8936",
+        " updated=2026-04-26T08:56:20Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=parser: fix structured output bug ( #22302 ) fix very stupid structured output bug Things just cannot be too easy. macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "-",
+        "-title=b8924",
+        "-updated=2026-04-24T23:16:29Z",
+        "-link=https://github.com/ggml-org/llama.cpp/releases/tag/b8924",
+        "-summary=",
+        "-content=Hexagon: Bump HMX Frequency to Max Corner ( #22334 ) hexagon: bump HMX freq to max corner hex-mm: fix error in log msg macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)"
+      ],
+      "article_identity": "GitHub llama.cpp Releases",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8937",
+      "id": "evt-2543cd7b3912ee84064a",
+      "content_fingerprint": "title b8937 updated 2026 04 26t09 29 16z link https github com ggml org llama cpp releases tag b8937 summary content ggml cpu re enable fast gelu quick f16 22339 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vu",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "b8937 title b8937 updated 2026 04 26t09 29 16z link https github com ggml org llama cpp releases tag b8937 summary content ggml cpu re enable fast gelu quick f16 22339 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ub title b8937 updated 2026 04 26t09 29 16z link https github com ggml org llama cpp releases tag b8937 summary content ggml cpu re enable fast gelu quick f16 22339 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeuler aarch64 310p openeuler a",
+      "github_release_signal_fingerprint": "version title version updated 2026 04 26t09 29 16z link https github com ggml org llama cpp releases tag version summary content ggml cpu re enable fast gelu quick f16 22339 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ub title version updated 2026 04 26t09 29 16z link https github com ggml org llama cpp releases tag version summary content ggml cpu re enable fast gelu quick f16 22339 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm version ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda version dlls windows x64 cuda 13 cuda version dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeuler aarch64 310p openeuler a",
+      "article_h1": "llama.cpp Re-Enables Fast FP16 GELU Kernel for CPU Backends",
+      "article_standfirst": "The ggml-org team has re-enabled a fast half-precision GELU approximation on CPU in llama.cpp, tightening inference performance on a widely-used local model runner.",
+      "article_body": [
+        "llama.cpp has re-enabled the fast gelu_quick_f16 kernel for the ggml-cpu backend in release b8937, restoring an optimized path for half-precision inference on CPU. The change tracks pull request #22339 and was published on April 26, 2026.",
+        "The GELU (Gaussian Error Linear Unit) activation appears in many transformer architectures; the gelu_quick_f16 approximation trades a small amount of mathematical precision for reduced CPU cycle overhead in FP16 inference. The release ships prebuilt binaries across an unusually broad set of targets: macOS (Apple Silicon, KleidiAI-enabled arm64, and Intel x64), iOS as an XCFramework, Linux across multiple CPU architectures and accelerators (Vulkan, ROCm 7.2, OpenVINO, SYCL), Android arm64, and Windows with CPU, CUDA 12 and 13, Vulkan, SYCL, and HIP variants. OpenEuler builds for Intel 310p, 910b (with ACL Graph), and arm64 are also included.",
+        "For developers running quantized GGUF models on CPUs—especially in resource-constrained or edge environments—the restored kernel directly improves throughput on machines that would otherwise fall back to slower precision paths. The breadth of platform builds signals continued momentum for llama.cpp as a foundational inference runtime in the local AI tooling stack."
+      ],
+      "article_why_matters": [
+        "GELU activation overhead accumulates at scale; a faster FP16 kernel benefits any quantized model using this activation on CPU.",
+        "The restored kernel closes a performance regression on the ggml-cpu backend, directly affecting users of llama.cpp's most portable runtime path.",
+        "The extensive platform coverage—including mobile, edge, and accelerator-adjacent builds—reinforces llama.cpp's role as the de facto inference engine for local and embedded AI applications."
+      ],
+      "article_source_note": [
+        "This brief is based on the publicly available release notes for llama.cpp tag b8937 on the ggml-org GitHub repository. The release note is terse; details on the specific performance impact of the change and what prompted the prior disabling of the kernel are not documented in the release page itself. A pull request (#22339) exists in the repository and would contain the full technical discussion for readers who need deeper context."
+      ],
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-26T09:15:21+00:00"
+  "generated_at": "2026-04-26T09:36:58+00:00"
 }
