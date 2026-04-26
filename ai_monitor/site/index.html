@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-26T02:39:00+00:00">Last built: <span data-utc="2026-04-26T02:39:00+00:00">2026-04-26 02:39 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-26T03:12:09+00:00">Last built: <span data-utc="2026-04-26T03:12:09+00:00">2026-04-26 03:12 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,13 +84,26 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-26T03:09:57+00:00" data-utc="2026-04-26T03:09:57+00:00">2026-04-26 03:09 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-56e328977f7b24c919e9.html">llama.cpp Lands Hexagon HMX Clock Fix for v75+ Platforms in Release b8934</a></h2>
+              <p class="summary">The ggml-org/llama.cpp project shipped release b8934 on April 26, patching a clock-request guard issue for Qualcomm Hexagon/HMX silicon on v75+ hardware, alongside refreshed CUDA 13.1 binaries and KleidiAI-enabled Apple Silicon builds.</p>
+              <div class="card-bottom">
+                <span>GitHub llama.cpp Releases</span>
+                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8934">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
-                <time datetime="2026-04-26T02:27:32+00:00" data-utc="2026-04-26T02:27:32+00:00">2026-04-26 02:27 UTC</time>
+                <time datetime="2026-04-26T03:09:54+00:00" data-utc="2026-04-26T03:09:54+00:00">2026-04-26 03:09 UTC</time>
               </div>
-              <h2 class="headline"><a href="./articles/evt-38ca4372270f25f05c55.html">DeepSeek-V4 Lands on Hugging Face Hot Feed, Drawing Attention to Million-Token Context Capability</a></h2>
-              <p class="summary">DeepSeek-V4 has appeared in Hugging Face&#x27;s community blog Hot feed, drawing notice for its one-million-token context window — a capability that positions it for long-document and multi-turn agent workloads.</p>
+              <h2 class="headline"><a href="./articles/evt-38ca4372270f25f05c55.html">DeepSeek-V4&#x27;s Million-Token Context Window Draws Fresh Attention on Hugging Face Community Feed</a></h2>
+              <p class="summary">DeepSeek-V4, a large language model supporting a one-million-token context window, has surfaced in the Hugging Face community blog&#x27;s featured articles, drawing renewed focus on extended-context capabilities for agentic workflows.</p>
               <div class="card-bottom">
                 <span>Hugging Face Blog</span>
                 <a href="https://huggingface.co/blog">Source</a>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>GitHub Claude Context Releases</span>
                 <a href="https://github.com/zilliztech/claude-context/releases/tag/v0.1.9">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-25T21:49:47+00:00" data-utc="2026-04-25T21:49:47+00:00">2026-04-25 21:49 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-ac4506b679b944ac7aa1.html">GitHub Releases Codex 0.125.0 with Unix Socket Transport, Remote Plugin Support, and Rollout Tracing</a></h2>
-              <p class="summary">OpenAI shipped a new stable release of its coding agent, GitHub Codex, featuring app-server integrations for Unix sockets, remote plugin installation, and expanded rollout tracing across multi-agent sessions.</p>
-              <div class="card-bottom">
-                <span>GitHub Codex Releases</span>
-                <a href="https://github.com/openai/codex/releases.atom">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-26T02:39:00+00:00";
+    const currentGeneratedAt = "2026-04-26T03:12:09+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
