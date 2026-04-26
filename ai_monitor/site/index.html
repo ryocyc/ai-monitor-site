@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-26T01:03:52+00:00">Last built: <span data-utc="2026-04-26T01:03:52+00:00">2026-04-26 01:03 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-26T01:14:47+00:00">Last built: <span data-utc="2026-04-26T01:14:47+00:00">2026-04-26 01:14 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time datetime="2026-04-26T01:13:57+00:00" data-utc="2026-04-26T01:13:57+00:00">2026-04-26 01:13 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-6fea91c1d58218bd78a5.html">Hugging Face Gradio Spaces Now Self-Describe for AI Agents Via /agents.md Endpoint</a></h2>
+              <p class="summary">Every Gradio Space now automatically serves a machine-readable /agents.md endpoint, letting AI coding agents like Claude Code, Codex, and Pi discover and use spaces without manual configuration.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Changelog</span>
+                <a href="https://huggingface.co/changelog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -110,29 +123,16 @@
               </div>
             </article>
             
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time datetime="2026-04-25T22:53:29+00:00" data-utc="2026-04-25T22:53:29+00:00">2026-04-25 22:53 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/changelog-keep-track-of-latest-changes-on-the-hugging-face-hub-apr-17-26-upvote-135-130-apr-17-2.html">Hugging Face Auto-Generates /agents.md Endpoints for All Gradio Spaces</a></h2>
-              <p class="summary">Every Gradio Space on Hugging Face now automatically serves a machine-readable /agents.md endpoint, allowing AI coding agents like Claude Code, Codex, and Pi to discover and use the space without manual configuration.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Changelog</span>
-                <a href="https://huggingface.co/changelog">Source</a>
-              </div>
-            </article>
-            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
-                <time datetime="2026-04-25T21:28:12+00:00" data-utc="2026-04-25T21:28:12+00:00">2026-04-25 21:28 UTC</time>
+                <time datetime="2026-04-25T21:49:47+00:00" data-utc="2026-04-25T21:49:47+00:00">2026-04-25 21:49 UTC</time>
               </div>
-              <h2 class="headline"><a href="./articles/github-llamacpp-releases-3708e8.html">llama.cpp patch release b8933 fixes chat reasoning marker whitespace bug</a></h2>
-              <p class="summary">The llama.cpp project shipped a bugfix release on April 25, correcting how the chat interface handles spaces in reasoning markers.</p>
+              <h2 class="headline"><a href="./articles/evt-ac4506b679b944ac7aa1.html">GitHub Releases Codex 0.125.0 with Unix Socket Transport, Remote Plugin Support, and Rollout Tracing</a></h2>
+              <p class="summary">OpenAI shipped a new stable release of its coding agent, GitHub Codex, featuring app-server integrations for Unix sockets, remote plugin installation, and expanded rollout tracing across multi-agent sessions.</p>
               <div class="card-bottom">
-                <span>GitHub llama.cpp Releases</span>
-                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8933">Source</a>
+                <span>GitHub Codex Releases</span>
+                <a href="https://github.com/openai/codex/releases.atom">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-26T01:03:52+00:00";
+    const currentGeneratedAt = "2026-04-26T01:14:47+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
