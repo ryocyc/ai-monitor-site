@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T12:53:53+00:00">Last built: <span data-utc="2026-04-27T12:53:53+00:00">2026-04-27 12:53 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T13:04:52+00:00">Last built: <span data-utc="2026-04-27T13:04:52+00:00">2026-04-27 13:04 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-04-27T13:03:57+00:00" data-utc="2026-04-27T13:03:57+00:00">2026-04-27 13:03 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-40907bb50f22171c70c8.html">OpenAI and Microsoft Announce Amended Partnership Agreement, Simplifying Terms and Extending Long-Term Commitment</a></h2>
+              <p class="summary">OpenAI and Microsoft have unveiled an amended partnership agreement that streamlines their existing arrangement, provides greater structural clarity, and signals a sustained joint commitment to advancing AI at scale.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/next-phase-of-microsoft-partnership">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -146,19 +159,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Changelog</span>
                 <a href="https://huggingface.co/changelog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-04-27T07:52:32+00:00" data-utc="2026-04-27T07:52:32+00:00">2026-04-27 07:52 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-866129d0d7d64ca1817d.html">OpenAI Launches GPT-5.5, Its Most Capable Model to Date</a></h2>
-              <p class="summary">OpenAI has released GPT-5.5, positioning it as the company&#x27;s smartest model yet, optimized for complex, multi-step tasks across coding, research, and data analysis workflows.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/index/introducing-gpt-5-5">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T12:53:53+00:00";
+    const currentGeneratedAt = "2026-04-27T13:04:52+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
