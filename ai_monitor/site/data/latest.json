@@ -1,48 +1,5 @@
 {
-  "generated_at": "2026-04-27T19:16:46+00:00",
-  "item_count": 1,
-  "items": [
-    {
-      "timestamp": "2026-04-27T19:16:21+00:00",
-      "source_name": "GitHub Codex Releases",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "effective_url": "https://github.com/openai/codex/releases.atom",
-      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8",
-      "category": "release",
-      "headline_en": "Codex release feed now shows rust-v0.126.0-alpha.8",
-      "summary_en": "The monitored release feed for Codex changed and the newest visible tag is rust-v0.126.0-alpha.8. The feed timestamp is 2026-04-27T19:13:32Z. This looks like a release-level update rather than a cosmetic page edit.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=rust-v0.126.0-alpha.8 updated=2026-04-27T19:13:32Z link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8 summary= content=Release 0.126.0-alpha.8",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,8 @@",
-        "+title=rust-v0.126.0-alpha.8",
-        "+updated=2026-04-27T19:13:32Z",
-        "+link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8",
-        "+summary=",
-        "+content=Release 0.126.0-alpha.8",
-        "+",
-        " title=0.126.0-alpha.7",
-        " updated=2026-04-27T14:56:22Z",
-        "@@ -52,8 +58,2 @@",
-        " summary=",
-        " content=Release 0.125.0-alpha.3",
-        "-",
-        "-title=0.125.0-alpha.2",
-        "-updated=2026-04-24T11:02:11Z",
-        "-link=https://github.com/openai/codex/releases/tag/rust-v0.125.0-alpha.2",
-        "-summary=",
-        "-content=Release 0.125.0-alpha.2"
-      ],
-      "article_identity": "rust-v0.126.0-alpha.8",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8",
-      "id": "evt-b78803151892817638bf",
-      "content_fingerprint": "codex release feed now shows rust v0 126 0 alpha 8 the monitored release feed for codex changed and the newest visible tag is rust v0 126 0 alpha 8 the feed timestamp is 2026 04 27t19 13 32z this looks like a release level update rather than a cosmetic page edit title rust v0 126 0 alpha 8 updated 2026 04 27t19 13 32z link https github com openai codex releases tag rust v0 126 0 alpha 8 summary content release 0 126 0 alpha 8",
-      "needs_cc_refresh": true
-    }
-  ]
+  "generated_at": "2026-04-27T19:27:39+00:00",
+  "item_count": 0,
+  "items": []
 }
