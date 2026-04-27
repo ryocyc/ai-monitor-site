@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>llama.cpp Lands Fast Mat-Vec Kernels for Inline Quantization in Release b8951 | AI Signal Articles</title>
+  <meta name="description" content="The ggml-org/llama.cpp project tagged release b8951 on April 27, centering on optimized matrix-vector kernels for inline quantized weights, with pre-bui...">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
+       crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .top-ad {
+      margin-bottom: 18px;
+      padding: 12px 14px;
+      border: 1px dashed rgba(15,118,110,0.28);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.68);
+    }
+    .ad-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .ad-slot {
+      min-height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15,118,110,0.08);
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .hero-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .share-button {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+    .share-button:hover {
+      transform: translateY(-1px);
+      background: rgba(15,118,110,0.18);
+    }
+    .share-status {
+      color: var(--muted);
+      font-size: 0.88rem;
+      min-height: 1.2em;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="top-ad" aria-label="Advertisement">
+      <div class="ad-label">Advertisement</div>
+      <div class="ad-slot">Top banner ad slot</div>
+    </section>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated <span data-utc="2026-04-27T17:49:44+00:00">2026-04-27 17:49 UTC</span></div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>llama.cpp Lands Fast Mat-Vec Kernels for Inline Quantization in Release b8951</h1>
+      <p class="standfirst">The ggml-org/llama.cpp project tagged release b8951 on April 27, centering on optimized matrix-vector kernels for inline quantized weights, with pre-built binaries now covering a wider cross-section of desktop, mobile, server, and Chinese OS platforms.</p>
+      <div class="meta">
+        <span>GitHub llama.cpp Releases</span>
+        <span>&lt;span data-utc=&quot;2026-04-27T17:48:54+00:00&quot;&gt;2026-04-27 17:48 UTC&lt;/span&gt;</span>
+        <span>Key: evt-84a5666bb377b55e9b80</span>
+        <span>Confidence: moderate</span>
+        <span>Mode: claude</span>
+      </div>
+      <div class="hero-actions">
+        <button class="share-button" type="button" id="share-button">Share</button>
+        <span class="share-status" id="share-status" aria-live="polite"></span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>The llama.cpp project at ggml-org issued release tag b8951 on April 27, 2026, the same day the monitored release feed refreshed at 17:41:34 UTC. The headline change is the addition of fast mat-vec (matrix-vector multiplication) kernels for inline quantized weights, merged under pull request #22344. Alongside the core optimization, the release ships pre-built binaries for an expanded list of platforms and hardware backends.</p>
+<p>The binaries now cover macOS Apple Silicon with and without KleidiAI acceleration, macOS Intel (x64), iOS via XCFramework, and a broad set of Linux targets spanning Ubuntu on x64 and arm64 CPUs, plus Vulkan, ROCm 7.2, OpenVINO, and SYCL (both FP32 and FP16) builds. Windows builds are available for CPU, CUDA 12 and 13, Vulkan, SYCL, and HIP backends. Notably, openEuler builds for both x86 and aarch64 architectures — covering Huawei Ascend 310P and 910B with ACL Graph — signal continued investment in Chinese enterprise and AI accelerator ecosystems.</p>
+<p>For inference engineers and developers running quantized LLMs on custom or resource-constrained hardware, the mat-vec kernel improvements directly affect throughput and latency. The breadth of platform coverage — from iOS to openEuler Ascend targets — suggests llama.cpp is being used not only for local desktop inference but increasingly as a portable inference runtime for mobile and enterprise AI deployments where CUDA is not available.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>Fast inline quantized mat-vec kernels are among the most impactful optimizations for running large language models on CPU or mixed hardware, directly reducing inference latency without model surgery.</li><li>Expanded platform coverage — particularly iOS, openEuler with Ascend 310P/910B support — shows llama.cpp filling gaps left by proprietary inference runtimes, making quantized model serving viable across Apple Silicon, Huawei AI accelerators, and Linux enterprise servers.</li><li>The continued rapid release cadence (tagged one to several times daily) and broad hardware backend matrix make llama.cpp a living baseline for open-weight inference research and product deployments alike.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>Information is drawn from the public GitHub release page for ggml-org/llama.cpp tag b8951, published at 2026-04-27T17:41:34Z, and the release&#x27;s linked evidence excerpt covering the PR title, platform binaries, and hardware backends. The source does not include a full changelog or release notes text, so the depth of the technical change is inferred from the PR title and binary matrix rather than detailed commit history.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8951" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+  <script>
+    (() => {
+      const button = document.getElementById("share-button");
+      const status = document.getElementById("share-status");
+      if (!button || !status) return;
+      const shareData = {
+        title: document.title,
+        text: "The ggml-org/llama.cpp project tagged release b8951 on April 27, centering on optimized matrix-vector kernels for inline quantized weight...",
+        url: window.location.href
+      };
+      const setStatus = (message) => {
+        status.textContent = message;
+        if (message) {
+          window.clearTimeout(setStatus._timer);
+          setStatus._timer = window.setTimeout(() => {
+            status.textContent = "";
+          }, 2400);
+        }
+      };
+      button.addEventListener("click", async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+            setStatus("Shared.");
+            return;
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(window.location.href);
+            setStatus("Link copied.");
+            return;
+          }
+        } catch (error) {
+          setStatus("Share cancelled.");
+          return;
+        }
+        const helper = document.createElement("input");
+        helper.value = window.location.href;
+        document.body.appendChild(helper);
+        helper.select();
+        document.execCommand("copy");
+        helper.remove();
+        setStatus("Link copied.");
+      });
+
+      document.querySelectorAll('[data-utc]').forEach((node) => {
+        const value = node.dataset.utc;
+        if (!value) return;
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return;
+        node.textContent = new Intl.DateTimeFormat(undefined, {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false,
+          timeZoneName: 'short'
+        }).format(date);
+      });
+    })();
+  </script>
+</body>
+</html>
