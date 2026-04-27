@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T00:02:31+00:00">Last built: <span data-utc="2026-04-27T00:02:31+00:00">2026-04-27 00:02 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T00:04:10+00:00">Last built: <span data-utc="2026-04-27T00:04:10+00:00">2026-04-27 00:04 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-04-27T00:03:15+00:00" data-utc="2026-04-27T00:03:15+00:00">2026-04-27 00:03 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-516ae1baf85ada243529.html">DeepSeek-V4 Brings Million-Token Context to Open-Source Agents on Hugging Face</a></h2>
+              <p class="summary">Hugging Face has published a blog post highlighting DeepSeek-V4&#x27;s million-token context window as a practical feature for AI agents, signaling continued open-source progress on long-context reasoning.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/deepseekv4">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>OpenAI Newsroom</span>
                 <a href="https://openai.com/index/our-principles">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-04-26T21:45:37+00:00" data-utc="2026-04-26T21:45:37+00:00">2026-04-26 21:45 UTC</time>
-              </div>
-              <h2 class="headline">DeepSeek-V4 Brings One-Million-Token Context Window to Agent Workflows</h2>
-              <p class="summary">DeepSeek-V4&#x27;s expanded context window—up to one million tokens—promises to let AI agents work with entire codebases or long document collections without the fragmentation that plagues shorter-context models.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/deepseekv4">Source</a>
               </div>
             </article>
             
@@ -180,7 +180,7 @@
                 <span class="pill">blog</span>
                 <time datetime="2026-04-25T19:22:33+00:00" data-utc="2026-04-25T19:22:33+00:00">2026-04-25 19:22 UTC</time>
               </div>
-              <h2 class="headline"><a href="./articles/openrouter-search-models-chat-rankings-apps-enterprise-pricing-docs-openrouter-search-models-cha.html">OpenRouter Launches Agent SDK for Building Multi-turn Workflows Across 300+ Models</a></h2>
+              <h2 class="headline"><a href="./articles/evt-cdd8a2c000382dc080e9.html">OpenRouter Launches Agent SDK for Building Multi-turn Workflows Across 300+ Models</a></h2>
               <p class="summary">OpenRouter has released an Agent SDK that lets developers build multi-step agent workflows with tool calls, stop conditions, and cost tracking across its marketplace of more than 300 models.</p>
               <div class="card-bottom">
                 <span>OpenRouter Blog</span>
@@ -193,7 +193,7 @@
                 <span class="pill">update</span>
                 <time datetime="2026-04-25T16:01:46+00:00" data-utc="2026-04-25T16:01:46+00:00">2026-04-25 16:01 UTC</time>
               </div>
-              <h2 class="headline"><a href="./articles/ai-new-conversation-stepclaw-please-log-in-to-access-your-history-log-in-log-in-have-a-good-nigh.html">StepFun Showcases StepClaw AI Assistant with Web Search, Image Creation, and Speech Capabilities</a></h2>
+              <h2 class="headline"><a href="./articles/evt-8bb76e0c3e9977474ff5.html">StepFun Showcases StepClaw AI Assistant with Web Search, Image Creation, and Speech Capabilities</a></h2>
               <p class="summary">Chinese AI startup StepFun details its StepClaw personal assistant product on stepfun.com, highlighting web search, knowledge-base Q&amp;A, image generation, and a lightning-fast ASR tool called Step Audio Studio.</p>
               <div class="card-bottom">
                 <span>StepFun Home</span>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T00:02:31+00:00";
+    const currentGeneratedAt = "2026-04-27T00:04:10+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
