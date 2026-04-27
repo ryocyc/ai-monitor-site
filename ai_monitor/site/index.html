@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T17:27:41+00:00">Last built: <span data-utc="2026-04-27T17:27:41+00:00">2026-04-27 17:27 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T17:38:46+00:00">Last built: <span data-utc="2026-04-27T17:38:46+00:00">2026-04-27 17:38 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-04-27T17:37:46+00:00" data-utc="2026-04-27T17:37:46+00:00">2026-04-27 17:37 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-32ee1a273466f3060457.html">OpenAI Publishes Symphony, an Open-Source Spec for Turning Issue Trackers into Agent Systems</a></h2>
+              <p class="summary">OpenAI has released Symphony, an open-source specification for Codex orchestration that connects issue trackers to always-on agent workflows, aiming to reduce context switching and increase engineering output.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/open-source-codex-orchestration-symphony">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -133,19 +146,6 @@
               <div class="card-bottom">
                 <span>Stability AI News</span>
                 <a href="https://stability.ai/news">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-04-27T13:03:57+00:00" data-utc="2026-04-27T13:03:57+00:00">2026-04-27 13:03 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-40907bb50f22171c70c8.html">OpenAI and Microsoft Announce Amended Partnership Agreement, Simplifying Terms and Extending Long-Term Commitment</a></h2>
-              <p class="summary">OpenAI and Microsoft have unveiled an amended partnership agreement that streamlines their existing arrangement, provides greater structural clarity, and signals a sustained joint commitment to advancing AI at scale.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/index/next-phase-of-microsoft-partnership">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T17:27:41+00:00";
+    const currentGeneratedAt = "2026-04-27T17:38:46+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
