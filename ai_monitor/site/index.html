@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T10:02:02+00:00">Last built: <span data-utc="2026-04-27T10:02:02+00:00">2026-04-27 10:02 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T10:13:29+00:00">Last built: <span data-utc="2026-04-27T10:13:29+00:00">2026-04-27 10:13 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-04-27T10:12:05+00:00" data-utc="2026-04-27T10:12:05+00:00">2026-04-27 10:12 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-166f00064205067195d4.html">DeepSeek-V4 Brings One-Million-Token Context Windows Within Practical Reach for Agentic Workflows</a></h2>
+              <p class="summary">Hugging Face published a community post this week highlighting DeepSeek-V4&#x27;s million-token context capacity and framing it specifically around agent use cases, signaling a concrete step toward enabling long-horizon reasoning across complex, multi-step tasks.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/deepseek-v4-a-million-token-context-that-agents-can-actually-use">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -146,19 +159,6 @@
               <div class="card-bottom">
                 <span>OpenAI Newsroom</span>
                 <a href="https://openai.com/index/introducing-gpt-5-5">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-04-27T06:05:08+00:00" data-utc="2026-04-27T06:05:08+00:00">2026-04-27 06:05 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-166f00064205067195d4.html">DeepSeek-V4 Brings One-Million-Token Context to Agents on Hugging Face</a></h2>
-              <p class="summary">DeepSeek-V4 ships with a million-token context window accessible to agentic workflows, a capability that dramatically widens how much conversational and document-grounded memory a single session can hold.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/deepseek-v4-a-million-token-context-that-agents-can-actually-use">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T10:02:02+00:00";
+    const currentGeneratedAt = "2026-04-27T10:13:29+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
