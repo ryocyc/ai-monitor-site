@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T07:42:28+00:00">Last built: <span data-utc="2026-04-27T07:42:28+00:00">2026-04-27 07:42 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T07:54:05+00:00">Last built: <span data-utc="2026-04-27T07:54:05+00:00">2026-04-27 07:54 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,32 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-27T07:52:36+00:00" data-utc="2026-04-27T07:52:36+00:00">2026-04-27 07:52 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-7a30c7279c2c3ba91f20.html">vLLM v0.20.0 Lands with SiLU Clamp Fix for DeepSeek V4 Shared Expert</a></h2>
+              <p class="summary">vLLM&#x27;s latest patch release adds a silu clamp limit to the shared expert component used in DeepSeek V4&#x27;s mixture-of-experts architecture, addressing a numerical stability edge case during inference.</p>
+              <div class="card-bottom">
+                <span>GitHub vLLM Releases</span>
+                <a href="https://github.com/vllm-project/vllm/releases/tag/v0.20.0">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-04-27T07:52:32+00:00" data-utc="2026-04-27T07:52:32+00:00">2026-04-27 07:52 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-866129d0d7d64ca1817d.html">OpenAI Launches GPT-5.5, Its Most Capable Model to Date</a></h2>
+              <p class="summary">OpenAI has released GPT-5.5, positioning it as the company&#x27;s smartest model yet, optimized for complex, multi-step tasks across coding, research, and data analysis workflows.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/introducing-gpt-5-5">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -133,32 +159,6 @@
               <div class="card-bottom">
                 <span>GitHub llama.cpp Releases</span>
                 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8943">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-04-27T05:10:38+00:00" data-utc="2026-04-27T05:10:38+00:00">2026-04-27 05:10 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-ec482cc1a31da8fc5fe0.html">OpenAI Expands Codex with Scheduled Automations and WebSocket-Powered Agent Workflows</a></h2>
-              <p class="summary">OpenAI has released new Codex capabilities including scheduled task automations and a WebSocket-based Responses API that cuts overhead in agentic loops, making it practical to run recurring multi-step workflows without manual triggers.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/academy/codex-automations">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T04:05:17+00:00" data-utc="2026-04-27T04:05:17+00:00">2026-04-27 04:05 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-f778873bcc5aa95dc8c3.html">OpenAI Releases Codex CLI Alpha Build 0.126.0-alpha.4</a></h2>
-              <p class="summary">OpenAI has tagged a new alpha release of its codex Rust CLI, numbered 0.126.0-alpha.4, posted to the public repository on April 27, 2026.</p>
-              <div class="card-bottom">
-                <span>GitHub Codex Releases</span>
-                <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.4">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T07:42:28+00:00";
+    const currentGeneratedAt = "2026-04-27T07:54:05+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
