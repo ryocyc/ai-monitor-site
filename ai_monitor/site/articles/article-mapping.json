@@ -1,4 +1,7 @@
 {
+  "evt-c807b26ce49565ee2775": "evt-c807b26ce49565ee2775",
+  "blog||hugging face blog||https://huggingface.co/blog/nvidia/gemma4": "evt-c807b26ce49565ee2775",
+  "nvidia/gemma4": "evt-c807b26ce49565ee2775",
   "evt-fd747c989ee44ab573d7": "evt-fd747c989ee44ab573d7",
   "update||stability ai news||stability-ai-news-ana-guillen-4826-ana-guillen-4826-introducing-brand-studio-the-creative-production-plat": "evt-fd747c989ee44ab573d7",
   "stability-ai-news-ana-guillen-4826-ana-guillen-4826-introducing-brand-studio-the-creative-production-plat": "evt-fd747c989ee44ab573d7",
@@ -263,7 +266,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-c807b26ce49565ee2775": "evt-c807b26ce49565ee2775",
-  "blog||hugging face blog||https://huggingface.co/blog/nvidia/gemma4": "evt-c807b26ce49565ee2775",
-  "nvidia/gemma4": "evt-c807b26ce49565ee2775"
+  "evt-bab80dbfd875ec5b1eea": "evt-bab80dbfd875ec5b1eea",
+  "blog||hugging face blog||https://huggingface.co/blog/how-to-build-scalable-web-apps-with-openais-privacy-filter": "evt-bab80dbfd875ec5b1eea",
+  "how-to-build-scalable-web-apps-with-openais-privacy-filter": "evt-bab80dbfd875ec5b1eea"
 }
