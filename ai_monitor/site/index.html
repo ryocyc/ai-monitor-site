@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T09:07:30+00:00">Last built: <span data-utc="2026-04-27T09:07:30+00:00">2026-04-27 09:07 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T09:18:54+00:00">Last built: <span data-utc="2026-04-27T09:18:54+00:00">2026-04-27 09:18 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,32 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-27T09:17:39+00:00" data-utc="2026-04-27T09:17:39+00:00">2026-04-27 09:17 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-d9d2f613f623899bdccf.html">Llama.cpp Patch b8944 Targets Tile Buffer Alignment in GGML, Benchmarks Show Marginal Gains</a></h2>
+              <p class="summary">The llama.cpp project shipped a small GGML-level change to enforce 64-byte tile buffer alignment in commit b8944, with benchmark data from Qwen3 0.8B showing performance shifts across multiple quantization formats.</p>
+              <div class="card-bottom">
+                <span>GitHub llama.cpp Releases</span>
+                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8944">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time datetime="2026-04-27T09:17:37+00:00" data-utc="2026-04-27T09:17:37+00:00">2026-04-27 09:17 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-fc2a9c54cc08e5a1ff5b.html">Hugging Face Gives Every Gradio Space a Machine-Readable Agent Interface by Default</a></h2>
+              <p class="summary">Hugging Face now automatically exposes an /agents.md endpoint on every Gradio Space, letting coding agents like Claude Code, Codex, and Pi discover and interact with Spaces without manual configuration.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Changelog</span>
+                <a href="https://huggingface.co/changelog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -123,19 +149,6 @@
               </div>
             </article>
             
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time datetime="2026-04-27T07:40:56+00:00" data-utc="2026-04-27T07:40:56+00:00">2026-04-27 07:40 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-fc2a9c54cc08e5a1ff5b.html">Hugging Face Gives Every Gradio Space a Machine-Readable Agent API by Default</a></h2>
-              <p class="summary">Gradio Spaces now automatically expose an /agents.md endpoint, letting coding agents like Claude Code, Codex, and Pi discover and use any shared Space without manual configuration.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Changelog</span>
-                <a href="https://huggingface.co/changelog">Source</a>
-              </div>
-            </article>
-            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -146,19 +159,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Blog</span>
                 <a href="https://huggingface.co/blog/deepseek-v4-a-million-token-context-that-agents-can-actually-use">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T05:21:45+00:00" data-utc="2026-04-27T05:21:45+00:00">2026-04-27 05:21 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-f9779b69b0e110094066.html">OpenAI Tags Rust-Codex Alpha Release v0.126.0, Signaling Continued Backend Investment</a></h2>
-              <p class="summary">OpenAI has published a new alpha release of its Rust-hosted Codex agent, tagging version 0.126.0-alpha.5, suggesting active backend development continues alongside the agent&#x27;s widely-deployed Copilot integration.</p>
-              <div class="card-bottom">
-                <span>GitHub Codex Releases</span>
-                <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.5">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T09:07:30+00:00";
+    const currentGeneratedAt = "2026-04-27T09:18:54+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
