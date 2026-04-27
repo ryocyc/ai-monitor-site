@@ -1,4 +1,7 @@
 {
+  "evt-bab80dbfd875ec5b1eea": "evt-bab80dbfd875ec5b1eea",
+  "blog||hugging face blog||https://huggingface.co/blog/how-to-build-scalable-web-apps-with-openais-privacy-filter": "evt-bab80dbfd875ec5b1eea",
+  "how-to-build-scalable-web-apps-with-openais-privacy-filter": "evt-bab80dbfd875ec5b1eea",
   "evt-c807b26ce49565ee2775": "evt-c807b26ce49565ee2775",
   "blog||hugging face blog||https://huggingface.co/blog/nvidia/gemma4": "evt-c807b26ce49565ee2775",
   "nvidia/gemma4": "evt-c807b26ce49565ee2775",
@@ -266,7 +269,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-bab80dbfd875ec5b1eea": "evt-bab80dbfd875ec5b1eea",
-  "blog||hugging face blog||https://huggingface.co/blog/how-to-build-scalable-web-apps-with-openais-privacy-filter": "evt-bab80dbfd875ec5b1eea",
-  "how-to-build-scalable-web-apps-with-openais-privacy-filter": "evt-bab80dbfd875ec5b1eea"
+  "evt-12cd230b4026ea9d7650": "evt-12cd230b4026ea9d7650",
+  "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8949": "evt-12cd230b4026ea9d7650",
+  "b8949": "evt-12cd230b4026ea9d7650"
 }
