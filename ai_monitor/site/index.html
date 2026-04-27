@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T17:49:44+00:00">Last built: <span data-utc="2026-04-27T17:49:44+00:00">2026-04-27 17:49 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T18:00:45+00:00">Last built: <span data-utc="2026-04-27T18:00:45+00:00">2026-04-27 18:00 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="update">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time datetime="2026-04-27T17:59:57+00:00" data-utc="2026-04-27T17:59:57+00:00">2026-04-27 17:59 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-ef5d0cfb13cbd1330669.html">Stability AI Launches Brand Studio, an End-to-End Creative Production Platform</a></h2>
+              <p class="summary">Stability AI has introduced Brand Studio, a new platform that anchors AI-assisted creative production to a brand&#x27;s own visual identity, signaling the company&#x27;s expansion beyond foundation models into integrated marketing workflows.</p>
+              <div class="card-bottom">
+                <span>Stability AI News</span>
+                <a href="https://stability.ai/news">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -133,19 +146,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Blog</span>
                 <a href="https://huggingface.co/blog/how-to-build-scalable-web-apps-with-openais-privacy-filter">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time datetime="2026-04-27T15:26:02+00:00" data-utc="2026-04-27T15:26:02+00:00">2026-04-27 15:26 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-fd747c989ee44ab573d7.html">Stability AI Launches Brand Studio, an End-to-End Creative Production Platform</a></h2>
-              <p class="summary">Stability AI has introduced Brand Studio, a new creative production platform designed to help teams generate on-brand visual and multimedia content across workflows.</p>
-              <div class="card-bottom">
-                <span>Stability AI News</span>
-                <a href="https://stability.ai/news">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T17:49:44+00:00";
+    const currentGeneratedAt = "2026-04-27T18:00:45+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
