@@ -1,4 +1,10 @@
 {
+  "evt-fd747c989ee44ab573d7": "evt-fd747c989ee44ab573d7",
+  "update||stability ai news||stability-ai-news-ana-guillen-4826-ana-guillen-4826-introducing-brand-studio-the-creative-production-plat": "evt-fd747c989ee44ab573d7",
+  "stability-ai-news-ana-guillen-4826-ana-guillen-4826-introducing-brand-studio-the-creative-production-plat": "evt-fd747c989ee44ab573d7",
+  "evt-eae1412ebe42ac61889c": "evt-eae1412ebe42ac61889c",
+  "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8948": "evt-eae1412ebe42ac61889c",
+  "b8948": "evt-eae1412ebe42ac61889c",
   "evt-15df34813c58b60c2a28": "evt-15df34813c58b60c2a28",
   "blog||hugging face blog||https://huggingface.co/blog/nvidia/nemotron-ocr-v2": "evt-15df34813c58b60c2a28",
   "nvidia/nemotron-ocr-v2": "evt-15df34813c58b60c2a28",
@@ -257,10 +263,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-fd747c989ee44ab573d7": "evt-fd747c989ee44ab573d7",
-  "update||stability ai news||stability-ai-news-ana-guillen-4826-ana-guillen-4826-introducing-brand-studio-the-creative-production-plat": "evt-fd747c989ee44ab573d7",
-  "stability-ai-news-ana-guillen-4826-ana-guillen-4826-introducing-brand-studio-the-creative-production-plat": "evt-fd747c989ee44ab573d7",
-  "evt-eae1412ebe42ac61889c": "evt-eae1412ebe42ac61889c",
-  "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8948": "evt-eae1412ebe42ac61889c",
-  "b8948": "evt-eae1412ebe42ac61889c"
+  "evt-c807b26ce49565ee2775": "evt-c807b26ce49565ee2775",
+  "blog||hugging face blog||https://huggingface.co/blog/nvidia/gemma4": "evt-c807b26ce49565ee2775",
+  "nvidia/gemma4": "evt-c807b26ce49565ee2775"
 }
