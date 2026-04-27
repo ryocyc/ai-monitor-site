@@ -1,1 +1,0 @@
-{"article_key": "github-litellm-releases::identity::v18312-nightly", "content_fingerprint": "litellm v1 83 12 nightly moonshot kimi k2 6 added docker images now signed with cosign this nightly adds moonshot kimi k2 6 to the model registry introduces adaptive routing and ships docker image signature verification via cosign for all litellm images", "slug": "v18312-nightly"}
