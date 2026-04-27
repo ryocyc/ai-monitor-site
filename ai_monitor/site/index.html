@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T05:22:52+00:00">Last built: <span data-utc="2026-04-27T05:22:52+00:00">2026-04-27 05:22 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T05:33:35+00:00">Last built: <span data-utc="2026-04-27T05:33:35+00:00">2026-04-27 05:33 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time datetime="2026-04-27T05:32:58+00:00" data-utc="2026-04-27T05:32:58+00:00">2026-04-27 05:32 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-fc2a9c54cc08e5a1ff5b.html">Hugging Face Turns Every Gradio Space Into a Self-Describing API for AI Agents</a></h2>
+              <p class="summary">Hugging Face now automatically generates a machine-readable /agents.md endpoint for every Gradio Space, letting coding agents like Claude Code, Codex, and Pi discover and interact with hosted demos on their own terms, with no manual configuration required.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Changelog</span>
+                <a href="https://huggingface.co/changelog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -133,19 +146,6 @@
               <div class="card-bottom">
                 <span>GitHub Codex Releases</span>
                 <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.4">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time datetime="2026-04-27T04:04:53+00:00" data-utc="2026-04-27T04:04:53+00:00">2026-04-27 04:04 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-fc2a9c54cc08e5a1ff5b.html">Hugging Face Gives Every Gradio Space a Machine-Readable Agent API by Default</a></h2>
-              <p class="summary">Hugging Face has updated Gradio so that every deployed Space automatically exposes an /agents.md endpoint, letting AI coding agents like Claude Code, Codex, and Pi discover and use the application without manual configuration.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Changelog</span>
-                <a href="https://huggingface.co/changelog">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T05:22:52+00:00";
+    const currentGeneratedAt = "2026-04-27T05:33:35+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
