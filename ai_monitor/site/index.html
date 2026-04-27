@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T05:11:35+00:00">Last built: <span data-utc="2026-04-27T05:11:35+00:00">2026-04-27 05:11 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T05:22:52+00:00">Last built: <span data-utc="2026-04-27T05:22:52+00:00">2026-04-27 05:22 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-27T05:21:44+00:00" data-utc="2026-04-27T05:21:44+00:00">2026-04-27 05:21 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-cfaca95adb9fbe8b6f4e.html">llama.cpp Lands Internal Cleanup Fix for Debug Module in Latest Release</a></h2>
+              <p class="summary">A patch release of the widely-used llama.cpp inference runtime fixes missing symbol exports and reduces header-file dependencies that caused build failures under Link Time Optimization.</p>
+              <div class="card-bottom">
+                <span>GitHub llama.cpp Releases</span>
+                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8943">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>GitHub Codex Releases</span>
                 <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.4">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T04:04:57+00:00" data-utc="2026-04-27T04:04:57+00:00">2026-04-27 04:04 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-3d7bf62818149c9383d1.html">vLLM v0.18.1 Release Candidate Lands with Mamba State-Copy Optimization</a></h2>
-              <p class="summary">The vLLM open-source inference engine has tagged v0.18.1rc0, adding a targeted optimization to how Mamba state groups are handled during hybrid attention copy operations.</p>
-              <div class="card-bottom">
-                <span>GitHub vLLM Releases</span>
-                <a href="https://github.com/vllm-project/vllm/releases/tag/v0.18.1rc0">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T05:11:35+00:00";
+    const currentGeneratedAt = "2026-04-27T05:22:52+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;

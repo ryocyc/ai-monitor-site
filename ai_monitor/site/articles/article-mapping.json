@@ -1,4 +1,7 @@
 {
+  "evt-ec482cc1a31da8fc5fe0": "evt-ec482cc1a31da8fc5fe0",
+  "news||openai newsroom||https://openai.com/academy/codex-automations": "evt-ec482cc1a31da8fc5fe0",
+  "codex-automations": "evt-ec482cc1a31da8fc5fe0",
   "evt-166f00064205067195d4": "evt-166f00064205067195d4",
   "blog||hugging face blog||https://huggingface.co/blog/deepseek-v4-a-million-token-context-that-agents-can-actually-use": "evt-166f00064205067195d4",
   "deepseek-v4-a-million-token-context-that-agents-can-actually-use": "evt-166f00064205067195d4",
@@ -209,7 +212,10 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-ec482cc1a31da8fc5fe0": "evt-ec482cc1a31da8fc5fe0",
-  "news||openai newsroom||https://openai.com/academy/codex-automations": "evt-ec482cc1a31da8fc5fe0",
-  "codex-automations": "evt-ec482cc1a31da8fc5fe0"
+  "evt-f9779b69b0e110094066": "evt-f9779b69b0e110094066",
+  "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.5": "evt-f9779b69b0e110094066",
+  "rust-v0.126.0-alpha.5": "evt-f9779b69b0e110094066",
+  "evt-cfaca95adb9fbe8b6f4e": "evt-cfaca95adb9fbe8b6f4e",
+  "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8943": "evt-cfaca95adb9fbe8b6f4e",
+  "b8943": "evt-cfaca95adb9fbe8b6f4e"
 }
