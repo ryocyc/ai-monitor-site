@@ -217,5 +217,8 @@
   "v0.9.1": "evt-a6fa898b123d9570bd92",
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445"
+  "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
+  "evt-46b08cd74dd84210f13c": "evt-46b08cd74dd84210f13c",
+  "news||deepseek home||deepseek-v4": "evt-46b08cd74dd84210f13c",
+  "deepseek-v4": "evt-46b08cd74dd84210f13c"
 }

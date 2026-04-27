@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T07:30:50+00:00">Last built: <span data-utc="2026-04-27T07:30:50+00:00">2026-04-27 07:30 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T07:42:28+00:00">Last built: <span data-utc="2026-04-27T07:42:28+00:00">2026-04-27 07:42 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -87,13 +87,26 @@
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
-                <time datetime="2026-04-27T07:29:43+00:00" data-utc="2026-04-27T07:29:43+00:00">2026-04-27 07:29 UTC</time>
+                <time datetime="2026-04-27T07:40:56+00:00" data-utc="2026-04-27T07:40:56+00:00">2026-04-27 07:40 UTC</time>
               </div>
-              <h2 class="headline"><a href="./articles/evt-fc2a9c54cc08e5a1ff5b.html">Hugging Face Turns Every Gradio Space Into a Self-Describing API for AI Agents</a></h2>
-              <p class="summary">Gradio Spaces now expose an /agents.md endpoint by default, letting AI coding agents like Claude Code, Codex, and Pi interact with any Space automatically, without manual configuration or setup.</p>
+              <h2 class="headline"><a href="./articles/evt-fc2a9c54cc08e5a1ff5b.html">Hugging Face Gives Every Gradio Space a Machine-Readable Agent API by Default</a></h2>
+              <p class="summary">Gradio Spaces now automatically expose an /agents.md endpoint, letting coding agents like Claude Code, Codex, and Pi discover and use any shared Space without manual configuration.</p>
               <div class="card-bottom">
                 <span>Hugging Face Changelog</span>
                 <a href="https://huggingface.co/changelog">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-04-27T07:40:55+00:00" data-utc="2026-04-27T07:40:55+00:00">2026-04-27 07:40 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-46b08cd74dd84210f13c.html">DeepSeek Launches V4 Preview with Improved Reasoning and Agent Capabilities</a></h2>
+              <p class="summary">DeepSeek has released a preview of its V4 flagship model, claiming world-class reasoning performance and significantly enhanced agent abilities, now accessible via web, mobile app, and API.</p>
+              <div class="card-bottom">
+                <span>DeepSeek Home</span>
+                <a href="https://www.deepseek.com/">Source</a>
               </div>
             </article>
             
@@ -200,19 +213,6 @@
                 <a href="https://portkey.ai/blog">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time datetime="2026-04-24T18:50:04+00:00" data-utc="2026-04-24T18:50:04+00:00">2026-04-24 18:50 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-e7813d99f9d0165dec74.html">Together AI Expands Serverless Inference Catalog with New Chinese Frontier Models</a></h2>
-              <p class="summary">Together AI has updated its serverless inference pricing to include latest versions of leading Chinese AI models including MiniMax M2.7, Kimi K2.6, and GLM-5.1 alongside established open-weight options like Gemma 4 and Qwen3.5.</p>
-              <div class="card-bottom">
-                <span>Together AI Pricing</span>
-                <a href="https://www.together.ai/pricing">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T07:30:50+00:00";
+    const currentGeneratedAt = "2026-04-27T07:42:28+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
