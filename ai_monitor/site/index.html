@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T12:11:06+00:00">Last built: <span data-utc="2026-04-27T12:11:06+00:00">2026-04-27 12:11 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T12:53:53+00:00">Last built: <span data-utc="2026-04-27T12:53:53+00:00">2026-04-27 12:53 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,32 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-04-27T12:52:54+00:00" data-utc="2026-04-27T12:52:54+00:00">2026-04-27 12:52 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-2b9b7e982e81075bb40e.html">A Practical Guide to KV Caching for Transformer Inference Lands on Hugging Face</a></h2>
+              <p class="summary">A community-authored explainer on the key-value caching mechanism that cuts redundant computation during transformer inference has been published on Hugging Face&#x27;s blog, offering builders a concrete technical reference for optimizing model serving.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/not-lain/kv-caching">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-27T12:42:02+00:00" data-utc="2026-04-27T12:42:02+00:00">2026-04-27 12:42 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-b28d02d8c79acfd6d956.html">OpenAI Publishes Alpha Release v0.126.0 of Its Codex Coding Agent</a></h2>
+              <p class="summary">OpenAI tagged a new alpha build of its Codex coding-agent project on April 27, 2026, continuing the project&#x27;s rapid iteration cycle, though the release carries no public changelog or notes at this time.</p>
+              <div class="card-bottom">
+                <span>GitHub Codex Releases</span>
+                <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.6">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -94,32 +120,6 @@
               <div class="card-bottom">
                 <span>GitHub vLLM Releases</span>
                 <a href="https://github.com/vllm-project/vllm/releases/tag/v0.20.1rc0">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T11:48:51+00:00" data-utc="2026-04-27T11:48:51+00:00">2026-04-27 11:48 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-ed3310b3f0d325138005.html">Zilliz Releases Claude Context v0.1.10</a></h2>
-              <p class="summary">Zilliz has tagged v0.1.10 of its Claude Context repository, a relatively early-stage release from the vector database company best known for the Milvus open-source project.</p>
-              <div class="card-bottom">
-                <span>GitHub Claude Context Releases</span>
-                <a href="https://github.com/zilliztech/claude-context/releases/tag/v0.1.10">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-04-27T11:27:01+00:00" data-utc="2026-04-27T11:27:01+00:00">2026-04-27 11:27 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-166f00064205067195d4.html">DeepSeek-V4 Brings Million-Token Context Windows to Agent Workflows</a></h2>
-              <p class="summary">DeepSeek-V4&#x27;s expanded context window lets agents work with the equivalent of an entire code repository or long document corpus in a single pass, removing the chunking and summarization workarounds that have constrained long-horizon agent tasks.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/deepseek-v4-a-million-token-context-that-agents-can-actually-use">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T12:11:06+00:00";
+    const currentGeneratedAt = "2026-04-27T12:53:53+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
