@@ -1,7 +1,68 @@
 {
-  "generated_at": "2026-04-27T19:06:10+00:00",
+  "generated_at": "2026-04-27T19:17:06+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-27T19:16:21+00:00",
+      "source_name": "GitHub Codex Releases",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "effective_url": "https://github.com/openai/codex/releases.atom",
+      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8",
+      "category": "release",
+      "headline_en": "Codex release feed now shows rust-v0.126.0-alpha.8",
+      "summary_en": "The monitored release feed for Codex changed and the newest visible tag is rust-v0.126.0-alpha.8. The feed timestamp is 2026-04-27T19:13:32Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=rust-v0.126.0-alpha.8 updated=2026-04-27T19:13:32Z link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8 summary= content=Release 0.126.0-alpha.8",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=rust-v0.126.0-alpha.8",
+        "+updated=2026-04-27T19:13:32Z",
+        "+link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8",
+        "+summary=",
+        "+content=Release 0.126.0-alpha.8",
+        "+",
+        " title=0.126.0-alpha.7",
+        " updated=2026-04-27T14:56:22Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=Release 0.125.0-alpha.3",
+        "-",
+        "-title=0.125.0-alpha.2",
+        "-updated=2026-04-24T11:02:11Z",
+        "-link=https://github.com/openai/codex/releases/tag/rust-v0.125.0-alpha.2",
+        "-summary=",
+        "-content=Release 0.125.0-alpha.2"
+      ],
+      "article_identity": "rust-v0.126.0-alpha.8",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8",
+      "id": "evt-b78803151892817638bf",
+      "content_fingerprint": "codex release feed now shows rust v0 126 0 alpha 8 the monitored release feed for codex changed and the newest visible tag is rust v0 126 0 alpha 8 the feed timestamp is 2026 04 27t19 13 32z this looks like a release level update rather than a cosmetic page edit title rust v0 126 0 alpha 8 updated 2026 04 27t19 13 32z link https github com openai codex releases tag rust v0 126 0 alpha 8 summary content release 0 126 0 alpha 8",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "codex release feed now shows rust v0 126 0 alpha 8 the monitored release feed for codex changed and the newest visible tag is rust v0 126 0 alpha 8 the feed timestamp is 2026 04 27t19 13 32z this looks like a release level update rather than a cosmetic page edit title rust v0 126 0 alpha 8 updated 2026 04 27t19 13 32z link https github com openai codex releases tag rust v0 126 0 alpha 8 summary content release 0 126 0 alpha 8",
+      "github_release_signal_fingerprint": "codex release feed now shows version the monitored release feed for codex changed and the newest visible tag is version the feed timestamp is 2026 04 27t19 13 32z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 27t19 13 32z link https github com openai codex releases tag version summary content release version",
+      "article_h1": "OpenAI Ships Alpha Release of Codex CLI, Tagging v0.126.0-alpha.8",
+      "article_standfirst": "OpenAI has pushed a new alpha release, tagged v0.126.0-alpha.8, to its open-source Codex CLI repository, signaling continued iteration on the command-line coding agent built on the same foundation as GitHub Copilot.",
+      "article_body": [
+        "OpenAI has published a new alpha release, rust-v0.126.0-alpha.8, to the public Codex repository on GitHub. The release was tagged on 2026-04-27 at 19:13:32 UTC and is visible in the repository's release feed. No release notes, changelog, or summary text were surfaced in the fetched page content.",
+        "The Codex repository hosts the official CLI tool for OpenAI's coding agent — the same model backend that powers GitHub Copilot's agentic capabilities. The \"rust\" prefix in the tag suggests this release relates to the Rust-based rewrite or tooling layer of the CLI, consistent with a series of alpha tags that have been landing in this feed over recent weeks.",
+        "For developers using or evaluating the Codex CLI, this tag confirms that active development is ongoing, even in the absence of detailed release notes. For teams integrating Codex into CI/CD or developer tooling pipelines, tracking alpha tags provides early signal on upcoming changes that may affect workflow behaviour or API contracts."
+      ],
+      "article_why_matters": [
+        "The Codex CLI is the primary way developers directly invoke OpenAI's coding agent outside of IDE integrations, making any release notable for toolchain builders.",
+        "The Rust-prefixed alpha tag series suggests a structural rewrite or performance-focused reimplementation is under active development, not merely cosmetic updates.",
+        "Without published release notes, teams using Codex in production or pre-release evaluation cannot assess what changed — making this release a reminder that alpha-channel software requires close feed monitoring."
+      ],
+      "article_source_note": [
+        "This brief is based on the GitHub release feed for the openai/codex repository and the tagged release page at the provided URL. The release page contained a title and timestamp but no summary, changelog, or body content at the time of fetch, limiting the level of detail available. The repository is OpenAI's public home for the Codex CLI, the command-line interface to the company's coding agent."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-27T19:05:32+00:00",
       "source_name": "ElevenLabs Changelog",
@@ -279,67 +340,6 @@
       ],
       "article_source_note": [
         "Information is drawn from the GitHub release tag page for ggml-org/llama.cpp at commit b8950 (April 27, 2026) and the accompanying release feed entry. No written release notes or changelog body was present on the page; the content consisted of the PR title, build artifact listings, and platform labels, limiting the level of substantive detail available."
-      ],
-      "article_confidence": "moderate",
-      "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-27T17:15:10+00:00",
-      "source_name": "GitHub LangGraph Releases",
-      "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "effective_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "target_url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.12",
-      "category": "release",
-      "headline_en": "LangGraph release feed now shows langgraph-prebuilt==1.0.12",
-      "summary_en": "The monitored release feed for LangGraph changed and the newest visible tag is langgraph-prebuilt==1.0.12. The feed timestamp is 2026-04-27T17:14:44Z. This looks like a release-level update rather than a cosmetic page edit.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=langgraph-prebuilt==1.0.12 updated=2026-04-27T17:14:44Z link=https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.12 summary= content=Changes since prebuilt==1.0.11 release(prebuilt): 1.0.12, langgraph 1.1.10 ( #7623 ) release(checkpoint): 4.0.3 ( #7625 ) fix(prebuilt): hydrate ToolNode state from channels via pregel helpers ( #7594 )",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,8 @@",
-        "+title=langgraph-prebuilt==1.0.12",
-        "+updated=2026-04-27T17:14:44Z",
-        "+link=https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.12",
-        "+summary=",
-        "+content=Changes since prebuilt==1.0.11 release(prebuilt): 1.0.12, langgraph 1.1.10 ( #7623 ) release(checkpoint): 4.0.3 ( #7625 ) fix(prebuilt): hydrate ToolNode state from channels via pregel helpers ( #7594 )",
-        "+",
-        " title=langgraph-checkpoint==4.0.3",
-        " updated=2026-04-27T14:34:20Z",
-        "@@ -52,8 +58,2 @@",
-        " summary=",
-        " content=Changes since cli==0.4.21 CLI bump chore: start tracking cli deploy source ( #7520 ) chore(deps): bump langsmith from 0.7.26 to 0.7.31 in /libs/cli ( #7529 ) chore(deps): bump the uv group across 2 directories with 1 update ( #7531 ) chore(deps): bump langsmith from 0.5.18 to 0.5.20 in /libs/cli/js-examples ( #7522 ) chore(deps): bump langsmith from 0.5.18 to 0.5.20 in /libs/cli/js-monorepo-example ( #7521 ) chore(deps): bump langchain-core from 1.2.27 to 1.2.28 in /libs/cli ( #7450 ) chore(deps): bump langsmith from 0.5.4 to 0.5.18 in /libs/cli/js-examples ( #7474 ) chore(deps): bump langsmith from 0.5.4 to 0.5.18 in /libs/cli/js-monorepo-example ( #7475 ) chore(deps): bump uv from 0.11.3 to 0.11.6 in /libs/cli ( #7472 ) chore(deps): bump cryptography from 46.0.6 to 46.0.7 in /libs/cli ( #7456 ) chore(deps): bump the uv group across 2 directories with 1 update ( #7458 )",
-        "-",
-        "-title=langgraph-checkpoint==4.0.2",
-        "-updated=2026-04-15T21:03:16Z",
-        "-link=https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.0.2",
-        "-summary=",
-        "-content=Changes since checkpoint==4.0.1 release(checkpoint): 4.0.2 ( #7518 ) docs: document LANGGRAPH_STRICT_MSGPACK for checkpoint security ( #7517 ) chore(deps): bump pytest from 9.0.2 to 9.0.3 in /libs/checkpoint ( #7506 ) chore(deps): bump langchain-core from 1.2.23 to 1.2.28 in /libs/checkpoint ( #7453 ) chore(deps): bump the minor-and-patch group in /libs/checkpoint with 3 updates ( #7373 ) chore(deps): bump pygments from 2.19.2 to 2.20.0 in /libs/checkpoint ( #7348 ) chore(deps): bump the minor-and-patch group in /libs/checkpoint with 2 updates ( #7292 ) chore(deps): bump requests from 2.32.5 to 2.33.0 in /libs/checkpoint ( #7285 ) chore(deps): bump the all-dependencies group in /libs/checkpoint with 2 updates ( #7250 ) chore(deps): bump the all-dependencies group in /libs/checkpoint with 2 updates ( #7198 ) chore(deps): bump orjson from 3.11.5 to 3.11.6 in /libs/checkpoint ( #7146 ) fix(checkpoint): don't add the task to the checkpoint batch if it was… ( #7168 ) chore(deps): bump the all-dependencies group across 1 directory with 4 updates ( #7074 )"
-      ],
-      "article_identity": "prebuilt-1.0.12",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "release||github langgraph releases||https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3d%3d1.0.12",
-      "id": "evt-582e445b325c9dccf9cf",
-      "content_fingerprint": "langgraph release feed now shows langgraph prebuilt 1 0 12 the monitored release feed for langgraph changed and the newest visible tag is langgraph prebuilt 1 0 12 the feed timestamp is 2026 04 27t17 14 44z this looks like a release level update rather than a cosmetic page edit title langgraph prebuilt 1 0 12 updated 2026 04 27t17 14 44z link https github com langchain ai langgraph releases tag prebuilt 3d 3d1 0 12 summary content changes since prebuilt 1 0 11 release prebuilt 1 0 12 langgraph 1 1 10 7623 release checkpoint 4 0 3 7625 fix prebuilt hydrate toolnode state from channels via pregel helpers 7594",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "langgraph release feed now shows langgraph prebuilt 1 0 12 the monitored release feed for langgraph changed and the newest visible tag is langgraph prebuilt 1 0 12 the feed timestamp is 2026 04 27t17 14 44z this looks like a release level update rather than a cosmetic page edit title langgraph prebuilt 1 0 12 updated 2026 04 27t17 14 44z link https github com langchain ai langgraph releases tag prebuilt 3d 3d1 0 12 summary content changes since prebuilt 1 0 11 release prebuilt 1 0 12 langgraph 1 1 10 7623 release checkpoint 4 0 3 7625 fix prebuilt hydrate toolnode state from channels via pregel helpers 7594",
-      "github_release_signal_fingerprint": "langgraph release feed now shows langgraph prebuilt version the monitored release feed for langgraph changed and the newest visible tag is langgraph prebuilt version the feed timestamp is 2026 04 27t17 14 44z this looks like a release level update rather than a cosmetic page edit title langgraph prebuilt version updated 2026 04 27t17 14 44z link https github com langchain ai langgraph releases tag prebuilt 3d 3d1 version summary content changes since prebuilt version release prebuilt version langgraph version 7623 release checkpoint version 7625 fix prebuilt hydrate toolnode state from channels via pregel helpers 7594",
-      "article_h1": "LangGraph Prebuilt Package Updated to 1.0.12 with Core Engine Upgrades",
-      "article_standfirst": "LangGraph's production-ready prebuilt package has been bumped to version 1.0.12, bringing updated internal dependencies and a fix for how ToolNode handles agent state hydration.",
-      "article_body": [
-        "LangChain AI has released langgraph-prebuilt version 1.0.12, the latest iteration of its opinionated, deployment-ready packaging of the LangGraph framework for building stateful multi-actor LLM applications. The release landed on April 27, 2026.",
-        "The update bundles three coordinated changes: the core LangGraph runtime is bumped to 1.1.10, the checkpointing subsystem is updated to 4.0.3, and a bug fix addresses how ToolNode — the component that lets agents invoke tools — hydrates state from underlying channel data using Pregel helpers. All three changes reference specific pull requests (#7623, #7625, #7594), indicating a coordinated minor release rather than a hotfix.",
-        "For agent builders deploying LangGraph in production, the ToolNode hydration fix is the most directly impactful change. Incorrect state hydration could cause tools to operate on stale or incomplete agent context, a class of bug that is hard to diagnose in complex multi-step workflows. The checkpoint and runtime bumps ensure teams running the prebuilt package are not left behind on older internal dependencies."
-      ],
-      "article_why_matters": [
-        "The ToolNode state hydration fix resolves a potential source of silent failures in multi-step agentic pipelines where tool results feed back into agent memory.",
-        "The prebuilt package is the recommended production entry point for LangGraph, so dependency bumps here signal that the ecosystem is moving toward LangGraph 1.1.x and checkpoint 4.x.",
-        "Agent builders using the prebuilt image or distribution can patch by upgrading their dependency without rewriting any workflow code."
-      ],
-      "article_source_note": [
-        "This brief is based on the official LangGraph releases atom feed and the release page for tag prebuilt==1.0.12 on the langchain-ai/langgraph GitHub repository. The release summary lists the component updates and linked PRs but does not include a full changelog or release notes narrative, so some contextual framing is inferred from the package name and PR subject lines."
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"

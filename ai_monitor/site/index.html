@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T19:06:10+00:00">Last built: <span data-utc="2026-04-27T19:06:10+00:00">2026-04-27 19:06 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T19:17:06+00:00">Last built: <span data-utc="2026-04-27T19:17:06+00:00">2026-04-27 19:17 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-27T19:16:21+00:00" data-utc="2026-04-27T19:16:21+00:00">2026-04-27 19:16 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-b78803151892817638bf.html">OpenAI Ships Alpha Release of Codex CLI, Tagging v0.126.0-alpha.8</a></h2>
+              <p class="summary">OpenAI has pushed a new alpha release, tagged v0.126.0-alpha.8, to its open-source Codex CLI repository, signaling continued iteration on the command-line coding agent built on the same foundation as GitHub Copilot.</p>
+              <div class="card-bottom">
+                <span>GitHub Codex Releases</span>
+                <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="update">
               <div class="card-top">
                 <span class="pill">update</span>
@@ -146,19 +159,6 @@
               <div class="card-bottom">
                 <span>GitHub llama.cpp Releases</span>
                 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8950">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T17:15:10+00:00" data-utc="2026-04-27T17:15:10+00:00">2026-04-27 17:15 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-582e445b325c9dccf9cf.html">LangGraph Prebuilt Package Updated to 1.0.12 with Core Engine Upgrades</a></h2>
-              <p class="summary">LangGraph&#x27;s production-ready prebuilt package has been bumped to version 1.0.12, bringing updated internal dependencies and a fix for how ToolNode handles agent state hydration.</p>
-              <div class="card-bottom">
-                <span>GitHub LangGraph Releases</span>
-                <a href="https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.12">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T19:06:10+00:00";
+    const currentGeneratedAt = "2026-04-27T19:17:06+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
