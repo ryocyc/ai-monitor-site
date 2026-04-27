@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T19:48:55+00:00">Last built: <span data-utc="2026-04-27T19:48:55+00:00">2026-04-27 19:48 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T20:00:01+00:00">Last built: <span data-utc="2026-04-27T20:00:01+00:00">2026-04-27 20:00 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-04-27T19:59:00+00:00" data-utc="2026-04-27T19:59:00+00:00">2026-04-27 19:59 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-cb04b7cf22b31938acaf.html">OpenAI Publishes Codex Settings Guide as Agent Workflow Documentation Push Continues</a></h2>
+              <p class="summary">OpenAI released configuration guidance for its Codex coding agent, covering personalization, detail level, and permissions controls, the same week the company published a technical deep-dive into the WebSocket-based architecture powering Codex&#x27;s agent loop.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/academy/codex-settings">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>Microsoft AI Blog</span>
                 <a href="https://blogs.microsoft.com/ai/">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-04-27T18:10:51+00:00" data-utc="2026-04-27T18:10:51+00:00">2026-04-27 18:10 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-14d3f6854a911a5fe8b9.html">OpenAI expands Codex documentation with getting-started guide and settings tutorial</a></h2>
-              <p class="summary">OpenAI has published two new Codex learning resources—a step-by-step setup guide and a settings walkthrough—signaling a continued push to onboard developers and teams to its cloud-hosted code-writing agent.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/academy/codex-how-to-start">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T19:48:55+00:00";
+    const currentGeneratedAt = "2026-04-27T20:00:01+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;

@@ -1,4 +1,7 @@
 {
+  "evt-b78803151892817638bf": "evt-b78803151892817638bf",
+  "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8": "evt-b78803151892817638bf",
+  "rust-v0.126.0-alpha.8": "evt-b78803151892817638bf",
   "evt-09fefaf9764b27746427": "evt-09fefaf9764b27746427",
   "update||elevenlabs changelog||elevenlabs-changelog-overview-elevencreative-elevenagents-elevenapi-api-reference-changelog-light-on-this-page-ap": "evt-09fefaf9764b27746427",
   "elevenlabs-changelog-overview-elevencreative-elevenagents-elevenapi-api-reference-changelog-light-on-this-page-ap": "evt-09fefaf9764b27746427",
@@ -305,7 +308,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-b78803151892817638bf": "evt-b78803151892817638bf",
-  "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8": "evt-b78803151892817638bf",
-  "rust-v0.126.0-alpha.8": "evt-b78803151892817638bf"
+  "evt-cb04b7cf22b31938acaf": "evt-cb04b7cf22b31938acaf",
+  "news||openai newsroom||https://openai.com/academy/codex-settings": "evt-cb04b7cf22b31938acaf",
+  "codex-settings": "evt-cb04b7cf22b31938acaf"
 }
