@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>n8n release feed now shows stable | AI Signal Articles</title>
-  <meta name="description" content="The monitored release feed for n8n changed and the newest visible tag is stable. The feed timestamp is 2026-04-24T07:59:04Z. This looks like a release-l...">
+  <title>n8n 2.17.8 Patches Credit Prompt Bug and Refreshes Editor Wallet UI | AI Signal Articles</title>
+  <meta name="description" content="The latest n8n release eliminates a conflicting &quot;Get 100 free OpenAI API credits&quot; prompt for users running aiGateway under a valid license, and fixes th...">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
   <style>
@@ -188,15 +188,15 @@
     </section>
     <div class="topline">
       <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
-      <div>Generated <span data-utc="2026-04-27T00:32:42+00:00">2026-04-27 00:32 UTC</span></div>
+      <div>Generated <span data-utc="2026-04-27T10:02:01+00:00">2026-04-27 10:02 UTC</span></div>
     </div>
     <article class="hero">
       <span class="chip">release</span>
-      <h1>n8n release feed now shows stable</h1>
-      <p class="standfirst">The monitored release feed for n8n changed and the newest visible tag is stable. The feed timestamp is 2026-04-24T07:59:04Z. This looks like a release-level update rather than a cosmetic page edit.</p>
+      <h1>n8n 2.17.8 Patches Credit Prompt Bug and Refreshes Editor Wallet UI</h1>
+      <p class="standfirst">The latest n8n release eliminates a conflicting &quot;Get 100 free OpenAI API credits&quot; prompt for users running aiGateway under a valid license, and fixes the editor&#x27;s wallet balance display so it refreshes on demand.</p>
       <div class="meta">
         <span>GitHub n8n Releases</span>
-        <span>&lt;span data-utc=&quot;2026-04-24T08:00:11+00:00&quot;&gt;2026-04-24 08:00 UTC&lt;/span&gt;</span>
+        <span>&lt;span data-utc=&quot;2026-04-27T10:01:14+00:00&quot;&gt;2026-04-27 10:01 UTC&lt;/span&gt;</span>
         <span>Key: evt-56d52bb62fe25e13dfbb</span>
         <span>Confidence: moderate</span>
         <span>Mode: claude</span>
@@ -210,19 +210,21 @@
       
       <section class="section">
         <h2>Article body</h2>
-        
+        <p>n8n has published version 2.17.8, addressing two editor-level bugs in its workflow automation platform. The first fix prevents a &quot;Get 100 free OpenAI API credits&quot; prompt from appearing when aiGateway is enabled under an active license, removing an unnecessary and potentially confusing upsell flow for paying users. The second fix ensures the wallet balance in the editor refreshes immediately when a user clicks the usage refresh action.</p>
+<p>Both changes are scoped to the editor component and tied to aiGateway, n8n&#x27;s built-in routing layer for directing AI API calls through a unified gateway. The aiGateway feature is designed to let n8n users manage API credit allocation and routing across multiple AI providers from a single interface. The release notes reference two pull requests—#29058 for the credit prompt fix and #29081 for the wallet refresh—published on April 27, 2026.</p>
+<p>For teams using n8n to orchestrate AI-powered workflows, the 2.17.8 patch removes an annoyance that could interrupt operator sessions, and the corrected wallet balance refresh means users can monitor actual API spend more reliably without needing to reload the full interface. Workflow authors who rely on aiGateway for credit pooling or provider routing should update to avoid the conflicting UI state.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <p>No bullet points were generated for this page.</p>
+        <ul class="bullets"><li>License-paying n8n users running aiGateway were seeing a promotional credit prompt they couldn&#x27;t act on, creating a confusing UX that has now been removed.</li><li>Accurate wallet balance visibility is essential for teams managing AI API spend at scale; the previous bug meant stale data after a usage refresh click.</li><li>The patch confirms ongoing investment in aiGateway&#x27;s editor experience, signaling that n8n&#x27;s AI gateway feature is a maintained and actively developed part of the platform.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <p>No bullet points were generated for this page.</p>
+        <ul class="bullets"><li>The brief is based on the official n8n releases page on GitHub, which listed two bug fixes for version 2.17.8 published on 2026-04-27. The release notes do not describe broader product direction, roadmap context, or usage metrics, so this brief is limited to what was directly stated in the release tag.</li></ul>
       </section>
     
       <section class="section">
@@ -242,7 +244,7 @@
       if (!button || !status) return;
       const shareData = {
         title: document.title,
-        text: "The monitored release feed for n8n changed and the newest visible tag is stable. The feed timestamp is 2026-04-24T07:59:04Z. This looks l...",
+        text: "The latest n8n release eliminates a conflicting \"Get 100 free OpenAI API credits\" prompt for users running aiGateway under a valid licens...",
         url: window.location.href
       };
       const setStatus = (message) => {

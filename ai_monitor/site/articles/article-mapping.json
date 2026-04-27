@@ -1,4 +1,10 @@
 {
+  "evt-56d52bb62fe25e13dfbb": "evt-56d52bb62fe25e13dfbb",
+  "release||github n8n releases||https://github.com/n8n-io/n8n/releases/tag/stable": "evt-56d52bb62fe25e13dfbb",
+  "stable": "evt-56d52bb62fe25e13dfbb",
+  "evt-5b9e6759fe8f79f59a08": "evt-5b9e6759fe8f79f59a08",
+  "release||github n8n releases||https://github.com/n8n-io/n8n/releases/tag/n8n%402.18.4": "evt-5b9e6759fe8f79f59a08",
+  "n8n-2.18.4": "evt-5b9e6759fe8f79f59a08",
   "evt-fc2a9c54cc08e5a1ff5b": "evt-fc2a9c54cc08e5a1ff5b",
   "docs||hugging face changelog||every-gradio-space-now-auto-serves-an-agents": "evt-fc2a9c54cc08e5a1ff5b",
   "every-gradio-space-now-auto-serves-an-agents": "evt-fc2a9c54cc08e5a1ff5b",
@@ -140,9 +146,6 @@
   "evt-05cd2501b2fe60e4d9c6": "evt-05cd2501b2fe60e4d9c6",
   "release||github ollama releases||https://github.com/ollama/ollama/releases/tag/v0.21.3-rc0": "evt-05cd2501b2fe60e4d9c6",
   "v0.21.3-rc0": "evt-05cd2501b2fe60e4d9c6",
-  "evt-56d52bb62fe25e13dfbb": "evt-56d52bb62fe25e13dfbb",
-  "release||github n8n releases||https://github.com/n8n-io/n8n/releases/tag/stable": "evt-56d52bb62fe25e13dfbb",
-  "stable": "evt-56d52bb62fe25e13dfbb",
   "evt-55ee71fc6d0ecc6e4f2d": "evt-55ee71fc6d0ecc6e4f2d",
   "release||github litellm releases||https://github.com/berriai/litellm/releases/tag/v1.83.13-nightly": "evt-55ee71fc6d0ecc6e4f2d",
   "v1.83.13-nightly": "evt-55ee71fc6d0ecc6e4f2d",
@@ -226,8 +229,5 @@
   "v0.9.1": "evt-a6fa898b123d9570bd92",
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-5b9e6759fe8f79f59a08": "evt-5b9e6759fe8f79f59a08",
-  "release||github n8n releases||https://github.com/n8n-io/n8n/releases/tag/n8n%402.18.4": "evt-5b9e6759fe8f79f59a08",
-  "n8n-2.18.4": "evt-5b9e6759fe8f79f59a08"
+  "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445"
 }
