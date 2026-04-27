@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hugging Face Gives Every Gradio Space a Machine-Readable Agent API by Default | AI Signal Articles</title>
-  <meta name="description" content="Hugging Face has updated Gradio so that every deployed Space automatically exposes an /agents.md endpoint, letting AI coding agents like Claude Code, Co...">
+  <title>vLLM v0.18.1 Release Candidate Lands with Mamba State-Copy Optimization | AI Signal Articles</title>
+  <meta name="description" content="The vLLM open-source inference engine has tagged v0.18.1rc0, adding a targeted optimization to how Mamba state groups are handled during hybrid attentio...">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
   <style>
@@ -191,13 +191,13 @@
       <div>Generated <span data-utc="2026-04-27T04:18:38+00:00">2026-04-27 04:18 UTC</span></div>
     </div>
     <article class="hero">
-      <span class="chip">docs</span>
-      <h1>Hugging Face Gives Every Gradio Space a Machine-Readable Agent API by Default</h1>
-      <p class="standfirst">Hugging Face has updated Gradio so that every deployed Space automatically exposes an /agents.md endpoint, letting AI coding agents like Claude Code, Codex, and Pi discover and use the application without manual configuration.</p>
+      <span class="chip">release</span>
+      <h1>vLLM v0.18.1 Release Candidate Lands with Mamba State-Copy Optimization</h1>
+      <p class="standfirst">The vLLM open-source inference engine has tagged v0.18.1rc0, adding a targeted optimization to how Mamba state groups are handled during hybrid attention copy operations.</p>
       <div class="meta">
-        <span>Hugging Face Changelog</span>
-        <span>&lt;span data-utc=&quot;2026-04-27T04:04:53+00:00&quot;&gt;2026-04-27 04:04 UTC&lt;/span&gt;</span>
-        <span>Key: evt-fc2a9c54cc08e5a1ff5b</span>
+        <span>GitHub vLLM Releases</span>
+        <span>&lt;span data-utc=&quot;2026-04-27T04:04:57+00:00&quot;&gt;2026-04-27 04:04 UTC&lt;/span&gt;</span>
+        <span>Key: evt-3d7bf62818149c9383d1</span>
         <span>Confidence: moderate</span>
         <span>Mode: claude</span>
       </div>
@@ -210,26 +210,26 @@
       
       <section class="section">
         <h2>Article body</h2>
-        <p>Hugging Face announced on April 17 that every Gradio Space now automatically serves an /agents.md endpoint. This machine-readable file acts as an API description that any compatible AI agent can read on load and call directly, without developers needing to write any integration code or configuration.</p>
-<p>The endpoint follows the same /agents.md convention already used in Hugging Face Spaces themselves, meaning Spaces can now self-describe their capabilities to external agents. Developers simply point a coding agent at a Space&#x27;s URL, and the agent parses the endpoint to understand what the Space does and how to invoke it.</p>
-<p>The feature is designed for developers building AI-assisted workflows where multiple tools or applications need to interoperate. Rather than requiring per-integration setup for each agent, the /agents.md endpoint creates a self-service discovery layer that should streamline chaining Spaces into agent-driven pipelines.</p>
+        <p>vLLM project maintainers have published a release candidate tag, v0.18.1rc0, to the project&#x27;s GitHub releases page, dated 2026-03-21. The release introduces a single documented change: a refactor that consolidates a call to `get_mamba_groups()` to execute once at `MambaCopyBuffers.create()` rather than potentially multiple times during hybrid attention operations.</p>
+<p>Mamba is a linear-time sequence modeling architecture often used alongside Transformer layers in state-space hybrid models. In vLLM&#x27;s inference pipeline, `MambaCopyBuffers` manages state copying during attention computation. The refactor reduces redundant group-lookup calls, which can lower overhead in Mamba-heavy inference workloads. This is a performance and code-cleanliness change rather than a new feature addition.</p>
+<p>For inference engineers and MLOps teams running hybrid Mamba-Transformer models on vLLM, this change is a low-risk optimization that should reduce per-step overhead in state-copy paths. vLLM is widely deployed as the inference runtime for open-weight models, so even targeted internal refactors like this can improve throughput in long-context or multi-turn generation scenarios.</p>
       </section>
     
       
       <section class="section">
         <h2>Why this matters</h2>
-        <ul class="bullets"><li>Eliminates manual integration work for agent-Space interactions, as agents can now discover and use any public Space automatically.</li><li>Reduces friction for builders stitching together multi-tool AI workflows, particularly those using multiple coding agents simultaneously.</li><li>Establishes a lightweight, open convention for machine-readable API discovery that could become a de facto standard across the Gradio ecosystem.</li></ul>
+        <ul class="bullets"><li>vLLM is a standard inference runtime for open-weight model deployment; any internal refactor in a release candidate signals active upstream maintenance that downstream users will inherit on upgrade.</li><li>The `get_mamba_groups()` consolidation targets a specific hot path in hybrid Mamba-Transformer inference, potentially reducing latency for models that mix Mamba state-space layers with standard attention.</li><li>Release candidates are the last pre-stable checkpoint — teams running vLLM in production can test this tag before the final v0.18.1 release to catch regressions early.</li></ul>
       </section>
     
       
       <section class="section">
         <h2>Source note</h2>
-        <ul class="bullets"><li>The brief is drawn from the official Hugging Face Changelog entry dated April 17, 2026, which includes a link to supporting documentation on the /agents.md endpoint. The changelog does not include technical implementation details, deployment requirements, or the full specification, so this brief reflects only what was explicitly announced.</li></ul>
+        <ul class="bullets"><li>Information drawn from the vLLM project GitHub releases feed (https://github.com/vllm-project/vllm/releases.atom) and the v0.18.1rc0 release page. The release description is minimal — only the Mamba copy-buffer refactor is listed. No additional changes, breaking notes, or version migration guidance were present in the captured page at the time of feed capture.</li></ul>
       </section>
     
       <section class="section">
         <h2>Original link</h2>
-        <p><a href="https://huggingface.co/changelog" rel="nofollow noopener">Open the monitored source</a></p>
+        <p><a href="https://github.com/vllm-project/vllm/releases/tag/v0.18.1rc0" rel="nofollow noopener">Open the monitored source</a></p>
       </section>
     </section>
     <div class="footer">
@@ -244,7 +244,7 @@
       if (!button || !status) return;
       const shareData = {
         title: document.title,
-        text: "Hugging Face has updated Gradio so that every deployed Space automatically exposes an /agents.md endpoint, letting AI coding agents like...",
+        text: "The vLLM open-source inference engine has tagged v0.18.1rc0, adding a targeted optimization to how Mamba state groups are handled during...",
         url: window.location.href
       };
       const setStatus = (message) => {
