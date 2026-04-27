@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T15:15:32+00:00">Last built: <span data-utc="2026-04-27T15:15:32+00:00">2026-04-27 15:15 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T15:27:24+00:00">Last built: <span data-utc="2026-04-27T15:27:24+00:00">2026-04-27 15:27 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,32 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="update">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time datetime="2026-04-27T15:26:02+00:00" data-utc="2026-04-27T15:26:02+00:00">2026-04-27 15:26 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-fd747c989ee44ab573d7.html">Stability AI Launches Brand Studio, an End-to-End Creative Production Platform</a></h2>
+              <p class="summary">Stability AI has introduced Brand Studio, a new creative production platform designed to help teams generate on-brand visual and multimedia content across workflows.</p>
+              <div class="card-bottom">
+                <span>Stability AI News</span>
+                <a href="https://stability.ai/news">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-27T15:25:41+00:00" data-utc="2026-04-27T15:25:41+00:00">2026-04-27 15:25 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-eae1412ebe42ac61889c.html">llama.cpp Patch b8948 Fixes Memory Calculation Bug in Type Casting</a></h2>
+              <p class="summary">The ggml-org/llama.cpp project shipped a small but important bug fix on April 27, correcting a type casting error in unaccounted memory calculation that could affect inference reliability on certain hardware configurations.</p>
+              <div class="card-bottom">
+                <span>GitHub llama.cpp Releases</span>
+                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8948">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -120,19 +146,6 @@
               <div class="card-bottom">
                 <span>OpenAI Newsroom</span>
                 <a href="https://openai.com/index/next-phase-of-microsoft-partnership">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T12:42:02+00:00" data-utc="2026-04-27T12:42:02+00:00">2026-04-27 12:42 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-b28d02d8c79acfd6d956.html">OpenAI Publishes Alpha Release v0.126.0 of Its Codex Coding Agent</a></h2>
-              <p class="summary">OpenAI tagged a new alpha build of its Codex coding-agent project on April 27, 2026, continuing the project&#x27;s rapid iteration cycle, though the release carries no public changelog or notes at this time.</p>
-              <div class="card-bottom">
-                <span>GitHub Codex Releases</span>
-                <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.6">Source</a>
               </div>
             </article>
             
@@ -200,19 +213,6 @@
                 <a href="https://fal.ai/dashboard/apps/{username}/{appname}/runners">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time datetime="2026-04-24T19:20:08+00:00" data-utc="2026-04-24T19:20:08+00:00">2026-04-24 19:20 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-8589825221ff123b5615.html">Portkey Publishes Platform Team Guide to Managing Claude Code, Cursor, and Codex at Scale</a></h2>
-              <p class="summary">Portkey has released a practical guide aimed at platform engineering teams responsible for governing multiple AI coding agents across an engineering organization.</p>
-              <div class="card-bottom">
-                <span>Portkey Blog</span>
-                <a href="https://portkey.ai/blog">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T15:15:32+00:00";
+    const currentGeneratedAt = "2026-04-27T15:27:24+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
