@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T09:18:54+00:00">Last built: <span data-utc="2026-04-27T09:18:54+00:00">2026-04-27 09:18 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T09:40:11+00:00">Last built: <span data-utc="2026-04-27T09:40:11+00:00">2026-04-27 09:40 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="docs">
+              <div class="card-top">
+                <span class="pill">docs</span>
+                <time datetime="2026-04-27T09:39:21+00:00" data-utc="2026-04-27T09:39:21+00:00">2026-04-27 09:39 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-fc2a9c54cc08e5a1ff5b.html">Hugging Face Gradio Spaces Now Auto-Generate Machine-Readable Agent Endpoints</a></h2>
+              <p class="summary">Every Gradio Space on Hugging Face now automatically exposes an `/agents` endpoint, allowing AI coding agents to discover and interact with the Space without manual configuration or wrapper code.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Changelog</span>
+                <a href="https://huggingface.co/changelog">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>GitHub llama.cpp Releases</span>
                 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8944">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="docs">
-              <div class="card-top">
-                <span class="pill">docs</span>
-                <time datetime="2026-04-27T09:17:37+00:00" data-utc="2026-04-27T09:17:37+00:00">2026-04-27 09:17 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-fc2a9c54cc08e5a1ff5b.html">Hugging Face Gives Every Gradio Space a Machine-Readable Agent Interface by Default</a></h2>
-              <p class="summary">Hugging Face now automatically exposes an /agents.md endpoint on every Gradio Space, letting coding agents like Claude Code, Codex, and Pi discover and interact with Spaces without manual configuration.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Changelog</span>
-                <a href="https://huggingface.co/changelog">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T09:18:54+00:00";
+    const currentGeneratedAt = "2026-04-27T09:40:11+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
