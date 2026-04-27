@@ -232,5 +232,11 @@
   "v0.9.1": "evt-a6fa898b123d9570bd92",
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445"
+  "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
+  "evt-a69e1473cc4ff36e4acb": "evt-a69e1473cc4ff36e4acb",
+  "release||github vllm releases||https://github.com/vllm-project/vllm/releases/tag/v0.20.1rc0": "evt-a69e1473cc4ff36e4acb",
+  "v0.20.1rc0": "evt-a69e1473cc4ff36e4acb",
+  "evt-ed3310b3f0d325138005": "evt-ed3310b3f0d325138005",
+  "release||github claude context releases||https://github.com/zilliztech/claude-context/releases/tag/v0.1.10": "evt-ed3310b3f0d325138005",
+  "v0.1.10": "evt-ed3310b3f0d325138005"
 }

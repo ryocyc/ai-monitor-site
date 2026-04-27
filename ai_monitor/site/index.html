@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T11:28:20+00:00">Last built: <span data-utc="2026-04-27T11:28:20+00:00">2026-04-27 11:28 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T11:50:04+00:00">Last built: <span data-utc="2026-04-27T11:50:04+00:00">2026-04-27 11:50 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,32 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-27T11:48:52+00:00" data-utc="2026-04-27T11:48:52+00:00">2026-04-27 11:48 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-a69e1473cc4ff36e4acb.html">vLLM Ships Release Candidate with OpenAI API System Fingerprint Field</a></h2>
+              <p class="summary">The open-source vLLM inference engine has tagged v0.20.1rc0, adding a system_fingerprint field to its OpenAI-compatible responses—a small but standards-significant addition for applications that track model serving state.</p>
+              <div class="card-bottom">
+                <span>GitHub vLLM Releases</span>
+                <a href="https://github.com/vllm-project/vllm/releases/tag/v0.20.1rc0">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-27T11:48:51+00:00" data-utc="2026-04-27T11:48:51+00:00">2026-04-27 11:48 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-ed3310b3f0d325138005.html">Zilliz Releases Claude Context v0.1.10</a></h2>
+              <p class="summary">Zilliz has tagged v0.1.10 of its Claude Context repository, a relatively early-stage release from the vector database company best known for the Milvus open-source project.</p>
+              <div class="card-bottom">
+                <span>GitHub Claude Context Releases</span>
+                <a href="https://github.com/zilliztech/claude-context/releases/tag/v0.1.10">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -110,19 +136,6 @@
               </div>
             </article>
             
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T09:50:19+00:00" data-utc="2026-04-27T09:50:19+00:00">2026-04-27 09:50 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-5b9e6759fe8f79f59a08.html">n8n 2.18.4 Rolls Out AI Wallet Fixes and Moves Computer Use Toggle to Chat Sidebar</a></h2>
-              <p class="summary">The open-source workflow automation platform n8n has released version 2.18.4, fixing a license-related credit prompt conflict and repositioning its computer use control for AI agent workflows.</p>
-              <div class="card-bottom">
-                <span>GitHub n8n Releases</span>
-                <a href="https://github.com/n8n-io/n8n/releases/tag/n8n%402.18.4">Source</a>
-              </div>
-            </article>
-            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -133,19 +146,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Changelog</span>
                 <a href="https://huggingface.co/changelog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T09:17:39+00:00" data-utc="2026-04-27T09:17:39+00:00">2026-04-27 09:17 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-d9d2f613f623899bdccf.html">Llama.cpp Patch b8944 Targets Tile Buffer Alignment in GGML, Benchmarks Show Marginal Gains</a></h2>
-              <p class="summary">The llama.cpp project shipped a small GGML-level change to enforce 64-byte tile buffer alignment in commit b8944, with benchmark data from Qwen3 0.8B showing performance shifts across multiple quantization formats.</p>
-              <div class="card-bottom">
-                <span>GitHub llama.cpp Releases</span>
-                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8944">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T11:28:20+00:00";
+    const currentGeneratedAt = "2026-04-27T11:50:04+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
