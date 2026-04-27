@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T17:15:55+00:00">Last built: <span data-utc="2026-04-27T17:15:55+00:00">2026-04-27 17:15 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T17:27:41+00:00">Last built: <span data-utc="2026-04-27T17:27:41+00:00">2026-04-27 17:27 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -87,6 +87,19 @@
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
+                <time datetime="2026-04-27T17:26:06+00:00" data-utc="2026-04-27T17:26:06+00:00">2026-04-27 17:26 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-088ac6097c41aa56df6c.html">llama.cpp Lands Gemma 4 Parsing Test Improvements in Release b8950</a></h2>
+              <p class="summary">The llama.cpp project tagged release b8950 on April 27, adding a new test covering edge-case parsing in the Gemma 4 model loader, alongside refreshed pre-built binaries across an expanded range of hardware backends.</p>
+              <div class="card-bottom">
+                <span>GitHub llama.cpp Releases</span>
+                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8950">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
                 <time datetime="2026-04-27T17:15:10+00:00" data-utc="2026-04-27T17:15:10+00:00">2026-04-27 17:15 UTC</time>
               </div>
               <h2 class="headline"><a href="./articles/evt-582e445b325c9dccf9cf.html">LangGraph Prebuilt Package Updated to 1.0.12 with Core Engine Upgrades</a></h2>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>GitHub LangGraph Releases</span>
                 <a href="https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.12">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T17:04:11+00:00" data-utc="2026-04-27T17:04:11+00:00">2026-04-27 17:04 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-32a04d0244e37a49b65f.html">LiteLLM Signs All Docker Images with Cosign in Latest Release Candidate</a></h2>
-              <p class="summary">BerriAI has added cryptographic Docker image signing to LiteLLM, letting teams verify they are pulling untampered containers before deployment.</p>
-              <div class="card-bottom">
-                <span>GitHub LiteLLM Releases</span>
-                <a href="https://github.com/BerriAI/litellm/releases/tag/v1.83.14.rc.1">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T17:15:55+00:00";
+    const currentGeneratedAt = "2026-04-27T17:27:41+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
