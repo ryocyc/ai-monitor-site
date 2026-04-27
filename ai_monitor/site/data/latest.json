@@ -1,48 +1,5 @@
 {
-  "generated_at": "2026-04-27T14:42:07+00:00",
-  "item_count": 1,
-  "items": [
-    {
-      "timestamp": "2026-04-27T14:41:32+00:00",
-      "source_name": "GitHub LangGraph Releases",
-      "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "effective_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "target_url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.0.3",
-      "category": "release",
-      "headline_en": "LangGraph release feed now shows langgraph-checkpoint==4.0.3",
-      "summary_en": "The monitored release feed for LangGraph changed and the newest visible tag is langgraph-checkpoint==4.0.3. The feed timestamp is 2026-04-27T14:34:20Z. This looks like a release-level update rather than a cosmetic page edit.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=langgraph-checkpoint==4.0.3 updated=2026-04-27T14:34:20Z link=https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.0.3 summary= content=Changes since checkpoint==4.0.2 release(checkpoint): 4.0.3 ( #7625 ) fix(checkpoint): revive lc=2 JSON blobs for safe types without allowlist ( #7582 ) chore: dedup warnings ( #7257 ) chore(deps): bump langsmith from 0.6.4 to 0.7.31 in /libs/checkpoint ( #7525 )",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,8 @@",
-        "+title=langgraph-checkpoint==4.0.3",
-        "+updated=2026-04-27T14:34:20Z",
-        "+link=https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.0.3",
-        "+summary=",
-        "+content=Changes since checkpoint==4.0.2 release(checkpoint): 4.0.3 ( #7625 ) fix(checkpoint): revive lc=2 JSON blobs for safe types without allowlist ( #7582 ) chore: dedup warnings ( #7257 ) chore(deps): bump langsmith from 0.6.4 to 0.7.31 in /libs/checkpoint ( #7525 )",
-        "+",
-        " title=langgraph-prebuilt==1.0.11",
-        " updated=2026-04-24T18:18:45Z",
-        "@@ -52,8 +58,2 @@",
-        " summary=",
-        " content=Changes since checkpoint==4.0.1 release(checkpoint): 4.0.2 ( #7518 ) docs: document LANGGRAPH_STRICT_MSGPACK for checkpoint security ( #7517 ) chore(deps): bump pytest from 9.0.2 to 9.0.3 in /libs/checkpoint ( #7506 ) chore(deps): bump langchain-core from 1.2.23 to 1.2.28 in /libs/checkpoint ( #7453 ) chore(deps): bump the minor-and-patch group in /libs/checkpoint with 3 updates ( #7373 ) chore(deps): bump pygments from 2.19.2 to 2.20.0 in /libs/checkpoint ( #7348 ) chore(deps): bump the minor-and-patch group in /libs/checkpoint with 2 updates ( #7292 ) chore(deps): bump requests from 2.32.5 to 2.33.0 in /libs/checkpoint ( #7285 ) chore(deps): bump the all-dependencies group in /libs/checkpoint with 2 updates ( #7250 ) chore(deps): bump the all-dependencies group in /libs/checkpoint with 2 updates ( #7198 ) chore(deps): bump orjson from 3.11.5 to 3.11.6 in /libs/checkpoint ( #7146 ) fix(checkpoint): don't add the task to the checkpoint batch if it was… ( #7168 ) chore(deps): bump the all-dependencies group across 1 directory with 4 updates ( #7074 )",
-        "-",
-        "-title=langgraph==1.1.7a2",
-        "-updated=2026-04-14T18:09:56Z",
-        "-link=https://github.com/langchain-ai/langgraph/releases/tag/1.1.7a2",
-        "-summary=",
-        "-content=Changes since 1.1.7a1 chore(deps): bump pytest from 9.0.2 to 9.0.3 in /libs/langgraph ( #7507 ) release(langgraph): 1.1.7a2 ( #7511 ) chore: allow passing some metadata only for tracing purposes ( #7383 ) fix: populate assistant_id from config configurable instead of metadata ( #7468 )"
-      ],
-      "article_identity": "checkpoint-4.0.3",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "release||github langgraph releases||https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3d%3d4.0.3",
-      "id": "evt-b073098bb7bbb6106dab",
-      "content_fingerprint": "langgraph release feed now shows langgraph checkpoint 4 0 3 the monitored release feed for langgraph changed and the newest visible tag is langgraph checkpoint 4 0 3 the feed timestamp is 2026 04 27t14 34 20z this looks like a release level update rather than a cosmetic page edit title langgraph checkpoint 4 0 3 updated 2026 04 27t14 34 20z link https github com langchain ai langgraph releases tag checkpoint 3d 3d4 0 3 summary content changes since checkpoint 4 0 2 release checkpoint 4 0 3 7625 fix checkpoint revive lc 2 json blobs for safe types without allowlist 7582 chore dedup warnings 7257 chore deps bump langsmith from 0 6 4 to 0 7 31 in libs checkpoint 7525",
-      "needs_cc_refresh": true
-    }
-  ]
+  "generated_at": "2026-04-27T14:53:19+00:00",
+  "item_count": 0,
+  "items": []
 }
