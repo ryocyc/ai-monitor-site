@@ -1,4 +1,7 @@
 {
+  "evt-40907bb50f22171c70c8": "evt-40907bb50f22171c70c8",
+  "news||openai newsroom||https://openai.com/index/next-phase-of-microsoft-partnership": "evt-40907bb50f22171c70c8",
+  "next-phase-of-microsoft-partnership": "evt-40907bb50f22171c70c8",
   "evt-2b9b7e982e81075bb40e": "evt-2b9b7e982e81075bb40e",
   "blog||hugging face blog||https://huggingface.co/blog/not-lain/kv-caching": "evt-2b9b7e982e81075bb40e",
   "not-lain/kv-caching": "evt-2b9b7e982e81075bb40e",
@@ -242,7 +245,10 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-40907bb50f22171c70c8": "evt-40907bb50f22171c70c8",
-  "news||openai newsroom||https://openai.com/index/next-phase-of-microsoft-partnership": "evt-40907bb50f22171c70c8",
-  "next-phase-of-microsoft-partnership": "evt-40907bb50f22171c70c8"
+  "evt-c302a161b0bd7e2d84df": "evt-c302a161b0bd7e2d84df",
+  "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.7": "evt-c302a161b0bd7e2d84df",
+  "rust-v0.126.0-alpha.7": "evt-c302a161b0bd7e2d84df",
+  "evt-342fd5391f24aed1fdd8": "evt-342fd5391f24aed1fdd8",
+  "blog||hugging face blog||https://huggingface.co/blog/openai-privacy-filter-web-apps": "evt-342fd5391f24aed1fdd8",
+  "openai-privacy-filter-web-apps": "evt-342fd5391f24aed1fdd8"
 }

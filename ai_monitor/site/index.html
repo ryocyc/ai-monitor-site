@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T14:08:37+00:00">Last built: <span data-utc="2026-04-27T14:08:37+00:00">2026-04-27 14:08 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T14:20:23+00:00">Last built: <span data-utc="2026-04-27T14:20:23+00:00">2026-04-27 14:20 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-04-27T14:18:41+00:00" data-utc="2026-04-27T14:18:41+00:00">2026-04-27 14:18 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-342fd5391f24aed1fdd8.html">Hugging Face Publishes Guide to Building PII-Safe Web Apps with OpenAI&#x27;s Privacy Filter</a></h2>
+              <p class="summary">A new community-authored guide on Hugging Face walks developers through integrating OpenAI&#x27;s Privacy Filter into scalable web applications, using the Gradio framework to handle PII redaction at inference time.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/openai-privacy-filter-web-apps">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>OpenAI Newsroom</span>
                 <a href="https://openai.com/index/next-phase-of-microsoft-partnership">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-04-27T12:52:54+00:00" data-utc="2026-04-27T12:52:54+00:00">2026-04-27 12:52 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-2b9b7e982e81075bb40e.html">A Practical Guide to KV Caching for Transformer Inference Lands on Hugging Face</a></h2>
-              <p class="summary">A community-authored explainer on the key-value caching mechanism that cuts redundant computation during transformer inference has been published on Hugging Face&#x27;s blog, offering builders a concrete technical reference for optimizing model serving.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/not-lain/kv-caching">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T14:08:37+00:00";
+    const currentGeneratedAt = "2026-04-27T14:20:23+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
