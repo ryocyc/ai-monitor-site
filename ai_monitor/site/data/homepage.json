@@ -1,7 +1,51 @@
 {
-  "generated_at": "2026-04-27T10:13:29+00:00",
+  "generated_at": "2026-04-27T10:55:30+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-27T10:54:46+00:00",
+      "source_name": "DeepSeek Home",
+      "source_url": "https://www.deepseek.com/",
+      "effective_url": "https://www.deepseek.com/",
+      "target_url": "https://www.deepseek.com/",
+      "category": "news",
+      "headline_en": "DeepSeek homepage updated",
+      "summary_en": "The DeepSeek homepage changed but no specific product or model update was found in the diff.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. This requires JavaScript. Enable JavaScript and then reload the page.",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1 +1 @@",
+        "-🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 API 文档 获取 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情",
+        "+JavaScript is disabled In order to continue, we need to verify that you're not a robot. This requires JavaScript. Enable JavaScript and then reload the page."
+      ],
+      "article_identity": "deepseek-homepage-updated",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "news||deepseek home||deepseek-homepage-updated",
+      "id": "evt-b99e0dea107a13fc156c",
+      "content_fingerprint": "deepseek homepage updated the deepseek homepage changed but no specific product or model update was found in the diff javascript is disabled in order to continue we need to verify that you re not a robot this requires javascript enable javascript and then reload the page",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "deepseek homepage updated the deepseek homepage changed but no specific product or model update was found in the diff javascript is disabled in order to continue we need to verify that you re not a robot this requires javascript enable javascript and then reload the page",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "DeepSeek Refreshes Its Public Homepage Amid Ongoing Model Ambition",
+      "article_standfirst": "DeepSeek updated its main homepage, though automated checks could not retrieve specific content changes behind the site's bot-protection layer.",
+      "article_body": [
+        "For builders and researchers monitoring the AI landscape, a homepage refresh from a major lab like DeepSeek can signal upcoming product activity — new model tiers, adjusted pricing, or expanded API features are often announced via the public site first. However, without the actual content in hand, this update remains unconfirmed at the detail level. Teams relying on DeepSeek's API or open-weight models should watch the site's API documentation and official channels for any related announcements."
+      ],
+      "article_why_matters": [
+        "DeepSeek is a significant actor in the open-weight AI space, and even minor changes to its public site can herald model or product news.",
+        "Automated monitoring systems detected the change, but the content remains opaque due to bot protection, creating uncertainty about the update's significance.",
+        "Developers and API consumers who rely on DeepSeek should monitor official channels for corroborating details as they become available."
+      ],
+      "article_source_note": [
+        "This brief is based on a homepage monitoring scan that flagged a changed page state at deepseek.com. The actual page content could not be retrieved because the site deployed bot-verification controls that require JavaScript. No specific product, model, or feature details were captured in the source text, making this update indeterminate at the evidence level."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-27T10:12:05+00:00",
       "source_name": "Hugging Face Blog",
@@ -229,52 +273,6 @@
       ],
       "article_source_note": [
         "This brief is based on the llama.cpp release feed entry and the rendered release page at github.com/ggml-org/llama.cpp/releases/tag/b8944, which contains the benchmark table and a reference to GGML pull request #21058. No pull request body, changelog entry, or commit message details were available in the source text, so the practical scope of the change is inferred conservatively from the benchmark data and the project's known role as a GGUF inference runtime."
-      ],
-      "article_confidence": "moderate",
-      "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-27T08:56:19+00:00",
-      "source_name": "DeepSeek Home",
-      "source_url": "https://www.deepseek.com/",
-      "effective_url": "https://www.deepseek.com/",
-      "target_url": "https://www.deepseek.com/",
-      "category": "news",
-      "headline_en": "DeepSeek update: DeepSeek-V4",
-      "summary_en": "DeepSeek homepage updated with information about DeepSeek-V4.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 API 文档 获取 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1 +1 @@",
-        "-🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 获取手机 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情",
-        "+🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 API 文档 获取 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情"
-      ],
-      "article_identity": "deepseek-v4",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "news||deepseek home||deepseek-v4",
-      "id": "evt-46b08cd74dd84210f13c",
-      "content_fingerprint": "deepseek update deepseek v4 deepseek homepage updated with information about deepseek v4 deepseek v4 agent app api deepseek api deepseek api app english 2026 icp 2023025841 b2 20250178 33010502011812 deepseek r1 deepseek v3 deepseek coder v2 deepseek vl deepseek v2 deepseek coder deepseek math deepseek llm deepseek app deepseek api",
-      "needs_cc_refresh": false,
-      "source_content_fingerprint": "deepseek update deepseek v4 deepseek homepage updated with information about deepseek v4 deepseek v4 agent app api deepseek api deepseek api app english 2026 icp 2023025841 b2 20250178 33010502011812 deepseek r1 deepseek v3 deepseek coder v2 deepseek vl deepseek v2 deepseek coder deepseek math deepseek llm deepseek app deepseek api",
-      "github_release_signal_fingerprint": "",
-      "article_h1": "DeepSeek Launches V4 Preview, Claiming World-Class Reasoning and Enhanced Agent Capabilities",
-      "article_standfirst": "DeepSeek has released a preview of its V4 flagship model, touting top-tier reasoning performance and substantially improved agent abilities, now accessible via web, mobile app, and API.",
-      "article_body": [
-        "DeepSeek has posted a preview release of its DeepSeek-V4 model on its homepage, describing it as possessing world-class reasoning performance and significantly enhanced agent capabilities. The preview is live across the company's web interface, mobile app, and API platform, inviting users to explore the details.",
-        "The announcement, published in Chinese on deepseek.com, positions V4 as the latest flagship model in the company's lineup, following earlier releases including DeepSeek R1 and DeepSeek V3. The page lists the model alongside other DeepSeek products spanning code generation, vision-language, and mixture-of-experts architectures, indicating a broad multi-modal and task-specific model strategy.",
-        "For developers and teams building AI-powered applications, the availability of V4 via API offers a direct path to integrate what DeepSeek claims are leading reasoning and agentic capabilities into production workflows. The mobile app access suggests the model is optimized for consumer-facing use cases alongside enterprise API deployment."
-      ],
-      "article_why_matters": [
-        "DeepSeek has emerged as a significant open-weight model provider competing with leading global labs; a new flagship model signals continued rapid progress in the space.",
-        "The dual focus on reasoning performance and agent capabilities points to growing industry investment in models purpose-built for autonomous task completion rather than pure chat.",
-        "Broad availability across web, mobile, and API removes friction for developers evaluating or adopting the model in both experimental and production contexts."
-      ],
-      "article_source_note": [
-        "The information comes from a banner announcement on DeepSeek's homepage (deepseek.com), published in Chinese. The source is thin: it makes broad claims about performance and capability improvements but provides no technical specifications, benchmark scores, model architecture details, parameter counts, or pricing information. The article is written against this evidential constraint and should be updated once a full technical report or detailed release page is available."
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"

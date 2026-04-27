@@ -3623,7 +3623,51 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-27T10:54:46+00:00",
+      "source_name": "DeepSeek Home",
+      "source_url": "https://www.deepseek.com/",
+      "effective_url": "https://www.deepseek.com/",
+      "target_url": "https://www.deepseek.com/",
+      "category": "news",
+      "headline_en": "DeepSeek homepage updated",
+      "summary_en": "The DeepSeek homepage changed but no specific product or model update was found in the diff.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. This requires JavaScript. Enable JavaScript and then reload the page.",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1 +1 @@",
+        "-🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 API 文档 获取 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情",
+        "+JavaScript is disabled In order to continue, we need to verify that you're not a robot. This requires JavaScript. Enable JavaScript and then reload the page."
+      ],
+      "article_identity": "deepseek-homepage-updated",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "news||deepseek home||deepseek-homepage-updated",
+      "id": "evt-b99e0dea107a13fc156c",
+      "content_fingerprint": "deepseek homepage updated the deepseek homepage changed but no specific product or model update was found in the diff javascript is disabled in order to continue we need to verify that you re not a robot this requires javascript enable javascript and then reload the page",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "deepseek homepage updated the deepseek homepage changed but no specific product or model update was found in the diff javascript is disabled in order to continue we need to verify that you re not a robot this requires javascript enable javascript and then reload the page",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "DeepSeek Refreshes Its Public Homepage Amid Ongoing Model Ambition",
+      "article_standfirst": "DeepSeek updated its main homepage, though automated checks could not retrieve specific content changes behind the site's bot-protection layer.",
+      "article_body": [
+        "For builders and researchers monitoring the AI landscape, a homepage refresh from a major lab like DeepSeek can signal upcoming product activity — new model tiers, adjusted pricing, or expanded API features are often announced via the public site first. However, without the actual content in hand, this update remains unconfirmed at the detail level. Teams relying on DeepSeek's API or open-weight models should watch the site's API documentation and official channels for any related announcements."
+      ],
+      "article_why_matters": [
+        "DeepSeek is a significant actor in the open-weight AI space, and even minor changes to its public site can herald model or product news.",
+        "Automated monitoring systems detected the change, but the content remains opaque due to bot protection, creating uncertainty about the update's significance.",
+        "Developers and API consumers who rely on DeepSeek should monitor official channels for corroborating details as they become available."
+      ],
+      "article_source_note": [
+        "This brief is based on a homepage monitoring scan that flagged a changed page state at deepseek.com. The actual page content could not be retrieved because the site deployed bot-verification controls that require JavaScript. No specific product, model, or feature details were captured in the source text, making this update indeterminate at the evidence level."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-27T10:13:29+00:00"
+  "generated_at": "2026-04-27T10:55:30+00:00"
 }

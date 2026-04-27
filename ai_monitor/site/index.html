@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T10:13:29+00:00">Last built: <span data-utc="2026-04-27T10:13:29+00:00">2026-04-27 10:13 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T10:55:30+00:00">Last built: <span data-utc="2026-04-27T10:55:30+00:00">2026-04-27 10:55 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-04-27T10:54:46+00:00" data-utc="2026-04-27T10:54:46+00:00">2026-04-27 10:54 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-b99e0dea107a13fc156c.html">DeepSeek Refreshes Its Public Homepage Amid Ongoing Model Ambition</a></h2>
+              <p class="summary">DeepSeek updated its main homepage, though automated checks could not retrieve specific content changes behind the site&#x27;s bot-protection layer.</p>
+              <div class="card-bottom">
+                <span>DeepSeek Home</span>
+                <a href="https://www.deepseek.com/">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -133,19 +146,6 @@
               <div class="card-bottom">
                 <span>GitHub llama.cpp Releases</span>
                 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8944">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-04-27T08:56:19+00:00" data-utc="2026-04-27T08:56:19+00:00">2026-04-27 08:56 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-46b08cd74dd84210f13c.html">DeepSeek Launches V4 Preview, Claiming World-Class Reasoning and Enhanced Agent Capabilities</a></h2>
-              <p class="summary">DeepSeek has released a preview of its V4 flagship model, touting top-tier reasoning performance and substantially improved agent abilities, now accessible via web, mobile app, and API.</p>
-              <div class="card-bottom">
-                <span>DeepSeek Home</span>
-                <a href="https://www.deepseek.com/">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T10:13:29+00:00";
+    const currentGeneratedAt = "2026-04-27T10:55:30+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
