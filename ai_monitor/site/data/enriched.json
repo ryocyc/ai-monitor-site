@@ -5372,7 +5372,68 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-27T23:01:24+00:00",
+      "source_name": "GitHub llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8952",
+      "category": "release",
+      "headline_en": "llama.cpp release feed now shows b8952",
+      "summary_en": "The monitored release feed for llama.cpp changed and the newest visible tag is b8952. The feed timestamp is 2026-04-27T22:52:41Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=b8952 updated=2026-04-27T22:52:41Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8952 summary= content=server: (router) Forward form-data to model server (Fixes #22044 ) ( #22118 ) This commit enables the router to forward form-data to model server. Fixes #22044 (enabling to use the /v1/audio/transcriptions in router mode) Applied the suggestion from Copilots first comment: using the non-throwing json::parse overload. Addressed Copilots third comment by extending the files representation to also include filename and content-type Addressed Copilots fourth comment by making the RNG thread_local Changed variable body from std::string to std::ostringstream in build_multipart_body as suggested by ngxson in #22118 (comment) Added sanitize_field lambda in build_multipart_body...",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=b8952",
+        "+updated=2026-04-27T22:52:41Z",
+        "+link=https://github.com/ggml-org/llama.cpp/releases/tag/b8952",
+        "+summary=",
+        "+content=server: (router) Forward form-data to model server (Fixes #22044 ) ( #22118 ) This commit enables the router to forward form-data to model server. Fixes #22044 (enabling to use the /v1/audio/transcriptions in router mode) Applied the suggestion from Copilots first comment: using the non-throwing json::parse overload. Addressed Copilots third comment by extending the files representation to also include filename and content-type Addressed Copilots fourth comment by making the RNG thread_local Changed variable body from std::string to std::ostringstream in build_multipart_body as suggested by ngxson in #22118 (comment) Added sanitize_field lambda in build_multipart_body for key, filename and content_type as suggested by ngxson in #22118 (comment) explicitly checking if value/item is string before calling value/item.getstd::string() as requested by ngxson in #22118 (comment) Added double quote to the sanitize lambda and throw on json parse failure Co-authored-by: Ralph Paßgang ralph@trust-it.de macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "+",
+        " title=b8951",
+        " updated=2026-04-27T17:41:34Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=add performance-portable tuning for register-tile and subgroup matmul ( #22241 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "-",
+        "-title=b8940",
+        "-updated=2026-04-26T13:24:05Z",
+        "-link=https://github.com/ggml-org/llama.cpp/releases/tag/b8940",
+        "-summary=",
+        "-content=Fix recurrent state serialization for partial reads and writes ( #22362 ) The previous code worked only for full tensor reads and writes and was hitting GGML_ASSERT(size == ggml_nbytes(tensor)); assert when tested with llama-server. macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)"
+      ],
+      "article_identity": "b8952",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8952",
+      "id": "evt-e5434dac3ea9b34a9610",
+      "content_fingerprint": "llama cpp release feed now shows b8952 the monitored release feed for llama cpp changed and the newest visible tag is b8952 the feed timestamp is 2026 04 27t22 52 41z this looks like a release level update rather than a cosmetic page edit title b8952 updated 2026 04 27t22 52 41z link https github com ggml org llama cpp releases tag b8952 summary content server router forward form data to model server fixes 22044 22118 this commit enables the router to forward form data to model server fixes 22044 enabling to use the v1 audio transcriptions in router mode applied the suggestion from copilots first comment using the non throwing json parse overload addressed copilots third comment by extending the files representation to also include filename and content type addressed copilots fourth comment by making the rng thread local changed variable body from std string to std ostringstream in build multipart body as suggested by ngxson in 22118 comment added sanitize field lambda in build multipart body",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "llama cpp release feed now shows b8952 the monitored release feed for llama cpp changed and the newest visible tag is b8952 the feed timestamp is 2026 04 27t22 52 41z this looks like a release level update rather than a cosmetic page edit title b8952 updated 2026 04 27t22 52 41z link https github com ggml org llama cpp releases tag b8952 summary content server router forward form data to model server fixes 22044 22118 this commit enables the router to forward form data to model server fixes 22044 enabling to use the v1 audio transcriptions in router mode applied the suggestion from copilots first comment using the non throwing json parse overload addressed copilots third comment by extending the files representation to also include filename and content type addressed copilots fourth comment by making the rng thread local changed variable body from std string to std ostringstream in build multipart body as suggested by ngxson in 22118 comment added sanitize field lambda in build multipart body",
+      "github_release_signal_fingerprint": "llama cpp release feed now shows version the monitored release feed for llama cpp changed and the newest visible tag is version the feed timestamp is 2026 04 27t22 52 41z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 27t22 52 41z link https github com ggml org llama cpp releases tag version summary content server router forward form data to model server fixes 22044 22118 this commit enables the router to forward form data to model server fixes 22044 enabling to use the v1 audio transcriptions in router mode applied the suggestion from copilots first comment using the non throwing json parse overload addressed copilots third comment by extending the files representation to also include filename and content type addressed copilots fourth comment by making the rng thread local changed variable body from std string to std ostringstream in build multipart body as suggested by ngxson in 22118 comment added sanitize field lambda in build multipart body",
+      "article_h1": "llama.cpp Router Fix Brings Audio Transcription Support to Proxy Mode",
+      "article_standfirst": "A bug fix merged into llama.cpp allows the server's router component to forward multipart form-data—including audio files—to model backends, resolving a gap that blocked `/v1/audio/transcriptions` calls in routed deployments.",
+      "article_body": [
+        "llama.cpp has shipped commit b8952, a targeted fix to its server router that enables form-data to be forwarded through the proxy layer to model servers. The change resolves issue #22044, which had prevented the `/v1/audio/transcriptions` endpoint from working when llama.cpp is running in router mode.",
+        "The fix involved two parts: enabling the router to handle multipart/form-data requests (as opposed to JSON-only payloads) and patching a related RNG thread-safety issue. The pull request (#22118) also extended the multipart body builder to include filename and content-type metadata alongside file data, and replaced a string-based body builder with a `std::ostringstream` approach for more robust handling of binary payloads.",
+        "For developers running llama.cpp behind a load balancer or gateway—a common setup for production inference clusters—the fix closes a real gap in the routing stack. Audio transcription workflows, which rely on file uploads rather than text tokens, could previously only work by bypassing the router entirely. With b8952, routed deployments can now handle those requests uniformly."
+      ],
+      "article_why_matters": [
+        "Router-mode deployments of llama.cpp could not serve audio transcription requests—only direct backend calls worked, forcing developers to architect around the limitation.",
+        "The fix also improves robustness for any multipart upload workflow in the server, not just audio, making the routing layer more generally usable.",
+        "llama.cpp powers a large share of local and self-hosted inference stacks; closing this gap removes a reason for users to patch the project or work around the router in production."
+      ],
+      "article_source_note": [
+        "This brief is based on the release tag b8952 on the ggml-org/llama.cpp GitHub repository, dated 2026-04-27. The release notes describe the fix at a commit level; no formal changelog or release summary page was available at the time of capture, so the item is rated moderate confidence. llama.cpp is a C/C++ inference runtime for running GGML-format models (including LLaMA variants) locally or in-server environments, used by app developers and MLOps engineers for self-hosted model serving."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-27T21:45:43+00:00"
+  "generated_at": "2026-04-27T23:02:18+00:00"
 }
