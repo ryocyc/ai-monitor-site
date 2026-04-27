@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T16:54:01+00:00">Last built: <span data-utc="2026-04-27T16:54:01+00:00">2026-04-27 16:54 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T17:05:01+00:00">Last built: <span data-utc="2026-04-27T17:05:01+00:00">2026-04-27 17:05 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-27T17:04:11+00:00" data-utc="2026-04-27T17:04:11+00:00">2026-04-27 17:04 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-32a04d0244e37a49b65f.html">LiteLLM Signs All Docker Images with Cosign in Latest Release Candidate</a></h2>
+              <p class="summary">BerriAI has added cryptographic Docker image signing to LiteLLM, letting teams verify they are pulling untampered containers before deployment.</p>
+              <div class="card-bottom">
+                <span>GitHub LiteLLM Releases</span>
+                <a href="https://github.com/BerriAI/litellm/releases/tag/v1.83.14.rc.1">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>GitHub llama.cpp Releases</span>
                 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8948">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T14:41:32+00:00" data-utc="2026-04-27T14:41:32+00:00">2026-04-27 14:41 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-b073098bb7bbb6106dab.html">LangGraph Checkpoint Library Patches JSON Deserialization Bug in 4.0.3 Release</a></h2>
-              <p class="summary">LangGraph&#x27;s state checkpointing library has shipped a fix restoring compatibility with LangChain v2 JSON blobs that lack an explicit type allowlist, alongside a dependency update to LangSmith 0.7.31.</p>
-              <div class="card-bottom">
-                <span>GitHub LangGraph Releases</span>
-                <a href="https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.0.3">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T16:54:01+00:00";
+    const currentGeneratedAt = "2026-04-27T17:05:01+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
