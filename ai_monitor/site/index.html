@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T14:53:20+00:00">Last built: <span data-utc="2026-04-27T14:53:20+00:00">2026-04-27 14:53 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T15:04:41+00:00">Last built: <span data-utc="2026-04-27T15:04:41+00:00">2026-04-27 15:04 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-04-27T15:03:24+00:00" data-utc="2026-04-27T15:03:24+00:00">2026-04-27 15:03 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-15df34813c58b60c2a28.html">NVIDIA and Hugging Face Share a Recipe for Fast, Multilingual OCR Built on Synthetic Data</a></h2>
+              <p class="summary">NVIDIA has published a technical walkthrough on Hugging Face detailing how synthetic data was used to train a fast, multilingual optical character recognition model, targeting developers who need document extraction at scale across diverse languages.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/nvidia/nemotron-ocr-v2">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>GitHub LangGraph Releases</span>
                 <a href="https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.0.3">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-04-27T14:18:41+00:00" data-utc="2026-04-27T14:18:41+00:00">2026-04-27 14:18 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-342fd5391f24aed1fdd8.html">Hugging Face Publishes Guide to Building PII-Safe Web Apps with OpenAI&#x27;s Privacy Filter</a></h2>
-              <p class="summary">A new community-authored guide on Hugging Face walks developers through integrating OpenAI&#x27;s Privacy Filter into scalable web applications, using the Gradio framework to handle PII redaction at inference time.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/openai-privacy-filter-web-apps">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T14:53:20+00:00";
+    const currentGeneratedAt = "2026-04-27T15:04:41+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
