@@ -1,7 +1,53 @@
 {
-  "generated_at": "2026-04-27T08:46:14+00:00",
+  "generated_at": "2026-04-27T08:57:04+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-27T08:56:19+00:00",
+      "source_name": "DeepSeek Home",
+      "source_url": "https://www.deepseek.com/",
+      "effective_url": "https://www.deepseek.com/",
+      "target_url": "https://www.deepseek.com/",
+      "category": "news",
+      "headline_en": "DeepSeek update: DeepSeek-V4",
+      "summary_en": "DeepSeek homepage updated with information about DeepSeek-V4.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 API 文档 获取 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1 +1 @@",
+        "-🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 获取手机 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情",
+        "+🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 API 文档 获取 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情"
+      ],
+      "article_identity": "deepseek-v4",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "news||deepseek home||deepseek-v4",
+      "id": "evt-46b08cd74dd84210f13c",
+      "content_fingerprint": "deepseek update deepseek v4 deepseek homepage updated with information about deepseek v4 deepseek v4 agent app api deepseek api deepseek api app english 2026 icp 2023025841 b2 20250178 33010502011812 deepseek r1 deepseek v3 deepseek coder v2 deepseek vl deepseek v2 deepseek coder deepseek math deepseek llm deepseek app deepseek api",
+      "needs_cc_refresh": false,
+      "source_content_fingerprint": "deepseek update deepseek v4 deepseek homepage updated with information about deepseek v4 deepseek v4 agent app api deepseek api deepseek api app english 2026 icp 2023025841 b2 20250178 33010502011812 deepseek r1 deepseek v3 deepseek coder v2 deepseek vl deepseek v2 deepseek coder deepseek math deepseek llm deepseek app deepseek api",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "DeepSeek Launches V4 Preview, Claiming World-Class Reasoning and Enhanced Agent Capabilities",
+      "article_standfirst": "DeepSeek has released a preview of its V4 flagship model, touting top-tier reasoning performance and substantially improved agent abilities, now accessible via web, mobile app, and API.",
+      "article_body": [
+        "DeepSeek has posted a preview release of its DeepSeek-V4 model on its homepage, describing it as possessing world-class reasoning performance and significantly enhanced agent capabilities. The preview is live across the company's web interface, mobile app, and API platform, inviting users to explore the details.",
+        "The announcement, published in Chinese on deepseek.com, positions V4 as the latest flagship model in the company's lineup, following earlier releases including DeepSeek R1 and DeepSeek V3. The page lists the model alongside other DeepSeek products spanning code generation, vision-language, and mixture-of-experts architectures, indicating a broad multi-modal and task-specific model strategy.",
+        "For developers and teams building AI-powered applications, the availability of V4 via API offers a direct path to integrate what DeepSeek claims are leading reasoning and agentic capabilities into production workflows. The mobile app access suggests the model is optimized for consumer-facing use cases alongside enterprise API deployment."
+      ],
+      "article_why_matters": [
+        "DeepSeek has emerged as a significant open-weight model provider competing with leading global labs; a new flagship model signals continued rapid progress in the space.",
+        "The dual focus on reasoning performance and agent capabilities points to growing industry investment in models purpose-built for autonomous task completion rather than pure chat.",
+        "Broad availability across web, mobile, and API removes friction for developers evaluating or adopting the model in both experimental and production contexts."
+      ],
+      "article_source_note": [
+        "The information comes from a banner announcement on DeepSeek's homepage (deepseek.com), published in Chinese. The source is thin: it makes broad claims about performance and capability improvements but provides no technical specifications, benchmark scores, model architecture details, parameter counts, or pricing information. The article is written against this evidential constraint and should be updated once a full technical report or detailed release page is available."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-27T07:52:36+00:00",
       "source_name": "GitHub vLLM Releases",
@@ -190,52 +236,6 @@
       ],
       "article_source_note": [
         "The information comes from the official Hugging Face Changelog (huggingface.co/changelog), updated April 17, 2026, with 149 upvotes from the community. The changelog entry links to documentation but the full /agents.md specification and the complete list of compatible agents are not included in the excerpt; readers wanting implementation details or the full compatibility list should consult the linked documentation directly."
-      ],
-      "article_confidence": "moderate",
-      "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-27T07:40:55+00:00",
-      "source_name": "DeepSeek Home",
-      "source_url": "https://www.deepseek.com/",
-      "effective_url": "https://www.deepseek.com/",
-      "target_url": "https://www.deepseek.com/",
-      "category": "news",
-      "headline_en": "DeepSeek update: DeepSeek-V4",
-      "summary_en": "DeepSeek homepage updated with information about DeepSeek-V4.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 获取手机 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1 +1 @@",
-        "-🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 获取手机 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 加入我们 岗位详情",
-        "+🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 获取手机 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情"
-      ],
-      "article_identity": "deepseek-v4",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "news||deepseek home||deepseek-v4",
-      "id": "evt-46b08cd74dd84210f13c",
-      "content_fingerprint": "deepseek update deepseek v4 deepseek homepage updated with information about deepseek v4 deepseek v4 agent app api deepseek api deepseek app english 2026 icp 2023025841 b2 20250178 33010502011812 deepseek r1 deepseek v3 deepseek coder v2 deepseek vl deepseek v2 deepseek coder deepseek math deepseek llm deepseek app deepseek api",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "deepseek update deepseek v4 deepseek homepage updated with information about deepseek v4 deepseek v4 agent app api deepseek api deepseek app english 2026 icp 2023025841 b2 20250178 33010502011812 deepseek r1 deepseek v3 deepseek coder v2 deepseek vl deepseek v2 deepseek coder deepseek math deepseek llm deepseek app deepseek api",
-      "github_release_signal_fingerprint": "",
-      "article_h1": "DeepSeek Launches V4 Preview with Improved Reasoning and Agent Capabilities",
-      "article_standfirst": "DeepSeek has released a preview of its V4 flagship model, claiming world-class reasoning performance and significantly enhanced agent abilities, now accessible via web, mobile app, and API.",
-      "article_body": [
-        "DeepSeek has posted a preview release of its DeepSeek-V4 model on the company's homepage, featuring a prominent banner announcement that highlights world-class reasoning performance and substantially improved agent capabilities. The model is now live across DeepSeek's web interface, mobile app, and API platform.",
-        "The announcement does not disclose technical specifications such as parameter count, architecture details, or benchmark scores. DeepSeek's product lineup visible on the site also includes earlier models: DeepSeek R1, V3, DeepSeek Coder V2, DeepSeek VL, and DeepSeek V2. The company, based in Hangzhou, China and founded in 2023, has previously released open-source models including DeepSeek-LLM, DeepSeek-Coder, and DeepSeek-MoE.",
-        "For developers and AI builders evaluating frontier model options, the availability of DeepSeek-V4 across multiple access points — web, mobile, and API — offers a straightforward path to testing the model in real workflows. The stated improvements to agent capabilities, if substantiated by independent benchmarks, could make V4 relevant for task-automation and multi-step reasoning use cases. Until detailed technical documentation or third-party evaluations are published, builders should treat the preview's capability claims as directional rather than verified."
-      ],
-      "article_why_matters": [
-        "DeepSeek-V4 is now one of the few frontier-level models available simultaneously via web, mobile, and API, lowering the barrier for developers to evaluate and integrate it.",
-        "The claimed boost in agent capabilities signals that DeepSeek is competing directly in the autonomous-agent segment, where reasoning and tool-use matter more than raw chat performance.",
-        "DeepSeek's track record of open-sourcing earlier models raises the possibility that V4 or its derivatives could follow, potentially disrupting the pricing and accessibility landscape for frontier AI."
-      ],
-      "article_source_note": [
-        "This brief is based on the public DeepSeek homepage (deepseek.com) captured on the site as a promotional banner. No technical specifications, architecture details, or independent benchmark results are provided in the source. The date field in the evidence text (2026) appears to be a site rendering artifact; the actual content is the live homepage as of the fetch date. The information is thin — essentially a launch announcement — so independent verification of the model's performance and capabilities is needed before treating the claims as confirmed."
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"

@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T08:46:14+00:00">Last built: <span data-utc="2026-04-27T08:46:14+00:00">2026-04-27 08:46 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T08:57:04+00:00">Last built: <span data-utc="2026-04-27T08:57:04+00:00">2026-04-27 08:57 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-04-27T08:56:19+00:00" data-utc="2026-04-27T08:56:19+00:00">2026-04-27 08:56 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-46b08cd74dd84210f13c.html">DeepSeek Launches V4 Preview, Claiming World-Class Reasoning and Enhanced Agent Capabilities</a></h2>
+              <p class="summary">DeepSeek has released a preview of its V4 flagship model, touting top-tier reasoning performance and substantially improved agent abilities, now accessible via web, mobile app, and API.</p>
+              <div class="card-bottom">
+                <span>DeepSeek Home</span>
+                <a href="https://www.deepseek.com/">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Changelog</span>
                 <a href="https://huggingface.co/changelog">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-04-27T07:40:55+00:00" data-utc="2026-04-27T07:40:55+00:00">2026-04-27 07:40 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-46b08cd74dd84210f13c.html">DeepSeek Launches V4 Preview with Improved Reasoning and Agent Capabilities</a></h2>
-              <p class="summary">DeepSeek has released a preview of its V4 flagship model, claiming world-class reasoning performance and significantly enhanced agent abilities, now accessible via web, mobile app, and API.</p>
-              <div class="card-bottom">
-                <span>DeepSeek Home</span>
-                <a href="https://www.deepseek.com/">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T08:46:14+00:00";
+    const currentGeneratedAt = "2026-04-27T08:57:04+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
