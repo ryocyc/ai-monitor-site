@@ -1,33 +1,5 @@
 {
-  "generated_at": "2026-04-27T08:56:40+00:00",
-  "item_count": 1,
-  "items": [
-    {
-      "timestamp": "2026-04-27T08:56:19+00:00",
-      "source_name": "DeepSeek Home",
-      "source_url": "https://www.deepseek.com/",
-      "effective_url": "https://www.deepseek.com/",
-      "target_url": "https://www.deepseek.com/",
-      "category": "news",
-      "headline_en": "DeepSeek update: DeepSeek-V4",
-      "summary_en": "DeepSeek homepage updated with information about DeepSeek-V4.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 API 文档 获取 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1 +1 @@",
-        "-🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 获取手机 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情",
-        "+🎉 DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线，点击查看详情。 探索未至之境 开始对话 与 DeepSeek 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成、流畅体验 API 文档 获取 App English © 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 浙ICP备2023025841号 浙B2-20250178 浙公网安备33010502011812号 研究 DeepSeek R1 DeepSeek V3 DeepSeek Coder V2 DeepSeek VL DeepSeek V2 DeepSeek Coder DeepSeek Math DeepSeek LLM 产品 DeepSeek App DeepSeek 网页版 开放平台 API 价格 服务状态 法务 & 安全 隐私政策 用户协议 反馈安全漏洞 透明度 加入我们 岗位详情"
-      ],
-      "article_identity": "deepseek-v4",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "news||deepseek home||deepseek-v4",
-      "id": "evt-46b08cd74dd84210f13c",
-      "content_fingerprint": "deepseek update deepseek v4 deepseek homepage updated with information about deepseek v4 deepseek v4 agent app api deepseek api deepseek api app english 2026 icp 2023025841 b2 20250178 33010502011812 deepseek r1 deepseek v3 deepseek coder v2 deepseek vl deepseek v2 deepseek coder deepseek math deepseek llm deepseek app deepseek api",
-      "needs_cc_refresh": false
-    }
-  ]
+  "generated_at": "2026-04-27T09:07:30+00:00",
+  "item_count": 0,
+  "items": []
 }
