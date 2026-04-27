@@ -226,5 +226,8 @@
   "v0.9.1": "evt-a6fa898b123d9570bd92",
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445"
+  "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
+  "evt-5b9e6759fe8f79f59a08": "evt-5b9e6759fe8f79f59a08",
+  "release||github n8n releases||https://github.com/n8n-io/n8n/releases/tag/n8n%402.18.4": "evt-5b9e6759fe8f79f59a08",
+  "n8n-2.18.4": "evt-5b9e6759fe8f79f59a08"
 }

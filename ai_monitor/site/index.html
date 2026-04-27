@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-27T09:40:11+00:00">Last built: <span data-utc="2026-04-27T09:40:11+00:00">2026-04-27 09:40 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-27T09:51:05+00:00">Last built: <span data-utc="2026-04-27T09:51:05+00:00">2026-04-27 09:51 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-27T09:50:19+00:00" data-utc="2026-04-27T09:50:19+00:00">2026-04-27 09:50 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-5b9e6759fe8f79f59a08.html">n8n 2.18.4 Rolls Out AI Wallet Fixes and Moves Computer Use Toggle to Chat Sidebar</a></h2>
+              <p class="summary">The open-source workflow automation platform n8n has released version 2.18.4, fixing a license-related credit prompt conflict and repositioning its computer use control for AI agent workflows.</p>
+              <div class="card-bottom">
+                <span>GitHub n8n Releases</span>
+                <a href="https://github.com/n8n-io/n8n/releases/tag/n8n%402.18.4">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>DeepSeek Home</span>
                 <a href="https://www.deepseek.com/">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-27T07:52:36+00:00" data-utc="2026-04-27T07:52:36+00:00">2026-04-27 07:52 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-7a30c7279c2c3ba91f20.html">vLLM v0.20.0 Lands with SiLU Clamp Fix for DeepSeek V4 Shared Expert</a></h2>
-              <p class="summary">vLLM&#x27;s latest patch release adds a silu clamp limit to the shared expert component used in DeepSeek V4&#x27;s mixture-of-experts architecture, addressing a numerical stability edge case during inference.</p>
-              <div class="card-bottom">
-                <span>GitHub vLLM Releases</span>
-                <a href="https://github.com/vllm-project/vllm/releases/tag/v0.20.0">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-27T09:40:11+00:00";
+    const currentGeneratedAt = "2026-04-27T09:51:05+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
