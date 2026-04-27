@@ -1,4 +1,7 @@
 {
+  "evt-cb04b7cf22b31938acaf": "evt-cb04b7cf22b31938acaf",
+  "news||openai newsroom||https://openai.com/academy/codex-settings": "evt-cb04b7cf22b31938acaf",
+  "codex-settings": "evt-cb04b7cf22b31938acaf",
   "evt-b78803151892817638bf": "evt-b78803151892817638bf",
   "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8": "evt-b78803151892817638bf",
   "rust-v0.126.0-alpha.8": "evt-b78803151892817638bf",
@@ -308,7 +311,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-cb04b7cf22b31938acaf": "evt-cb04b7cf22b31938acaf",
-  "news||openai newsroom||https://openai.com/academy/codex-settings": "evt-cb04b7cf22b31938acaf",
-  "codex-settings": "evt-cb04b7cf22b31938acaf"
+  "evt-ef7a9f1371eb0e9cb24c": "evt-ef7a9f1371eb0e9cb24c",
+  "update||runway blog||runway-blog-your-video-file-is-being-uploaded": "evt-ef7a9f1371eb0e9cb24c",
+  "runway-blog-your-video-file-is-being-uploaded": "evt-ef7a9f1371eb0e9cb24c"
 }
