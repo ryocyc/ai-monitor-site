@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-28T10:53:09+00:00">Last built: <span data-utc="2026-04-28T10:53:09+00:00">2026-04-28 10:53 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-28T11:14:07+00:00">Last built: <span data-utc="2026-04-28T11:14:07+00:00">2026-04-28 11:14 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -87,6 +87,19 @@
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
+                <time datetime="2026-04-28T11:13:23+00:00" data-utc="2026-04-28T11:13:23+00:00">2026-04-28 11:13 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-0f9878b607781001545b.html">OpenAI Pushes Pre-Release Tag on Rust-Based Codex Codebase</a></h2>
+              <p class="summary">OpenAI has tagged a new pre-release (0.126.0-alpha.9) on the Rust implementation of its Codex coding agent, a narrow internal update with no public changelog or release notes as of publication.</p>
+              <div class="card-bottom">
+                <span>GitHub Codex Releases</span>
+                <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.9">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
                 <time datetime="2026-04-28T10:42:19+00:00" data-utc="2026-04-28T10:42:19+00:00">2026-04-28 10:42 UTC</time>
               </div>
               <h2 class="headline"><a href="./articles/evt-3ac2fe1d977c9c3fbdd5.html">llama.cpp Ships M-RoPE Fix for Server Backend, Refreshes Cross-Platform Binaries</a></h2>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>GitHub llama.cpp Releases</span>
                 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8954">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-28T10:31:39+00:00" data-utc="2026-04-28T10:31:39+00:00">2026-04-28 10:31 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-d4575ff953af78edbda2.html">n8n 2.19.0 Ships AI-Builder Stability Fixes and Credential Updates</a></h2>
-              <p class="summary">n8n&#x27;s latest release tightens up its AI-builder tooling with fixes for duplicate workflow creation, workflow identity persistence, and credential authentication across five integrations.</p>
-              <div class="card-bottom">
-                <span>GitHub n8n Releases</span>
-                <a href="https://github.com/n8n-io/n8n/releases/tag/n8n%402.19.0">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-28T10:53:09+00:00";
+    const currentGeneratedAt = "2026-04-28T11:14:07+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
