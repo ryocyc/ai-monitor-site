@@ -1,4 +1,7 @@
 {
+  "evt-77c3653cbf4e866aca60": "evt-77c3653cbf4e866aca60",
+  "blog||hugging face blog||https://huggingface.co/blog/imaging-with-physics-informed-nv-raw2insights-us-ai": "evt-77c3653cbf4e866aca60",
+  "imaging-with-physics-informed-nv-raw2insights-us-ai": "evt-77c3653cbf4e866aca60",
   "evt-136d5f5e8db988dd631c": "evt-136d5f5e8db988dd631c",
   "blog||hugging face blog||https://huggingface.co/blog/nvidia/raw2insights-adaptive-ultrasound-imaging": "evt-136d5f5e8db988dd631c",
   "nvidia/raw2insights-adaptive-ultrasound-imaging": "evt-136d5f5e8db988dd631c",
@@ -326,7 +329,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-77c3653cbf4e866aca60": "evt-77c3653cbf4e866aca60",
-  "blog||hugging face blog||https://huggingface.co/blog/imaging-with-physics-informed-nv-raw2insights-us-ai": "evt-77c3653cbf4e866aca60",
-  "imaging-with-physics-informed-nv-raw2insights-us-ai": "evt-77c3653cbf4e866aca60"
+  "evt-99dbcfb07ea103b07e88": "evt-99dbcfb07ea103b07e88",
+  "news||openai newsroom||https://openai.com/academy/workspace-agents": "evt-99dbcfb07ea103b07e88",
+  "workspace-agents": "evt-99dbcfb07ea103b07e88"
 }
