@@ -1,4 +1,7 @@
 {
+  "evt-e43d4fd8ea610083934d": "evt-e43d4fd8ea610083934d",
+  "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8953": "evt-e43d4fd8ea610083934d",
+  "b8953": "evt-e43d4fd8ea610083934d",
   "evt-e5434dac3ea9b34a9610": "evt-e5434dac3ea9b34a9610",
   "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8952": "evt-e5434dac3ea9b34a9610",
   "b8952": "evt-e5434dac3ea9b34a9610",
@@ -320,7 +323,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-e43d4fd8ea610083934d": "evt-e43d4fd8ea610083934d",
-  "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8953": "evt-e43d4fd8ea610083934d",
-  "b8953": "evt-e43d4fd8ea610083934d"
+  "evt-136d5f5e8db988dd631c": "evt-136d5f5e8db988dd631c",
+  "blog||hugging face blog||https://huggingface.co/blog/nvidia/raw2insights-adaptive-ultrasound-imaging": "evt-136d5f5e8db988dd631c",
+  "nvidia/raw2insights-adaptive-ultrasound-imaging": "evt-136d5f5e8db988dd631c"
 }
