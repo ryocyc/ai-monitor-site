@@ -1,7 +1,66 @@
 {
-  "generated_at": "2026-04-28T08:58:56+00:00",
+  "generated_at": "2026-04-28T09:09:31+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-28T09:09:01+00:00",
+      "source_name": "GitHub Claude Context Releases",
+      "source_url": "https://github.com/zilliztech/claude-context/releases.atom",
+      "effective_url": "https://github.com/zilliztech/claude-context/releases.atom",
+      "target_url": "https://github.com/zilliztech/claude-context/releases/tag/v0.1.11",
+      "category": "release",
+      "headline_en": "Claude Context release feed now shows v0.1.11",
+      "summary_en": "The monitored release feed for Claude Context changed and the newest visible tag is v0.1.11. The feed timestamp is 2026-04-28T09:01:42Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=v0.1.11 updated=2026-04-28T09:01:42Z link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.11 summary= content=chore: bump version to 0.1.11",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=v0.1.11",
+        "+updated=2026-04-28T09:01:42Z",
+        "+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.11",
+        "+summary=",
+        "+content=chore: bump version to 0.1.11",
+        "+",
+        " title=v0.1.10",
+        " updated=2026-04-27T11:40:54Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=Signed-off-by: ChengZi chen.zhang@zilliz.com",
+        "-",
+        "-title=bump version v0.1.1 (#150)",
+        "-updated=2025-08-12T02:14:50Z",
+        "-link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.1",
+        "-summary=",
+        "-content=Signed-off-by: ChengZi chen.zhang@zilliz.com"
+      ],
+      "article_identity": "v0.1.11",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github claude context releases||https://github.com/zilliztech/claude-context/releases/tag/v0.1.11",
+      "id": "evt-43917f3f8a96c323b2db",
+      "content_fingerprint": "claude context release feed now shows v0 1 11 the monitored release feed for claude context changed and the newest visible tag is v0 1 11 the feed timestamp is 2026 04 28t09 01 42z this looks like a release level update rather than a cosmetic page edit title v0 1 11 updated 2026 04 28t09 01 42z link https github com zilliztech claude context releases tag v0 1 11 summary content chore bump version to 0 1 11",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "claude context release feed now shows v0 1 11 the monitored release feed for claude context changed and the newest visible tag is v0 1 11 the feed timestamp is 2026 04 28t09 01 42z this looks like a release level update rather than a cosmetic page edit title v0 1 11 updated 2026 04 28t09 01 42z link https github com zilliztech claude context releases tag v0 1 11 summary content chore bump version to 0 1 11",
+      "github_release_signal_fingerprint": "claude context release feed now shows version the monitored release feed for claude context changed and the newest visible tag is version the feed timestamp is 2026 04 28t09 01 42z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 28t09 01 42z link https github com zilliztech claude context releases tag version summary content chore bump version to version",
+      "article_h1": "Zilliz Updates Claude Context to v0.1.11",
+      "article_standfirst": "Zilliztech has tagged a new release of its Claude Context extension, bumping the version to 0.1.11 with only a version-number change logged.",
+      "article_body": [
+        "Zilliztech has published v0.1.11 of Claude Context, a GitHub-hosted extension maintained under the zilliztech organization. The release, tagged 2026-04-28T09:01:42Z, carries the commit message \"chore: bump version to 0.1.11,\" indicating a routine version increment with no accompanying change notes or feature descriptions on the release page.\n\nThe repository is hosted under Zilliztech, the company best known for the Milvus vector database, suggesting this tool may relate to context management or retrieval-augmented workflows in AI-assisted coding environments. Beyond the version tag and commit message, no public release notes, changelog entries, or pull-request summaries are available in the captured evidence.\n\nFor developers tracking Claude Context updates, this release offers no actionable change — only a new version marker. Teams using Claude Context in production should confirm against the repository's README or commit history whether any underlying changes warrant a pull or dependency update."
+      ],
+      "article_why_matters": [
+        "Routine version bumps with no published changes offer no insight into what was modified or why.",
+        "Without release notes, teams cannot assess whether the update fixes bugs, improves performance, or introduces breaking changes.",
+        "Given Zilliztech's background in vector and retrieval tooling, the repository likely serves developers integrating Claude Context into RAG or semantic search workflows — but the actual use case remains unconfirmed from this source alone."
+      ],
+      "article_source_note": [
+        "This brief is based on the GitHub release page for zilliztech/claude-context at tag v0.1.11, captured via an Atom feed on 2026-04-28. The release consists solely of a version-number commit; no changelog, pull-request summary, or feature description is present in the captured source. The repository's broader purpose is inferred from the org name and is not confirmed by the release text."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-28T08:07:04+00:00",
       "source_name": "OpenAI Newsroom",
@@ -329,67 +388,6 @@
         "This brief is drawn from the public Stability AI news page (stability.ai/news), which provided only a short teaser description of Brand Studio — no detailed feature list, model specs, or usage terms. The Warner Music Group partnership and Tech Coalition membership offer context but are separate initiatives. A full product review or published demo would be needed to assess Brand Studio's actual capabilities."
       ],
       "article_confidence": "weak",
-      "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-27T17:48:54+00:00",
-      "source_name": "GitHub llama.cpp Releases",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8951",
-      "category": "release",
-      "headline_en": "llama.cpp release feed now shows b8951",
-      "summary_en": "The monitored release feed for llama.cpp changed and the newest visible tag is b8951. The feed timestamp is 2026-04-27T17:41:34Z. This looks like a release-level update rather than a cosmetic page edit.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=b8951 updated=2026-04-27T17:41:34Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8951 summary= content=add fast mat-vec kernels for i-quants ( #22344 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarc...",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,8 @@",
-        "+title=b8951",
-        "+updated=2026-04-27T17:41:34Z",
-        "+link=https://github.com/ggml-org/llama.cpp/releases/tag/b8951",
-        "+summary=",
-        "+content=add fast mat-vec kernels for i-quants ( #22344 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
-        "+",
-        " title=b8950",
-        " updated=2026-04-27T17:24:12Z",
-        "@@ -52,8 +58,2 @@",
-        " summary=",
-        " content=Fix recurrent state serialization for partial reads and writes ( #22362 ) The previous code worked only for full tensor reads and writes and was hitting GGML_ASSERT(size == ggml_nbytes(tensor)); assert when tested with llama-server. macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
-        "-",
-        "-title=b8937",
-        "-updated=2026-04-26T09:29:16Z",
-        "-link=https://github.com/ggml-org/llama.cpp/releases/tag/b8937",
-        "-summary=",
-        "-content=ggml-cpu : re-enable fast gelu_quick_f16 ( #22339 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)"
-      ],
-      "article_identity": "b8951",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8951",
-      "id": "evt-84a5666bb377b55e9b80",
-      "content_fingerprint": "llama cpp release feed now shows b8951 the monitored release feed for llama cpp changed and the newest visible tag is b8951 the feed timestamp is 2026 04 27t17 41 34z this looks like a release level update rather than a cosmetic page edit title b8951 updated 2026 04 27t17 41 34z link https github com ggml org llama cpp releases tag b8951 summary content add fast mat vec kernels for i quants 22344 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeuler aarch64 310p openeuler aarc",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "llama cpp release feed now shows b8951 the monitored release feed for llama cpp changed and the newest visible tag is b8951 the feed timestamp is 2026 04 27t17 41 34z this looks like a release level update rather than a cosmetic page edit title b8951 updated 2026 04 27t17 41 34z link https github com ggml org llama cpp releases tag b8951 summary content add fast mat vec kernels for i quants 22344 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeuler aarch64 310p openeuler aarc",
-      "github_release_signal_fingerprint": "llama cpp release feed now shows version the monitored release feed for llama cpp changed and the newest visible tag is version the feed timestamp is 2026 04 27t17 41 34z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 27t17 41 34z link https github com ggml org llama cpp releases tag version summary content add fast mat vec kernels for i quants 22344 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm version ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda version dlls windows x64 cuda 13 cuda version dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeuler aarch64 310p openeuler aarc",
-      "article_h1": "llama.cpp Lands Fast Mat-Vec Kernels for Inline Quantization in Release b8951",
-      "article_standfirst": "The ggml-org/llama.cpp project tagged release b8951 on April 27, centering on optimized matrix-vector kernels for inline quantized weights, with pre-built binaries now covering a wider cross-section of desktop, mobile, server, and Chinese OS platforms.",
-      "article_body": [
-        "The llama.cpp project at ggml-org issued release tag b8951 on April 27, 2026, the same day the monitored release feed refreshed at 17:41:34 UTC. The headline change is the addition of fast mat-vec (matrix-vector multiplication) kernels for inline quantized weights, merged under pull request #22344. Alongside the core optimization, the release ships pre-built binaries for an expanded list of platforms and hardware backends.",
-        "The binaries now cover macOS Apple Silicon with and without KleidiAI acceleration, macOS Intel (x64), iOS via XCFramework, and a broad set of Linux targets spanning Ubuntu on x64 and arm64 CPUs, plus Vulkan, ROCm 7.2, OpenVINO, and SYCL (both FP32 and FP16) builds. Windows builds are available for CPU, CUDA 12 and 13, Vulkan, SYCL, and HIP backends. Notably, openEuler builds for both x86 and aarch64 architectures — covering Huawei Ascend 310P and 910B with ACL Graph — signal continued investment in Chinese enterprise and AI accelerator ecosystems.",
-        "For inference engineers and developers running quantized LLMs on custom or resource-constrained hardware, the mat-vec kernel improvements directly affect throughput and latency. The breadth of platform coverage — from iOS to openEuler Ascend targets — suggests llama.cpp is being used not only for local desktop inference but increasingly as a portable inference runtime for mobile and enterprise AI deployments where CUDA is not available."
-      ],
-      "article_why_matters": [
-        "Fast inline quantized mat-vec kernels are among the most impactful optimizations for running large language models on CPU or mixed hardware, directly reducing inference latency without model surgery.",
-        "Expanded platform coverage — particularly iOS, openEuler with Ascend 310P/910B support — shows llama.cpp filling gaps left by proprietary inference runtimes, making quantized model serving viable across Apple Silicon, Huawei AI accelerators, and Linux enterprise servers.",
-        "The continued rapid release cadence (tagged one to several times daily) and broad hardware backend matrix make llama.cpp a living baseline for open-weight inference research and product deployments alike."
-      ],
-      "article_source_note": [
-        "Information is drawn from the public GitHub release page for ggml-org/llama.cpp tag b8951, published at 2026-04-27T17:41:34Z, and the release's linked evidence excerpt covering the PR title, platform binaries, and hardware backends. The source does not include a full changelog or release notes text, so the depth of the technical change is inferred from the PR title and binary matrix rather than detailed commit history."
-      ],
-      "article_confidence": "moderate",
       "article_generation_mode": "claude"
     },
     {
