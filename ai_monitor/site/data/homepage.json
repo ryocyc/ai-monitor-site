@@ -1,7 +1,68 @@
 {
-  "generated_at": "2026-04-28T10:32:14+00:00",
+  "generated_at": "2026-04-28T10:42:58+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-28T10:42:19+00:00",
+      "source_name": "GitHub llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8954",
+      "category": "release",
+      "headline_en": "llama.cpp release feed now shows b8954",
+      "summary_en": "The monitored release feed for llama.cpp changed and the newest visible tag is b8954. The feed timestamp is 2026-04-28T10:37:30Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=b8954 updated=2026-04-28T10:37:30Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8954 summary= content=server: use pos_next instead of n_tokens for m-rope ( #22439 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p)...",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=b8954",
+        "+updated=2026-04-28T10:37:30Z",
+        "+link=https://github.com/ggml-org/llama.cpp/releases/tag/b8954",
+        "+summary=",
+        "+content=server: use pos_next instead of n_tokens for m-rope ( #22439 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "+",
+        " title=b8953",
+        " updated=2026-04-28T00:24:23Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=ggml : use 64 bytes aligned tile buffers ( #21058 ) Model Test t/s OLD t/s NEW Speedup qwen35 0.8B BF16 pp512 584.59 595.41 1.02 qwen35 0.8B BF16 tg128 52.23 52.82 1.01 qwen35 0.8B IQ2_M - 2.7 bpw pp512 260.64 261.70 1.00 qwen35 0.8B IQ2_M - 2.7 bpw tg128 81.17 80.89 1.00 qwen35 0.8B IQ2_XXS - 2.0625 bpw pp512 302.36 302.56 1.00 qwen35 0.8B IQ2_XXS - 2.0625 bpw tg128 84.93 85.12 1.00 qwen35 0.8B IQ3_XXS - 3.0625 bpw pp512 263.22 260.01 0.99 qwen35 0.8B IQ3_XXS - 3.0625 bpw tg128 80.29 78.94 0.98 qwen35 0.8B IQ4_NL - 4.5 bpw pp512 728.65 742.09 1.02 qwen35 0.8B IQ4_NL - 4.5 bpw tg128 82.39 84.46 1.03 qwen35 0.8B IQ4_XS - 4.25 bpw pp512 681.33 677.06 0.99 qwen35 0.8B IQ4_XS - 4.25 bpw tg128 80.18 79.28 0.99 qwen35 0.8B Q2_K_M pp512 413.28 415.94 1.01 qwen35 0.8B Q2_K_M tg128 81.90 82.78 1.01 qwen35 0.8B Q3_K_M pp512 493.17 495.08 1.00 qwen35 0.8B Q3_K_M tg128 82.75 83.23 1.01 qwen35 0.8B Q3_K_S pp512 429.35 427.64 1.00 qwen35 0.8B Q3_K_S tg128 86.69 87.02 1.00 qwen35 0.8B Q4_0 pp512 783.46 782.32 1.00 qwen35 0.8B Q4_0 tg128 88.23 87.90 1.00 qwen35 0.8B Q4_1 pp512 741.71 729.76 0.98 qwen35 0.8B Q4_1 tg128 85.44 86.01 1.01 qwen35 0.8B Q4_K_M pp512 676.24 681.31 1.01 qwen35 0.8B Q4_K_M tg128 76.59 77.06 1.01 qwen35 0.8B Q4_K_S pp512 683.12 688.81 1.01 qwen35 0.8B Q4_K_S tg128 80.50 81.19 1.01 qwen35 0.8B Q5_K_M pp512 635.33 642.11 1.01 qwen35 0.8B Q5_K_M tg128 72.07 72.49 1.01 qwen35 0.8B Q5_K_S pp512 660.95 658.18 1.00 qwen35 0.8B Q5_K_S tg128 72.19 72.95 1.01 qwen35 0.8B Q6_K pp512 647.97 638.84 0.99 qwen35 0.8B Q6_K tg128 72.83 72.49 1.00 qwen35 0.8B Q8_0 pp512 805.01 785.49 0.98 qwen35 0.8B Q8_0 tg128 70.10 70.13 1.00 Signed-off-by: Adrien Gallouët angt@huggingface.co macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
+        "-",
+        "-title=b8943",
+        "-updated=2026-04-27T05:57:19Z",
+        "-link=https://github.com/ggml-org/llama.cpp/releases/tag/b8943",
+        "-summary=",
+        "-content=common: fix missing exports in llama-common ( #22340 ) common: refactor common/debug to move abort_on_nan into base_callback_data Passing bool abort_on_nan as template parameter for common_debug_cb_eval is unnecessary and creates an issue with LTO. It should just be a member of the base_callback_data instead. cont : cleanup common : use pimpl in debug.h to reduce header dependencies Move common_debug_cb_user_data's data members (std::regex, std::vector&lt;uint8_t&gt;) into a private impl struct in debug.cpp. This removes the includes of common.h and from debug.h, reducing transitive dependencies for any translation unit that includes the header. Assisted-by: llama.cpp:local pi Co-authored-by: Georgi Gerganov ggerganov@gmail.com macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)"
+      ],
+      "article_identity": "b8954",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8954",
+      "id": "evt-3ac2fe1d977c9c3fbdd5",
+      "content_fingerprint": "llama cpp release feed now shows b8954 the monitored release feed for llama cpp changed and the newest visible tag is b8954 the feed timestamp is 2026 04 28t10 37 30z this looks like a release level update rather than a cosmetic page edit title b8954 updated 2026 04 28t10 37 30z link https github com ggml org llama cpp releases tag b8954 summary content server use pos next instead of n tokens for m rope 22439 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeuler aarch64 310p",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "llama cpp release feed now shows b8954 the monitored release feed for llama cpp changed and the newest visible tag is b8954 the feed timestamp is 2026 04 28t10 37 30z this looks like a release level update rather than a cosmetic page edit title b8954 updated 2026 04 28t10 37 30z link https github com ggml org llama cpp releases tag b8954 summary content server use pos next instead of n tokens for m rope 22439 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeuler aarch64 310p",
+      "github_release_signal_fingerprint": "llama cpp release feed now shows version the monitored release feed for llama cpp changed and the newest visible tag is version the feed timestamp is 2026 04 28t10 37 30z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 28t10 37 30z link https github com ggml org llama cpp releases tag version summary content server use pos next instead of n tokens for m rope 22439 macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm version ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda version dlls windows x64 cuda 13 cuda version dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeuler x86 310p openeuler x86 910b acl graph openeuler aarch64 310p",
+      "article_h1": "llama.cpp Ships M-RoPE Fix for Server Backend, Refreshes Cross-Platform Binaries",
+      "article_standfirst": "The ggml-org inference runtime updated its server component to correct how positional metadata is handled for multi-head rotary embeddings, and refreshed pre-built binaries across a broad range of hardware targets from mobile to cloud GPUs.",
+      "article_body": [
+        "llama.cpp released tag b8954 on 28 April 2026, introducing a server-side fix that replaces the `n_tokens` counter with `pos_next` when computing multi-head rotary position embeddings (m-rope). The change, tied to pull request #22439, addresses a subtle positional tracking error in the HTTP inference server's handling of rotating embeddings during multi-turn or streaming requests.",
+        "The release covers an unusually wide matrix of pre-built binaries. macOS users on Apple Silicon get a KleidiAI-enabled build alongside the standard arm64 binary; iOS is served as an XCFramework. Linux builds target CPUs across x64, arm64, and s390x architectures, plus Vulkan, ROCm 7.2, OpenVINO, and SYCL (FP32 and FP16) backends. Windows binaries include CPU, CUDA 12.4 and 13.1 variants (with separate DLL bundles), Vulkan, SYCL, and HIP builds. Android arm64 and two openEuler builds for Chinese silicon (310p and 910b with ACL Graph) round out the release.",
+        "For developers running local inference or embedding llama.cpp as a backend in agent and copilot pipelines, the m-rope fix resolves a source of incorrect attention behavior that could silently corrupt outputs in longer conversation turns or when interleaving context windows. The expanded KleidiAI macOS build and the openEuler additions signal continued work on both Apple hardware acceleration and non-x86 Chinese server environments."
+      ],
+      "article_why_matters": [
+        "The m-rope positional fix in the server backend can silently corrupt model outputs in multi-turn or streaming inference scenarios, making it a meaningful correctness patch for anyone using llama.cpp as a long-running API server.",
+        "The KleidiAI-enabled macOS build targets Apple's newest hardware optimizations, offering meaningful throughput gains for developers running local models on recent Mac hardware.",
+        "Support for openEuler on 910b (ACL Graph) and s390x Linux broadens the stack's reach in enterprise and research environments running non-x86 server hardware."
+      ],
+      "article_source_note": [
+        "Information drawn from the llama.cpp release page at ggml-org/llama.cpp (tag b8954, published 28 April 2026) and the accompanying ATOM feed. The release page contains build artifacts and the brief changelog entry but lacks a full written description; details about the m-rope fix are inferred from the PR reference #22439 and the surrounding context. Binary coverage confirms broad cross-platform scope but does not indicate version bumps for underlying GGML primitives."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-28T10:31:39+00:00",
       "source_name": "GitHub n8n Releases",
@@ -82,65 +143,6 @@
         "Data sourced from the n8n GitHub releases page (https://github.com/n8n-io/n8n/releases/tag/n8n%402.19.0). The release entry lists bug fix PR titles and commit hashes but does not include a structured changelog, migration guide, or new feature documentation, limiting the level of technical detail available."
       ],
       "article_confidence": "strong",
-      "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-28T09:09:01+00:00",
-      "source_name": "GitHub Claude Context Releases",
-      "source_url": "https://github.com/zilliztech/claude-context/releases.atom",
-      "effective_url": "https://github.com/zilliztech/claude-context/releases.atom",
-      "target_url": "https://github.com/zilliztech/claude-context/releases/tag/v0.1.11",
-      "category": "release",
-      "headline_en": "Claude Context release feed now shows v0.1.11",
-      "summary_en": "The monitored release feed for Claude Context changed and the newest visible tag is v0.1.11. The feed timestamp is 2026-04-28T09:01:42Z. This looks like a release-level update rather than a cosmetic page edit.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=v0.1.11 updated=2026-04-28T09:01:42Z link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.11 summary= content=chore: bump version to 0.1.11",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,8 @@",
-        "+title=v0.1.11",
-        "+updated=2026-04-28T09:01:42Z",
-        "+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.11",
-        "+summary=",
-        "+content=chore: bump version to 0.1.11",
-        "+",
-        " title=v0.1.10",
-        " updated=2026-04-27T11:40:54Z",
-        "@@ -52,8 +58,2 @@",
-        " summary=",
-        " content=Signed-off-by: ChengZi chen.zhang@zilliz.com",
-        "-",
-        "-title=bump version v0.1.1 (#150)",
-        "-updated=2025-08-12T02:14:50Z",
-        "-link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.1",
-        "-summary=",
-        "-content=Signed-off-by: ChengZi chen.zhang@zilliz.com"
-      ],
-      "article_identity": "v0.1.11",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "release||github claude context releases||https://github.com/zilliztech/claude-context/releases/tag/v0.1.11",
-      "id": "evt-43917f3f8a96c323b2db",
-      "content_fingerprint": "claude context release feed now shows v0 1 11 the monitored release feed for claude context changed and the newest visible tag is v0 1 11 the feed timestamp is 2026 04 28t09 01 42z this looks like a release level update rather than a cosmetic page edit title v0 1 11 updated 2026 04 28t09 01 42z link https github com zilliztech claude context releases tag v0 1 11 summary content chore bump version to 0 1 11",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "claude context release feed now shows v0 1 11 the monitored release feed for claude context changed and the newest visible tag is v0 1 11 the feed timestamp is 2026 04 28t09 01 42z this looks like a release level update rather than a cosmetic page edit title v0 1 11 updated 2026 04 28t09 01 42z link https github com zilliztech claude context releases tag v0 1 11 summary content chore bump version to 0 1 11",
-      "github_release_signal_fingerprint": "claude context release feed now shows version the monitored release feed for claude context changed and the newest visible tag is version the feed timestamp is 2026 04 28t09 01 42z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 28t09 01 42z link https github com zilliztech claude context releases tag version summary content chore bump version to version",
-      "article_h1": "Zilliz Updates Claude Context to v0.1.11",
-      "article_standfirst": "Zilliztech has tagged a new release of its Claude Context extension, bumping the version to 0.1.11 with only a version-number change logged.",
-      "article_body": [
-        "Zilliztech has published v0.1.11 of Claude Context, a GitHub-hosted extension maintained under the zilliztech organization. The release, tagged 2026-04-28T09:01:42Z, carries the commit message \"chore: bump version to 0.1.11,\" indicating a routine version increment with no accompanying change notes or feature descriptions on the release page.\n\nThe repository is hosted under Zilliztech, the company best known for the Milvus vector database, suggesting this tool may relate to context management or retrieval-augmented workflows in AI-assisted coding environments. Beyond the version tag and commit message, no public release notes, changelog entries, or pull-request summaries are available in the captured evidence.\n\nFor developers tracking Claude Context updates, this release offers no actionable change — only a new version marker. Teams using Claude Context in production should confirm against the repository's README or commit history whether any underlying changes warrant a pull or dependency update."
-      ],
-      "article_why_matters": [
-        "Routine version bumps with no published changes offer no insight into what was modified or why.",
-        "Without release notes, teams cannot assess whether the update fixes bugs, improves performance, or introduces breaking changes.",
-        "Given Zilliztech's background in vector and retrieval tooling, the repository likely serves developers integrating Claude Context into RAG or semantic search workflows — but the actual use case remains unconfirmed from this source alone."
-      ],
-      "article_source_note": [
-        "This brief is based on the GitHub release page for zilliztech/claude-context at tag v0.1.11, captured via an Atom feed on 2026-04-28. The release consists solely of a version-number commit; no changelog, pull-request summary, or feature description is present in the captured source. The repository's broader purpose is inferred from the org name and is not confirmed by the release text."
-      ],
-      "article_confidence": "weak",
       "article_generation_mode": "claude"
     },
     {

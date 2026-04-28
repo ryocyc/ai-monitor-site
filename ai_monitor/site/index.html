@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-28T10:32:14+00:00">Last built: <span data-utc="2026-04-28T10:32:14+00:00">2026-04-28 10:32 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-28T10:42:58+00:00">Last built: <span data-utc="2026-04-28T10:42:58+00:00">2026-04-28 10:42 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -87,6 +87,19 @@
             <article class="card" data-category="release">
               <div class="card-top">
                 <span class="pill">release</span>
+                <time datetime="2026-04-28T10:42:19+00:00" data-utc="2026-04-28T10:42:19+00:00">2026-04-28 10:42 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-3ac2fe1d977c9c3fbdd5.html">llama.cpp Ships M-RoPE Fix for Server Backend, Refreshes Cross-Platform Binaries</a></h2>
+              <p class="summary">The ggml-org inference runtime updated its server component to correct how positional metadata is handled for multi-head rotary embeddings, and refreshed pre-built binaries across a broad range of hardware targets from mobile to cloud GPUs.</p>
+              <div class="card-bottom">
+                <span>GitHub llama.cpp Releases</span>
+                <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b8954">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
                 <time datetime="2026-04-28T10:31:39+00:00" data-utc="2026-04-28T10:31:39+00:00">2026-04-28 10:31 UTC</time>
               </div>
               <h2 class="headline"><a href="./articles/evt-d4575ff953af78edbda2.html">n8n 2.19.0 Ships AI-Builder Stability Fixes and Credential Updates</a></h2>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>GitHub n8n Releases</span>
                 <a href="https://github.com/n8n-io/n8n/releases/tag/n8n%402.19.0">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-28T09:09:01+00:00" data-utc="2026-04-28T09:09:01+00:00">2026-04-28 09:09 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-43917f3f8a96c323b2db.html">Zilliz Updates Claude Context to v0.1.11</a></h2>
-              <p class="summary">Zilliztech has tagged a new release of its Claude Context extension, bumping the version to 0.1.11 with only a version-number change logged.</p>
-              <div class="card-bottom">
-                <span>GitHub Claude Context Releases</span>
-                <a href="https://github.com/zilliztech/claude-context/releases/tag/v0.1.11">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-28T10:32:14+00:00";
+    const currentGeneratedAt = "2026-04-28T10:42:58+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
