@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T09:09:31+00:00",
+  "generated_at": "2026-04-28T09:19:42+00:00",
   "item_count": 10,
   "items": [
     {
@@ -192,64 +192,64 @@
       "article_generation_mode": "claude"
     },
     {
-      "timestamp": "2026-04-27T19:16:21+00:00",
-      "source_name": "GitHub Codex Releases",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "effective_url": "https://github.com/openai/codex/releases.atom",
-      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8",
+      "timestamp": "2026-04-28T00:24:43+00:00",
+      "source_name": "GitHub llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "effective_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8953",
       "category": "release",
-      "headline_en": "Codex release feed now shows rust-v0.126.0-alpha.8",
-      "summary_en": "The monitored release feed for Codex changed and the newest visible tag is rust-v0.126.0-alpha.8. The feed timestamp is 2026-04-27T19:13:32Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_en": "llama.cpp release feed now shows b8953",
+      "summary_en": "The monitored release feed for llama.cpp changed and the newest visible tag is b8953. The feed timestamp is 2026-04-28T00:24:23Z. This looks like a release-level update rather than a cosmetic page edit.",
       "headline_zh": "",
       "summary_zh": "",
-      "evidence_excerpt": "title=rust-v0.126.0-alpha.8 updated=2026-04-27T19:13:32Z link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8 summary= content=Release 0.126.0-alpha.8",
+      "evidence_excerpt": "title=b8953 updated=2026-04-28T00:24:23Z link=https://github.com/ggml-org/llama.cpp/releases/tag/b8953 summary= content=ggml-webgpu: add Q1_0 support ( #22374 ) add fast matmul matvec q1_0 kernel ggml-webgpu: drop redundant zero-fills in Q1_0 shmem init macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEul...",
       "diff_excerpt": [
         "--- previous",
         "+++ current",
         "@@ -1,2 +1,8 @@",
-        "+title=rust-v0.126.0-alpha.8",
-        "+updated=2026-04-27T19:13:32Z",
-        "+link=https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8",
+        "+title=b8953",
+        "+updated=2026-04-28T00:24:23Z",
+        "+link=https://github.com/ggml-org/llama.cpp/releases/tag/b8953",
         "+summary=",
-        "+content=Release 0.126.0-alpha.8",
+        "+content=ggml-webgpu: add Q1_0 support ( #22374 ) add fast matmul matvec q1_0 kernel ggml-webgpu: drop redundant zero-fills in Q1_0 shmem init macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
         "+",
-        " title=0.126.0-alpha.7",
-        " updated=2026-04-27T14:56:22Z",
+        " title=b8952",
+        " updated=2026-04-27T22:52:41Z",
         "@@ -52,8 +58,2 @@",
         " summary=",
-        " content=Release 0.125.0-alpha.3",
+        " content=common: fix missing exports in llama-common ( #22340 ) common: refactor common/debug to move abort_on_nan into base_callback_data Passing bool abort_on_nan as template parameter for common_debug_cb_eval is unnecessary and creates an issue with LTO. It should just be a member of the base_callback_data instead. cont : cleanup common : use pimpl in debug.h to reduce header dependencies Move common_debug_cb_user_data's data members (std::regex, std::vector&lt;uint8_t&gt;) into a private impl struct in debug.cpp. This removes the includes of common.h and from debug.h, reducing transitive dependencies for any translation unit that includes the header. Assisted-by: llama.cpp:local pi Co-authored-by: Georgi Gerganov ggerganov@gmail.com macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)",
         "-",
-        "-title=0.125.0-alpha.2",
-        "-updated=2026-04-24T11:02:11Z",
-        "-link=https://github.com/openai/codex/releases/tag/rust-v0.125.0-alpha.2",
+        "-title=b8941",
+        "-updated=2026-04-26T17:44:01Z",
+        "-link=https://github.com/ggml-org/llama.cpp/releases/tag/b8941",
         "-summary=",
-        "-content=Release 0.125.0-alpha.2"
+        "-content=add performance-portable tuning for register-tile and subgroup matmul ( #22241 ) macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (ROCm 7.2) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Android: Android arm64 (CPU) Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.1 DLLs Windows x64 (Vulkan) Windows x64 (SYCL) Windows x64 (HIP) openEuler: openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph)"
       ],
-      "article_identity": "rust-v0.126.0-alpha.8",
+      "article_identity": "b8953",
       "is_page_error": false,
       "status": "staging-for-cc",
-      "merge_key": "release||github codex releases||https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.8",
-      "id": "evt-b78803151892817638bf",
-      "content_fingerprint": "codex release feed now shows rust v0 126 0 alpha 8 the monitored release feed for codex changed and the newest visible tag is rust v0 126 0 alpha 8 the feed timestamp is 2026 04 27t19 13 32z this looks like a release level update rather than a cosmetic page edit title rust v0 126 0 alpha 8 updated 2026 04 27t19 13 32z link https github com openai codex releases tag rust v0 126 0 alpha 8 summary content release 0 126 0 alpha 8",
+      "merge_key": "release||github llama.cpp releases||https://github.com/ggml-org/llama.cpp/releases/tag/b8953",
+      "id": "evt-e43d4fd8ea610083934d",
+      "content_fingerprint": "llama cpp release feed now shows b8953 the monitored release feed for llama cpp changed and the newest visible tag is b8953 the feed timestamp is 2026 04 28t00 24 23z this looks like a release level update rather than a cosmetic page edit title b8953 updated 2026 04 28t00 24 23z link https github com ggml org llama cpp releases tag b8953 summary content ggml webgpu add q1 0 support 22374 add fast matmul matvec q1 0 kernel ggml webgpu drop redundant zero fills in q1 0 shmem init macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeul",
       "needs_cc_refresh": true,
-      "source_content_fingerprint": "codex release feed now shows rust v0 126 0 alpha 8 the monitored release feed for codex changed and the newest visible tag is rust v0 126 0 alpha 8 the feed timestamp is 2026 04 27t19 13 32z this looks like a release level update rather than a cosmetic page edit title rust v0 126 0 alpha 8 updated 2026 04 27t19 13 32z link https github com openai codex releases tag rust v0 126 0 alpha 8 summary content release 0 126 0 alpha 8",
-      "github_release_signal_fingerprint": "codex release feed now shows version the monitored release feed for codex changed and the newest visible tag is version the feed timestamp is 2026 04 27t19 13 32z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 27t19 13 32z link https github com openai codex releases tag version summary content release version",
-      "article_h1": "OpenAI Ships Alpha Release of Codex CLI, Tagging v0.126.0-alpha.8",
-      "article_standfirst": "OpenAI has pushed a new alpha release, tagged v0.126.0-alpha.8, to its open-source Codex CLI repository, signaling continued iteration on the command-line coding agent built on the same foundation as GitHub Copilot.",
+      "source_content_fingerprint": "llama cpp release feed now shows b8953 the monitored release feed for llama cpp changed and the newest visible tag is b8953 the feed timestamp is 2026 04 28t00 24 23z this looks like a release level update rather than a cosmetic page edit title b8953 updated 2026 04 28t00 24 23z link https github com ggml org llama cpp releases tag b8953 summary content ggml webgpu add q1 0 support 22374 add fast matmul matvec q1 0 kernel ggml webgpu drop redundant zero fills in q1 0 shmem init macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm 7 2 ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda 12 4 dlls windows x64 cuda 13 cuda 13 1 dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeul",
+      "github_release_signal_fingerprint": "llama cpp release feed now shows version the monitored release feed for llama cpp changed and the newest visible tag is version the feed timestamp is 2026 04 28t00 24 23z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 28t00 24 23z link https github com ggml org llama cpp releases tag version summary content ggml webgpu add q1 0 support 22374 add fast matmul matvec q1 0 kernel ggml webgpu drop redundant zero fills in q1 0 shmem init macos ios macos apple silicon arm64 macos apple silicon arm64 kleidiai enabled macos intel x64 ios xcframework linux ubuntu x64 cpu ubuntu arm64 cpu ubuntu s390x cpu ubuntu x64 vulkan ubuntu arm64 vulkan ubuntu x64 rocm version ubuntu x64 openvino ubuntu x64 sycl fp32 ubuntu x64 sycl fp16 android android arm64 cpu windows windows x64 cpu windows arm64 cpu windows x64 cuda 12 cuda version dlls windows x64 cuda 13 cuda version dlls windows x64 vulkan windows x64 sycl windows x64 hip openeuler openeul",
+      "article_h1": "llama.cpp Adds WebGPU Q1_0 Kernel and Expands CUDA 12.4 Support in New Release",
+      "article_standfirst": "The llama.cpp project shipped release b8953, bringing a fast Q1_0 matmul kernel to WebGPU and widening CUDA binary support across platforms, signaling continued momentum on quantisation performance and hardware portability.",
       "article_body": [
-        "OpenAI has published a new alpha release, rust-v0.126.0-alpha.8, to the public Codex repository on GitHub. The release was tagged on 2026-04-27 at 19:13:32 UTC and is visible in the repository's release feed. No release notes, changelog, or summary text were surfaced in the fetched page content.",
-        "The Codex repository hosts the official CLI tool for OpenAI's coding agent — the same model backend that powers GitHub Copilot's agentic capabilities. The \"rust\" prefix in the tag suggests this release relates to the Rust-based rewrite or tooling layer of the CLI, consistent with a series of alpha tags that have been landing in this feed over recent weeks.",
-        "For developers using or evaluating the Codex CLI, this tag confirms that active development is ongoing, even in the absence of detailed release notes. For teams integrating Codex into CI/CD or developer tooling pipelines, tracking alpha tags provides early signal on upcoming changes that may affect workflow behaviour or API contracts."
+        "The llama.cpp project tagged release b8953 on 28 April 2026, adding native Q1_0 quantisation support to its WebGPU backend alongside a dedicated fast matmul matvec kernel, and removing redundant zero-fill operations in Q1_0 shared-memory initialisation to cut overhead.",
+        "Q1_0 is a low-bit quantisation format that compresses model weights to roughly one bit per parameter, trading some accuracy for significantly reduced memory footprint and faster inference on memory-constrained hardware. The WebGPU kernel gives browsers and WebAssembly runtimes a path to leverage this format without CPU fallback. The release also ships fresh binaries across macOS (Apple Silicon with optional KleidiAI acceleration, Intel), iOS (XCFramework), Linux (Ubuntu across CPU, Vulkan, ROCm 7.2, OpenVINO, and SYCL variants), Android arm64, and Windows (CPU, CUDA 12.4 with updated DLLs, CUDA 13.1, Vulkan, SYCL, HIP), plus openEuler.",
+        "For inference engineers and app developers running models on consumer GPUs or edge devices, the Q1_0 WebGPU kernel means lower VRAM usage and faster throughput in browser-based or locally served AI applications. The CUDA 12.4 and 13.1 DLL binaries streamline deployment on newer NVIDIA hardware, while the KleidiAI-enabled macOS builds target developers building native Apple Silicon apps who want hardware-level matrix-acceleration without a full metal backend."
       ],
       "article_why_matters": [
-        "The Codex CLI is the primary way developers directly invoke OpenAI's coding agent outside of IDE integrations, making any release notable for toolchain builders.",
-        "The Rust-prefixed alpha tag series suggests a structural rewrite or performance-focused reimplementation is under active development, not merely cosmetic updates.",
-        "Without published release notes, teams using Codex in production or pre-release evaluation cannot assess what changed — making this release a reminder that alpha-channel software requires close feed monitoring."
+        "Q1_0 is among the most memory-efficient quantisation formats; its WebGPU port opens the format to browser-based and cross-platform inference without CPU bottlenecks.",
+        "KleidiAI-enabled Apple Silicon builds give macOS developers explicit hardware-accelerated matrix support beyond the standard ARM64 backend.",
+        "Separate CUDA 12.4 and 13.1 DLL binaries eliminate version conflicts for teams running different driver stacks."
       ],
       "article_source_note": [
-        "This brief is based on the GitHub release feed for the openai/codex repository and the tagged release page at the provided URL. The release page contained a title and timestamp but no summary, changelog, or body content at the time of fetch, limiting the level of detail available. The repository is OpenAI's public home for the Codex CLI, the command-line interface to the company's coding agent."
+        "The release tag b8953 was confirmed via the llama.cpp GitHub Atom feed and release page (https://github.com/ggml-org/llama.cpp/releases/tag/b8953) on 28 April 2026. The evidence includes a detailed binary matrix across platforms and the Q1_0 WebGPU changes, but the release page is a tag page without a full written changelog; individual PR numbers (e.g., #22374) are referenced but not linked, limiting full context on the implementation scope."
       ],
-      "article_confidence": "weak",
+      "article_confidence": "moderate",
       "article_generation_mode": "claude"
     },
     {

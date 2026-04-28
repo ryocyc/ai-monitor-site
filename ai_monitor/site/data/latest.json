@@ -1,48 +1,5 @@
 {
-  "generated_at": "2026-04-28T09:09:06+00:00",
-  "item_count": 1,
-  "items": [
-    {
-      "timestamp": "2026-04-28T09:09:01+00:00",
-      "source_name": "GitHub Claude Context Releases",
-      "source_url": "https://github.com/zilliztech/claude-context/releases.atom",
-      "effective_url": "https://github.com/zilliztech/claude-context/releases.atom",
-      "target_url": "https://github.com/zilliztech/claude-context/releases/tag/v0.1.11",
-      "category": "release",
-      "headline_en": "Claude Context release feed now shows v0.1.11",
-      "summary_en": "The monitored release feed for Claude Context changed and the newest visible tag is v0.1.11. The feed timestamp is 2026-04-28T09:01:42Z. This looks like a release-level update rather than a cosmetic page edit.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=v0.1.11 updated=2026-04-28T09:01:42Z link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.11 summary= content=chore: bump version to 0.1.11",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,8 @@",
-        "+title=v0.1.11",
-        "+updated=2026-04-28T09:01:42Z",
-        "+link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.11",
-        "+summary=",
-        "+content=chore: bump version to 0.1.11",
-        "+",
-        " title=v0.1.10",
-        " updated=2026-04-27T11:40:54Z",
-        "@@ -52,8 +58,2 @@",
-        " summary=",
-        " content=Signed-off-by: ChengZi chen.zhang@zilliz.com",
-        "-",
-        "-title=bump version v0.1.1 (#150)",
-        "-updated=2025-08-12T02:14:50Z",
-        "-link=https://github.com/zilliztech/claude-context/releases/tag/v0.1.1",
-        "-summary=",
-        "-content=Signed-off-by: ChengZi chen.zhang@zilliz.com"
-      ],
-      "article_identity": "v0.1.11",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "release||github claude context releases||https://github.com/zilliztech/claude-context/releases/tag/v0.1.11",
-      "id": "evt-43917f3f8a96c323b2db",
-      "content_fingerprint": "claude context release feed now shows v0 1 11 the monitored release feed for claude context changed and the newest visible tag is v0 1 11 the feed timestamp is 2026 04 28t09 01 42z this looks like a release level update rather than a cosmetic page edit title v0 1 11 updated 2026 04 28t09 01 42z link https github com zilliztech claude context releases tag v0 1 11 summary content chore bump version to 0 1 11",
-      "needs_cc_refresh": true
-    }
-  ]
+  "generated_at": "2026-04-28T09:19:41+00:00",
+  "item_count": 0,
+  "items": []
 }
