@@ -1,4 +1,7 @@
 {
+  "evt-a17d21d90c30ab5c4214": "evt-a17d21d90c30ab5c4214",
+  "blog||hugging face blog||https://huggingface.co/blog/arig23498/pallas-for-beginners": "evt-a17d21d90c30ab5c4214",
+  "arig23498/pallas-for-beginners": "evt-a17d21d90c30ab5c4214",
   "evt-720345435b4d758eda7d": "evt-720345435b4d758eda7d",
   "news||openai newsroom||https://openai.com/index/openai-on-aws": "evt-720345435b4d758eda7d",
   "openai-on-aws": "evt-720345435b4d758eda7d",
@@ -417,7 +420,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-a17d21d90c30ab5c4214": "evt-a17d21d90c30ab5c4214",
-  "blog||hugging face blog||https://huggingface.co/blog/arig23498/pallas-for-beginners": "evt-a17d21d90c30ab5c4214",
-  "arig23498/pallas-for-beginners": "evt-a17d21d90c30ab5c4214"
+  "evt-95b588975219233bff1c": "evt-95b588975219233bff1c",
+  "release||github langgraph releases||github::langchain-ai/langgraph": "evt-95b588975219233bff1c",
+  "1.2.0a1": "evt-95b588975219233bff1c"
 }

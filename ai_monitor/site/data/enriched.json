@@ -7432,7 +7432,80 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-29T22:38:13+00:00",
+      "source_name": "GitHub LangGraph Releases",
+      "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
+      "effective_url": "https://github.com/langchain-ai/langgraph/releases.atom",
+      "target_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a1",
+      "category": "release",
+      "headline_en": "LangGraph release feed now shows langgraph==1.2.0a1",
+      "summary_en": "The monitored release feed for LangGraph changed and the newest visible tag is langgraph==1.2.0a1. The feed timestamp is 2026-04-29T22:30:21Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=langgraph==1.2.0a1 updated=2026-04-29T22:30:21Z link=https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a1 summary= content=Changes since 1.1.10 feat: allow graph to graceful shutdown/drain by request ( #7274 ) release: alpha for timers ( #7647 ) feat(langgraph): DeltaChannel : store sentinel in blobs, reconstruct from checkpoint_writes ( #7586 ) chore: dynamic push-task timeouts ( #7646 ) chore: update x links to langchain_oss ( #7645 ) chore: idle timeout ( #7631 ) feat(langgraph): native v2 projections for custom, updates, checkpoints, debug, tasks ( #7640 ) fix(langgraph): decouple run.output/interrupted/interrupts from ValuesTransformer ( #7639 ) refactor(langgraph,prebuilt): merge EventLog into StreamChannel with optional name ( #7637 ) feat(langgraph): add streamin...",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,14 @@",
+        "+title=langgraph==1.2.0a1",
+        "+updated=2026-04-29T22:30:21Z",
+        "+link=https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a1",
+        "+summary=",
+        "+content=Changes since 1.1.10 feat: allow graph to graceful shutdown/drain by request ( #7274 ) release: alpha for timers ( #7647 ) feat(langgraph): DeltaChannel : store sentinel in blobs, reconstruct from checkpoint_writes ( #7586 ) chore: dynamic push-task timeouts ( #7646 ) chore: update x links to langchain_oss ( #7645 ) chore: idle timeout ( #7631 ) feat(langgraph): native v2 projections for custom, updates, checkpoints, debug, tasks ( #7640 ) fix(langgraph): decouple run.output/interrupted/interrupts from ValuesTransformer ( #7639 ) refactor(langgraph,prebuilt): merge EventLog into StreamChannel with optional name ( #7637 ) feat(langgraph): add streaming transformer infrastructure and tests ( #7519 ) chore(deps): bump the minor-and-patch group across 1 directory with 4 updates (ty held back) ( #7635 )",
+        "+",
+        "+title=langgraph-checkpoint==4.1.0a1",
+        "+updated=2026-04-29T22:30:33Z",
+        "+link=https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.1.0a1",
+        "+summary=",
+        "+content=Changes since checkpoint==4.0.3 release: alpha for timers ( #7647 ) feat(langgraph): DeltaChannel : store sentinel in blobs, reconstruct from checkpoint_writes ( #7586 ) chore: dynamic push-task timeouts ( #7646 ) chore: update x links to langchain_oss ( #7645 )",
+        "+",
+        " title=langgraph==1.1.10",
+        " updated=2026-04-27T17:19:21Z",
+        "@@ -46,14 +58,2 @@",
+        " summary=",
+        " content=Changes since 1.1.7a2 release(langgraph): 1.1.7 ( #7540 ) fix: time travel when going back to interrupt node ( #7498 ) chore(deps): bump langsmith from 0.6.4 to 0.7.31 in /libs/langgraph ( #7526 ) release(checkpoint): 4.0.2 ( #7518 )",
+        "-",
+        "-title=langgraph-prebuilt==1.0.10",
+        "-updated=2026-04-17T17:59:59Z",
+        "-link=https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.10",
+        "-summary=",
+        "-content=Changes since prebuilt==1.0.9 release(prebuilt): 1.0.10 ( #7541 ) release(langgraph): 1.1.7 ( #7540 ) fix(prebuilt): handle injected NotRequired keys ( #7392 ) chore(deps): bump langsmith from 0.6.4 to 0.7.31 in /libs/prebuilt ( #7530 ) release(checkpoint): 4.0.2 ( #7518 ) chore(deps): bump pytest from 9.0.2 to 9.0.3 in /libs/prebuilt ( #7505 ) release(langgraph): 1.1.7a2 ( #7511 ) chore: allow passing some metadata only for tracing purposes ( #7383 ) release(langgraph): 1.1.7a1 ( #7476 ) chore(deps-dev): bump the minor-and-patch group in /libs/prebuilt with 3 updates ( #7376 ) release: langgraph 1.1.6 ( #7407 )",
+        "-",
+        "-title=langgraph-cli==0.4.23",
+        "-updated=2026-04-17T17:04:11Z",
+        "-link=https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.23",
+        "-summary=",
+        "-content=Changes since cli==0.4.22 release(cli): 0.4.23 ( #7542 )"
+      ],
+      "article_identity": "1.2.0a1",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github langgraph releases||github::langchain-ai/langgraph",
+      "id": "evt-95b588975219233bff1c",
+      "content_fingerprint": "langgraph release feed now shows langgraph 1 2 0a1 the monitored release feed for langgraph changed and the newest visible tag is langgraph 1 2 0a1 the feed timestamp is 2026 04 29t22 30 21z this looks like a release level update rather than a cosmetic page edit title langgraph 1 2 0a1 updated 2026 04 29t22 30 21z link https github com langchain ai langgraph releases tag 1 2 0a1 summary content changes since 1 1 10 feat allow graph to graceful shutdown drain by request 7274 release alpha for timers 7647 feat langgraph deltachannel store sentinel in blobs reconstruct from checkpoint writes 7586 chore dynamic push task timeouts 7646 chore update x links to langchain oss 7645 chore idle timeout 7631 feat langgraph native v2 projections for custom updates checkpoints debug tasks 7640 fix langgraph decouple run output interrupted interrupts from valuestransformer 7639 refactor langgraph prebuilt merge eventlog into streamchannel with optional name 7637 feat langgraph add streamin",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "langgraph release feed now shows langgraph 1 2 0a1 the monitored release feed for langgraph changed and the newest visible tag is langgraph 1 2 0a1 the feed timestamp is 2026 04 29t22 30 21z this looks like a release level update rather than a cosmetic page edit title langgraph 1 2 0a1 updated 2026 04 29t22 30 21z link https github com langchain ai langgraph releases tag 1 2 0a1 summary content changes since 1 1 10 feat allow graph to graceful shutdown drain by request 7274 release alpha for timers 7647 feat langgraph deltachannel store sentinel in blobs reconstruct from checkpoint writes 7586 chore dynamic push task timeouts 7646 chore update x links to langchain oss 7645 chore idle timeout 7631 feat langgraph native v2 projections for custom updates checkpoints debug tasks 7640 fix langgraph decouple run output interrupted interrupts from valuestransformer 7639 refactor langgraph prebuilt merge eventlog into streamchannel with optional name 7637 feat langgraph add streamin",
+      "github_release_signal_fingerprint": "langgraph release feed now shows langgraph version 0a1 the monitored release feed for langgraph changed and the newest visible tag is langgraph version 0a1 the feed timestamp is 2026 04 29t22 30 21z this looks like a release level update rather than a cosmetic page edit title langgraph version 0a1 updated 2026 04 29t22 30 21z link https github com langchain ai langgraph releases tag version 0a1 summary content changes since version feat allow graph to graceful shutdown drain by request 7274 release alpha for timers 7647 feat langgraph deltachannel store sentinel in blobs reconstruct from checkpoint writes 7586 chore dynamic push task timeouts 7646 chore update x links to langchain oss 7645 chore idle timeout 7631 feat langgraph native v2 projections for custom updates checkpoints debug tasks 7640 fix langgraph decouple run output interrupted interrupts from valuestransformer 7639 refactor langgraph prebuilt merge eventlog into streamchannel with optional name 7637 feat langgraph add streamin",
+      "article_h1": "LangGraph Ships Alpha 1.2.0 With Graceful Shutdown, Timer Primitives, and v2 Projections",
+      "article_standfirst": "The LangChain-ai orchestration library tagged its first alpha for the 1.2 release cycle, bringing long-requested improvements to state management, checkpointing, and task lifecycle control for production agent developers.",
+      "article_body": [
+        "LangGraph released version 1.2.0a1 on April 29, 2026, marking the first alpha tag in the 1.2 release line. The update encompasses 13 pull requests since version 1.1.10, spanning foundational internal restructuring and new runtime features. Notable additions include graceful graph shutdown and drain-by-request capabilities, an alpha implementation of timer primitives, and native v2 projections across custom types, updates, checkpoints, debug views, and task handling.",
+        "The release introduces DeltaChannel improvements that persist a sentinel value directly in state blobs and reconstruct it from checkpoint_writes, tightening the reliability of incremental state tracking in long-running graphs. A series of lifecycle management changes — dynamic push-task timeouts and idle timeout handling — address the operational challenges of keeping agent workflows responsive under varied load. Internally, EventLog was merged into StreamChannel with an optional name parameter, and run.output, interrupted, and interrupts were decoupled from ValuesTransformer, reducing hidden coupling between core execution paths.",
+        "For builders running multi-step agent loops in production, the new graceful shutdown behavior directly addresses the risk of dropped in-flight requests during deployments or restarts. The timer alpha opens the door to scheduled and time-bounded sub-graphs — a pattern that has been frequently requested in the LangGraph community for retry logic and deadline-driven workflows. Teams relying on LangGraph for complex stateful pipelines should evaluate the v2 projections and DeltaChannel changes, particularly where checkpointing and state reconstruction accuracy are critical."
+      ],
+      "article_why_matters": [
+        "Graceful drain-by-request prevents message loss during live deployments of agent services — a key gap for teams running LangGraph in production.",
+        "The alpha timer primitive unlocks time-bounded subgraphs and retry windows, a foundational pattern for reliable agentic workflows that is currently absent in stable releases.",
+        "Native v2 projections and the DeltaChannel checkpoint rework improve state reconstruction fidelity, reducing silent data loss in long-running multi-turn conversations."
+      ],
+      "article_source_note": [
+        "The brief draws from the LangGraph 1.2.0a1 GitHub release page, which lists 13 merged pull requests with titles and issue references but without a written changelog narrative or detailed feature descriptions. Specific behavioral details for timers, shutdown, and v2 projections are not elaborated beyond their PR titles."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-29T22:28:03+00:00"
+  "generated_at": "2026-04-29T22:38:44+00:00"
 }
