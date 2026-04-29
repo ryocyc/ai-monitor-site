@@ -1,4 +1,7 @@
 {
+  "evt-d9a98343770f7938ce5b": "evt-d9a98343770f7938ce5b",
+  "release||github crewai releases||github::crewaiinc/crewai": "evt-d9a98343770f7938ce5b",
+  "1.14.4a1": "evt-d9a98343770f7938ce5b",
   "evt-d35017add6cb257436d7": "evt-d35017add6cb257436d7",
   "blog||hugging face blog||https://huggingface.co/blog/granite-41-llms-how-theyre-built": "evt-d35017add6cb257436d7",
   "granite-41-llms-how-theyre-built": "evt-d35017add6cb257436d7",
@@ -402,7 +405,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-d9a98343770f7938ce5b": "evt-d9a98343770f7938ce5b",
-  "release||github crewai releases||github::crewaiinc/crewai": "evt-d9a98343770f7938ce5b",
-  "1.14.4a1": "evt-d9a98343770f7938ce5b"
+  "evt-83558e2026290bb95f19": "evt-83558e2026290bb95f19",
+  "blog||hugging face blog||https://huggingface.co/blog/lightonai/denseon-lateon": "evt-83558e2026290bb95f19",
+  "lightonai/denseon-lateon": "evt-83558e2026290bb95f19"
 }
