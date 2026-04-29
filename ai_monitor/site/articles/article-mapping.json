@@ -1,4 +1,7 @@
 {
+  "evt-9c3b9db2b24bcf3f1e75": "evt-9c3b9db2b24bcf3f1e75",
+  "blog||hugging face blog||https://huggingface.co/blog/ibm-granite/granite-4-1": "evt-9c3b9db2b24bcf3f1e75",
+  "ibm-granite/granite-4-1": "evt-9c3b9db2b24bcf3f1e75",
   "evt-d619c7ce8bb5b0a3e5fc": "evt-d619c7ce8bb5b0a3e5fc",
   "release||github n8n releases||github::n8n-io/n8n": "evt-d619c7ce8bb5b0a3e5fc",
   "v1": "evt-d619c7ce8bb5b0a3e5fc",
@@ -393,7 +396,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-9c3b9db2b24bcf3f1e75": "evt-9c3b9db2b24bcf3f1e75",
-  "blog||hugging face blog||https://huggingface.co/blog/ibm-granite/granite-4-1": "evt-9c3b9db2b24bcf3f1e75",
-  "ibm-granite/granite-4-1": "evt-9c3b9db2b24bcf3f1e75"
+  "evt-61a29c1f69599c8953d1": "evt-61a29c1f69599c8953d1",
+  "docs||mistral changelog||https://docs.mistral.ai/getting-started/changelog": "evt-61a29c1f69599c8953d1",
+  "getting-started/changelog": "evt-61a29c1f69599c8953d1"
 }
