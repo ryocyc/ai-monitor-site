@@ -1,4 +1,7 @@
 {
+  "evt-83558e2026290bb95f19": "evt-83558e2026290bb95f19",
+  "blog||hugging face blog||https://huggingface.co/blog/lightonai/denseon-lateon": "evt-83558e2026290bb95f19",
+  "lightonai/denseon-lateon": "evt-83558e2026290bb95f19",
   "evt-d9a98343770f7938ce5b": "evt-d9a98343770f7938ce5b",
   "release||github crewai releases||github::crewaiinc/crewai": "evt-d9a98343770f7938ce5b",
   "1.14.4a1": "evt-d9a98343770f7938ce5b",
@@ -405,7 +408,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-83558e2026290bb95f19": "evt-83558e2026290bb95f19",
-  "blog||hugging face blog||https://huggingface.co/blog/lightonai/denseon-lateon": "evt-83558e2026290bb95f19",
-  "lightonai/denseon-lateon": "evt-83558e2026290bb95f19"
+  "evt-9890b09eee0fa7106048": "evt-9890b09eee0fa7106048",
+  "blog||hugging face blog||https://huggingface.co/blog/evaleval/eval-costs-bottleneck": "evt-9890b09eee0fa7106048",
+  "evaleval/eval-costs-bottleneck": "evt-9890b09eee0fa7106048"
 }
