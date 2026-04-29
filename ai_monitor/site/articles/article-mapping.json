@@ -1,4 +1,7 @@
 {
+  "evt-be8a30b0a11ae9d36519": "evt-be8a30b0a11ae9d36519",
+  "blog||hugging face blog||https://huggingface.co/blog/hugging-face-inference-providers": "evt-be8a30b0a11ae9d36519",
+  "hugging-face-inference-providers": "evt-be8a30b0a11ae9d36519",
   "evt-9890b09eee0fa7106048": "evt-9890b09eee0fa7106048",
   "blog||hugging face blog||https://huggingface.co/blog/evaleval/eval-costs-bottleneck": "evt-9890b09eee0fa7106048",
   "evaleval/eval-costs-bottleneck": "evt-9890b09eee0fa7106048",
@@ -411,7 +414,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-be8a30b0a11ae9d36519": "evt-be8a30b0a11ae9d36519",
-  "blog||hugging face blog||https://huggingface.co/blog/hugging-face-inference-providers": "evt-be8a30b0a11ae9d36519",
-  "hugging-face-inference-providers": "evt-be8a30b0a11ae9d36519"
+  "evt-720345435b4d758eda7d": "evt-720345435b4d758eda7d",
+  "news||openai newsroom||https://openai.com/index/openai-on-aws": "evt-720345435b4d758eda7d",
+  "openai-on-aws": "evt-720345435b4d758eda7d"
 }
