@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-29T15:22:46+00:00">Last built: <span data-utc="2026-04-29T15:22:46+00:00">2026-04-29 15:22 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-29T15:33:45+00:00">Last built: <span data-utc="2026-04-29T15:33:45+00:00">2026-04-29 15:33 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-04-29T15:32:50+00:00" data-utc="2026-04-29T15:32:50+00:00">2026-04-29 15:32 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-d35017add6cb257436d7.html">Hugging Face Publishes Deep-Dive on IBM&#x27;s Granite 4.1 Language Model Architecture</a></h2>
+              <p class="summary">A new community guide on Hugging Face breaks down how IBM built its Granite 4.1 series of large language models, offering practitioners a technical window into the training and design decisions behind the open-weight release.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/granite-41-llms-how-theyre-built">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>Mistral Changelog</span>
                 <a href="https://docs.mistral.ai/getting-started/changelog/">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-04-29T15:10:30+00:00" data-utc="2026-04-29T15:10:30+00:00">2026-04-29 15:10 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-9c3b9db2b24bcf3f1e75.html">IBM Publishes Technical Deep-Dive on Granite 4.1 LLM Architecture</a></h2>
-              <p class="summary">IBM has posted a community guide on Hugging Face detailing the training and architecture decisions behind its Granite 4.1 large language models, offering practitioners a rare look under the hood of an enterprise-grade open-weights series.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/ibm-granite/granite-4-1">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-29T15:22:46+00:00";
+    const currentGeneratedAt = "2026-04-29T15:33:45+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
