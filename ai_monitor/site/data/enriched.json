@@ -7083,7 +7083,68 @@
       ],
       "article_confidence": "weak",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-29T16:05:24+00:00",
+      "source_name": "GitHub CrewAI Releases",
+      "source_url": "https://github.com/crewAIInc/crewAI/releases.atom",
+      "effective_url": "https://github.com/crewAIInc/crewAI/releases.atom",
+      "target_url": "https://github.com/crewAIInc/crewAI/releases/tag/1.14.4a1",
+      "category": "release",
+      "headline_en": "CrewAI release feed now shows 1.14.4a1",
+      "summary_en": "The monitored release feed for CrewAI changed and the newest visible tag is 1.14.4a1. The feed timestamp is 2026-04-29T15:57:22Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=1.14.4a1 updated=2026-04-29T15:57:22Z link=https://github.com/crewAIInc/crewAI/releases/tag/1.14.4a1 summary= content=What's Changed Bug Fixes Fix crew chat description helpers against LLM failures. Reset messages and iterations between invocations in executor. Forward trained-agents file through replay and test in CLI. Honor custom trained-agents file at inference in agent. Bind task-only agents to crew to ensure multimodal input_files reach the LLM. Serialize guardrail callables as null for JSON checkpointing. Rename force_final_answer in agent_executor to avoid self-referential router. Bump litellm for SSTI fix and ignore unfixable pip CVE. Documentation Add E2B Sandbox Tools page. Add Daytona sandbox tools documentation. Add Vertex AI workload identity setup guide. Add You.com...",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=1.14.4a1",
+        "+updated=2026-04-29T15:57:22Z",
+        "+link=https://github.com/crewAIInc/crewAI/releases/tag/1.14.4a1",
+        "+summary=",
+        "+content=What's Changed Bug Fixes Fix crew chat description helpers against LLM failures. Reset messages and iterations between invocations in executor. Forward trained-agents file through replay and test in CLI. Honor custom trained-agents file at inference in agent. Bind task-only agents to crew to ensure multimodal input_files reach the LLM. Serialize guardrail callables as null for JSON checkpointing. Rename force_final_answer in agent_executor to avoid self-referential router. Bump litellm for SSTI fix and ignore unfixable pip CVE. Documentation Add E2B Sandbox Tools page. Add Daytona sandbox tools documentation. Add Vertex AI workload identity setup guide. Add You.com MCP tools for search, research, and content extraction. Update changelog and version for v1.14.3. Contributors @EdwardIrby , @dependabot [bot], @factory-droid-oss, @factory-droid [bot], @greysonlalonde , @lorenzejay , @manisrinivasan2k1 , @mattatcha",
+        "+",
+        " title=1.14.3",
+        " updated=2026-04-24T16:13:51Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=What's Changed Features Add deploy validation CLI Improve LLM initialization ergonomics Bug Fixes Override pypdf and uv to patched versions for CVE-2026-40260 and GHSA-pjjw-68hj-v9mw Upgrade requests to &gt;=2.33.0 for CVE temp file vulnerability Preserve Bedrock tool call arguments by removing truthy default Sanitize tool schemas for strict mode Deflake MemoryRecord embedding serialization test Documentation Clean up enterprise A2A language Add enterprise A2A feature documentation Update OSS A2A documentation Update changelog and version for v1.14.2a2 Contributors @Yanhu007 , @greysonlalonde",
+        "-",
+        "-title=1.14.2a2",
+        "-updated=2026-04-10T13:59:04Z",
+        "-link=https://github.com/crewAIInc/crewAI/releases/tag/1.14.2a2",
+        "-summary=",
+        "-content=What's Changed Features Add checkpoint TUI with tree view, fork support, and editable inputs/outputs Enrich LLM token tracking with reasoning tokens and cache creation tokens Add from_checkpoint parameter to kickoff methods Embed crewai_version in checkpoints with migration framework Add checkpoint forking with lineage tracking Bug Fixes Fix strict mode forwarding to Anthropic and Bedrock providers Harden NL2SQLTool with read-only default, query validation, and parameterized queries Documentation Update changelog and version for v1.14.2a1 Contributors @alex-clawd , @github-actions[bot], @greysonlalonde , @lucasgomide"
+      ],
+      "article_identity": "1.14.4a1",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github crewai releases||github::crewaiinc/crewai",
+      "id": "evt-d9a98343770f7938ce5b",
+      "content_fingerprint": "crewai release feed now shows 1 14 4a1 the monitored release feed for crewai changed and the newest visible tag is 1 14 4a1 the feed timestamp is 2026 04 29t15 57 22z this looks like a release level update rather than a cosmetic page edit title 1 14 4a1 updated 2026 04 29t15 57 22z link https github com crewaiinc crewai releases tag 1 14 4a1 summary content what s changed bug fixes fix crew chat description helpers against llm failures reset messages and iterations between invocations in executor forward trained agents file through replay and test in cli honor custom trained agents file at inference in agent bind task only agents to crew to ensure multimodal input files reach the llm serialize guardrail callables as null for json checkpointing rename force final answer in agent executor to avoid self referential router bump litellm for ssti fix and ignore unfixable pip cve documentation add e2b sandbox tools page add daytona sandbox tools documentation add vertex ai workload identity setup guide add you com",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "crewai release feed now shows 1 14 4a1 the monitored release feed for crewai changed and the newest visible tag is 1 14 4a1 the feed timestamp is 2026 04 29t15 57 22z this looks like a release level update rather than a cosmetic page edit title 1 14 4a1 updated 2026 04 29t15 57 22z link https github com crewaiinc crewai releases tag 1 14 4a1 summary content what s changed bug fixes fix crew chat description helpers against llm failures reset messages and iterations between invocations in executor forward trained agents file through replay and test in cli honor custom trained agents file at inference in agent bind task only agents to crew to ensure multimodal input files reach the llm serialize guardrail callables as null for json checkpointing rename force final answer in agent executor to avoid self referential router bump litellm for ssti fix and ignore unfixable pip cve documentation add e2b sandbox tools page add daytona sandbox tools documentation add vertex ai workload identity setup guide add you com",
+      "github_release_signal_fingerprint": "crewai release feed now shows version 4a1 the monitored release feed for crewai changed and the newest visible tag is version 4a1 the feed timestamp is 2026 04 29t15 57 22z this looks like a release level update rather than a cosmetic page edit title version 4a1 updated 2026 04 29t15 57 22z link https github com crewaiinc crewai releases tag version 4a1 summary content what s changed bug fixes fix crew chat description helpers against llm failures reset messages and iterations between invocations in executor forward trained agents file through replay and test in cli honor custom trained agents file at inference in agent bind task only agents to crew to ensure multimodal input files reach the llm serialize guardrail callables as null for json checkpointing rename force final answer in agent executor to avoid self referential router bump litellm for ssti fix and ignore unfixable pip cve documentation add e2b sandbox tools page add daytona sandbox tools documentation add vertex ai workload identity setup guide add you com",
+      "article_h1": "CrewAI 1.14.4a1 Lands Chat Resilience Fixes, Better Multimodal File Handling, and Security Patch",
+      "article_standfirst": "The CrewAI open-source multi-agent framework patched a failure mode in crew chat description helpers, improved how task-only agents handle multimodal file inputs, and upgraded its litellm dependency to close a server-side template injection vulnerability.",
+      "article_body": [
+        "CrewAI released version 1.14.4a1 on 29 April 2026, a point release focused on bug fixes and documentation. The most notable change addresses a failure in crew chat description helpers triggered by certain LLM responses, a condition that could interrupt execution in multi-agent workflows relying on that hook. The release also resets messages and iteration counters between invocations in the executor, preventing carryover state that caused unpredictable behavior in long-running replays and tests.",
+        "The update also fixes how task-only agents bind to crews during execution, ensuring that multimodal input files reach the underlying LLM rather than being dropped silently. Custom trained-agents files are now correctly forwarded through both the replay and test commands in the CLI and honored at inference time in agents. Guardrail callable serialization was patched so that it serializes as null during JSON checkpointing, avoiding a class-inheritance error in that code path. On the security side, the litellm dependency was bumped to patch a server-side template injection (SSTI) vulnerability, while an unfixable pip CVE is now explicitly ignored. The agent_executor flag force_final_answer was renamed to avoid a self-referential router conflict.",
+        "Documentation additions cover three new integration guides: E2B Sandbox Tools, Daytona sandbox tools, and Vertex AI workload identity setup. A You.com integration page was also added. These additions signal that the CrewAI team is investing in concrete deployment pathways for agents built on its framework, particularly around sandboxed execution and cloud credential management."
+      ],
+      "article_why_matters": [
+        "Agent developers relying on crew chat description helpers can no longer assume stable behavior; the fix resolves a failure mode that could silently break multi-step workflows.",
+        "Multimodal file handling for task-only agents was a known gap; the fix ensures files reach the LLM as intended, removing a source of silent data loss.",
+        "The SSTI patch in litellm closes a code-injection vector that could affect any CrewAI deployment making LLM calls through that library, making the upgrade relevant even for teams not using the specific chat helper."
+      ],
+      "article_source_note": [
+        "This brief is based on the official CrewAI GitHub releases page for tag 1.14.4a1, published 29 April 2026. The release note provides a structured changelog but no discussion of severity, affected configurations, or upgrade guidance. The alpha tag ('a1') signals this is a pre-release build; teams should check the CrewAI repository before upgrading production environments."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-29T15:33:44+00:00"
+  "generated_at": "2026-04-29T16:06:17+00:00"
 }

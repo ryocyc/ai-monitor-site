@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-29T15:55:11+00:00">Last built: <span data-utc="2026-04-29T15:55:11+00:00">2026-04-29 15:55 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-29T16:06:18+00:00">Last built: <span data-utc="2026-04-29T16:06:18+00:00">2026-04-29 16:06 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-29T16:05:24+00:00" data-utc="2026-04-29T16:05:24+00:00">2026-04-29 16:05 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-d9a98343770f7938ce5b.html">CrewAI 1.14.4a1 Lands Chat Resilience Fixes, Better Multimodal File Handling, and Security Patch</a></h2>
+              <p class="summary">The CrewAI open-source multi-agent framework patched a failure mode in crew chat description helpers, improved how task-only agents handle multimodal file inputs, and upgraded its litellm dependency to close a server-side template injection vulnerability.</p>
+              <div class="card-bottom">
+                <span>GitHub CrewAI Releases</span>
+                <a href="https://github.com/crewAIInc/crewAI/releases/tag/1.14.4a1">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -133,19 +146,6 @@
               <div class="card-bottom">
                 <span>Together AI Pricing</span>
                 <a href="https://www.together.ai/pricing">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-29T12:04:42+00:00" data-utc="2026-04-29T12:04:42+00:00">2026-04-29 12:04 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-b252101b125b8e8071cd.html">Vercel AI SDK Ships xai Provider Patch 3.0.84 After Provenance Setup</a></h2>
-              <p class="summary">The Vercel AI SDK released a patch update to its XAI provider adapter, tagging version 3.0.84 on April 29 as part of a broader release wave triggered by internal provenance tooling changes.</p>
-              <div class="card-bottom">
-                <span>GitHub Vercel AI Releases</span>
-                <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%403.0.84">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-29T15:55:11+00:00";
+    const currentGeneratedAt = "2026-04-29T16:06:18+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
