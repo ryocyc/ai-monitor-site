@@ -1,5 +1,48 @@
 {
-  "generated_at": "2026-04-30T01:38:46+00:00",
-  "item_count": 0,
-  "items": []
+  "generated_at": "2026-04-30T01:49:27+00:00",
+  "item_count": 1,
+  "items": [
+    {
+      "timestamp": "2026-04-30T01:48:54+00:00",
+      "source_name": "GitHub Ollama Releases",
+      "source_url": "https://github.com/ollama/ollama/releases.atom",
+      "effective_url": "https://github.com/ollama/ollama/releases.atom",
+      "target_url": "https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1",
+      "category": "release",
+      "headline_en": "Ollama release feed now shows v0.22.1-rc1",
+      "summary_en": "The monitored release feed for Ollama changed and the newest visible tag is v0.22.1-rc1. The feed timestamp is 2026-04-30T01:40:23Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=v0.22.1-rc1 updated=2026-04-30T01:40:23Z link=https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1 summary= content=renderers: update gemma4 renderer ( #15886 )",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=v0.22.1-rc1",
+        "+updated=2026-04-30T01:40:23Z",
+        "+link=https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1",
+        "+summary=",
+        "+content=renderers: update gemma4 renderer ( #15886 )",
+        "+",
+        " title=v0.22.1",
+        " updated=2026-04-28T20:30:57Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=launch: replace kimi-k2.5 with k2.6 as top recommended model ( #15737 )",
+        "-",
+        "-title=v0.21.1-rc0",
+        "-updated=2026-04-21T00:42:29Z",
+        "-link=https://github.com/ollama/ollama/releases/tag/v0.21.1-rc0",
+        "-summary=",
+        "-content=server: apply format when think=false for gemma4 ( #15678 )"
+      ],
+      "article_identity": "v0.22.1-rc1",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github ollama releases||github::ollama/ollama",
+      "id": "evt-6a2f71e5d0acc2437411",
+      "content_fingerprint": "ollama release feed now shows v0 22 1 rc1 the monitored release feed for ollama changed and the newest visible tag is v0 22 1 rc1 the feed timestamp is 2026 04 30t01 40 23z this looks like a release level update rather than a cosmetic page edit title v0 22 1 rc1 updated 2026 04 30t01 40 23z link https github com ollama ollama releases tag v0 22 1 rc1 summary content renderers update gemma4 renderer 15886",
+      "needs_cc_refresh": true
+    }
+  ]
 }

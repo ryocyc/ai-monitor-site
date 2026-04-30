@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ollama Issues Release Candidate v0.22.1 with Gemma4 Renderer Update | AI Signal Articles</title>
+  <meta name="description" content="Ollama has tagged v0.22.1-rc1, a release candidate that updates the project&#x27;s Gemma4 model renderer, marking the first release-level bump since the prio...">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
+       crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .top-ad {
+      margin-bottom: 18px;
+      padding: 12px 14px;
+      border: 1px dashed rgba(15,118,110,0.28);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.68);
+    }
+    .ad-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .ad-slot {
+      min-height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15,118,110,0.08);
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .hero-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .share-button {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+    .share-button:hover {
+      transform: translateY(-1px);
+      background: rgba(15,118,110,0.18);
+    }
+    .share-status {
+      color: var(--muted);
+      font-size: 0.88rem;
+      min-height: 1.2em;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="top-ad" aria-label="Advertisement">
+      <div class="ad-label">Advertisement</div>
+      <div class="ad-slot">Top banner ad slot</div>
+    </section>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated <span data-utc="2026-04-30T01:49:52+00:00">2026-04-30 01:49 UTC</span></div>
+    </div>
+    <article class="hero">
+      <span class="chip">release</span>
+      <h1>Ollama Issues Release Candidate v0.22.1 with Gemma4 Renderer Update</h1>
+      <p class="standfirst">Ollama has tagged v0.22.1-rc1, a release candidate that updates the project&#x27;s Gemma4 model renderer, marking the first release-level bump since the prior stable release.</p>
+      <div class="meta">
+        <span>GitHub Ollama Releases</span>
+        <span>&lt;span data-utc=&quot;2026-04-30T01:48:54+00:00&quot;&gt;2026-04-30 01:48 UTC&lt;/span&gt;</span>
+        <span>Key: evt-6a2f71e5d0acc2437411</span>
+        <span>Confidence: weak</span>
+        <span>Mode: claude</span>
+      </div>
+      <div class="hero-actions">
+        <button class="share-button" type="button" id="share-button">Share</button>
+        <span class="share-status" id="share-status" aria-live="polite"></span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>Ollama, the open-source runtime for running large language models locally, has published a release candidate tagged v0.22.1-rc1 to its GitHub releases page. The single changelog entry in this release updates the Gemma4 renderer, touching PR #15886. The release was pushed on 30 April 2026.
+
+Gemma4 is Google&#x27;s family of open-weight transformer models, and the renderer referenced here is the component within Ollama responsible for token stream handling and output formatting when running Gemma4-based prompts. The change signals continued compatibility work between Ollama&#x27;s inference layer and Google&#x27;s latest model weights.
+
+For developers running Ollama as a local model server, the release candidate offers an early path to test the Gemma4 renderer update before it lands in a stable tag. Teams using Ollama in AI prototyping or edge deployment pipelines should watch for the stable v0.22.1 release to confirm the update is backward-compatible with their current model pulls.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>Ollama is a widely-used local inference runtime for developers and teams that need to run open-weight LLMs without cloud dependency.</li><li>The Gemma4 renderer update suggests improved token handling or output quality for Gemma4 models running under Ollama, a popular combination for local AI stacks.</li><li>Release candidates let builders test early; stable release arrival will signal a green light for production pipeline updates.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>The source is the GitHub Atom release feed and release page for the Ollama repository, updated 30 April 2026. The changelog contains a single line item (&quot;renderers: update gemma4 renderer ( #15886 )&quot;); the full release notes or changelog body were not available in the captured source, and no additional release description was rendered. Confidence is weak given the thin evidence — the release exists and the renderer update is confirmed, but the scope and severity of the change are not explained by the source.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+  <script>
+    (() => {
+      const button = document.getElementById("share-button");
+      const status = document.getElementById("share-status");
+      if (!button || !status) return;
+      const shareData = {
+        title: document.title,
+        text: "Ollama has tagged v0.22.1-rc1, a release candidate that updates the project's Gemma4 model renderer, marking the first release-level bump...",
+        url: window.location.href
+      };
+      const setStatus = (message) => {
+        status.textContent = message;
+        if (message) {
+          window.clearTimeout(setStatus._timer);
+          setStatus._timer = window.setTimeout(() => {
+            status.textContent = "";
+          }, 2400);
+        }
+      };
+      button.addEventListener("click", async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+            setStatus("Shared.");
+            return;
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(window.location.href);
+            setStatus("Link copied.");
+            return;
+          }
+        } catch (error) {
+          setStatus("Share cancelled.");
+          return;
+        }
+        const helper = document.createElement("input");
+        helper.value = window.location.href;
+        document.body.appendChild(helper);
+        helper.select();
+        document.execCommand("copy");
+        helper.remove();
+        setStatus("Link copied.");
+      });
+
+      document.querySelectorAll('[data-utc]').forEach((node) => {
+        const value = node.dataset.utc;
+        if (!value) return;
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return;
+        node.textContent = new Intl.DateTimeFormat(undefined, {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false,
+          timeZoneName: 'short'
+        }).format(date);
+      });
+    })();
+  </script>
+</body>
+</html>

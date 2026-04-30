@@ -7669,7 +7669,66 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-04-30T01:48:54+00:00",
+      "source_name": "GitHub Ollama Releases",
+      "source_url": "https://github.com/ollama/ollama/releases.atom",
+      "effective_url": "https://github.com/ollama/ollama/releases.atom",
+      "target_url": "https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1",
+      "category": "release",
+      "headline_en": "Ollama release feed now shows v0.22.1-rc1",
+      "summary_en": "The monitored release feed for Ollama changed and the newest visible tag is v0.22.1-rc1. The feed timestamp is 2026-04-30T01:40:23Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=v0.22.1-rc1 updated=2026-04-30T01:40:23Z link=https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1 summary= content=renderers: update gemma4 renderer ( #15886 )",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=v0.22.1-rc1",
+        "+updated=2026-04-30T01:40:23Z",
+        "+link=https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1",
+        "+summary=",
+        "+content=renderers: update gemma4 renderer ( #15886 )",
+        "+",
+        " title=v0.22.1",
+        " updated=2026-04-28T20:30:57Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=launch: replace kimi-k2.5 with k2.6 as top recommended model ( #15737 )",
+        "-",
+        "-title=v0.21.1-rc0",
+        "-updated=2026-04-21T00:42:29Z",
+        "-link=https://github.com/ollama/ollama/releases/tag/v0.21.1-rc0",
+        "-summary=",
+        "-content=server: apply format when think=false for gemma4 ( #15678 )"
+      ],
+      "article_identity": "v0.22.1-rc1",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github ollama releases||github::ollama/ollama",
+      "id": "evt-6a2f71e5d0acc2437411",
+      "content_fingerprint": "ollama release feed now shows v0 22 1 rc1 the monitored release feed for ollama changed and the newest visible tag is v0 22 1 rc1 the feed timestamp is 2026 04 30t01 40 23z this looks like a release level update rather than a cosmetic page edit title v0 22 1 rc1 updated 2026 04 30t01 40 23z link https github com ollama ollama releases tag v0 22 1 rc1 summary content renderers update gemma4 renderer 15886",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "ollama release feed now shows v0 22 1 rc1 the monitored release feed for ollama changed and the newest visible tag is v0 22 1 rc1 the feed timestamp is 2026 04 30t01 40 23z this looks like a release level update rather than a cosmetic page edit title v0 22 1 rc1 updated 2026 04 30t01 40 23z link https github com ollama ollama releases tag v0 22 1 rc1 summary content renderers update gemma4 renderer 15886",
+      "github_release_signal_fingerprint": "ollama release feed now shows version the monitored release feed for ollama changed and the newest visible tag is version the feed timestamp is 2026 04 30t01 40 23z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 30t01 40 23z link https github com ollama ollama releases tag version summary content renderers update gemma4 renderer 15886",
+      "article_h1": "Ollama Issues Release Candidate v0.22.1 with Gemma4 Renderer Update",
+      "article_standfirst": "Ollama has tagged v0.22.1-rc1, a release candidate that updates the project's Gemma4 model renderer, marking the first release-level bump since the prior stable release.",
+      "article_body": [
+        "Ollama, the open-source runtime for running large language models locally, has published a release candidate tagged v0.22.1-rc1 to its GitHub releases page. The single changelog entry in this release updates the Gemma4 renderer, touching PR #15886. The release was pushed on 30 April 2026.\n\nGemma4 is Google's family of open-weight transformer models, and the renderer referenced here is the component within Ollama responsible for token stream handling and output formatting when running Gemma4-based prompts. The change signals continued compatibility work between Ollama's inference layer and Google's latest model weights.\n\nFor developers running Ollama as a local model server, the release candidate offers an early path to test the Gemma4 renderer update before it lands in a stable tag. Teams using Ollama in AI prototyping or edge deployment pipelines should watch for the stable v0.22.1 release to confirm the update is backward-compatible with their current model pulls."
+      ],
+      "article_why_matters": [
+        "Ollama is a widely-used local inference runtime for developers and teams that need to run open-weight LLMs without cloud dependency.",
+        "The Gemma4 renderer update suggests improved token handling or output quality for Gemma4 models running under Ollama, a popular combination for local AI stacks.",
+        "Release candidates let builders test early; stable release arrival will signal a green light for production pipeline updates."
+      ],
+      "article_source_note": [
+        "The source is the GitHub Atom release feed and release page for the Ollama repository, updated 30 April 2026. The changelog contains a single line item (\"renderers: update gemma4 renderer ( #15886 )\"); the full release notes or changelog body were not available in the captured source, and no additional release description was rendered. Confidence is weak given the thin evidence — the release exists and the renderer update is confirmed, but the scope and severity of the change are not explained by the source."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-04-30T01:06:46+00:00"
+  "generated_at": "2026-04-30T01:49:51+00:00"
 }

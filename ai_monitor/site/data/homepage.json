@@ -1,7 +1,66 @@
 {
-  "generated_at": "2026-04-30T01:38:46+00:00",
+  "generated_at": "2026-04-30T01:49:52+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-04-30T01:48:54+00:00",
+      "source_name": "GitHub Ollama Releases",
+      "source_url": "https://github.com/ollama/ollama/releases.atom",
+      "effective_url": "https://github.com/ollama/ollama/releases.atom",
+      "target_url": "https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1",
+      "category": "release",
+      "headline_en": "Ollama release feed now shows v0.22.1-rc1",
+      "summary_en": "The monitored release feed for Ollama changed and the newest visible tag is v0.22.1-rc1. The feed timestamp is 2026-04-30T01:40:23Z. This looks like a release-level update rather than a cosmetic page edit.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=v0.22.1-rc1 updated=2026-04-30T01:40:23Z link=https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1 summary= content=renderers: update gemma4 renderer ( #15886 )",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=v0.22.1-rc1",
+        "+updated=2026-04-30T01:40:23Z",
+        "+link=https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1",
+        "+summary=",
+        "+content=renderers: update gemma4 renderer ( #15886 )",
+        "+",
+        " title=v0.22.1",
+        " updated=2026-04-28T20:30:57Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=launch: replace kimi-k2.5 with k2.6 as top recommended model ( #15737 )",
+        "-",
+        "-title=v0.21.1-rc0",
+        "-updated=2026-04-21T00:42:29Z",
+        "-link=https://github.com/ollama/ollama/releases/tag/v0.21.1-rc0",
+        "-summary=",
+        "-content=server: apply format when think=false for gemma4 ( #15678 )"
+      ],
+      "article_identity": "v0.22.1-rc1",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github ollama releases||github::ollama/ollama",
+      "id": "evt-6a2f71e5d0acc2437411",
+      "content_fingerprint": "ollama release feed now shows v0 22 1 rc1 the monitored release feed for ollama changed and the newest visible tag is v0 22 1 rc1 the feed timestamp is 2026 04 30t01 40 23z this looks like a release level update rather than a cosmetic page edit title v0 22 1 rc1 updated 2026 04 30t01 40 23z link https github com ollama ollama releases tag v0 22 1 rc1 summary content renderers update gemma4 renderer 15886",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "ollama release feed now shows v0 22 1 rc1 the monitored release feed for ollama changed and the newest visible tag is v0 22 1 rc1 the feed timestamp is 2026 04 30t01 40 23z this looks like a release level update rather than a cosmetic page edit title v0 22 1 rc1 updated 2026 04 30t01 40 23z link https github com ollama ollama releases tag v0 22 1 rc1 summary content renderers update gemma4 renderer 15886",
+      "github_release_signal_fingerprint": "ollama release feed now shows version the monitored release feed for ollama changed and the newest visible tag is version the feed timestamp is 2026 04 30t01 40 23z this looks like a release level update rather than a cosmetic page edit title version updated 2026 04 30t01 40 23z link https github com ollama ollama releases tag version summary content renderers update gemma4 renderer 15886",
+      "article_h1": "Ollama Issues Release Candidate v0.22.1 with Gemma4 Renderer Update",
+      "article_standfirst": "Ollama has tagged v0.22.1-rc1, a release candidate that updates the project's Gemma4 model renderer, marking the first release-level bump since the prior stable release.",
+      "article_body": [
+        "Ollama, the open-source runtime for running large language models locally, has published a release candidate tagged v0.22.1-rc1 to its GitHub releases page. The single changelog entry in this release updates the Gemma4 renderer, touching PR #15886. The release was pushed on 30 April 2026.\n\nGemma4 is Google's family of open-weight transformer models, and the renderer referenced here is the component within Ollama responsible for token stream handling and output formatting when running Gemma4-based prompts. The change signals continued compatibility work between Ollama's inference layer and Google's latest model weights.\n\nFor developers running Ollama as a local model server, the release candidate offers an early path to test the Gemma4 renderer update before it lands in a stable tag. Teams using Ollama in AI prototyping or edge deployment pipelines should watch for the stable v0.22.1 release to confirm the update is backward-compatible with their current model pulls."
+      ],
+      "article_why_matters": [
+        "Ollama is a widely-used local inference runtime for developers and teams that need to run open-weight LLMs without cloud dependency.",
+        "The Gemma4 renderer update suggests improved token handling or output quality for Gemma4 models running under Ollama, a popular combination for local AI stacks.",
+        "Release candidates let builders test early; stable release arrival will signal a green light for production pipeline updates."
+      ],
+      "article_source_note": [
+        "The source is the GitHub Atom release feed and release page for the Ollama repository, updated 30 April 2026. The changelog contains a single line item (\"renderers: update gemma4 renderer ( #15886 )\"); the full release notes or changelog body were not available in the captured source, and no additional release description was rendered. Confidence is weak given the thin evidence — the release exists and the renderer update is confirmed, but the scope and severity of the change are not explained by the source."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-30T01:05:51+00:00",
       "source_name": "OpenAI Newsroom",
@@ -204,67 +263,6 @@
       ],
       "article_source_note": [
         "The source is the live Hugging Face blog page for the article, published April 29, 2026 by author Aritra Roy Gosthipaty. The page HTML contains the title, author, publication date, and structural metadata, but the full article body and code examples were not present in the scraped content — likely due to client-side rendering. Assessment of the tutorial's technical depth and accuracy is therefore limited to its title and positioning within the HF community blog context."
-      ],
-      "article_confidence": "moderate",
-      "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-29T16:05:24+00:00",
-      "source_name": "GitHub CrewAI Releases",
-      "source_url": "https://github.com/crewAIInc/crewAI/releases.atom",
-      "effective_url": "https://github.com/crewAIInc/crewAI/releases.atom",
-      "target_url": "https://github.com/crewAIInc/crewAI/releases/tag/1.14.4a1",
-      "category": "release",
-      "headline_en": "CrewAI release feed now shows 1.14.4a1",
-      "summary_en": "The monitored release feed for CrewAI changed and the newest visible tag is 1.14.4a1. The feed timestamp is 2026-04-29T15:57:22Z. This looks like a release-level update rather than a cosmetic page edit.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=1.14.4a1 updated=2026-04-29T15:57:22Z link=https://github.com/crewAIInc/crewAI/releases/tag/1.14.4a1 summary= content=What's Changed Bug Fixes Fix crew chat description helpers against LLM failures. Reset messages and iterations between invocations in executor. Forward trained-agents file through replay and test in CLI. Honor custom trained-agents file at inference in agent. Bind task-only agents to crew to ensure multimodal input_files reach the LLM. Serialize guardrail callables as null for JSON checkpointing. Rename force_final_answer in agent_executor to avoid self-referential router. Bump litellm for SSTI fix and ignore unfixable pip CVE. Documentation Add E2B Sandbox Tools page. Add Daytona sandbox tools documentation. Add Vertex AI workload identity setup guide. Add You.com...",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,8 @@",
-        "+title=1.14.4a1",
-        "+updated=2026-04-29T15:57:22Z",
-        "+link=https://github.com/crewAIInc/crewAI/releases/tag/1.14.4a1",
-        "+summary=",
-        "+content=What's Changed Bug Fixes Fix crew chat description helpers against LLM failures. Reset messages and iterations between invocations in executor. Forward trained-agents file through replay and test in CLI. Honor custom trained-agents file at inference in agent. Bind task-only agents to crew to ensure multimodal input_files reach the LLM. Serialize guardrail callables as null for JSON checkpointing. Rename force_final_answer in agent_executor to avoid self-referential router. Bump litellm for SSTI fix and ignore unfixable pip CVE. Documentation Add E2B Sandbox Tools page. Add Daytona sandbox tools documentation. Add Vertex AI workload identity setup guide. Add You.com MCP tools for search, research, and content extraction. Update changelog and version for v1.14.3. Contributors @EdwardIrby , @dependabot [bot], @factory-droid-oss, @factory-droid [bot], @greysonlalonde , @lorenzejay , @manisrinivasan2k1 , @mattatcha",
-        "+",
-        " title=1.14.3",
-        " updated=2026-04-24T16:13:51Z",
-        "@@ -52,8 +58,2 @@",
-        " summary=",
-        " content=What's Changed Features Add deploy validation CLI Improve LLM initialization ergonomics Bug Fixes Override pypdf and uv to patched versions for CVE-2026-40260 and GHSA-pjjw-68hj-v9mw Upgrade requests to &gt;=2.33.0 for CVE temp file vulnerability Preserve Bedrock tool call arguments by removing truthy default Sanitize tool schemas for strict mode Deflake MemoryRecord embedding serialization test Documentation Clean up enterprise A2A language Add enterprise A2A feature documentation Update OSS A2A documentation Update changelog and version for v1.14.2a2 Contributors @Yanhu007 , @greysonlalonde",
-        "-",
-        "-title=1.14.2a2",
-        "-updated=2026-04-10T13:59:04Z",
-        "-link=https://github.com/crewAIInc/crewAI/releases/tag/1.14.2a2",
-        "-summary=",
-        "-content=What's Changed Features Add checkpoint TUI with tree view, fork support, and editable inputs/outputs Enrich LLM token tracking with reasoning tokens and cache creation tokens Add from_checkpoint parameter to kickoff methods Embed crewai_version in checkpoints with migration framework Add checkpoint forking with lineage tracking Bug Fixes Fix strict mode forwarding to Anthropic and Bedrock providers Harden NL2SQLTool with read-only default, query validation, and parameterized queries Documentation Update changelog and version for v1.14.2a1 Contributors @alex-clawd , @github-actions[bot], @greysonlalonde , @lucasgomide"
-      ],
-      "article_identity": "1.14.4a1",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "release||github crewai releases||github::crewaiinc/crewai",
-      "id": "evt-d9a98343770f7938ce5b",
-      "content_fingerprint": "crewai release feed now shows 1 14 4a1 the monitored release feed for crewai changed and the newest visible tag is 1 14 4a1 the feed timestamp is 2026 04 29t15 57 22z this looks like a release level update rather than a cosmetic page edit title 1 14 4a1 updated 2026 04 29t15 57 22z link https github com crewaiinc crewai releases tag 1 14 4a1 summary content what s changed bug fixes fix crew chat description helpers against llm failures reset messages and iterations between invocations in executor forward trained agents file through replay and test in cli honor custom trained agents file at inference in agent bind task only agents to crew to ensure multimodal input files reach the llm serialize guardrail callables as null for json checkpointing rename force final answer in agent executor to avoid self referential router bump litellm for ssti fix and ignore unfixable pip cve documentation add e2b sandbox tools page add daytona sandbox tools documentation add vertex ai workload identity setup guide add you com",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "crewai release feed now shows 1 14 4a1 the monitored release feed for crewai changed and the newest visible tag is 1 14 4a1 the feed timestamp is 2026 04 29t15 57 22z this looks like a release level update rather than a cosmetic page edit title 1 14 4a1 updated 2026 04 29t15 57 22z link https github com crewaiinc crewai releases tag 1 14 4a1 summary content what s changed bug fixes fix crew chat description helpers against llm failures reset messages and iterations between invocations in executor forward trained agents file through replay and test in cli honor custom trained agents file at inference in agent bind task only agents to crew to ensure multimodal input files reach the llm serialize guardrail callables as null for json checkpointing rename force final answer in agent executor to avoid self referential router bump litellm for ssti fix and ignore unfixable pip cve documentation add e2b sandbox tools page add daytona sandbox tools documentation add vertex ai workload identity setup guide add you com",
-      "github_release_signal_fingerprint": "crewai release feed now shows version 4a1 the monitored release feed for crewai changed and the newest visible tag is version 4a1 the feed timestamp is 2026 04 29t15 57 22z this looks like a release level update rather than a cosmetic page edit title version 4a1 updated 2026 04 29t15 57 22z link https github com crewaiinc crewai releases tag version 4a1 summary content what s changed bug fixes fix crew chat description helpers against llm failures reset messages and iterations between invocations in executor forward trained agents file through replay and test in cli honor custom trained agents file at inference in agent bind task only agents to crew to ensure multimodal input files reach the llm serialize guardrail callables as null for json checkpointing rename force final answer in agent executor to avoid self referential router bump litellm for ssti fix and ignore unfixable pip cve documentation add e2b sandbox tools page add daytona sandbox tools documentation add vertex ai workload identity setup guide add you com",
-      "article_h1": "CrewAI 1.14.4a1 Lands Chat Resilience Fixes, Better Multimodal File Handling, and Security Patch",
-      "article_standfirst": "The CrewAI open-source multi-agent framework patched a failure mode in crew chat description helpers, improved how task-only agents handle multimodal file inputs, and upgraded its litellm dependency to close a server-side template injection vulnerability.",
-      "article_body": [
-        "CrewAI released version 1.14.4a1 on 29 April 2026, a point release focused on bug fixes and documentation. The most notable change addresses a failure in crew chat description helpers triggered by certain LLM responses, a condition that could interrupt execution in multi-agent workflows relying on that hook. The release also resets messages and iteration counters between invocations in the executor, preventing carryover state that caused unpredictable behavior in long-running replays and tests.",
-        "The update also fixes how task-only agents bind to crews during execution, ensuring that multimodal input files reach the underlying LLM rather than being dropped silently. Custom trained-agents files are now correctly forwarded through both the replay and test commands in the CLI and honored at inference time in agents. Guardrail callable serialization was patched so that it serializes as null during JSON checkpointing, avoiding a class-inheritance error in that code path. On the security side, the litellm dependency was bumped to patch a server-side template injection (SSTI) vulnerability, while an unfixable pip CVE is now explicitly ignored. The agent_executor flag force_final_answer was renamed to avoid a self-referential router conflict.",
-        "Documentation additions cover three new integration guides: E2B Sandbox Tools, Daytona sandbox tools, and Vertex AI workload identity setup. A You.com integration page was also added. These additions signal that the CrewAI team is investing in concrete deployment pathways for agents built on its framework, particularly around sandboxed execution and cloud credential management."
-      ],
-      "article_why_matters": [
-        "Agent developers relying on crew chat description helpers can no longer assume stable behavior; the fix resolves a failure mode that could silently break multi-step workflows.",
-        "Multimodal file handling for task-only agents was a known gap; the fix ensures files reach the LLM as intended, removing a source of silent data loss.",
-        "The SSTI patch in litellm closes a code-injection vector that could affect any CrewAI deployment making LLM calls through that library, making the upgrade relevant even for teams not using the specific chat helper."
-      ],
-      "article_source_note": [
-        "This brief is based on the official CrewAI GitHub releases page for tag 1.14.4a1, published 29 April 2026. The release note provides a structured changelog but no discussion of severity, affected configurations, or upgrade guidance. The alpha tag ('a1') signals this is a pre-release build; teams should check the CrewAI repository before upgrading production environments."
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"

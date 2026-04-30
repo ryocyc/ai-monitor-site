@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-30T01:38:47+00:00">Last built: <span data-utc="2026-04-30T01:38:47+00:00">2026-04-30 01:38 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-30T01:49:52+00:00">Last built: <span data-utc="2026-04-30T01:49:52+00:00">2026-04-30 01:49 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-04-30T01:48:54+00:00" data-utc="2026-04-30T01:48:54+00:00">2026-04-30 01:48 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-6a2f71e5d0acc2437411.html">Ollama Issues Release Candidate v0.22.1 with Gemma4 Renderer Update</a></h2>
+              <p class="summary">Ollama has tagged v0.22.1-rc1, a release candidate that updates the project&#x27;s Gemma4 model renderer, marking the first release-level bump since the prior stable release.</p>
+              <div class="card-bottom">
+                <span>GitHub Ollama Releases</span>
+                <a href="https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Blog</span>
                 <a href="https://huggingface.co/blog/ariG23498/pallas-for-beginners">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-29T16:05:24+00:00" data-utc="2026-04-29T16:05:24+00:00">2026-04-29 16:05 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-d9a98343770f7938ce5b.html">CrewAI 1.14.4a1 Lands Chat Resilience Fixes, Better Multimodal File Handling, and Security Patch</a></h2>
-              <p class="summary">The CrewAI open-source multi-agent framework patched a failure mode in crew chat description helpers, improved how task-only agents handle multimodal file inputs, and upgraded its litellm dependency to close a server-side template injection vulnerability.</p>
-              <div class="card-bottom">
-                <span>GitHub CrewAI Releases</span>
-                <a href="https://github.com/crewAIInc/crewAI/releases/tag/1.14.4a1">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-30T01:38:47+00:00";
+    const currentGeneratedAt = "2026-04-30T01:49:52+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
