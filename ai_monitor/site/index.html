@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-30T03:15:23+00:00">Last built: <span data-utc="2026-04-30T03:15:23+00:00">2026-04-30 03:15 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-30T03:26:26+00:00">Last built: <span data-utc="2026-04-30T03:26:26+00:00">2026-04-30 03:26 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-04-30T03:25:28+00:00" data-utc="2026-04-30T03:25:28+00:00">2026-04-30 03:25 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-e8b0310d26422c8708a0.html">OpenAI Publishes Root-Cause Analysis of GPT-5 &#x27;Goblin&#x27; Personality Behavior</a></h2>
+              <p class="summary">OpenAI has released a detailed account of how personality-driven quirks—colloquially called &#x27;goblin&#x27; outputs—emerged in GPT-5, tracing the timeline, identifying the technical root cause, and documenting the fixes deployed to suppress them.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/where-the-goblins-came-from">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="update">
               <div class="card-top">
                 <span class="pill">update</span>
@@ -107,19 +120,6 @@
               <div class="card-bottom">
                 <span>GitHub Ollama Releases</span>
                 <a href="https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-04-30T01:05:51+00:00" data-utc="2026-04-30T01:05:51+00:00">2026-04-30 01:05 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-e73fd273c9ffa15d7e51.html">OpenAI Details Safety Architecture Behind ChatGPT in Updated Policy Page</a></h2>
-              <p class="summary">OpenAI has published a new community safety explainer outlining the safeguards, misuse detection systems, and expert-review processes that govern behavior inside ChatGPT.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/index/our-commitment-to-community-safety">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-30T03:15:23+00:00";
+    const currentGeneratedAt = "2026-04-30T03:26:26+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
