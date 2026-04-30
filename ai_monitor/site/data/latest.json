@@ -1,54 +1,5 @@
 {
-  "generated_at": "2026-04-30T06:16:43+00:00",
-  "item_count": 1,
-  "items": [
-    {
-      "timestamp": "2026-04-30T06:15:46+00:00",
-      "source_name": "OpenAI Newsroom",
-      "source_url": "https://openai.com/news/rss.xml",
-      "effective_url": "https://openai.com/news/rss.xml",
-      "target_url": "https://openai.com/academy/what-is-codex",
-      "category": "news",
-      "headline_en": "What Is Codex",
-      "summary_en": "OpenAI newsroom changed. Most visible article: \"What Is Codex\".",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=What is Codex? link=https://openai.com/academy/what-is-codex description=Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards. title=How to get started with Codex link=https://openai.com/academy/codex-how-to-start description=Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance.",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -64,8 +64,8 @@",
-        " description=Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort.",
-        " ",
-        "-title=How to get started with Codex",
-        "+title=What is Codex?",
-        " published=Thu, 23 Apr 2026 10:00:00 GMT",
-        "-link=https://openai.com/academy/codex-how-to-start",
-        "-description=Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance.",
-        "+link=https://openai.com/academy/what-is-codex",
-        "+description=Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards.",
-        " ",
-        " title=Codex settings",
-        "@@ -89,8 +89,8 @@",
-        " description=Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows.",
-        " ",
-        "-title=What is Codex?",
-        "+title=How to get started with Codex",
-        " published=Thu, 23 Apr 2026 10:00:00 GMT",
-        "-link=https://openai.com/academy/what-is-codex",
-        "-description=Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards.",
-        "+link=https://openai.com/academy/codex-how-to-start",
-        "+description=Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance.",
-        " ",
-        " title=GPT-5.5 Bio Bug Bounty"
-      ],
-      "article_identity": "what-is-codex",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "news||openai newsroom||https://openai.com/academy/what-is-codex",
-      "id": "evt-1f61ab19e9220fc23415",
-      "content_fingerprint": "what is codex openai newsroom changed most visible article what is codex title what is codex link https openai com academy what is codex description learn how codex helps you go beyond chat by automating tasks connecting tools and producing real outputs like docs and dashboards title how to get started with codex link https openai com academy codex how to start description learn how to get started with codex by setting up projects creating threads and completing your first tasks with step by step guidance",
-      "needs_cc_refresh": true
-    }
-  ]
+  "generated_at": "2026-04-30T06:38:16+00:00",
+  "item_count": 0,
+  "items": []
 }
