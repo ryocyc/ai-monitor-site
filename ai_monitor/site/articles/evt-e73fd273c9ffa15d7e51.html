@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenAI Details Safety Architecture Behind ChatGPT in Updated Policy Page | AI Signal Articles</title>
+  <meta name="description" content="OpenAI has published a new community safety explainer outlining the safeguards, misuse detection systems, and expert-review processes that govern behavi...">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
+       crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .top-ad {
+      margin-bottom: 18px;
+      padding: 12px 14px;
+      border: 1px dashed rgba(15,118,110,0.28);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.68);
+    }
+    .ad-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .ad-slot {
+      min-height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15,118,110,0.08);
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .hero-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .share-button {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+    .share-button:hover {
+      transform: translateY(-1px);
+      background: rgba(15,118,110,0.18);
+    }
+    .share-status {
+      color: var(--muted);
+      font-size: 0.88rem;
+      min-height: 1.2em;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="top-ad" aria-label="Advertisement">
+      <div class="ad-label">Advertisement</div>
+      <div class="ad-slot">Top banner ad slot</div>
+    </section>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated <span data-utc="2026-04-30T01:06:46+00:00">2026-04-30 01:06 UTC</span></div>
+    </div>
+    <article class="hero">
+      <span class="chip">news</span>
+      <h1>OpenAI Details Safety Architecture Behind ChatGPT in Updated Policy Page</h1>
+      <p class="standfirst">OpenAI has published a new community safety explainer outlining the safeguards, misuse detection systems, and expert-review processes that govern behavior inside ChatGPT.</p>
+      <div class="meta">
+        <span>OpenAI Newsroom</span>
+        <span>&lt;span data-utc=&quot;2026-04-30T01:05:51+00:00&quot;&gt;2026-04-30 01:05 UTC&lt;/span&gt;</span>
+        <span>Key: evt-e73fd273c9ffa15d7e51</span>
+        <span>Confidence: moderate</span>
+        <span>Mode: claude</span>
+      </div>
+      <div class="hero-actions">
+        <button class="share-button" type="button" id="share-button">Share</button>
+        <span class="share-status" id="share-status" aria-live="polite"></span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>OpenAI published a page titled &#x27;Our Commitment to Community Safety&#x27; on April 28, 2026, laying out how the company approaches model safeguards, misuse detection, policy enforcement, and collaboration with external safety experts within ChatGPT.</p>
+<p>The explainer covers configuration options for Codex — OpenAI&#x27;s coding-specific product — including personalization settings, detail level controls, and permission management. The page also links to a companion guide on the top 10 use cases for Codex in workplace workflows, covering task automation across tools, files, and multi-step processes.</p>
+<p>For developers and teams integrating OpenAI&#x27;s models or relying on Codex for production coding tasks, the page signals which safety levers are tunable and which are fixed. It also clarifies how OpenAI&#x27;s internal policy enforcement interacts with enterprise and individual users at the settings level.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>Safety and policy configuration are increasingly critical as AI systems move into enterprise and regulated workflows — teams need to know what they can control and what OpenAI manages centrally.</li><li>The Codex-specific settings guidance directly addresses a gap that coder users and platform integrators have flagged: understanding which behaviors are configurable versus which are enforced by default.</li><li>Transparency about misuse detection and policy enforcement builds trust with both API consumers and ChatGPT end users who want to understand the boundaries of model behavior.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>The brief draws on OpenAI&#x27;s own newsroom listing and the public index page for the article, including the title, publication date (April 28, 2026), and summary description. The full article body was not present in the source text captured, so this brief is based on the metadata and surrounding context on the page rather than the full copy. Confidence is moderate given the structural richness of the page layout but the absence of the full article text.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://openai.com/index/our-commitment-to-community-safety" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+  <script>
+    (() => {
+      const button = document.getElementById("share-button");
+      const status = document.getElementById("share-status");
+      if (!button || !status) return;
+      const shareData = {
+        title: document.title,
+        text: "OpenAI has published a new community safety explainer outlining the safeguards, misuse detection systems, and expert-review processes tha...",
+        url: window.location.href
+      };
+      const setStatus = (message) => {
+        status.textContent = message;
+        if (message) {
+          window.clearTimeout(setStatus._timer);
+          setStatus._timer = window.setTimeout(() => {
+            status.textContent = "";
+          }, 2400);
+        }
+      };
+      button.addEventListener("click", async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+            setStatus("Shared.");
+            return;
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(window.location.href);
+            setStatus("Link copied.");
+            return;
+          }
+        } catch (error) {
+          setStatus("Share cancelled.");
+          return;
+        }
+        const helper = document.createElement("input");
+        helper.value = window.location.href;
+        document.body.appendChild(helper);
+        helper.select();
+        document.execCommand("copy");
+        helper.remove();
+        setStatus("Link copied.");
+      });
+
+      document.querySelectorAll('[data-utc]').forEach((node) => {
+        const value = node.dataset.utc;
+        if (!value) return;
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return;
+        node.textContent = new Intl.DateTimeFormat(undefined, {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false,
+          timeZoneName: 'short'
+        }).format(date);
+      });
+    })();
+  </script>
+</body>
+</html>
