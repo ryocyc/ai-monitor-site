@@ -1,4 +1,7 @@
 {
+  "evt-6a2f71e5d0acc2437411": "evt-6a2f71e5d0acc2437411",
+  "release||github ollama releases||github::ollama/ollama": "evt-6a2f71e5d0acc2437411",
+  "v0.22.1-rc1": "evt-6a2f71e5d0acc2437411",
   "evt-e73fd273c9ffa15d7e51": "evt-e73fd273c9ffa15d7e51",
   "news||openai newsroom||https://openai.com/index/our-commitment-to-community-safety": "evt-e73fd273c9ffa15d7e51",
   "our-commitment-to-community-safety": "evt-e73fd273c9ffa15d7e51",
@@ -429,7 +432,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-6a2f71e5d0acc2437411": "evt-6a2f71e5d0acc2437411",
-  "release||github ollama releases||github::ollama/ollama": "evt-6a2f71e5d0acc2437411",
-  "v0.22.1-rc1": "evt-6a2f71e5d0acc2437411"
+  "evt-65bb88ccfb2ff699d9bd": "evt-65bb88ccfb2ff699d9bd",
+  "update||z.ai research||https://www.zhipuai.cn/en/research": "evt-65bb88ccfb2ff699d9bd",
+  "en/research": "evt-65bb88ccfb2ff699d9bd"
 }
