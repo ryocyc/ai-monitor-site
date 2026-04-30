@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-04-30T20:27:48+00:00">Last built: <span data-utc="2026-04-30T20:27:48+00:00">2026-04-30 20:27 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-04-30T20:38:35+00:00">Last built: <span data-utc="2026-04-30T20:38:35+00:00">2026-04-30 20:38 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-04-30T20:37:52+00:00" data-utc="2026-04-30T20:37:52+00:00">2026-04-30 20:37 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-d9d55998a0893f6389ca.html">SenseNova Details End-to-End Approach to Building Native Multimodal Unified Models</a></h2>
+              <p class="summary">SenseNova researchers have published a technical walkthrough of NEO-unify, a framework for training multimodal models natively from the ground up rather than bolting perception modules onto a pre-trained language backbone.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/sensenova/neo-unify">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -133,19 +146,6 @@
               <div class="card-bottom">
                 <span>GitHub LangGraph Releases</span>
                 <a href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a1">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-04-29T22:27:13+00:00" data-utc="2026-04-29T22:27:13+00:00">2026-04-29 22:27 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-a17d21d90c30ab5c4214.html">A New Community Guide Walks JAX Users Through Writing Custom GPU Kernels With Pallas</a></h2>
-              <p class="summary">A hands-on tutorial published on the Hugging Face blog teaches Python developers who already know JAX how to write custom GPU and TPU kernels using Google&#x27;s Pallas framework, aiming to close a practical learning gap in the JAX ecosystem.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/ariG23498/pallas-for-beginners">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-04-30T20:27:48+00:00";
+    const currentGeneratedAt = "2026-04-30T20:38:35+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
