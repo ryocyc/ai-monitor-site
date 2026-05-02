@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-01T10:01:33+00:00">Last built: <span data-utc="2026-05-01T10:01:33+00:00">2026-05-01 10:01 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-02T14:31:16+00:00">Last built: <span data-utc="2026-05-02T14:31:16+00:00">2026-05-02 14:31 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,32 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="update">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time datetime="2026-05-02T14:30:05+00:00" data-utc="2026-05-02T14:30:05+00:00">2026-05-02 14:30 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-6caf48f95cf24caaf126.html">n8n Brings AI Agents Into Microsoft 365 Apps via Agent 365 GA Integration</a></h2>
+              <p class="summary">With Microsoft Agent 365 now generally available, n8n users can deploy workflow-powered AI agents as team members inside Outlook, Teams, and other Microsoft 365 surfaces, letting colleagues @mention them just like human collaborators.</p>
+              <div class="card-bottom">
+                <span>n8n Blog</span>
+                <a href="https://blog.n8n.io/">Source</a>
+              </div>
+            </article>
+            
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-05-02T14:30:02+00:00" data-utc="2026-05-02T14:30:02+00:00">2026-05-02 14:30 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-6acab4b7a5e4fbb4d220.html">vLLM v0.20.1 Re-Enables Persistent Top-K Optimization After Brief Disable</a></h2>
+              <p class="summary">The vLLM inference engine has issued a patch release restoring a KV-cache optimization previously temporarily disabled, signaling that the underlying issue has been resolved.</p>
+              <div class="card-bottom">
+                <span>GitHub vLLM Releases</span>
+                <a href="https://github.com/vllm-project/vllm/releases/tag/v0.20.1">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -133,19 +159,6 @@
               <div class="card-bottom">
                 <span>GitHub Ollama Releases</span>
                 <a href="https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-29T22:38:13+00:00" data-utc="2026-04-29T22:38:13+00:00">2026-04-29 22:38 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-95b588975219233bff1c.html">LangGraph Ships Alpha 1.2.0 With Graceful Shutdown, Timer Primitives, and v2 Projections</a></h2>
-              <p class="summary">The LangChain-ai orchestration library tagged its first alpha for the 1.2 release cycle, bringing long-requested improvements to state management, checkpointing, and task lifecycle control for production agent developers.</p>
-              <div class="card-bottom">
-                <span>GitHub LangGraph Releases</span>
-                <a href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a1">Source</a>
               </div>
             </article>
             
@@ -200,19 +213,6 @@
                 <a href="https://docs.siliconflow.cn/llms.txt">Source</a>
               </div>
             </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time datetime="2026-04-29T12:04:33+00:00" data-utc="2026-04-29T12:04:33+00:00">2026-04-29 12:04 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-a8c5c418516867b4d891.html">Zhipu AI Expands BigModel Developer Platform With Coding Agent Tools and Realtime Multimodal APIs</a></h2>
-              <p class="summary">Zhipu AI&#x27;s bigmodel.cn platform has updated its developer documentation to reflect a broader set of AI application primitives, including new MCP server integrations, a coding agent workflow, and GLM-Realtime capabilities for live audio-video interaction.</p>
-              <div class="card-bottom">
-                <span>Zhipu AI Docs</span>
-                <a href="https://docs.bigmodel.cn/llms.txt">Source</a>
-              </div>
-            </article>
             </section>
     <p class="sub" style="margin-top:22px;"><a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a> | <a href="./contact.html">Contact / Corrections</a></p>
   </main>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-01T10:01:33+00:00";
+    const currentGeneratedAt = "2026-05-02T14:31:16+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;

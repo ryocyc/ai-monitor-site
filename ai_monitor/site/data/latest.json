@@ -1,5 +1,75 @@
 {
-  "generated_at": "2026-05-01T10:01:32+00:00",
-  "item_count": 0,
-  "items": []
+  "generated_at": "2026-05-02T14:30:19+00:00",
+  "item_count": 2,
+  "items": [
+    {
+      "timestamp": "2026-05-02T14:30:05+00:00",
+      "source_name": "n8n Blog",
+      "source_url": "https://blog.n8n.io/",
+      "effective_url": "https://blog.n8n.io/",
+      "target_url": "https://blog.n8n.io/",
+      "category": "update",
+      "headline_en": "News Deploy n8n agents that show up as members of the team inside Microsoft apps With the ge",
+      "summary_en": "n8n Blog changed. The visible update appears to be \"News Deploy n8n agents that show up as members of the team inside Microsoft a...\". Open the target URL to see details.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "News Deploy n8n agents that show up as members of the team inside Microsoft apps With the general availability of Microsoft Agent 365, n8n users can now build AI agents that show up inside the Microsoft 365 applications where people get work done. Now you can @mention Desiree Lockwood, n8n May 1, 2026 ∙ 5 minutes read Explore by use case Guide LLM Tool Calling: How It Works and How To Implement It n8n team , Yulia Dmitrievna Guide ReAct Agent: Architecture, Implementation, and Tradeoffs n8n team , Yulia Dmitrievna Build and Update Workflows with n8n's MCP Server Ophir Prusak Guide Human-in-the-Loop vs. Human-on-the-Loop: When To Use Each System n8n team , Yulia Dmitrievna AI How to evaluate the performance of AI agents? Yulia Dmitrievna Guide Workflow Automation vs. Orchestration: Archi...",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1 +1 @@",
+        "-Guide LLM Tool Calling: How It Works and How To Implement It Learn how LLM tool calling turns conversational AI into actionable agents. Discover execution steps and production reliability to create efficient systems. n8n team , Yulia Dmitrievna April 30, 2026 ∙ 10 minutes read Explore by use case Guide ReAct Agent: Architecture, Implementation, and Tradeoffs n8n team , Yulia Dmitrievna Build and Update Workflows with n8n&#x27;s MCP Server Ophir Prusak Guide Human-in-the-Loop vs. Human-on-the-Loop: When To Use Each System n8n team , Yulia Dmitrievna AI How to evaluate the performance of AI agents? Yulia Dmitrievna Guide Workflow Automation vs. Orchestration: Architectural Differences That Matter at Scale n8n team , Yulia Dmitrievna ITOps Orchestration vs. Choreography: Which One to Choose – or Use Both? n8n team , Yulia Dmitrievna We need re-learn what AI agent development tools are in 2026 Andrew Green AI RAG System Architecture: Components, How To Implement, Challenges, and Best Practices n8n team , Yulia Dmitrievna Load more n8n home Tutorials Guides Tips By partners News Interviews Github ★ 162k Sign in Get Started n8n home Tutorials Guides Tips By partners News Interviews Sign in Get Started Guide LLM Tool Calling: How It Works and How To Implement It Learn how LLM tool calling turns conversational AI into actionable agents. Discover execution steps and production reliability to create efficient systems. n8n team , Yulia Dmitrievna April 30, 2026 ∙ 10 minutes read Explore by use case Guide ReAct Agent: Architecture, Implementation, and Tradeoffs n8n team , Yulia Dmitrievna Build and Update Workflows with n8n&#x27;s MCP Server Ophir Prusak Guide Human-in-the-Loop vs. Human-on-the-Loop: When To Use Each System n8n team , Yulia Dmitrievna AI How to evaluate the performance of AI agents? Yulia Dmitrievna Guide Workflow Automation vs. Orchestration: Architectural Differences That Matter at Scale n8n team , Yulia Dmitrievna ITOps Orchestration vs. Choreography: Which One to Choose – or Use Both? n8n team , Yulia Dmitrievna We need re-learn what AI agent development tools are in 2026 Andrew Green AI RAG System Architecture: Components, How To Implement, Challenges, and Best Practices n8n team , Yulia Dmitrievna Load more Popular integrations Google Sheets Telegram MySQL Slack Discord Postgres Notion Gmail Airtable Google Drive Show more integrations > Trending combinations HubSpot and Salesforce Twilio and WhatsApp GitHub and Jira Asana and Slack Asana and Salesforce Jira and Slack Jira and Salesforce GitHub and Slack HubSpot and QuickBooks HubSpot and Slack Show more integrations > Top integration categories Development Communication Langchain AI Data & Storage Marketing Productivity Sales Utility Miscellaneous Explore more categories Trending templates Creating an API endpoint AI agent chat Scrape and summarize webpages with AI Very quick quickstart Pulling data from services that n8n doesn’t have a pre-built integration for Joining different datasets Back Up Your n8n Workflows To Github AI agent that can scrape webpages OpenAI GPT-3: Company Enrichment from website content Telegram AI Chatbot Explore 800+ workflow templates > Top guides Telegram bots Open-source chatbot Open-source LLM Open-source low-code platforms Zapier alternatives Make vs Zapier AI agents AI coding assistants ChatGPT Discord bot Best AI chatbot Show guides > Automate without limits Careers Contact Merch Press Security Case studies Zapier vs n8n Make vs n8n XML to JSON converter Affiliate program Become an expert Events Popular integrations Google Sheets Telegram MySQL Slack Discord PostgreSQL Show more Trending combinations Google Sheets + Slack Discord + MySQL Telegram + PostgreSQL Show more Used by technical teams Development Teams DevOps Infrastructure Show more Top integration categories Databases Communication Productivity Show more Trending templates Automated Data Sync Lead Generation Customer Support Show more Imprint | Security | Privacy | Report a vulnerability © 2026 n8n | All rights reserved. Automate without limits n8n home Features Pricing Docs Community Imprint | Security | Privacy | Report a vulnerability © 2026 n8n | All rights reserved. You’ve successfully subscribed to n8n Blog Welcome back! You’ve successfully signed in. Great! You’ve successfully signed up. Your link has expired Success! Check your email for magic link to sign-in.",
+        "+News Deploy n8n agents that show up as members of the team inside Microsoft apps With the general availability of Microsoft Agent 365, n8n users can now build AI agents that show up inside the Microsoft 365 applications where people get work done. Now you can @mention Desiree Lockwood, n8n May 1, 2026 ∙ 5 minutes read Explore by use case Guide LLM Tool Calling: How It Works and How To Implement It n8n team , Yulia Dmitrievna Guide ReAct Agent: Architecture, Implementation, and Tradeoffs n8n team , Yulia Dmitrievna Build and Update Workflows with n8n&#x27;s MCP Server Ophir Prusak Guide Human-in-the-Loop vs. Human-on-the-Loop: When To Use Each System n8n team , Yulia Dmitrievna AI How to evaluate the performance of AI agents? Yulia Dmitrievna Guide Workflow Automation vs. Orchestration: Architectural Differences That Matter at Scale n8n team , Yulia Dmitrievna ITOps Orchestration vs. Choreography: Which One to Choose – or Use Both? n8n team , Yulia Dmitrievna We need re-learn what AI agent development tools are in 2026 Andrew Green Load more n8n home Tutorials Guides Tips By partners News Interviews Github ★ 162k Sign in Get Started n8n home Tutorials Guides Tips By partners News Interviews Sign in Get Started News Deploy n8n agents that show up as members of the team inside Microsoft apps With the general availability of Microsoft Agent 365, n8n users can now build AI agents that show up inside the Microsoft 365 applications where people get work done. Now you can @mention Desiree Lockwood, n8n May 1, 2026 ∙ 5 minutes read Explore by use case Guide LLM Tool Calling: How It Works and How To Implement It n8n team , Yulia Dmitrievna Guide ReAct Agent: Architecture, Implementation, and Tradeoffs n8n team , Yulia Dmitrievna Build and Update Workflows with n8n&#x27;s MCP Server Ophir Prusak Guide Human-in-the-Loop vs. Human-on-the-Loop: When To Use Each System n8n team , Yulia Dmitrievna AI How to evaluate the performance of AI agents? Yulia Dmitrievna Guide Workflow Automation vs. Orchestration: Architectural Differences That Matter at Scale n8n team , Yulia Dmitrievna ITOps Orchestration vs. Choreography: Which One to Choose – or Use Both? n8n team , Yulia Dmitrievna We need re-learn what AI agent development tools are in 2026 Andrew Green Load more Popular integrations Google Sheets Telegram MySQL Slack Discord Postgres Notion Gmail Airtable Google Drive Show more integrations > Trending combinations HubSpot and Salesforce Twilio and WhatsApp GitHub and Jira Asana and Slack Asana and Salesforce Jira and Slack Jira and Salesforce GitHub and Slack HubSpot and QuickBooks HubSpot and Slack Show more integrations > Top integration categories Development Communication Langchain AI Data & Storage Marketing Productivity Sales Utility Miscellaneous Explore more categories Trending templates Creating an API endpoint AI agent chat Scrape and summarize webpages with AI Very quick quickstart Pulling data from services that n8n doesn’t have a pre-built integration for Joining different datasets Back Up Your n8n Workflows To Github AI agent that can scrape webpages OpenAI GPT-3: Company Enrichment from website content Telegram AI Chatbot Explore 800+ workflow templates > Top guides Telegram bots Open-source chatbot Open-source LLM Open-source low-code platforms Zapier alternatives Make vs Zapier AI agents AI coding assistants ChatGPT Discord bot Best AI chatbot Show guides > Automate without limits Careers Contact Merch Press Security Case studies Zapier vs n8n Make vs n8n XML to JSON converter Affiliate program Become an expert Events Popular integrations Google Sheets Telegram MySQL Slack Discord PostgreSQL Show more Trending combinations Google Sheets + Slack Discord + MySQL Telegram + PostgreSQL Show more Used by technical teams Development Teams DevOps Infrastructure Show more Top integration categories Databases Communication Productivity Show more Trending templates Automated Data Sync Lead Generation Customer Support Show more Imprint | Security | Privacy | Report a vulnerability © 2026 n8n | All rights reserved. Automate without limits n8n home Features Pricing Docs Community Imprint | Security | Privacy | Report a vulnerability © 2026 n8n | All rights reserved. You’ve successfully subscribed to n8n Blog Welcome back! You’ve successfully signed in. Great! You’ve successfully signed up. Your link has expired Success! Check your email for magic link to sign-in."
+      ],
+      "article_identity": "n8n-blog-news-deploy-n8n-agents-that-show-up-as-members-of-the-team-inside-microsoft-apps-with-the-ge",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "update||n8n blog||n8n-blog-news-deploy-n8n-agents-that-show-up-as-members-of-the-team-inside-microsoft-apps-with-the-ge",
+      "id": "evt-6caf48f95cf24caaf126",
+      "content_fingerprint": "news deploy n8n agents that show up as members of the team inside microsoft apps with the ge n8n blog changed the visible update appears to be news deploy n8n agents that show up as members of the team inside microsoft a open the target url to see details news deploy n8n agents that show up as members of the team inside microsoft apps with the general availability of microsoft agent 365 n8n users can now build ai agents that show up inside the microsoft 365 applications where people get work done now you can mention desiree lockwood n8n may 1 2026 5 minutes read explore by use case guide llm tool calling how it works and how to implement it n8n team yulia dmitrievna guide react agent architecture implementation and tradeoffs n8n team yulia dmitrievna build and update workflows with n8n s mcp server ophir prusak guide human in the loop vs human on the loop when to use each system n8n team yulia dmitrievna ai how to evaluate the performance of ai agents yulia dmitrievna guide workflow automation vs orchestration archi",
+      "needs_cc_refresh": true
+    },
+    {
+      "timestamp": "2026-05-02T14:30:02+00:00",
+      "source_name": "GitHub vLLM Releases",
+      "source_url": "https://github.com/vllm-project/vllm/releases.atom",
+      "effective_url": "https://github.com/vllm-project/vllm/releases.atom",
+      "target_url": "https://github.com/vllm-project/vllm/releases/tag/v0.20.1",
+      "category": "release",
+      "headline_en": "vLLM release feed now shows v0.20.1: Revert \"Temporary disable persistent topk (#41442)\"",
+      "summary_en": "The monitored release feed for vLLM changed and the newest visible tag is v0.20.1: Revert \"Temporary disable persistent topk (#41442)\". The feed timestamp is 2026-05-02T07:52:06Z. This looks like a release-level update rather than a cosmetic page...",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=v0.20.1: Revert \"Temporary disable persistent topk (#41442)\" updated=2026-05-02T07:52:06Z link=https://github.com/vllm-project/vllm/releases/tag/v0.20.1 summary= content=This reverts commit 05ebca5 .",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=v0.20.1: Revert \"Temporary disable persistent topk (#41442)\"",
+        "+updated=2026-05-02T07:52:06Z",
+        "+link=https://github.com/vllm-project/vllm/releases/tag/v0.20.1",
+        "+summary=",
+        "+content=This reverts commit 05ebca5 .",
+        "+",
+        " title=v0.20.1rc0: Add system_fingerprint field to OpenAI-compatible API responses (#40537)",
+        " updated=2026-04-27T08:17:52Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=Signed-off-by: Yifan Qiao yifanqiao@berkeley.edu Signed-off-by: Yifan Qiao yifanqiao@inferact.ai (cherry picked from commit 91e4521 )",
+        "-",
+        "-title=v0.18.2rc0",
+        "-updated=2026-03-31T15:50:41Z",
+        "-link=https://github.com/vllm-project/vllm/releases/tag/v0.18.2rc0",
+        "-summary=",
+        "-content=[Fix] handle PaddleOCR-VL image processor max_pixels across Transform…"
+      ],
+      "article_identity": "v0.20.1",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github vllm releases||github::vllm-project/vllm",
+      "id": "evt-6acab4b7a5e4fbb4d220",
+      "content_fingerprint": "vllm release feed now shows v0 20 1 revert temporary disable persistent topk 41442 the monitored release feed for vllm changed and the newest visible tag is v0 20 1 revert temporary disable persistent topk 41442 the feed timestamp is 2026 05 02t07 52 06z this looks like a release level update rather than a cosmetic page title v0 20 1 revert temporary disable persistent topk 41442 updated 2026 05 02t07 52 06z link https github com vllm project vllm releases tag v0 20 1 summary content this reverts commit 05ebca5",
+      "needs_cc_refresh": true
+    }
+  ]
 }

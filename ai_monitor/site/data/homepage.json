@@ -1,7 +1,114 @@
 {
-  "generated_at": "2026-05-01T10:01:33+00:00",
+  "generated_at": "2026-05-02T14:31:16+00:00",
   "item_count": 10,
   "items": [
+    {
+      "timestamp": "2026-05-02T14:30:05+00:00",
+      "source_name": "n8n Blog",
+      "source_url": "https://blog.n8n.io/",
+      "effective_url": "https://blog.n8n.io/",
+      "target_url": "https://blog.n8n.io/",
+      "category": "update",
+      "headline_en": "News Deploy n8n agents that show up as members of the team inside Microsoft apps With the ge",
+      "summary_en": "n8n Blog changed. The visible update appears to be \"News Deploy n8n agents that show up as members of the team inside Microsoft a...\". Open the target URL to see details.",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "News Deploy n8n agents that show up as members of the team inside Microsoft apps With the general availability of Microsoft Agent 365, n8n users can now build AI agents that show up inside the Microsoft 365 applications where people get work done. Now you can @mention Desiree Lockwood, n8n May 1, 2026 ∙ 5 minutes read Explore by use case Guide LLM Tool Calling: How It Works and How To Implement It n8n team , Yulia Dmitrievna Guide ReAct Agent: Architecture, Implementation, and Tradeoffs n8n team , Yulia Dmitrievna Build and Update Workflows with n8n's MCP Server Ophir Prusak Guide Human-in-the-Loop vs. Human-on-the-Loop: When To Use Each System n8n team , Yulia Dmitrievna AI How to evaluate the performance of AI agents? Yulia Dmitrievna Guide Workflow Automation vs. Orchestration: Archi...",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1 +1 @@",
+        "-Guide LLM Tool Calling: How It Works and How To Implement It Learn how LLM tool calling turns conversational AI into actionable agents. Discover execution steps and production reliability to create efficient systems. n8n team , Yulia Dmitrievna April 30, 2026 ∙ 10 minutes read Explore by use case Guide ReAct Agent: Architecture, Implementation, and Tradeoffs n8n team , Yulia Dmitrievna Build and Update Workflows with n8n&#x27;s MCP Server Ophir Prusak Guide Human-in-the-Loop vs. Human-on-the-Loop: When To Use Each System n8n team , Yulia Dmitrievna AI How to evaluate the performance of AI agents? Yulia Dmitrievna Guide Workflow Automation vs. Orchestration: Architectural Differences That Matter at Scale n8n team , Yulia Dmitrievna ITOps Orchestration vs. Choreography: Which One to Choose – or Use Both? n8n team , Yulia Dmitrievna We need re-learn what AI agent development tools are in 2026 Andrew Green AI RAG System Architecture: Components, How To Implement, Challenges, and Best Practices n8n team , Yulia Dmitrievna Load more n8n home Tutorials Guides Tips By partners News Interviews Github ★ 162k Sign in Get Started n8n home Tutorials Guides Tips By partners News Interviews Sign in Get Started Guide LLM Tool Calling: How It Works and How To Implement It Learn how LLM tool calling turns conversational AI into actionable agents. Discover execution steps and production reliability to create efficient systems. n8n team , Yulia Dmitrievna April 30, 2026 ∙ 10 minutes read Explore by use case Guide ReAct Agent: Architecture, Implementation, and Tradeoffs n8n team , Yulia Dmitrievna Build and Update Workflows with n8n&#x27;s MCP Server Ophir Prusak Guide Human-in-the-Loop vs. Human-on-the-Loop: When To Use Each System n8n team , Yulia Dmitrievna AI How to evaluate the performance of AI agents? Yulia Dmitrievna Guide Workflow Automation vs. Orchestration: Architectural Differences That Matter at Scale n8n team , Yulia Dmitrievna ITOps Orchestration vs. Choreography: Which One to Choose – or Use Both? n8n team , Yulia Dmitrievna We need re-learn what AI agent development tools are in 2026 Andrew Green AI RAG System Architecture: Components, How To Implement, Challenges, and Best Practices n8n team , Yulia Dmitrievna Load more Popular integrations Google Sheets Telegram MySQL Slack Discord Postgres Notion Gmail Airtable Google Drive Show more integrations > Trending combinations HubSpot and Salesforce Twilio and WhatsApp GitHub and Jira Asana and Slack Asana and Salesforce Jira and Slack Jira and Salesforce GitHub and Slack HubSpot and QuickBooks HubSpot and Slack Show more integrations > Top integration categories Development Communication Langchain AI Data & Storage Marketing Productivity Sales Utility Miscellaneous Explore more categories Trending templates Creating an API endpoint AI agent chat Scrape and summarize webpages with AI Very quick quickstart Pulling data from services that n8n doesn’t have a pre-built integration for Joining different datasets Back Up Your n8n Workflows To Github AI agent that can scrape webpages OpenAI GPT-3: Company Enrichment from website content Telegram AI Chatbot Explore 800+ workflow templates > Top guides Telegram bots Open-source chatbot Open-source LLM Open-source low-code platforms Zapier alternatives Make vs Zapier AI agents AI coding assistants ChatGPT Discord bot Best AI chatbot Show guides > Automate without limits Careers Contact Merch Press Security Case studies Zapier vs n8n Make vs n8n XML to JSON converter Affiliate program Become an expert Events Popular integrations Google Sheets Telegram MySQL Slack Discord PostgreSQL Show more Trending combinations Google Sheets + Slack Discord + MySQL Telegram + PostgreSQL Show more Used by technical teams Development Teams DevOps Infrastructure Show more Top integration categories Databases Communication Productivity Show more Trending templates Automated Data Sync Lead Generation Customer Support Show more Imprint | Security | Privacy | Report a vulnerability © 2026 n8n | All rights reserved. Automate without limits n8n home Features Pricing Docs Community Imprint | Security | Privacy | Report a vulnerability © 2026 n8n | All rights reserved. You’ve successfully subscribed to n8n Blog Welcome back! You’ve successfully signed in. Great! You’ve successfully signed up. Your link has expired Success! Check your email for magic link to sign-in.",
+        "+News Deploy n8n agents that show up as members of the team inside Microsoft apps With the general availability of Microsoft Agent 365, n8n users can now build AI agents that show up inside the Microsoft 365 applications where people get work done. Now you can @mention Desiree Lockwood, n8n May 1, 2026 ∙ 5 minutes read Explore by use case Guide LLM Tool Calling: How It Works and How To Implement It n8n team , Yulia Dmitrievna Guide ReAct Agent: Architecture, Implementation, and Tradeoffs n8n team , Yulia Dmitrievna Build and Update Workflows with n8n&#x27;s MCP Server Ophir Prusak Guide Human-in-the-Loop vs. Human-on-the-Loop: When To Use Each System n8n team , Yulia Dmitrievna AI How to evaluate the performance of AI agents? Yulia Dmitrievna Guide Workflow Automation vs. Orchestration: Architectural Differences That Matter at Scale n8n team , Yulia Dmitrievna ITOps Orchestration vs. Choreography: Which One to Choose – or Use Both? n8n team , Yulia Dmitrievna We need re-learn what AI agent development tools are in 2026 Andrew Green Load more n8n home Tutorials Guides Tips By partners News Interviews Github ★ 162k Sign in Get Started n8n home Tutorials Guides Tips By partners News Interviews Sign in Get Started News Deploy n8n agents that show up as members of the team inside Microsoft apps With the general availability of Microsoft Agent 365, n8n users can now build AI agents that show up inside the Microsoft 365 applications where people get work done. Now you can @mention Desiree Lockwood, n8n May 1, 2026 ∙ 5 minutes read Explore by use case Guide LLM Tool Calling: How It Works and How To Implement It n8n team , Yulia Dmitrievna Guide ReAct Agent: Architecture, Implementation, and Tradeoffs n8n team , Yulia Dmitrievna Build and Update Workflows with n8n&#x27;s MCP Server Ophir Prusak Guide Human-in-the-Loop vs. Human-on-the-Loop: When To Use Each System n8n team , Yulia Dmitrievna AI How to evaluate the performance of AI agents? Yulia Dmitrievna Guide Workflow Automation vs. Orchestration: Architectural Differences That Matter at Scale n8n team , Yulia Dmitrievna ITOps Orchestration vs. Choreography: Which One to Choose – or Use Both? n8n team , Yulia Dmitrievna We need re-learn what AI agent development tools are in 2026 Andrew Green Load more Popular integrations Google Sheets Telegram MySQL Slack Discord Postgres Notion Gmail Airtable Google Drive Show more integrations > Trending combinations HubSpot and Salesforce Twilio and WhatsApp GitHub and Jira Asana and Slack Asana and Salesforce Jira and Slack Jira and Salesforce GitHub and Slack HubSpot and QuickBooks HubSpot and Slack Show more integrations > Top integration categories Development Communication Langchain AI Data & Storage Marketing Productivity Sales Utility Miscellaneous Explore more categories Trending templates Creating an API endpoint AI agent chat Scrape and summarize webpages with AI Very quick quickstart Pulling data from services that n8n doesn’t have a pre-built integration for Joining different datasets Back Up Your n8n Workflows To Github AI agent that can scrape webpages OpenAI GPT-3: Company Enrichment from website content Telegram AI Chatbot Explore 800+ workflow templates > Top guides Telegram bots Open-source chatbot Open-source LLM Open-source low-code platforms Zapier alternatives Make vs Zapier AI agents AI coding assistants ChatGPT Discord bot Best AI chatbot Show guides > Automate without limits Careers Contact Merch Press Security Case studies Zapier vs n8n Make vs n8n XML to JSON converter Affiliate program Become an expert Events Popular integrations Google Sheets Telegram MySQL Slack Discord PostgreSQL Show more Trending combinations Google Sheets + Slack Discord + MySQL Telegram + PostgreSQL Show more Used by technical teams Development Teams DevOps Infrastructure Show more Top integration categories Databases Communication Productivity Show more Trending templates Automated Data Sync Lead Generation Customer Support Show more Imprint | Security | Privacy | Report a vulnerability © 2026 n8n | All rights reserved. Automate without limits n8n home Features Pricing Docs Community Imprint | Security | Privacy | Report a vulnerability © 2026 n8n | All rights reserved. You’ve successfully subscribed to n8n Blog Welcome back! You’ve successfully signed in. Great! You’ve successfully signed up. Your link has expired Success! Check your email for magic link to sign-in."
+      ],
+      "article_identity": "n8n-blog-news-deploy-n8n-agents-that-show-up-as-members-of-the-team-inside-microsoft-apps-with-the-ge",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "update||n8n blog||n8n-blog-news-deploy-n8n-agents-that-show-up-as-members-of-the-team-inside-microsoft-apps-with-the-ge",
+      "id": "evt-6caf48f95cf24caaf126",
+      "content_fingerprint": "news deploy n8n agents that show up as members of the team inside microsoft apps with the ge n8n blog changed the visible update appears to be news deploy n8n agents that show up as members of the team inside microsoft a open the target url to see details news deploy n8n agents that show up as members of the team inside microsoft apps with the general availability of microsoft agent 365 n8n users can now build ai agents that show up inside the microsoft 365 applications where people get work done now you can mention desiree lockwood n8n may 1 2026 5 minutes read explore by use case guide llm tool calling how it works and how to implement it n8n team yulia dmitrievna guide react agent architecture implementation and tradeoffs n8n team yulia dmitrievna build and update workflows with n8n s mcp server ophir prusak guide human in the loop vs human on the loop when to use each system n8n team yulia dmitrievna ai how to evaluate the performance of ai agents yulia dmitrievna guide workflow automation vs orchestration archi",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "news deploy n8n agents that show up as members of the team inside microsoft apps with the ge n8n blog changed the visible update appears to be news deploy n8n agents that show up as members of the team inside microsoft a open the target url to see details news deploy n8n agents that show up as members of the team inside microsoft apps with the general availability of microsoft agent 365 n8n users can now build ai agents that show up inside the microsoft 365 applications where people get work done now you can mention desiree lockwood n8n may 1 2026 5 minutes read explore by use case guide llm tool calling how it works and how to implement it n8n team yulia dmitrievna guide react agent architecture implementation and tradeoffs n8n team yulia dmitrievna build and update workflows with n8n s mcp server ophir prusak guide human in the loop vs human on the loop when to use each system n8n team yulia dmitrievna ai how to evaluate the performance of ai agents yulia dmitrievna guide workflow automation vs orchestration archi",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "n8n Brings AI Agents Into Microsoft 365 Apps via Agent 365 GA Integration",
+      "article_standfirst": "With Microsoft Agent 365 now generally available, n8n users can deploy workflow-powered AI agents as team members inside Outlook, Teams, and other Microsoft 365 surfaces, letting colleagues @mention them just like human collaborators.",
+      "article_body": [
+        "n8n has announced that its users can now build and deploy AI agents that appear as full team members inside Microsoft 365 applications, powered by the general availability of Microsoft Agent 365. The integration allows n8n-built agents to be @mentioned directly within the Microsoft apps where work already happens — including Outlook and Teams — eliminating the need to switch context to a separate automation tool.",
+        "The feature taps into n8n's existing workflow automation capabilities, letting teams define agent behavior through n8n's visual workflow builder before surfacing those agents as conversational participants in Microsoft 365. According to the announcement, an agent built in n8n can receive a direct @mention from a colleague and respond within the same thread or inbox, performing tasks like querying knowledge bases, initiating follow-up workflows, or retrieving status updates without leaving the Microsoft ecosystem.",
+        "For developers and operations teams already using n8n for workflow orchestration, the integration offers a path to embed intelligent automation directly into employee-facing Microsoft tools without building custom connectors or maintaining separate bot infrastructure. The feature positions n8n as an agent-factory layer sitting between workflow logic and Microsoft 365 collaboration surfaces."
+      ],
+      "article_why_matters": [
+        "AI agents built with n8n can now live where workers already are — inside Outlook and Teams — rather than requiring them to open a separate automation tool.",
+        "The integration is powered by Microsoft Agent 365 GA, signaling that this is an officially supported and stable Microsoft surface, not a lab experiment.",
+        "For teams using Microsoft 365 as their primary collaboration stack, the feature could reduce friction in deploying custom AI automations without requiring specialized bot-development expertise."
+      ],
+      "article_source_note": [
+        "This brief is drawn from a post on the official n8n Blog (blog.n8n.io), published May 1, 2026. The post announces the n8n–Microsoft Agent 365 integration but provides limited technical detail about implementation, workflow triggers, authentication, or data handling; readers seeking build guidance should consult n8n's documentation directly."
+      ],
+      "article_confidence": "strong",
+      "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-05-02T14:30:02+00:00",
+      "source_name": "GitHub vLLM Releases",
+      "source_url": "https://github.com/vllm-project/vllm/releases.atom",
+      "effective_url": "https://github.com/vllm-project/vllm/releases.atom",
+      "target_url": "https://github.com/vllm-project/vllm/releases/tag/v0.20.1",
+      "category": "release",
+      "headline_en": "vLLM release feed now shows v0.20.1: Revert \"Temporary disable persistent topk (#41442)\"",
+      "summary_en": "The monitored release feed for vLLM changed and the newest visible tag is v0.20.1: Revert \"Temporary disable persistent topk (#41442)\". The feed timestamp is 2026-05-02T07:52:06Z. This looks like a release-level update rather than a cosmetic page...",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=v0.20.1: Revert \"Temporary disable persistent topk (#41442)\" updated=2026-05-02T07:52:06Z link=https://github.com/vllm-project/vllm/releases/tag/v0.20.1 summary= content=This reverts commit 05ebca5 .",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,8 @@",
+        "+title=v0.20.1: Revert \"Temporary disable persistent topk (#41442)\"",
+        "+updated=2026-05-02T07:52:06Z",
+        "+link=https://github.com/vllm-project/vllm/releases/tag/v0.20.1",
+        "+summary=",
+        "+content=This reverts commit 05ebca5 .",
+        "+",
+        " title=v0.20.1rc0: Add system_fingerprint field to OpenAI-compatible API responses (#40537)",
+        " updated=2026-04-27T08:17:52Z",
+        "@@ -52,8 +58,2 @@",
+        " summary=",
+        " content=Signed-off-by: Yifan Qiao yifanqiao@berkeley.edu Signed-off-by: Yifan Qiao yifanqiao@inferact.ai (cherry picked from commit 91e4521 )",
+        "-",
+        "-title=v0.18.2rc0",
+        "-updated=2026-03-31T15:50:41Z",
+        "-link=https://github.com/vllm-project/vllm/releases/tag/v0.18.2rc0",
+        "-summary=",
+        "-content=[Fix] handle PaddleOCR-VL image processor max_pixels across Transform…"
+      ],
+      "article_identity": "v0.20.1",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "release||github vllm releases||github::vllm-project/vllm",
+      "id": "evt-6acab4b7a5e4fbb4d220",
+      "content_fingerprint": "vllm release feed now shows v0 20 1 revert temporary disable persistent topk 41442 the monitored release feed for vllm changed and the newest visible tag is v0 20 1 revert temporary disable persistent topk 41442 the feed timestamp is 2026 05 02t07 52 06z this looks like a release level update rather than a cosmetic page title v0 20 1 revert temporary disable persistent topk 41442 updated 2026 05 02t07 52 06z link https github com vllm project vllm releases tag v0 20 1 summary content this reverts commit 05ebca5",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "vllm release feed now shows v0 20 1 revert temporary disable persistent topk 41442 the monitored release feed for vllm changed and the newest visible tag is v0 20 1 revert temporary disable persistent topk 41442 the feed timestamp is 2026 05 02t07 52 06z this looks like a release level update rather than a cosmetic page title v0 20 1 revert temporary disable persistent topk 41442 updated 2026 05 02t07 52 06z link https github com vllm project vllm releases tag v0 20 1 summary content this reverts commit 05ebca5",
+      "github_release_signal_fingerprint": "vllm release feed now shows version revert temporary disable persistent topk 41442 the monitored release feed for vllm changed and the newest visible tag is version revert temporary disable persistent topk 41442 the feed timestamp is 2026 05 02t07 52 06z this looks like a release level update rather than a cosmetic page title version revert temporary disable persistent topk 41442 updated 2026 05 02t07 52 06z link https github com vllm project vllm releases tag version summary content this reverts commit 05ebca5",
+      "article_h1": "vLLM v0.20.1 Re-Enables Persistent Top-K Optimization After Brief Disable",
+      "article_standfirst": "The vLLM inference engine has issued a patch release restoring a KV-cache optimization previously temporarily disabled, signaling that the underlying issue has been resolved.",
+      "article_body": [
+        "vLLM released version 0.20.1 on May 2, 2026, patching in a revert of a prior temporary disabling of the \"persistent topk\" feature (PR #41442). The release carries no additional changes beyond re-introducing the optimization.",
+        "vLLM is a widely adopted open-source inference engine for large language models, known for its PagedAttention memory-management system and high-throughput serving capabilities. The \"persistent topk\" feature relates to KV-cache optimization in the attention mechanism, and its brief removal in a prior commit appears to have been a stopgap measure while a bug or regression was investigated.",
+        "For teams running vLLM in production or staging, upgrading to 0.20.1 restores the performance gains associated with persistent topk. Inference engineers and MLOps teams already on the prior patch should evaluate 0.20.1 to confirm stability before deploying to live serving workloads."
+      ],
+      "article_why_matters": [
+        "The revert signals that whatever problem triggered the temporary disable (likely a bug or regression) is now resolved, making persistent topk safe to use again.",
+        "Persistent topk is tied to KV-cache behavior in vLLM's serving path, so restoring it may improve throughput or reduce memory overhead for active inference workloads.",
+        "Teams pinning to a specific vLLM version or currently running the temporarily disabled state should update to maintain feature parity and performance."
+      ],
+      "article_source_note": [
+        "Information is drawn from the vLLM project releases page (github.com/vllm-project/vllm). The release consists of a single revert commit with no accompanying changelog, release notes, or rationale for the original disable, limiting depth of analysis."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
+    },
     {
       "timestamp": "2026-04-30T20:37:52+00:00",
       "source_name": "Hugging Face Blog",
@@ -229,79 +336,6 @@
       "article_generation_mode": "claude"
     },
     {
-      "timestamp": "2026-04-29T22:38:13+00:00",
-      "source_name": "GitHub LangGraph Releases",
-      "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "effective_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "target_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a1",
-      "category": "release",
-      "headline_en": "LangGraph release feed now shows langgraph==1.2.0a1",
-      "summary_en": "The monitored release feed for LangGraph changed and the newest visible tag is langgraph==1.2.0a1. The feed timestamp is 2026-04-29T22:30:21Z. This looks like a release-level update rather than a cosmetic page edit.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "title=langgraph==1.2.0a1 updated=2026-04-29T22:30:21Z link=https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a1 summary= content=Changes since 1.1.10 feat: allow graph to graceful shutdown/drain by request ( #7274 ) release: alpha for timers ( #7647 ) feat(langgraph): DeltaChannel : store sentinel in blobs, reconstruct from checkpoint_writes ( #7586 ) chore: dynamic push-task timeouts ( #7646 ) chore: update x links to langchain_oss ( #7645 ) chore: idle timeout ( #7631 ) feat(langgraph): native v2 projections for custom, updates, checkpoints, debug, tasks ( #7640 ) fix(langgraph): decouple run.output/interrupted/interrupts from ValuesTransformer ( #7639 ) refactor(langgraph,prebuilt): merge EventLog into StreamChannel with optional name ( #7637 ) feat(langgraph): add streamin...",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,2 +1,14 @@",
-        "+title=langgraph==1.2.0a1",
-        "+updated=2026-04-29T22:30:21Z",
-        "+link=https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a1",
-        "+summary=",
-        "+content=Changes since 1.1.10 feat: allow graph to graceful shutdown/drain by request ( #7274 ) release: alpha for timers ( #7647 ) feat(langgraph): DeltaChannel : store sentinel in blobs, reconstruct from checkpoint_writes ( #7586 ) chore: dynamic push-task timeouts ( #7646 ) chore: update x links to langchain_oss ( #7645 ) chore: idle timeout ( #7631 ) feat(langgraph): native v2 projections for custom, updates, checkpoints, debug, tasks ( #7640 ) fix(langgraph): decouple run.output/interrupted/interrupts from ValuesTransformer ( #7639 ) refactor(langgraph,prebuilt): merge EventLog into StreamChannel with optional name ( #7637 ) feat(langgraph): add streaming transformer infrastructure and tests ( #7519 ) chore(deps): bump the minor-and-patch group across 1 directory with 4 updates (ty held back) ( #7635 )",
-        "+",
-        "+title=langgraph-checkpoint==4.1.0a1",
-        "+updated=2026-04-29T22:30:33Z",
-        "+link=https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.1.0a1",
-        "+summary=",
-        "+content=Changes since checkpoint==4.0.3 release: alpha for timers ( #7647 ) feat(langgraph): DeltaChannel : store sentinel in blobs, reconstruct from checkpoint_writes ( #7586 ) chore: dynamic push-task timeouts ( #7646 ) chore: update x links to langchain_oss ( #7645 )",
-        "+",
-        " title=langgraph==1.1.10",
-        " updated=2026-04-27T17:19:21Z",
-        "@@ -46,14 +58,2 @@",
-        " summary=",
-        " content=Changes since 1.1.7a2 release(langgraph): 1.1.7 ( #7540 ) fix: time travel when going back to interrupt node ( #7498 ) chore(deps): bump langsmith from 0.6.4 to 0.7.31 in /libs/langgraph ( #7526 ) release(checkpoint): 4.0.2 ( #7518 )",
-        "-",
-        "-title=langgraph-prebuilt==1.0.10",
-        "-updated=2026-04-17T17:59:59Z",
-        "-link=https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.10",
-        "-summary=",
-        "-content=Changes since prebuilt==1.0.9 release(prebuilt): 1.0.10 ( #7541 ) release(langgraph): 1.1.7 ( #7540 ) fix(prebuilt): handle injected NotRequired keys ( #7392 ) chore(deps): bump langsmith from 0.6.4 to 0.7.31 in /libs/prebuilt ( #7530 ) release(checkpoint): 4.0.2 ( #7518 ) chore(deps): bump pytest from 9.0.2 to 9.0.3 in /libs/prebuilt ( #7505 ) release(langgraph): 1.1.7a2 ( #7511 ) chore: allow passing some metadata only for tracing purposes ( #7383 ) release(langgraph): 1.1.7a1 ( #7476 ) chore(deps-dev): bump the minor-and-patch group in /libs/prebuilt with 3 updates ( #7376 ) release: langgraph 1.1.6 ( #7407 )",
-        "-",
-        "-title=langgraph-cli==0.4.23",
-        "-updated=2026-04-17T17:04:11Z",
-        "-link=https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.23",
-        "-summary=",
-        "-content=Changes since cli==0.4.22 release(cli): 0.4.23 ( #7542 )"
-      ],
-      "article_identity": "1.2.0a1",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "release||github langgraph releases||github::langchain-ai/langgraph",
-      "id": "evt-95b588975219233bff1c",
-      "content_fingerprint": "langgraph release feed now shows langgraph 1 2 0a1 the monitored release feed for langgraph changed and the newest visible tag is langgraph 1 2 0a1 the feed timestamp is 2026 04 29t22 30 21z this looks like a release level update rather than a cosmetic page edit title langgraph 1 2 0a1 updated 2026 04 29t22 30 21z link https github com langchain ai langgraph releases tag 1 2 0a1 summary content changes since 1 1 10 feat allow graph to graceful shutdown drain by request 7274 release alpha for timers 7647 feat langgraph deltachannel store sentinel in blobs reconstruct from checkpoint writes 7586 chore dynamic push task timeouts 7646 chore update x links to langchain oss 7645 chore idle timeout 7631 feat langgraph native v2 projections for custom updates checkpoints debug tasks 7640 fix langgraph decouple run output interrupted interrupts from valuestransformer 7639 refactor langgraph prebuilt merge eventlog into streamchannel with optional name 7637 feat langgraph add streamin",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "langgraph release feed now shows langgraph 1 2 0a1 the monitored release feed for langgraph changed and the newest visible tag is langgraph 1 2 0a1 the feed timestamp is 2026 04 29t22 30 21z this looks like a release level update rather than a cosmetic page edit title langgraph 1 2 0a1 updated 2026 04 29t22 30 21z link https github com langchain ai langgraph releases tag 1 2 0a1 summary content changes since 1 1 10 feat allow graph to graceful shutdown drain by request 7274 release alpha for timers 7647 feat langgraph deltachannel store sentinel in blobs reconstruct from checkpoint writes 7586 chore dynamic push task timeouts 7646 chore update x links to langchain oss 7645 chore idle timeout 7631 feat langgraph native v2 projections for custom updates checkpoints debug tasks 7640 fix langgraph decouple run output interrupted interrupts from valuestransformer 7639 refactor langgraph prebuilt merge eventlog into streamchannel with optional name 7637 feat langgraph add streamin",
-      "github_release_signal_fingerprint": "langgraph release feed now shows langgraph version 0a1 the monitored release feed for langgraph changed and the newest visible tag is langgraph version 0a1 the feed timestamp is 2026 04 29t22 30 21z this looks like a release level update rather than a cosmetic page edit title langgraph version 0a1 updated 2026 04 29t22 30 21z link https github com langchain ai langgraph releases tag version 0a1 summary content changes since version feat allow graph to graceful shutdown drain by request 7274 release alpha for timers 7647 feat langgraph deltachannel store sentinel in blobs reconstruct from checkpoint writes 7586 chore dynamic push task timeouts 7646 chore update x links to langchain oss 7645 chore idle timeout 7631 feat langgraph native v2 projections for custom updates checkpoints debug tasks 7640 fix langgraph decouple run output interrupted interrupts from valuestransformer 7639 refactor langgraph prebuilt merge eventlog into streamchannel with optional name 7637 feat langgraph add streamin",
-      "article_h1": "LangGraph Ships Alpha 1.2.0 With Graceful Shutdown, Timer Primitives, and v2 Projections",
-      "article_standfirst": "The LangChain-ai orchestration library tagged its first alpha for the 1.2 release cycle, bringing long-requested improvements to state management, checkpointing, and task lifecycle control for production agent developers.",
-      "article_body": [
-        "LangGraph released version 1.2.0a1 on April 29, 2026, marking the first alpha tag in the 1.2 release line. The update encompasses 13 pull requests since version 1.1.10, spanning foundational internal restructuring and new runtime features. Notable additions include graceful graph shutdown and drain-by-request capabilities, an alpha implementation of timer primitives, and native v2 projections across custom types, updates, checkpoints, debug views, and task handling.",
-        "The release introduces DeltaChannel improvements that persist a sentinel value directly in state blobs and reconstruct it from checkpoint_writes, tightening the reliability of incremental state tracking in long-running graphs. A series of lifecycle management changes — dynamic push-task timeouts and idle timeout handling — address the operational challenges of keeping agent workflows responsive under varied load. Internally, EventLog was merged into StreamChannel with an optional name parameter, and run.output, interrupted, and interrupts were decoupled from ValuesTransformer, reducing hidden coupling between core execution paths.",
-        "For builders running multi-step agent loops in production, the new graceful shutdown behavior directly addresses the risk of dropped in-flight requests during deployments or restarts. The timer alpha opens the door to scheduled and time-bounded sub-graphs — a pattern that has been frequently requested in the LangGraph community for retry logic and deadline-driven workflows. Teams relying on LangGraph for complex stateful pipelines should evaluate the v2 projections and DeltaChannel changes, particularly where checkpointing and state reconstruction accuracy are critical."
-      ],
-      "article_why_matters": [
-        "Graceful drain-by-request prevents message loss during live deployments of agent services — a key gap for teams running LangGraph in production.",
-        "The alpha timer primitive unlocks time-bounded subgraphs and retry windows, a foundational pattern for reliable agentic workflows that is currently absent in stable releases.",
-        "Native v2 projections and the DeltaChannel checkpoint rework improve state reconstruction fidelity, reducing silent data loss in long-running multi-turn conversations."
-      ],
-      "article_source_note": [
-        "The brief draws from the LangGraph 1.2.0a1 GitHub release page, which lists 13 merged pull requests with titles and issue references but without a written changelog narrative or detailed feature descriptions. Specific behavioral details for timers, shutdown, and v2 projections are not elaborated beyond their PR titles."
-      ],
-      "article_confidence": "moderate",
-      "article_generation_mode": "claude"
-    },
-    {
       "timestamp": "2026-04-29T15:21:35+00:00",
       "source_name": "Mistral Changelog",
       "source_url": "https://docs.mistral.ai/getting-started/changelog/",
@@ -479,52 +513,6 @@
       ],
       "article_source_note": [
         "Information drawn from the SiliconFlow documentation index (docs.siliconflow.cn/llms.txt) captured on April 29, 2026. The llms.txt file is an automatically generated documentation sitemap, and the captured content does not specify which individual endpoints or models were added or changed; it reflects the current state of the documentation at the time of capture rather than a changelog. Dated integration pages (some from 2025) suggest the documentation has been updated incrementally over time."
-      ],
-      "article_confidence": "moderate",
-      "article_generation_mode": "claude"
-    },
-    {
-      "timestamp": "2026-04-29T12:04:33+00:00",
-      "source_name": "Zhipu AI Docs",
-      "source_url": "https://open.bigmodel.cn/dev/how/introduction",
-      "effective_url": "https://open.bigmodel.cn/dev/how/introduction",
-      "target_url": "https://docs.bigmodel.cn/llms.txt",
-      "category": "update",
-      "headline_en": "AI开放文档 Skip to main content 智谱AI开放文档 home page Search",
-      "summary_en": "Zhipu AI Docs changed. The visible update appears to be \"AI开放文档 Skip to main content 智谱AI开放文档 home page Search\". Open the target URL to see details.",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "平台介绍 - 智谱AI开放文档 Skip to main content 智谱AI开放文档 home page Search... ⌘ K 控制台 价格 财务 API Key 个人中心 Search... Navigation 开始使用 平台介绍 使用指南 API 文档 场景示例 编码套餐 更新日志 条款与协议 常见问题 开始使用 平台介绍 模型概览 快速开始 核心参数 开发指南 迁移至 GLM-5.1 模型介绍 文本模型 视觉理解模型 图像生成模型 视频生成模型 音视频模型 向量模型 角色模型 免费模型 模型能力 深度思考 思考模式 流式消息 工具流式输出 工具调用 上下文缓存 结构化输出 模型工具 GLM in Excel（Beta） 联网搜索 模型部署 模型微调 模型评测 批量处理 文件解析 OCR 服务 GLM 全模态知识库 知识处理及检索 知识问答 知识库服务计费 上下文增强技术报告 对话调用知识库 智能体 语言翻译 内容生成 办公效能 信息提取 智慧教育 平台服务 智能体开发平台 提示词工程 内容安全 模型迁移 用户权益 模型备案 On this page 平台定位 平台优势 查看模型 极速体验 快速开始 开发指南 核心概念 开始使用 平台介绍 Copy page Z智谱·一站式大模型开发平台 Copy page Documentation Index Fetch the complete documentation index at: https://docs.bigmodel.cn/llms.txt Use this file to discover all available pages before exploring further. ​ 平台定位 智谱大模型开放平台 bigmodel.cn ，提供功能丰富、灵活易用、高性价比的大模型 API 服...",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1 +1 @@",
-        "-平台介绍 - 智谱AI开放文档 Skip to main content 智谱AI开放文档 home page Search... ⌘ K 控制台 价格 财务 API Key 个人中心 Search... Navigation 开始使用 平台介绍 使用指南 API 文档 场景示例 编码套餐 更新日志 条款与协议 常见问题 开始使用 平台介绍 模型概览 快速开始 核心参数 开发指南 迁移至 GLM-5.1 模型介绍 文本模型 视觉理解模型 图像生成模型 视频生成模型 音视频模型 向量模型 角色模型 免费模型 模型能力 深度思考 思考模式 流式消息 工具流式输出 工具调用 上下文缓存 结构化输出 模型工具 GLM in Excel（Beta） 联网搜索 模型部署 模型微调 模型评测 批量处理 文件解析 OCR 服务 GLM 全模态知识库 知识处理及检索 知识问答 知识库服务计费 上下文增强技术报告 对话调用知识库 智能体 语言翻译 内容生成 办公效能 信息提取 智慧教育 平台服务 智能体开发平台 提示词工程 内容安全 模型迁移 用户权益 模型备案 On this page 平台定位 平台优势 查看模型 极速体验 快速开始 开发指南 核心概念 开始使用 平台介绍 Copy page Z智谱·一站式大模型开发平台 Copy page ​ 平台定位 智谱大模型开放平台 bigmodel.cn ，提供功能丰富、灵活易用、高性价比的大模型 API 服务，支持智能体开发与模型精调、推理、评测等，致力于构建高效通用的“一站式模型即服务” AI 开发新范式。 ​ 平台优势 模型矩阵 全模态、全尺寸、低幻觉、高精度 开发套件 覆盖模型与 AI 应用开发，全链路开箱即用 深耕场景 深度耦合业务的应用级 Agent，直达生产力 服务保障 充沛高并发算力资源，多层次安全防护机制 ​ 查看模型 平台已上架数十个模型，覆盖文本生成、语言推理、图像理解、视频生成、音视频处理等多场景。前往 模型概览 ，即可查看所有模型的功能定位、模型价格、上下文长度等基本信息。 ​ 极速体验 您可前往智谱大模型 体验中心 ，极速体验模型能力。 在对话框输入相关参数及prompt，点击发送，即可看到对应模型所输出的结果。 点击页面左侧的按钮，可自由切换体验文本模态、多模态模型及数十种智能体。 ​ 快速开始 快速开始 将引导您逐步完成 API 调用流程，涵盖注册账号、环境配置、获取 API key、SDK 使用等关键步骤。帮助您分钟级完成模型调用服务，并集成到您的业务或应用中。 ​ 开发指南 平台提供多种开发方式，满足不同开发者的需求和技术栈偏好。无论您是初学者还是经验丰富的开发者，都能找到适合的集成方案。 HTTP API 调用 标准 RESTful API 接口，支持所有编程语言和平台 官方 Python SDK 功能完整的 Python 开发工具包，支持异步调用和类型安全 官方 Java SDK 企业级 Java 开发工具包，支持高并发和高可用性 OpenAI SDK 兼容 兼容 OpenAI SDK，零学习成本快速迁移现有应用 LangChain 集成 集成 LangChain 框架，构建复杂的 AI 应用和智能代理 ​ 核心概念 GLM Token 上下文窗口 GLM - General Language Model GLM 是一款基于自回归填空的预训练语言模型。ChatGLM 系列模型，支持相对复杂的自然语言指令，并且能够解决困难的推理类问题。该模型配备了易于使用的 API 接口，允许开发者轻松将其融入各类应用，广泛应用于智能客服、虚拟主播、聊天机器人等诸多领域。 Token - 文本处理单位 Token 是模型用来表示自然语言文本的基本单位，可以直观的理解为“字”或“词”；通常 1 个中文词语、1 个英文单词、1 个数字或 1 个符号计为 1 个 token。 GLM 系列模型中 token 和字数的换算比例约为 1:1.6 ，但因为不同模型的分词不同，所以换算比例也存在差异，每一次实际处理 token 数量以模型返回为准，您可以从返回结果的 usage 中查看。 Context Window - 上下文窗口 上下文窗口是指模型在一次对话中能够处理的最大长度。包括： 用户输入的内容 模型生成的回复 模型在生成回复过程中进行推理或调用工具时产生的中间内容（如：GLM-4-AllTools ） 如果超出上下文窗口限制，会发生什么？ 超出部分被截断： 如果总文本量超过了上下文窗口的限制，超出的部分将被自动丢弃，无法被处理。 影响对话内容： 你可能看不到被丢弃的部分，从而影响模型的回答质量或上下文的连贯性。 查看模型的上下文限制，或者使用 Tokenizer 工具估算上下文长度。 重要提醒 ：以上内容主要适用于 GLM-4 系列语言模型。对于多模态模型，输入内容有严格长度限制，若超出限制，系统将提示”prompt 超长”。 模型概览 ⌘ I Powered by This documentation is built and hosted on Mintlify, a developer documentation platform",
-        "+平台介绍 - 智谱AI开放文档 Skip to main content 智谱AI开放文档 home page Search... ⌘ K 控制台 价格 财务 API Key 个人中心 Search... Navigation 开始使用 平台介绍 使用指南 API 文档 场景示例 编码套餐 更新日志 条款与协议 常见问题 开始使用 平台介绍 模型概览 快速开始 核心参数 开发指南 迁移至 GLM-5.1 模型介绍 文本模型 视觉理解模型 图像生成模型 视频生成模型 音视频模型 向量模型 角色模型 免费模型 模型能力 深度思考 思考模式 流式消息 工具流式输出 工具调用 上下文缓存 结构化输出 模型工具 GLM in Excel（Beta） 联网搜索 模型部署 模型微调 模型评测 批量处理 文件解析 OCR 服务 GLM 全模态知识库 知识处理及检索 知识问答 知识库服务计费 上下文增强技术报告 对话调用知识库 智能体 语言翻译 内容生成 办公效能 信息提取 智慧教育 平台服务 智能体开发平台 提示词工程 内容安全 模型迁移 用户权益 模型备案 On this page 平台定位 平台优势 查看模型 极速体验 快速开始 开发指南 核心概念 开始使用 平台介绍 Copy page Z智谱·一站式大模型开发平台 Copy page Documentation Index Fetch the complete documentation index at: https://docs.bigmodel.cn/llms.txt Use this file to discover all available pages before exploring further. ​ 平台定位 智谱大模型开放平台 bigmodel.cn ，提供功能丰富、灵活易用、高性价比的大模型 API 服务，支持智能体开发与模型精调、推理、评测等，致力于构建高效通用的“一站式模型即服务” AI 开发新范式。 ​ 平台优势 模型矩阵 全模态、全尺寸、低幻觉、高精度 开发套件 覆盖模型与 AI 应用开发，全链路开箱即用 深耕场景 深度耦合业务的应用级 Agent，直达生产力 服务保障 充沛高并发算力资源，多层次安全防护机制 ​ 查看模型 平台已上架数十个模型，覆盖文本生成、语言推理、图像理解、视频生成、音视频处理等多场景。前往 模型概览 ，即可查看所有模型的功能定位、模型价格、上下文长度等基本信息。 ​ 极速体验 您可前往智谱大模型 体验中心 ，极速体验模型能力。 在对话框输入相关参数及prompt，点击发送，即可看到对应模型所输出的结果。 点击页面左侧的按钮，可自由切换体验文本模态、多模态模型及数十种智能体。 ​ 快速开始 快速开始 将引导您逐步完成 API 调用流程，涵盖注册账号、环境配置、获取 API key、SDK 使用等关键步骤。帮助您分钟级完成模型调用服务，并集成到您的业务或应用中。 ​ 开发指南 平台提供多种开发方式，满足不同开发者的需求和技术栈偏好。无论您是初学者还是经验丰富的开发者，都能找到适合的集成方案。 HTTP API 调用 标准 RESTful API 接口，支持所有编程语言和平台 官方 Python SDK 功能完整的 Python 开发工具包，支持异步调用和类型安全 官方 Java SDK 企业级 Java 开发工具包，支持高并发和高可用性 OpenAI SDK 兼容 兼容 OpenAI SDK，零学习成本快速迁移现有应用 LangChain 集成 集成 LangChain 框架，构建复杂的 AI 应用和智能代理 ​ 核心概念 GLM Token 上下文窗口 GLM - General Language Model GLM 是一款基于自回归填空的预训练语言模型。ChatGLM 系列模型，支持相对复杂的自然语言指令，并且能够解决困难的推理类问题。该模型配备了易于使用的 API 接口，允许开发者轻松将其融入各类应用，广泛应用于智能客服、虚拟主播、聊天机器人等诸多领域。 Token - 文本处理单位 Token 是模型用来表示自然语言文本的基本单位，可以直观的理解为“字”或“词”；通常 1 个中文词语、1 个英文单词、1 个数字或 1 个符号计为 1 个 token。 GLM 系列模型中 token 和字数的换算比例约为 1:1.6 ，但因为不同模型的分词不同，所以换算比例也存在差异，每一次实际处理 token 数量以模型返回为准，您可以从返回结果的 usage 中查看。 Context Window - 上下文窗口 上下文窗口是指模型在一次对话中能够处理的最大长度。包括： 用户输入的内容 模型生成的回复 模型在生成回复过程中进行推理或调用工具时产生的中间内容（如：GLM-4-AllTools ） 如果超出上下文窗口限制，会发生什么？ 超出部分被截断： 如果总文本量超过了上下文窗口的限制，超出的部分将被自动丢弃，无法被处理。 影响对话内容： 你可能看不到被丢弃的部分，从而影响模型的回答质量或上下文的连贯性。 查看模型的上下文限制，或者使用 Tokenizer 工具估算上下文长度。 重要提醒 ：以上内容主要适用于 GLM-4 系列语言模型。对于多模态模型，输入内容有严格长度限制，若超出限制，系统将提示”prompt 超长”。 模型概览 ⌘ I Powered by This documentation is built and hosted on Mintlify, a developer documentation platform"
-      ],
-      "article_identity": "llms.txt",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "update||zhipu ai docs||https://docs.bigmodel.cn/llms.txt",
-      "id": "evt-a8c5c418516867b4d891",
-      "content_fingerprint": "ai skip to main content ai home page search zhipu ai docs changed the visible update appears to be ai skip to main content ai home page search open the target url to see details ai skip to main content ai home page search k api key search navigation api glm 5 1 glm in excel beta ocr glm on this page copy page z copy page documentation index fetch the complete documentation index at https docs bigmodel cn llms txt use this file to discover all available pages before exploring further bigmodel cn api",
-      "needs_cc_refresh": true,
-      "source_content_fingerprint": "ai skip to main content ai home page search zhipu ai docs changed the visible update appears to be ai skip to main content ai home page search open the target url to see details ai skip to main content ai home page search k api key search navigation api glm 5 1 glm in excel beta ocr glm on this page copy page z copy page documentation index fetch the complete documentation index at https docs bigmodel cn llms txt use this file to discover all available pages before exploring further bigmodel cn api",
-      "github_release_signal_fingerprint": "",
-      "article_h1": "Zhipu AI Expands BigModel Developer Platform With Coding Agent Tools and Realtime Multimodal APIs",
-      "article_standfirst": "Zhipu AI's bigmodel.cn platform has updated its developer documentation to reflect a broader set of AI application primitives, including new MCP server integrations, a coding agent workflow, and GLM-Realtime capabilities for live audio-video interaction.",
-      "article_body": [
-        "Zhipu AI has updated the developer documentation for its bigmodel.cn platform, surfacing a more complete map of APIs and tools available to builders integrating the company's GLM model family into applications. The documentation index now explicitly covers agent-based workflows, realtime multimodal interaction, and dedicated tooling for coding tasks.",
-        "Key additions include MCP (Model Context Protocol) servers for web reading, web search, vision, and GitHub source code access — components that let coding agents connect to external data sources and tools. The platform also documents GLM-Realtime, a capability for live audio-video calls with multimodal interaction including function calling, and a dedicated Coding Agent section covering agentic extension components, workflow patterns, and memory mechanisms. Additional coverage spans GraphRAG for knowledge retrieval, batch processing for high-volume asynchronous work, and a GLM-in-Excel integration (Beta) for spreadsheet-based AI assistance.",
-        "For developers building agentic applications, the expanded reference provides a clearer path to integrating model-powered tools into production pipelines. The addition of MCP server documentation signals Zhipu's intent to position bigmodel.cn as a compatible host for open tooling ecosystems beyond its own model API surface."
-      ],
-      "article_why_matters": [
-        "MCP server coverage signals Zhipu AI's alignment with the open Model Context Protocol standard, making it easier to plug GLM models into tool-use and agent frameworks used by the broader developer community.",
-        "GLM-Realtime's documentation of live audio-video interaction broadens the scope of supported use cases beyond text and file processing to include real-time conversational AI.",
-        "The coding agent section with dedicated workflow patterns and an Excel plugin signals Zhipu's push into developer tooling and desktop AI integration, areas previously dominated by Western AI providers."
-      ],
-      "article_source_note": [
-        "This brief is based on the public developer documentation index (llms.txt) for Zhipu AI's bigmodel.cn platform, accessed via docs.bigmodel.cn. The source is a documentation sitemap rather than a formal changelog, so the specific version or date of the update is not confirmed. Confidence is moderate because the documentation reflects a current state of the platform but does not explicitly distinguish new additions from pre-existing content."
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
