@@ -8614,7 +8614,81 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-05-05T17:42:24+00:00",
+      "source_name": "OpenAI Newsroom",
+      "source_url": "https://openai.com/news/rss.xml",
+      "effective_url": "https://openai.com/news/rss.xml",
+      "target_url": "https://openai.com/index/gpt-5-5-instant-system-card",
+      "category": "news",
+      "headline_en": "Gpt 5 5 Instant System Card",
+      "summary_en": "OpenAI newsroom changed. Most visible article: \"Gpt 5 5 Instant System Card\".",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=GPT-5.5 Instant System Card published=Tue, 05 May 2026 10:00:00 GMT link=https://openai.com/index/gpt-5-5-instant-system-card description= title=Top 10 uses for Codex at work published=Thu, 23 Apr 2026 10:00:00 GMT link=https://openai.com/academy/top-10-use-cases-codex-for-work description=Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows.",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,2 +1,7 @@",
+        "+title=GPT-5.5 Instant System Card",
+        "+published=Tue, 05 May 2026 10:00:00 GMT",
+        "+link=https://openai.com/index/gpt-5-5-instant-system-card",
+        "+description=",
+        "+",
+        " title=GPT-5.5 Instant: smarter, clearer, and more personalized",
+        " published=Tue, 05 May 2026 10:00:00 GMT",
+        "@@ -79,4 +84,9 @@",
+        " description=Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.",
+        " ",
+        "+title=Top 10 uses for Codex at work",
+        "+published=Thu, 23 Apr 2026 10:00:00 GMT",
+        "+link=https://openai.com/academy/top-10-use-cases-codex-for-work",
+        "+description=Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows.",
+        "+",
+        " title=What is Codex?",
+        " published=Thu, 23 Apr 2026 10:00:00 GMT",
+        "@@ -88,12 +98,2 @@",
+        " link=https://openai.com/academy/codex-how-to-start",
+        " description=Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance.",
+        "-",
+        "-title=Codex settings",
+        "-published=Thu, 23 Apr 2026 10:00:00 GMT",
+        "-link=https://openai.com/academy/codex-settings",
+        "-description=Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow.",
+        "-",
+        "-title=Working with Codex",
+        "-published=Thu, 23 Apr 2026 10:00:00 GMT",
+        "-link=https://openai.com/academy/working-with-codex",
+        "-description=Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance."
+      ],
+      "article_identity": "gpt-5-5-instant-system-card",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "news||openai newsroom||https://openai.com/index/gpt-5-5-instant-system-card",
+      "id": "evt-969e92fc753482f10fa0",
+      "content_fingerprint": "gpt 5 5 instant system card openai newsroom changed most visible article gpt 5 5 instant system card title gpt 5 5 instant system card published tue 05 may 2026 10 00 00 gmt link https openai com index gpt 5 5 instant system card description title top 10 uses for codex at work published thu 23 apr 2026 10 00 00 gmt link https openai com academy top 10 use cases codex for work description explore 10 practical codex use cases to automate tasks create deliverables and turn real inputs into outputs across tools files and workflows",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "gpt 5 5 instant system card openai newsroom changed most visible article gpt 5 5 instant system card title gpt 5 5 instant system card published tue 05 may 2026 10 00 00 gmt link https openai com index gpt 5 5 instant system card description title top 10 uses for codex at work published thu 23 apr 2026 10 00 00 gmt link https openai com academy top 10 use cases codex for work description explore 10 practical codex use cases to automate tasks create deliverables and turn real inputs into outputs across tools files and workflows",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "OpenAI Publishes GPT-5.5 Instant System Card",
+      "article_standfirst": "OpenAI has released the system card for GPT-5.5 Instant, its latest model variant, offering a public accounting of the model's capabilities, safety evaluations, and known limitations.",
+      "article_body": [
+        "OpenAI published the system card for GPT-5.5 Instant on May 5, 2026, making the document available via its newsroom. The system card, a standard disclosure practice for the company, details the model's technical capabilities, safety-testing results, and areas of known risk or uncertainty.",
+        "System cards accompany major OpenAI model releases and are intended to give researchers, developers, and the public insight into how the model was evaluated before and after deployment. The GPT-5.5 Instant variant is positioned alongside OpenAI's broader GPT-5 family of models.",
+        "For developers and AI practitioners, the system card serves as a key reference for understanding where GPT-5.5 Instant is appropriate to deploy and where safeguards may be less robust. Teams integrating the model into products or workflows should review the document to assess fit and risk for their specific use cases."
+      ],
+      "article_why_matters": [
+        "System cards are one of the few public windows into how OpenAI evaluates its models for safety and known failure modes before release.",
+        "GPT-5.5 Instant is the latest variant in OpenAI's GPT-5 family, making this disclosure relevant to anyone building on or evaluating OpenAI's newest model tier.",
+        "Developers and product teams can use the system card to make informed decisions about where to deploy or restrict the model in their own applications."
+      ],
+      "article_source_note": [
+        "The brief is based on metadata from OpenAI's newsroom RSS feed and the system card's publication date. The full text of the GPT-5.5 Instant system card was not retrieved in this crawl, so this brief reflects what is publicly listed rather than the document's substantive contents. A full assessment would require reading the card itself."
+      ],
+      "article_confidence": "weak",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-05-05T17:10:49+00:00"
+  "generated_at": "2026-05-05T17:43:10+00:00"
 }
