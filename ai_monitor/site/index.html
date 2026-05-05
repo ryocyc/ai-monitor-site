@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-05T03:57:26+00:00">Last built: <span data-utc="2026-05-05T03:57:26+00:00">2026-05-05 03:57 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-05T04:08:13+00:00">Last built: <span data-utc="2026-05-05T04:08:13+00:00">2026-05-05 04:08 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-05-05T04:07:30+00:00" data-utc="2026-05-05T04:07:30+00:00">2026-05-05 04:07 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-21528b42ea321e18d044.html">OpenAI and PwC Partner to Bring AI Agents to Enterprise Finance Functions</a></h2>
+              <p class="summary">OpenAI and the professional services firm PwC have announced a collaboration aimed at deploying AI agents inside enterprise finance departments, targeting CFO workflows including forecasting, controls automation, and financial reporting modernization.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/openai-pwc-finance-collaboration">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="update">
               <div class="card-top">
                 <span class="pill">update</span>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>Runway Pricing</span>
                 <a href="https://runwayml.com/pricing">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-05-04T18:51:01+00:00" data-utc="2026-05-04T18:51:01+00:00">2026-05-04 18:51 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-91b0c7c67f6f481c8af7.html">OpenAI Reveals Technical Architecture Behind Its Real-Time Voice AI Infrastructure</a></h2>
-              <p class="summary">OpenAI has published a detailed account of how it rebuilt its WebRTC stack to deliver low-latency, globally scaled voice interactions, a move that underscores the growing engineering complexity behind real-time AI voice products.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-05T03:57:26+00:00";
+    const currentGeneratedAt = "2026-05-05T04:08:13+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
