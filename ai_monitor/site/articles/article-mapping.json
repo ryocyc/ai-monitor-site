@@ -1,4 +1,7 @@
 {
+  "evt-f9a56b69e968fdecbfb2": "evt-f9a56b69e968fdecbfb2",
+  "blog||hugging face blog||https://huggingface.co/blog/ngxson/make-your-own-rag": "evt-f9a56b69e968fdecbfb2",
+  "ngxson/make-your-own-rag": "evt-f9a56b69e968fdecbfb2",
   "evt-06867225d11a276499c4": "evt-06867225d11a276499c4",
   "update||n8n blog||n8n-blog-production-ai-playbook-production-ai-playbook-evaluation-and-monitoring-an-ai-workflow-that": "evt-06867225d11a276499c4",
   "n8n-blog-production-ai-playbook-production-ai-playbook-evaluation-and-monitoring-an-ai-workflow-that": "evt-06867225d11a276499c4",
@@ -468,7 +471,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-f9a56b69e968fdecbfb2": "evt-f9a56b69e968fdecbfb2",
-  "blog||hugging face blog||https://huggingface.co/blog/ngxson/make-your-own-rag": "evt-f9a56b69e968fdecbfb2",
-  "ngxson/make-your-own-rag": "evt-f9a56b69e968fdecbfb2"
+  "evt-5ce31f257f94415485ed": "evt-5ce31f257f94415485ed",
+  "news||openai newsroom||https://openai.com/index/gpt-5-5-instant": "evt-5ce31f257f94415485ed",
+  "gpt-5-5-instant": "evt-5ce31f257f94415485ed"
 }

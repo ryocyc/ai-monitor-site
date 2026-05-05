@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-05T16:59:46+00:00">Last built: <span data-utc="2026-05-05T16:59:46+00:00">2026-05-05 16:59 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-05T17:10:50+00:00">Last built: <span data-utc="2026-05-05T17:10:50+00:00">2026-05-05 17:10 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-05-05T17:09:51+00:00" data-utc="2026-05-05T17:09:51+00:00">2026-05-05 17:09 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-5ce31f257f94415485ed.html">OpenAI Refreshes ChatGPT&#x27;s Default Model with GPT-5.5 Instant</a></h2>
+              <p class="summary">OpenAI has begun rolling out GPT-5.5 Instant, an updated version of the model powering ChatGPT by default, promising higher accuracy, fewer hallucinations, and more granular personalization controls.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/gpt-5-5-instant">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>GitHub SGLang Releases</span>
                 <a href="https://github.com/sgl-project/sglang/releases/tag/v0.5.11">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-05-05T04:07:30+00:00" data-utc="2026-05-05T04:07:30+00:00">2026-05-05 04:07 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-21528b42ea321e18d044.html">OpenAI and PwC Partner to Bring AI Agents to Enterprise Finance Functions</a></h2>
-              <p class="summary">OpenAI and the professional services firm PwC have announced a collaboration aimed at deploying AI agents inside enterprise finance departments, targeting CFO workflows including forecasting, controls automation, and financial reporting modernization.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/index/openai-pwc-finance-collaboration">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-05T16:59:46+00:00";
+    const currentGeneratedAt = "2026-05-05T17:10:50+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
