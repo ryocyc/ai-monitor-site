@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-05T06:55:37+00:00">Last built: <span data-utc="2026-05-05T06:55:37+00:00">2026-05-05 06:55 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-05T07:06:46+00:00">Last built: <span data-utc="2026-05-05T07:06:46+00:00">2026-05-05 07:06 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="release">
+              <div class="card-top">
+                <span class="pill">release</span>
+                <time datetime="2026-05-05T07:05:59+00:00" data-utc="2026-05-05T07:05:59+00:00">2026-05-05 07:05 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-83ddb0c1f4b07c0ae7ff.html">SGLang v0.5.11 Released, Adding Backend Support for DeepSeek-V3-0324 and QwQ-32B</a></h2>
+              <p class="summary">SGLang, a popular open-source engine for structured LLM serving and agentic pipeline orchestration, shipped version 0.5.11 on May 5, 2026, with backend support for two newly capable open-weight models: DeepSeek-V3-0324 and QwQ-32B.</p>
+              <div class="card-bottom">
+                <span>GitHub SGLang Releases</span>
+                <a href="https://github.com/sgl-project/sglang/releases/tag/v0.5.11">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -162,19 +175,6 @@
               </div>
             </article>
             
-            <article class="card" data-category="release">
-              <div class="card-top">
-                <span class="pill">release</span>
-                <time datetime="2026-04-30T01:48:54+00:00" data-utc="2026-04-30T01:48:54+00:00">2026-04-30 01:48 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-6a2f71e5d0acc2437411.html">Ollama Issues Release Candidate v0.22.1 with Gemma4 Renderer Update</a></h2>
-              <p class="summary">Ollama has tagged v0.22.1-rc1, a release candidate that updates the project&#x27;s Gemma4 model renderer, marking the first release-level bump since the prior stable release.</p>
-              <div class="card-bottom">
-                <span>GitHub Ollama Releases</span>
-                <a href="https://github.com/ollama/ollama/releases/tag/v0.22.1-rc1">Source</a>
-              </div>
-            </article>
-            
             <article class="card" data-category="docs">
               <div class="card-top">
                 <span class="pill">docs</span>
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-05T06:55:37+00:00";
+    const currentGeneratedAt = "2026-05-05T07:06:46+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
