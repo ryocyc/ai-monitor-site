@@ -1,4 +1,7 @@
 {
+  "evt-ab8b00391477d3680bd4": "evt-ab8b00391477d3680bd4",
+  "news||openai newsroom||https://openai.com/index/introducing-b2b-signals": "evt-ab8b00391477d3680bd4",
+  "introducing-b2b-signals": "evt-ab8b00391477d3680bd4",
   "evt-b90aa6101ef70fc8f192": "evt-b90aa6101ef70fc8f192",
   "news||openai newsroom||https://openai.com/index/mrc-supercomputer-networking": "evt-b90aa6101ef70fc8f192",
   "mrc-supercomputer-networking": "evt-b90aa6101ef70fc8f192",
@@ -492,7 +495,10 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-ab8b00391477d3680bd4": "evt-ab8b00391477d3680bd4",
-  "news||openai newsroom||https://openai.com/index/introducing-b2b-signals": "evt-ab8b00391477d3680bd4",
-  "introducing-b2b-signals": "evt-ab8b00391477d3680bd4"
+  "evt-1c3bf5ad9b42062b329a": "evt-1c3bf5ad9b42062b329a",
+  "news||openai newsroom||https://openai.com/index/introducing-chatgpt-futures-class-of-2026": "evt-1c3bf5ad9b42062b329a",
+  "introducing-chatgpt-futures-class-of-2026": "evt-1c3bf5ad9b42062b329a",
+  "evt-e9a691c8afb8ca15d5c8": "evt-e9a691c8afb8ca15d5c8",
+  "blog||hugging face blog||https://huggingface.co/blog/clem/reachymini-appstore": "evt-e9a691c8afb8ca15d5c8",
+  "clem/reachymini-appstore": "evt-e9a691c8afb8ca15d5c8"
 }
