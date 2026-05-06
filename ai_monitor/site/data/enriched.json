@@ -9343,7 +9343,80 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-05-06T22:57:53+00:00",
+      "source_name": "OpenAI Newsroom",
+      "source_url": "https://openai.com/news/rss.xml",
+      "effective_url": "https://openai.com/news/rss.xml",
+      "target_url": "https://openai.com/index/singular-bank",
+      "category": "news",
+      "headline_en": "Singular Bank",
+      "summary_en": "OpenAI newsroom changed. Most visible article: \"Singular Bank\".",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "title=Singular Bank helps bankers move fast with ChatGPT and Codex link=https://openai.com/index/singular-bank description=Singular Bank built Singularity, an internal assistant using ChatGPT and Codex to help bankers save 60–90 minutes daily on meeting prep, portfolio analysis, and follow-up. title=Uber uses OpenAI to help people earn smarter and book faster published=Wed, 06 May 2026 00:00:00 GMT link=https://openai.com/index/uber description=Uber uses OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace.",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -4,8 +4,8 @@",
+        " description=Meet the ChatGPT Futures Class of 2026—26 student innovators using AI to build, research, and drive real-world impact. Discover how this generation is redefining learning, creativity, and opportunity with ChatGPT.",
+        " ",
+        "-title=Uber uses OpenAI to help people earn smarter and book faster",
+        "+title=Singular Bank helps bankers move fast with ChatGPT and Codex",
+        " published=Wed, 06 May 2026 00:00:00 GMT",
+        "-link=https://openai.com/index/uber",
+        "-description=Uber uses OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace.",
+        "+link=https://openai.com/index/singular-bank",
+        "+description=Singular Bank built Singularity, an internal assistant using ChatGPT and Codex to help bankers save 60–90 minutes daily on meeting prep, portfolio analysis, and follow-up.",
+        " ",
+        " title=How frontier enterprises are building an AI advantage",
+        "@@ -13,4 +13,9 @@",
+        " link=https://openai.com/index/introducing-b2b-signals",
+        " description=OpenAI’s B2B Signals research shows how frontier enterprises deepen AI adoption, scale Codex-powered agentic workflows, and build durable competitive advantage.",
+        "+",
+        "+title=Uber uses OpenAI to help people earn smarter and book faster",
+        "+published=Wed, 06 May 2026 00:00:00 GMT",
+        "+link=https://openai.com/index/uber",
+        "+description=Uber uses OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace.",
+        " ",
+        " title=GPT-5.5 Instant: smarter, clearer, and more personalized",
+        "@@ -93,7 +98,2 @@",
+        " link=https://openai.com/index/choco",
+        " description=How Choco used OpenAI APIs to streamline food distribution, boost productivity, and unlock growth—an in-depth customer story on real-world AI impact.",
+        "-",
+        "-title=Our principles",
+        "-published=Sun, 26 Apr 2026 16:00:00 GMT",
+        "-link=https://openai.com/index/our-principles",
+        "-description=Our mission is to ensure that AGI benefits all of humanity. Sam Altman shares five principles that guide our work."
+      ],
+      "article_identity": "singular-bank",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "news||openai newsroom||https://openai.com/index/singular-bank",
+      "id": "evt-74a145c1c3e6f7881ed3",
+      "content_fingerprint": "singular bank openai newsroom changed most visible article singular bank title singular bank helps bankers move fast with chatgpt and codex link https openai com index singular bank description singular bank built singularity an internal assistant using chatgpt and codex to help bankers save 60 90 minutes daily on meeting prep portfolio analysis and follow up title uber uses openai to help people earn smarter and book faster published wed 06 may 2026 00 00 00 gmt link https openai com index uber description uber uses openai to power ai assistants and voice features that help drivers earn smarter and riders book faster across a global real time marketplace",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "singular bank openai newsroom changed most visible article singular bank title singular bank helps bankers move fast with chatgpt and codex link https openai com index singular bank description singular bank built singularity an internal assistant using chatgpt and codex to help bankers save 60 90 minutes daily on meeting prep portfolio analysis and follow up title uber uses openai to help people earn smarter and book faster published wed 06 may 2026 00 00 00 gmt link https openai com index uber description uber uses openai to power ai assistants and voice features that help drivers earn smarter and riders book faster across a global real time marketplace",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "Singular Bank Rolls Out AI Assistant to Cut Up to 90 Minutes of Daily Busywork for Its Bankers",
+      "article_standfirst": "Singular Bank has deployed an internal AI assistant called Singularity, built on OpenAI's ChatGPT and Codex, to automate routine tasks across meeting prep, portfolio analysis, and client follow-up—claiming workers reclaim nearly an hour and a half each day.",
+      "article_body": [
+        "Singular Bank has gone live with Singularity, an internal assistant powered by OpenAI's ChatGPT and Codex models, according to a case study published on OpenAI's newsroom. The tool is designed to slot directly into bankers' existing workflows, handling the administrative overhead that typically eats into billable or analytical time.",
+        "Singularity targets three recurring pain points: meeting preparation, portfolio analysis, and client follow-up. Rather than routing these tasks through separate tools or manual processes, bankers interact with a single conversational interface that draws on both a large language model (ChatGPT) and a code-understanding and generation model (Codex) to retrieve, synthesize, and draft content on demand.",
+        "The practical payoff, as framed by Singular Bank, is concrete: workers save between 60 and 90 minutes per day. For a financial services firm, even modest efficiency gains across a large advisor or analyst population can meaningfully shift capacity toward higher-value client work. The deployment also signals how enterprise AI stacks are increasingly combining general-purpose language models with specialized code or domain models rather than relying on a single model for everything."
+      ],
+      "article_why_matters": [
+        "It is one of the more specific productivity claims in a financial-services AI deployment: up to 90 minutes saved per banker per day, measured across a real internal rollout rather than a proof-of-concept.",
+        "The dual-model architecture—ChatGPT handling natural language tasks alongside Codex's code and structured-reasoning capabilities—offers a template for other firms deciding how to combine general and specialized AI models in production.",
+        "As banks and wealth managers face pressure to demonstrate AI ROI, Singular Bank's Singularity provides a public data point for how internal-assistant deployments can translate into daily time savings that are easily understood by both technical and non-technical stakeholders."
+      ],
+      "article_source_note": [
+        "The case study was pulled from OpenAI's public newsroom feed; the source text does not include internal metrics, technical architecture details, or third-party validation of the time-savings figure. Confidence is moderate: the core claim is specific but sourced entirely from OpenAI's own promotional content rather than an independent report."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-05-06T22:47:46+00:00"
+  "generated_at": "2026-05-06T22:58:45+00:00"
 }
