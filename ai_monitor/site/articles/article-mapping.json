@@ -1,4 +1,7 @@
 {
+  "evt-757c04e975969829ef23": "evt-757c04e975969829ef23",
+  "blog||hugging face blog||https://huggingface.co/blog/repellant-to-the-open-asr-leaderboard": "evt-757c04e975969829ef23",
+  "repellant-to-the-open-asr-leaderboard": "evt-757c04e975969829ef23",
   "evt-fc77f301b4199acfdfc3": "evt-fc77f301b4199acfdfc3",
   "blog||hugging face blog||https://huggingface.co/blog/axolotl-ai-co/finetuning-ternary-llms-tii-axolotl": "evt-fc77f301b4199acfdfc3",
   "axolotl-ai-co/finetuning-ternary-llms-tii-axolotl": "evt-fc77f301b4199acfdfc3",
@@ -486,7 +489,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-757c04e975969829ef23": "evt-757c04e975969829ef23",
-  "blog||hugging face blog||https://huggingface.co/blog/repellant-to-the-open-asr-leaderboard": "evt-757c04e975969829ef23",
-  "repellant-to-the-open-asr-leaderboard": "evt-757c04e975969829ef23"
+  "evt-b90aa6101ef70fc8f192": "evt-b90aa6101ef70fc8f192",
+  "news||openai newsroom||https://openai.com/index/mrc-supercomputer-networking": "evt-b90aa6101ef70fc8f192",
+  "mrc-supercomputer-networking": "evt-b90aa6101ef70fc8f192"
 }

@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-06T11:29:36+00:00">Last built: <span data-utc="2026-05-06T11:29:36+00:00">2026-05-06 11:29 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-06T11:40:43+00:00">Last built: <span data-utc="2026-05-06T11:40:43+00:00">2026-05-06 11:40 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-05-06T11:39:41+00:00" data-utc="2026-05-06T11:39:41+00:00">2026-05-06 11:39 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-b90aa6101ef70fc8f192.html">OpenAI Open-Sources MRC Networking Protocol to Shrink AI Training Failures at Scale</a></h2>
+              <p class="summary">OpenAI has contributed a new networking protocol called MRC (Multipath Reliable Connection) to the Open Compute Project, targeting the reliability bottlenecks that plague large distributed AI training runs.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/mrc-supercomputer-networking">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -107,19 +120,6 @@
               <div class="card-bottom">
                 <span>Microsoft AI Blog</span>
                 <a href="https://blogs.microsoft.com/ai/">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-05-05T18:03:52+00:00" data-utc="2026-05-05T18:03:52+00:00">2026-05-05 18:03 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-daf6b06aab3133fabe06.html">OpenAI Launches Self-Serve Ads Manager for ChatGPT in Beta</a></h2>
-              <p class="summary">OpenAI has opened a beta self-serve Ads Manager for ChatGPT, introducing CPC bidding and new measurement tools as it moves to scale its advertising business beyond early partner pilots.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/index/new-ways-to-buy-chatgpt-ads">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-06T11:29:36+00:00";
+    const currentGeneratedAt = "2026-05-06T11:40:43+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
