@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-06T04:05:34+00:00">Last built: <span data-utc="2026-05-06T04:05:34+00:00">2026-05-06 04:05 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-06T04:27:02+00:00">Last built: <span data-utc="2026-05-06T04:27:02+00:00">2026-05-06 04:27 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-05-06T04:26:06+00:00" data-utc="2026-05-06T04:26:06+00:00">2026-05-06 04:26 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-fc77f301b4199acfdfc3.html">Axolotl AI Publishes Guide on Fine-Tuning Low-Bit Ternary LLMs with TII Axolotl</a></h2>
+              <p class="summary">A new community guide walks through training low-bit ternary language models using the Axolotl open-source fine-tuning framework, offering a practical path toward extreme model compression.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/axolotl-ai-co/finetuning-ternary-llms-tii-axolotl">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="update">
               <div class="card-top">
                 <span class="pill">update</span>
@@ -107,19 +120,6 @@
               <div class="card-bottom">
                 <span>OpenAI Newsroom</span>
                 <a href="https://openai.com/index/new-ways-to-buy-chatgpt-ads">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-05-05T13:35:35+00:00" data-utc="2026-05-05T13:35:35+00:00">2026-05-05 13:35 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-f9a56b69e968fdecbfb2.html">Hugging Face Community Guide Walks Through Building a RAG System From Scratch</a></h2>
-              <p class="summary">A community-authored tutorial on Hugging Face&#x27;s blog walks through coding a retrieval-augmented generation pipeline end-to-end, targeting developers who want to understand the underlying mechanics rather than rely on managed frameworks.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/ngxson/make-your-own-rag">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-06T04:05:34+00:00";
+    const currentGeneratedAt = "2026-05-06T04:27:02+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
