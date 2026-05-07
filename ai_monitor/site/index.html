@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-07T17:12:58+00:00">Last built: <span data-utc="2026-05-07T17:12:58+00:00">2026-05-07 17:12 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-07T17:23:57+00:00">Last built: <span data-utc="2026-05-07T17:23:57+00:00">2026-05-07 17:23 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-05-07T17:23:03+00:00" data-utc="2026-05-07T17:23:03+00:00">2026-05-07 17:23 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-e8681508888caf9b3e35.html">OpenAI Rolls Out Realtime Voice Models With Reasoning, Translation, and Transcription in the API</a></h2>
+              <p class="summary">OpenAI has shipped a new family of realtime voice models to its API, adding reasoning, translation, and transcription capabilities aimed at developers building natural, multimodal voice experiences.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>Hugging Face Blog</span>
                 <a href="https://huggingface.co/blog/mlabonne/abliteration">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-05-07T11:02:14+00:00" data-utc="2026-05-07T11:02:14+00:00">2026-05-07 11:02 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-69217213fe7391fc1f63.html">Parloa Uses OpenAI Models to Deploy Voice-Driven AI Customer Service Agents at Enterprise Scale</a></h2>
-              <p class="summary">OpenAI has published a customer story highlighting Parloa, which uses its models to build and run real-time, voice-enabled AI agents that handle customer service conversations at scale.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/index/parloa">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-07T17:12:58+00:00";
+    const currentGeneratedAt = "2026-05-07T17:23:57+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
