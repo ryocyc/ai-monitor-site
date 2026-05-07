@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-07T13:51:49+00:00">Last built: <span data-utc="2026-05-07T13:51:49+00:00">2026-05-07 13:51 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-07T14:03:07+00:00">Last built: <span data-utc="2026-05-07T14:03:07+00:00">2026-05-07 14:03 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-05-07T14:01:54+00:00" data-utc="2026-05-07T14:01:54+00:00">2026-05-07 14:01 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-6aac2d7ba4b54d7a9c02.html">BEAMR Open-Sources Video-Compression-Resilient Depth Estimation for Depth Anything V2</a></h2>
+              <p class="summary">BEAMR has published a community blog post on Hugging Face detailing work to make the Depth Anything V2 monocular depth estimation model more robust when processing compressed video, a common failure mode in real-world robotics and AR pipelines.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/BEAMR-LTD/improving-dav2-robustness-to-video-compression">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -107,19 +120,6 @@
               <div class="card-bottom">
                 <span>n8n Blog</span>
                 <a href="https://blog.n8n.io/">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-05-06T19:20:05+00:00" data-utc="2026-05-06T19:20:05+00:00">2026-05-06 19:20 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-1e522de73afd9528a0aa.html">ServiceNow AI Shares Lessons From Migrating vLLM V0 to V1: Correctness First, Corrections Later</a></h2>
-              <p class="summary">Researchers at ServiceNow AI have published a detailed account of their experience transitioning between vLLM versions while training models with reinforcement learning, finding that enforcing strict output correctness before iterating on reward shaping yielded more reliable downstream results.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-07T13:51:49+00:00";
+    const currentGeneratedAt = "2026-05-07T14:03:07+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
