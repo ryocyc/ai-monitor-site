@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-07T09:16:24+00:00">Last built: <span data-utc="2026-05-07T09:16:24+00:00">2026-05-07 09:16 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-07T09:27:17+00:00">Last built: <span data-utc="2026-05-07T09:27:17+00:00">2026-05-07 09:27 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="update">
+              <div class="card-top">
+                <span class="pill">update</span>
+                <time datetime="2026-05-07T09:26:39+00:00" data-utc="2026-05-07T09:26:39+00:00">2026-05-07 09:26 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-fad7b94e8dcc128b3e1d.html">n8n Publishes Practical Guide to Production-Grade RAG Pipelines</a></h2>
+              <p class="summary">n8n&#x27;s latest blog post walks builders through advanced retrieval-augmented generation techniques, from raw data cleaning to agentic retrieval logic, with implementation patterns suited to production deployments.</p>
+              <div class="card-bottom">
+                <span>n8n Blog</span>
+                <a href="https://blog.n8n.io/">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>Microsoft AI Blog</span>
                 <a href="https://blogs.microsoft.com/ai/">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="update">
-              <div class="card-top">
-                <span class="pill">update</span>
-                <time datetime="2026-05-05T10:46:11+00:00" data-utc="2026-05-05T10:46:11+00:00">2026-05-05 10:46 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-06867225d11a276499c4.html">n8n publishes guide on evaluating and monitoring AI workflows in production</a></h2>
-              <p class="summary">The workflow automation platform n8n has released a detailed playbook covering how teams can track AI performance, use LLM-as-a-Judge scoring, and catch model drift before it affects end users.</p>
-              <div class="card-bottom">
-                <span>n8n Blog</span>
-                <a href="https://blog.n8n.io/">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-07T09:16:24+00:00";
+    const currentGeneratedAt = "2026-05-07T09:27:17+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
