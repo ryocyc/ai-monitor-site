@@ -1,4 +1,7 @@
 {
+  "evt-de385d2b8f0cb5e3e75f": "evt-de385d2b8f0cb5e3e75f",
+  "blog||hugging face blog||https://huggingface.co/blog/privacy-preserving-oncology-clinical-decision-support": "evt-de385d2b8f0cb5e3e75f",
+  "privacy-preserving-oncology-clinical-decision-support": "evt-de385d2b8f0cb5e3e75f",
   "evt-50841836f6c502eef6ad": "evt-50841836f6c502eef6ad",
   "release||github last30days-skill releases||github::mvanhorn/last30days-skill": "evt-50841836f6c502eef6ad",
   "v3.2.0": "evt-50841836f6c502eef6ad",
@@ -549,7 +552,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-de385d2b8f0cb5e3e75f": "evt-de385d2b8f0cb5e3e75f",
-  "blog||hugging face blog||https://huggingface.co/blog/privacy-preserving-oncology-clinical-decision-support": "evt-de385d2b8f0cb5e3e75f",
-  "privacy-preserving-oncology-clinical-decision-support": "evt-de385d2b8f0cb5e3e75f"
+  "evt-273e372ad4c34267355a": "evt-273e372ad4c34267355a",
+  "blog||hugging face blog||https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck": "evt-273e372ad4c34267355a",
+  "lablab-ai-amd-developer-hackathon/machinacheck": "evt-273e372ad4c34267355a"
 }
