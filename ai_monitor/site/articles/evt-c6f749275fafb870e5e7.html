@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMD MI300X Used to Build Manufacturability System, Detailed in New Hugging Face Community Post | AI Signal Articles</title>
+  <meta name="description" content="A new community article on Hugging Face describes a manufacturability system built to run on AMD&#x27;s MI300X AI accelerator, illustrating growing interest...">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
+       crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --surface: rgba(255,255,255,0.88);
+      --ink: #182018;
+      --muted: #556055;
+      --accent: #0f766e;
+      --accent-soft: rgba(15,118,110,0.12);
+      --border: rgba(15,118,110,0.16);
+      --shadow: 0 18px 42px rgba(27, 39, 33, 0.09);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
+    }
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .topline, .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .topline { justify-content: space-between; margin-bottom: 22px; color: var(--muted); font-size: 0.92rem; }
+    .top-ad {
+      margin-bottom: 18px;
+      padding: 12px 14px;
+      border: 1px dashed rgba(15,118,110,0.28);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.68);
+    }
+    .ad-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .ad-slot {
+      min-height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15,118,110,0.08);
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero {
+      padding: 28px 28px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15,118,110,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 14px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 4.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+    }
+    .standfirst {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .hero-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .share-button {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+    .share-button:hover {
+      transform: translateY(-1px);
+      background: rgba(15,118,110,0.18);
+    }
+    .share-status {
+      color: var(--muted);
+      font-size: 0.88rem;
+      min-height: 1.2em;
+    }
+    .content {
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .section {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
+    .section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+    .section li + li {
+      margin-top: 0.45rem;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="top-ad" aria-label="Advertisement">
+      <div class="ad-label">Advertisement</div>
+      <div class="ad-slot">Top banner ad slot</div>
+    </section>
+    <div class="topline">
+      <div><a href="../index.html">Homepage</a> | <a href="../history.html">History</a></div>
+      <div>Generated <span data-utc="2026-05-10T20:55:36+00:00">2026-05-10 20:55 UTC</span></div>
+    </div>
+    <article class="hero">
+      <span class="chip">blog</span>
+      <h1>AMD MI300X Used to Build Manufacturability System, Detailed in New Hugging Face Community Post</h1>
+      <p class="standfirst">A new community article on Hugging Face describes a manufacturability system built to run on AMD&#x27;s MI300X AI accelerator, illustrating growing interest in alternative GPU hardware for industrial AI workloads.</p>
+      <div class="meta">
+        <span>Hugging Face Blog</span>
+        <span>&lt;span data-utc=&quot;2026-05-10T20:54:53+00:00&quot;&gt;2026-05-10 20:54 UTC&lt;/span&gt;</span>
+        <span>Key: evt-c6f749275fafb870e5e7</span>
+        <span>Confidence: weak</span>
+        <span>Mode: claude</span>
+      </div>
+      <div class="hero-actions">
+        <button class="share-button" type="button" id="share-button">Share</button>
+        <span class="share-status" id="share-status" aria-live="polite"></span>
+      </div>
+    </article>
+    <section class="content">
+      
+      <section class="section">
+        <h2>Article body</h2>
+        <p>Hugging Face has published a community-authored article detailing a manufacturability system implemented on AMD&#x27;s MI300X GPU, one of the most powerful Instinct-series accelerators designed for large-scale AI training and inference workloads.</p>
+<p>The post, listed on the Hugging Face blog under research-adjacent community contributions, appears to focus on how the MI300X architecture — which features CDNA 3 compute cores and a unified memory design — can be leveraged to accelerate engineering tasks tied to manufacturing process analysis or optimization.</p>
+<p>For developers and ML engineers evaluating infrastructure for industrial AI or simulation-adjacent workloads, the article offers a concrete example of teams beginning to target AMD&#x27;s silicon beyond the more commonly referenced NVIDIA ecosystem, potentially opening new deployment pathways for supply-chain and manufacturing-oriented models.</p>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Why this matters</h2>
+        <ul class="bullets"><li>MI300X is AMD&#x27;s flagship AI chip and remains under-documented compared to NVIDIA equivalents; community write-ups like this one help the broader ML ecosystem understand its practical capabilities.</li><li>Manufacturability systems often involve computationally heavy simulation or optimization loops, making hardware choice a critical decision for teams deploying at scale.</li><li>The article signals growing openness among the research community to benchmark and port workloads to non-NVIDIA AI hardware, which could affect procurement and infrastructure planning.</li></ul>
+      </section>
+    
+      
+      <section class="section">
+        <h2>Source note</h2>
+        <ul class="bullets"><li>This brief is based on metadata and title information retrieved from the Hugging Face blog index, as the full article text was not available in the source capture. The article is listed as a community blog post under the research and partnerships sections; no body copy, figures, or author details were recoverable from the source.</li></ul>
+      </section>
+    
+      <section class="section">
+        <h2>Original link</h2>
+        <p><a href="https://huggingface.co/blog/manufacturability-system-on-amd-mi300x" rel="nofollow noopener">Open the monitored source</a></p>
+      </section>
+    </section>
+    <div class="footer">
+      This page summarizes a monitored source update and links to the original source for verification.
+      <br><a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../contact.html">Contact / Corrections</a>
+      </div>
+  </main>
+  <script>
+    (() => {
+      const button = document.getElementById("share-button");
+      const status = document.getElementById("share-status");
+      if (!button || !status) return;
+      const shareData = {
+        title: document.title,
+        text: "A new community article on Hugging Face describes a manufacturability system built to run on AMD's MI300X AI accelerator, illustrating gr...",
+        url: window.location.href
+      };
+      const setStatus = (message) => {
+        status.textContent = message;
+        if (message) {
+          window.clearTimeout(setStatus._timer);
+          setStatus._timer = window.setTimeout(() => {
+            status.textContent = "";
+          }, 2400);
+        }
+      };
+      button.addEventListener("click", async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+            setStatus("Shared.");
+            return;
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(window.location.href);
+            setStatus("Link copied.");
+            return;
+          }
+        } catch (error) {
+          setStatus("Share cancelled.");
+          return;
+        }
+        const helper = document.createElement("input");
+        helper.value = window.location.href;
+        document.body.appendChild(helper);
+        helper.select();
+        document.execCommand("copy");
+        helper.remove();
+        setStatus("Link copied.");
+      });
+
+      document.querySelectorAll('[data-utc]').forEach((node) => {
+        const value = node.dataset.utc;
+        if (!value) return;
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return;
+        node.textContent = new Intl.DateTimeFormat(undefined, {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false,
+          timeZoneName: 'short'
+        }).format(date);
+      });
+    })();
+  </script>
+</body>
+</html>
