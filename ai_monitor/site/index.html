@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-11T05:41:43+00:00">Last built: <span data-utc="2026-05-11T05:41:43+00:00">2026-05-11 05:41 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-11T05:52:45+00:00">Last built: <span data-utc="2026-05-11T05:52:45+00:00">2026-05-11 05:52 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="news">
+              <div class="card-top">
+                <span class="pill">news</span>
+                <time datetime="2026-05-11T05:51:48+00:00" data-utc="2026-05-11T05:51:48+00:00">2026-05-11 05:51 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-aadbf65676f6888134d4.html">OpenAI Launches Campus Network to Connect Student AI Clubs Worldwide</a></h2>
+              <p class="summary">OpenAI is inviting university student clubs to join a new global network offering access to AI tools, event hosting support, and a community of AI-engaged peers across campuses.</p>
+              <div class="card-bottom">
+                <span>OpenAI Newsroom</span>
+                <a href="https://openai.com/index/openai-campus-network-student-club-interest-form">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="blog">
               <div class="card-top">
                 <span class="pill">blog</span>
@@ -120,19 +133,6 @@
               <div class="card-bottom">
                 <span>GitHub Open WebUI Releases</span>
                 <a href="https://github.com/open-webui/open-webui/releases/tag/v0.9.4">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="news">
-              <div class="card-top">
-                <span class="pill">news</span>
-                <time datetime="2026-05-10T03:59:19+00:00" data-utc="2026-05-10T03:59:19+00:00">2026-05-10 03:59 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-be00c88c2455b379bf74.html">OpenAI Details Security Architecture for Codex Coding Agent Deployment</a></h2>
-              <p class="summary">OpenAI has published its operational blueprint for running Codex, its autonomous coding agent, in enterprise environments—outlining sandboxing, approval workflows, network controls, and purpose-built telemetry as the four pillars of safe, auditable deployment.</p>
-              <div class="card-bottom">
-                <span>OpenAI Newsroom</span>
-                <a href="https://openai.com/index/running-codex-safely">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-11T05:41:43+00:00";
+    const currentGeneratedAt = "2026-05-11T05:52:45+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
