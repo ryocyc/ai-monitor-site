@@ -64,7 +64,7 @@
     </section>
     <section class="toolbar">
       <div class="toolbar-meta">
-        <div id="last-built-label" data-generated-at="2026-05-11T13:06:16+00:00">Last built: <span data-utc="2026-05-11T13:06:16+00:00">2026-05-11 13:06 UTC</span> - Showing 10 items</div>
+        <div id="last-built-label" data-generated-at="2026-05-11T13:17:23+00:00">Last built: <span data-utc="2026-05-11T13:17:23+00:00">2026-05-11 13:17 UTC</span> - Showing 10 items</div>
         <div class="live-indicator"><span class="live-dot"></span><span id="live-status">Auto-checking for fresh updates every 5 minutes</span></div>
       </div>
     </section>
@@ -84,6 +84,19 @@
     </section>
     <p class="sub"><a href="./history.html">Open full history</a></p>
     <section class="list">
+            <article class="card" data-category="blog">
+              <div class="card-top">
+                <span class="pill">blog</span>
+                <time datetime="2026-05-11T13:16:21+00:00" data-utc="2026-05-11T13:16:21+00:00">2026-05-11 13:16 UTC</time>
+              </div>
+              <h2 class="headline"><a href="./articles/evt-448d6c257bf992ca3192.html">Two Years Running Local AI on a Laptop: Open Models Outpaced Moore&#x27;s Law</a></h2>
+              <p class="summary">A community-authored deep-dive on Hugging Face traces two years of running open-source AI models on consumer laptop hardware, finding that model efficiency gains have consistently outrun the historical pace of Moore&#x27;s Law.</p>
+              <div class="card-bottom">
+                <span>Hugging Face Blog</span>
+                <a href="https://huggingface.co/blog/mishig/local-moores-law">Source</a>
+              </div>
+            </article>
+            
             <article class="card" data-category="news">
               <div class="card-top">
                 <span class="pill">news</span>
@@ -94,19 +107,6 @@
               <div class="card-bottom">
                 <span>OpenAI Newsroom</span>
                 <a href="https://openai.com/index/openai-launches-the-deployment-company">Source</a>
-              </div>
-            </article>
-            
-            <article class="card" data-category="blog">
-              <div class="card-top">
-                <span class="pill">blog</span>
-                <time datetime="2026-05-10T20:54:53+00:00" data-utc="2026-05-10T20:54:53+00:00">2026-05-10 20:54 UTC</time>
-              </div>
-              <h2 class="headline"><a href="./articles/evt-c6f749275fafb870e5e7.html">AMD MI300X Used to Build Manufacturability System, Detailed in New Hugging Face Community Post</a></h2>
-              <p class="summary">A new community article on Hugging Face describes a manufacturability system built to run on AMD&#x27;s MI300X AI accelerator, illustrating growing interest in alternative GPU hardware for industrial AI workloads.</p>
-              <div class="card-bottom">
-                <span>Hugging Face Blog</span>
-                <a href="https://huggingface.co/blog/manufacturability-system-on-amd-mi300x">Source</a>
               </div>
             </article>
             
@@ -227,7 +227,7 @@
     const refreshDismissButton = document.getElementById('refresh-dismiss');
     const lastBuiltLabel = document.getElementById('last-built-label');
     const liveStatus = document.getElementById('live-status');
-    const currentGeneratedAt = "2026-05-11T13:06:16+00:00";
+    const currentGeneratedAt = "2026-05-11T13:17:23+00:00";
     const autoRefreshCheckMs = 5 * 60 * 1000;
     let autoRefreshTimeout = null;
     let dismissedGeneration = null;
