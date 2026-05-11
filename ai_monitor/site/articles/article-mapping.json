@@ -1,4 +1,7 @@
 {
+  "evt-81469439fa68d9d3cdd6": "evt-81469439fa68d9d3cdd6",
+  "blog||hugging face blog||https://huggingface.co/blog/train-multimodal-sentence-transformers": "evt-81469439fa68d9d3cdd6",
+  "train-multimodal-sentence-transformers": "evt-81469439fa68d9d3cdd6",
   "evt-448d6c257bf992ca3192": "evt-448d6c257bf992ca3192",
   "blog||hugging face blog||https://huggingface.co/blog/mishig/local-moores-law": "evt-448d6c257bf992ca3192",
   "mishig/local-moores-law": "evt-448d6c257bf992ca3192",
@@ -570,7 +573,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-81469439fa68d9d3cdd6": "evt-81469439fa68d9d3cdd6",
-  "blog||hugging face blog||https://huggingface.co/blog/train-multimodal-sentence-transformers": "evt-81469439fa68d9d3cdd6",
-  "train-multimodal-sentence-transformers": "evt-81469439fa68d9d3cdd6"
+  "evt-ab8b29fa611d4ff83a90": "evt-ab8b29fa611d4ff83a90",
+  "blog||hugging face blog||https://huggingface.co/blog/pretraining-mixture-of-experts-for-emergent-modularity": "evt-ab8b29fa611d4ff83a90",
+  "pretraining-mixture-of-experts-for-emergent-modularity": "evt-ab8b29fa611d4ff83a90"
 }
