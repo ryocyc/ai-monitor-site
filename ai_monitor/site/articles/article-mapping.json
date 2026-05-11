@@ -1,4 +1,7 @@
 {
+  "evt-ab8b29fa611d4ff83a90": "evt-ab8b29fa611d4ff83a90",
+  "blog||hugging face blog||https://huggingface.co/blog/pretraining-mixture-of-experts-for-emergent-modularity": "evt-ab8b29fa611d4ff83a90",
+  "pretraining-mixture-of-experts-for-emergent-modularity": "evt-ab8b29fa611d4ff83a90",
   "evt-81469439fa68d9d3cdd6": "evt-81469439fa68d9d3cdd6",
   "blog||hugging face blog||https://huggingface.co/blog/train-multimodal-sentence-transformers": "evt-81469439fa68d9d3cdd6",
   "train-multimodal-sentence-transformers": "evt-81469439fa68d9d3cdd6",
@@ -573,7 +576,7 @@
   "evt-196183f965f78b4cb445": "evt-196183f965f78b4cb445",
   "news||openai newsroom||https://openai.com/index/scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
   "scaling-codex-to-enterprises-worldwide": "evt-196183f965f78b4cb445",
-  "evt-ab8b29fa611d4ff83a90": "evt-ab8b29fa611d4ff83a90",
-  "blog||hugging face blog||https://huggingface.co/blog/pretraining-mixture-of-experts-for-emergent-modularity": "evt-ab8b29fa611d4ff83a90",
-  "pretraining-mixture-of-experts-for-emergent-modularity": "evt-ab8b29fa611d4ff83a90"
+  "evt-f7db7a2903286fb3dd84": "evt-f7db7a2903286fb3dd84",
+  "blog||hugging face blog||https://huggingface.co/blog/amazon/foundation-model-building-blocks": "evt-f7db7a2903286fb3dd84",
+  "amazon/foundation-model-building-blocks": "evt-f7db7a2903286fb3dd84"
 }
