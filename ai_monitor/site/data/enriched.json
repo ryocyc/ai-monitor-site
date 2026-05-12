@@ -11081,7 +11081,57 @@
       ],
       "article_confidence": "moderate",
       "article_generation_mode": "claude"
+    },
+    {
+      "timestamp": "2026-05-12T23:07:18+00:00",
+      "source_name": "OpenAI Newsroom",
+      "source_url": "https://openai.com/news/rss.xml",
+      "effective_url": "https://openai.com/news/rss.xml",
+      "target_url": "https://openai.com/academy/how-finance-teams-use-codex",
+      "category": "news",
+      "headline_en": "How Finance Teams Use Codex",
+      "summary_en": "OpenAI newsroom changed. Most visible article: \"How Finance Teams Use Codex\".",
+      "headline_zh": "",
+      "summary_zh": "",
+      "evidence_excerpt": "link=https://openai.com/academy/how-finance-teams-use-codex",
+      "diff_excerpt": [
+        "--- previous",
+        "+++ current",
+        "@@ -1,5 +1,5 @@",
+        " title=How finance teams use Codex",
+        " published=Tue, 12 May 2026 15:00:00 GMT",
+        "-link=https://openai.com/academy/codex-for-work/how-finance-teams-use-codex",
+        "+link=https://openai.com/academy/how-finance-teams-use-codex",
+        " description=See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs.",
+        " "
+      ],
+      "article_identity": "how-finance-teams-use-codex",
+      "is_page_error": false,
+      "status": "staging-for-cc",
+      "merge_key": "news||openai newsroom||https://openai.com/academy/how-finance-teams-use-codex",
+      "id": "evt-68a1a731d67a681d17a1",
+      "content_fingerprint": "how finance teams use codex openai newsroom changed most visible article how finance teams use codex link https openai com academy how finance teams use codex",
+      "needs_cc_refresh": true,
+      "source_content_fingerprint": "how finance teams use codex openai newsroom changed most visible article how finance teams use codex link https openai com academy how finance teams use codex",
+      "github_release_signal_fingerprint": "",
+      "article_h1": "OpenAI Spotlights Finance as a Core Use Case for Codex",
+      "article_standfirst": "OpenAI has elevated a dedicated article highlighting how finance teams use Codex, signaling a deliberate push to position the AI coding assistant beyond engineering and into enterprise workflow adoption.",
+      "article_body": [
+        "OpenAI's Academy section now features a prominent article titled 'How Finance Teams Use Codex,' surfacing the content as one of the most visible entries in its newsroom feed.",
+        "The article, hosted at openai.com/academy/how-finance-teams-use-codex, appears to be a case-study or workflow-focused piece aimed at demonstrating Codex's applicability in financial services roles — a sector OpenAI appears eager to cultivate alongside its core developer audience.",
+        "For builders and teams evaluating AI coding tools, the feature signals OpenAI's interest in broadening Codex adoption into non-technical departments, potentially expanding integration opportunities for platforms that connect AI assistants to enterprise workflows."
+      ],
+      "article_why_matters": [
+        "Finance teams are a new audience for AI coding assistants; targeting them suggests OpenAI sees demand for automating spreadsheet logic, script-based reporting, and regulatory compliance tasks.",
+        "Elevating this content in the newsroom signals a deliberate go-to-market shift toward enterpriseverticals rather than purely developer-centric messaging.",
+        "Platform integrators and workflow tooling vendors may find new opportunities to build on top of Codex if adoption spreads beyond engineering orgs into operations and finance."
+      ],
+      "article_source_note": [
+        "Information drawn from OpenAI's newsroom RSS feed and the Academy article landing page. The full article text was not captured in the source scrape, so specific use cases, features, or customer examples referenced within the piece are not available. Confidence is moderate: the article's existence and headline are confirmed, but the depth of content remains unknown."
+      ],
+      "article_confidence": "moderate",
+      "article_generation_mode": "claude"
     }
   ],
-  "generated_at": "2026-05-12T22:04:39+00:00"
+  "generated_at": "2026-05-12T23:07:50+00:00"
 }
