@@ -1,37 +1,5 @@
 {
-  "generated_at": "2026-05-12T23:07:42+00:00",
-  "item_count": 1,
-  "items": [
-    {
-      "timestamp": "2026-05-12T23:07:18+00:00",
-      "source_name": "OpenAI Newsroom",
-      "source_url": "https://openai.com/news/rss.xml",
-      "effective_url": "https://openai.com/news/rss.xml",
-      "target_url": "https://openai.com/academy/how-finance-teams-use-codex",
-      "category": "news",
-      "headline_en": "How Finance Teams Use Codex",
-      "summary_en": "OpenAI newsroom changed. Most visible article: \"How Finance Teams Use Codex\".",
-      "headline_zh": "",
-      "summary_zh": "",
-      "evidence_excerpt": "link=https://openai.com/academy/how-finance-teams-use-codex",
-      "diff_excerpt": [
-        "--- previous",
-        "+++ current",
-        "@@ -1,5 +1,5 @@",
-        " title=How finance teams use Codex",
-        " published=Tue, 12 May 2026 15:00:00 GMT",
-        "-link=https://openai.com/academy/codex-for-work/how-finance-teams-use-codex",
-        "+link=https://openai.com/academy/how-finance-teams-use-codex",
-        " description=See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs.",
-        " "
-      ],
-      "article_identity": "how-finance-teams-use-codex",
-      "is_page_error": false,
-      "status": "staging-for-cc",
-      "merge_key": "news||openai newsroom||https://openai.com/academy/how-finance-teams-use-codex",
-      "id": "evt-68a1a731d67a681d17a1",
-      "content_fingerprint": "how finance teams use codex openai newsroom changed most visible article how finance teams use codex link https openai com academy how finance teams use codex",
-      "needs_cc_refresh": true
-    }
-  ]
+  "generated_at": "2026-05-12T23:18:41+00:00",
+  "item_count": 0,
+  "items": []
 }
