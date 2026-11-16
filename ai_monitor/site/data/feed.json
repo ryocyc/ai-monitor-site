@@ -1,7 +1,19 @@
 {
-  "generated_at": "2026-11-16T10:38:18+00:00",
-  "item_count": 58,
+  "generated_at": "2026-11-16T10:45:23+00:00",
+  "item_count": 59,
   "items": [
+    {
+      "id": "st-6f1190551db3",
+      "timestamp": "2026-11-16T10:45:19+00:00",
+      "category": "outage",
+      "source_name": "DeepSeek Status",
+      "source_url": "https://status.deepseek.com/",
+      "target_url": "https://status.deepseek.com/",
+      "headline_en": "DeepSeek status: Degraded Performance (some components)",
+      "summary_en": "DeepSeek's status page reports 'minor' — Degraded Performance (some components). Check the status page before blaming your prompts.",
+      "severity": "minor",
+      "event": "issue"
+    },
     {
       "id": "st-4b7bc44c650e",
       "timestamp": "2026-11-16T10:33:18+00:00",
@@ -15,7 +27,6 @@
       "event": "issue",
       "headline_zh": "Claude 輕微服務中斷",
       "summary_zh": "Claude（Anthropic 開發的 AI 對話助手）的狀態頁顯示輕微服務中斷。遇到回應異常，用戶現可先查狀態頁，而毋須立即怪罪提示詞，更易分辨是平台故障抑或自身輸入問題。同類選擇另有 ChatGPT。",
-      "src_hash": "bda66429c350",
       "enriched": true
     },
     {
@@ -38,7 +49,6 @@
       },
       "headline_zh": "Mika 為 Android 代辦應用與網頁任務",
       "summary_zh": "Mika（Android 裝置內 AI 代理）可操作應用程式與網頁，替用戶辦事；以前要逐項自己完成，現在可交由裝置上的 AI 執行。其 GitHub 專案 18 日內獲 8,798 顆星。一般自動化可選 Tasker",
-      "src_hash": "fc37f8fe7da4",
       "enriched": true
     },
     {
@@ -61,7 +71,6 @@
       },
       "headline_zh": "Blender AI MCP外掛新增聊天及場景工具",
       "summary_zh": "Blender AI MCP是為3D製作軟件Blender加入AI助手與MCP伺服器的外掛，支援視覺對話、場景操作、多代理流程和bpy編程。用戶以往要逐項點選或自行寫腳本，現可藉ChatGPT、Claude等AI客戶端以對話完成部分工作；四天獲1,903個GitHub星號。同類選擇可比較BlenderMCP",
-      "src_hash": "deaeb1f51169",
       "enriched": true
     },
     {
@@ -84,7 +93,6 @@
       },
       "headline_zh": "Yogurt：私隱AI會議筆記工具",
       "summary_zh": "Yogurt（免費開源AI會議筆記軟件）支援Mac、Windows及Linux，會議筆記可留喺自己電腦。用戶想將內容保留本機，而唔必依賴雲端筆記服務，可以選呢款免費方案；同類選擇亦可考慮Granola。",
-      "src_hash": "d64ac9d861b2",
       "enriched": true
     },
     {
@@ -107,7 +115,6 @@
       },
       "headline_zh": "Capri：Windows本地優先AI代理",
       "summary_zh": "Capri是一款採賽博龐克介面的本地優先Windows桌面AI代理，可操控檔案、應用程式、終端機與瀏覽器。用戶過往須跨工具處理工作，現可透過單一介面統籌操作；相近選擇亦可直接比較Claude Code、Codex等。",
-      "src_hash": "22a95e168f74",
       "enriched": true
     },
     {
