@@ -41,7 +41,10 @@ ENRICHMENT_CACHE = BASE_DIR / "state" / "enriched_cache.json"
 def apply_enrichment_cache(items: list[dict]) -> tuple[int, int]:
     """Re-attach LLM bilingual enrichment from the persistent cache so a
     rebuild never loses it (the old pipeline burned money then wiped zh
-    fields - this is the fix)."""
+    fields - this is the fix). Only applies when the SOURCE material still
+    matches what was enriched (src_hash); stale entries stay un-applied and
+    go back to the enrichment queue in the patrol's enrich step."""
+    import hashlib
     if not ENRICHMENT_CACHE.exists():
         return 0, 0
     try:
@@ -51,11 +54,13 @@ def apply_enrichment_cache(items: list[dict]) -> tuple[int, int]:
     applied = pending = 0
     for item in items:
         cached = cache.get(item.get("id", ""))
-        if cached:
-            item.update(cached)
+        material = f"{item.get('headline_en', '')}|{item.get('summary_en', '')}"
+        current_src = hashlib.sha1(material.encode("utf-8")).hexdigest()[:12]
+        if cached and cached.get("src_hash") == current_src:
+            item.update({k: v for k, v in cached.items() if k != "src_hash"})
             item["enriched"] = True
             applied += 1
-        elif not item.get("enriched"):
+        else:
             pending += 1
     return applied, pending
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T01:37:48+00:00",
+  "generated_at": "2026-11-16T02:58:08+00:00",
   "item_count": 53,
   "items": [
     {
@@ -9,18 +9,15 @@
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50507303",
       "target_url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-      "headline_en": "HN debate: should all AI-generated code be open source?",
-      "summary_en": "Hacker News users are debating whether AI-generated code should be open source. It’s a policy discussion, not a product release, so there are no pricing or feature details for general users yet.",
+      "headline_en": "HN: All AI-generated code should be Open Source (1082 points, 591 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'All AI-generated code should be Open Source' — 1082 points in 11h (~99.9/h).",
       "tier": "hn_hot",
       "metrics": {
         "points": 1082,
         "comments": 591,
         "age_hours": 10.8,
         "velocity_per_hour": 99.93
-      },
-      "headline_zh": "HN 熱議：AI 生成程式碼應開源？",
-      "summary_zh": "Hacker News 用戶正討論 AI 生成程式碼是否應全部開源；這是政策討論，不是產品發布，官方未提供價格或功能細節，一般用戶暫無需行動。",
-      "enriched": true
+      }
     },
     {
       "id": "hn-5388f4beff74",
@@ -29,18 +26,15 @@
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50493251",
       "target_url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "headline_en": "HN discussion: Nvidia allegedly engineered GPU scarcity by funding AI startups",
-      "summary_en": "Hacker News users are discussing an allegation that Nvidia funded AI startups to buy its GPUs, creating scarcity. It’s a debate post, not a confirmed finding, and no pricing or availability details are provided.",
+      "headline_en": "HN: Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs (1099 points, 647 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs' — 1099 points in 47h (~23.5/h).",
       "tier": "hn_hot",
       "metrics": {
         "points": 1099,
         "comments": 647,
         "age_hours": 46.7,
         "velocity_per_hour": 23.52
-      },
-      "headline_zh": "HN 熱議：Nvidia 疑涉 GPU 稀缺",
-      "summary_zh": "Hacker News 用戶討論一項指控：Nvidia 疑以資金支持 AI 初創購買其 GPU，造成稀缺。這是討論而非已確認結論，官方未提供價格或供應細節，用戶暫無需跟進。",
-      "enriched": true
+      }
     },
     {
       "id": "hn-9c9b4a4d06f6",
@@ -49,18 +43,15 @@
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50497589",
       "target_url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-      "headline_en": "Show HN: DeepSeek V3 recreated in about 200 lines of pure Jax",
-      "summary_en": "A Hacker News Show HN post presents DeepSeek V3 implemented in about 200 lines of pure Jax. It’s a technical demo for developers, not a consumer product or service with pricing details.",
+      "headline_en": "HN: Show HN: DeepSeek V3 in ~200 lines of pure Jax (272 points, 27 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Show HN: DeepSeek V3 in ~200 lines of pure Jax' — 272 points in 34h (~7.9/h).",
       "tier": "hn_hot",
       "metrics": {
         "points": 272,
         "comments": 27,
         "age_hours": 34.5,
         "velocity_per_hour": 7.87
-      },
-      "headline_zh": "Show HN：200 行 Jax 重現 DeepSeek V3",
-      "summary_zh": "Hacker News 的 Show HN 貼文展示以約 200 行純 Jax 實作 DeepSeek V3；屬開發者技術示範，不是消費產品或服務，官方未提供價格、上線或功能細節。",
-      "enriched": true
+      }
     },
     {
       "id": "hn-25f4b4b14f70",
@@ -69,18 +60,15 @@
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50497155",
       "target_url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
-      "headline_en": "HN: GLM-5.3 served at 607.8 tok/s on two Nvidia DGX stations with vLLM",
-      "summary_en": "A Hacker News post describes serving GLM-5.3 at 607.8 tokens per second across two Nvidia DGX stations using vLLM. It’s a technical setup report, not a public product, so no user pricing or availability is given.",
+      "headline_en": "HN: Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM (144 points, 69 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM' — 144 points in 36h (~4.1/h).",
       "tier": "hn_rising",
       "metrics": {
         "points": 144,
         "comments": 69,
         "age_hours": 35.5,
         "velocity_per_hour": 4.06
-      },
-      "headline_zh": "HN：GLM-5.3 以 vLLM 達 607.8 tok/s",
-      "summary_zh": "Hacker News 貼文稱以兩部 Nvidia DGX 及 vLLM 服務 GLM-5.3，速度達 607.8 tok/s；這是技術部署分享，不是公開產品，官方未提供價格或可用性細節。",
-      "enriched": true
+      }
     },
     {
       "id": "hn-4d0c29e8f59a",
@@ -89,18 +77,15 @@
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50494696",
       "target_url": "https://news.ycombinator.com/item?id=50494696",
-      "headline_en": "Ask HN: which concrete AI skills are most useful to learn independently?",
-      "summary_en": "Hacker News users are asking which concrete AI skills are most useful to learn independently. It’s a community advice thread, not an official course or product, so no pricing or curriculum details are provided.",
+      "headline_en": "HN: Ask HN: What are the most useful, concrete AI skills to independently learn? (88 points, 52 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Ask HN: What are the most useful, concrete AI skills to independently learn?' — 88 points in 43h (~2.1/h).",
       "tier": "hn_rising",
       "metrics": {
         "points": 88,
         "comments": 52,
         "age_hours": 42.7,
         "velocity_per_hour": 2.06
-      },
-      "headline_zh": "Ask HN：最實用 AI 自學技能？",
-      "summary_zh": "Hacker News 用戶討論哪些具體 AI 技能最值得自學；這是社群意見交流，不是官方課程或產品，未提供價格、課程內容或保證成效，讀者可參考討論方向。",
-      "enriched": true
+      }
     },
     {
       "id": "hn-26f044489f8a",
@@ -109,18 +94,15 @@
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50498051",
       "target_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
-      "headline_en": "HN discussion: alleged smuggling of 1.5M AI GPUs and Huang’s departure",
-      "summary_en": "Hacker News users are discussing a claim that smuggling of 1.5M AI GPUs could be linked to Huang’s departure. It’s an unconfirmed discussion post, not an official statement, so treat it as speculation.",
+      "headline_en": "HN: Smuggling of 1.5M AI GPUs could be the cause of Huang's departure (61 points, 42 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Smuggling of 1.5M AI GPUs could be the cause of Huang's departure' — 61 points in 34h (~1.8/h).",
       "tier": "hn_rising",
       "metrics": {
         "points": 61,
         "comments": 42,
         "age_hours": 33.6,
         "velocity_per_hour": 1.81
-      },
-      "headline_zh": "HN 熱議：150 萬 AI GPU 走私疑雲",
-      "summary_zh": "Hacker News 用戶討論一項說法：150 萬顆 AI GPU 走私可能是 Huang 離職原因。這是未經官方確認的社群討論，並非正式公告，讀者應視為猜測，不宜當事實。",
-      "enriched": true
+      }
     },
     {
       "id": "hn-a98bfdb34a1b",
@@ -129,18 +111,15 @@
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50499114",
       "target_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
-      "headline_en": "HN: Claude asked to renumber pages deletes professor’s syllabus and year of notes",
-      "summary_en": "Hacker News users are discussing a report that Claude, when asked to renumber pages, deleted a professor’s syllabus and a year of notes. It’s a user discussion, not an official incident report; no details on cause or fix are provided.",
+      "headline_en": "HN: Claude asked to renumber pages deletes professor's syllabus, year of notes (50 points, 75 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Claude asked to renumber pages deletes professor's syllabus, year of notes' — 50 points in 32h (~1.6/h).",
       "tier": "hn_rising",
       "metrics": {
         "points": 50,
         "comments": 75,
         "age_hours": 31.8,
         "velocity_per_hour": 1.57
-      },
-      "headline_zh": "HN：Claude 重新編頁刪教授筆記",
-      "summary_zh": "Hacker News 用戶討論：要求 Claude 重新編頁碼時，教授課程大綱與一年筆記被刪。這是用戶分享而非官方事故報告，未提供原因或修復細節，使用者宜留意。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-778a31b372c6",
@@ -149,8 +128,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/wangzan101/Mika",
       "target_url": "https://github.com/wangzan101/Mika",
-      "headline_en": "Mika: on-device Android AI agent reaches 8,723 GitHub stars in 18 days",
-      "summary_en": "Mika is an on-device AI agent for Android that operates apps and the web to get things done. The provided info only shows GitHub star growth, with no pricing, availability, or official details.",
+      "headline_en": "wangzan101/Mika: 8,723 GitHub stars in 18 days (~500/day)",
+      "summary_en": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
       "tier": "rising",
       "metrics": {
         "stars": 8723,
@@ -159,10 +138,7 @@
         "velocity_avg_per_day": 499.6,
         "velocity_recent_per_day": null,
         "forks": 1995
-      },
-      "headline_zh": "Mika：Android 端 AI 代理爆紅",
-      "summary_zh": "Mika 是 Android 裝置端 AI 代理，可操作應用程式與網頁代辦事項；提供資料只顯示 GitHub 星數增長，未提供價格、可用性或官方細節，一般用戶暫未能確定何時可用。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-944dd6d24f46",
@@ -171,8 +147,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
       "target_url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
-      "headline_en": "Blender AI addon with MCP support gains 1,223 GitHub stars in 4 days",
-      "summary_en": "It is an AI assistant and MCP server for Blender, with visual chat, scene tools and multi-agent workflows. It lists support for ChatGPT/GPT, Claude, Gemini, Ollama and OpenCode.",
+      "headline_en": "hitkeeen/blender-ai-mcp-addon: 1,223 GitHub stars in 4 days (~353/day)",
+      "summary_en": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
       "tier": "hot_new",
       "metrics": {
         "stars": 1223,
@@ -181,10 +157,7 @@
         "velocity_avg_per_day": 353.3,
         "velocity_recent_per_day": null,
         "forks": 32
-      },
-      "headline_zh": "Blender AI 外掛 4 日獲 1,223 星",
-      "summary_zh": "Blender 用家可留意：呢個 AI 助手兼 MCP server 有視覺對話、場景工具同多代理工作流，列表支援 ChatGPT/GPT、Claude、Gemini、Ollama 同 OpenCode；未提價錢。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-a24e623842eb",
@@ -193,8 +166,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/FrigadeHQ/yogurt",
       "target_url": "https://github.com/FrigadeHQ/yogurt",
-      "headline_en": "Open-source private AI meeting notes app Yogurt gets 1,655 stars in 5 days",
-      "summary_en": "Yogurt is a free, open-source alternative to Granola for Mac, Windows and Linux. It keeps AI meeting notes private on your computer.",
+      "headline_en": "FrigadeHQ/yogurt: 1,655 GitHub stars in 5 days (~316/day)",
+      "summary_en": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
       "tier": "hot_new",
       "metrics": {
         "stars": 1655,
@@ -203,10 +176,7 @@
         "velocity_avg_per_day": 316.3,
         "velocity_recent_per_day": null,
         "forks": 93
-      },
-      "headline_zh": "開源 AI 會議筆記 Yogurt 5 日獲 1,655 星",
-      "summary_zh": "Yogurt 係免費開源嘅 AI 會議筆記工具，定位為 Granola 替代品，支援 Mac、Windows 同 Linux；賣點係筆記留喺你部電腦，唔會上傳。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-593f999f8400",
@@ -215,8 +185,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/Outpostkrewhirl86/Capri-AI",
       "target_url": "https://github.com/Outpostkrewhirl86/Capri-AI",
-      "headline_en": "Local-first desktop AI agent Capri-AI reaches 345 GitHub stars in 1 day",
-      "summary_en": "Capri is a local-first desktop AI agent for Windows with a cyberpunk HUD. It can control files, apps, terminal and browser, and is powered by Claude Code, Codex, Antigravity or any backend.",
+      "headline_en": "Outpostkrewhirl86/Capri-AI: 345 GitHub stars in 1 days (~295/day)",
+      "summary_en": "Capri: a local-first desktop AI agent with a cyberpunk HUD. Your personal Jarvis for Windows. Controls files, apps, terminal and browser, powered by Claude Code, Codex, Antigravity or any backend. Inspired by Cyberpunk: Edgerunners.",
       "tier": "hot_new",
       "metrics": {
         "stars": 345,
@@ -225,10 +195,7 @@
         "velocity_avg_per_day": 295.4,
         "velocity_recent_per_day": null,
         "forks": 54
-      },
-      "headline_zh": "Capri-AI 桌面代理 1 日獲 345 星",
-      "summary_zh": "Capri 係本地優先嘅 Windows 桌面 AI agent，有 cyberpunk HUD，可控制檔案、應用、terminal 同瀏覽器；背後可用 Claude Code、Codex、Antigravity 或任何 backend。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-959a4e69bc6c",
@@ -237,8 +204,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/agentes-chat/agentes-chat",
       "target_url": "https://github.com/agentes-chat/agentes-chat",
-      "headline_en": "Self-hosted Slack alternative Agentes Chat adds AI agents, hits 1,519 stars in 7 days",
-      "summary_en": "It is an open-source, self-hosted Slack alternative where teams and AI agents work together in channels and DMs. Agents can run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, browser access, memory and approvals.",
+      "headline_en": "agentes-chat/agentes-chat: 1,519 GitHub stars in 7 days (~216/day)",
+      "summary_en": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
       "tier": "rising",
       "metrics": {
         "stars": 1519,
@@ -247,10 +214,7 @@
         "velocity_avg_per_day": 216.0,
         "velocity_recent_per_day": null,
         "forks": 268
-      },
-      "headline_zh": "開源 Slack 替代品 Agentes Chat 7 日獲 1,519 星",
-      "summary_zh": "Agentes Chat 係開源、自架嘅 Slack 替代品，畀團隊同 AI agents 喺 channel 同 DM 一齊做嘢；agents 可用 Claude、ChatGPT/Codex、Gemini 或 Grok，有 MCP 工具、記憶同審批。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-fadd3383ed0a",
@@ -259,8 +223,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/modelflare-ai/AnyModelBot",
       "target_url": "https://github.com/modelflare-ai/AnyModelBot",
-      "headline_en": "AnyModelBot gains 4,097 GitHub stars in 20 days as local-first AI bot alternative",
-      "summary_en": "It is an open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. You can run your own AI bots on GPT, Claude, Gemini, Grok, DeepSeek and 70+ models through one Modelflare key; it is pay per use.",
+      "headline_en": "modelflare-ai/AnyModelBot: 4,097 GitHub stars in 20 days (~208/day)",
+      "summary_en": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
       "tier": "rising",
       "metrics": {
         "stars": 4097,
@@ -269,10 +233,7 @@
         "velocity_avg_per_day": 208.0,
         "velocity_recent_per_day": null,
         "forks": 63
-      },
-      "headline_zh": "AnyModelBot 20 日獲 4,097 星",
-      "summary_zh": "開源、本地優先嘅 AI bot 方案，對標 Grok Bot、OpenAI dots 同 Claude Duet；一個 Modelflare key 可選 GPT、Claude、Gemini、Grok、DeepSeek 等 70+ 模型，按用量收費。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-2a6097a81847",
@@ -281,8 +242,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/berkantay/gpucanvas",
       "target_url": "https://github.com/berkantay/gpucanvas",
-      "headline_en": "gpucanvas gets 482 GitHub stars in 3 days for GPU-drawn DOM canvas",
-      "summary_en": "It lets an editor select, move and resize thousands of live DOM nodes on an infinite canvas, with the GPU drawing them. An AI agent can read and point at them.",
+      "headline_en": "berkantay/gpucanvas: 482 GitHub stars in 3 days (~156/day)",
+      "summary_en": "Put thousands of live DOM nodes on an infinite canvas: the GPU draws them, an editor selects, moves and resizes them, shaders and transitions run on them, and an AI agent can read them and point at them.",
       "tier": "hot_new",
       "metrics": {
         "stars": 482,
@@ -291,10 +252,7 @@
         "velocity_avg_per_day": 155.7,
         "velocity_recent_per_day": null,
         "forks": 29
-      },
-      "headline_zh": "gpucanvas 3 日獲 482 星",
-      "summary_zh": "gpucanvas 將成千上萬個 live DOM 節點放上無限畫布，由 GPU 繪製；編輯器可選取、移動、縮放，仲有 shader、過場，AI agent 可以讀取同指向節點。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-208cf56cbec0",
@@ -303,8 +261,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/N1nEmAn/sapper-v2",
       "target_url": "https://github.com/N1nEmAn/sapper-v2",
-      "headline_en": "Autonomous AI pentest project sapper-v2 reaches 2,110 GitHub stars in 16 days",
-      "summary_en": "It describes itself as an autonomous AI pentest legion, with a 634-team champion, 8 hours unattended and 1B tokens beating 4.5B. It is framed as evolvable by design.",
+      "headline_en": "N1nEmAn/sapper-v2: 2,110 GitHub stars in 16 days (~128/day)",
+      "summary_en": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History).",
       "tier": "rising",
       "metrics": {
         "stars": 2110,
@@ -313,10 +271,7 @@
         "velocity_avg_per_day": 128.4,
         "velocity_recent_per_day": null,
         "forks": 1076
-      },
-      "headline_zh": "AI 滲透測試 sapper-v2 16 日獲 2,110 星",
-      "summary_zh": "sapper-v2 自稱係自主 AI 滲透測試軍團，提到 634 隊冠軍、8 小時無人值守，用 1B tokens 勝過 4.5B；定位係可演化，唔只係一件工具。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-4a8c6b949250",
@@ -325,8 +280,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/Dodaios/ste80-humanizer",
       "target_url": "https://github.com/Dodaios/ste80-humanizer",
-      "headline_en": "STE80 Humanizer agent skill gains 696 GitHub stars in 6 days",
-      "summary_en": "It is an agent skill that removes AI tells and rewrites text up to 80% toward ASD-STE100 Simplified Technical English, the method Andrej Karpathy shared.",
+      "headline_en": "Dodaios/ste80-humanizer: 696 GitHub stars in 6 days (~110/day)",
+      "summary_en": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
       "tier": "hot_new",
       "metrics": {
         "stars": 696,
@@ -335,10 +290,7 @@
         "velocity_avg_per_day": 109.7,
         "velocity_recent_per_day": null,
         "forks": 46
-      },
-      "headline_zh": "STE80 Humanizer 6 日獲 696 星",
-      "summary_zh": "STE80 Humanizer 係 agent skill，聲稱去除 AI 痕跡，將文字改寫到 80% 貼近 ASD-STE100 簡化技術英語；文中指方法由 Andrej Karpathy 分享。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-609f5454f49c",
@@ -347,8 +299,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/RunanywhereAI/trnrt",
       "target_url": "https://github.com/RunanywhereAI/trnrt",
-      "headline_en": "RunanywhereAI/trnrt reaches 1,583 GitHub stars in 16 days",
-      "summary_en": "It is described as an open LLM inference engine for AWS Trainium, with NKI megakernels, 1M-token context and an OpenAI-compatible API. General users likely don’t need to act unless they run models on AWS Trainium.",
+      "headline_en": "RunanywhereAI/trnrt: 1,583 GitHub stars in 16 days (~97/day)",
+      "summary_en": "The open LLM inference engine for AWS Trainium: NKI megakernels, 1M-token context, OpenAI-compatible API. By RunAnywhere.",
       "tier": "rising",
       "metrics": {
         "stars": 1583,
@@ -357,10 +309,7 @@
         "velocity_avg_per_day": 97.1,
         "velocity_recent_per_day": null,
         "forks": 18
-      },
-      "headline_zh": "trnrt 16日獲1,583星",
-      "summary_zh": "trnrt 係針對 AWS Trainium 嘅開放 LLM 推理引擎，支援 NKI megakernels、100 萬 token 上下文同 OpenAI 相容 API；一般用戶除非用 Trainium，否則未必需要理。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-8bf9033285b8",
@@ -369,8 +318,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
       "target_url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
-      "headline_en": "roan-maverick/tradingview-indicator-for-ai-agents gets 227 GitHub stars in 3 days",
-      "summary_en": "The project is described only as a TradingView indicator built for AI agents. No further details are provided, so it is hard for general users to judge its actual use.",
+      "headline_en": "roan-maverick/tradingview-indicator-for-ai-agents: 227 GitHub stars in 3 days (~85/day)",
+      "summary_en": "Tradingview IndicatorBuilt for AI agents",
       "tier": "hot_new",
       "metrics": {
         "stars": 227,
@@ -379,10 +328,7 @@
         "velocity_avg_per_day": 84.8,
         "velocity_recent_per_day": null,
         "forks": 32
-      },
-      "headline_zh": "tradingview-indicator-for-ai-agents 3日獲227星",
-      "summary_zh": "GitHub 項目只寫明係為 AI agents 而設嘅 TradingView 指標，官方未提供更多功能、用法或收費細節，暫時難以判斷實際用途。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-8809d76b9927",
@@ -391,8 +337,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/op7418/guizang-game-skill",
       "target_url": "https://github.com/op7418/guizang-game-skill",
-      "headline_en": "op7418/guizang-game-skill gains 359 GitHub stars in 4 days",
-      "summary_en": "It is an agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets in a single HTML file using three.js. A playable demo called 《雾锁山门》 is included.",
+      "headline_en": "op7418/guizang-game-skill: 359 GitHub stars in 4 days (~82/day)",
+      "summary_en": "歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.",
       "tier": "hot_new",
       "metrics": {
         "stars": 359,
@@ -401,10 +347,7 @@
         "velocity_avg_per_day": 82.0,
         "velocity_recent_per_day": null,
         "forks": 56
-      },
-      "headline_zh": "歸藏 Game Skill 4日獲359星",
-      "summary_zh": "Claude Code / Codex agent skill 可以令 AI 用 three.js 同單一 HTML 檔，配 AI 生成素材砌出可喺瀏覽器玩嘅 3D 動作遊戲；仲附《雾锁山门》試玩 demo。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-f74c9a85d87d",
@@ -413,8 +356,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/huawei-csl/MACaQ",
       "target_url": "https://github.com/huawei-csl/MACaQ",
-      "headline_en": "huawei-csl/MACaQ reaches 313 GitHub stars in 6 days",
-      "summary_en": "It is described as model-agnostic quantization for GGUF, aimed at local inference and beyond, with support for text, image, video and audio models via llama.cpp, vLLM, Diffusers and PyTorch. General users may care only if they run local models and want smaller memory use.",
+      "headline_en": "huawei-csl/MACaQ: 313 GitHub stars in 6 days (~55/day)",
+      "summary_en": "SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch.",
       "tier": "hot_new",
       "metrics": {
         "stars": 313,
@@ -423,10 +366,7 @@
         "velocity_avg_per_day": 54.9,
         "velocity_recent_per_day": null,
         "forks": 21
-      },
-      "headline_zh": "MACaQ 6日獲313 GitHub星",
-      "summary_zh": "MACaQ 係針對 GGUF 嘅模型無關量化工具，目標係本地推理；聲稱可配合 llama.cpp、vLLM、Diffusers 等框架處理多類模型，玩本地模型先值得留意。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-c42159566855",
@@ -435,8 +375,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/MZULALI/xj-scanner",
       "target_url": "https://github.com/MZULALI/xj-scanner",
-      "headline_en": "MZULALI/xj-scanner gets 261 GitHub stars in 5 days",
-      "summary_en": "It is a project for reading a 1991-95 Jeep’s engine computer from a laptop with a $3 Arduino Nano, and letting an AI agent do the reading. It is useful only for that niche hardware and AI tinkering.",
+      "headline_en": "MZULALI/xj-scanner: 261 GitHub stars in 5 days (~49/day)",
+      "summary_en": "Read a 1991-95 Jeep's engine computer from a laptop with a $3 Arduino Nano, and let an AI agent do the reading.",
       "tier": "hot_new",
       "metrics": {
         "stars": 261,
@@ -445,10 +385,7 @@
         "velocity_avg_per_day": 48.7,
         "velocity_recent_per_day": null,
         "forks": 33
-      },
-      "headline_zh": "xj-scanner 5日獲261星",
-      "summary_zh": "可以用 laptop 加 3 美元 Arduino Nano 讀取 1991-95 年 Jeep 引擎電腦，再交 AI agent 讀；只啱特定舊車硬件玩家，一般用戶未必需要理。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-1003a20d9074",
@@ -457,8 +394,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/wici-ai/inferssd",
       "target_url": "https://github.com/wici-ai/inferssd",
-      "headline_en": "wici-ai/inferssd reaches 1,183 GitHub stars in 25 days",
-      "summary_en": "It is built on llama.cpp and streams MoE experts from SSD so you can run models larger than your RAM or VRAM. General users may care if they want to run big local models on limited hardware.",
+      "headline_en": "wici-ai/inferssd: 1,183 GitHub stars in 25 days (~48/day)",
+      "summary_en": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp.",
       "tier": "rising",
       "metrics": {
         "stars": 1183,
@@ -467,10 +404,7 @@
         "velocity_avg_per_day": 48.0,
         "velocity_recent_per_day": null,
         "forks": 99
-      },
-      "headline_zh": "inferssd 25日獲1,183星",
-      "summary_zh": "inferssd 建基於 llama.cpp，會由 SSD 串流 MoE experts，令模型可以大過你部機嘅 RAM 或 VRAM；想喺有限硬件跑大型本地模型，先值得留意。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-c9996c9029e1",
@@ -479,8 +413,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/SAOS-3624/dsh-see-now",
       "target_url": "https://github.com/SAOS-3624/dsh-see-now",
-      "headline_en": "SAOS-3624/dsh-see-now gains 662 GitHub stars in 14 days",
-      "summary_en": "It lets an AI see your screen in real time by selecting frames based on changes and combining multiple frames into one image, so static screens use almost no tokens. General users may care if they want AI screen assistants to cost fewer tokens.",
+      "headline_en": "SAOS-3624/dsh-see-now: 662 GitHub stars in 14 days (~46/day)",
+      "summary_en": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
       "tier": "rising",
       "metrics": {
         "stars": 662,
@@ -489,10 +423,7 @@
         "velocity_avg_per_day": 45.6,
         "velocity_recent_per_day": null,
         "forks": 70
-      },
-      "headline_zh": "dsh-see-now 14日獲662星",
-      "summary_zh": "令 AI 實時看見你螢幕：按變化量揀 frame、多幀拼成一張圖，靜止畫面幾乎唔花 token；想用 AI 看螢幕又慳 token 嘅用戶先值得留意。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-1f06d641b04d",
@@ -501,8 +432,8 @@
       "source_name": "GitHub Search",
       "source_url": "https://github.com/threerocks/article2media",
       "target_url": "https://github.com/threerocks/article2media",
-      "headline_en": "threerocks/article2media reaches 351 GitHub stars in 8 days",
-      "summary_en": "It is an open-source Claude Code / Codex skill that turns an article or video into Xiaohongshu posts, magazine-style long images, WeChat formatting and AI-voiced short videos. It lists 21 themes, automatic checks and zero npm dependencies.",
+      "headline_en": "threerocks/article2media: 351 GitHub stars in 8 days (~45/day)",
+      "summary_en": "把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。",
       "tier": "rising",
       "metrics": {
         "stars": 351,
@@ -511,10 +442,7 @@
         "velocity_avg_per_day": 45.4,
         "velocity_recent_per_day": null,
         "forks": 57
-      },
-      "headline_zh": "article2media 8日獲351星",
-      "summary_zh": "article2media 係開源 Claude Code / Codex skill，可將文章或影片（先轉逐字稿）變成小紅書圖文、長圖、公眾號排版同 AI 配音短片；適合內容改寫用戶。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-bba6a2f8f2e0",
@@ -524,7 +452,7 @@
       "source_url": "https://github.com/Timaga/noda-local-ai-notes",
       "target_url": "https://github.com/Timaga/noda-local-ai-notes",
       "headline_en": "Timaga/noda-local-ai-notes: 104 GitHub stars in 2 days (~44/day)",
-      "summary_en": "A local-first AI note-taking app for Windows with Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources. No pricing or availability details are provided.",
+      "summary_en": "Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources.",
       "tier": "hot_new",
       "metrics": {
         "stars": 104,
@@ -533,10 +461,7 @@
         "velocity_avg_per_day": 44.5,
         "velocity_recent_per_day": null,
         "forks": 1
-      },
-      "headline_zh": "本地 AI 筆記 app 兩日 104 stars",
-      "summary_zh": "本地優先 AI 筆記 app，支援 Markdown、個人知識庫、知識圖譜、語義搜尋同引用來源對話；官方未提供收費或推出細節。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-c6bbee3ab1b6",
@@ -546,7 +471,7 @@
       "source_url": "https://github.com/sleepy-zone/ai-ref-library-cn",
       "target_url": "https://github.com/sleepy-zone/ai-ref-library-cn",
       "headline_en": "sleepy-zone/ai-ref-library-cn: 770 GitHub stars in 17 days (~44/day)",
-      "summary_en": "A Chinese-language AI image asset library covering faces, poses and clothing. It is a GitHub project with 770 stars in 17 days; no licensing or usage details are provided.",
+      "summary_en": "AI 作图素材库 · 中文版（脸 / 姿势 / 服装）",
       "tier": "rising",
       "metrics": {
         "stars": 770,
@@ -555,10 +480,7 @@
         "velocity_avg_per_day": 44.2,
         "velocity_recent_per_day": null,
         "forks": 185
-      },
-      "headline_zh": "AI 作圖素材庫中文版 17 日 770 stars",
-      "summary_zh": "AI 作圖素材庫中文版，集中臉、姿勢同服裝素材；GitHub 17 日獲 770 stars。官方未提供授權、收費或使用細節。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-90b953342bc0",
@@ -568,7 +490,7 @@
       "source_url": "https://github.com/fendouai/ViralForge",
       "target_url": "https://github.com/fendouai/ViralForge",
       "headline_en": "fendouai/ViralForge: 206 GitHub stars in 5 days (~43/day)",
-      "summary_en": "An agent-native viral video studio that offers one-click replication of viral short videos, breaks hooks and scripts into a Viral DNA report, and produces 10 costed variants. No pricing or availability details are provided.",
+      "summary_en": "Agent-native viral video studio: one-click replicate viral short videos, deconstruct video hooks and scripts into a Viral DNA report, and ship 10 costed variants. Skill + MCP + CLI. Apache-2.0.",
       "tier": "hot_new",
       "metrics": {
         "stars": 206,
@@ -577,10 +499,7 @@
         "velocity_avg_per_day": 43.2,
         "velocity_recent_per_day": null,
         "forks": 6
-      },
-      "headline_zh": "ViralForge 一鍵複製爆款短片",
-      "summary_zh": "ViralForge 係 agent 原生短片工坊：一鍵複製爆款短片、拆解 hook/script 成 Viral DNA 報告，再出 10 個計成本變體；未見收費或推出細節。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-b62344349ca9",
@@ -590,7 +509,7 @@
       "source_url": "https://github.com/claynicholson/copper-kicad-mcp",
       "target_url": "https://github.com/claynicholson/copper-kicad-mcp",
       "headline_en": "claynicholson/copper-kicad-mcp: 100 GitHub stars in 3 days (~30/day)",
-      "summary_en": "An MCP server that lets AI apps design real, orderable KiCad boards, including schematics, LCSC parts, PCB routing, ERC/DRC and JLCPCB fab files. No pricing or availability details are provided.",
+      "summary_en": "MCP server that lets any AI app design real, orderable KiCad boards: schematic, LCSC parts, PCB routing, ERC/DRC, JLCPCB fab files.",
       "tier": "hot_new",
       "metrics": {
         "stars": 100,
@@ -599,10 +518,7 @@
         "velocity_avg_per_day": 30.4,
         "velocity_recent_per_day": null,
         "forks": 5
-      },
-      "headline_zh": "copper-kicad-mcp 設計可下單 KiCad 板",
-      "summary_zh": "copper-kicad-mcp 係 MCP server，俾 AI app 設計可下單嘅 KiCad 電路板，涵蓋原理圖、LCSC 零件、PCB 佈線、ERC/DRC 同 JLCPCB 生產檔；未見收費或推出細節。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-a4b3e921cc42",
@@ -612,7 +528,7 @@
       "source_url": "https://github.com/yasakani-dev/yasakani",
       "target_url": "https://github.com/yasakani-dev/yasakani",
       "headline_en": "yasakani-dev/yasakani: 103 GitHub stars in 4 days (~29/day)",
-      "summary_en": "A local LLM engine for Windows that targets one NVIDIA RTX 5090 and is built for Qwen3.8-27B. No pricing or release details are provided.",
+      "summary_en": "Local LLM engine for Windows and one NVIDIA RTX 5090, built for Qwen3.8-27B",
       "tier": "hot_new",
       "metrics": {
         "stars": 103,
@@ -621,10 +537,7 @@
         "velocity_avg_per_day": 29.3,
         "velocity_recent_per_day": null,
         "forks": 21
-      },
-      "headline_zh": "yasakani 本地 LLM 引擎",
-      "summary_zh": "yasakani 係 Windows 本地 LLM 引擎，針對單張 NVIDIA RTX 5090、為 Qwen3.8-27B 而設；官方未提供收費或推出細節。",
-      "enriched": true
+      }
     },
     {
       "id": "st-6c1d6a7dee13",
@@ -649,10 +562,7 @@
       "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
       "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12428",
       "headline_en": "b12428",
-      "summary_en": "llama.cpp has a new release entry, b12428. The provided feed gives no further details, so check the release page before updating.",
-      "headline_zh": "llama.cpp 新版本 b12428",
-      "summary_zh": "llama.cpp 有新版本條目 b12428，但官方未提供更新內容、修正或影響細節；更新前請先睇 release 頁。",
-      "enriched": true
+      "summary_en": "jinja: add 4 missing features ( #32352 ) jinja: add 4 missing features apply suggestion Co-authored-by: Aldehir Rojas hello@alde.dev fix error msg Co-authored-by: Aldehir Rojas hello@alde.dev Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/67916336 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.0"
     },
     {
       "id": "fd-9a43fed6987c",
@@ -662,10 +572,7 @@
       "source_url": "https://blogs.nvidia.com/feed/",
       "target_url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
       "headline_en": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
-      "summary_en": "NVIDIA's blog announces AI Day Seoul, bringing together Korea’s industry leaders, startups and developer communities. The feed gives no agenda, dates or product announcements.",
-      "headline_zh": "NVIDIA AI Day Seoul 集合韓國業界",
-      "summary_zh": "NVIDIA 網誌公布 AI Day Seoul，集合韓國業界領袖、初創同開發者社群；但提供內容未見議程、日期或產品公布等細節。",
-      "enriched": true
+      "summary_en": "Over two days at COEX, more than 2,000 attendees converged for AI Day Seoul, bringing together Korea’s industry leaders, startups and developer communities advancing physical AI and AI agents. At the plenary sessions, Deepu Talla, vice president of robotics and edge AI at NVIDIA, said Korea is “punching above its weight,” with Doosan Robotics, Hyundai [&#8230;] AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities"
     },
     {
       "id": "fd-3f99ead62b7c",
@@ -674,11 +581,8 @@
       "source_name": "Codex Releases",
       "source_url": "https://github.com/openai/codex/releases.atom",
       "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.7",
-      "headline_en": "Codex 0.171.0-alpha.7 released",
-      "summary_en": "Codex has released 0.171.0-alpha.7, but the feed provides no changelog or impact details; most general users can ignore it for now.",
-      "headline_zh": "Codex 0.171.0-alpha.7 發布",
-      "summary_zh": "Codex 推出 0.171.0-alpha.7，但官方未提供更新內容或影響細節；一般用戶暫時毋須理會，開發者可留意後續說明。",
-      "enriched": true
+      "headline_en": "0.171.0-alpha.7",
+      "summary_en": "Release 0.171.0-alpha.7"
     },
     {
       "id": "fd-cf29c422ac1f",
@@ -687,11 +591,8 @@
       "source_name": "LiteLLM Releases",
       "source_url": "https://github.com/BerriAI/litellm/releases.atom",
       "target_url": "https://github.com/BerriAI/litellm/releases/tag/v1.111.0-dev.4",
-      "headline_en": "LiteLLM v1.111.0-dev.4 released",
-      "summary_en": "LiteLLM has released v1.111.0-dev.4, but the feed provides no changelog or impact details; most general users can ignore it for now.",
-      "headline_zh": "LiteLLM v1.111.0-dev.4 發布",
-      "summary_zh": "LiteLLM 推出 v1.111.0-dev.4，但官方未提供更新內容或影響細節；一般用戶暫時毋須理會，開發者可留意後續說明。",
-      "enriched": true
+      "headline_en": "v1.111.0-dev.4",
+      "summary_en": "Important Signing has moved to keyless cosign. Since v1.111.0-dev.3, releases are signed with Sigstore keyless signing (GitHub OIDC) instead of the cosign.pub key. cosign verify --key ... does not work for this release. Use the command below. Earlier releases still verify with the key. Verify this release cosign verify \\ --certificate-identity https://github.com/BerriAI/project-releaser/.github/workflows/release.yml@refs/heads/main \\ --certificate-oidc-issuer https://token.actions.githubusercont"
     },
     {
       "id": "fd-3683e7be6f79",
@@ -700,11 +601,8 @@
       "source_name": "vLLM Releases",
       "source_url": "https://github.com/vllm-project/vllm/releases.atom",
       "target_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc4",
-      "headline_en": "vLLM v0.34.0rc4 released",
-      "summary_en": "vLLM has released v0.34.0rc4, but the feed provides no changelog or impact details; most general users can ignore it for now.",
-      "headline_zh": "vLLM v0.34.0rc4 發布",
-      "summary_zh": "vLLM 推出 v0.34.0rc4，但官方未提供更新內容或影響細節；一般用戶暫時毋須理會，開發者可留意後續說明。",
-      "enriched": true
+      "headline_en": "v0.34.0rc4",
+      "summary_en": "[Release][Tests] Give the #67296 warmup-gate test runner num_speculat…"
     },
     {
       "id": "fd-856b7342e43c",
@@ -713,11 +611,8 @@
       "source_name": "LangGraph Releases",
       "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
       "target_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.22",
-      "headline_en": "LangGraph 1.2.22 released",
-      "summary_en": "LangGraph has released version 1.2.22, but the feed provides no changelog or impact details; most general users can ignore it for now.",
-      "headline_zh": "LangGraph 1.2.22 發布",
-      "summary_zh": "LangGraph 推出 1.2.22，但官方未提供更新內容或影響細節；一般用戶暫時毋須理會，開發者可留意後續說明。",
-      "enriched": true
+      "headline_en": "langgraph==1.2.22",
+      "summary_en": "Changes since 1.2.21 release(langgraph): 1.2.22 ( #9702 ) release(checkpoint-postgres): 3.2.1 ( #9700 ) release(prebuilt): 1.1.2 ( #9701 ) release(checkpoint): 4.3.2 ( #9699 ) fix(langgraph): stream a child graph on its own thread to a caller streaming subgraphs ( #9698 ) perf(langgraph): skip message conversion in add_messages for plain messages ( #9631 ) perf(langgraph): filter pending writes to the given tasks before reading their statuses ( #9634 ) perf(langgraph): match update keys against "
     },
     {
       "id": "fd-7705a8a3b3de",
@@ -726,11 +621,8 @@
       "source_name": "AWS ML Blog",
       "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
       "target_url": "https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1/",
-      "headline_en": "AWS blog covers GS Caltex production MLOps with SageMaker Canvas, part 1",
-      "summary_en": "AWS ML Blog has a part 1 on GS Caltex's production MLOps using SageMaker Canvas; the feed gives no further details.",
-      "headline_zh": "AWS 刊 GS Caltex MLOps 個案（上）",
-      "summary_zh": "AWS ML Blog 刊出 GS Caltex 以 SageMaker Canvas 做生產 MLOps 的個案第一部分；目前只有標題，官方未提供更多細節，一般用戶未必需要理會。",
-      "enriched": true
+      "headline_en": "Production MLOps at GS Caltex with Amazon SageMaker Canvas, part 1",
+      "summary_en": "GS Caltex connects Amazon SageMaker Canvas to Amazon SageMaker Pipelines so process engineers' no-code models run in production. This post shows how ML engineers reuse validated preprocessing flows and models, cutting deployment from about a week to a few hours and running batch inference every 30 minutes."
     },
     {
       "id": "fd-719a73c5da5f",
@@ -739,11 +631,8 @@
       "source_name": "Vercel AI Blog",
       "source_url": "https://vercel.com/blog/feed.xml",
       "target_url": "https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing",
-      "headline_en": "Vercel daemons can now send traces to Vercel Tracing",
-      "summary_en": "Vercel AI Blog says daemons can now send traces to Vercel Tracing; no further details are provided, so this is mainly a developer-facing update.",
-      "headline_zh": "Vercel Tracing 可接收 daemon traces",
-      "summary_zh": "Vercel AI Blog 表示，daemons 現在可以將 traces 傳送到 Vercel Tracing；官方未提供更多細節，屬開發者工具更新，一般用戶暫時毋須理會。",
-      "enriched": true
+      "headline_en": "Daemons can now send traces to Vercel Tracing",
+      "summary_en": "Vercel Daemons can now send OpenTelemetry traces to Vercel Tracing, allowing you and your agents to inspect background worker operations alongside the rest of your project's traces.Vercel provides each daemon with a Unix socket for receiving OTLP/HTTP traces and sets the socket's path in VERCEL_OTEL_SOCKET_PATH.Upgrading @vercel/otel to version 2.3.0 or later enables automatic trace export for Node.js daemons using the default configuration. The SDK detects this socket and sends the spans your w"
     },
     {
       "id": "fd-40da4434ce08",
@@ -752,11 +641,8 @@
       "source_name": "Microsoft AI Blog",
       "source_url": "https://news.microsoft.com/source/feed/",
       "target_url": "https://blogs.microsoft.com/on-the-issues/2026/11/11/protecting-privacy-and-press-freedom-an-important-fourth-circuit-ruling/",
-      "headline_en": "Microsoft blog examines new court ruling on press freedom and privacy",
-      "summary_en": "Microsoft AI Blog discusses why a new court ruling matters for press freedom and privacy; the feed provides no details on the ruling or its impact.",
-      "headline_zh": "微軟談新法院裁決與新聞自由",
-      "summary_zh": "Microsoft AI Blog 發文談論一項新法院裁決為何關乎新聞自由與私隱；但官方未提供裁決內容或影響細節，讀者需查看原文。",
-      "enriched": true
+      "headline_en": "Why a new court ruling matters for press freedom and privacy",
+      "summary_en": "The post Why a new court ruling matters for press freedom and privacy appeared first on Source ."
     },
     {
       "id": "fd-8ee3f1944ab9",
@@ -766,10 +652,7 @@
       "source_url": "https://blog.cloudflare.com/tag/ai/rss",
       "target_url": "https://blog.cloudflare.com/kitesurf-open-source/",
       "headline_en": "Kitesurf is now open source",
-      "summary_en": "Cloudflare AI Blog says Kitesurf is now open source; no further details are provided in the feed.",
-      "headline_zh": "Cloudflare 宣布 Kitesurf 開源",
-      "summary_zh": "Cloudflare AI Blog 宣布 Kitesurf 已經開源；官方未提供功能、授權或用途等細節，一般用戶暫時毋須理會。",
-      "enriched": true
+      "summary_en": "Kitesurf, our experimental browser engine for AI agents, is now open source. Inspect the code, run it locally, or deploy your own instance on Cloudflare Workers."
     },
     {
       "id": "fd-15fa788cf00a",
@@ -778,11 +661,8 @@
       "source_name": "Hugging Face Blog",
       "source_url": "https://huggingface.co/blog/feed.xml",
       "target_url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
-      "headline_en": "Hugging Face publishes a robot pick-and-place simulation tutorial",
-      "summary_en": "Hugging Face has published a tutorial on building a robot pick-and-place simulation with SimReady assets; the provided entry gives no further details.",
-      "headline_zh": "Hugging Face 發布機械人模擬教學",
-      "summary_zh": "Hugging Face 發布教學，示範用 SimReady 資產建立機械人拾放模擬；官方未提供其他細節，一般用戶未必即時用到。",
-      "enriched": true
+      "headline_en": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "summary_en": "New entry from Hugging Face Blog: Build a Robot Pick-and-Place Simulation with SimReady Assets"
     },
     {
       "id": "fd-9743c64181c8",
@@ -791,11 +671,8 @@
       "source_name": "n8n Releases",
       "source_url": "https://github.com/n8n-io/n8n/releases.atom",
       "target_url": "https://github.com/n8n-io/n8n/releases/tag/v1",
-      "headline_en": "n8n releases version 1.123.96",
-      "summary_en": "n8n has released version 1.123.96, but the provided entry gives no changelog details, so general users only know a new version exists.",
-      "headline_zh": "n8n 推出 1.123.96 版本",
-      "summary_zh": "n8n 推出 1.123.96 版本，但官方未提供更新細節；一般用戶暫時只需知道有新版本，實際改動要再查。",
-      "enriched": true
+      "headline_en": "v1: :rocket: Release 1.123.96 (#43771)",
+      "summary_en": "Co-authored-by: n8n-release-helper[bot] &lt;265227495+n8n-release-helper[bot]@users.noreply.github.com&gt;"
     },
     {
       "id": "fd-5b2cbd603c96",
@@ -804,11 +681,8 @@
       "source_name": "OpenRouter Changelog",
       "source_url": "https://openrouter.ai/docs/changelog/rss.xml",
       "target_url": "https://openrouter.ai/docs/changelog#november-12-2026",
-      "headline_en": "OpenRouter changelog entry dated November 12, 2026",
-      "summary_en": "OpenRouter has a changelog entry dated November 12, 2026, but the provided content gives no change details, so users cannot tell what changed yet.",
-      "headline_zh": "OpenRouter 更新日誌新條目",
-      "summary_zh": "OpenRouter 更新日誌有一條 2026 年 11 月 12 日條目，但內容未提供具體改動，用戶暫時無法判斷有咩影響。",
-      "enriched": true
+      "headline_en": "November 12, 2026",
+      "summary_en": "New entry from OpenRouter Changelog: November 12, 2026"
     },
     {
       "id": "fd-b178eb5f5d9f",
@@ -817,11 +691,8 @@
       "source_name": "OpenHands Releases",
       "source_url": "https://github.com/All-Hands-AI/OpenHands/releases.atom",
       "target_url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.40.0",
-      "headline_en": "OpenHands releases version 1.40.0",
-      "summary_en": "OpenHands has released version 1.40.0, but the provided entry gives no changelog details, so users cannot yet tell what changed.",
-      "headline_zh": "OpenHands 推出 v1.40.0",
-      "summary_zh": "OpenHands 推出 v1.40.0，但官方未提供更新細節；一般用戶暫時只知有新版本，未能判斷實際改動。",
-      "enriched": true
+      "headline_en": "v1.40.0",
+      "summary_en": "1.40.0 (2026-11-12) What's Changed Features feat: improve Codex subscription authentication guidance by @xunjizhe in #17194 Bug Fixes fix(chat): keep messages at tied history page boundaries by @enyst in #19649 fix(chat): prevent delayed echoes from deleting newer drafts by @marcello-pichini in #19382 fix(chat): activate the home model pick when a self-hosted instance turns Agent Profiles off by @hieptl in #19682 fix(git): use a repository's real default branch instead of assuming \"main\" by @hie"
     },
     {
       "id": "fd-fcb12dc9daf5",
@@ -830,11 +701,8 @@
       "source_name": "Ollama Releases",
       "source_url": "https://github.com/ollama/ollama/releases.atom",
       "target_url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc0",
-      "headline_en": "Ollama releases version 0.40.17",
-      "summary_en": "Ollama has released version 0.40.17, but the provided entry gives no changelog details, so users cannot yet tell what changed.",
-      "headline_zh": "Ollama 推出 v0.40.17",
-      "summary_zh": "Ollama 推出 v0.40.17，但官方未提供更新細節；一般用戶暫時只知有新版本，未能判斷實際改動。",
-      "enriched": true
+      "headline_en": "v0.40.17",
+      "summary_en": "What's Changed Improve ChatGPT CLI restore and graceful restart by @hoyyeva in #19583 cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in #19409 llm: use mmap for Vulkan integrated GPUs by @dhiltgen in #19640 rpreslar4765/Ollama by @rpreslar4765 in #17163 mlx: support concurrent generation by @dhiltgen in #19197 llama.cpp: version bump b12257 by @dhiltgen in #19646 MLX, MLX-C: version bump by @dhiltgen in #19647 New Contributors @rpreslar4765 made their first contribution in #"
     },
     {
       "id": "fd-88b63ace7c2f",
@@ -843,11 +711,8 @@
       "source_name": "Open WebUI Releases",
       "source_url": "https://github.com/open-webui/open-webui/releases.atom",
       "target_url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.3",
-      "headline_en": "Open WebUI releases version 0.13.3",
-      "summary_en": "Open WebUI has released version 0.13.3, but the provided entry gives no changelog details, so users cannot yet tell what changed.",
-      "headline_zh": "Open WebUI 推出 v0.13.3",
-      "summary_zh": "Open WebUI 推出 v0.13.3，但官方未提供更新細節；一般用戶暫時只知有新版本，未能判斷實際改動。",
-      "enriched": true
+      "headline_en": "v0.13.3",
+      "summary_en": "Added 🦾 Agents in automations. The automation editor now lets you choose a terminal and working folder, then select a coding agent available there. Scheduled runs use that saved terminal and folder, and check that the terminal and agent are still available before starting. Agent automations send their results to a chat; channel destinations remain available for ordinary models. Commit 📂 Change terminal and folder during a chat. You can now choose a different terminal or working folder after send"
     },
     {
       "id": "fd-c83c3153b641",
@@ -856,11 +721,8 @@
       "source_name": "Mistral News",
       "source_url": "https://mistral.ai/news/rss",
       "target_url": "https://mistral.ai/news/build-with-studio/",
-      "headline_en": "Mistral News: Le Chonk brings the brains; Studio puts it to work",
-      "summary_en": "Mistral published an item with this headline, but the provided content gives no specifics on what Le Chonk or Studio do, cost, or availability.",
-      "headline_zh": "Mistral 提及 Le Chonk 與 Studio",
-      "summary_zh": "Mistral 發布標題提到 Le Chonk 同 Studio 嘅消息，但官方未提供具體功能、價錢或推出時間，用戶暫時無從判斷。",
-      "enriched": true
+      "headline_en": "Le Chonk brings the brains. Studio puts it to work.",
+      "summary_en": "Build and deploy enterprise agents, workflows and apps faster with Mistral Studio and Le Chonk full control over your models, data and infrastructure."
     },
     {
       "id": "fd-5dc128560cf8",
@@ -869,11 +731,8 @@
       "source_name": "Dify Releases",
       "source_url": "https://github.com/langgenius/dify/releases.atom",
       "target_url": "https://github.com/langgenius/dify/releases/tag/1.19.0",
-      "headline_en": "Dify releases version 1.19.0 with workflow tracing focus",
-      "summary_en": "Dify v1.19.0 is out with release notes focused on tracing workflows layer by layer, but the provided entry gives no concrete setup or impact details.",
-      "headline_zh": "Dify v1.19.0 加入工作流程追蹤",
-      "summary_zh": "Dify 推出 v1.19.0，版本重點係逐層追蹤工作流程；但官方未提供具體設定或影響細節，用戶暫時只知有呢個方向。",
-      "enriched": true
+      "headline_en": "v1.19.0 - Trace Your Workflows, Layer by Layer",
+      "summary_en": "Dify 1.19.0 brings nested workflow tracing to your observability tools. Follow a workflow into the Workflow Tools it calls, inspect the steps inside each invocation, and keep the LLM context alongside the execution tree. This release also makes Workflow Tools portable with App packages, adds Skill Hub automation, and makes Agent files easier to upload and preview. The bundled plugin daemon is upgraded to 0.6.14-local . Release highlights · Upgrade guide · Detailed changes Release highlights Nest"
     },
     {
       "id": "fd-98a511a84418",
@@ -882,11 +741,8 @@
       "source_name": "Together AI Blog",
       "source_url": "https://www.together.ai/blog/rss.xml",
       "target_url": "https://www.together.ai/blog/together-compiler-continual-compilation-for-ai-inference",
-      "headline_en": "Together AI blog introduces Together Compiler for AI inference",
-      "summary_en": "Together AI published a blog post about \"Together Compiler\" and continual compilation for AI inference. The provided entry gives no performance, pricing, or availability details, so general users have nothing actionable yet.",
-      "headline_zh": "Together Compiler：AI 推論持續編譯",
-      "summary_zh": "Together AI 博客介紹 Together Compiler，主題是 AI 推論的持續編譯；但官方未提供效能、價格或推出時間等細節，一般用戶暫時毋須特別理會。",
-      "enriched": true
+      "headline_en": "Together Compiler: Continual Compilation for AI inference",
+      "summary_en": "Together Compiler uses agents and persistent engines to optimize open models in under 24 hours, delivering up to 3.7x higher throughput as traffic changes."
     },
     {
       "id": "fd-c99fa91737d5",
@@ -895,11 +751,8 @@
       "source_name": "SGLang Releases",
       "source_url": "https://github.com/sgl-project/sglang/releases.atom",
       "target_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
-      "headline_en": "SGLang releases version v0.5.23",
-      "summary_en": "SGLang released version v0.5.23. The provided entry does not list changes or fixes, so general users cannot tell whether it matters to them.",
-      "headline_zh": "SGLang 發布 v0.5.23",
-      "summary_zh": "SGLang 發布 v0.5.23，但官方未列出更新內容或修正項目；一般用戶暫時無法判斷是否需要理會，建議等有細節再睇。",
-      "enriched": true
+      "headline_en": "v0.5.23",
+      "summary_en": "Highlights 1007 PRs from 257 contributors. New models Model Type Cookbook Muse Spark Open LLM / VLM link Beam-1.0 LLM / VLM link MiniMax-M3.1-Flash LLM / VLM link MiniCPM-V 4.7 LLM / VLM link Kev LLM / VLM link Cosmos3-Nano-Sim (Bimanual, Transfer, Auto) Diffusion link FastH3 Omni Diffusion link FLUX.3 Image Klein Diffusion link HY-Nomas Diffusion link MOSS-Image Diffusion link What's new DeepSeek-V4.1 on GB300 gets up to 1.5x more prefill throughput under load and about 28% lower first-token la"
     },
     {
       "id": "fd-c8cd05d3ae5e",
@@ -908,11 +761,8 @@
       "source_name": "Stability AI News",
       "source_url": "https://stability.ai/news-updates?format=rss",
       "target_url": "https://stability.ai/news-updates/stability-ai-latest-funding-backed-by-entertainment-industry-biggest-names",
-      "headline_en": "Stability AI says entertainment names back latest funding round",
-      "summary_en": "Stability AI says entertainment industry figures are backing it in its latest funding round. The entry does not name them or give the amount, terms, or user-facing impact.",
-      "headline_zh": "Stability AI 最新融資獲娛樂界支持",
-      "summary_zh": "Stability AI 表示最新一輪融資獲娛樂業知名人士支持，但官方未提供投資者名單、金額或條款；一般用戶暫時未見直接影響。",
-      "enriched": true
+      "headline_en": "The Entertainment Industry’s Biggest Names Back Stability AI in Latest Funding Round",
+      "summary_en": "We've closed our Series B, bringing total funding to $232M under new leadership. This round welcomes entertainment titans Electronic Arts, Sony Music Group, Universal Music Group, Warner Music Group, and more. The Entertainment Industry’s Biggest Names Back Stability AI in Latest Funding Round"
     },
     {
       "id": "fd-65bba15109b9",
@@ -921,11 +771,8 @@
       "source_name": "Continue Releases",
       "source_url": "https://github.com/continuedev/continue/releases.atom",
       "target_url": "https://github.com/continuedev/continue/releases/tag/v2.1.0-vscode",
-      "headline_en": "Continue releases v2.1.0-vscode",
-      "summary_en": "Continue released version v2.1.0-vscode. No changelog is included in the provided entry, so it is unclear what changed for users.",
-      "headline_zh": "Continue 發布 v2.1.0-vscode",
-      "summary_zh": "Continue 發布 v2.1.0-vscode，但官方未附更新說明；一般用戶暫時唔知改咗乜，是否需要更新要等更多細節。",
-      "enriched": true
+      "headline_en": "v2.1.0-vscode",
+      "summary_en": "chore: vscode 2.1.0 Co-authored-by: Cursor &lt;cursoragent@cursor.com&gt;"
     },
     {
       "id": "fd-c58e4b8cd2b9",
@@ -934,11 +781,8 @@
       "source_name": "Aider Releases",
       "source_url": "https://github.com/Aider-AI/aider/releases.atom",
       "target_url": "https://github.com/Aider-AI/aider/releases/tag/v0.86.3.dev",
-      "headline_en": "Aider releases v0.86.3.dev",
-      "summary_en": "Aider released version v0.86.3.dev. The entry gives no details, so general users cannot judge whether this dev release matters.",
-      "headline_zh": "Aider 發布 v0.86.3.dev",
-      "summary_zh": "Aider 發布 v0.86.3.dev 版本，但官方未提供更新內容或修正說明；一般用戶暫時毋須急住理會，等有細節再算。",
-      "enriched": true
+      "headline_en": "v0.86.3.dev",
+      "summary_en": "set version to 0.86.3.dev"
     }
   ]
 }

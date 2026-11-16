@@ -61,6 +61,24 @@ def _clean(text: str) -> str:
     return text
 
 
+def _entry_content(node, local) -> str:
+    """Extract entry body text (atom content/summary, rss description) so the
+    LLM enrichment gets real substance instead of title-only items."""
+    parts = []
+    for child in node:
+        tag = local(child.tag)
+        if tag in ("content", "summary", "description"):
+            raw = child.text or ""
+            # atom content can embed xhtml divs - also catch child text
+            for sub in child:
+                raw += " " + ("".join(sub.itertext()))
+            cleaned = _clean(raw)
+            if cleaned:
+                parts.append(cleaned)
+    text = " ".join(parts)
+    return text[:500]
+
+
 def _parse_date(value: str) -> str:
     value = (value or "").strip()
     if not value:
@@ -104,8 +122,9 @@ def parse_entries(xml_text: str, limit: int = 40) -> list[dict]:
                 elif tag == "link":
                     if (child.attrib or {}).get("href") and not link:
                         link = child.attrib["href"]
+            content = _entry_content(node, local)
             entries.append({"id": link or title, "title": title, "link": link,
-                            "published": _parse_date(updated)})
+                            "published": _parse_date(updated), "content": content})
     else:
         nodes = [e for e in root.iter() if local(e.tag) == "item"][:limit]
         for node in nodes:
@@ -120,8 +139,10 @@ def parse_entries(xml_text: str, limit: int = 40) -> list[dict]:
                     guid = (child.text or "").strip()
                 elif tag in ("pubDate", "published", "updated"):
                     pub = pub or (child.text or "")
+            content = _entry_content(node, local)
             entries.append({"id": link or guid or title, "title": title,
-                            "link": link, "published": _parse_date(pub)})
+                            "link": link, "published": _parse_date(pub),
+                            "content": content})
     return [e for e in entries if e["title"]]
 
 
@@ -140,6 +161,8 @@ def save_seen(seen: dict) -> None:
 
 
 def make_item(feed: dict, entry: dict, category: str) -> dict:
+    # real entry content (release notes / post summary) when the feed has it
+    summary = entry.get("content") or f"New entry from {feed['name']}: {entry['title'][:180]}"
     return {
         "id": "fd-" + hashlib.sha1(f"{feed['id']}|{entry['id']}".encode()).hexdigest()[:12],
         "timestamp": entry["published"] or utc_now(),
@@ -148,7 +171,7 @@ def make_item(feed: dict, entry: dict, category: str) -> dict:
         "source_url": feed["url"],
         "target_url": entry["link"] or feed["url"],
         "headline_en": entry["title"][:200],
-        "summary_en": f"New entry from {feed['name']}: {entry['title'][:180]}",
+        "summary_en": summary,
     }
 
 

@@ -51,6 +51,10 @@ PROVIDER_RETRIES = 2
 PROVIDER_BACKOFF_SECONDS = 30
 BATCH_SIZE = 8
 CACHE_CAP = 2000
+# DeepSeek fallback is DISABLED until the user approves it (2026-11-16:
+# user never authorized using the DeepSeek pay-as-you-go key as fallback;
+# MiniMax 529 that day proved transient and fully recovered).
+USE_DEEPSEEK_FALLBACK = False
 
 
 def load_providers() -> list[dict]:
@@ -73,24 +77,26 @@ def load_providers() -> list[dict]:
             deepseek = {"name": name, "url": base + "/chat/completions",
                         "key": key, "model": "deepseek-v4-flash", "retries": 2,
                         "backoff": 15}
-    providers = [p for p in (minimax, deepseek) if p]
+    providers = [p for p in (minimax, deepseek if USE_DEEPSEEK_FALLBACK else None) if p]
     if not providers:
         raise RuntimeError("no usable provider (Minimax/deepseek) in ZCode provider config")
     return providers
 
 SYSTEM_PROMPT = (
-    "你是 AI Signal Feed 嘅新聞編輯,為一般 AI 用戶(唔係專家)改寫 AI 動態。"
-    "規則:只可以根據提供嘅內容改寫,唔准加任何新事實、數字或日期;"
-    "內容單薄就老實話單薄(例如『官方未提供細節』)。"
+    "你係 AI Signal Feed 嘅新聞編輯,為一般 AI 用戶(唔係專家)改寫 AI 動態。"
+    "規則:只可以根據提供嘅內容改寫,唔准加任何新事實、數字或日期。"
+    "資料夠就寫得具體;資料真係得個標題,就一句講完個重點,唔准用固定套語"
+    "(例如唔好每次都寫『官方未提供細節』,可以唔提,或者用唔同講法)。"
     "只回覆 strict JSON,唔好 markdown 圍欄,唔好解釋。"
 )
 
 USER_PROMPT_TEMPLATE = (
     "將以下 AI 動態改寫成用戶視角嘅雙語卡片。對每一條輸出:\n"
-    "- headline_en: 自然英文標題(有事實,冇 clickbait)\n"
-    "- summary_en: 1-2 句英文,講清楚對一般用戶即係咩(幾錢/幾勁/掛咗未/要不要理)\n"
-    "- headline_zh: 繁體中文標題(20字內,人名/產品名保留英文)\n"
-    "- summary_zh: 繁體中文 40-70 字,用戶視角,同上嘅誠實規則\n\n"
+    "- headline_en: 自然英文標題(有事實,冇 clickbait,12 字內)\n"
+    "- summary_en: 1-2 句英文:第一句講發生咩事,第二句(如有料)講對用戶即係咩"
+    "(幾錢/幾勁/掛咗未/要不要理);冇料就只保留第一句\n"
+    "- headline_zh: 繁體中文標題(24字內,人名/產品名保留英文)\n"
+    "- summary_zh: 繁體中文 40-70 字,同上結構;五條唔好用同一句式結尾\n\n"
     "ITEMS:\n{items_json}\n\n"
     "回覆格式: {{\"items\": [{{\"id\": \"...\", \"headline_en\": \"...\", "
     "\"summary_en\": \"...\", \"headline_zh\": \"...\", \"summary_zh\": \"...\"}}]}}"
@@ -170,6 +176,17 @@ def load_cache() -> dict:
     return {}
 
 
+import hashlib as _hashlib
+
+
+def src_hash(item: dict) -> str:
+    """Hash of the SOURCE material an item was enriched from. When the source
+    summary changes (e.g. feeds now carry release notes), the cached zh is
+    stale and the item re-joins the enrichment queue automatically."""
+    material = f"{item.get('headline_en', '')}|{item.get('summary_en', '')}"
+    return _hashlib.sha1(material.encode("utf-8")).hexdigest()[:12]
+
+
 def save_cache(cache: dict) -> None:
     CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
     trimmed = dict(list(cache.items())[-CACHE_CAP:])
@@ -182,6 +199,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--max-calls", type=int, default=8,
                         help="hard cap on API calls this run (default 8 = up to 64 items)")
+    parser.add_argument("--refresh", action="store_true",
+                        help="re-enrich ALL items (overwrites cache) - use after prompt changes")
     parser.add_argument("--dry-run", action="store_true", help="show queue size, no API calls")
     args = parser.parse_args()
 
@@ -197,11 +216,13 @@ def main() -> int:
     cached_applied = 0
     for item in items:
         cached = cache.get(item.get("id", ""))
-        if cached:
-            item.update(cached)
+        current_src = src_hash(item)
+        if cached and not args.refresh and cached.get("src_hash") == current_src:
+            item.update({k: v for k, v in cached.items() if k != "src_hash"})
             item["enriched"] = True
             cached_applied += 1
-        elif not item.get("enriched"):
+        else:
+            # no cache, --refresh, or source material changed since enrichment
             pending.append(item)
 
     print(f"feed items: {len(items)} | cache-applied: {cached_applied} | need API: {len(pending)}")
@@ -239,6 +260,7 @@ def main() -> int:
                 "summary_en": (entry.get("summary_en") or item.get("summary_en", "")).strip(),
                 "headline_zh": (entry.get("headline_zh") or "").strip(),
                 "summary_zh": (entry.get("summary_zh") or "").strip(),
+                "src_hash": src_hash(item),
             }
             item.update(enrichment)
             item["enriched"] = True
@@ -250,12 +272,16 @@ def main() -> int:
     FEED_FILE.write_text(json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # patch archive too so enrichment survives archive-only rebuilds
+    # (same src_hash guard as build_feed - never apply stale zh over
+    # richer source material)
     if ARCHIVE_FILE.exists():
         archive = json.loads(ARCHIVE_FILE.read_text(encoding="utf-8"))
         patched = 0
         for item in archive.get("items", []):
-            if item.get("id") in cache and not item.get("enriched"):
-                item.update(cache[item["id"]])
+            cached = cache.get(item.get("id", ""))
+            if cached and not item.get("enriched") \
+                    and cached.get("src_hash") == src_hash(item):
+                item.update({k: v for k, v in cached.items() if k != "src_hash"})
                 item["enriched"] = True
                 patched += 1
         if patched:
