@@ -1,124 +1,124 @@
 {
-  "generated_at": "2026-11-16T00:57:52+00:00",
+  "generated_at": "2026-11-16T01:36:38+00:00",
   "item_count": 7,
   "items": [
     {
       "id": "hn-2d20317db60d",
-      "timestamp": "2026-11-16T00:57:52+00:00",
+      "timestamp": "2026-11-16T01:36:38+00:00",
       "category": "trending",
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50507303",
       "target_url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-      "headline_en": "HN: All AI-generated code should be Open Source (1071 points, 579 comments)",
-      "summary_en": "The Hacker News community is actively discussing 'All AI-generated code should be Open Source' — 1071 points in 10h (~105.2/h).",
+      "headline_en": "HN: All AI-generated code should be Open Source (1082 points, 591 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'All AI-generated code should be Open Source' — 1082 points in 11h (~99.9/h).",
       "tier": "hn_hot",
       "metrics": {
-        "points": 1071,
-        "comments": 579,
-        "age_hours": 10.2,
-        "velocity_per_hour": 105.19
+        "points": 1082,
+        "comments": 591,
+        "age_hours": 10.8,
+        "velocity_per_hour": 99.93
       }
     },
     {
       "id": "hn-5388f4beff74",
-      "timestamp": "2026-11-16T00:57:52+00:00",
+      "timestamp": "2026-11-16T01:36:38+00:00",
       "category": "trending",
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50493251",
       "target_url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "headline_en": "HN: Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs (1098 points, 646 comments)",
-      "summary_en": "The Hacker News community is actively discussing 'Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs' — 1098 points in 46h (~23.8/h).",
+      "headline_en": "HN: Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs (1099 points, 647 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs' — 1099 points in 47h (~23.5/h).",
       "tier": "hn_hot",
       "metrics": {
-        "points": 1098,
-        "comments": 646,
-        "age_hours": 46.1,
-        "velocity_per_hour": 23.83
+        "points": 1099,
+        "comments": 647,
+        "age_hours": 46.7,
+        "velocity_per_hour": 23.52
       }
     },
     {
       "id": "hn-9c9b4a4d06f6",
-      "timestamp": "2026-11-16T00:57:52+00:00",
+      "timestamp": "2026-11-16T01:36:38+00:00",
       "category": "trending",
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50497589",
       "target_url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
       "headline_en": "HN: Show HN: DeepSeek V3 in ~200 lines of pure Jax (272 points, 27 comments)",
-      "summary_en": "The Hacker News community is actively discussing 'Show HN: DeepSeek V3 in ~200 lines of pure Jax' — 272 points in 34h (~8.0/h).",
+      "summary_en": "The Hacker News community is actively discussing 'Show HN: DeepSeek V3 in ~200 lines of pure Jax' — 272 points in 34h (~7.9/h).",
       "tier": "hn_hot",
       "metrics": {
         "points": 272,
         "comments": 27,
-        "age_hours": 33.9,
-        "velocity_per_hour": 8.03
+        "age_hours": 34.5,
+        "velocity_per_hour": 7.87
       }
     },
     {
       "id": "hn-25f4b4b14f70",
-      "timestamp": "2026-11-16T00:57:52+00:00",
+      "timestamp": "2026-11-16T01:36:38+00:00",
       "category": "trending",
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50497155",
       "target_url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
       "headline_en": "HN: Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM (144 points, 69 comments)",
-      "summary_en": "The Hacker News community is actively discussing 'Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM' — 144 points in 35h (~4.1/h).",
+      "summary_en": "The Hacker News community is actively discussing 'Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM' — 144 points in 36h (~4.1/h).",
       "tier": "hn_rising",
       "metrics": {
         "points": 144,
         "comments": 69,
-        "age_hours": 34.8,
-        "velocity_per_hour": 4.14
+        "age_hours": 35.5,
+        "velocity_per_hour": 4.06
       }
     },
     {
       "id": "hn-4d0c29e8f59a",
-      "timestamp": "2026-11-16T00:57:52+00:00",
+      "timestamp": "2026-11-16T01:36:38+00:00",
       "category": "trending",
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50494696",
       "target_url": "https://news.ycombinator.com/item?id=50494696",
       "headline_en": "HN: Ask HN: What are the most useful, concrete AI skills to independently learn? (88 points, 52 comments)",
-      "summary_en": "The Hacker News community is actively discussing 'Ask HN: What are the most useful, concrete AI skills to independently learn?' — 88 points in 42h (~2.1/h).",
+      "summary_en": "The Hacker News community is actively discussing 'Ask HN: What are the most useful, concrete AI skills to independently learn?' — 88 points in 43h (~2.1/h).",
       "tier": "hn_rising",
       "metrics": {
         "points": 88,
         "comments": 52,
-        "age_hours": 42.0,
-        "velocity_per_hour": 2.09
+        "age_hours": 42.7,
+        "velocity_per_hour": 2.06
       }
     },
     {
       "id": "hn-26f044489f8a",
-      "timestamp": "2026-11-16T00:57:52+00:00",
+      "timestamp": "2026-11-16T01:36:38+00:00",
       "category": "trending",
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50498051",
       "target_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
       "headline_en": "HN: Smuggling of 1.5M AI GPUs could be the cause of Huang's departure (61 points, 42 comments)",
-      "summary_en": "The Hacker News community is actively discussing 'Smuggling of 1.5M AI GPUs could be the cause of Huang's departure' — 61 points in 33h (~1.9/h).",
+      "summary_en": "The Hacker News community is actively discussing 'Smuggling of 1.5M AI GPUs could be the cause of Huang's departure' — 61 points in 34h (~1.8/h).",
       "tier": "hn_rising",
       "metrics": {
         "points": 61,
         "comments": 42,
-        "age_hours": 33.0,
-        "velocity_per_hour": 1.85
+        "age_hours": 33.6,
+        "velocity_per_hour": 1.81
       }
     },
     {
       "id": "hn-a98bfdb34a1b",
-      "timestamp": "2026-11-16T00:57:52+00:00",
+      "timestamp": "2026-11-16T01:36:38+00:00",
       "category": "trending",
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50499114",
       "target_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
       "headline_en": "HN: Claude asked to renumber pages deletes professor's syllabus, year of notes (50 points, 75 comments)",
-      "summary_en": "The Hacker News community is actively discussing 'Claude asked to renumber pages deletes professor's syllabus, year of notes' — 50 points in 31h (~1.6/h).",
+      "summary_en": "The Hacker News community is actively discussing 'Claude asked to renumber pages deletes professor's syllabus, year of notes' — 50 points in 32h (~1.6/h).",
       "tier": "hn_rising",
       "metrics": {
         "points": 50,
         "comments": 75,
-        "age_hours": 31.1,
-        "velocity_per_hour": 1.61
+        "age_hours": 31.8,
+        "velocity_per_hour": 1.57
       }
     }
   ]

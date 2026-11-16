@@ -1,0 +1,785 @@
+{
+  "generated_at": "2026-11-16T01:37:48+00:00",
+  "item_count": 53,
+  "items": [
+    {
+      "id": "hn-2d20317db60d",
+      "timestamp": "2026-11-16T01:36:38+00:00",
+      "category": "trending",
+      "source_name": "Hacker News",
+      "source_url": "https://news.ycombinator.com/item?id=50507303",
+      "target_url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "headline_en": "HN: All AI-generated code should be Open Source (1082 points, 591 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'All AI-generated code should be Open Source' — 1082 points in 11h (~99.9/h).",
+      "tier": "hn_hot",
+      "metrics": {
+        "points": 1082,
+        "comments": 591,
+        "age_hours": 10.8,
+        "velocity_per_hour": 99.93
+      }
+    },
+    {
+      "id": "hn-5388f4beff74",
+      "timestamp": "2026-11-16T01:36:38+00:00",
+      "category": "trending",
+      "source_name": "Hacker News",
+      "source_url": "https://news.ycombinator.com/item?id=50493251",
+      "target_url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "headline_en": "HN: Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs (1099 points, 647 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs' — 1099 points in 47h (~23.5/h).",
+      "tier": "hn_hot",
+      "metrics": {
+        "points": 1099,
+        "comments": 647,
+        "age_hours": 46.7,
+        "velocity_per_hour": 23.52
+      }
+    },
+    {
+      "id": "hn-9c9b4a4d06f6",
+      "timestamp": "2026-11-16T01:36:38+00:00",
+      "category": "trending",
+      "source_name": "Hacker News",
+      "source_url": "https://news.ycombinator.com/item?id=50497589",
+      "target_url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+      "headline_en": "HN: Show HN: DeepSeek V3 in ~200 lines of pure Jax (272 points, 27 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Show HN: DeepSeek V3 in ~200 lines of pure Jax' — 272 points in 34h (~7.9/h).",
+      "tier": "hn_hot",
+      "metrics": {
+        "points": 272,
+        "comments": 27,
+        "age_hours": 34.5,
+        "velocity_per_hour": 7.87
+      }
+    },
+    {
+      "id": "hn-25f4b4b14f70",
+      "timestamp": "2026-11-16T01:36:38+00:00",
+      "category": "trending",
+      "source_name": "Hacker News",
+      "source_url": "https://news.ycombinator.com/item?id=50497155",
+      "target_url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+      "headline_en": "HN: Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM (144 points, 69 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM' — 144 points in 36h (~4.1/h).",
+      "tier": "hn_rising",
+      "metrics": {
+        "points": 144,
+        "comments": 69,
+        "age_hours": 35.5,
+        "velocity_per_hour": 4.06
+      }
+    },
+    {
+      "id": "hn-4d0c29e8f59a",
+      "timestamp": "2026-11-16T01:36:38+00:00",
+      "category": "trending",
+      "source_name": "Hacker News",
+      "source_url": "https://news.ycombinator.com/item?id=50494696",
+      "target_url": "https://news.ycombinator.com/item?id=50494696",
+      "headline_en": "HN: Ask HN: What are the most useful, concrete AI skills to independently learn? (88 points, 52 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Ask HN: What are the most useful, concrete AI skills to independently learn?' — 88 points in 43h (~2.1/h).",
+      "tier": "hn_rising",
+      "metrics": {
+        "points": 88,
+        "comments": 52,
+        "age_hours": 42.7,
+        "velocity_per_hour": 2.06
+      }
+    },
+    {
+      "id": "hn-26f044489f8a",
+      "timestamp": "2026-11-16T01:36:38+00:00",
+      "category": "trending",
+      "source_name": "Hacker News",
+      "source_url": "https://news.ycombinator.com/item?id=50498051",
+      "target_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
+      "headline_en": "HN: Smuggling of 1.5M AI GPUs could be the cause of Huang's departure (61 points, 42 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Smuggling of 1.5M AI GPUs could be the cause of Huang's departure' — 61 points in 34h (~1.8/h).",
+      "tier": "hn_rising",
+      "metrics": {
+        "points": 61,
+        "comments": 42,
+        "age_hours": 33.6,
+        "velocity_per_hour": 1.81
+      }
+    },
+    {
+      "id": "hn-a98bfdb34a1b",
+      "timestamp": "2026-11-16T01:36:38+00:00",
+      "category": "trending",
+      "source_name": "Hacker News",
+      "source_url": "https://news.ycombinator.com/item?id=50499114",
+      "target_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+      "headline_en": "HN: Claude asked to renumber pages deletes professor's syllabus, year of notes (50 points, 75 comments)",
+      "summary_en": "The Hacker News community is actively discussing 'Claude asked to renumber pages deletes professor's syllabus, year of notes' — 50 points in 32h (~1.6/h).",
+      "tier": "hn_rising",
+      "metrics": {
+        "points": 50,
+        "comments": 75,
+        "age_hours": 31.8,
+        "velocity_per_hour": 1.57
+      }
+    },
+    {
+      "id": "gh-778a31b372c6",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/wangzan101/Mika",
+      "target_url": "https://github.com/wangzan101/Mika",
+      "headline_en": "wangzan101/Mika: 8,723 GitHub stars in 18 days (~500/day)",
+      "summary_en": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "tier": "rising",
+      "metrics": {
+        "stars": 8723,
+        "age_days": 17.5,
+        "velocity_per_day": 499.6,
+        "velocity_avg_per_day": 499.6,
+        "velocity_recent_per_day": null,
+        "forks": 1995
+      }
+    },
+    {
+      "id": "gh-944dd6d24f46",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "target_url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "headline_en": "hitkeeen/blender-ai-mcp-addon: 1,223 GitHub stars in 4 days (~353/day)",
+      "summary_en": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 1223,
+        "age_days": 3.5,
+        "velocity_per_day": 353.3,
+        "velocity_avg_per_day": 353.3,
+        "velocity_recent_per_day": null,
+        "forks": 32
+      }
+    },
+    {
+      "id": "gh-a24e623842eb",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/FrigadeHQ/yogurt",
+      "target_url": "https://github.com/FrigadeHQ/yogurt",
+      "headline_en": "FrigadeHQ/yogurt: 1,655 GitHub stars in 5 days (~316/day)",
+      "summary_en": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 1655,
+        "age_days": 5.2,
+        "velocity_per_day": 316.3,
+        "velocity_avg_per_day": 316.3,
+        "velocity_recent_per_day": null,
+        "forks": 93
+      }
+    },
+    {
+      "id": "gh-593f999f8400",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/Outpostkrewhirl86/Capri-AI",
+      "target_url": "https://github.com/Outpostkrewhirl86/Capri-AI",
+      "headline_en": "Outpostkrewhirl86/Capri-AI: 345 GitHub stars in 1 days (~295/day)",
+      "summary_en": "Capri: a local-first desktop AI agent with a cyberpunk HUD. Your personal Jarvis for Windows. Controls files, apps, terminal and browser, powered by Claude Code, Codex, Antigravity or any backend. Inspired by Cyberpunk: Edgerunners.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 345,
+        "age_days": 1.2,
+        "velocity_per_day": 295.4,
+        "velocity_avg_per_day": 295.4,
+        "velocity_recent_per_day": null,
+        "forks": 54
+      }
+    },
+    {
+      "id": "gh-959a4e69bc6c",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/agentes-chat/agentes-chat",
+      "target_url": "https://github.com/agentes-chat/agentes-chat",
+      "headline_en": "agentes-chat/agentes-chat: 1,519 GitHub stars in 7 days (~216/day)",
+      "summary_en": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+      "tier": "rising",
+      "metrics": {
+        "stars": 1519,
+        "age_days": 7.0,
+        "velocity_per_day": 216.0,
+        "velocity_avg_per_day": 216.0,
+        "velocity_recent_per_day": null,
+        "forks": 268
+      }
+    },
+    {
+      "id": "gh-fadd3383ed0a",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/modelflare-ai/AnyModelBot",
+      "target_url": "https://github.com/modelflare-ai/AnyModelBot",
+      "headline_en": "modelflare-ai/AnyModelBot: 4,097 GitHub stars in 20 days (~208/day)",
+      "summary_en": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
+      "tier": "rising",
+      "metrics": {
+        "stars": 4097,
+        "age_days": 19.7,
+        "velocity_per_day": 208.0,
+        "velocity_avg_per_day": 208.0,
+        "velocity_recent_per_day": null,
+        "forks": 63
+      }
+    },
+    {
+      "id": "gh-2a6097a81847",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/berkantay/gpucanvas",
+      "target_url": "https://github.com/berkantay/gpucanvas",
+      "headline_en": "berkantay/gpucanvas: 482 GitHub stars in 3 days (~156/day)",
+      "summary_en": "Put thousands of live DOM nodes on an infinite canvas: the GPU draws them, an editor selects, moves and resizes them, shaders and transitions run on them, and an AI agent can read them and point at them.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 482,
+        "age_days": 3.1,
+        "velocity_per_day": 155.7,
+        "velocity_avg_per_day": 155.7,
+        "velocity_recent_per_day": null,
+        "forks": 29
+      }
+    },
+    {
+      "id": "gh-208cf56cbec0",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/N1nEmAn/sapper-v2",
+      "target_url": "https://github.com/N1nEmAn/sapper-v2",
+      "headline_en": "N1nEmAn/sapper-v2: 2,110 GitHub stars in 16 days (~128/day)",
+      "summary_en": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History).",
+      "tier": "rising",
+      "metrics": {
+        "stars": 2110,
+        "age_days": 16.4,
+        "velocity_per_day": 128.4,
+        "velocity_avg_per_day": 128.4,
+        "velocity_recent_per_day": null,
+        "forks": 1076
+      }
+    },
+    {
+      "id": "gh-4a8c6b949250",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/Dodaios/ste80-humanizer",
+      "target_url": "https://github.com/Dodaios/ste80-humanizer",
+      "headline_en": "Dodaios/ste80-humanizer: 696 GitHub stars in 6 days (~110/day)",
+      "summary_en": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 696,
+        "age_days": 6.3,
+        "velocity_per_day": 109.7,
+        "velocity_avg_per_day": 109.7,
+        "velocity_recent_per_day": null,
+        "forks": 46
+      }
+    },
+    {
+      "id": "gh-609f5454f49c",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/RunanywhereAI/trnrt",
+      "target_url": "https://github.com/RunanywhereAI/trnrt",
+      "headline_en": "RunanywhereAI/trnrt: 1,583 GitHub stars in 16 days (~97/day)",
+      "summary_en": "The open LLM inference engine for AWS Trainium: NKI megakernels, 1M-token context, OpenAI-compatible API. By RunAnywhere.",
+      "tier": "rising",
+      "metrics": {
+        "stars": 1583,
+        "age_days": 16.3,
+        "velocity_per_day": 97.1,
+        "velocity_avg_per_day": 97.1,
+        "velocity_recent_per_day": null,
+        "forks": 18
+      }
+    },
+    {
+      "id": "gh-8bf9033285b8",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
+      "target_url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
+      "headline_en": "roan-maverick/tradingview-indicator-for-ai-agents: 227 GitHub stars in 3 days (~85/day)",
+      "summary_en": "Tradingview IndicatorBuilt for AI agents",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 227,
+        "age_days": 2.7,
+        "velocity_per_day": 84.8,
+        "velocity_avg_per_day": 84.8,
+        "velocity_recent_per_day": null,
+        "forks": 32
+      }
+    },
+    {
+      "id": "gh-8809d76b9927",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/op7418/guizang-game-skill",
+      "target_url": "https://github.com/op7418/guizang-game-skill",
+      "headline_en": "op7418/guizang-game-skill: 359 GitHub stars in 4 days (~82/day)",
+      "summary_en": "歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 359,
+        "age_days": 4.4,
+        "velocity_per_day": 82.0,
+        "velocity_avg_per_day": 82.0,
+        "velocity_recent_per_day": null,
+        "forks": 56
+      }
+    },
+    {
+      "id": "gh-f74c9a85d87d",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/huawei-csl/MACaQ",
+      "target_url": "https://github.com/huawei-csl/MACaQ",
+      "headline_en": "huawei-csl/MACaQ: 313 GitHub stars in 6 days (~55/day)",
+      "summary_en": "SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 313,
+        "age_days": 5.7,
+        "velocity_per_day": 54.9,
+        "velocity_avg_per_day": 54.9,
+        "velocity_recent_per_day": null,
+        "forks": 21
+      }
+    },
+    {
+      "id": "gh-c42159566855",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/MZULALI/xj-scanner",
+      "target_url": "https://github.com/MZULALI/xj-scanner",
+      "headline_en": "MZULALI/xj-scanner: 261 GitHub stars in 5 days (~49/day)",
+      "summary_en": "Read a 1991-95 Jeep's engine computer from a laptop with a $3 Arduino Nano, and let an AI agent do the reading.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 261,
+        "age_days": 5.4,
+        "velocity_per_day": 48.7,
+        "velocity_avg_per_day": 48.7,
+        "velocity_recent_per_day": null,
+        "forks": 33
+      }
+    },
+    {
+      "id": "gh-1003a20d9074",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/wici-ai/inferssd",
+      "target_url": "https://github.com/wici-ai/inferssd",
+      "headline_en": "wici-ai/inferssd: 1,183 GitHub stars in 25 days (~48/day)",
+      "summary_en": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp.",
+      "tier": "rising",
+      "metrics": {
+        "stars": 1183,
+        "age_days": 24.6,
+        "velocity_per_day": 48.0,
+        "velocity_avg_per_day": 48.0,
+        "velocity_recent_per_day": null,
+        "forks": 99
+      }
+    },
+    {
+      "id": "gh-c9996c9029e1",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/SAOS-3624/dsh-see-now",
+      "target_url": "https://github.com/SAOS-3624/dsh-see-now",
+      "headline_en": "SAOS-3624/dsh-see-now: 662 GitHub stars in 14 days (~46/day)",
+      "summary_en": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
+      "tier": "rising",
+      "metrics": {
+        "stars": 662,
+        "age_days": 14.5,
+        "velocity_per_day": 45.6,
+        "velocity_avg_per_day": 45.6,
+        "velocity_recent_per_day": null,
+        "forks": 70
+      }
+    },
+    {
+      "id": "gh-1f06d641b04d",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/threerocks/article2media",
+      "target_url": "https://github.com/threerocks/article2media",
+      "headline_en": "threerocks/article2media: 351 GitHub stars in 8 days (~45/day)",
+      "summary_en": "把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。",
+      "tier": "rising",
+      "metrics": {
+        "stars": 351,
+        "age_days": 7.7,
+        "velocity_per_day": 45.4,
+        "velocity_avg_per_day": 45.4,
+        "velocity_recent_per_day": null,
+        "forks": 57
+      }
+    },
+    {
+      "id": "gh-bba6a2f8f2e0",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/Timaga/noda-local-ai-notes",
+      "target_url": "https://github.com/Timaga/noda-local-ai-notes",
+      "headline_en": "Timaga/noda-local-ai-notes: 104 GitHub stars in 2 days (~44/day)",
+      "summary_en": "Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 104,
+        "age_days": 2.3,
+        "velocity_per_day": 44.5,
+        "velocity_avg_per_day": 44.5,
+        "velocity_recent_per_day": null,
+        "forks": 1
+      }
+    },
+    {
+      "id": "gh-c6bbee3ab1b6",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/sleepy-zone/ai-ref-library-cn",
+      "target_url": "https://github.com/sleepy-zone/ai-ref-library-cn",
+      "headline_en": "sleepy-zone/ai-ref-library-cn: 770 GitHub stars in 17 days (~44/day)",
+      "summary_en": "AI 作图素材库 · 中文版（脸 / 姿势 / 服装）",
+      "tier": "rising",
+      "metrics": {
+        "stars": 770,
+        "age_days": 17.4,
+        "velocity_per_day": 44.2,
+        "velocity_avg_per_day": 44.2,
+        "velocity_recent_per_day": null,
+        "forks": 185
+      }
+    },
+    {
+      "id": "gh-90b953342bc0",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/fendouai/ViralForge",
+      "target_url": "https://github.com/fendouai/ViralForge",
+      "headline_en": "fendouai/ViralForge: 206 GitHub stars in 5 days (~43/day)",
+      "summary_en": "Agent-native viral video studio: one-click replicate viral short videos, deconstruct video hooks and scripts into a Viral DNA report, and ship 10 costed variants. Skill + MCP + CLI. Apache-2.0.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 206,
+        "age_days": 4.8,
+        "velocity_per_day": 43.2,
+        "velocity_avg_per_day": 43.2,
+        "velocity_recent_per_day": null,
+        "forks": 6
+      }
+    },
+    {
+      "id": "gh-b62344349ca9",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/claynicholson/copper-kicad-mcp",
+      "target_url": "https://github.com/claynicholson/copper-kicad-mcp",
+      "headline_en": "claynicholson/copper-kicad-mcp: 100 GitHub stars in 3 days (~30/day)",
+      "summary_en": "MCP server that lets any AI app design real, orderable KiCad boards: schematic, LCSC parts, PCB routing, ERC/DRC, JLCPCB fab files.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 100,
+        "age_days": 3.3,
+        "velocity_per_day": 30.4,
+        "velocity_avg_per_day": 30.4,
+        "velocity_recent_per_day": null,
+        "forks": 5
+      }
+    },
+    {
+      "id": "gh-a4b3e921cc42",
+      "timestamp": "2026-11-16T01:36:26+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/yasakani-dev/yasakani",
+      "target_url": "https://github.com/yasakani-dev/yasakani",
+      "headline_en": "yasakani-dev/yasakani: 103 GitHub stars in 4 days (~29/day)",
+      "summary_en": "Local LLM engine for Windows and one NVIDIA RTX 5090, built for Qwen3.8-27B",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 103,
+        "age_days": 3.5,
+        "velocity_per_day": 29.3,
+        "velocity_avg_per_day": 29.3,
+        "velocity_recent_per_day": null,
+        "forks": 21
+      }
+    },
+    {
+      "id": "st-6c1d6a7dee13",
+      "timestamp": "2026-11-16T01:33:47+00:00",
+      "category": "outage",
+      "source_name": "Claude Status",
+      "source_url": "https://status.claude.com/api/v2/status.json",
+      "target_url": "https://status.claude.com/api/v2/status.json",
+      "headline_en": "Claude status: Partially Degraded Service",
+      "summary_en": "Claude's status page reports 'minor' — Partially Degraded Service. Check the status page before blaming your prompts.",
+      "severity": "minor",
+      "event": "issue"
+    },
+    {
+      "id": "fd-b57fcdc61a2c",
+      "timestamp": "2026-11-16T00:17:10+00:00",
+      "category": "release",
+      "source_name": "llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12428",
+      "headline_en": "b12428",
+      "summary_en": "New entry from llama.cpp Releases: b12428"
+    },
+    {
+      "id": "fd-9a43fed6987c",
+      "timestamp": "2026-11-16T00:00:28+00:00",
+      "category": "blog",
+      "source_name": "NVIDIA AI Blog",
+      "source_url": "https://blogs.nvidia.com/feed/",
+      "target_url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+      "headline_en": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
+      "summary_en": "New entry from NVIDIA AI Blog: AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities"
+    },
+    {
+      "id": "fd-3f99ead62b7c",
+      "timestamp": "2026-11-15T23:18:44+00:00",
+      "category": "release",
+      "source_name": "Codex Releases",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.7",
+      "headline_en": "0.171.0-alpha.7",
+      "summary_en": "New entry from Codex Releases: 0.171.0-alpha.7"
+    },
+    {
+      "id": "fd-cf29c422ac1f",
+      "timestamp": "2026-11-15T05:09:04+00:00",
+      "category": "release",
+      "source_name": "LiteLLM Releases",
+      "source_url": "https://github.com/BerriAI/litellm/releases.atom",
+      "target_url": "https://github.com/BerriAI/litellm/releases/tag/v1.111.0-dev.4",
+      "headline_en": "v1.111.0-dev.4",
+      "summary_en": "New entry from LiteLLM Releases: v1.111.0-dev.4"
+    },
+    {
+      "id": "fd-3683e7be6f79",
+      "timestamp": "2026-11-14T10:15:55+00:00",
+      "category": "release",
+      "source_name": "vLLM Releases",
+      "source_url": "https://github.com/vllm-project/vllm/releases.atom",
+      "target_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc4",
+      "headline_en": "v0.34.0rc4",
+      "summary_en": "New entry from vLLM Releases: v0.34.0rc4"
+    },
+    {
+      "id": "fd-856b7342e43c",
+      "timestamp": "2026-11-14T01:43:55+00:00",
+      "category": "release",
+      "source_name": "LangGraph Releases",
+      "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
+      "target_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.22",
+      "headline_en": "langgraph==1.2.22",
+      "summary_en": "New entry from LangGraph Releases: langgraph==1.2.22"
+    },
+    {
+      "id": "fd-7705a8a3b3de",
+      "timestamp": "2026-11-13T23:22:09+00:00",
+      "category": "blog",
+      "source_name": "AWS ML Blog",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "target_url": "https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1/",
+      "headline_en": "Production MLOps at GS Caltex with Amazon SageMaker Canvas, part 1",
+      "summary_en": "New entry from AWS ML Blog: Production MLOps at GS Caltex with Amazon SageMaker Canvas, part 1"
+    },
+    {
+      "id": "fd-719a73c5da5f",
+      "timestamp": "2026-11-13T22:24:00+00:00",
+      "category": "blog",
+      "source_name": "Vercel AI Blog",
+      "source_url": "https://vercel.com/blog/feed.xml",
+      "target_url": "https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing",
+      "headline_en": "Daemons can now send traces to Vercel Tracing",
+      "summary_en": "New entry from Vercel AI Blog: Daemons can now send traces to Vercel Tracing"
+    },
+    {
+      "id": "fd-40da4434ce08",
+      "timestamp": "2026-11-13T20:33:05+00:00",
+      "category": "blog",
+      "source_name": "Microsoft AI Blog",
+      "source_url": "https://news.microsoft.com/source/feed/",
+      "target_url": "https://blogs.microsoft.com/on-the-issues/2026/11/11/protecting-privacy-and-press-freedom-an-important-fourth-circuit-ruling/",
+      "headline_en": "Why a new court ruling matters for press freedom and privacy",
+      "summary_en": "New entry from Microsoft AI Blog: Why a new court ruling matters for press freedom and privacy"
+    },
+    {
+      "id": "fd-8ee3f1944ab9",
+      "timestamp": "2026-11-13T20:20:21+00:00",
+      "category": "blog",
+      "source_name": "Cloudflare AI Blog",
+      "source_url": "https://blog.cloudflare.com/tag/ai/rss",
+      "target_url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "headline_en": "Kitesurf is now open source",
+      "summary_en": "New entry from Cloudflare AI Blog: Kitesurf is now open source"
+    },
+    {
+      "id": "fd-15fa788cf00a",
+      "timestamp": "2026-11-13T18:00:39+00:00",
+      "category": "blog",
+      "source_name": "Hugging Face Blog",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "target_url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "headline_en": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "summary_en": "New entry from Hugging Face Blog: Build a Robot Pick-and-Place Simulation with SimReady Assets"
+    },
+    {
+      "id": "fd-9743c64181c8",
+      "timestamp": "2026-11-13T08:10:35+00:00",
+      "category": "release",
+      "source_name": "n8n Releases",
+      "source_url": "https://github.com/n8n-io/n8n/releases.atom",
+      "target_url": "https://github.com/n8n-io/n8n/releases/tag/v1",
+      "headline_en": "v1: :rocket: Release 1.123.96 (#43771)",
+      "summary_en": "New entry from n8n Releases: v1: :rocket: Release 1.123.96 (#43771)"
+    },
+    {
+      "id": "fd-5b2cbd603c96",
+      "timestamp": "2026-11-12T22:21:17+00:00",
+      "category": "changelog",
+      "source_name": "OpenRouter Changelog",
+      "source_url": "https://openrouter.ai/docs/changelog/rss.xml",
+      "target_url": "https://openrouter.ai/docs/changelog#november-12-2026",
+      "headline_en": "November 12, 2026",
+      "summary_en": "New entry from OpenRouter Changelog: November 12, 2026"
+    },
+    {
+      "id": "fd-b178eb5f5d9f",
+      "timestamp": "2026-11-12T14:32:59+00:00",
+      "category": "release",
+      "source_name": "OpenHands Releases",
+      "source_url": "https://github.com/All-Hands-AI/OpenHands/releases.atom",
+      "target_url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.40.0",
+      "headline_en": "v1.40.0",
+      "summary_en": "New entry from OpenHands Releases: v1.40.0"
+    },
+    {
+      "id": "fd-fcb12dc9daf5",
+      "timestamp": "2026-11-10T22:25:00+00:00",
+      "category": "release",
+      "source_name": "Ollama Releases",
+      "source_url": "https://github.com/ollama/ollama/releases.atom",
+      "target_url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc0",
+      "headline_en": "v0.40.17",
+      "summary_en": "New entry from Ollama Releases: v0.40.17"
+    },
+    {
+      "id": "fd-88b63ace7c2f",
+      "timestamp": "2026-11-08T23:48:24+00:00",
+      "category": "release",
+      "source_name": "Open WebUI Releases",
+      "source_url": "https://github.com/open-webui/open-webui/releases.atom",
+      "target_url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.3",
+      "headline_en": "v0.13.3",
+      "summary_en": "New entry from Open WebUI Releases: v0.13.3"
+    },
+    {
+      "id": "fd-c83c3153b641",
+      "timestamp": "2026-11-05T12:00:14+00:00",
+      "category": "news",
+      "source_name": "Mistral News",
+      "source_url": "https://mistral.ai/news/rss",
+      "target_url": "https://mistral.ai/news/build-with-studio/",
+      "headline_en": "Le Chonk brings the brains. Studio puts it to work.",
+      "summary_en": "New entry from Mistral News: Le Chonk brings the brains. Studio puts it to work."
+    },
+    {
+      "id": "fd-5dc128560cf8",
+      "timestamp": "2026-11-04T07:37:34+00:00",
+      "category": "release",
+      "source_name": "Dify Releases",
+      "source_url": "https://github.com/langgenius/dify/releases.atom",
+      "target_url": "https://github.com/langgenius/dify/releases/tag/1.19.0",
+      "headline_en": "v1.19.0 - Trace Your Workflows, Layer by Layer",
+      "summary_en": "New entry from Dify Releases: v1.19.0 - Trace Your Workflows, Layer by Layer"
+    },
+    {
+      "id": "fd-98a511a84418",
+      "timestamp": "2026-11-04T00:00:00+00:00",
+      "category": "blog",
+      "source_name": "Together AI Blog",
+      "source_url": "https://www.together.ai/blog/rss.xml",
+      "target_url": "https://www.together.ai/blog/together-compiler-continual-compilation-for-ai-inference",
+      "headline_en": "Together Compiler: Continual Compilation for AI inference",
+      "summary_en": "New entry from Together AI Blog: Together Compiler: Continual Compilation for AI inference"
+    },
+    {
+      "id": "fd-c99fa91737d5",
+      "timestamp": "2026-11-02T22:14:10+00:00",
+      "category": "release",
+      "source_name": "SGLang Releases",
+      "source_url": "https://github.com/sgl-project/sglang/releases.atom",
+      "target_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
+      "headline_en": "v0.5.23",
+      "summary_en": "New entry from SGLang Releases: v0.5.23"
+    },
+    {
+      "id": "fd-c8cd05d3ae5e",
+      "timestamp": "2026-08-25T14:59:22+00:00",
+      "category": "news",
+      "source_name": "Stability AI News",
+      "source_url": "https://stability.ai/news-updates?format=rss",
+      "target_url": "https://stability.ai/news-updates/stability-ai-latest-funding-backed-by-entertainment-industry-biggest-names",
+      "headline_en": "The Entertainment Industry’s Biggest Names Back Stability AI in Latest Funding Round",
+      "summary_en": "New entry from Stability AI News: The Entertainment Industry’s Biggest Names Back Stability AI in Latest Funding Round"
+    },
+    {
+      "id": "fd-65bba15109b9",
+      "timestamp": "2026-06-19T00:24:00+00:00",
+      "category": "release",
+      "source_name": "Continue Releases",
+      "source_url": "https://github.com/continuedev/continue/releases.atom",
+      "target_url": "https://github.com/continuedev/continue/releases/tag/v2.1.0-vscode",
+      "headline_en": "v2.1.0-vscode",
+      "summary_en": "New entry from Continue Releases: v2.1.0-vscode"
+    },
+    {
+      "id": "fd-c58e4b8cd2b9",
+      "timestamp": "2026-02-12T00:42:25+00:00",
+      "category": "release",
+      "source_name": "Aider Releases",
+      "source_url": "https://github.com/Aider-AI/aider/releases.atom",
+      "target_url": "https://github.com/Aider-AI/aider/releases/tag/v0.86.3.dev",
+      "headline_en": "v0.86.3.dev",
+      "summary_en": "New entry from Aider Releases: v0.86.3.dev"
+    }
+  ]
+}

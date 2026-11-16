@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-16T00:58:37+00:00",
+  "generated_at": "2026-11-16T01:36:26+00:00",
   "queries_run": 12,
   "raw_unique": 124,
-  "spam_ring_dropped": 53,
+  "spam_ring_dropped": 52,
   "filtered_out": 21,
   "review": {
     "flagged_count": 5,
     "owner_checks": {
       "hitkeeen": 37.7,
       "Outpostkrewhirl86": 153.2,
-      "roan-maverick": 17.6,
+      "roan-maverick": 17.7,
       "Timaga": 1360.4,
       "8hjkkwikl8": 10.7
     },
@@ -26,7 +26,7 @@
     "suspects": [
       {
         "repo": "hitkeeen/blender-ai-mcp-addon",
-        "stars": 1155,
+        "stars": 1223,
         "flags": [
           "no_language"
         ]
@@ -40,7 +40,7 @@
       },
       {
         "repo": "roan-maverick/tradingview-indicator-for-ai-agents",
-        "stars": 225,
+        "stars": 227,
         "flags": [
           "no_language"
         ]
@@ -67,12 +67,12 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 8722,
-        "age_days": 17.4,
-        "velocity_per_day": 500.3,
-        "velocity_avg_per_day": 500.3,
+        "stars": 8723,
+        "age_days": 17.5,
+        "velocity_per_day": 499.6,
+        "velocity_avg_per_day": 499.6,
         "velocity_recent_per_day": null,
-        "forks": 1994
+        "forks": 1995
       }
     },
     {
@@ -86,12 +86,12 @@
         "new_llm_7d"
       ],
       "metrics": {
-        "stars": 1155,
-        "age_days": 3.4,
-        "velocity_per_day": 336.2,
-        "velocity_avg_per_day": 336.2,
+        "stars": 1223,
+        "age_days": 3.5,
+        "velocity_per_day": 353.3,
+        "velocity_avg_per_day": 353.3,
         "velocity_recent_per_day": null,
-        "forks": 30
+        "forks": 32
       },
       "review_flags": [
         "no_language"
@@ -109,10 +109,10 @@
         "new_mcp_7d"
       ],
       "metrics": {
-        "stars": 1651,
+        "stars": 1655,
         "age_days": 5.2,
-        "velocity_per_day": 317.1,
-        "velocity_avg_per_day": 317.1,
+        "velocity_per_day": 316.3,
+        "velocity_avg_per_day": 316.3,
         "velocity_recent_per_day": null,
         "forks": 93
       }
@@ -129,9 +129,9 @@
       ],
       "metrics": {
         "stars": 345,
-        "age_days": 1.1,
-        "velocity_per_day": 302.2,
-        "velocity_avg_per_day": 302.2,
+        "age_days": 1.2,
+        "velocity_per_day": 295.4,
+        "velocity_avg_per_day": 295.4,
         "velocity_recent_per_day": null,
         "forks": 54
       },
@@ -151,10 +151,10 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 1515,
+        "stars": 1519,
         "age_days": 7.0,
-        "velocity_per_day": 216.3,
-        "velocity_avg_per_day": 216.3,
+        "velocity_per_day": 216.0,
+        "velocity_avg_per_day": 216.0,
         "velocity_recent_per_day": null,
         "forks": 268
       }
@@ -170,12 +170,12 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 4086,
+        "stars": 4097,
         "age_days": 19.7,
-        "velocity_per_day": 207.7,
-        "velocity_avg_per_day": 207.7,
+        "velocity_per_day": 208.0,
+        "velocity_avg_per_day": 208.0,
         "velocity_recent_per_day": null,
-        "forks": 60
+        "forks": 63
       }
     },
     {
@@ -191,8 +191,8 @@
       "metrics": {
         "stars": 482,
         "age_days": 3.1,
-        "velocity_per_day": 157.1,
-        "velocity_avg_per_day": 157.1,
+        "velocity_per_day": 155.7,
+        "velocity_avg_per_day": 155.7,
         "velocity_recent_per_day": null,
         "forks": 29
       }
@@ -210,10 +210,10 @@
       "metrics": {
         "stars": 2110,
         "age_days": 16.4,
-        "velocity_per_day": 128.6,
-        "velocity_avg_per_day": 128.6,
+        "velocity_per_day": 128.4,
+        "velocity_avg_per_day": 128.4,
         "velocity_recent_per_day": null,
-        "forks": 1075
+        "forks": 1076
       }
     },
     {
@@ -229,8 +229,8 @@
       "metrics": {
         "stars": 696,
         "age_days": 6.3,
-        "velocity_per_day": 110.1,
-        "velocity_avg_per_day": 110.1,
+        "velocity_per_day": 109.7,
+        "velocity_avg_per_day": 109.7,
         "velocity_recent_per_day": null,
         "forks": 46
       }
@@ -248,8 +248,8 @@
       "metrics": {
         "stars": 1583,
         "age_days": 16.3,
-        "velocity_per_day": 97.3,
-        "velocity_avg_per_day": 97.3,
+        "velocity_per_day": 97.1,
+        "velocity_avg_per_day": 97.1,
         "velocity_recent_per_day": null,
         "forks": 18
       }
@@ -265,17 +265,17 @@
         "kw_agent_7d"
       ],
       "metrics": {
-        "stars": 225,
+        "stars": 227,
         "age_days": 2.7,
-        "velocity_per_day": 84.9,
-        "velocity_avg_per_day": 84.9,
+        "velocity_per_day": 84.8,
+        "velocity_avg_per_day": 84.8,
         "velocity_recent_per_day": null,
         "forks": 32
       },
       "review_flags": [
         "no_language"
       ],
-      "owner_account_age_days": 17.6
+      "owner_account_age_days": 17.7
     },
     {
       "repo": "op7418/guizang-game-skill",
@@ -288,10 +288,10 @@
         "new_agent_7d"
       ],
       "metrics": {
-        "stars": 358,
+        "stars": 359,
         "age_days": 4.4,
-        "velocity_per_day": 82.2,
-        "velocity_avg_per_day": 82.2,
+        "velocity_per_day": 82.0,
+        "velocity_avg_per_day": 82.0,
         "velocity_recent_per_day": null,
         "forks": 56
       }
@@ -307,10 +307,10 @@
         "kw_localllm_14d"
       ],
       "metrics": {
-        "stars": 312,
+        "stars": 313,
         "age_days": 5.7,
-        "velocity_per_day": 55.0,
-        "velocity_avg_per_day": 55.0,
+        "velocity_per_day": 54.9,
+        "velocity_avg_per_day": 54.9,
         "velocity_recent_per_day": null,
         "forks": 21
       }
@@ -326,12 +326,12 @@
         "kw_agent_7d"
       ],
       "metrics": {
-        "stars": 260,
-        "age_days": 5.3,
-        "velocity_per_day": 48.8,
-        "velocity_avg_per_day": 48.8,
+        "stars": 261,
+        "age_days": 5.4,
+        "velocity_per_day": 48.7,
+        "velocity_avg_per_day": 48.7,
         "velocity_recent_per_day": null,
-        "forks": 32
+        "forks": 33
       }
     },
     {
@@ -347,8 +347,8 @@
       "metrics": {
         "stars": 1183,
         "age_days": 24.6,
-        "velocity_per_day": 48.1,
-        "velocity_avg_per_day": 48.1,
+        "velocity_per_day": 48.0,
+        "velocity_avg_per_day": 48.0,
         "velocity_recent_per_day": null,
         "forks": 99
       }
@@ -364,10 +364,10 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 661,
+        "stars": 662,
         "age_days": 14.5,
-        "velocity_per_day": 45.7,
-        "velocity_avg_per_day": 45.7,
+        "velocity_per_day": 45.6,
+        "velocity_avg_per_day": 45.6,
         "velocity_recent_per_day": null,
         "forks": 70
       }
@@ -383,10 +383,10 @@
         "new_tts_14d"
       ],
       "metrics": {
-        "stars": 349,
+        "stars": 351,
         "age_days": 7.7,
-        "velocity_per_day": 45.3,
-        "velocity_avg_per_day": 45.3,
+        "velocity_per_day": 45.4,
+        "velocity_avg_per_day": 45.4,
         "velocity_recent_per_day": null,
         "forks": 57
       }
@@ -404,8 +404,8 @@
       "metrics": {
         "stars": 104,
         "age_days": 2.3,
-        "velocity_per_day": 45.0,
-        "velocity_avg_per_day": 45.0,
+        "velocity_per_day": 44.5,
+        "velocity_avg_per_day": 44.5,
         "velocity_recent_per_day": null,
         "forks": 1
       },
@@ -427,8 +427,8 @@
       "metrics": {
         "stars": 770,
         "age_days": 17.4,
-        "velocity_per_day": 44.3,
-        "velocity_avg_per_day": 44.3,
+        "velocity_per_day": 44.2,
+        "velocity_avg_per_day": 44.2,
         "velocity_recent_per_day": null,
         "forks": 185
       }
@@ -445,9 +445,9 @@
       ],
       "metrics": {
         "stars": 206,
-        "age_days": 4.7,
-        "velocity_per_day": 43.5,
-        "velocity_avg_per_day": 43.5,
+        "age_days": 4.8,
+        "velocity_per_day": 43.2,
+        "velocity_avg_per_day": 43.2,
         "velocity_recent_per_day": null,
         "forks": 6
       }
@@ -465,8 +465,8 @@
       "metrics": {
         "stars": 100,
         "age_days": 3.3,
-        "velocity_per_day": 30.7,
-        "velocity_avg_per_day": 30.7,
+        "velocity_per_day": 30.4,
+        "velocity_avg_per_day": 30.4,
         "velocity_recent_per_day": null,
         "forks": 5
       }
@@ -482,10 +482,10 @@
         "kw_localllm_14d"
       ],
       "metrics": {
-        "stars": 102,
+        "stars": 103,
         "age_days": 3.5,
-        "velocity_per_day": 29.2,
-        "velocity_avg_per_day": 29.2,
+        "velocity_per_day": 29.3,
+        "velocity_avg_per_day": 29.3,
         "velocity_recent_per_day": null,
         "forks": 21
       }
