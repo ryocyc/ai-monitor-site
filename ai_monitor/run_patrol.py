@@ -15,9 +15,8 @@ Steps:
   3. collect/collect_status.py   provider outages       (pillar 4)
   4. collect/collect_prices.py   API price changes      (pillar 3)
   5. collect/collect_feeds.py    releases + news feeds  (pillar 1)
-  6. build_feed.py          merge -> site/data/feed.json
-
-Rankings (pillar 2) deferred to D4: arena.ai is JS-rendered.
+  6. collect/collect_rankings.py LMArena top-10 diff    (pillar 2, stealth)
+  7. build_feed.py          merge -> site/data/feed.json
 """
 
 from __future__ import annotations
@@ -45,6 +44,7 @@ STEPS = [
     ("status",    [sys.executable, str(BASE_DIR / "collect" / "collect_status.py")], 90),
     ("prices",    [sys.executable, str(BASE_DIR / "collect" / "collect_prices.py")], 120),
     ("feeds",     [sys.executable, str(BASE_DIR / "collect" / "collect_feeds.py")], 180),
+    ("rankings",  [sys.executable, str(BASE_DIR / "collect" / "collect_rankings.py")], 180),
     ("build",     [sys.executable, str(BASE_DIR / "build_feed.py")],        60),
 ]
 

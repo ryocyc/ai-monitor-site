@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-11-16T01:53:11+00:00",
+  "top": [
+    {
+      "name": "Claude Fable 5.2 (Max)",
+      "score": 30.48
+    },
+    {
+      "name": "Claude Opus 5.5 (Max)",
+      "score": 19.51
+    },
+    {
+      "name": "Gemini 4 Carbon (High)",
+      "score": 16.9
+    },
+    {
+      "name": "Claude Sonnet 5.5 (Max)",
+      "score": 16.07
+    },
+    {
+      "name": "Gemini 4 Hydrogen (High)",
+      "score": 14.8
+    },
+    {
+      "name": "Claude Fable 5.1 (Max)",
+      "score": 14.62
+    },
+    {
+      "name": "GPT-6 Astra (Max)",
+      "score": 14.56
+    },
+    {
+      "name": "Claude Opus 5.5 (High)",
+      "score": 14.22
+    },
+    {
+      "name": "GPT-6.1 Sol (Max)",
+      "score": 12.4
+    },
+    {
+      "name": "GPT-6.1 Terra (Max)",
+      "score": 11.96
+    }
+  ]
+}

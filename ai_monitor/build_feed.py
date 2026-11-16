@@ -29,6 +29,7 @@ SITE_DATA_DIR = BASE_DIR / "site" / "data"
 INPUT_FILES = [
     "status_items.json",    # outages first in priority if timestamps tie
     "prices_items.json",
+    "rankings_items.json",
     "trending_items.json",
     "hn_items.json",
     "feeds_items.json",
