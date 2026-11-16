@@ -11,3 +11,4 @@ ai_monitor/site/
 # Patrol state (big snapshot)
 ai_monitor/state/prices_snapshot.json
 ai_monitor/logs/*.txt
+__pycache__/
