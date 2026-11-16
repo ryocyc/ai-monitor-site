@@ -150,20 +150,22 @@
       const enLine = item.headline_zh && item.headline_en && item.headline_en !== item.headline_zh
         ? item.headline_en : '';
       const slug = articleMap[item.id];
-      const openUrl = slug ? `./articles/${slug}.html` : url;
-      const openLabel = slug ? '睇全文 →' : 'Open';
       return `
         <article class="card" data-pillar="${p.label}">
           <div class="card-top">
             <span class="pill ${p.cls}">${p.label}</span>
             <time title="${item.timestamp || ''}">${relativeTime(item.timestamp)}</time>
           </div>
-          <h2 class="headline"><a href="${openUrl}" rel="noopener">${title}</a></h2>
+          <h2 class="headline">${slug
+            ? `<a href="./articles/${slug}.html">${title}</a>`
+            : title}</h2>
           ${enLine ? `<div class="en-title">${enLine}</div>` : ''}
           <p class="summary">${summary}</p>
           <div class="card-bottom">
             <span>${item.source_name || ''}</span>
-            <a href="${openUrl}" rel="noopener">${openLabel}</a>
+            ${slug
+              ? `<a href="./articles/${slug}.html">睇全文 →</a>`
+              : `<a href="${url}" rel="noopener">來源 ↗</a>`}
           </div>
         </article>`;
     }
