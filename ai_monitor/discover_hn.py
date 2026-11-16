@@ -33,6 +33,9 @@ DATA_DIR = BASE_DIR / "data"
 
 SEARCH_SLEEP_SECONDS = 2.0
 REQUEST_TIMEOUT = 20
+ARTICLE_TIMEOUT = 12
+ARTICLE_SLEEP_SECONDS = 0.8
+ARTICLE_MAX = 12          # fetch substance only for the top stories
 USER_AGENT = "AI-News-Monitor/1.0 (+https://aisignalfeed.com)"
 WINDOW_HOURS = 48
 
@@ -87,6 +90,53 @@ def word_match(text: str, patterns: list[str]) -> bool:
     lowered = text.lower()
     return any(re.search(rf"(?<![a-z0-9]){re.escape(p)}(?![a-z0-9])", lowered)
                for p in patterns)
+
+
+def _clean_html(text: str) -> str:
+    text = re.sub(r"<[^>]+>", " ", text or "")
+    text = text.replace("&gt;", ">").replace("&lt;", "<") \
+               .replace("&amp;", "&").replace("&quot;", '"').replace("&#x27;", "'")
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def fetch_article_text(url: str) -> str:
+    """Fetch the linked article's main text so items carry substance,
+    not just a headline. Graceful None on any failure."""
+    request = urllib.request.Request(url, headers={
+        "User-Agent": USER_AGENT, "Accept-Language": "en-US,en;q=0.9"})
+    try:
+        with urllib.request.urlopen(request, timeout=ARTICLE_TIMEOUT) as resp:
+            raw = resp.read().decode(resp.headers.get_content_charset() or "utf-8",
+                                     errors="replace")
+    except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError):
+        return ""
+    raw = re.sub(r"(?is)<(script|style|noscript|nav|footer|header).*?>.*?</\1>", " ", raw)
+    raw = re.sub(r"(?is)<(p|div|section|article|li|h1|h2|h3|br)[^>]*>", "\n", raw)
+    text = _clean_html(re.sub(r"<[^>]+>", " ", raw))
+    # prefer the longest mid-page chunk (nav/boilerplate live at the edges)
+    lines = [l for l in text.splitlines() if len(l) > 80]
+    body = max(lines, key=len, default=text)
+    return body[:800]
+
+
+def fetch_discussion_text(object_id: str) -> str:
+    """Ask-HN / text posts: pull the story text + top comments from the free
+    Algolia item API (no scraping)."""
+    url = f"https://hn.algolia.com/api/v1/items/{object_id}"
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT) as resp:
+            data = json.loads(resp.read().decode("utf-8", errors="replace"))
+    except (urllib.error.URLError, TimeoutError, ConnectionError,
+            ValueError, json.JSONDecodeError):
+        return ""
+    parts = [_clean_html(data.get("text") or "")]
+    children = data.get("children") or []
+    for comment in children[:3]:
+        body = _clean_html(comment.get("text") or "")
+        if len(body) > 60:
+            parts.append(body[:300])
+    return " ".join(p for p in parts if p)[:600]
 
 
 def parse_story(hit: dict) -> dict | None:
@@ -173,8 +223,27 @@ def main() -> int:
     candidates.sort(key=lambda c: (c["velocity_per_hour"], c["points"]), reverse=True)
     top = candidates[:MAX_ITEMS]
 
+    # substance pass: article text or discussion comments for the top stories,
+    # so enrichment rewrites from real content instead of title-only
+    for story in top:
+        excerpt = ""
+        if story.get("article_url"):
+            excerpt = fetch_article_text(story["article_url"])
+        if not excerpt:
+            excerpt = fetch_discussion_text(
+                story["discussion_url"].rsplit("=", 1)[-1])
+        story["content_excerpt"] = excerpt
+        time.sleep(ARTICLE_SLEEP_SECONDS)
+
     items = []
     for c in top:
+        excerpt = c.get("content_excerpt", "")
+        summary = (
+            f"The Hacker News community is actively discussing '{c['title']}' — "
+            f"{c['points']} points in {c['age_hours']:.0f}h (~{c['velocity_per_hour']:.1f}/h)."
+        )
+        if excerpt:
+            summary += f" Content excerpt: {excerpt[:400]}"
         items.append({
             "id": "hn-" + hashlib.sha1(c["discussion_url"].encode("utf-8")).hexdigest()[:12],
             "timestamp": utc_now(),
@@ -183,10 +252,7 @@ def main() -> int:
             "source_url": c["discussion_url"],
             "target_url": c["article_url"] or c["discussion_url"],
             "headline_en": f"HN: {c['title']} ({c['points']} points, {c['comments']} comments)",
-            "summary_en": (
-                f"The Hacker News community is actively discussing '{c['title']}' — "
-                f"{c['points']} points in {c['age_hours']:.0f}h (~{c['velocity_per_hour']:.1f}/h)."
-            ),
+            "summary_en": summary,
             "tier": c["tier"],
             "metrics": {
                 "points": c["points"],

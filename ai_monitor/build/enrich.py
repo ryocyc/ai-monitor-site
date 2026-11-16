@@ -26,7 +26,6 @@ which build_feed.py applies on every rebuild so enrichment survives patrols).
 from __future__ import annotations
 
 import argparse
-import datetime as dt
 import json
 import pathlib
 import re
@@ -53,79 +52,26 @@ PROVIDER_BACKOFF_SECONDS = 30
 BATCH_SIZE = 8
 CACHE_CAP = 2000
 
-# Fallback policy (user directive 2026-11-16): the MiniMax TokenPlanPlus is
-# effectively unlimited (verified in console: 5h quota 2% used, weekly 0%,
-# M3 rate limit 200 RPM / 10M TPM vs our ~72K tokens/day). The day's 529s
-# were cluster-side overload shedding ("overloaded_error 2064"), NOT quota.
-#   - 529 overloaded  -> NO fallback; queue waits for the next patrol.
-#   - explicit quota/limit error (403/429/quota wording) -> treat as the
-#     5h window being exhausted: fallback allowed, back to MiniMax after
-#     5h (state/minimax_quota.json).
-QUOTA_BLOCK_FILE = BASE_DIR / "state" / "minimax_quota.json"
-QUOTA_BLOCK_HOURS = 5
-QUOTA_MARKERS = ("配额", "额度", "限額", "已用完", "exceeded", "quota", "insufficient")
-
-
-def load_quota_block_until() -> dt.datetime | None:
-    if QUOTA_BLOCK_FILE.exists():
-        try:
-            data = json.loads(QUOTA_BLOCK_FILE.read_text(encoding="utf-8"))
-            until = dt.datetime.fromisoformat(data.get("block_until", ""))
-            if until > dt.datetime.now(dt.timezone.utc):
-                return until
-        except (json.JSONDecodeError, ValueError):
-            pass
-    return None
-
-
-def mark_quota_exhausted() -> None:
-    """Explicit quota error from MiniMax -> trust the 5h window: block
-    MiniMax and let the fallback serve until it auto-expires."""
-    QUOTA_BLOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
-    until = dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=QUOTA_BLOCK_HOURS)
-    QUOTA_BLOCK_FILE.write_text(json.dumps(
-        {"block_until": until.isoformat(), "marked_at": utc_now()},
-        ensure_ascii=False), encoding="utf-8")
-    print(f"    MiniMax quota window exhausted -> fallback until {until.isoformat()}")
-
-
-def is_quota_error(status: int, body: str) -> bool:
-    if status in (403, 429):
-        return True
-    lowered = body.lower()
-    return status == 529 and any(m in body or m in lowered for m in QUOTA_MARKERS) \
-        and not any(m in body for m in ("负载", "overloaded"))
+# Provider policy (user directive 2026-11-16, final): MiniMax ONLY.
+# NO DeepSeek fallback, ever. If MiniMax is unavailable (529 waves, quota,
+# anything), the batch is skipped and the enrichment queue waits for the
+# next patrol (every 2h) - the cache makes progress cumulative.
 
 
 def load_providers() -> list[dict]:
-    """MiniMax primary (prepaid plan, user preference). DeepSeek serves ONLY
-    while an explicit quota-exhaustion window is active (5h)."""
+    """MiniMax only (user directive). Read from the local ZCode provider
+    config; the key never leaves this machine and is never committed."""
     cfg = json.loads(ZCODE_PROVIDER_CONFIG.read_text(encoding="utf-8"))
-    minimax = deepseek = None
     for rule in cfg["config"]["providerConfigRules"]["providerRules"]:
-        name = rule.get("providerName", "").lower()
-        cfg_access = rule.get("config", {})
-        key = cfg_access.get("access", {}).get("apiKey", "")
-        base = cfg_access.get("api", {}).get("baseUrl", "").rstrip("/")
-        if not key or not base:
-            continue
-        if name == "minimax":
-            minimax = {"name": "MiniMax-M3", "url": base + "/text/chatcompletion_v2",
-                       "key": key, "model": "MiniMax-M3", "retries": 2,
-                       "backoff": 10}
-        elif "deepseek" in name:
-            deepseek = {"name": name, "url": base + "/chat/completions",
-                        "key": key, "model": "deepseek-v4-flash", "retries": 2,
-                        "backoff": 15}
-    blocked_until = load_quota_block_until()
-    if blocked_until is not None:
-        print(f"MiniMax quota window active until {blocked_until.isoformat()} - fallback serving")
-        providers = [p for p in (deepseek,) if p]
-    else:
-        providers = [p for p in (minimax,) if p]
-    if not providers:
-        raise RuntimeError("no usable provider (Minimax/deepseek) in ZCode provider config")
-    return providers
+        if rule.get("providerName", "").lower() == "minimax":
+            cfg_access = rule.get("config", {})
+            key = cfg_access.get("access", {}).get("apiKey", "")
+            base = cfg_access.get("api", {}).get("baseUrl", "").rstrip("/")
+            if key and base:
+                return [{"name": "MiniMax-M3", "url": base + "/text/chatcompletion_v2",
+                         "key": key, "model": "MiniMax-M3", "retries": 2,
+                         "backoff": 10}]
+    raise RuntimeError("Minimax provider rule not found in ZCode provider config")
 
 SYSTEM_PROMPT = (
     "你係 AI Signal Feed 嘅新聞編輯,為一般 AI 用戶(唔係專家)改寫 AI 動態。"
@@ -180,8 +126,6 @@ def call_provider(provider: dict, prompt: str) -> dict:
         except urllib.error.HTTPError as exc:
             body_text = exc.read().decode(errors="replace")
             last_error = f"HTTP {exc.code}: {body_text[:120]}"
-            if provider["name"].startswith("MiniMax") and is_quota_error(exc.code, body_text):
-                mark_quota_exhausted()
         except (urllib.error.URLError, TimeoutError, ValueError) as exc:
             last_error = f"{type(exc).__name__}: {exc}"
         print(f"    {provider['name']} attempt {attempt}/{provider['retries']} failed: {last_error[:110]}")
