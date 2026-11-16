@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>llama.cpp 為 Jinja 補上四項缺失功能 | AI Signal Feed</title>
+<meta name="description" content="llama.cpp 在 PR #32352 為 Jinja 補上四項缺失功能，並修正錯誤訊息；材料未交代功能名稱，使用前須按自身模板實測。">
+<style>
+:root { --bg:#f6efe4; --surface:rgba(255,255,255,.88); --ink:#1a1f18; --muted:#586255;
+--accent:#0f766e; --accent-soft:rgba(15,118,110,.12); --border:rgba(15,118,110,.16);
+--shadow:0 18px 42px rgba(27,39,33,.09); }
+*{box-sizing:border-box} body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;
+color:var(--ink);background:linear-gradient(180deg,#fcf8f2 0%,var(--bg) 100%)}
+main{max-width:860px;margin:0 auto;padding:32px 18px 64px}
+.topline{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+color:var(--muted);font-size:.9rem;margin-bottom:20px}
+.chip{display:inline-flex;padding:6px 10px;border-radius:999px;background:var(--accent-soft);
+color:var(--accent);font-weight:700;font-size:.74rem;text-transform:uppercase;
+letter-spacing:.05em}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.6rem,4.5vw,2.6rem);
+line-height:1.15;letter-spacing:-.02em;margin:14px 0 10px}
+.standfirst{color:var(--muted);font-size:1.05rem;line-height:1.7;margin:0 0 8px}
+.meta{color:var(--muted);font-size:.86rem;margin-bottom:22px}
+.section{padding:20px 22px;background:var(--surface);border:1px solid var(--border);
+border-radius:18px;box-shadow:var(--shadow);margin-bottom:16px}
+.section h2{margin:0 0 10px;font-size:1.05rem}
+.section p{margin:0 0 12px;line-height:1.85;color:#3a423b}
+.section p:last-child{margin:0}
+.section ul{margin:0;padding-left:1.1rem;line-height:1.8;color:#3a423b}
+a{color:var(--accent);text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<main>
+<div class="topline">
+  <div><a href="../index.html">← AI Signal Feed</a></div>
+  <div>llama.cpp Releases · 2026-11-16T00:17</div>
+</div>
+<article class="section" style="padding:26px 28px">
+  <span class="chip">release</span>
+  <h1>llama.cpp 為 Jinja 補上四項缺失功能</h1>
+  <p class="standfirst">llama.cpp 在 PR #32352 為 Jinja 補上四項缺失功能，並修正錯誤訊息；材料未交代功能名稱，使用前須按自身模板實測。</p>
+  <div class="meta">英文搜尋標題:Jinja: 4 New</div>
+</article>
+<section class="section"><h2>內文</h2><p>llama.cpp 係開源本機模型推理專案，Jinja 係模板引擎。PR #32352 為 Jinja 補上四項缺失功能兼修正錯誤訊息，改動由 Aldehir Rojas 共同署名。</p><p>材料只確認新增四項缺失功能，未列名稱或介面。建置頁列出 macOS arm64／x64、iOS XCFramework、Ubuntu x64／arm64、Ubuntu 24.04 s390x 與 26.0；arm64 另有 KleidiAI 啟用及停用版本。</p><p>如果你用 Jinja 寫提示詞或聊天模板，以前因部分寫法未支援而要改寫，現可更新後重試原模板；但功能名稱未列，效益須按實際模板驗證。適合 llama.cpp 用戶、模板維護者及處理跨格式模板的工程師試用。</p><p>同類選擇有 Mako、Mustache 等模板引擎，部分模型前端亦用自家聊天模板格式；對 Jinja 語法與模型欄位的支援是否一致，今次材料無法確認。安裝前要核對系統與架構，經官方 attestations 核實構建，並測試模板輸出及錯誤訊息。</p></section>
+<section class="section"><h2>點解要理</h2><ul><li>PR #32352 為 Jinja 新增四項缺失功能。</li><li>更新亦修正錯誤訊息，改動由 Aldehir Rojas 共同署名。</li><li>建置頁涵蓋 macOS、iOS XCFramework 與多個 Ubuntu 架構。</li></ul></section>
+<section class="section"><h2>來源</h2>
+  <p>資料來自 llama.cpp Releases 的 PR #32352 摘要及官方連結，屬第一方資料，但摘要未列四項功能名稱與發布日期，細節須以原始 PR 核對。</p>
+  <p><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b12428" rel="noopener">睇原始來源 →</a></p>
+</section>
+</main>
+</body>
+</html>

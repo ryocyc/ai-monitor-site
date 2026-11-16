@@ -262,6 +262,13 @@ def main() -> int:
         if not art.get("body_zh"):
             print("    [warn] no body_zh, skipped")
             continue
+        # guard: placeholder/thin paragraphs ("...", "待補") must never ship
+        real_paragraphs = [p for p in art["body_zh"] if len((p or "").strip()) >= 20]
+        if len(real_paragraphs) < 3:
+            print(f"    [warn] only {len(real_paragraphs)} real paragraphs "
+                  f"(placeholder/thin output), skipped")
+            continue
+        art["body_zh"] = real_paragraphs
 
         slug = item["id"]
         (ARTICLES_DIR / f"{slug}.html").write_text(
