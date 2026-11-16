@@ -107,6 +107,7 @@
     let currentItems = [];
     let activeFilter = '';
     let lastGeneratedAt = '';
+    let articleMap = {};   // item id -> article slug (click-through depth)
 
     function relativeTime(iso) {
       const then = new Date(iso).getTime();
@@ -126,18 +127,21 @@
       const summary = item.summary_zh || item.summary_en || '';
       const enLine = item.headline_zh && item.headline_en && item.headline_en !== item.headline_zh
         ? item.headline_en : '';
+      const slug = articleMap[item.id];
+      const openUrl = slug ? `./articles/${slug}.html` : url;
+      const openLabel = slug ? '睇全文 →' : 'Open';
       return `
         <article class="card" data-pillar="${p.label}">
           <div class="card-top">
             <span class="pill ${p.cls}">${p.label}</span>
             <time title="${item.timestamp || ''}">${relativeTime(item.timestamp)}</time>
           </div>
-          <h2 class="headline"><a href="${url}" rel="noopener">${title}</a></h2>
+          <h2 class="headline"><a href="${openUrl}" rel="noopener">${title}</a></h2>
           ${enLine ? `<div class="en-title">${enLine}</div>` : ''}
           <p class="summary">${summary}</p>
           <div class="card-bottom">
             <span>${item.source_name || ''}</span>
-            <a href="${url}" rel="noopener">Open</a>
+            <a href="${openUrl}" rel="noopener">${openLabel}</a>
           </div>
         </article>`;
     }
@@ -175,6 +179,10 @@
         const payload = await response.json();
         const nextGeneratedAt = payload.generated_at || '';
         currentItems = payload.items || [];
+        try {
+          const mapResp = await fetch(`./data/articles.json?ts=${Date.now()}`, { cache: 'no-store' });
+          if (mapResp.ok) articleMap = await mapResp.json();
+        } catch (e) { /* articles mapping optional */ }
         if (lastGeneratedAt && nextGeneratedAt !== lastGeneratedAt) {
           document.getElementById('refresh-banner').classList.add('show');
         }
