@@ -95,8 +95,15 @@ def run_step(label: str, args: list[str], timeout: int) -> tuple[bool, str]:
 
 
 def main() -> int:
-    if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
-        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    # Under schtasks there is no console: sys.stdout is None and touching
+    # .encoding crashes before the first log line (caused exit-1 on every
+    # scheduled run while manual runs worked). Guard everything.
+    if sys.stdout is not None and sys.stdout.encoding \
+            and sys.stdout.encoding.lower() != "utf-8":
+        try:
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, OSError):
+            pass
 
     lock = acquire_lock()
     if lock is None:

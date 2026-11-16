@@ -86,6 +86,30 @@ def write_rss(feed_items: list[dict]) -> None:
     (SITE_DIR / "rss.xml").write_text(rss, encoding="utf-8")
 
 
+def write_status_board() -> None:
+    """Homepage AI status board: current indicator per provider straight
+    from the status collector's state (no LLM, zero noise)."""
+    state_path = BASE_DIR / "state" / "status.json"
+    if not state_path.exists():
+        return
+    try:
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return
+    providers = {}
+    for name, info in state.items():
+        if not isinstance(info, dict):
+            continue
+        providers[name] = {
+            "indicator": info.get("indicator", "unknown"),
+            "description": info.get("description", ""),
+            "updated_at": info.get("updated_at"),
+        }
+    (SITE_DATA_DIR / "status_board.json").write_text(
+        json.dumps({"generated_at": utc_now(), "providers": providers},
+                   ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def write_sitemap() -> None:
     urls = [f"{DOMAIN}/", f"{DOMAIN}/contact.html", f"{DOMAIN}/privacy.html",
             f"{DOMAIN}/terms.html", f"{DOMAIN}/rss.xml"]
@@ -222,6 +246,7 @@ def main() -> int:
         by_category[item.get("category", "?")] = by_category.get(item.get("category", "?"), 0) + 1
     write_rss(feed_items)
     write_sitemap()
+    write_status_board()
     print("feed.json categories:", by_category or "{}")
     print(f"feed: {len(feed_items)} items | archive: {len(archive_items)} items "
           f"-> site/data/")
