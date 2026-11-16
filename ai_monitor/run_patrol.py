@@ -47,10 +47,10 @@ STEPS = [
     ("feeds",     [sys.executable, str(BASE_DIR / "collect" / "collect_feeds.py")], 180),
     ("rankings",  [sys.executable, str(BASE_DIR / "collect" / "collect_rankings.py")], 180),
     ("build",     [sys.executable, str(BASE_DIR / "build_feed.py")],        60),
-    ("enrich",    [sys.executable, str(BASE_DIR / "build" / "enrich.py",
-                                     "--max-calls", "20")],                900),
-    ("articles",  [sys.executable, str(BASE_DIR / "build" / "generate_articles.py",
-                                     "--limit", "6")],                     1200),
+    ("enrich",    [sys.executable, str(BASE_DIR / "build" / "enrich.py"),
+                 "--max-calls", "20"],                                     900),
+    ("articles",  [sys.executable, str(BASE_DIR / "build" / "generate_articles.py"),
+                 "--limit", "6"],                                         1200),
 ]
 
 
