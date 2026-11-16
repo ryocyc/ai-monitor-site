@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vercel Daemons 新增 OTel 追蹤 | AI Signal Feed</title>
+<link rel="canonical" href="https://aisignalfeed.com/articles/fd-719a73c5da5f.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Signal Feed">
+<meta property="og:title" content="Vercel Daemons 新增 OTel 追蹤 ">
+<meta property="og:description" content="Node.js daemon 使用預設設定並升級 @vercel/otel 後，可經 Unix socket 自動將 OpenTelemetry 追蹤資料送到 Vercel Tracing，讓開發者與 AI 代理程式一併檢視背景工作。">
+<meta property="og:url" content="https://aisignalfeed.com/articles/fd-719a73c5da5f.html">
+<meta property="og:locale" content="zh_HK">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f766e'/%3E%3Cpath d='M50 18 v20 M50 62 v20 M18 50 h20 M62 50 h20' stroke='%23f6efe4' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='9' fill='%23f6efe4'/%3E%3C/svg%3E">
+<meta name="description" content="Node.js daemon 使用預設設定並升級 @vercel/otel 後，可經 Unix socket 自動將 OpenTelemetry 追蹤資料送到 Vercel Tracing，讓開發者與 AI 代理程式一併檢視背景工作。">
+<style>
+:root { --bg:#f6efe4; --surface:rgba(255,255,255,.88); --ink:#1a1f18; --muted:#586255;
+--accent:#0f766e; --accent-soft:rgba(15,118,110,.12); --border:rgba(15,118,110,.16);
+--shadow:0 18px 42px rgba(27,39,33,.09); }
+*{box-sizing:border-box} body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;
+color:var(--ink);background:linear-gradient(180deg,#fcf8f2 0%,var(--bg) 100%)}
+main{max-width:860px;margin:0 auto;padding:32px 18px 64px}
+.topline{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+color:var(--muted);font-size:.9rem;margin-bottom:20px}
+.chip{display:inline-flex;padding:6px 10px;border-radius:999px;background:var(--accent-soft);
+color:var(--accent);font-weight:700;font-size:.74rem;text-transform:uppercase;
+letter-spacing:.05em}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.6rem,4.5vw,2.6rem);
+line-height:1.15;letter-spacing:-.02em;margin:14px 0 10px}
+.standfirst{color:var(--muted);font-size:1.05rem;line-height:1.7;margin:0 0 8px}
+.meta{color:var(--muted);font-size:.86rem;margin-bottom:22px}
+.section{padding:20px 22px;background:var(--surface);border:1px solid var(--border);
+border-radius:18px;box-shadow:var(--shadow);margin-bottom:16px}
+.section h2{margin:0 0 10px;font-size:1.05rem}
+.section p{margin:0 0 12px;line-height:1.85;color:#3a423b}
+.section p:last-child{margin:0}
+.section ul{margin:0;padding-left:1.1rem;line-height:1.8;color:#3a423b}
+a{color:var(--accent);text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<main>
+<div class="topline">
+  <div><a href="../index.html">← AI Signal Feed</a></div>
+  <div>Vercel AI Blog · 2026-11-13T22:24</div>
+</div>
+<article class="section" style="padding:26px 28px">
+  <span class="chip">blog</span>
+  <h1>Vercel Daemons 新增 OTel 追蹤</h1>
+  <p class="standfirst">Node.js daemon 使用預設設定並升級 @vercel/otel 後，可經 Unix socket 自動將 OpenTelemetry 追蹤資料送到 Vercel Tracing，讓開發者與 AI 代理程式一併檢視背景工作。</p>
+  <div class="meta">英文搜尋標題:Vercel Daemons Add OpenTelemetry Tracing</div>
+</article>
+<section class="section"><h2>內文</h2><p>Vercel Daemons 是 Vercel 平台用來執行背景工作的程序。這次更新加入將 OpenTelemetry 追蹤資料送往 Vercel Tracing 的能力，開發者與 AI 代理程式可將背景 worker 記錄的運作情況，連同專案其他部分的追蹤資料放在同一環境檢視，不必再把背景紀錄與其他追蹤分開處理。</p><p>Vercel 會為每個 daemon 提供一個用來接收 OTLP/HTTP 追蹤資料的 Unix socket，並把路徑寫入 VERCEL_OTEL_SOCKET_PATH。將 @vercel/otel 升級至 2.3.0 或以上後，使用預設設定的 Node.js daemon 會自動匯出追蹤；SDK 會識別 socket，將 worker 記錄的追蹤片段（spans）傳送到 Vercel。Vercel Tracing 亦可按服務名稱搜尋專案內的追蹤，並向代理程式回傳 JSON。</p><p>過去要弄清背景 worker 做過甚麼，往往要翻查分散日誌，或自行接駁追蹤工具；現在可在 Vercel Tracing 對照背景工作與專案其餘追蹤。這適合運行 Node.js daemon，又希望由工程人員或 AI 代理程式檢查 worker 行為的團隊；團隊可用服務名稱定位資料，代理程式則可取得 JSON 結果。</p><p>同類選擇包括 OpenTelemetry Collector 及其他分散式追蹤平台；不過材料未確認它們能否直接使用 Vercel 提供的 socket。安裝或升級前應檢查現有 @vercel/otel 版本、部署設定與環境限制，亦要留意 Unix socket、OTLP/HTTP 傳輸方式，以及 Node.js 預設自動匯出條件。</p></section>
+<section class="section"><h2>點解要理</h2><ul><li>Vercel 為每個 daemon 提供 OTLP/HTTP 追蹤用的 Unix socket，路徑設於 VERCEL_OTEL_SOCKET_PATH。</li><li>@vercel/otel 升級至 2.3.0 或以上後，採用預設設定的 Node.js daemon 可自動匯出追蹤。</li><li>Vercel Tracing 可按服務名稱搜尋專案內追蹤，並可向代理程式回傳 JSON。</li></ul></section>
+<section class="section"><h2>來源</h2>
+  <p>資料來自 Vercel AI Blog 的官方產品公告，功能與版本要求可信；材料未提供其他追蹤後端的相容性測試。</p>
+  <p><a href="https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing" rel="noopener">睇原始來源 →</a></p>
+</section>
+</main>
+</body>
+</html>

@@ -25,6 +25,89 @@ import sys
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 SITE_DATA_DIR = BASE_DIR / "site" / "data"
+SITE_DIR = BASE_DIR / "site"
+ARTICLES_DIR = SITE_DIR / "articles"
+DOMAIN = "https://aisignalfeed.com"
+RSS_CAP = 40
+
+
+def _xml_escape(text: str) -> str:
+    return (text or "").replace("&", "&amp;").replace("<", "&lt;") \
+        .replace(">", "&gt;").replace('"', "&quot;")
+
+
+def _rfc822(ts: str) -> str:
+    try:
+        parsed = dt.datetime.fromisoformat(ts)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=dt.timezone.utc)
+        return parsed.strftime("%a, %d %b %Y %H:%M:%S +0000")
+    except ValueError:
+        return ""
+
+
+def write_rss(feed_items: list[dict]) -> None:
+    """RSS 2.0 from the feed; items link to their article page when one
+    exists (keeps readers on-site), else to the external source."""
+    mapping: dict[str, str] = {}
+    mapping_path = ARTICLES_DIR / "article-mapping.json"
+    if mapping_path.exists():
+        try:
+            mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            mapping = {}
+    entries = []
+    for item in feed_items[:RSS_CAP]:
+        slug = mapping.get(item.get("id", ""))
+        link = f"{DOMAIN}/articles/{slug}.html" if slug else \
+            (item.get("target_url") or DOMAIN)
+        title = item.get("headline_zh") or item.get("headline_en") or "AI update"
+        desc = item.get("summary_zh") or item.get("summary_en") or ""
+        entries.append(
+            "    <item>\n"
+            f"      <title>{_xml_escape(title)}</title>\n"
+            f"      <link>{_xml_escape(link)}</link>\n"
+            f"      <guid isPermaLink=\"false\">{_xml_escape(item.get('id', ''))}</guid>\n"
+            f"      <pubDate>{_rfc822(item.get('timestamp', ''))}</pubDate>\n"
+            f"      <category>{_xml_escape(item.get('category', 'update'))}</category>\n"
+            f"      <description>{_xml_escape(desc)}（來源：{_xml_escape(item.get('source_name', ''))}）</description>\n"
+            "    </item>")
+    rss = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+        '  <channel>\n'
+        '    <title>AI Signal Feed — AI 界今日變動，用戶視角雙語新聞卡</title>\n'
+        f'    <link>{DOMAIN}</link>\n'
+        '    <description>新模型、價格變動、服務故障、爆紅開源工具 — 自動監察、AI 編寫的繁中新聞卡與深度文章。</description>\n'
+        f'    <atom:link href="{DOMAIN}/rss.xml" rel="self" type="application/rss+xml"/>\n'
+        '    <language>zh-Hant</language>\n'
+        f'    <lastBuildDate>{dt.datetime.now(dt.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")}</lastBuildDate>\n'
+        + "\n".join(entries) + "\n  </channel>\n</rss>\n")
+    (SITE_DIR / "rss.xml").write_text(rss, encoding="utf-8")
+
+
+def write_sitemap() -> None:
+    urls = [f"{DOMAIN}/", f"{DOMAIN}/contact.html", f"{DOMAIN}/privacy.html",
+            f"{DOMAIN}/terms.html", f"{DOMAIN}/rss.xml"]
+    if ARTICLES_DIR.exists():
+        for meta in ARTICLES_DIR.glob("*.meta.json"):
+            # only new-system articles (meta carries "fingerprint"); the 596
+            # pre-restart evt-* pages are stale English data - SEO negative
+            try:
+                data = json.loads(meta.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                continue
+            if "fingerprint" not in data:
+                continue
+            urls.append(f"{DOMAIN}/articles/{meta.stem[:-5]}.html")
+    body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
+    (SITE_DIR / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + body + "\n</urlset>\n", encoding="utf-8")
+    (SITE_DIR / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n",
+        encoding="utf-8")
 
 INPUT_FILES = [
     "status_items.json",    # outages first in priority if timestamps tie
@@ -136,6 +219,8 @@ def main() -> int:
     by_category: dict[str, int] = {}
     for item in feed_items:
         by_category[item.get("category", "?")] = by_category.get(item.get("category", "?"), 0) + 1
+    write_rss(feed_items)
+    write_sitemap()
     print("feed.json categories:", by_category or "{}")
     print(f"feed: {len(feed_items)} items | archive: {len(archive_items)} items "
           f"-> site/data/")

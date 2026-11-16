@@ -167,6 +167,15 @@ def render_article(item: dict, art: dict) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(art.get('h1_zh', ''))} | AI Signal Feed</title>
 <meta name="description" content="{esc(art.get('standfirst_zh', '')[:150])}">
+<link rel="canonical" href="https://aisignalfeed.com/articles/{esc(item['id'])}.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Signal Feed">
+<meta property="og:title" content="{esc(art.get('h1_zh', ''))}">
+<meta property="og:description" content="{esc(art.get('standfirst_zh', '')[:150])}">
+<meta property="og:url" content="https://aisignalfeed.com/articles/{esc(item['id'])}.html">
+<meta property="og:locale" content="zh_HK">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f766e'/%3E%3Cpath d='M50 18 v20 M50 62 v20 M18 50 h20 M62 50 h20' stroke='%23f6efe4' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='9' fill='%23f6efe4'/%3E%3C/svg%3E">
 <style>
 :root {{ --bg:#f6efe4; --surface:rgba(255,255,255,.88); --ink:#1a1f18; --muted:#586255;
 --accent:#0f766e; --accent-soft:rgba(15,118,110,.12); --border:rgba(15,118,110,.16);

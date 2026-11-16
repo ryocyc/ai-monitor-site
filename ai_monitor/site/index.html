@@ -3,7 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Signal Feed</title>
+  <title>AI Signal Feed — AI 界今日變動，同你有咩關係</title>
+  <meta name="description" content="新模型、價格變動、服務故障、爆紅開源工具 — 自動監察、AI 編寫嘅繁中雙語新聞卡同深度文章。一般 AI 用戶都睇得明。">
+  <link rel="canonical" href="https://aisignalfeed.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Signal Feed">
+  <meta property="og:title" content="AI Signal Feed — AI 界今日變動，同你有咩關係">
+  <meta property="og:description" content="新模型、價格、故障、爆紅工具,每 2 小時自動更新,繁中雙語。">
+  <meta property="og:url" content="https://aisignalfeed.com/">
+  <meta property="og:locale" content="zh_HK">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f766e'/%3E%3Cpath d='M50 18 v20 M50 62 v20 M18 50 h20 M62 50 h20' stroke='%23f6efe4' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='9' fill='%23f6efe4'/%3E%3C/svg%3E">
+  <link rel="alternate" type="application/rss+xml" title="AI Signal Feed RSS" href="/rss.xml">
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9363843709239773"
        crossorigin="anonymous"></script>
@@ -35,6 +46,7 @@
     .filters button { appearance: none; border: 1px solid var(--border); border-radius: 999px; padding: 8px 14px; background: white; color: var(--ink); font-weight: 600; cursor: pointer; }
     .filters button.active { background: var(--accent); color: white; border-color: var(--accent); }
     .list { display: grid; gap: 18px; }
+    @media (min-width: 920px) { .list { grid-template-columns: 1fr 1fr; } }
     .card { display: grid; gap: 14px; padding: 22px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }
     .card-top, .card-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--muted); font-size: 0.86rem; }
     .pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 0.74rem; }
@@ -64,8 +76,8 @@
 
     <section class="hero">
       <span class="eyebrow">AI Signal Feed</span>
-      <h1>What changed in AI, in plain words.</h1>
-      <p class="sub">New models, price moves, outages, and tools worth trying — watched around the clock so you don't have to. Built for everyday AI users.</p>
+      <h1>AI 界今日變咗啲咩，同你有咩關係。</h1>
+      <p class="sub">新模型、價格變動、服務故障、爆紅開源工具 — 全自動監察，寫成你一眼睇得明嘅繁中卡片，想深入了解就㩒入去睇全文。</p>
     </section>
 
     <section class="toolbar">
@@ -84,23 +96,33 @@
     </section>
 
     <section class="filters" id="filter-bar">
-      <button class="active" data-filter="">All</button>
+      <button class="active" data-filter="">全部</button>
     </section>
 
-    <section id="feed" class="list"><div class="empty">Loading feed…</div></section>
+    <section id="feed" class="list"><div class="empty">載入中…</div></section>
+
+    <footer style="margin-top:48px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted);font-size:.88rem;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;">
+      <span>AI Signal Feed — 自動監察 50+ AI 來源,每 2 小時更新。內容由 AI 根據官方來源編寫,標明出處。</span>
+      <span>
+        <a href="/rss.xml">RSS 訂閱</a> ·
+        <a href="/privacy.html">私隱</a> ·
+        <a href="/terms.html">條款</a> ·
+        <a href="/contact.html">聯絡</a>
+      </span>
+    </footer>
   </main>
 
   <script>
     // Pillar mapping: raw collector categories -> user-facing pillars
     const PILLARS = {
-      outage:    { label: 'Outages',    cls: 'outage' },
-      pricing:   { label: 'Pricing',    cls: 'pricing' },
-      trending:  { label: 'Hot tools',  cls: 'tools' },
-      release:   { label: 'Releases',   cls: 'releases' },
-      news:      { label: 'News',       cls: 'news' },
-      blog:      { label: 'News',       cls: 'news' },
-      changelog: { label: 'News',       cls: 'news' },
-      update:    { label: 'News',       cls: 'news' }
+      outage:    { label: '故障',    cls: 'outage' },
+      pricing:   { label: '價錢',    cls: 'pricing' },
+      trending:  { label: '爆紅工具', cls: 'tools' },
+      release:   { label: '新版本',   cls: 'releases' },
+      news:      { label: '新聞',     cls: 'news' },
+      blog:      { label: '新聞',     cls: 'news' },
+      changelog: { label: '新聞',     cls: 'news' },
+      update:    { label: '新聞',     cls: 'news' }
     };
     const pillarOf = (cat) => PILLARS[cat] || PILLARS.news;
 
@@ -159,10 +181,10 @@
       const labels = [...new Set(currentItems.map((i) => pillarOf(i.category).label))];
       const bar = document.getElementById('filter-bar');
       bar.innerHTML = '';
-      ['All', ...labels].forEach((label) => {
+      ['全部', ...labels].forEach((label) => {
         const btn = document.createElement('button');
         btn.textContent = label;
-        btn.dataset.filter = label === 'All' ? '' : label;
+        btn.dataset.filter = label === '全部' ? '' : label;
         if (btn.dataset.filter === activeFilter) btn.classList.add('active');
         btn.addEventListener('click', () => {
           activeFilter = btn.dataset.filter;

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Signal Feed — AI 界今日變動，用戶視角雙語新聞卡</title>
+    <link>https://aisignalfeed.com</link>
+    <description>新模型、價格變動、服務故障、爆紅開源工具 — 自動監察、AI 編寫的繁中新聞卡與深度文章。</description>
+    <atom:link href="https://aisignalfeed.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>zh-Hant</language>
+    <lastBuildDate>Mon, 16 Nov 2026 06:13:57 +0000</lastBuildDate>
+    <item>
+      <title>HN: Show HN: DeepSeek V3 in ~200 lines of pure Jax (272 points, 28 comments)</title>
+      <link>https://aisignalfeed.com/articles/hn-9c9b4a4d06f6.html</link>
+      <guid isPermaLink="false">hn-9c9b4a4d06f6</guid>
+      <pubDate>Mon, 16 Nov 2026 05:01:47 +0000</pubDate>
+      <category>trending</category>
+      <description>The Hacker News community is actively discussing 'Show HN: DeepSeek V3 in ~200 lines of pure Jax' — 272 points in 38h (~7.2/h). Content excerpt: GitHub - Vaibhaav-Tiwari/deepseek-v3-jax: DeepSeek V3 (MLA, DeepSeekMoE, aux-loss-free balancing, MTP) in 190 lines of pure JAX, trained on a MacBook Air. Write-up: vaibhaav.in/writing/deepseek-v3-jax · GitHub Skip to content You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on an（來源：Hacker News）</description>
+    </item>
+    <item>
+      <title>HN: Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM (145 points, 69 comments)</title>
+      <link>https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/</link>
+      <guid isPermaLink="false">hn-25f4b4b14f70</guid>
+      <pubDate>Mon, 16 Nov 2026 05:01:47 +0000</pubDate>
+      <category>trending</category>
+      <description>The Hacker News community is actively discussing 'Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM' — 145 points in 39h (~3.7/h). Content excerpt: When One GPU Isn’t Enough: Serving GLM&amp;#x2d;5.3 Across Two NVIDIA DGX Stations with vLLM | NVIDIA Technical Blog Technical Blog Subscribe Related Resources Agentic AI / Generative AI When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM Nov 13, 2026 By Fatima Fall Like Discuss (0) L T F R E AI-Generated Summary GLM-5.3 NVFP4 , a quantized mixture-of-experts model with（來源：Hacker News）</description>
+    </item>
+    <item>
+      <title>HN: Claude asked to renumber pages deletes professor's syllabus, year of notes (50 points, 75 comments)</title>
+      <link>https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits</link>
+      <guid isPermaLink="false">hn-a98bfdb34a1b</guid>
+      <pubDate>Mon, 16 Nov 2026 05:01:47 +0000</pubDate>
+      <category>trending</category>
+      <description>The Hacker News community is actively discussing 'Claude asked to renumber pages deletes professor's syllabus, year of notes' — 50 points in 35h (~1.4/h). Content excerpt: Rogue Claude AI tasked with renumbering pages accidentally deletes law professor's entire syllabus, one year of lecture notes — 'You're right to be angry. I deleted your files through my own carelessness,' humbled agent admits | Tom's Hardware Skip to main content Become a member for free Join for quick access. Enter your email below and we'll send confirmation plus sign you up to our newsletter. （來源：Hacker News）</description>
+    </item>
+    <item>
+      <title>獨立學習哪些 AI 技能最實用</title>
+      <link>https://news.ycombinator.com/item?id=50494696</link>
+      <guid isPermaLink="false">hn-4d0c29e8f59a</guid>
+      <pubDate>Mon, 16 Nov 2026 03:33:03 +0000</pubDate>
+      <category>trending</category>
+      <description>Ask HN 徵詢個人可獨立學習的實用 AI 技能，以善用 LLM、agents 並取得經濟優勢。這可幫自學者判斷優先方向。（來源：Hacker News）</description>
+    </item>
+    <item>
+      <title>分析師疑將GPU走私與黃仁勳離任相連</title>
+      <link>https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls</link>
+      <guid isPermaLink="false">hn-26f044489f8a</guid>
+      <pubDate>Mon, 16 Nov 2026 03:33:03 +0000</pubDate>
+      <category>trending</category>
+      <description>分析師稱，最多150萬枚Nvidia AI GPU走私或成Jensen Huang離任原因。逾1.5GW受禁晶片即使受出口管制，仍被追蹤至中國。（來源：Hacker News）</description>
+    </item>
+    <item>
+      <title>wangzan101/Mika: 8,723 GitHub stars in 18 days (~500/day)</title>
+      <link>https://aisignalfeed.com/articles/gh-778a31b372c6.html</link>
+      <guid isPermaLink="false">gh-778a31b372c6</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>An on-device AI agent for Android that operates apps and the web to get things done for you.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>hitkeeen/blender-ai-mcp-addon: 1,223 GitHub stars in 4 days (~353/day)</title>
+      <link>https://aisignalfeed.com/articles/gh-944dd6d24f46.html</link>
+      <guid isPermaLink="false">gh-944dd6d24f46</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>FrigadeHQ/yogurt: 1,655 GitHub stars in 5 days (~316/day)</title>
+      <link>https://aisignalfeed.com/articles/gh-a24e623842eb.html</link>
+      <guid isPermaLink="false">gh-a24e623842eb</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>Outpostkrewhirl86/Capri-AI: 345 GitHub stars in 1 days (~295/day)</title>
+      <link>https://github.com/Outpostkrewhirl86/Capri-AI</link>
+      <guid isPermaLink="false">gh-593f999f8400</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>Capri: a local-first desktop AI agent with a cyberpunk HUD. Your personal Jarvis for Windows. Controls files, apps, terminal and browser, powered by Claude Code, Codex, Antigravity or any backend. Inspired by Cyberpunk: Edgerunners.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>agentes-chat/agentes-chat: 1,519 GitHub stars in 7 days (~216/day)</title>
+      <link>https://github.com/agentes-chat/agentes-chat</link>
+      <guid isPermaLink="false">gh-959a4e69bc6c</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>modelflare-ai/AnyModelBot: 4,097 GitHub stars in 20 days (~208/day)</title>
+      <link>https://github.com/modelflare-ai/AnyModelBot</link>
+      <guid isPermaLink="false">gh-fadd3383ed0a</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>berkantay/gpucanvas: 482 GitHub stars in 3 days (~156/day)</title>
+      <link>https://github.com/berkantay/gpucanvas</link>
+      <guid isPermaLink="false">gh-2a6097a81847</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>Put thousands of live DOM nodes on an infinite canvas: the GPU draws them, an editor selects, moves and resizes them, shaders and transitions run on them, and an AI agent can read them and point at them.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>N1nEmAn/sapper-v2: 2,110 GitHub stars in 16 days (~128/day)</title>
+      <link>https://github.com/N1nEmAn/sapper-v2</link>
+      <guid isPermaLink="false">gh-208cf56cbec0</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History).（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>Dodaios/ste80-humanizer: 696 GitHub stars in 6 days (~110/day)</title>
+      <link>https://github.com/Dodaios/ste80-humanizer</link>
+      <guid isPermaLink="false">gh-4a8c6b949250</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>RunanywhereAI/trnrt: 1,583 GitHub stars in 16 days (~97/day)</title>
+      <link>https://github.com/RunanywhereAI/trnrt</link>
+      <guid isPermaLink="false">gh-609f5454f49c</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>The open LLM inference engine for AWS Trainium: NKI megakernels, 1M-token context, OpenAI-compatible API. By RunAnywhere.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>roan-maverick/tradingview-indicator-for-ai-agents: 227 GitHub stars in 3 days (~85/day)</title>
+      <link>https://github.com/roan-maverick/tradingview-indicator-for-ai-agents</link>
+      <guid isPermaLink="false">gh-8bf9033285b8</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>Tradingview IndicatorBuilt for AI agents（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>op7418/guizang-game-skill: 359 GitHub stars in 4 days (~82/day)</title>
+      <link>https://github.com/op7418/guizang-game-skill</link>
+      <guid isPermaLink="false">gh-8809d76b9927</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>huawei-csl/MACaQ: 313 GitHub stars in 6 days (~55/day)</title>
+      <link>https://github.com/huawei-csl/MACaQ</link>
+      <guid isPermaLink="false">gh-f74c9a85d87d</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>MZULALI/xj-scanner: 261 GitHub stars in 5 days (~49/day)</title>
+      <link>https://github.com/MZULALI/xj-scanner</link>
+      <guid isPermaLink="false">gh-c42159566855</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>Read a 1991-95 Jeep's engine computer from a laptop with a $3 Arduino Nano, and let an AI agent do the reading.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>wici-ai/inferssd: 1,183 GitHub stars in 25 days (~48/day)</title>
+      <link>https://github.com/wici-ai/inferssd</link>
+      <guid isPermaLink="false">gh-1003a20d9074</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>SAOS-3624/dsh-see-now: 662 GitHub stars in 14 days (~46/day)</title>
+      <link>https://github.com/SAOS-3624/dsh-see-now</link>
+      <guid isPermaLink="false">gh-c9996c9029e1</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>threerocks/article2media: 351 GitHub stars in 8 days (~45/day)</title>
+      <link>https://github.com/threerocks/article2media</link>
+      <guid isPermaLink="false">gh-1f06d641b04d</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>Timaga/noda-local-ai-notes: 104 GitHub stars in 2 days (~44/day)</title>
+      <link>https://github.com/Timaga/noda-local-ai-notes</link>
+      <guid isPermaLink="false">gh-bba6a2f8f2e0</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>sleepy-zone/ai-ref-library-cn: 770 GitHub stars in 17 days (~44/day)</title>
+      <link>https://github.com/sleepy-zone/ai-ref-library-cn</link>
+      <guid isPermaLink="false">gh-c6bbee3ab1b6</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>AI 作图素材库 · 中文版（脸 / 姿势 / 服装）（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>fendouai/ViralForge: 206 GitHub stars in 5 days (~43/day)</title>
+      <link>https://github.com/fendouai/ViralForge</link>
+      <guid isPermaLink="false">gh-90b953342bc0</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>Agent-native viral video studio: one-click replicate viral short videos, deconstruct video hooks and scripts into a Viral DNA report, and ship 10 costed variants. Skill + MCP + CLI. Apache-2.0.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>claynicholson/copper-kicad-mcp: 100 GitHub stars in 3 days (~30/day)</title>
+      <link>https://github.com/claynicholson/copper-kicad-mcp</link>
+      <guid isPermaLink="false">gh-b62344349ca9</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>MCP server that lets any AI app design real, orderable KiCad boards: schematic, LCSC parts, PCB routing, ERC/DRC, JLCPCB fab files.（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>yasakani-dev/yasakani: 103 GitHub stars in 4 days (~29/day)</title>
+      <link>https://github.com/yasakani-dev/yasakani</link>
+      <guid isPermaLink="false">gh-a4b3e921cc42</guid>
+      <pubDate>Mon, 16 Nov 2026 01:36:26 +0000</pubDate>
+      <category>trending</category>
+      <description>Local LLM engine for Windows and one NVIDIA RTX 5090, built for Qwen3.8-27B（來源：GitHub Search）</description>
+    </item>
+    <item>
+      <title>Claude 狀態：部分服務降級</title>
+      <link>https://aisignalfeed.com/articles/st-6c1d6a7dee13.html</link>
+      <guid isPermaLink="false">st-6c1d6a7dee13</guid>
+      <pubDate>Mon, 16 Nov 2026 01:33:47 +0000</pubDate>
+      <category>outage</category>
+      <description>Claude 狀態頁顯示「minor」— 部分服務降級。用之前先睇狀態頁，唔好第一時間怪自己嘅 prompt。（來源：Claude Status）</description>
+    </item>
+    <item>
+      <title>b12428</title>
+      <link>https://aisignalfeed.com/articles/fd-b57fcdc61a2c.html</link>
+      <guid isPermaLink="false">fd-b57fcdc61a2c</guid>
+      <pubDate>Mon, 16 Nov 2026 00:17:10 +0000</pubDate>
+      <category>release</category>
+      <description>jinja: add 4 missing features ( #32352 ) jinja: add 4 missing features apply suggestion Co-authored-by: Aldehir Rojas hello@alde.dev fix error msg Co-authored-by: Aldehir Rojas hello@alde.dev Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/67916336 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.0（來源：llama.cpp Releases）</description>
+    </item>
+    <item>
+      <title>AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities</title>
+      <link>https://aisignalfeed.com/articles/fd-9a43fed6987c.html</link>
+      <guid isPermaLink="false">fd-9a43fed6987c</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:28 +0000</pubDate>
+      <category>blog</category>
+      <description>Over two days at COEX, more than 2,000 attendees converged for AI Day Seoul, bringing together Korea’s industry leaders, startups and developer communities advancing physical AI and AI agents. At the plenary sessions, Deepu Talla, vice president of robotics and edge AI at NVIDIA, said Korea is “punching above its weight,” with Doosan Robotics, Hyundai [&amp;#8230;] AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities（來源：NVIDIA AI Blog）</description>
+    </item>
+    <item>
+      <title>0.171.0-alpha.7</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.7</link>
+      <guid isPermaLink="false">fd-3f99ead62b7c</guid>
+      <pubDate>Sun, 15 Nov 2026 23:18:44 +0000</pubDate>
+      <category>release</category>
+      <description>Release 0.171.0-alpha.7（來源：Codex Releases）</description>
+    </item>
+    <item>
+      <title>v1.111.0-dev.4</title>
+      <link>https://github.com/BerriAI/litellm/releases/tag/v1.111.0-dev.4</link>
+      <guid isPermaLink="false">fd-cf29c422ac1f</guid>
+      <pubDate>Sun, 15 Nov 2026 05:09:04 +0000</pubDate>
+      <category>release</category>
+      <description>Important Signing has moved to keyless cosign. Since v1.111.0-dev.3, releases are signed with Sigstore keyless signing (GitHub OIDC) instead of the cosign.pub key. cosign verify --key ... does not work for this release. Use the command below. Earlier releases still verify with the key. Verify this release cosign verify \ --certificate-identity https://github.com/BerriAI/project-releaser/.github/workflows/release.yml@refs/heads/main \ --certificate-oidc-issuer https://token.actions.githubusercont（來源：LiteLLM Releases）</description>
+    </item>
+    <item>
+      <title>v0.34.0rc4</title>
+      <link>https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc4</link>
+      <guid isPermaLink="false">fd-3683e7be6f79</guid>
+      <pubDate>Sat, 14 Nov 2026 10:15:55 +0000</pubDate>
+      <category>release</category>
+      <description>[Release][Tests] Give the #67296 warmup-gate test runner num_speculat…（來源：vLLM Releases）</description>
+    </item>
+    <item>
+      <title>langgraph==1.2.22</title>
+      <link>https://github.com/langchain-ai/langgraph/releases/tag/1.2.22</link>
+      <guid isPermaLink="false">fd-856b7342e43c</guid>
+      <pubDate>Sat, 14 Nov 2026 01:43:55 +0000</pubDate>
+      <category>release</category>
+      <description>Changes since 1.2.21 release(langgraph): 1.2.22 ( #9702 ) release(checkpoint-postgres): 3.2.1 ( #9700 ) release(prebuilt): 1.1.2 ( #9701 ) release(checkpoint): 4.3.2 ( #9699 ) fix(langgraph): stream a child graph on its own thread to a caller streaming subgraphs ( #9698 ) perf(langgraph): skip message conversion in add_messages for plain messages ( #9631 ) perf(langgraph): filter pending writes to the given tasks before reading their statuses ( #9634 ) perf(langgraph): match update keys against （來源：LangGraph Releases）</description>
+    </item>
+    <item>
+      <title>Production MLOps at GS Caltex with Amazon SageMaker Canvas, part 1</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1/</link>
+      <guid isPermaLink="false">fd-7705a8a3b3de</guid>
+      <pubDate>Fri, 13 Nov 2026 23:22:09 +0000</pubDate>
+      <category>blog</category>
+      <description>GS Caltex connects Amazon SageMaker Canvas to Amazon SageMaker Pipelines so process engineers' no-code models run in production. This post shows how ML engineers reuse validated preprocessing flows and models, cutting deployment from about a week to a few hours and running batch inference every 30 minutes.（來源：AWS ML Blog）</description>
+    </item>
+    <item>
+      <title>Daemons can now send traces to Vercel Tracing</title>
+      <link>https://aisignalfeed.com/articles/fd-719a73c5da5f.html</link>
+      <guid isPermaLink="false">fd-719a73c5da5f</guid>
+      <pubDate>Fri, 13 Nov 2026 22:24:00 +0000</pubDate>
+      <category>blog</category>
+      <description>Vercel Daemons can now send OpenTelemetry traces to Vercel Tracing, allowing you and your agents to inspect background worker operations alongside the rest of your project's traces.Vercel provides each daemon with a Unix socket for receiving OTLP/HTTP traces and sets the socket's path in VERCEL_OTEL_SOCKET_PATH.Upgrading @vercel/otel to version 2.3.0 or later enables automatic trace export for Node.js daemons using the default configuration. The SDK detects this socket and sends the spans your w（來源：Vercel AI Blog）</description>
+    </item>
+    <item>
+      <title>Why a new court ruling matters for press freedom and privacy</title>
+      <link>https://blogs.microsoft.com/on-the-issues/2026/11/11/protecting-privacy-and-press-freedom-an-important-fourth-circuit-ruling/</link>
+      <guid isPermaLink="false">fd-40da4434ce08</guid>
+      <pubDate>Fri, 13 Nov 2026 20:33:05 +0000</pubDate>
+      <category>blog</category>
+      <description>The post Why a new court ruling matters for press freedom and privacy appeared first on Source .（來源：Microsoft AI Blog）</description>
+    </item>
+    <item>
+      <title>Kitesurf is now open source</title>
+      <link>https://blog.cloudflare.com/kitesurf-open-source/</link>
+      <guid isPermaLink="false">fd-8ee3f1944ab9</guid>
+      <pubDate>Fri, 13 Nov 2026 20:20:21 +0000</pubDate>
+      <category>blog</category>
+      <description>Kitesurf, our experimental browser engine for AI agents, is now open source. Inspect the code, run it locally, or deploy your own instance on Cloudflare Workers.（來源：Cloudflare AI Blog）</description>
+    </item>
+    <item>
+      <title>Build a Robot Pick-and-Place Simulation with SimReady Assets</title>
+      <link>https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place</link>
+      <guid isPermaLink="false">fd-15fa788cf00a</guid>
+      <pubDate>Fri, 13 Nov 2026 18:00:39 +0000</pubDate>
+      <category>blog</category>
+      <description>New entry from Hugging Face Blog: Build a Robot Pick-and-Place Simulation with SimReady Assets（來源：Hugging Face Blog）</description>
+    </item>
+    <item>
+      <title>v1: :rocket: Release 1.123.96 (#43771)</title>
+      <link>https://github.com/n8n-io/n8n/releases/tag/v1</link>
+      <guid isPermaLink="false">fd-9743c64181c8</guid>
+      <pubDate>Fri, 13 Nov 2026 08:10:35 +0000</pubDate>
+      <category>release</category>
+      <description>Co-authored-by: n8n-release-helper[bot] &amp;lt;265227495+n8n-release-helper[bot]@users.noreply.github.com&amp;gt;（來源：n8n Releases）</description>
+    </item>
+  </channel>
+</rss>
