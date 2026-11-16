@@ -177,12 +177,17 @@ def load_cache() -> dict:
 
 import hashlib as _hashlib
 
+# Bump when the prompt changes: cached enrichments written by an older
+# prompt must re-enter the queue automatically (a v2-prompt background
+# job once locked 37 paraphrase-quality cards into the cache).
+PROMPT_VERSION = "v5"
+
 
 def src_hash(item: dict) -> str:
-    """Hash of the SOURCE material an item was enriched from. When the source
-    summary changes (e.g. feeds now carry release notes), the cached zh is
-    stale and the item re-joins the enrichment queue automatically."""
-    material = f"{item.get('headline_en', '')}|{item.get('summary_en', '')}"
+    """Hash of (prompt version + SOURCE material). Re-enriches when the
+    source summary changes (e.g. feeds now carry release notes) OR when
+    the prompt is upgraded."""
+    material = f"{PROMPT_VERSION}|{item.get('headline_en', '')}|{item.get('summary_en', '')}"
     return _hashlib.sha1(material.encode("utf-8")).hexdigest()[:12]
 
 

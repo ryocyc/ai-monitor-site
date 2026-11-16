@@ -54,7 +54,7 @@ def apply_enrichment_cache(items: list[dict]) -> tuple[int, int]:
     applied = pending = 0
     for item in items:
         cached = cache.get(item.get("id", ""))
-        material = f"{item.get('headline_en', '')}|{item.get('summary_en', '')}"
+        material = f"v5|{item.get('headline_en', '')}|{item.get('summary_en', '')}"
         current_src = hashlib.sha1(material.encode("utf-8")).hexdigest()[:12]
         if cached and cached.get("src_hash") == current_src:
             item.update({k: v for k, v in cached.items() if k != "src_hash"})

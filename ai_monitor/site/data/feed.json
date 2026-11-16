@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T05:02:07+00:00",
+  "generated_at": "2026-11-16T05:15:31+00:00",
   "item_count": 51,
   "items": [
     {
@@ -60,15 +60,18 @@
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50494696",
       "target_url": "https://news.ycombinator.com/item?id=50494696",
-      "headline_en": "HN: Ask HN: What are the most useful, concrete AI skills to independently learn? (88 points, 53 comments)",
-      "summary_en": "The Hacker News community is actively discussing 'Ask HN: What are the most useful, concrete AI skills to independently learn?' — 88 points in 45h (~2.0/h). Content excerpt: Specifically, what are the most useful, concrete skills to learn as an individual to take economic advantage of the advances in LLMs, agents and associated new technological capabilities? What is accessible to learn just from the internet and experimentation, without a degree program, assuming a preexisting moderately technical background? The clearer and more specific (eg. “Learn how-to x with y”",
+      "headline_en": "Useful AI Skills to Learn",
+      "summary_en": "An Ask HN thread asks which concrete AI skills people should learn independently to benefit economically from LLMs, agents, and related capabilities. The discussion can help self-learners identify practical priorities.",
       "tier": "hn_rising",
       "metrics": {
         "points": 88,
         "comments": 53,
         "age_hours": 44.6,
         "velocity_per_hour": 1.97
-      }
+      },
+      "headline_zh": "獨立學習哪些 AI 技能最實用",
+      "summary_zh": "Ask HN 徵詢個人可獨立學習的實用 AI 技能，以善用 LLM、agents 並取得經濟優勢。這可幫自學者判斷優先方向。",
+      "enriched": true
     },
     {
       "id": "hn-26f044489f8a",
@@ -77,15 +80,18 @@
       "source_name": "Hacker News",
       "source_url": "https://news.ycombinator.com/item?id=50498051",
       "target_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
-      "headline_en": "HN: Smuggling of 1.5M AI GPUs could be the cause of Huang's departure (61 points, 43 comments)",
-      "summary_en": "The Hacker News community is actively discussing 'Smuggling of 1.5M AI GPUs could be the cause of Huang's departure' — 61 points in 36h (~1.7/h). Content excerpt: Mass smuggling of up to 1.5 million Nvidia AI GPUs could be the underlying cause of Jensen Huang's departure, leading analysts claim — more than 1.5 gigawatts of banned chips tracked to China despite export controls | Tom's Hardware Skip to main content Become a member for free Join for quick access. Enter your email below and we'll send confirmation plus sign you up to our newsletter. Contact me ",
+      "headline_en": "Analysts Link GPU Smuggling to Huang Exit",
+      "summary_en": "Hacker News users are discussing analysts’ claim that the smuggling of up to 1.5 million Nvidia AI GPUs could underlie Jensen Huang’s departure. More than 1.5 gigawatts of banned chips have been tracked to China despite export controls.",
       "tier": "hn_rising",
       "metrics": {
         "points": 61,
         "comments": 43,
         "age_hours": 35.6,
         "velocity_per_hour": 1.72
-      }
+      },
+      "headline_zh": "分析師疑將GPU走私與黃仁勳離任相連",
+      "summary_zh": "分析師稱，最多150萬枚Nvidia AI GPU走私或成Jensen Huang離任原因。逾1.5GW受禁晶片即使受出口管制，仍被追蹤至中國。",
+      "enriched": true
     },
     {
       "id": "gh-778a31b372c6",
@@ -707,11 +713,8 @@
       "source_name": "Together AI Blog",
       "source_url": "https://www.together.ai/blog/rss.xml",
       "target_url": "https://www.together.ai/blog/together-compiler-continual-compilation-for-ai-inference",
-      "headline_en": "Together Compiler boosts inference up to 3.7x",
-      "summary_en": "Together Compiler uses agents and persistent engines for continual compilation, optimizing open models in under 24 hours and delivering up to 3.7x higher throughput as traffic changes. For users, the practical upside is potentially faster inference as traffic conditions change.",
-      "headline_zh": "Together AI推理吞吐量最高升3.7倍",
-      "summary_zh": "Together AI編譯器以代理和常駐引擎，24小時內持續優化開放模型，流量變化時吞吐量最高提升3.7倍。對用戶而言，推理或會更快。",
-      "enriched": true
+      "headline_en": "Together Compiler: Continual Compilation for AI inference",
+      "summary_en": "Together Compiler uses agents and persistent engines to optimize open models in under 24 hours, delivering up to 3.7x higher throughput as traffic changes."
     },
     {
       "id": "fd-c99fa91737d5",
@@ -720,11 +723,8 @@
       "source_name": "SGLang Releases",
       "source_url": "https://github.com/sgl-project/sglang/releases.atom",
       "target_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
-      "headline_en": "SGLang v0.5.23 adds new models",
-      "summary_en": "The SGLang v0.5.23 release highlights 1,007 pull requests from 257 contributors and adds support for models including DeepSeek, MiniMax-M3.1-Flash, MiniCPM-V 4.7, FLUX.3, and MOSS-Image. For users, this broadens the LLM, VLM, and diffusion model choices available in the project.",
-      "headline_zh": "SGLang v0.5.23新增模型",
-      "summary_zh": "SGLang 新版收錄 257 位貢獻者的 1,007 項 PR，新增 DeepSeek 等 LLM、VLM 及擴散模型。用戶可選模型更多。",
-      "enriched": true
+      "headline_en": "v0.5.23",
+      "summary_en": "Highlights 1007 PRs from 257 contributors. New models Model Type Cookbook Muse Spark Open LLM / VLM link Beam-1.0 LLM / VLM link MiniMax-M3.1-Flash LLM / VLM link MiniCPM-V 4.7 LLM / VLM link Kev LLM / VLM link Cosmos3-Nano-Sim (Bimanual, Transfer, Auto) Diffusion link FastH3 Omni Diffusion link FLUX.3 Image Klein Diffusion link HY-Nomas Diffusion link MOSS-Image Diffusion link What's new DeepSeek-V4.1 on GB300 gets up to 1.5x more prefill throughput under load and about 28% lower first-token la"
     },
     {
       "id": "fd-c8cd05d3ae5e",
@@ -733,11 +733,8 @@
       "source_name": "Stability AI News",
       "source_url": "https://stability.ai/news-updates?format=rss",
       "target_url": "https://stability.ai/news-updates/stability-ai-latest-funding-backed-by-entertainment-industry-biggest-names",
-      "headline_en": "Stability AI closes $232M Series B",
-      "summary_en": "Stability AI closed a Series B under new leadership, bringing total funding to $232M, with Electronic Arts, Sony Music Group, Universal Music Group, and Warner Music Group among the backers. For users, the round signals substantial entertainment-industry support.",
-      "headline_zh": "Stability AI B輪融資2.32億美元",
-      "summary_zh": "Stability AI在新領導層下完成B輪融資，累計資金達2.32億美元，並獲多家娛樂業巨頭支持。對用戶來說，其持續發展的資源更充裕。",
-      "enriched": true
+      "headline_en": "The Entertainment Industry’s Biggest Names Back Stability AI in Latest Funding Round",
+      "summary_en": "We've closed our Series B, bringing total funding to $232M under new leadership. This round welcomes entertainment titans Electronic Arts, Sony Music Group, Universal Music Group, Warner Music Group, and more. The Entertainment Industry’s Biggest Names Back Stability AI in Latest Funding Round"
     },
     {
       "id": "fd-65bba15109b9",
@@ -746,11 +743,8 @@
       "source_name": "Continue Releases",
       "source_url": "https://github.com/continuedev/continue/releases.atom",
       "target_url": "https://github.com/continuedev/continue/releases/tag/v2.1.0-vscode",
-      "headline_en": "Continue ships VS Code 2.1.0",
-      "summary_en": "Continue released VS Code 2.1.0, with Cursor listed as a co-author.",
-      "headline_zh": "Continue發布VS Code 2.1.0",
-      "summary_zh": "Continue 發布 VS Code 2.1.0，由 Cursor 共同參與署名，今次屬 chore 類型更新。",
-      "enriched": true
+      "headline_en": "v2.1.0-vscode",
+      "summary_en": "chore: vscode 2.1.0 Co-authored-by: Cursor &lt;cursoragent@cursor.com&gt;"
     },
     {
       "id": "fd-c58e4b8cd2b9",
@@ -759,11 +753,8 @@
       "source_name": "Aider Releases",
       "source_url": "https://github.com/Aider-AI/aider/releases.atom",
       "target_url": "https://github.com/Aider-AI/aider/releases/tag/v0.86.3.dev",
-      "headline_en": "Aider publishes v0.86.3.dev",
-      "summary_en": "Aider set its version to 0.86.3.dev.",
-      "headline_zh": "Aider 發布 v0.86.3.dev",
-      "summary_zh": "Aider 將版本號設定為 0.86.3.dev，今次發布反映開發版本號已更新。",
-      "enriched": true
+      "headline_en": "v0.86.3.dev",
+      "summary_en": "set version to 0.86.3.dev"
     }
   ]
 }
