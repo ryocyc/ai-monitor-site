@@ -49,9 +49,9 @@ ZCODE_PROVIDER_CONFIG = pathlib.Path(r"C:\Users\ryocy\.zcode\v2\provider_config.
 REQUEST_TIMEOUT = 120
 PROVIDER_RETRIES = 2
 PROVIDER_BACKOFF_SECONDS = 30
-BATCH_SIZE = 4   # 8-item batches made M3 exhaust its reasoning budget before
-                 # emitting JSON (observed: truncated reasoning-only replies);
-                 # 4-5 item batches verified to complete (2026-11-16)
+BATCH_SIZE = 1   # v5 skeleton prompt is long: with 4-item batches M3 spent its
+                 # whole reasoning budget before emitting JSON (12-call run:
+                 # 8/51). Single-item calls verified reliable across the day.
 CACHE_CAP = 2000
 
 # Provider policy (user directive 2026-11-16, final): MiniMax ONLY.
