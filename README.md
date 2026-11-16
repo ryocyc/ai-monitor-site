@@ -1,119 +1,60 @@
-# MedReminder
+# AI Signal Feed (aisignalfeed.com)
 
-A medication reminder app built with Expo (React Native + TypeScript).
+Monitors the AI landscape for **everyday AI users**: new models, capability
+rankings, price changes, outages, and tools worth trying. Zero-server
+architecture: local patrol builds a JSON feed → GitHub Pages serves it.
 
-## Quick Start
+> Reborn 2026-11. The original pipeline (2026-04) died from an un-versioned
+> "ghost publisher" layer plus whole-page-hash noise; post-mortem in
+> `PHASE0_REPORT.md` (workspace file, not in repo).
 
-```bash
-npm install
-npm start
-```
-
-## Development
-
-```bash
-npm start           # Start Expo dev server (default: http://localhost:8081)
-npm start -- --localhost  # Force localhost connection
-npx expo start --android  # Start with Android target
-```
-
-## Typecheck
-
-```bash
-npm run typecheck
-```
-
-## Building
-
-### Expo Go (development)
-
-```bash
-npm start
-# Scan QR code with Expo Go app on your device
-```
-
-### Android Preview Build (APK)
-
-Requires `eas login` (free account at expo.dev).
-
-```bash
-eas build --platform android --profile preview --local
-# Output: android/app/build/outputs/apk/debug/app-debug.apk
-```
-
-### Android Production Build (AAB)
-
-Requires EAS account and a signing keystore.
-
-```bash
-eas build --platform android --profile production
-# Output: .aab bundle for Google Play Store submission
-```
-
-## Project Structure
+## Architecture
 
 ```
-App.tsx          # Main app (all screens: Today, Medications, History, Family, Settings)
-src/i18n.ts      # Translations and weekday keys
-app.json         # Expo configuration
-eas.json         # EAS Build profiles
-package.json     # Dependencies and scripts
+ai_monitor/
+├── run_patrol.py            orchestrator: single-instance lock, timeouts,
+│                            progress log (logs/patrol.log), failure alert
+│                            (logs/ALERT.txt), CREATE_NO_WINDOW everywhere
+├── build_feed.py            merge pillar outputs -> site/data/feed.json
+│                            (cap 60) + site/data/archive.json (memory, 2000)
+├── discover_trending.py     [pillar 5] GitHub Search API: exploding AI repos
+│                            (velocity tiers, star-farm spam filters)
+├── discover_hn.py           [pillar 5] Hacker News early signal (Algolia API)
+├── collect/
+│   ├── collect_status.py    [pillar 4] provider status APIs, indicator diff
+│   │                        -> outage + recovery events, zero noise
+│   ├── collect_prices.py    [pillar 3] LiteLLM price-registry JSON diff
+│   └── collect_feeds.py     [pillar 1] 14 GitHub release atoms + 10 company
+│                            RSS/Atom feeds (config: feeds.json)
+├── probe_rss.py             one-time source probe (RSS discovery + ban-risk)
+├── test_scrapling_blocked.py  one-time Scrapling ladder test (Fetcher ->
+│                            StealthyFetcher), evidence for engine choice
+├── docs/source_strategy.md  the 5-pillar source strategy + verified endpoints
+├── site/                    what GitHub Pages serves (index.html renders
+│                            ./data/feed.json client-side; AdSense included)
+└── state/                   patrol state: velocity snapshot, seen-ids,
+                             status indicators (audit-friendly, in git)
 ```
 
-## App Identity
+Rankings (pillar 2, arena.ai) is planned but deferred: the leaderboard is
+JS-rendered; needs a StealthyFetcher-based diff (D4).
 
-- Android package: `com.medreminder.app`
-- iOS bundle: `com.medreminder.app`
-- Version: `1.0.0`
+## Run
 
-## Notes
-
-- Family features are local/demo only (no real device sync)
-- Notifications require Android notification permission
-- Local data stored via AsyncStorage
-
-## AI Source Monitor Prototype
-
-This workspace now includes a lightweight Python watcher at [ai_monitor/monitor.py](/C:/Users/RYO/new_project/ai_monitor/monitor.py) that can poll selected AI sources, compare snapshots, and write change logs without using an LLM by default.
-
-### What it does
-
-- Polls configured sources from [ai_monitor/sources.json](/C:/Users/RYO/new_project/ai_monitor/sources.json)
-- Normalizes the important page content
-- Computes hashes and diffs against the last snapshot
-- Writes structured change events to `ai_monitor/logs/events.jsonl`
-- Writes cycle status lines to `ai_monitor/logs/status.log`
-
-### Run once
-
-```bash
-python ai_monitor/monitor.py
+```cmd
+python ai_monitor\run_patrol.py
 ```
 
-### Run every 3 minutes
+One pass ≈ 2 minutes: discovery + collection + feed build. Scheduled every
+2 hours via schtasks (see workspace AGENTS.md for the approval record).
+Site deploys on push to `main` (GitHub Actions → `ai_monitor/site/`).
 
-```bash
-python ai_monitor/monitor.py --loop --interval 180
-```
+## Design rules (hard-earned)
 
-### Optional AI reaction stage
-
-When the monitor has already logged changes, you can review only the new events with AI instead of sending every fetch through a model:
-
-```bash
-python ai_monitor/reactor.py --dry-run
-```
-
-To enable a live AI call, set these environment variables for any OpenAI-compatible endpoint and then run:
-
-```bash
-python ai_monitor/reactor.py
-```
-
-- `LLM_API_BASE`
-- `LLM_API_KEY`
-- `LLM_MODEL`
-
-### Next step
-
-Once you like the raw event logs, we can wire the reactor to a scheduler so it checks only new events every 10 minutes for classification and summarization.
+1. All production code lives in git — no local ghost layers, ever.
+2. Structured data first: JSON/API/RSS over HTML; HTML via the Scrapling
+   ladder (plain Fetcher first, stealth browser only as automatic fallback).
+3. Browsers auto-open-and-close per call; process-count verified leak-free.
+4. Diff signals, not pages: indicator fields, price snapshots, entry ids.
+5. Honest failure: any failed step writes logs/ALERT.txt; nothing fails
+   silently.
