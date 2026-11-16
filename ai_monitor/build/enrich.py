@@ -183,11 +183,20 @@ import hashlib as _hashlib
 PROMPT_VERSION = "v5"
 
 
+# Trending summaries end with live star counts ("Gained 8,852 GitHub
+# stars in 18 days") that change every patrol - hashing them made every
+# patrol invalidate the bilingual cache (overnight: 32 bilingual -> 4).
+# The hash must track MEANINGFUL material only.
+_VOLATILE_TAIL_RE = re.compile(r" Gained [\d,]+ GitHub stars.*$")
+
+
 def src_hash(item: dict) -> str:
-    """Hash of (prompt version + SOURCE material). Re-enriches when the
-    source summary changes (e.g. feeds now carry release notes) OR when
-    the prompt is upgraded."""
-    material = f"{PROMPT_VERSION}|{item.get('headline_en', '')}|{item.get('summary_en', '')}"
+    """Hash of (prompt version + stable SOURCE material). Re-enriches when
+    the summary's meaningful content changes (e.g. feeds now carry release
+    notes) OR when the prompt is upgraded - but NOT when live star counts
+    tick."""
+    summary = _VOLATILE_TAIL_RE.sub("", item.get("summary_en", "") or "")
+    material = f"{PROMPT_VERSION}|{item.get('headline_en', '')}|{summary}"
     return _hashlib.sha1(material.encode("utf-8")).hexdigest()[:12]
 
 

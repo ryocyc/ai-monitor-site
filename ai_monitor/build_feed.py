@@ -160,9 +160,11 @@ def apply_enrichment_cache(items: list[dict]) -> tuple[int, int]:
     except json.JSONDecodeError:
         return 0, 0
     applied = pending = 0
+    volatile_tail = re.compile(r" Gained [\d,]+ GitHub stars.*$")
     for item in items:
         cached = cache.get(item.get("id", ""))
-        material = f"v5|{item.get('headline_en', '')}|{item.get('summary_en', '')}"
+        stable_summary = volatile_tail.sub("", item.get('summary_en', '') or '')
+        material = f"v5|{item.get('headline_en', '')}|{stable_summary}"
         current_src = hashlib.sha1(material.encode("utf-8")).hexdigest()[:12]
         if cached and cached.get("src_hash") == current_src:
             item.update({k: v for k, v in cached.items() if k != "src_hash"})
