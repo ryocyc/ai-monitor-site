@@ -1,236 +1,76 @@
 {
-  "generated_at": "2026-11-16T02:42:32+00:00",
-  "item_count": 23,
+  "generated_at": "2026-11-16T10:34:00+00:00",
+  "item_count": 7,
   "items": [
     {
-      "id": "fd-fcb12dc9daf5",
-      "timestamp": "2026-11-10T22:25:00+00:00",
-      "category": "release",
-      "source_name": "Ollama Releases",
-      "source_url": "https://github.com/ollama/ollama/releases.atom",
-      "target_url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc0",
-      "headline_en": "v0.40.17",
-      "summary_en": "What's Changed Improve ChatGPT CLI restore and graceful restart by @hoyyeva in #19583 cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in #19409 llm: use mmap for Vulkan integrated GPUs by @dhiltgen in #19640 rpreslar4765/Ollama by @rpreslar4765 in #17163 mlx: support concurrent generation by @dhiltgen in #19197 llama.cpp: version bump b12257 by @dhiltgen in #19646 MLX, MLX-C: version bump by @dhiltgen in #19647 New Contributors @rpreslar4765 made their first contribution in #"
-    },
-    {
-      "id": "fd-b57fcdc61a2c",
-      "timestamp": "2026-11-16T00:17:10+00:00",
+      "id": "fd-1b62ef559289",
+      "timestamp": "2026-11-16T09:52:09+00:00",
       "category": "release",
       "source_name": "llama.cpp Releases",
       "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12428",
-      "headline_en": "b12428",
-      "summary_en": "jinja: add 4 missing features ( #32352 ) jinja: add 4 missing features apply suggestion Co-authored-by: Aldehir Rojas hello@alde.dev fix error msg Co-authored-by: Aldehir Rojas hello@alde.dev Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/67916336 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.0"
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12432",
+      "headline_en": "b12432",
+      "summary_en": "kv-cells: avoid an O(n_cells) scan per sequence removal ( #32380 )"
     },
     {
-      "id": "fd-3683e7be6f79",
-      "timestamp": "2026-11-14T10:15:55+00:00",
+      "id": "fd-c68a52acebb4",
+      "timestamp": "2026-11-16T09:24:51+00:00",
+      "category": "release",
+      "source_name": "llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12431",
+      "headline_en": "b12431",
+      "summary_en": "server: answer reasoning_effort levels the template rejects with 400 ( #32332 ) The reasoning effort probe already renders every candidate level, but it dropped the ones the template raises on, so a request with such a level (e.g. max on Qwen3.8) reached the template and came back as a 500 on /v1/chat/completions, /v1/responses and /v1/messages. Keep the raising levels in reasoning_effort_rejected and reject them in oaicompat_chat_params_parse with an invalid_argument, which the server answers w"
+    },
+    {
+      "id": "fd-af086867b5a6",
+      "timestamp": "2026-11-16T06:39:21+00:00",
+      "category": "release",
+      "source_name": "llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12430",
+      "headline_en": "b12430",
+      "summary_en": "ggml-cuda: fix MoE regression on HIP with #29948 ( #32344 ) Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/67993871 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu "
+    },
+    {
+      "id": "fd-6c81c60c95d8",
+      "timestamp": "2026-11-15T23:47:27+00:00",
+      "category": "release",
+      "source_name": "llama.cpp Releases",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12429",
+      "headline_en": "b12429: convert: fix ripple dflash2 NoPE metadata (#32363)",
+      "summary_en": "convert: fix ripple dflash2 NoPE metadata was wrong https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2/blob/743c4669f7daa11d3ca350b9a057c059481b1afd/config.json#L45-L47 Update conversion/base.py Co-authored-by: Sigbjørn Skjæret sigbjorn.skjaeret@huggingface.co Co-authored-by: Sigbjørn Skjæret sigbjorn.skjaeret@huggingface.co"
+    },
+    {
+      "id": "fd-4ed9358d24f4",
+      "timestamp": "2026-11-16T04:27:15+00:00",
       "category": "release",
       "source_name": "vLLM Releases",
       "source_url": "https://github.com/vllm-project/vllm/releases.atom",
-      "target_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc4",
-      "headline_en": "v0.34.0rc4",
-      "summary_en": "[Release][Tests] Give the #67296 warmup-gate test runner num_speculat…"
+      "target_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
+      "headline_en": "v0.34.0",
+      "summary_en": "v0.34.0"
     },
     {
-      "id": "fd-88b63ace7c2f",
-      "timestamp": "2026-11-08T23:48:24+00:00",
-      "category": "release",
-      "source_name": "Open WebUI Releases",
-      "source_url": "https://github.com/open-webui/open-webui/releases.atom",
-      "target_url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.3",
-      "headline_en": "v0.13.3",
-      "summary_en": "Added 🦾 Agents in automations. The automation editor now lets you choose a terminal and working folder, then select a coding agent available there. Scheduled runs use that saved terminal and folder, and check that the terminal and agent are still available before starting. Agent automations send their results to a chat; channel destinations remain available for ordinary models. Commit 📂 Change terminal and folder during a chat. You can now choose a different terminal or working folder after send"
-    },
-    {
-      "id": "fd-cf29c422ac1f",
-      "timestamp": "2026-11-15T05:09:04+00:00",
-      "category": "release",
-      "source_name": "LiteLLM Releases",
-      "source_url": "https://github.com/BerriAI/litellm/releases.atom",
-      "target_url": "https://github.com/BerriAI/litellm/releases/tag/v1.111.0-dev.4",
-      "headline_en": "v1.111.0-dev.4",
-      "summary_en": "Important Signing has moved to keyless cosign. Since v1.111.0-dev.3, releases are signed with Sigstore keyless signing (GitHub OIDC) instead of the cosign.pub key. cosign verify --key ... does not work for this release. Use the command below. Earlier releases still verify with the key. Verify this release cosign verify \\ --certificate-identity https://github.com/BerriAI/project-releaser/.github/workflows/release.yml@refs/heads/main \\ --certificate-oidc-issuer https://token.actions.githubusercont"
-    },
-    {
-      "id": "fd-856b7342e43c",
-      "timestamp": "2026-11-14T01:43:55+00:00",
-      "category": "release",
-      "source_name": "LangGraph Releases",
-      "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "target_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.22",
-      "headline_en": "langgraph==1.2.22",
-      "summary_en": "Changes since 1.2.21 release(langgraph): 1.2.22 ( #9702 ) release(checkpoint-postgres): 3.2.1 ( #9700 ) release(prebuilt): 1.1.2 ( #9701 ) release(checkpoint): 4.3.2 ( #9699 ) fix(langgraph): stream a child graph on its own thread to a caller streaming subgraphs ( #9698 ) perf(langgraph): skip message conversion in add_messages for plain messages ( #9631 ) perf(langgraph): filter pending writes to the given tasks before reading their statuses ( #9634 ) perf(langgraph): match update keys against "
-    },
-    {
-      "id": "fd-b178eb5f5d9f",
-      "timestamp": "2026-11-12T14:32:59+00:00",
-      "category": "release",
-      "source_name": "OpenHands Releases",
-      "source_url": "https://github.com/All-Hands-AI/OpenHands/releases.atom",
-      "target_url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.40.0",
-      "headline_en": "v1.40.0",
-      "summary_en": "1.40.0 (2026-11-12) What's Changed Features feat: improve Codex subscription authentication guidance by @xunjizhe in #17194 Bug Fixes fix(chat): keep messages at tied history page boundaries by @enyst in #19649 fix(chat): prevent delayed echoes from deleting newer drafts by @marcello-pichini in #19382 fix(chat): activate the home model pick when a self-hosted instance turns Agent Profiles off by @hieptl in #19682 fix(git): use a repository's real default branch instead of assuming \"main\" by @hie"
-    },
-    {
-      "id": "fd-9743c64181c8",
-      "timestamp": "2026-11-13T08:10:35+00:00",
+      "id": "fd-22a168cf2abb",
+      "timestamp": "2026-11-16T08:37:54+00:00",
       "category": "release",
       "source_name": "n8n Releases",
       "source_url": "https://github.com/n8n-io/n8n/releases.atom",
-      "target_url": "https://github.com/n8n-io/n8n/releases/tag/v1",
-      "headline_en": "v1: :rocket: Release 1.123.96 (#43771)",
-      "summary_en": "Co-authored-by: n8n-release-helper[bot] &lt;265227495+n8n-release-helper[bot]@users.noreply.github.com&gt;"
+      "target_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.97",
+      "headline_en": "n8n@1.123.97",
+      "summary_en": "1.123.97 (2026-11-16)"
     },
     {
-      "id": "fd-5dc128560cf8",
-      "timestamp": "2026-11-04T07:37:34+00:00",
-      "category": "release",
-      "source_name": "Dify Releases",
-      "source_url": "https://github.com/langgenius/dify/releases.atom",
-      "target_url": "https://github.com/langgenius/dify/releases/tag/1.19.0",
-      "headline_en": "v1.19.0 - Trace Your Workflows, Layer by Layer",
-      "summary_en": "Dify 1.19.0 brings nested workflow tracing to your observability tools. Follow a workflow into the Workflow Tools it calls, inspect the steps inside each invocation, and keep the LLM context alongside the execution tree. This release also makes Workflow Tools portable with App packages, adds Skill Hub automation, and makes Agent files easier to upload and preview. The bundled plugin daemon is upgraded to 0.6.14-local . Release highlights · Upgrade guide · Detailed changes Release highlights Nest"
-    },
-    {
-      "id": "fd-c58e4b8cd2b9",
-      "timestamp": "2026-02-12T00:42:25+00:00",
-      "category": "release",
-      "source_name": "Aider Releases",
-      "source_url": "https://github.com/Aider-AI/aider/releases.atom",
-      "target_url": "https://github.com/Aider-AI/aider/releases/tag/v0.86.3.dev",
-      "headline_en": "v0.86.3.dev",
-      "summary_en": "set version to 0.86.3.dev"
-    },
-    {
-      "id": "fd-65bba15109b9",
-      "timestamp": "2026-06-19T00:24:00+00:00",
-      "category": "release",
-      "source_name": "Continue Releases",
-      "source_url": "https://github.com/continuedev/continue/releases.atom",
-      "target_url": "https://github.com/continuedev/continue/releases/tag/v2.1.0-vscode",
-      "headline_en": "v2.1.0-vscode",
-      "summary_en": "chore: vscode 2.1.0 Co-authored-by: Cursor &lt;cursoragent@cursor.com&gt;"
-    },
-    {
-      "id": "fd-c99fa91737d5",
-      "timestamp": "2026-11-02T22:14:10+00:00",
-      "category": "release",
-      "source_name": "SGLang Releases",
-      "source_url": "https://github.com/sgl-project/sglang/releases.atom",
-      "target_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
-      "headline_en": "v0.5.23",
-      "summary_en": "Highlights 1007 PRs from 257 contributors. New models Model Type Cookbook Muse Spark Open LLM / VLM link Beam-1.0 LLM / VLM link MiniMax-M3.1-Flash LLM / VLM link MiniCPM-V 4.7 LLM / VLM link Kev LLM / VLM link Cosmos3-Nano-Sim (Bimanual, Transfer, Auto) Diffusion link FastH3 Omni Diffusion link FLUX.3 Image Klein Diffusion link HY-Nomas Diffusion link MOSS-Image Diffusion link What's new DeepSeek-V4.1 on GB300 gets up to 1.5x more prefill throughput under load and about 28% lower first-token la"
-    },
-    {
-      "id": "fd-3f99ead62b7c",
-      "timestamp": "2026-11-15T23:18:44+00:00",
-      "category": "release",
-      "source_name": "Codex Releases",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.7",
-      "headline_en": "0.171.0-alpha.7",
-      "summary_en": "Release 0.171.0-alpha.7"
-    },
-    {
-      "id": "fd-9a43fed6987c",
-      "timestamp": "2026-11-16T00:00:28+00:00",
-      "category": "blog",
-      "source_name": "NVIDIA AI Blog",
-      "source_url": "https://blogs.nvidia.com/feed/",
-      "target_url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
-      "headline_en": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
-      "summary_en": "Over two days at COEX, more than 2,000 attendees converged for AI Day Seoul, bringing together Korea’s industry leaders, startups and developer communities advancing physical AI and AI agents. At the plenary sessions, Deepu Talla, vice president of robotics and edge AI at NVIDIA, said Korea is “punching above its weight,” with Doosan Robotics, Hyundai [&#8230;] AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities"
-    },
-    {
-      "id": "fd-c83c3153b641",
-      "timestamp": "2026-11-05T12:00:14+00:00",
-      "category": "news",
-      "source_name": "Mistral News",
-      "source_url": "https://mistral.ai/news/rss",
-      "target_url": "https://mistral.ai/news/build-with-studio/",
-      "headline_en": "Le Chonk brings the brains. Studio puts it to work.",
-      "summary_en": "Build and deploy enterprise agents, workflows and apps faster with Mistral Studio and Le Chonk full control over your models, data and infrastructure."
-    },
-    {
-      "id": "fd-15fa788cf00a",
-      "timestamp": "2026-11-13T18:00:39+00:00",
-      "category": "blog",
-      "source_name": "Hugging Face Blog",
-      "source_url": "https://huggingface.co/blog/feed.xml",
-      "target_url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
-      "headline_en": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
-      "summary_en": "New entry from Hugging Face Blog: Build a Robot Pick-and-Place Simulation with SimReady Assets"
-    },
-    {
-      "id": "fd-c8cd05d3ae5e",
-      "timestamp": "2026-08-25T14:59:22+00:00",
-      "category": "news",
-      "source_name": "Stability AI News",
-      "source_url": "https://stability.ai/news-updates?format=rss",
-      "target_url": "https://stability.ai/news-updates/stability-ai-latest-funding-backed-by-entertainment-industry-biggest-names",
-      "headline_en": "The Entertainment Industry’s Biggest Names Back Stability AI in Latest Funding Round",
-      "summary_en": "We've closed our Series B, bringing total funding to $232M under new leadership. This round welcomes entertainment titans Electronic Arts, Sony Music Group, Universal Music Group, Warner Music Group, and more. The Entertainment Industry’s Biggest Names Back Stability AI in Latest Funding Round"
-    },
-    {
-      "id": "fd-98a511a84418",
-      "timestamp": "2026-11-04T00:00:00+00:00",
-      "category": "blog",
-      "source_name": "Together AI Blog",
-      "source_url": "https://www.together.ai/blog/rss.xml",
-      "target_url": "https://www.together.ai/blog/together-compiler-continual-compilation-for-ai-inference",
-      "headline_en": "Together Compiler: Continual Compilation for AI inference",
-      "summary_en": "Together Compiler uses agents and persistent engines to optimize open models in under 24 hours, delivering up to 3.7x higher throughput as traffic changes."
-    },
-    {
-      "id": "fd-5b2cbd603c96",
-      "timestamp": "2026-11-12T22:21:17+00:00",
-      "category": "changelog",
-      "source_name": "OpenRouter Changelog",
-      "source_url": "https://openrouter.ai/docs/changelog/rss.xml",
-      "target_url": "https://openrouter.ai/docs/changelog#november-12-2026",
-      "headline_en": "November 12, 2026",
-      "summary_en": "New entry from OpenRouter Changelog: November 12, 2026"
-    },
-    {
-      "id": "fd-719a73c5da5f",
-      "timestamp": "2026-11-13T22:24:00+00:00",
+      "id": "fd-d58a098adfef",
+      "timestamp": "2026-11-15T20:00:00+00:00",
       "category": "blog",
       "source_name": "Vercel AI Blog",
       "source_url": "https://vercel.com/blog/feed.xml",
-      "target_url": "https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing",
-      "headline_en": "Daemons can now send traces to Vercel Tracing",
-      "summary_en": "Vercel Daemons can now send OpenTelemetry traces to Vercel Tracing, allowing you and your agents to inspect background worker operations alongside the rest of your project's traces.Vercel provides each daemon with a Unix socket for receiving OTLP/HTTP traces and sets the socket's path in VERCEL_OTEL_SOCKET_PATH.Upgrading @vercel/otel to version 2.3.0 or later enables automatic trace export for Node.js daemons using the default configuration. The SDK detects this socket and sends the spans your w"
-    },
-    {
-      "id": "fd-8ee3f1944ab9",
-      "timestamp": "2026-11-13T20:20:21+00:00",
-      "category": "blog",
-      "source_name": "Cloudflare AI Blog",
-      "source_url": "https://blog.cloudflare.com/tag/ai/rss",
-      "target_url": "https://blog.cloudflare.com/kitesurf-open-source/",
-      "headline_en": "Kitesurf is now open source",
-      "summary_en": "Kitesurf, our experimental browser engine for AI agents, is now open source. Inspect the code, run it locally, or deploy your own instance on Cloudflare Workers."
-    },
-    {
-      "id": "fd-7705a8a3b3de",
-      "timestamp": "2026-11-13T23:22:09+00:00",
-      "category": "blog",
-      "source_name": "AWS ML Blog",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "target_url": "https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1/",
-      "headline_en": "Production MLOps at GS Caltex with Amazon SageMaker Canvas, part 1",
-      "summary_en": "GS Caltex connects Amazon SageMaker Canvas to Amazon SageMaker Pipelines so process engineers' no-code models run in production. This post shows how ML engineers reuse validated preprocessing flows and models, cutting deployment from about a week to a few hours and running batch inference every 30 minutes."
-    },
-    {
-      "id": "fd-40da4434ce08",
-      "timestamp": "2026-11-13T20:33:05+00:00",
-      "category": "blog",
-      "source_name": "Microsoft AI Blog",
-      "source_url": "https://news.microsoft.com/source/feed/",
-      "target_url": "https://blogs.microsoft.com/on-the-issues/2026/11/11/protecting-privacy-and-press-freedom-an-important-fourth-circuit-ruling/",
-      "headline_en": "Why a new court ruling matters for press freedom and privacy",
-      "summary_en": "The post Why a new court ruling matters for press freedom and privacy appeared first on Source ."
+      "target_url": "https://vercel.com/changelog/qwen4-max-now-available-on-ai-gateway",
+      "headline_en": "Qwen4-Max now available on AI Gateway",
+      "summary_en": "Qwen4-Max from Alibaba is now available on AI Gateway. It is the first model in the Qwen4 series: a reasoning model with native vision and a 1M-token context window, built for coding, professional work, and long-running agent tasks.Qwen4-Max is better at working with professional tools. It can build 3D scenes in Blender and playable games in Unity, Unreal Engine, and Godot, running what it builds and using visual feedback to fix camera, animation, and lighting issues. For finance, legal, and hea"
     }
   ]
 }

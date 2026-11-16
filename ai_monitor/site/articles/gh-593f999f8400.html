@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capri：Windows 本地優先桌面 AI 代理 | AI Signal Feed</title>
+<meta name="description" content="Capri 將檔案、應用程式、終端機與瀏覽器操作整合成 Windows 桌面代理，提供後端切換、長期記憶、逐步審核及高風險操作確認。">
+<link rel="canonical" href="https://aisignalfeed.com/articles/gh-593f999f8400.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Signal Feed">
+<meta property="og:title" content="Capri：Windows 本地優先桌面 AI 代理">
+<meta property="og:description" content="Capri 將檔案、應用程式、終端機與瀏覽器操作整合成 Windows 桌面代理，提供後端切換、長期記憶、逐步審核及高風險操作確認。">
+<meta property="og:url" content="https://aisignalfeed.com/articles/gh-593f999f8400.html">
+<meta property="og:locale" content="zh_HK">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f766e'/%3E%3Cpath d='M50 18 v20 M50 62 v20 M18 50 h20 M62 50 h20' stroke='%23f6efe4' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='9' fill='%23f6efe4'/%3E%3C/svg%3E">
+<style>
+:root { --bg:#f6efe4; --surface:rgba(255,255,255,.88); --ink:#1a1f18; --muted:#586255;
+--accent:#0f766e; --accent-soft:rgba(15,118,110,.12); --border:rgba(15,118,110,.16);
+--shadow:0 18px 42px rgba(27,39,33,.09); }
+*{box-sizing:border-box} body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;
+color:var(--ink);background:linear-gradient(180deg,#fcf8f2 0%,var(--bg) 100%)}
+main{max-width:860px;margin:0 auto;padding:32px 18px 64px}
+.topline{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+color:var(--muted);font-size:.9rem;margin-bottom:20px}
+.chip{display:inline-flex;padding:6px 10px;border-radius:999px;background:var(--accent-soft);
+color:var(--accent);font-weight:700;font-size:.74rem;text-transform:uppercase;
+letter-spacing:.05em}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.6rem,4.5vw,2.6rem);
+line-height:1.15;letter-spacing:-.02em;margin:14px 0 10px}
+.standfirst{color:var(--muted);font-size:1.05rem;line-height:1.7;margin:0 0 8px}
+.meta{color:var(--muted);font-size:.86rem;margin-bottom:22px}
+.section{padding:20px 22px;background:var(--surface);border:1px solid var(--border);
+border-radius:18px;box-shadow:var(--shadow);margin-bottom:16px}
+.section h2{margin:0 0 10px;font-size:1.05rem}
+.section p{margin:0 0 12px;line-height:1.85;color:#3a423b}
+.section p:last-child{margin:0}
+.section ul{margin:0;padding-left:1.1rem;line-height:1.8;color:#3a423b}
+a{color:var(--accent);text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<main>
+<div class="topline">
+  <div><a href="../index.html">← AI Signal Feed</a></div>
+  <div>GitHub · 2026-11-16T10:33</div>
+</div>
+<article class="section" style="padding:26px 28px">
+  <span class="chip">trending</span>
+  <h1>Capri：Windows 本地優先桌面 AI 代理</h1>
+  <p class="standfirst">Capri 將檔案、應用程式、終端機與瀏覽器操作整合成 Windows 桌面代理，提供後端切換、長期記憶、逐步審核及高風險操作確認。</p>
+  <div class="meta">英文搜尋標題:Capri AI App</div>
+</article>
+<section class="section"><h2>內文</h2><p>Capri係面向Windows、強調「本地優先」嘅桌面AI代理。佢可將自然語言目標拆成步驟，經後端操作檔案、應用程式、終端機、瀏覽器同程式碼。</p><p>支援Claude Code、Codex、Antigravity及其他相容後端，可喺下拉選單切換；長期記憶保存專案與偏好。可批次處理檔案，執行shell指令、控制視窗、填表同多步網頁任務。畫面顯示計劃、工具呼叫同結果，各步可暫停、編輯或中止；破壞性操作須明確批准。</p><p>以前要分開用檔案管理器、終端機同瀏覽器，而家可直接描述成果，例如找出測試失敗原因。適合開發者及處理重複操作嘅人；程式碼變更仍要確認。</p><p>同類工具有Claude Code、Codex同Antigravity。Capri免費開源，但後端可能需訂閱或API key；工具與記憶可離線，推理通常要連接後端，除非改指本地模型端點。套件為免安裝便攜檔，無須管理員權限；新版本或會觸發SmartScreen，應由Releases頁下載。檔案、記憶與日誌留喺本機，只有選擇送出的提示與上下文會傳去已設後端。</p></section>
+<section class="section"><h2>點解要理</h2><ul><li>以單一介面處理檔案、應用程式、終端機、瀏覽器及程式碼</li><li>可切換Claude Code、Codex、Antigravity等相容後端，並保存長期記憶</li><li>檔案、記憶與日誌留喺本機，破壞性或不可逆操作須明確批准</li></ul></section>
+<section class="section"><h2>來源</h2>
+  <p>資料來自Capri專案嘅GitHub專頁及Releases說明，屬項目第一手資料；實際功能與安全表現仍應以所下載版本為準。</p>
+  <p><a href="https://github.com/Outpostkrewhirl86/Capri-AI" rel="noopener">睇原始來源 →</a></p>
+</section>
+</main>
+</body>
+</html>

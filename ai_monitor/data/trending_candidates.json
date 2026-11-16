@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-16T01:36:26+00:00",
+  "generated_at": "2026-11-16T10:33:17+00:00",
   "queries_run": 12,
-  "raw_unique": 124,
-  "spam_ring_dropped": 52,
+  "raw_unique": 132,
+  "spam_ring_dropped": 59,
   "filtered_out": 21,
   "review": {
     "flagged_count": 5,
     "owner_checks": {
-      "hitkeeen": 37.7,
-      "Outpostkrewhirl86": 153.2,
-      "roan-maverick": 17.7,
-      "Timaga": 1360.4,
-      "8hjkkwikl8": 10.7
+      "hitkeeen": 38.1,
+      "Outpostkrewhirl86": 153.6,
+      "roan-maverick": 18.0,
+      "Timaga": 1360.8,
+      "8hjkkwikl8": 11.1
     },
     "auto_excluded": [
       {
         "repo": "8hjkkwikl8/ai-portfolio",
         "stars": 105,
-        "owner_account_age_days": 10.7,
+        "owner_account_age_days": 11.1,
         "flags": [
           "hot_but_no_forks"
         ]
@@ -26,21 +26,21 @@
     "suspects": [
       {
         "repo": "hitkeeen/blender-ai-mcp-addon",
-        "stars": 1223,
+        "stars": 1903,
         "flags": [
           "no_language"
         ]
       },
       {
         "repo": "Outpostkrewhirl86/Capri-AI",
-        "stars": 345,
+        "stars": 346,
         "flags": [
           "no_language"
         ]
       },
       {
         "repo": "roan-maverick/tradingview-indicator-for-ai-agents",
-        "stars": 227,
+        "stars": 240,
         "flags": [
           "no_language"
         ]
@@ -54,27 +54,8 @@
       }
     ]
   },
-  "candidate_count": 22,
+  "candidate_count": 24,
   "candidates": [
-    {
-      "repo": "wangzan101/Mika",
-      "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-      "language": "Kotlin",
-      "url": "https://github.com/wangzan101/Mika",
-      "created_at": "2026-10-29T14:34:07Z",
-      "tier": "rising",
-      "query_tags": [
-        "hot_llm_30d"
-      ],
-      "metrics": {
-        "stars": 8723,
-        "age_days": 17.5,
-        "velocity_per_day": 499.6,
-        "velocity_avg_per_day": 499.6,
-        "velocity_recent_per_day": null,
-        "forks": 1995
-      }
-    },
     {
       "repo": "hitkeeen/blender-ai-mcp-addon",
       "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
@@ -86,17 +67,36 @@
         "new_llm_7d"
       ],
       "metrics": {
-        "stars": 1223,
-        "age_days": 3.5,
-        "velocity_per_day": 353.3,
-        "velocity_avg_per_day": 353.3,
+        "stars": 1903,
+        "age_days": 3.8,
+        "velocity_per_day": 496.3,
+        "velocity_avg_per_day": 496.3,
         "velocity_recent_per_day": null,
-        "forks": 32
+        "forks": 52
       },
       "review_flags": [
         "no_language"
       ],
-      "owner_account_age_days": 37.7
+      "owner_account_age_days": 38.1
+    },
+    {
+      "repo": "wangzan101/Mika",
+      "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "language": "Kotlin",
+      "url": "https://github.com/wangzan101/Mika",
+      "created_at": "2026-10-29T14:34:07Z",
+      "tier": "rising",
+      "query_tags": [
+        "hot_llm_30d"
+      ],
+      "metrics": {
+        "stars": 8798,
+        "age_days": 17.8,
+        "velocity_per_day": 493.4,
+        "velocity_avg_per_day": 493.4,
+        "velocity_recent_per_day": null,
+        "forks": 2003
+      }
     },
     {
       "repo": "FrigadeHQ/yogurt",
@@ -109,12 +109,12 @@
         "new_mcp_7d"
       ],
       "metrics": {
-        "stars": 1655,
-        "age_days": 5.2,
-        "velocity_per_day": 316.3,
-        "velocity_avg_per_day": 316.3,
+        "stars": 1745,
+        "age_days": 5.6,
+        "velocity_per_day": 311.3,
+        "velocity_avg_per_day": 311.3,
         "velocity_recent_per_day": null,
-        "forks": 93
+        "forks": 103
       }
     },
     {
@@ -128,17 +128,17 @@
         "new_agent_7d"
       ],
       "metrics": {
-        "stars": 345,
-        "age_days": 1.2,
-        "velocity_per_day": 295.4,
-        "velocity_avg_per_day": 295.4,
+        "stars": 346,
+        "age_days": 1.5,
+        "velocity_per_day": 224.6,
+        "velocity_avg_per_day": 224.6,
         "velocity_recent_per_day": null,
         "forks": 54
       },
       "review_flags": [
         "no_language"
       ],
-      "owner_account_age_days": 153.2
+      "owner_account_age_days": 153.6
     },
     {
       "repo": "agentes-chat/agentes-chat",
@@ -151,12 +151,12 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 1519,
-        "age_days": 7.0,
-        "velocity_per_day": 216.0,
-        "velocity_avg_per_day": 216.0,
+        "stars": 1584,
+        "age_days": 7.4,
+        "velocity_per_day": 213.9,
+        "velocity_avg_per_day": 213.9,
         "velocity_recent_per_day": null,
-        "forks": 268
+        "forks": 278
       }
     },
     {
@@ -170,12 +170,12 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 4097,
-        "age_days": 19.7,
-        "velocity_per_day": 208.0,
-        "velocity_avg_per_day": 208.0,
+        "stars": 4182,
+        "age_days": 20.1,
+        "velocity_per_day": 208.4,
+        "velocity_avg_per_day": 208.4,
         "velocity_recent_per_day": null,
-        "forks": 63
+        "forks": 84
       }
     },
     {
@@ -189,12 +189,12 @@
         "new_agent_7d"
       ],
       "metrics": {
-        "stars": 482,
-        "age_days": 3.1,
-        "velocity_per_day": 155.7,
-        "velocity_avg_per_day": 155.7,
+        "stars": 498,
+        "age_days": 3.5,
+        "velocity_per_day": 143.6,
+        "velocity_avg_per_day": 143.6,
         "velocity_recent_per_day": null,
-        "forks": 29
+        "forks": 31
       }
     },
     {
@@ -208,12 +208,12 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 2110,
-        "age_days": 16.4,
-        "velocity_per_day": 128.4,
-        "velocity_avg_per_day": 128.4,
+        "stars": 2128,
+        "age_days": 16.8,
+        "velocity_per_day": 126.6,
+        "velocity_avg_per_day": 126.6,
         "velocity_recent_per_day": null,
-        "forks": 1076
+        "forks": 1082
       }
     },
     {
@@ -227,12 +227,12 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 696,
-        "age_days": 6.3,
-        "velocity_per_day": 109.7,
-        "velocity_avg_per_day": 109.7,
+        "stars": 710,
+        "age_days": 6.7,
+        "velocity_per_day": 105.7,
+        "velocity_avg_per_day": 105.7,
         "velocity_recent_per_day": null,
-        "forks": 46
+        "forks": 51
       }
     },
     {
@@ -246,12 +246,12 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 1583,
-        "age_days": 16.3,
-        "velocity_per_day": 97.1,
-        "velocity_avg_per_day": 97.1,
+        "stars": 1585,
+        "age_days": 16.7,
+        "velocity_per_day": 95.1,
+        "velocity_avg_per_day": 95.1,
         "velocity_recent_per_day": null,
-        "forks": 18
+        "forks": 19
       }
     },
     {
@@ -265,17 +265,17 @@
         "kw_agent_7d"
       ],
       "metrics": {
-        "stars": 227,
-        "age_days": 2.7,
-        "velocity_per_day": 84.8,
-        "velocity_avg_per_day": 84.8,
+        "stars": 240,
+        "age_days": 3.1,
+        "velocity_per_day": 78.7,
+        "velocity_avg_per_day": 78.7,
         "velocity_recent_per_day": null,
-        "forks": 32
+        "forks": 39
       },
       "review_flags": [
         "no_language"
       ],
-      "owner_account_age_days": 17.7
+      "owner_account_age_days": 18.0
     },
     {
       "repo": "op7418/guizang-game-skill",
@@ -288,12 +288,31 @@
         "new_agent_7d"
       ],
       "metrics": {
-        "stars": 359,
-        "age_days": 4.4,
-        "velocity_per_day": 82.0,
-        "velocity_avg_per_day": 82.0,
+        "stars": 372,
+        "age_days": 4.8,
+        "velocity_per_day": 78.3,
+        "velocity_avg_per_day": 78.3,
         "velocity_recent_per_day": null,
-        "forks": 56
+        "forks": 58
+      }
+    },
+    {
+      "repo": "Tthanh2k6/turbo-browser-mcp",
+      "description": "Playwright MCP server built to cut agent turns and tokens: one-call form filling, delta snapshots, batched steps, and a submit guard on by default",
+      "language": "JavaScript",
+      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+      "created_at": "2026-11-14T12:11:07Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_mcp_7d"
+      ],
+      "metrics": {
+        "stars": 119,
+        "age_days": 1.9,
+        "velocity_per_day": 61.6,
+        "velocity_avg_per_day": 61.6,
+        "velocity_recent_per_day": null,
+        "forks": 6
       }
     },
     {
@@ -307,31 +326,12 @@
         "kw_localllm_14d"
       ],
       "metrics": {
-        "stars": 313,
-        "age_days": 5.7,
-        "velocity_per_day": 54.9,
-        "velocity_avg_per_day": 54.9,
+        "stars": 318,
+        "age_days": 6.1,
+        "velocity_per_day": 52.4,
+        "velocity_avg_per_day": 52.4,
         "velocity_recent_per_day": null,
         "forks": 21
-      }
-    },
-    {
-      "repo": "MZULALI/xj-scanner",
-      "description": "Read a 1991-95 Jeep's engine computer from a laptop with a $3 Arduino Nano, and let an AI agent do the reading.",
-      "language": "Python",
-      "url": "https://github.com/MZULALI/xj-scanner",
-      "created_at": "2026-11-10T17:03:05Z",
-      "tier": "hot_new",
-      "query_tags": [
-        "kw_agent_7d"
-      ],
-      "metrics": {
-        "stars": 261,
-        "age_days": 5.4,
-        "velocity_per_day": 48.7,
-        "velocity_avg_per_day": 48.7,
-        "velocity_recent_per_day": null,
-        "forks": 33
       }
     },
     {
@@ -345,31 +345,31 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 1183,
-        "age_days": 24.6,
-        "velocity_per_day": 48.0,
-        "velocity_avg_per_day": 48.0,
+        "stars": 1196,
+        "age_days": 25.0,
+        "velocity_per_day": 47.8,
+        "velocity_avg_per_day": 47.8,
         "velocity_recent_per_day": null,
-        "forks": 99
+        "forks": 100
       }
     },
     {
-      "repo": "SAOS-3624/dsh-see-now",
-      "description": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
-      "language": "JavaScript",
-      "url": "https://github.com/SAOS-3624/dsh-see-now",
-      "created_at": "2026-11-01T13:32:34Z",
-      "tier": "rising",
+      "repo": "MZULALI/xj-scanner",
+      "description": "Read a 1991-95 Jeep's engine computer from a laptop with a $3 Arduino Nano, and let an AI agent do the reading.",
+      "language": "Python",
+      "url": "https://github.com/MZULALI/xj-scanner",
+      "created_at": "2026-11-10T17:03:05Z",
+      "tier": "hot_new",
       "query_tags": [
-        "hot_llm_30d"
+        "kw_agent_7d"
       ],
       "metrics": {
-        "stars": 662,
-        "age_days": 14.5,
-        "velocity_per_day": 45.6,
-        "velocity_avg_per_day": 45.6,
+        "stars": 272,
+        "age_days": 5.7,
+        "velocity_per_day": 47.5,
+        "velocity_avg_per_day": 47.5,
         "velocity_recent_per_day": null,
-        "forks": 70
+        "forks": 36
       }
     },
     {
@@ -383,36 +383,51 @@
         "new_tts_14d"
       ],
       "metrics": {
-        "stars": 351,
-        "age_days": 7.7,
-        "velocity_per_day": 45.4,
-        "velocity_avg_per_day": 45.4,
+        "stars": 371,
+        "age_days": 8.1,
+        "velocity_per_day": 45.8,
+        "velocity_avg_per_day": 45.8,
         "velocity_recent_per_day": null,
-        "forks": 57
+        "forks": 58
       }
     },
     {
-      "repo": "Timaga/noda-local-ai-notes",
-      "description": "Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources.",
+      "repo": "SAOS-3624/dsh-see-now",
+      "description": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
       "language": "JavaScript",
-      "url": "https://github.com/Timaga/noda-local-ai-notes",
-      "created_at": "2026-11-13T17:28:15Z",
-      "tier": "hot_new",
+      "url": "https://github.com/SAOS-3624/dsh-see-now",
+      "created_at": "2026-11-01T13:32:34Z",
+      "tier": "rising",
       "query_tags": [
-        "new_rag_14d"
+        "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 104,
-        "age_days": 2.3,
-        "velocity_per_day": 44.5,
-        "velocity_avg_per_day": 44.5,
+        "stars": 666,
+        "age_days": 14.9,
+        "velocity_per_day": 44.8,
+        "velocity_avg_per_day": 44.8,
         "velocity_recent_per_day": null,
-        "forks": 1
-      },
-      "review_flags": [
-        "hot_but_no_forks"
+        "forks": 69
+      }
+    },
+    {
+      "repo": "mdexa-ai/mdexa-ai-native-database",
+      "description": "Verified license and provenance records for datasets behind medical AI: information cards, JSON Schema, decision rules and evidence index (hashes only). Cards CC BY 4.0, scripts MIT.",
+      "language": "JavaScript",
+      "url": "https://github.com/mdexa-ai/mdexa-ai-native-database",
+      "created_at": "2026-11-15T12:20:17Z",
+      "tier": "rising",
+      "query_tags": [
+        "new_mcp_7d"
       ],
-      "owner_account_age_days": 1360.4
+      "metrics": {
+        "stars": 41,
+        "age_days": 0.9,
+        "velocity_per_day": 44.3,
+        "velocity_avg_per_day": 44.3,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      }
     },
     {
       "repo": "sleepy-zone/ai-ref-library-cn",
@@ -425,10 +440,10 @@
         "hot_ai_30d"
       ],
       "metrics": {
-        "stars": 770,
-        "age_days": 17.4,
-        "velocity_per_day": 44.2,
-        "velocity_avg_per_day": 44.2,
+        "stars": 772,
+        "age_days": 17.8,
+        "velocity_per_day": 43.4,
+        "velocity_avg_per_day": 43.4,
         "velocity_recent_per_day": null,
         "forks": 185
       }
@@ -444,13 +459,36 @@
         "new_agent_7d"
       ],
       "metrics": {
-        "stars": 206,
-        "age_days": 4.8,
-        "velocity_per_day": 43.2,
-        "velocity_avg_per_day": 43.2,
+        "stars": 208,
+        "age_days": 5.1,
+        "velocity_per_day": 40.5,
+        "velocity_avg_per_day": 40.5,
         "velocity_recent_per_day": null,
         "forks": 6
       }
+    },
+    {
+      "repo": "Timaga/noda-local-ai-notes",
+      "description": "Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources.",
+      "language": "JavaScript",
+      "url": "https://github.com/Timaga/noda-local-ai-notes",
+      "created_at": "2026-11-13T17:28:15Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_rag_14d"
+      ],
+      "metrics": {
+        "stars": 104,
+        "age_days": 2.7,
+        "velocity_per_day": 38.4,
+        "velocity_avg_per_day": 38.4,
+        "velocity_recent_per_day": null,
+        "forks": 1
+      },
+      "review_flags": [
+        "hot_but_no_forks"
+      ],
+      "owner_account_age_days": 1360.8
     },
     {
       "repo": "claynicholson/copper-kicad-mcp",
@@ -463,10 +501,10 @@
         "new_mcp_7d"
       ],
       "metrics": {
-        "stars": 100,
-        "age_days": 3.3,
-        "velocity_per_day": 30.4,
-        "velocity_avg_per_day": 30.4,
+        "stars": 102,
+        "age_days": 3.7,
+        "velocity_per_day": 27.9,
+        "velocity_avg_per_day": 27.9,
         "velocity_recent_per_day": null,
         "forks": 5
       }
@@ -482,12 +520,12 @@
         "kw_localllm_14d"
       ],
       "metrics": {
-        "stars": 103,
-        "age_days": 3.5,
-        "velocity_per_day": 29.3,
-        "velocity_avg_per_day": 29.3,
+        "stars": 107,
+        "age_days": 3.9,
+        "velocity_per_day": 27.5,
+        "velocity_avg_per_day": 27.5,
         "velocity_recent_per_day": null,
-        "forks": 21
+        "forks": 22
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T10:45:23+00:00",
+  "generated_at": "2026-11-16T11:30:10+00:00",
   "item_count": 59,
   "items": [
     {
@@ -9,10 +9,13 @@
       "source_name": "DeepSeek Status",
       "source_url": "https://status.deepseek.com/",
       "target_url": "https://status.deepseek.com/",
-      "headline_en": "DeepSeek status: Degraded Performance (some components)",
-      "summary_en": "DeepSeek's status page reports 'minor' — Degraded Performance (some components). Check the status page before blaming your prompts.",
+      "headline_en": "DeepSeek reports degraded service",
+      "summary_en": "DeepSeek, an AI model service, reported minor degraded performance in some components on its status page. Users can check the status page before blaming their prompts when they encounter service issues.",
       "severity": "minor",
-      "event": "issue"
+      "event": "issue",
+      "headline_zh": "DeepSeek部分組件性能下降",
+      "summary_zh": "DeepSeek（AI模型服務）狀態頁顯示，部分組件出現「輕微」性能下降。用戶遇到服務異常時，可先查看狀態頁，判斷問題是否來自平台，而非提示詞本身；同類選擇是查閱其他 AI 服務狀態頁。",
+      "enriched": true
     },
     {
       "id": "st-4b7bc44c650e",
@@ -36,8 +39,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/wangzan101/Mika",
       "target_url": "https://github.com/wangzan101/Mika",
-      "headline_en": "Mika Operates Android Apps and Web On-Device",
-      "summary_en": "Mika is an on-device AI agent for Android that operates apps and the web to get tasks done. Users can delegate app and web actions to an AI on their device instead of handling every step manually; the project has received 8,798 GitHub stars in 18 days.",
+      "headline_en": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "summary_en": "wangzan101/Mika - An on-device AI agent for Android that operates apps and the web to get things done for you. Gained 8,798 GitHub stars in 18 days (~493/day).",
       "tier": "rising",
       "metrics": {
         "stars": 8798,
@@ -46,10 +49,7 @@
         "velocity_avg_per_day": 493.4,
         "velocity_recent_per_day": null,
         "forks": 2003
-      },
-      "headline_zh": "Mika 為 Android 代辦應用與網頁任務",
-      "summary_zh": "Mika（Android 裝置內 AI 代理）可操作應用程式與網頁，替用戶辦事；以前要逐項自己完成，現在可交由裝置上的 AI 執行。其 GitHub 專案 18 日內獲 8,798 顆星。一般自動化可選 Tasker",
-      "enriched": true
+      }
     },
     {
       "id": "gh-944dd6d24f46",
@@ -58,8 +58,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
       "target_url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
-      "headline_en": "Blender AI MCP Add-on Offers Visual Chat and Scene Tools",
-      "summary_en": "The Blender AI MCP add-on adds an AI assistant and MCP server to the 3D creation app, with visual chat, scene tools, multi-agent workflows, and bpy scripting through ChatGPT, Claude, Gemini, Ollama, and OpenCode. Users can handle scene operations through chat rather than performing every task manually; BlenderMCP is a comparable alternative, and the add-on gained 1,903 GitHub stars in four days.",
+      "headline_en": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows.",
+      "summary_en": "hitkeeen/blender-ai-mcp-addon - AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration. Gained 1,903 GitHub stars in 4 days (~496/day).",
       "tier": "hot_new",
       "metrics": {
         "stars": 1903,
@@ -68,10 +68,7 @@
         "velocity_avg_per_day": 496.3,
         "velocity_recent_per_day": null,
         "forks": 52
-      },
-      "headline_zh": "Blender AI MCP外掛新增聊天及場景工具",
-      "summary_zh": "Blender AI MCP是為3D製作軟件Blender加入AI助手與MCP伺服器的外掛，支援視覺對話、場景操作、多代理流程和bpy編程。用戶以往要逐項點選或自行寫腳本，現可藉ChatGPT、Claude等AI客戶端以對話完成部分工作；四天獲1,903個GitHub星號。同類選擇可比較BlenderMCP",
-      "enriched": true
+      }
     },
     {
       "id": "gh-a24e623842eb",
@@ -80,8 +77,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/FrigadeHQ/yogurt",
       "target_url": "https://github.com/FrigadeHQ/yogurt",
-      "headline_en": "Yogurt: Private AI Meeting Notes",
-      "summary_en": "Yogurt is a free, open-source AI meeting-notes app for Mac, Windows and Linux that keeps notes on the user’s computer. Users can keep meeting notes locally instead of relying on a cloud notetaker; a comparable option is Granola.",
+      "headline_en": "Private AI meeting notes that stay on your computer.",
+      "summary_en": "FrigadeHQ/yogurt - Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux. Gained 1,745 GitHub stars in 6 days (~311/day).",
       "tier": "hot_new",
       "metrics": {
         "stars": 1745,
@@ -90,10 +87,7 @@
         "velocity_avg_per_day": 311.3,
         "velocity_recent_per_day": null,
         "forks": 103
-      },
-      "headline_zh": "Yogurt：私隱AI會議筆記工具",
-      "summary_zh": "Yogurt（免費開源AI會議筆記軟件）支援Mac、Windows及Linux，會議筆記可留喺自己電腦。用戶想將內容保留本機，而唔必依賴雲端筆記服務，可以選呢款免費方案；同類選擇亦可考慮Granola。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-593f999f8400",
@@ -102,8 +96,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/Outpostkrewhirl86/Capri-AI",
       "target_url": "https://github.com/Outpostkrewhirl86/Capri-AI",
-      "headline_en": "Capri: Local-First Windows AI Agent",
-      "summary_en": "Capri is a local-first Windows desktop app that acts as an AI agent, comes with a cyberpunk-style HUD, and can control files, apps, the terminal, and the browser through Claude Code, Codex, Antigravity, or another backend. Users can handle everyday computer actions through one interface instead of separately opening and managing different tools.",
+      "headline_en": "Capri: a local-first desktop AI agent with a cyberpunk HUD.",
+      "summary_en": "Outpostkrewhirl86/Capri-AI - Capri: a local-first desktop AI agent with a cyberpunk HUD. Your personal Jarvis for Windows. Controls files, apps, terminal and browser, powered by Claude Code, Codex, Antigravity or any backend. Inspired by Cyberpunk: Edgerunners. Gained 346 GitHub stars in 2 days (~225/day).",
       "tier": "hot_new",
       "metrics": {
         "stars": 346,
@@ -112,10 +106,7 @@
         "velocity_avg_per_day": 224.6,
         "velocity_recent_per_day": null,
         "forks": 54
-      },
-      "headline_zh": "Capri：Windows本地優先AI代理",
-      "summary_zh": "Capri是一款採賽博龐克介面的本地優先Windows桌面AI代理，可操控檔案、應用程式、終端機與瀏覽器。用戶過往須跨工具處理工作，現可透過單一介面統籌操作；相近選擇亦可直接比較Claude Code、Codex等。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-959a4e69bc6c",
@@ -124,8 +115,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/agentes-chat/agentes-chat",
       "target_url": "https://github.com/agentes-chat/agentes-chat",
-      "headline_en": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs.",
-      "summary_en": "agentes-chat/agentes-chat - Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0. Gained 1,584 GitHub stars in 7 days (~214/day).",
+      "headline_en": "Agentes Chat Combines Team Chat and AI Agents",
+      "summary_en": "Agentes Chat is an open-source, self-hosted Slack alternative where teams and AI agents work together in channels and direct messages. Agents can run on Claude, ChatGPT/Codex, Gemini or Grok with MCP tools, dedicated computer and browser access, routines, memory and approvals, so users can keep conversations and delegated AI work in one place instead of splitting them across tools.",
       "tier": "rising",
       "metrics": {
         "stars": 1584,
@@ -134,7 +125,10 @@
         "velocity_avg_per_day": 213.9,
         "velocity_recent_per_day": null,
         "forks": 278
-      }
+      },
+      "headline_zh": "Agentes Chat：團隊聊天結合AI代理",
+      "summary_zh": "Agentes Chat（開源自託管Slack替代品）讓團隊與AI代理在頻道及私訊協作，代理可用MCP工具、操作瀏覽器、例行任務與審批。用戶過往要跨服務切換，現可將聊天與代理工作集中管理。同類可選Mattermost。",
+      "enriched": true
     },
     {
       "id": "gh-fadd3383ed0a",
@@ -143,8 +137,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/modelflare-ai/AnyModelBot",
       "target_url": "https://github.com/modelflare-ai/AnyModelBot",
-      "headline_en": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet.",
-      "summary_en": "modelflare-ai/AnyModelBot - 🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use. Gained 4,182 GitHub stars in 20 days (~208/day).",
+      "headline_en": "AnyModelBot Offers Local-First AI Agents",
+      "summary_en": "AnyModelBot is an open-source, local-first platform for running personal AI bots across GPT, Claude, Gemini, Grok and 70+ other models through one Modelflare key. Bots can be reached in an app, WeChat or Feishu, remember users, work in the background, run commands and use a computer, so users need not integrate models and channels separately; a similar option is Claude Duet.",
       "tier": "rising",
       "metrics": {
         "stars": 4182,
@@ -153,7 +147,10 @@
         "velocity_avg_per_day": 208.4,
         "velocity_recent_per_day": null,
         "forks": 84
-      }
+      },
+      "headline_zh": "AnyModelBot 提供本機優先 AI 代理",
+      "summary_zh": "AnyModelBot（開源、本機優先 AI 代理平台）以一把 Modelflare key 連接模型，微信、飛書皆可用。過往要整合模型、渠道；如今代理可記住你、在後台執行指令及操作電腦。同類如 Claude Duet。",
+      "enriched": true
     },
     {
       "id": "gh-2a6097a81847",
@@ -162,8 +159,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/berkantay/gpucanvas",
       "target_url": "https://github.com/berkantay/gpucanvas",
-      "headline_en": "Put thousands of live DOM nodes on an infinite canvas: the GPU draws them, an editor selects, moves and resize",
-      "summary_en": "berkantay/gpucanvas - Put thousands of live DOM nodes on an infinite canvas: the GPU draws them, an editor selects, moves and resizes them, shaders and transitions run on them, and an AI agent can read them and point at them. Gained 498 GitHub stars in 4 days (~144/day).",
+      "headline_en": "GPU Canvas Adds Infinite Editing for Live DOM Nodes",
+      "summary_en": "GPU Canvas is a GitHub project that draws thousands of live DOM nodes on an infinite canvas with the GPU, while its editor can select, move, and resize them. Developers can edit live page elements directly rather than work only with static canvas objects, run shaders and transitions on them, and let AI agents read and point at nodes; the project gained 498 GitHub stars in four days.",
       "tier": "hot_new",
       "metrics": {
         "stars": 498,
@@ -172,7 +169,10 @@
         "velocity_avg_per_day": 143.6,
         "velocity_recent_per_day": null,
         "forks": 31
-      }
+      },
+      "headline_zh": "GPU Canvas支援無限畫布編輯DOM",
+      "summary_zh": "GPU Canvas是把網頁DOM節點放上無限畫布的工具，以GPU顯示數千個節點，可選取、移動、縮放，並運行著色器、轉場。舊有畫布多為靜態，現可讓AI代理讀取及指向動態節點，操作更直接。同類可比較Konva。",
+      "enriched": true
     },
     {
       "id": "gh-208cf56cbec0",
@@ -181,8 +181,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/N1nEmAn/sapper-v2",
       "target_url": "https://github.com/N1nEmAn/sapper-v2",
-      "headline_en": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B token",
-      "summary_en": "N1nEmAn/sapper-v2 - The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History). Gained 2,128 GitHub stars in 17 days (~127/day).",
+      "headline_en": "Autonomous AI Pentesting with Sapper v2",
+      "summary_en": "Sapper v2 is an autonomous AI pentesting system from the Nüwa Foundation, designed to evolve through its Create, Language, and History components. The project reports an eight-hour unattended run, while security teams can grow their own pentest agents rather than rely on a fixed tool; PentestGPT is a related option.",
       "tier": "rising",
       "metrics": {
         "stars": 2128,
@@ -191,7 +191,10 @@
         "velocity_avg_per_day": 126.6,
         "velocity_recent_per_day": null,
         "forks": 1082
-      }
+      },
+      "headline_zh": "Sapper v2 自主 AI 滲透測試代理",
+      "summary_zh": "Sapper v2（Nüwa Foundation 自主 AI 滲透測試代理）可演化，支援8小時無人值守。過往靠固定工具，現可按 Create、Language、History 培育代理。同類可選 PentestGPT。",
+      "enriched": true
     },
     {
       "id": "gh-4a8c6b949250",
@@ -200,8 +203,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/Dodaios/ste80-humanizer",
       "target_url": "https://github.com/Dodaios/ste80-humanizer",
-      "headline_en": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified ",
-      "summary_en": "Dodaios/ste80-humanizer - STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared. Gained 710 GitHub stars in 7 days (~106/day).",
+      "headline_en": "STE80 Humanizer Rewrites AI Text Toward STE100",
+      "summary_en": "The GitHub agent skill STE80 Humanizer, based on a method Andrej Karpathy shared, removes AI tells and rewrites drafts 80% of the way toward ASD-STE100 Simplified Technical English. It can help writers produce clearer, more consistent technical text with less manual editing; the repository gained 710 GitHub stars in seven days.",
       "tier": "hot_new",
       "metrics": {
         "stars": 710,
@@ -210,7 +213,10 @@
         "velocity_avg_per_day": 105.7,
         "velocity_recent_per_day": null,
         "forks": 51
-      }
+      },
+      "headline_zh": "STE80 Humanizer 改寫 AI 草稿",
+      "summary_zh": "STE80 Humanizer 是文字改寫技能，可移除 AI 痕跡，並把文本朝 ASD-STE100 簡化技術英文改寫 80%。用戶毋須人手整理草稿，可快速取得清晰文件；七日獲 710 星。另一選擇是 AI 改寫提示詞。",
+      "enriched": true
     },
     {
       "id": "gh-609f5454f49c",
@@ -238,8 +244,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
       "target_url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
-      "headline_en": "Tradingview IndicatorBuilt for AI agents",
-      "summary_en": "roan-maverick/tradingview-indicator-for-ai-agents - Tradingview IndicatorBuilt for AI agents Gained 240 GitHub stars in 3 days (~79/day).",
+      "headline_en": "AI Agent TradingView Indicator",
+      "summary_en": "TradingView Indicator for AI Agents is a GitHub project that provides a TradingView indicator designed for AI agents. Developers can use it as a ready-made component for AI-agent trading workflows; the repository gained 240 GitHub stars in three days.",
       "tier": "hot_new",
       "metrics": {
         "stars": 240,
@@ -248,7 +254,10 @@
         "velocity_avg_per_day": 78.7,
         "velocity_recent_per_day": null,
         "forks": 39
-      }
+      },
+      "headline_zh": "AI 代理專用 TradingView 指標",
+      "summary_zh": "GitHub 上的 AI 代理 TradingView 指標，可讓 AI 代理把 TradingView 指標接入交易分析流程。開發者毋須由零整合；專案三日獲 240 個 GitHub 星，反映其受關注。同類選擇是自行串接交易數據 API。",
+      "enriched": true
     },
     {
       "id": "gh-8809d76b9927",
@@ -257,8 +266,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/op7418/guizang-game-skill",
       "target_url": "https://github.com/op7418/guizang-game-skill",
-      "headline_en": "歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable",
-      "summary_en": "op7418/guizang-game-skill - 歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included. Gained 372 GitHub stars in 5 days (~78/day).",
+      "headline_en": "Build Browser 3D Games With AI",
+      "summary_en": "Game Skill is an agent skill for Claude Code and Codex that builds playable browser 3D action games with AI-generated assets using Three.js and a single HTML file. It includes a playable demo, letting developers create a prototype without manually assembling code, assets, and web builds.",
       "tier": "hot_new",
       "metrics": {
         "stars": 372,
@@ -267,7 +276,10 @@
         "velocity_avg_per_day": 78.3,
         "velocity_recent_per_day": null,
         "forks": 58
-      }
+      },
+      "headline_zh": "Game Skill 讓 AI 製作 3D 動作遊戲",
+      "summary_zh": "Game Skill 是支援 Claude Code、Codex 的代理技能，可用 Three.js 與單一 HTML 製作瀏覽器 3D 動作遊戲及 AI 素材，另附《霧鎖山門》試玩。開發者毋須自行整合程式、素材與網頁建置，可由構想快速建立可玩原型；同類選擇亦可比較專門的遊戲生成代理。",
+      "enriched": true
     },
     {
       "id": "gh-f74c9a85d87d",
@@ -276,8 +288,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/huawei-csl/MACaQ",
       "target_url": "https://github.com/huawei-csl/MACaQ",
-      "headline_en": "SOTA model-agnostic quantization for GGUF, local inference and beyond.",
-      "summary_en": "huawei-csl/MACaQ - SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch. Gained 318 GitHub stars in 6 days (~52/day).",
+      "headline_en": "MACaQ Brings Model-Agnostic GGUF Quantization",
+      "summary_en": "MACaQ is a model-agnostic quantization tool for GGUF that can quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch. It lets developers handle several model types without separate quantization workflows; the repository gained 318 GitHub stars in six days, while llama.cpp's built-in quantization is another option.",
       "tier": "hot_new",
       "metrics": {
         "stars": 318,
@@ -286,7 +298,10 @@
         "velocity_avg_per_day": 52.4,
         "velocity_recent_per_day": null,
         "forks": 21
-      }
+      },
+      "headline_zh": "MACaQ 支援模型無關 GGUF 量化",
+      "summary_zh": "MACaQ 是模型無關的 GGUF 量化工具，可量化並在本機執行文字、圖像、影片及音訊模型，並配合 llama.cpp、vLLM、Diffusers 與 PyTorch。開發者可用同一工具處理多類模型，毋須另寫各模型的量化流程；量化亦有助降低記憶體用量。六日獲318星，llama.cpp 內建量化亦可選。",
+      "enriched": true
     },
     {
       "id": "gh-c42159566855",
@@ -314,8 +329,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/wici-ai/inferssd",
       "target_url": "https://github.com/wici-ai/inferssd",
-      "headline_en": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD.",
-      "summary_en": "wici-ai/inferssd - Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp. Gained 1,196 GitHub stars in 25 days (~48/day).",
+      "headline_en": "inferssd Streams Large MoE Models from SSD",
+      "summary_en": "inferssd is a llama.cpp-based GitHub project that streams MoE experts from SSD, allowing models larger than available RAM or VRAM to run. Users can avoid loading every expert into memory, and the project gained 1,196 GitHub stars in 25 days.",
       "tier": "rising",
       "metrics": {
         "stars": 1196,
@@ -324,7 +339,10 @@
         "velocity_avg_per_day": 47.8,
         "velocity_recent_per_day": null,
         "forks": 100
-      }
+      },
+      "headline_zh": "inferssd 從 SSD 串流 MoE 模型",
+      "summary_zh": "inferssd 是 llama.cpp 延伸專案，可從 SSD 串流 MoE 專家，讓 RAM 或 VRAM 不足的電腦仍能運行大型模型。用戶過往要完整載入模型，現可按需串流、降低記憶體需求；同類選擇 Ollama。",
+      "enriched": true
     },
     {
       "id": "gh-c9996c9029e1",
@@ -333,8 +351,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/SAOS-3624/dsh-see-now",
       "target_url": "https://github.com/SAOS-3624/dsh-see-now",
-      "headline_en": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
-      "summary_en": "SAOS-3624/dsh-see-now - 让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token Gained 666 GitHub stars in 15 days (~45/day).",
+      "headline_en": "dsh-see-now lets AI view your screen live",
+      "summary_en": "dsh-see-now is a GitHub tool that lets AI view your screen in real time, filtering frames by visual change and combining multiple frames into one image so static screens consume almost no tokens (the repo gained 666 GitHub stars in 15 days). Users no longer need to resend unchanged content, which helps the AI focus on meaningful activity; for browser-only workflows, Playwright screenshots are an alternative.",
       "tier": "rising",
       "metrics": {
         "stars": 666,
@@ -343,7 +361,10 @@
         "velocity_avg_per_day": 44.8,
         "velocity_recent_per_day": null,
         "forks": 69
-      }
+      },
+      "headline_zh": "dsh-see-now 讓 AI 即時看見螢幕",
+      "summary_zh": "dsh-see-now（GitHub專案）讓AI即時看見螢幕，按變化量篩幀、拼多幀成一圖，靜止畫面幾乎零token（15日增666 stars）。毋須重傳無變內容，省token助AI聚焦；另有Playwright截圖。",
+      "enriched": true
     },
     {
       "id": "gh-1f06d641b04d",
@@ -352,8 +373,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/threerocks/article2media",
       "target_url": "https://github.com/threerocks/article2media",
-      "headline_en": "把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 np",
-      "summary_en": "threerocks/article2media - 把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。 Gained 371 GitHub stars in 8 days (~46/day).",
+      "headline_en": "Article2media Creates Multi-Format Content",
+      "summary_en": "article2media is an open-source Claude Code/Codex Skill that turns articles or transcripts from Douyin, Bilibili, or YouTube into Xiaohongshu graphics, magazine layouts, WeChat-formatted posts, and AI-voiced short videos. With 21 themes, automatic validation, and no npm dependencies, creators can produce multiple formats from one source instead of reformatting for each channel; the project gained 371 GitHub stars in eight days.",
       "tier": "rising",
       "metrics": {
         "stars": 371,
@@ -362,7 +383,10 @@
         "velocity_avg_per_day": 45.8,
         "velocity_recent_per_day": null,
         "forks": 58
-      }
+      },
+      "headline_zh": "article2media 一鍵轉成多平台內容",
+      "summary_zh": "article2media 是 Claude Code／Codex 的開源 Skill，可把文章或逐字稿轉成小紅書圖文、公眾號排版及 AI 配音短片。21套主題並自動驗收；過往逐平台改稿，現可產多版。同類可選影片切片工具。",
+      "enriched": true
     },
     {
       "id": "gh-bba6a2f8f2e0",
@@ -371,8 +395,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/Timaga/noda-local-ai-notes",
       "target_url": "https://github.com/Timaga/noda-local-ai-notes",
-      "headline_en": "Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semant",
-      "summary_en": "Timaga/noda-local-ai-notes - Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources. Gained 104 GitHub stars in 3 days (~38/day).",
+      "headline_en": "noda-local-ai-notes offers cited AI chat for notes",
+      "summary_en": "The Windows app noda-local-ai-notes combines Markdown notes, a personal knowledge base, a knowledge graph, semantic search, and chat with cited sources. It helps users retrieve and cross-reference information without searching every note manually; it gained 104 GitHub stars in three days, while Obsidian is a similar note-taking option.",
       "tier": "hot_new",
       "metrics": {
         "stars": 104,
@@ -381,7 +405,10 @@
         "velocity_avg_per_day": 38.4,
         "velocity_recent_per_day": null,
         "forks": 1
-      }
+      },
+      "headline_zh": "noda-local-ai-notes 支援問答",
+      "summary_zh": "noda 是 Windows 本機優先 AI 筆記工具，整合 Markdown 筆記、個人知識庫與知識圖譜。用戶可語意搜尋，並透過附來源聊天減少逐份翻查；GitHub 三日獲 104 星。同類有 Obsidian。",
+      "enriched": true
     },
     {
       "id": "gh-c6bbee3ab1b6",
@@ -390,8 +417,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/sleepy-zone/ai-ref-library-cn",
       "target_url": "https://github.com/sleepy-zone/ai-ref-library-cn",
-      "headline_en": "AI 作图素材库 · 中文版（脸 / 姿势 / 服装）",
-      "summary_en": "sleepy-zone/ai-ref-library-cn - AI 作图素材库 · 中文版（脸 / 姿势 / 服装） Gained 772 GitHub stars in 18 days (~43/day).",
+      "headline_en": "Chinese AI Art Library Covers Faces, Poses, and Clothing",
+      "summary_en": "The ai-ref-library-cn project is a Chinese-language AI art reference library covering faces, poses, and clothing. Users can find visual references together for prompt planning and asset selection instead of searching piecemeal; it earned 772 GitHub stars in 18 days.",
       "tier": "rising",
       "metrics": {
         "stars": 772,
@@ -400,7 +427,10 @@
         "velocity_avg_per_day": 43.4,
         "velocity_recent_per_day": null,
         "forks": 185
-      }
+      },
+      "headline_zh": "中文 AI 作圖素材庫收錄人臉姿勢服裝",
+      "summary_zh": "ai-ref-library-cn 是 AI 作圖用的中文素材庫，涵蓋人臉、姿勢和服裝。用戶可集中查參考圖，免四處搜尋，更快準備提示詞及選素材；18 日獲 772 個 GitHub 星。同類可選 Lexica 圖庫。",
+      "enriched": true
     },
     {
       "id": "gh-90b953342bc0",
@@ -409,8 +439,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/fendouai/ViralForge",
       "target_url": "https://github.com/fendouai/ViralForge",
-      "headline_en": "Agent-native viral video studio: one-click replicate viral short videos, deconstruct video hooks and scripts i",
-      "summary_en": "fendouai/ViralForge - Agent-native viral video studio: one-click replicate viral short videos, deconstruct video hooks and scripts into a Viral DNA report, and ship 10 costed variants. Skill + MCP + CLI. Apache-2.0. Gained 208 GitHub stars in 5 days (~40/day).",
+      "headline_en": "ViralForge Generates 10 Video Variants",
+      "summary_en": "ViralForge is an AI-agent-based studio that replicates viral short videos, analyzes their hooks and scripts, and generates 10 variants with cost estimates through a skill, MCP, and CLI. Creators can replace manual teardown and rewriting with batch production; the Apache-2.0 project gained 208 GitHub stars in five days.",
       "tier": "hot_new",
       "metrics": {
         "stars": 208,
@@ -419,7 +449,10 @@
         "velocity_avg_per_day": 40.5,
         "velocity_recent_per_day": null,
         "forks": 6
-      }
+      },
+      "headline_zh": "ViralForge拆解短片並批量生成版本",
+      "summary_zh": "ViralForge（代理原生短片工作室）可一鍵仿製熱門短片，拆解開場鉤子與腳本，生成10個附成本估算的版本。配合Skill、MCP與CLI，創作者可由逐段拆解改稿變成批量製作。同類短片工具亦可看OpusClip。",
+      "enriched": true
     },
     {
       "id": "gh-b62344349ca9",
@@ -428,8 +461,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/claynicholson/copper-kicad-mcp",
       "target_url": "https://github.com/claynicholson/copper-kicad-mcp",
-      "headline_en": "MCP server that lets any AI app design real, orderable KiCad boards: schematic, LCSC parts, PCB routing, ERC/D",
-      "summary_en": "claynicholson/copper-kicad-mcp - MCP server that lets any AI app design real, orderable KiCad boards: schematic, LCSC parts, PCB routing, ERC/DRC, JLCPCB fab files. Gained 102 GitHub stars in 4 days (~28/day).",
+      "headline_en": "MCP Lets Any AI App Design Orderable KiCad Boards",
+      "summary_en": "copper-kicad-mcp is an MCP server that lets AI apps design orderable KiCad boards, with schematics, LCSC parts, PCB routing, ERC/DRC checks, and JLCPCB fabrication files. Users can replace some manual drawing and file-preparation work with AI assistance; the project gained 102 GitHub stars in four days.",
       "tier": "hot_new",
       "metrics": {
         "stars": 102,
@@ -438,7 +471,10 @@
         "velocity_avg_per_day": 27.9,
         "velocity_recent_per_day": null,
         "forks": 5
-      }
+      },
+      "headline_zh": "KiCad MCP：AI 設計可下單 PCB",
+      "summary_zh": "copper-kicad-mcp 是讓 AI 應用操作開源電路設計軟件 KiCad 的 MCP 伺服器，可建立原理圖、選用 LCSC 元件、佈線、執行 ERC/DRC，並輸出 JLCPCB 製板檔。用戶以前要逐項手畫及整理生產檔，現在可由 AI 輔助完成可下單設計；專案四天獲 102 個 GitHub 星。不想整合 AI，也可直接手動使用 KiCad。",
+      "enriched": true
     },
     {
       "id": "gh-a4b3e921cc42",
@@ -447,8 +483,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/yasakani-dev/yasakani",
       "target_url": "https://github.com/yasakani-dev/yasakani",
-      "headline_en": "Local LLM engine for Windows and one NVIDIA RTX 5090, built for Qwen3.8-27B",
-      "summary_en": "yasakani-dev/yasakani - Local LLM engine for Windows and one NVIDIA RTX 5090, built for Qwen3.8-27B Gained 107 GitHub stars in 4 days (~28/day).",
+      "headline_en": "yasakani Targets Qwen3.8-27B Locally on One RTX 5090",
+      "summary_en": "yasakani is a local LLM engine for Windows, built to run Qwen3.8-27B on a single NVIDIA RTX 5090. For users, it offers a single-GPU route to run the model locally; the project gained 107 GitHub stars in four days (about 28 per day).",
       "tier": "hot_new",
       "metrics": {
         "stars": 107,
@@ -457,7 +493,10 @@
         "velocity_avg_per_day": 27.5,
         "velocity_recent_per_day": null,
         "forks": 22
-      }
+      },
+      "headline_zh": "yasakani 單卡跑Qwen3.8-27B",
+      "summary_zh": "yasakani 是 Windows 本地 LLM 引擎，可透過單張 NVIDIA RTX 5090 運行 Qwen3.8-27B。用戶毋須自行設定環境，可用單卡引擎；四天獲107個星標。同類可選 Ollama。",
+      "enriched": true
     },
     {
       "id": "gh-5b9c260a87a0",
@@ -485,8 +524,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/mdexa-ai/mdexa-ai-native-database",
       "target_url": "https://github.com/mdexa-ai/mdexa-ai-native-database",
-      "headline_en": "Verified license and provenance records for datasets behind medical AI: information cards, JSON Schema, decisi",
-      "summary_en": "mdexa-ai/mdexa-ai-native-database - Verified license and provenance records for datasets behind medical AI: information cards, JSON Schema, decision rules and evidence index (hashes only). Cards CC BY 4.0, scripts MIT. Gained 41 GitHub stars in 1 days (~44/day).",
+      "headline_en": "Repository tracks verified licenses and provenance for medical AI datasets",
+      "summary_en": "The mdexa-ai-native-database repository publishes verified license and provenance records for medical-AI datasets, including information cards, JSON Schema, decision rules, and a hash-only evidence index. It gives users a standardized way to check dataset source details instead of assembling those records manually.",
       "tier": "rising",
       "metrics": {
         "stars": 41,
@@ -495,7 +534,10 @@
         "velocity_avg_per_day": 44.3,
         "velocity_recent_per_day": null,
         "forks": 0
-      }
+      },
+      "headline_zh": "mdexa-ai 整理醫療AI資料授權與來源",
+      "summary_zh": "mdexa-ai 是整理醫療 AI 資料集授權與出處的資料庫，附資訊卡、JSON Schema、決策規則及只含雜湊值的證據索引。用戶過往要逐項搜資料，現可按統一結構核對，省下自行追查來源的時間；卡片採 CC BY 4.0、腳本採 MIT。同類文件可看 Hugging Face 資料卡。",
+      "enriched": true
     },
     {
       "id": "gh-357efa56d377",
@@ -504,8 +546,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/weldbladesmithwharf/Gemini-Config-Checker-",
       "target_url": "https://github.com/weldbladesmithwharf/Gemini-Config-Checker-",
-      "headline_en": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser chec",
-      "summary_en": "weldbladesmithwharf/Gemini-Config-Checker- - Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android) Gained 474 GitHub stars in 1 days (~649/day).",
+      "headline_en": "Gemini Config Checker finds proxy configurations for Google AI Studio and Gemini",
+      "summary_en": "Gemini Config Checker is a GitHub utility that finds proxy configurations for accessing Google AI Studio and Gemini using a signed-in browser check, plus anti-DPI support on Windows, macOS, Linux, and Android. It saves users from testing proxy chains one by one; dedicated proxy-testing tools are a similar alternative (the repository gained 474 GitHub stars in one day).",
       "tier": "hot_new",
       "metrics": {
         "stars": 474,
@@ -514,7 +556,10 @@
         "velocity_avg_per_day": 649.0,
         "velocity_recent_per_day": 2.8,
         "forks": 0
-      }
+      },
+      "headline_zh": "Gemini Config Checker找代理",
+      "summary_zh": "Gemini Config Checker 是 GitHub 代理檢查器，可找能連上 Google AI Studio、Gemini 的代理鏈，並做防 DPI 檢查。以前要逐項試，現在可檢查連線結果；同類可選代理測試器。",
+      "enriched": true
     },
     {
       "id": "gh-0e5a531e152b",
@@ -523,8 +568,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/adventists-ai/sophon-realtime",
       "target_url": "https://github.com/adventists-ai/sophon-realtime",
-      "headline_en": "Open full-duplex voice models that hear your tone and speak with one.",
-      "summary_en": "adventists-ai/sophon-realtime - Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac with MLX. Zero-shot voice cloning, OpenAI Realtime / GPT-Live compatible, free hosted API trial. Apache-2.0. Gained 397 GitHub stars in 12 days (~44/day).",
+      "headline_en": "Sophon enables local full-duplex voice AI",
+      "summary_en": "Sophon is an open-source project for full-duplex voice models that can hear a speaker's tone and respond with speech. Users who relied on cloud voice APIs can now run it on one GPU or fully offline on a Mac, with zero-shot cloning and OpenAI Realtime / GPT-Live compatibility.",
       "tier": "rising",
       "metrics": {
         "stars": 397,
@@ -533,7 +578,10 @@
         "velocity_avg_per_day": 34.6,
         "velocity_recent_per_day": 44.1,
         "forks": 34
-      }
+      },
+      "headline_zh": "Sophon 開源全雙工語音模型",
+      "summary_zh": "Sophon 係開源全雙工語音模型，可聆聽語氣並同時回話，支援零樣本聲音複製。依賴雲端語音 API 的用戶，現可改用單一 GPU 或 Mac 離線部署，兼容 OpenAI Realtime；同類選擇可看其他本地語音模型。",
+      "enriched": true
     },
     {
       "id": "fd-1b62ef559289",
@@ -542,8 +590,11 @@
       "source_name": "llama.cpp Releases",
       "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
       "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12432",
-      "headline_en": "b12432",
-      "summary_en": "kv-cells: avoid an O(n_cells) scan per sequence removal ( #32380 )"
+      "headline_en": "llama.cpp optimizes KV-cache cleanup",
+      "summary_en": "llama.cpp, an open-source framework for running large language models locally, released b12432 to avoid scanning every KV-cache cell when removing a sequence. This can reduce cleanup overhead for users managing concurrent inference workloads; another local-inference option is Ollama.",
+      "headline_zh": "llama.cpp 優化 KV-cache 清理",
+      "summary_zh": "llama.cpp（開源本機模型推論框架）發布 b12432，移除序列時避開 KV-cache cells 的線性掃描，降低清理開銷。用戶管理多個並行推論序列時，可減少逐格搜尋成本。同類選擇可看 Ollama。",
+      "enriched": true
     },
     {
       "id": "fd-c68a52acebb4",
@@ -552,8 +603,11 @@
       "source_name": "llama.cpp Releases",
       "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
       "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12431",
-      "headline_en": "b12431",
-      "summary_en": "server: answer reasoning_effort levels the template rejects with 400 ( #32332 ) The reasoning effort probe already renders every candidate level, but it dropped the ones the template raises on, so a request with such a level (e.g. max on Qwen3.8) reached the template and came back as a 500 on /v1/chat/completions, /v1/responses and /v1/messages. Keep the raising levels in reasoning_effort_rejected and reject them in oaicompat_chat_params_parse with an invalid_argument, which the server answers w"
+      "headline_en": "llama.cpp Returns 400 for Unsupported Reasoning Levels",
+      "summary_en": "The b12431 llama.cpp server release rejects unsupported reasoning_effort levels with HTTP 400 instead of triggering HTTP 500 errors on the chat completions, responses, and messages endpoints. API clients can now distinguish an invalid setting from an internal server failure.",
+      "headline_zh": "llama.cpp 修正無效推理等級回應",
+      "summary_zh": "llama.cpp（開源本地AI推理軟件）更新後，模板不接受的 reasoning_effort 等級會回傳400，不再於伺服器端點變成500。用戶可分辨設定錯誤與伺服器故障；同類本地推理解法可選 Ollama。",
+      "enriched": true
     },
     {
       "id": "fd-22a168cf2abb",
@@ -562,8 +616,11 @@
       "source_name": "n8n Releases",
       "source_url": "https://github.com/n8n-io/n8n/releases.atom",
       "target_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.97",
-      "headline_en": "n8n@1.123.97",
-      "summary_en": "1.123.97 (2026-11-16)"
+      "headline_en": "n8n Releases 1.123.97",
+      "summary_en": "Workflow automation platform n8n released version 1.123.97 on November 16, 2026. The supplied notice lists no feature or fix details, so users would need the full release notes to judge the update’s practical impact.",
+      "headline_zh": "n8n 發布 1.123.97 版本",
+      "summary_zh": "工作流程自動化平台 n8n 於2026年11月16日推出1.123.97版，但公布內容只包括版號與日期，未列新增功能或修正。用戶要判斷今次更新有否改善既有流程或操作體驗，仍須查看完整版本說明；同類選擇如 Zapier。",
+      "enriched": true
     },
     {
       "id": "fd-af086867b5a6",
@@ -572,8 +629,11 @@
       "source_name": "llama.cpp Releases",
       "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
       "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12430",
-      "headline_en": "b12430",
-      "summary_en": "ggml-cuda: fix MoE regression on HIP with #29948 ( #32344 ) Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/67993871 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu "
+      "headline_en": "llama.cpp Fixes HIP MoE Regression",
+      "summary_en": "llama.cpp, an open-source local AI inference framework, released b12430 with a fix for a ggml-cuda regression affecting Mixture-of-Experts (MoE) inference on AMD's HIP platform. Users with affected setups can update to restore expected behavior, while CPU inference remains an option for systems without an AMD GPU.",
+      "headline_zh": "llama.cpp 修復 HIP MoE 回歸",
+      "summary_zh": "llama.cpp（開源本地 AI 推論框架）發布 b12430，修復 ggml-cuda 在 HIP 運行 MoE（混合專家模型）的回歸問題。過往異常推論現可恢復正常；沒有 AMD GPU，也可改用 CPU 推論。",
+      "enriched": true
     },
     {
       "id": "fd-4ed9358d24f4",
@@ -582,8 +642,11 @@
       "source_name": "vLLM Releases",
       "source_url": "https://github.com/vllm-project/vllm/releases.atom",
       "target_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
-      "headline_en": "v0.34.0",
-      "summary_en": "v0.34.0"
+      "headline_en": "vLLM Releases v0.34.0",
+      "summary_en": "vLLM, an open-source inference engine for large language models, released version 0.34.0. The announcement gives no feature or fix details, so users must consult the release notes to assess the upgrade.",
+      "headline_zh": "vLLM 發布 v0.34.0 新版本",
+      "summary_zh": "vLLM（開源大型語言模型推論引擎）發布 v0.34.0，用於部署及服務大型語言模型；惟公告未列明新功能或修正。用戶以往沿用舊版，現在可取得新版，惟實際效益仍待版本說明確認；同類選擇可留意模型推論框架。",
+      "enriched": true
     },
     {
       "id": "st-6c1d6a7dee13",
@@ -607,8 +670,11 @@
       "source_name": "llama.cpp Releases",
       "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
       "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12428",
-      "headline_en": "b12428",
-      "summary_en": "jinja: add 4 missing features ( #32352 ) jinja: add 4 missing features apply suggestion Co-authored-by: Aldehir Rojas hello@alde.dev fix error msg Co-authored-by: Aldehir Rojas hello@alde.dev Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/67916336 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.0"
+      "headline_en": "llama.cpp adds four missing Jinja features",
+      "summary_en": "The b12428 release adds four missing Jinja features and fixes an error message. Users can work with more template patterns and get clearer guidance when template handling fails.",
+      "headline_zh": "llama.cpp 補強 Jinja 模板功能",
+      "summary_zh": "llama.cpp（開源本地大型語言模型推論工具）的 b12428 版本，新增 4 項欠缺的 Jinja 模板功能並修正錯誤訊息。過往部分模板寫法或無法支援，現可涵蓋更多用法，排查錯誤也更清楚；同類選擇有 Ollama。",
+      "enriched": true
     },
     {
       "id": "fd-9a43fed6987c",
@@ -617,8 +683,11 @@
       "source_name": "NVIDIA AI Blog",
       "source_url": "https://blogs.nvidia.com/feed/",
       "target_url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
-      "headline_en": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
-      "summary_en": "Over two days at COEX, more than 2,000 attendees converged for AI Day Seoul, bringing together Korea’s industry leaders, startups and developer communities advancing physical AI and AI agents. At the plenary sessions, Deepu Talla, vice president of robotics and edge AI at NVIDIA, said Korea is “punching above its weight,” with Doosan Robotics, Hyundai [&#8230;] AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities"
+      "headline_en": "AI Day Seoul Brings Together Korea's AI Sector",
+      "summary_en": "The two-day AI Day Seoul at COEX brought more than 2,000 industry leaders, startups, and developers together around physical AI and AI agents. Attendees could engage with all three groups in one place rather than seek out each community separately.",
+      "headline_zh": "AI Day Seoul匯聚韓國AI社群",
+      "summary_zh": "NVIDIA AI Day Seoul是兩日AI交流活動，超過2,000名產業領袖、科創公司及開發者聚首，聚焦實體AI與AI代理。與會者毋須分頭尋找資源，現可一次接觸韓國AI社群；同類選擇還有其他AI開發者大會。",
+      "enriched": true
     },
     {
       "id": "fd-6c81c60c95d8",
@@ -627,8 +696,11 @@
       "source_name": "llama.cpp Releases",
       "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
       "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12429",
-      "headline_en": "b12429: convert: fix ripple dflash2 NoPE metadata (#32363)",
-      "summary_en": "convert: fix ripple dflash2 NoPE metadata was wrong https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2/blob/743c4669f7daa11d3ca350b9a057c059481b1afd/config.json#L45-L47 Update conversion/base.py Co-authored-by: Sigbjørn Skjæret sigbjorn.skjaeret@huggingface.co Co-authored-by: Sigbjørn Skjæret sigbjorn.skjaeret@huggingface.co"
+      "headline_en": "llama.cpp Fixes Ripple Model Conversion",
+      "summary_en": "llama.cpp, an open-source framework for running large language models locally, fixed incorrect NoPE metadata conversion for the Ripple dFlash2 model. Users converting that model can now obtain more accurate configuration files instead of carrying faulty metadata forward.",
+      "headline_zh": "llama.cpp 修正 Ripple 轉換錯誤",
+      "summary_zh": "llama.cpp（可在本機運行大型語言模型的開源框架）更新，修正 Ripple dFlash2 的 NoPE 中繼資料轉換。用戶轉換此模型時，不再會把錯誤設定帶入輸出，配置更準確；想另尋本地模型工具，也可比較 Ollama。",
+      "enriched": true
     },
     {
       "id": "fd-3f99ead62b7c",
@@ -637,8 +709,11 @@
       "source_name": "Codex Releases",
       "source_url": "https://github.com/openai/codex/releases.atom",
       "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.7",
-      "headline_en": "0.171.0-alpha.7",
-      "summary_en": "Release 0.171.0-alpha.7"
+      "headline_en": "Codex Releases 0.171.0-alpha.7",
+      "summary_en": "Codex, an AI developer tool, released version 0.171.0-alpha.7. The supplied note does not list any new features or fixes, so users cannot yet judge whether the update improves their development workflow.",
+      "headline_zh": "Codex 發布 0.171.0-alpha.7",
+      "summary_zh": "Codex（AI 開發工具）推出 0.171.0-alpha.7；資料僅顯示版本發布，未列新增功能或修正，使用者只能確認已有新版，暫時難判斷會否改善開發流程。Claude Code、Cursor 是同類選擇。",
+      "enriched": true
     },
     {
       "id": "fd-d58a098adfef",
@@ -657,8 +732,11 @@
       "source_name": "LiteLLM Releases",
       "source_url": "https://github.com/BerriAI/litellm/releases.atom",
       "target_url": "https://github.com/BerriAI/litellm/releases/tag/v1.111.0-dev.4",
-      "headline_en": "v1.111.0-dev.4",
-      "summary_en": "Important Signing has moved to keyless cosign. Since v1.111.0-dev.3, releases are signed with Sigstore keyless signing (GitHub OIDC) instead of the cosign.pub key. cosign verify --key ... does not work for this release. Use the command below. Earlier releases still verify with the key. Verify this release cosign verify \\ --certificate-identity https://github.com/BerriAI/project-releaser/.github/workflows/release.yml@refs/heads/main \\ --certificate-oidc-issuer https://token.actions.githubusercont"
+      "headline_en": "LiteLLM Adopts Keyless Release Signing",
+      "summary_en": "LiteLLM releases from v1.111.0-dev.3 onward use Sigstore keyless signing through GitHub OIDC instead of the cosign.pub key. To verify v1.111.0-dev.4, use the certificate-identity verification command rather than `cosign verify --key ...`, which no longer works; older releases still support key-based verification.",
+      "headline_zh": "LiteLLM 改用無密鑰版本簽署",
+      "summary_zh": "LiteLLM（開源 LLM 閘道）自 v1.111.0-dev.3 起改用 Sigstore 配合 GitHub OIDC 的無密鑰簽署。該開發版須憑證驗證，沿用金鑰會失敗；舊版仍可用金鑰驗證。",
+      "enriched": true
     },
     {
       "id": "fd-3683e7be6f79",

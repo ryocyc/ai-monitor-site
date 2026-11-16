@@ -1,5 +1,18 @@
 {
-  "generated_at": "2026-11-16T01:36:46+00:00",
-  "item_count": 0,
-  "items": []
+  "generated_at": "2026-11-16T10:45:23+00:00",
+  "item_count": 1,
+  "items": [
+    {
+      "id": "st-6f1190551db3",
+      "timestamp": "2026-11-16T10:45:19+00:00",
+      "category": "outage",
+      "source_name": "DeepSeek Status",
+      "source_url": "https://status.deepseek.com/",
+      "target_url": "https://status.deepseek.com/",
+      "headline_en": "DeepSeek status: Degraded Performance (some components)",
+      "summary_en": "DeepSeek's status page reports 'minor' — Degraded Performance (some components). Check the status page before blaming your prompts.",
+      "severity": "minor",
+      "event": "issue"
+    }
+  ]
 }
