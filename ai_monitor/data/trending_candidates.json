@@ -1,10 +1,60 @@
 {
-  "generated_at": "2026-11-16T00:46:29+00:00",
+  "generated_at": "2026-11-16T00:58:37+00:00",
   "queries_run": 12,
   "raw_unique": 124,
   "spam_ring_dropped": 53,
-  "filtered_out": 20,
-  "candidate_count": 24,
+  "filtered_out": 21,
+  "review": {
+    "flagged_count": 5,
+    "owner_checks": {
+      "hitkeeen": 37.7,
+      "Outpostkrewhirl86": 153.2,
+      "roan-maverick": 17.6,
+      "Timaga": 1360.4,
+      "8hjkkwikl8": 10.7
+    },
+    "auto_excluded": [
+      {
+        "repo": "8hjkkwikl8/ai-portfolio",
+        "stars": 105,
+        "owner_account_age_days": 10.7,
+        "flags": [
+          "hot_but_no_forks"
+        ]
+      }
+    ],
+    "suspects": [
+      {
+        "repo": "hitkeeen/blender-ai-mcp-addon",
+        "stars": 1155,
+        "flags": [
+          "no_language"
+        ]
+      },
+      {
+        "repo": "Outpostkrewhirl86/Capri-AI",
+        "stars": 345,
+        "flags": [
+          "no_language"
+        ]
+      },
+      {
+        "repo": "roan-maverick/tradingview-indicator-for-ai-agents",
+        "stars": 225,
+        "flags": [
+          "no_language"
+        ]
+      },
+      {
+        "repo": "Timaga/noda-local-ai-notes",
+        "stars": 104,
+        "flags": [
+          "hot_but_no_forks"
+        ]
+      }
+    ]
+  },
+  "candidate_count": 22,
   "candidates": [
     {
       "repo": "wangzan101/Mika",
@@ -17,10 +67,10 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 8719,
+        "stars": 8722,
         "age_days": 17.4,
-        "velocity_per_day": 500.4,
-        "velocity_avg_per_day": 500.4,
+        "velocity_per_day": 500.3,
+        "velocity_avg_per_day": 500.3,
         "velocity_recent_per_day": null,
         "forks": 1994
       }
@@ -36,13 +86,17 @@
         "new_llm_7d"
       ],
       "metrics": {
-        "stars": 1138,
+        "stars": 1155,
         "age_days": 3.4,
-        "velocity_per_day": 332.1,
-        "velocity_avg_per_day": 332.1,
+        "velocity_per_day": 336.2,
+        "velocity_avg_per_day": 336.2,
         "velocity_recent_per_day": null,
         "forks": 30
-      }
+      },
+      "review_flags": [
+        "no_language"
+      ],
+      "owner_account_age_days": 37.7
     },
     {
       "repo": "FrigadeHQ/yogurt",
@@ -55,10 +109,10 @@
         "new_mcp_7d"
       ],
       "metrics": {
-        "stars": 1650,
+        "stars": 1651,
         "age_days": 5.2,
-        "velocity_per_day": 317.4,
-        "velocity_avg_per_day": 317.4,
+        "velocity_per_day": 317.1,
+        "velocity_avg_per_day": 317.1,
         "velocity_recent_per_day": null,
         "forks": 93
       }
@@ -76,11 +130,15 @@
       "metrics": {
         "stars": 345,
         "age_days": 1.1,
-        "velocity_per_day": 304.4,
-        "velocity_avg_per_day": 304.4,
+        "velocity_per_day": 302.2,
+        "velocity_avg_per_day": 302.2,
         "velocity_recent_per_day": null,
         "forks": 54
-      }
+      },
+      "review_flags": [
+        "no_language"
+      ],
+      "owner_account_age_days": 153.2
     },
     {
       "repo": "agentes-chat/agentes-chat",
@@ -88,15 +146,15 @@
       "language": "TypeScript",
       "url": "https://github.com/agentes-chat/agentes-chat",
       "created_at": "2026-11-09T00:50:28Z",
-      "tier": "hot_new",
+      "tier": "rising",
       "query_tags": [
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 1513,
+        "stars": 1515,
         "age_days": 7.0,
-        "velocity_per_day": 216.2,
-        "velocity_avg_per_day": 216.2,
+        "velocity_per_day": 216.3,
+        "velocity_avg_per_day": 216.3,
         "velocity_recent_per_day": null,
         "forks": 268
       }
@@ -112,7 +170,7 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 4085,
+        "stars": 4086,
         "age_days": 19.7,
         "velocity_per_day": 207.7,
         "velocity_avg_per_day": 207.7,
@@ -133,8 +191,8 @@
       "metrics": {
         "stars": 482,
         "age_days": 3.1,
-        "velocity_per_day": 157.5,
-        "velocity_avg_per_day": 157.5,
+        "velocity_per_day": 157.1,
+        "velocity_avg_per_day": 157.1,
         "velocity_recent_per_day": null,
         "forks": 29
       }
@@ -152,8 +210,8 @@
       "metrics": {
         "stars": 2110,
         "age_days": 16.4,
-        "velocity_per_day": 128.7,
-        "velocity_avg_per_day": 128.7,
+        "velocity_per_day": 128.6,
+        "velocity_avg_per_day": 128.6,
         "velocity_recent_per_day": null,
         "forks": 1075
       }
@@ -169,7 +227,7 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 695,
+        "stars": 696,
         "age_days": 6.3,
         "velocity_per_day": 110.1,
         "velocity_avg_per_day": 110.1,
@@ -207,32 +265,17 @@
         "kw_agent_7d"
       ],
       "metrics": {
-        "stars": 224,
-        "age_days": 2.6,
-        "velocity_per_day": 84.8,
-        "velocity_avg_per_day": 84.8,
+        "stars": 225,
+        "age_days": 2.7,
+        "velocity_per_day": 84.9,
+        "velocity_avg_per_day": 84.9,
         "velocity_recent_per_day": null,
         "forks": 32
-      }
-    },
-    {
-      "repo": "lloweryfn-rgb/manus--ai",
-      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
-      "language": "",
-      "url": "https://github.com/lloweryfn-rgb/manus--ai",
-      "created_at": "2026-11-13T14:46:39Z",
-      "tier": "hot_new",
-      "query_tags": [
-        "new_agent_7d"
+      },
+      "review_flags": [
+        "no_language"
       ],
-      "metrics": {
-        "stars": 203,
-        "age_days": 2.4,
-        "velocity_per_day": 84.0,
-        "velocity_avg_per_day": 84.0,
-        "velocity_recent_per_day": null,
-        "forks": 0
-      }
+      "owner_account_age_days": 17.6
     },
     {
       "repo": "op7418/guizang-game-skill",
@@ -245,8 +288,8 @@
         "new_agent_7d"
       ],
       "metrics": {
-        "stars": 357,
-        "age_days": 4.3,
+        "stars": 358,
+        "age_days": 4.4,
         "velocity_per_day": 82.2,
         "velocity_avg_per_day": 82.2,
         "velocity_recent_per_day": null,
@@ -264,10 +307,10 @@
         "kw_localllm_14d"
       ],
       "metrics": {
-        "stars": 311,
+        "stars": 312,
         "age_days": 5.7,
-        "velocity_per_day": 54.9,
-        "velocity_avg_per_day": 54.9,
+        "velocity_per_day": 55.0,
+        "velocity_avg_per_day": 55.0,
         "velocity_recent_per_day": null,
         "forks": 21
       }
@@ -285,8 +328,8 @@
       "metrics": {
         "stars": 260,
         "age_days": 5.3,
-        "velocity_per_day": 48.9,
-        "velocity_avg_per_day": 48.9,
+        "velocity_per_day": 48.8,
+        "velocity_avg_per_day": 48.8,
         "velocity_recent_per_day": null,
         "forks": 32
       }
@@ -342,8 +385,8 @@
       "metrics": {
         "stars": 349,
         "age_days": 7.7,
-        "velocity_per_day": 45.4,
-        "velocity_avg_per_day": 45.4,
+        "velocity_per_day": 45.3,
+        "velocity_avg_per_day": 45.3,
         "velocity_recent_per_day": null,
         "forks": 57
       }
@@ -361,11 +404,15 @@
       "metrics": {
         "stars": 104,
         "age_days": 2.3,
-        "velocity_per_day": 45.1,
-        "velocity_avg_per_day": 45.1,
+        "velocity_per_day": 45.0,
+        "velocity_avg_per_day": 45.0,
         "velocity_recent_per_day": null,
         "forks": 1
-      }
+      },
+      "review_flags": [
+        "hot_but_no_forks"
+      ],
+      "owner_account_age_days": 1360.4
     },
     {
       "repo": "sleepy-zone/ai-ref-library-cn",
@@ -418,8 +465,8 @@
       "metrics": {
         "stars": 100,
         "age_days": 3.3,
-        "velocity_per_day": 30.8,
-        "velocity_avg_per_day": 30.8,
+        "velocity_per_day": 30.7,
+        "velocity_avg_per_day": 30.7,
         "velocity_recent_per_day": null,
         "forks": 5
       }
@@ -435,31 +482,12 @@
         "kw_localllm_14d"
       ],
       "metrics": {
-        "stars": 101,
+        "stars": 102,
         "age_days": 3.5,
-        "velocity_per_day": 29.0,
-        "velocity_avg_per_day": 29.0,
+        "velocity_per_day": 29.2,
+        "velocity_avg_per_day": 29.2,
         "velocity_recent_per_day": null,
         "forks": 21
-      }
-    },
-    {
-      "repo": "8hjkkwikl8/ai-portfolio",
-      "description": "三个可运行的 AI 工程项目：可追溯 RAG、提示词评测与受守护的 NL2SQL 分析",
-      "language": "Python",
-      "url": "https://github.com/8hjkkwikl8/ai-portfolio",
-      "created_at": "2026-11-11T05:28:14Z",
-      "tier": "hot_new",
-      "query_tags": [
-        "new_rag_14d"
-      ],
-      "metrics": {
-        "stars": 105,
-        "age_days": 4.8,
-        "velocity_per_day": 21.9,
-        "velocity_avg_per_day": 21.9,
-        "velocity_recent_per_day": null,
-        "forks": 0
       }
     }
   ]

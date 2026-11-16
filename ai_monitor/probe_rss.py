@@ -70,14 +70,14 @@ CANDIDATES = [
     ("StepFun News",           "https://www.stepfun.com/news"),
     ("01.AI Home",             "https://www.01.ai/"),
     # Tier D - platform / infra blogs
-    ("OpenRouter Changelog",   "https://openrouter.ai/changelog"),
-    ("Vercel AI Blog",         "https://vercel.com/blog/tag/ai"),
+    ("OpenRouter Changelog",   "https://openrouter.ai/docs/changelog"),
+    ("Vercel AI Blog",         "https://vercel.com/blog"),
     ("Cloudflare AI Blog",     "https://blog.cloudflare.com/tag/ai/"),
     ("AWS ML Blog",            "https://aws.amazon.com/blogs/machine-learning/"),
     ("Google Cloud AI Blog",   "https://cloud.google.com/blog/products/ai-machine-learning"),
 ]
 
-COMMON_FEED_PATHS = ["feed.xml", "rss.xml"]
+COMMON_FEED_PATHS = ["feed.xml", "rss.xml", "atom.xml", "index.xml"]
 
 FEED_LINK_RE = re.compile(
     r"""<link[^>]+rel=["']alternate["'][^>]*>""",

@@ -291,6 +291,91 @@ def build_items(candidates: list[dict]) -> list[dict]:
     return items
 
 
+YEAR_SUFFIX_RE = re.compile(r"(?:19|20)\d{2}")
+
+
+def compute_review_flags(candidate: dict) -> list[str]:
+    """Human-review signals for star-farm / low-quality repos that survived
+    the automated spam filters (single-account farms are hard to catch)."""
+    flags = []
+    metrics = candidate["metrics"]
+    if YEAR_SUFFIX_RE.search(candidate["repo"].split("/")[0]):
+        flags.append("owner_year_suffix")
+    if not candidate["description"]:
+        flags.append("no_description")
+    if not candidate["language"]:
+        flags.append("no_language")
+    if metrics["stars"] >= 100 and metrics["forks"] <= 2:
+        flags.append("hot_but_no_forks")
+    return flags
+
+
+def fetch_owner_account_age(owner: str) -> float | None:
+    """GitHub account age in days, via gh (1 core-API call). None = failed."""
+    args = ["gh", "api", f"users/{owner}", "--jq", ".created_at"]
+    creationflags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
+    try:
+        result = subprocess.run(args, capture_output=True, timeout=GH_TIMEOUT_SECONDS,
+                                creationflags=creationflags)
+    except (subprocess.TimeoutExpired, FileNotFoundError):
+        return None
+    if result.returncode != 0:
+        return None
+    try:
+        created = dt.datetime.fromisoformat(
+            result.stdout.decode("utf-8").strip().replace("Z", "+00:00"))
+        return (dt.datetime.now(dt.timezone.utc) - created).total_seconds() / 86400.0
+    except ValueError:
+        return None
+
+
+def build_review_list(candidates: list[dict], max_owner_checks: int = 10) -> dict:
+    """Flag suspects, probe owner account age for flagged repos, and
+    auto-exclude confident spam (brand-new account + brand-new repo + no
+    engagement). Returns review structure; excludes from candidates in place."""
+    suspects = []
+    for c in candidates:
+        flags = compute_review_flags(c)
+        if not flags:
+            continue
+        c["review_flags"] = flags
+        suspects.append(c)
+
+    owner_cache: dict[str, float | None] = {}
+    auto_excluded = []
+    for c in suspects[:max_owner_checks]:
+        owner = c["repo"].split("/")[0]
+        if owner not in owner_cache:
+            owner_cache[owner] = fetch_owner_account_age(owner)
+        age = owner_cache[owner]
+        c["owner_account_age_days"] = round(age, 1) if age is not None else None
+        if age is not None and age < 30 and c["metrics"]["age_days"] < 7 \
+                and c["metrics"]["forks"] <= 3:
+            c["spam_confident"] = True
+            auto_excluded.append(c)
+
+    if auto_excluded:
+        excluded_repos = {c["repo"] for c in auto_excluded}
+        candidates[:] = [c for c in candidates if c["repo"] not in excluded_repos]
+
+    return {
+        "flagged_count": len(suspects),
+        "owner_checks": {k: (round(v, 1) if v is not None else None)
+                         for k, v in owner_cache.items()},
+        "auto_excluded": [
+            {"repo": c["repo"], "stars": c["metrics"]["stars"],
+             "owner_account_age_days": c.get("owner_account_age_days"),
+             "flags": c["review_flags"]}
+            for c in auto_excluded
+        ],
+        "suspects": [
+            {"repo": c["repo"], "stars": c["metrics"]["stars"],
+             "flags": c["review_flags"]}
+            for c in suspects if not c.get("spam_confident")
+        ],
+    }
+
+
 def main() -> int:
     if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -388,6 +473,8 @@ def main() -> int:
 
     candidates.sort(key=lambda c: (c["metrics"]["velocity_per_day"], c["metrics"]["stars"]), reverse=True)
 
+    review = build_review_list(candidates)
+
     items = build_items(candidates)
 
     # ---- update velocity snapshot ----
@@ -407,6 +494,7 @@ def main() -> int:
             "raw_unique": len(raw),
             "spam_ring_dropped": spam_dropped,
             "filtered_out": filtered_out,
+            "review": review,
             "candidate_count": len(candidates),
             "candidates": candidates,
         }, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -414,7 +502,8 @@ def main() -> int:
     # ---- console summary (ASCII only) ----
     print(f"Queries run: {queries_run} | unique repos: {len(raw)} | "
           f"spam-ring dropped: {spam_dropped} | filtered out: {filtered_out} | "
-          f"qualified: {len(candidates)}")
+          f"qualified: {len(candidates)} | suspects flagged: {review['flagged_count']} "
+          f"| auto-excluded: {len(review['auto_excluded'])}")
     print("-" * 78)
     for c in candidates[:15]:
         m = c["metrics"]

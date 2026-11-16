@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T00:50:01+00:00",
+  "generated_at": "2026-11-16T00:57:39+00:00",
   "probed": 30,
   "results": [
     {
@@ -65,14 +65,14 @@
     {
       "name": "Microsoft AI Blog",
       "page_url": "https://blogs.microsoft.com/ai/",
-      "page_status": null,
-      "cloudflare": false,
+      "page_status": 200,
+      "cloudflare": true,
       "challenge": false,
-      "feed_url": null,
-      "feed_status": null,
-      "feed_entries": false,
-      "risk_tier": "HIGH",
-      "note": "network error"
+      "feed_url": "https://news.microsoft.com/source/feed/",
+      "feed_status": 200,
+      "feed_entries": true,
+      "risk_tier": "LOW",
+      "note": "RSS available"
     },
     {
       "name": "NVIDIA AI Blog",
@@ -113,14 +113,14 @@
     {
       "name": "Cohere Blog",
       "page_url": "https://cohere.com/blog",
-      "page_status": null,
+      "page_status": 200,
       "cloudflare": false,
       "challenge": false,
       "feed_url": null,
       "feed_status": null,
       "feed_entries": false,
-      "risk_tier": "HIGH",
-      "note": "network error"
+      "risk_tier": "LOW",
+      "note": "plain page, no feed found"
     },
     {
       "name": "Perplexity Blog",
@@ -304,27 +304,27 @@
     },
     {
       "name": "OpenRouter Changelog",
-      "page_url": "https://openrouter.ai/changelog",
-      "page_status": 404,
+      "page_url": "https://openrouter.ai/docs/changelog",
+      "page_status": 200,
       "cloudflare": true,
       "challenge": false,
-      "feed_url": null,
-      "feed_status": null,
-      "feed_entries": false,
-      "risk_tier": "MEDIUM",
-      "note": "cloudflare front, no feed found on page"
+      "feed_url": "https://openrouter.ai/docs/changelog/rss.xml",
+      "feed_status": 200,
+      "feed_entries": true,
+      "risk_tier": "LOW",
+      "note": "RSS available"
     },
     {
       "name": "Vercel AI Blog",
-      "page_url": "https://vercel.com/blog/tag/ai",
-      "page_status": 404,
+      "page_url": "https://vercel.com/blog",
+      "page_status": 200,
       "cloudflare": false,
       "challenge": false,
-      "feed_url": null,
-      "feed_status": null,
-      "feed_entries": false,
+      "feed_url": "https://vercel.com/blog/feed.xml",
+      "feed_status": 200,
+      "feed_entries": true,
       "risk_tier": "LOW",
-      "note": "plain page, no feed found"
+      "note": "RSS available"
     },
     {
       "name": "Cloudflare AI Blog",
