@@ -67,8 +67,17 @@ CANDIDATES = [
     ("Moonshot/Kimi News",     "https://moonshotai.github.io/"),
     ("MiniMax Blog",           "https://www.minimax.io/blog"),
     ("Zhipu News",             "https://www.zhipuai.cn/news"),
+    ("Z.ai Blog (GLM intl)",   "https://z.ai/blog"),
     ("StepFun News",           "https://www.stepfun.com/news"),
-    ("01.AI Home",             "https://www.01.ai/"),
+    # 01.AI removed 2026-11-16: abandoned frontier models, pivoted to
+    # enterprise consulting (no more model releases to monitor)
+    # Tier B2 - additions from 2026-11 landscape survey
+    ("Baidu ERNIE (Wenxin)",   "https://wenxin.baidu.com/"),
+    ("ByteDance Seed",         "https://team.doubao.com/"),
+    ("Tencent Hunyuan",        "https://hunyuan.tencent.com/"),
+    # Tier A2 - additions from 2026-11 landscape survey
+    ("Cognition Blog (Devin)", "https://cognition.ai/blog"),
+    ("World Labs News",        "https://www.worldlabs.ai/blog"),
     # Tier D - platform / infra blogs
     ("OpenRouter Changelog",   "https://openrouter.ai/docs/changelog"),
     ("Vercel AI Blog",         "https://vercel.com/blog"),

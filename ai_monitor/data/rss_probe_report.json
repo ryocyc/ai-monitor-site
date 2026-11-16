@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16T00:57:39+00:00",
-  "probed": 30,
+  "generated_at": "2026-11-16T01:18:44+00:00",
+  "probed": 35,
   "results": [
     {
       "name": "OpenAI Newsroom",
@@ -279,6 +279,18 @@
       "note": "plain page, no feed found"
     },
     {
+      "name": "Z.ai Blog (GLM intl)",
+      "page_url": "https://z.ai/blog",
+      "page_status": 404,
+      "cloudflare": false,
+      "challenge": false,
+      "feed_url": null,
+      "feed_status": null,
+      "feed_entries": false,
+      "risk_tier": "LOW",
+      "note": "plain page, no feed found"
+    },
+    {
       "name": "StepFun News",
       "page_url": "https://www.stepfun.com/news",
       "page_status": 200,
@@ -291,8 +303,56 @@
       "note": "plain page, no feed found"
     },
     {
-      "name": "01.AI Home",
-      "page_url": "https://www.01.ai/",
+      "name": "Baidu ERNIE (Wenxin)",
+      "page_url": "https://wenxin.baidu.com/",
+      "page_status": 200,
+      "cloudflare": false,
+      "challenge": false,
+      "feed_url": null,
+      "feed_status": null,
+      "feed_entries": false,
+      "risk_tier": "LOW",
+      "note": "plain page, no feed found"
+    },
+    {
+      "name": "ByteDance Seed",
+      "page_url": "https://team.doubao.com/",
+      "page_status": 200,
+      "cloudflare": false,
+      "challenge": false,
+      "feed_url": null,
+      "feed_status": null,
+      "feed_entries": false,
+      "risk_tier": "LOW",
+      "note": "plain page, no feed found"
+    },
+    {
+      "name": "Tencent Hunyuan",
+      "page_url": "https://hunyuan.tencent.com/",
+      "page_status": 200,
+      "cloudflare": false,
+      "challenge": false,
+      "feed_url": null,
+      "feed_status": null,
+      "feed_entries": false,
+      "risk_tier": "LOW",
+      "note": "plain page, no feed found"
+    },
+    {
+      "name": "Cognition Blog (Devin)",
+      "page_url": "https://cognition.ai/blog",
+      "page_status": 200,
+      "cloudflare": false,
+      "challenge": false,
+      "feed_url": null,
+      "feed_status": null,
+      "feed_entries": false,
+      "risk_tier": "LOW",
+      "note": "plain page, no feed found"
+    },
+    {
+      "name": "World Labs News",
+      "page_url": "https://www.worldlabs.ai/blog",
       "page_status": 200,
       "cloudflare": false,
       "challenge": false,
