@@ -49,7 +49,9 @@ ZCODE_PROVIDER_CONFIG = pathlib.Path(r"C:\Users\ryocy\.zcode\v2\provider_config.
 REQUEST_TIMEOUT = 120
 PROVIDER_RETRIES = 2
 PROVIDER_BACKOFF_SECONDS = 30
-BATCH_SIZE = 8
+BATCH_SIZE = 4   # 8-item batches made M3 exhaust its reasoning budget before
+                 # emitting JSON (observed: truncated reasoning-only replies);
+                 # 4-5 item batches verified to complete (2026-11-16)
 CACHE_CAP = 2000
 
 # Provider policy (user directive 2026-11-16, final): MiniMax ONLY.
@@ -68,24 +70,30 @@ def load_providers() -> list[dict]:
             key = cfg_access.get("access", {}).get("apiKey", "")
             base = cfg_access.get("api", {}).get("baseUrl", "").rstrip("/")
             if key and base:
+                # M3 pool: wave-like 529s but verified open again right now;
+                # M2.1 pool answers 200 with EMPTY responses while degraded
+                # (observed 2026-11-16). All language models share the
+                # 200 RPM / 10M TPM console limit.
                 return [{"name": "MiniMax-M3", "url": base + "/text/chatcompletion_v2",
                          "key": key, "model": "MiniMax-M3", "retries": 2,
                          "backoff": 10}]
     raise RuntimeError("Minimax provider rule not found in ZCode provider config")
 
 SYSTEM_PROMPT = (
-    "你係 AI Signal Feed 嘅新聞編輯,為一般 AI 用戶(唔係專家)改寫 AI 動態。"
-    "規則:只可以根據提供嘅內容改寫,唔准加任何新事實、數字或日期。"
-    "資料夠就寫得具體;資料真係得個標題,就一句講完個重點,唔准用固定套語"
-    "(例如唔好每次都寫『官方未提供細節』,可以唔提,或者用唔同講法)。"
+    "你係幫一般 AI 用戶寫新聞卡嘅編輯。鐵律:新聞價值優先——"
+    "第一句講「發生咗咩事」(對用戶有意思嘅講法);"
+    "第二句講「對你即係咩/點解要理」(會唔會影響佢用嘅 AI 工具、錢、選擇)。"
+    "熱度數字(points/留言/星數)只可以做句尾佐證,唔准做主角。"
+    "禁止用「社群正在討論」做開頭。"
+    "只可以根據提供嘅內容改寫,唔准加任何新事實、數字或日期;"
+    "資料真係得個標題,就一句講完個重點,唔准用固定套語。"
     "只回覆 strict JSON,唔好 markdown 圍欄,唔好解釋。"
 )
 
 USER_PROMPT_TEMPLATE = (
-    "將以下 AI 動態改寫成用戶視角嘅雙語卡片。對每一條輸出:\n"
+    "將以下 AI 動態改寫成用戶視角嘅雙語新聞卡。對每一條輸出:\n"
     "- headline_en: 自然英文標題(有事實,冇 clickbait,12 字內)\n"
-    "- summary_en: 1-2 句英文:第一句講發生咩事,第二句(如有料)講對用戶即係咩"
-    "(幾錢/幾勁/掛咗未/要不要理);冇料就只保留第一句\n"
+    "- summary_en: 1-2 句:第一句係件事,第二句(如有料)係對用戶嘅意義;冇料就只保留第一句\n"
     "- headline_zh: 繁體中文標題(24字內,人名/產品名保留英文)\n"
     "- summary_zh: 繁體中文 40-70 字,同上結構;五條唔好用同一句式結尾\n\n"
     "ITEMS:\n{items_json}\n\n"
