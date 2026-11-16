@@ -1,0 +1,462 @@
+{
+  "generated_at": "2026-11-16T00:46:29+00:00",
+  "item_count": 24,
+  "items": [
+    {
+      "id": "gh-778a31b372c6",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/wangzan101/Mika",
+      "target_url": "https://github.com/wangzan101/Mika",
+      "headline_en": "wangzan101/Mika: 8,719 GitHub stars in 17 days (~500/day)",
+      "summary_en": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "tier": "rising",
+      "metrics": {
+        "stars": 8719,
+        "age_days": 17.4,
+        "velocity_per_day": 500.4,
+        "velocity_avg_per_day": 500.4,
+        "velocity_recent_per_day": null,
+        "forks": 1994
+      }
+    },
+    {
+      "id": "gh-944dd6d24f46",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "target_url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "headline_en": "hitkeeen/blender-ai-mcp-addon: 1,138 GitHub stars in 3 days (~332/day)",
+      "summary_en": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 1138,
+        "age_days": 3.4,
+        "velocity_per_day": 332.1,
+        "velocity_avg_per_day": 332.1,
+        "velocity_recent_per_day": null,
+        "forks": 30
+      }
+    },
+    {
+      "id": "gh-a24e623842eb",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/FrigadeHQ/yogurt",
+      "target_url": "https://github.com/FrigadeHQ/yogurt",
+      "headline_en": "FrigadeHQ/yogurt: 1,650 GitHub stars in 5 days (~317/day)",
+      "summary_en": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 1650,
+        "age_days": 5.2,
+        "velocity_per_day": 317.4,
+        "velocity_avg_per_day": 317.4,
+        "velocity_recent_per_day": null,
+        "forks": 93
+      }
+    },
+    {
+      "id": "gh-593f999f8400",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/Outpostkrewhirl86/Capri-AI",
+      "target_url": "https://github.com/Outpostkrewhirl86/Capri-AI",
+      "headline_en": "Outpostkrewhirl86/Capri-AI: 345 GitHub stars in 1 days (~304/day)",
+      "summary_en": "Capri: a local-first desktop AI agent with a cyberpunk HUD. Your personal Jarvis for Windows. Controls files, apps, terminal and browser, powered by Claude Code, Codex, Antigravity or any backend. Inspired by Cyberpunk: Edgerunners.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 345,
+        "age_days": 1.1,
+        "velocity_per_day": 304.4,
+        "velocity_avg_per_day": 304.4,
+        "velocity_recent_per_day": null,
+        "forks": 54
+      }
+    },
+    {
+      "id": "gh-959a4e69bc6c",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/agentes-chat/agentes-chat",
+      "target_url": "https://github.com/agentes-chat/agentes-chat",
+      "headline_en": "agentes-chat/agentes-chat: 1,513 GitHub stars in 7 days (~216/day)",
+      "summary_en": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 1513,
+        "age_days": 7.0,
+        "velocity_per_day": 216.2,
+        "velocity_avg_per_day": 216.2,
+        "velocity_recent_per_day": null,
+        "forks": 268
+      }
+    },
+    {
+      "id": "gh-fadd3383ed0a",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/modelflare-ai/AnyModelBot",
+      "target_url": "https://github.com/modelflare-ai/AnyModelBot",
+      "headline_en": "modelflare-ai/AnyModelBot: 4,085 GitHub stars in 20 days (~208/day)",
+      "summary_en": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
+      "tier": "rising",
+      "metrics": {
+        "stars": 4085,
+        "age_days": 19.7,
+        "velocity_per_day": 207.7,
+        "velocity_avg_per_day": 207.7,
+        "velocity_recent_per_day": null,
+        "forks": 60
+      }
+    },
+    {
+      "id": "gh-2a6097a81847",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/berkantay/gpucanvas",
+      "target_url": "https://github.com/berkantay/gpucanvas",
+      "headline_en": "berkantay/gpucanvas: 482 GitHub stars in 3 days (~158/day)",
+      "summary_en": "Put thousands of live DOM nodes on an infinite canvas: the GPU draws them, an editor selects, moves and resizes them, shaders and transitions run on them, and an AI agent can read them and point at them.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 482,
+        "age_days": 3.1,
+        "velocity_per_day": 157.5,
+        "velocity_avg_per_day": 157.5,
+        "velocity_recent_per_day": null,
+        "forks": 29
+      }
+    },
+    {
+      "id": "gh-208cf56cbec0",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/N1nEmAn/sapper-v2",
+      "target_url": "https://github.com/N1nEmAn/sapper-v2",
+      "headline_en": "N1nEmAn/sapper-v2: 2,110 GitHub stars in 16 days (~129/day)",
+      "summary_en": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History).",
+      "tier": "rising",
+      "metrics": {
+        "stars": 2110,
+        "age_days": 16.4,
+        "velocity_per_day": 128.7,
+        "velocity_avg_per_day": 128.7,
+        "velocity_recent_per_day": null,
+        "forks": 1075
+      }
+    },
+    {
+      "id": "gh-4a8c6b949250",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/Dodaios/ste80-humanizer",
+      "target_url": "https://github.com/Dodaios/ste80-humanizer",
+      "headline_en": "Dodaios/ste80-humanizer: 695 GitHub stars in 6 days (~110/day)",
+      "summary_en": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 695,
+        "age_days": 6.3,
+        "velocity_per_day": 110.1,
+        "velocity_avg_per_day": 110.1,
+        "velocity_recent_per_day": null,
+        "forks": 46
+      }
+    },
+    {
+      "id": "gh-609f5454f49c",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/RunanywhereAI/trnrt",
+      "target_url": "https://github.com/RunanywhereAI/trnrt",
+      "headline_en": "RunanywhereAI/trnrt: 1,583 GitHub stars in 16 days (~97/day)",
+      "summary_en": "The open LLM inference engine for AWS Trainium: NKI megakernels, 1M-token context, OpenAI-compatible API. By RunAnywhere.",
+      "tier": "rising",
+      "metrics": {
+        "stars": 1583,
+        "age_days": 16.3,
+        "velocity_per_day": 97.3,
+        "velocity_avg_per_day": 97.3,
+        "velocity_recent_per_day": null,
+        "forks": 18
+      }
+    },
+    {
+      "id": "gh-8bf9033285b8",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
+      "target_url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
+      "headline_en": "roan-maverick/tradingview-indicator-for-ai-agents: 224 GitHub stars in 3 days (~85/day)",
+      "summary_en": "Tradingview IndicatorBuilt for AI agents",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 224,
+        "age_days": 2.6,
+        "velocity_per_day": 84.8,
+        "velocity_avg_per_day": 84.8,
+        "velocity_recent_per_day": null,
+        "forks": 32
+      }
+    },
+    {
+      "id": "gh-9e0c36f4c2c9",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/lloweryfn-rgb/manus--ai",
+      "target_url": "https://github.com/lloweryfn-rgb/manus--ai",
+      "headline_en": "lloweryfn-rgb/manus--ai: 203 GitHub stars in 2 days (~84/day)",
+      "summary_en": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 203,
+        "age_days": 2.4,
+        "velocity_per_day": 84.0,
+        "velocity_avg_per_day": 84.0,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      }
+    },
+    {
+      "id": "gh-8809d76b9927",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/op7418/guizang-game-skill",
+      "target_url": "https://github.com/op7418/guizang-game-skill",
+      "headline_en": "op7418/guizang-game-skill: 357 GitHub stars in 4 days (~82/day)",
+      "summary_en": "歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 357,
+        "age_days": 4.3,
+        "velocity_per_day": 82.2,
+        "velocity_avg_per_day": 82.2,
+        "velocity_recent_per_day": null,
+        "forks": 56
+      }
+    },
+    {
+      "id": "gh-f74c9a85d87d",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/huawei-csl/MACaQ",
+      "target_url": "https://github.com/huawei-csl/MACaQ",
+      "headline_en": "huawei-csl/MACaQ: 311 GitHub stars in 6 days (~55/day)",
+      "summary_en": "SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 311,
+        "age_days": 5.7,
+        "velocity_per_day": 54.9,
+        "velocity_avg_per_day": 54.9,
+        "velocity_recent_per_day": null,
+        "forks": 21
+      }
+    },
+    {
+      "id": "gh-c42159566855",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/MZULALI/xj-scanner",
+      "target_url": "https://github.com/MZULALI/xj-scanner",
+      "headline_en": "MZULALI/xj-scanner: 260 GitHub stars in 5 days (~49/day)",
+      "summary_en": "Read a 1991-95 Jeep's engine computer from a laptop with a $3 Arduino Nano, and let an AI agent do the reading.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 260,
+        "age_days": 5.3,
+        "velocity_per_day": 48.9,
+        "velocity_avg_per_day": 48.9,
+        "velocity_recent_per_day": null,
+        "forks": 32
+      }
+    },
+    {
+      "id": "gh-1003a20d9074",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/wici-ai/inferssd",
+      "target_url": "https://github.com/wici-ai/inferssd",
+      "headline_en": "wici-ai/inferssd: 1,183 GitHub stars in 25 days (~48/day)",
+      "summary_en": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp.",
+      "tier": "rising",
+      "metrics": {
+        "stars": 1183,
+        "age_days": 24.6,
+        "velocity_per_day": 48.1,
+        "velocity_avg_per_day": 48.1,
+        "velocity_recent_per_day": null,
+        "forks": 99
+      }
+    },
+    {
+      "id": "gh-c9996c9029e1",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/SAOS-3624/dsh-see-now",
+      "target_url": "https://github.com/SAOS-3624/dsh-see-now",
+      "headline_en": "SAOS-3624/dsh-see-now: 661 GitHub stars in 14 days (~46/day)",
+      "summary_en": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
+      "tier": "rising",
+      "metrics": {
+        "stars": 661,
+        "age_days": 14.5,
+        "velocity_per_day": 45.7,
+        "velocity_avg_per_day": 45.7,
+        "velocity_recent_per_day": null,
+        "forks": 70
+      }
+    },
+    {
+      "id": "gh-1f06d641b04d",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/threerocks/article2media",
+      "target_url": "https://github.com/threerocks/article2media",
+      "headline_en": "threerocks/article2media: 349 GitHub stars in 8 days (~45/day)",
+      "summary_en": "把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。",
+      "tier": "rising",
+      "metrics": {
+        "stars": 349,
+        "age_days": 7.7,
+        "velocity_per_day": 45.4,
+        "velocity_avg_per_day": 45.4,
+        "velocity_recent_per_day": null,
+        "forks": 57
+      }
+    },
+    {
+      "id": "gh-bba6a2f8f2e0",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/Timaga/noda-local-ai-notes",
+      "target_url": "https://github.com/Timaga/noda-local-ai-notes",
+      "headline_en": "Timaga/noda-local-ai-notes: 104 GitHub stars in 2 days (~45/day)",
+      "summary_en": "Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 104,
+        "age_days": 2.3,
+        "velocity_per_day": 45.1,
+        "velocity_avg_per_day": 45.1,
+        "velocity_recent_per_day": null,
+        "forks": 1
+      }
+    },
+    {
+      "id": "gh-c6bbee3ab1b6",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/sleepy-zone/ai-ref-library-cn",
+      "target_url": "https://github.com/sleepy-zone/ai-ref-library-cn",
+      "headline_en": "sleepy-zone/ai-ref-library-cn: 770 GitHub stars in 17 days (~44/day)",
+      "summary_en": "AI 作图素材库 · 中文版（脸 / 姿势 / 服装）",
+      "tier": "rising",
+      "metrics": {
+        "stars": 770,
+        "age_days": 17.4,
+        "velocity_per_day": 44.3,
+        "velocity_avg_per_day": 44.3,
+        "velocity_recent_per_day": null,
+        "forks": 185
+      }
+    },
+    {
+      "id": "gh-90b953342bc0",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/fendouai/ViralForge",
+      "target_url": "https://github.com/fendouai/ViralForge",
+      "headline_en": "fendouai/ViralForge: 206 GitHub stars in 5 days (~44/day)",
+      "summary_en": "Agent-native viral video studio: one-click replicate viral short videos, deconstruct video hooks and scripts into a Viral DNA report, and ship 10 costed variants. Skill + MCP + CLI. Apache-2.0.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 206,
+        "age_days": 4.7,
+        "velocity_per_day": 43.5,
+        "velocity_avg_per_day": 43.5,
+        "velocity_recent_per_day": null,
+        "forks": 6
+      }
+    },
+    {
+      "id": "gh-b62344349ca9",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/claynicholson/copper-kicad-mcp",
+      "target_url": "https://github.com/claynicholson/copper-kicad-mcp",
+      "headline_en": "claynicholson/copper-kicad-mcp: 100 GitHub stars in 3 days (~31/day)",
+      "summary_en": "MCP server that lets any AI app design real, orderable KiCad boards: schematic, LCSC parts, PCB routing, ERC/DRC, JLCPCB fab files.",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 100,
+        "age_days": 3.3,
+        "velocity_per_day": 30.8,
+        "velocity_avg_per_day": 30.8,
+        "velocity_recent_per_day": null,
+        "forks": 5
+      }
+    },
+    {
+      "id": "gh-a4b3e921cc42",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/yasakani-dev/yasakani",
+      "target_url": "https://github.com/yasakani-dev/yasakani",
+      "headline_en": "yasakani-dev/yasakani: 101 GitHub stars in 4 days (~29/day)",
+      "summary_en": "Local LLM engine for Windows and one NVIDIA RTX 5090, built for Qwen3.8-27B",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 101,
+        "age_days": 3.5,
+        "velocity_per_day": 29.0,
+        "velocity_avg_per_day": 29.0,
+        "velocity_recent_per_day": null,
+        "forks": 21
+      }
+    },
+    {
+      "id": "gh-313bb51ad5eb",
+      "timestamp": "2026-11-16T00:46:29+00:00",
+      "category": "trending",
+      "source_name": "GitHub Search",
+      "source_url": "https://github.com/8hjkkwikl8/ai-portfolio",
+      "target_url": "https://github.com/8hjkkwikl8/ai-portfolio",
+      "headline_en": "8hjkkwikl8/ai-portfolio: 105 GitHub stars in 5 days (~22/day)",
+      "summary_en": "三个可运行的 AI 工程项目：可追溯 RAG、提示词评测与受守护的 NL2SQL 分析",
+      "tier": "hot_new",
+      "metrics": {
+        "stars": 105,
+        "age_days": 4.8,
+        "velocity_per_day": 21.9,
+        "velocity_avg_per_day": 21.9,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      }
+    }
+  ]
+}

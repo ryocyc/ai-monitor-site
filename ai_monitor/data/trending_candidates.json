@@ -1,0 +1,466 @@
+{
+  "generated_at": "2026-11-16T00:46:29+00:00",
+  "queries_run": 12,
+  "raw_unique": 124,
+  "spam_ring_dropped": 53,
+  "filtered_out": 20,
+  "candidate_count": 24,
+  "candidates": [
+    {
+      "repo": "wangzan101/Mika",
+      "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "language": "Kotlin",
+      "url": "https://github.com/wangzan101/Mika",
+      "created_at": "2026-10-29T14:34:07Z",
+      "tier": "rising",
+      "query_tags": [
+        "hot_llm_30d"
+      ],
+      "metrics": {
+        "stars": 8719,
+        "age_days": 17.4,
+        "velocity_per_day": 500.4,
+        "velocity_avg_per_day": 500.4,
+        "velocity_recent_per_day": null,
+        "forks": 1994
+      }
+    },
+    {
+      "repo": "hitkeeen/blender-ai-mcp-addon",
+      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "language": "",
+      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "created_at": "2026-11-12T14:32:15Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_llm_7d"
+      ],
+      "metrics": {
+        "stars": 1138,
+        "age_days": 3.4,
+        "velocity_per_day": 332.1,
+        "velocity_avg_per_day": 332.1,
+        "velocity_recent_per_day": null,
+        "forks": 30
+      }
+    },
+    {
+      "repo": "FrigadeHQ/yogurt",
+      "description": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
+      "language": "TypeScript",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "created_at": "2026-11-10T20:01:01Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_mcp_7d"
+      ],
+      "metrics": {
+        "stars": 1650,
+        "age_days": 5.2,
+        "velocity_per_day": 317.4,
+        "velocity_avg_per_day": 317.4,
+        "velocity_recent_per_day": null,
+        "forks": 93
+      }
+    },
+    {
+      "repo": "Outpostkrewhirl86/Capri-AI",
+      "description": "Capri: a local-first desktop AI agent with a cyberpunk HUD. Your personal Jarvis for Windows. Controls files, apps, terminal and browser, powered by Claude Code, Codex, Antigravity or any backend. Inspired by Cyberpunk: Edgerunners.",
+      "language": "",
+      "url": "https://github.com/Outpostkrewhirl86/Capri-AI",
+      "created_at": "2026-11-14T21:34:40Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_agent_7d"
+      ],
+      "metrics": {
+        "stars": 345,
+        "age_days": 1.1,
+        "velocity_per_day": 304.4,
+        "velocity_avg_per_day": 304.4,
+        "velocity_recent_per_day": null,
+        "forks": 54
+      }
+    },
+    {
+      "repo": "agentes-chat/agentes-chat",
+      "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+      "language": "TypeScript",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "created_at": "2026-11-09T00:50:28Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "hot_llm_30d"
+      ],
+      "metrics": {
+        "stars": 1513,
+        "age_days": 7.0,
+        "velocity_per_day": 216.2,
+        "velocity_avg_per_day": 216.2,
+        "velocity_recent_per_day": null,
+        "forks": 268
+      }
+    },
+    {
+      "repo": "modelflare-ai/AnyModelBot",
+      "description": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
+      "language": "Python",
+      "url": "https://github.com/modelflare-ai/AnyModelBot",
+      "created_at": "2026-10-27T08:51:18Z",
+      "tier": "rising",
+      "query_tags": [
+        "hot_llm_30d"
+      ],
+      "metrics": {
+        "stars": 4085,
+        "age_days": 19.7,
+        "velocity_per_day": 207.7,
+        "velocity_avg_per_day": 207.7,
+        "velocity_recent_per_day": null,
+        "forks": 60
+      }
+    },
+    {
+      "repo": "berkantay/gpucanvas",
+      "description": "Put thousands of live DOM nodes on an infinite canvas: the GPU draws them, an editor selects, moves and resizes them, shaders and transitions run on them, and an AI agent can read them and point at them.",
+      "language": "TypeScript",
+      "url": "https://github.com/berkantay/gpucanvas",
+      "created_at": "2026-11-12T23:19:42Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_agent_7d"
+      ],
+      "metrics": {
+        "stars": 482,
+        "age_days": 3.1,
+        "velocity_per_day": 157.5,
+        "velocity_avg_per_day": 157.5,
+        "velocity_recent_per_day": null,
+        "forks": 29
+      }
+    },
+    {
+      "repo": "N1nEmAn/sapper-v2",
+      "description": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History).",
+      "language": "Python",
+      "url": "https://github.com/N1nEmAn/sapper-v2",
+      "created_at": "2026-10-30T15:12:35Z",
+      "tier": "rising",
+      "query_tags": [
+        "hot_llm_30d"
+      ],
+      "metrics": {
+        "stars": 2110,
+        "age_days": 16.4,
+        "velocity_per_day": 128.7,
+        "velocity_avg_per_day": 128.7,
+        "velocity_recent_per_day": null,
+        "forks": 1075
+      }
+    },
+    {
+      "repo": "Dodaios/ste80-humanizer",
+      "description": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+      "language": "Python",
+      "url": "https://github.com/Dodaios/ste80-humanizer",
+      "created_at": "2026-11-09T17:18:59Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "hot_llm_30d"
+      ],
+      "metrics": {
+        "stars": 695,
+        "age_days": 6.3,
+        "velocity_per_day": 110.1,
+        "velocity_avg_per_day": 110.1,
+        "velocity_recent_per_day": null,
+        "forks": 46
+      }
+    },
+    {
+      "repo": "RunanywhereAI/trnrt",
+      "description": "The open LLM inference engine for AWS Trainium: NKI megakernels, 1M-token context, OpenAI-compatible API. By RunAnywhere.",
+      "language": "Python",
+      "url": "https://github.com/RunanywhereAI/trnrt",
+      "created_at": "2026-10-30T18:30:04Z",
+      "tier": "rising",
+      "query_tags": [
+        "hot_llm_30d"
+      ],
+      "metrics": {
+        "stars": 1583,
+        "age_days": 16.3,
+        "velocity_per_day": 97.3,
+        "velocity_avg_per_day": 97.3,
+        "velocity_recent_per_day": null,
+        "forks": 18
+      }
+    },
+    {
+      "repo": "roan-maverick/tradingview-indicator-for-ai-agents",
+      "description": "Tradingview IndicatorBuilt for AI agents",
+      "language": "",
+      "url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
+      "created_at": "2026-11-13T09:20:32Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_agent_7d"
+      ],
+      "metrics": {
+        "stars": 224,
+        "age_days": 2.6,
+        "velocity_per_day": 84.8,
+        "velocity_avg_per_day": 84.8,
+        "velocity_recent_per_day": null,
+        "forks": 32
+      }
+    },
+    {
+      "repo": "lloweryfn-rgb/manus--ai",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": "",
+      "url": "https://github.com/lloweryfn-rgb/manus--ai",
+      "created_at": "2026-11-13T14:46:39Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_agent_7d"
+      ],
+      "metrics": {
+        "stars": 203,
+        "age_days": 2.4,
+        "velocity_per_day": 84.0,
+        "velocity_avg_per_day": 84.0,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      }
+    },
+    {
+      "repo": "op7418/guizang-game-skill",
+      "description": "歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.",
+      "language": "JavaScript",
+      "url": "https://github.com/op7418/guizang-game-skill",
+      "created_at": "2026-11-11T16:28:54Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_agent_7d"
+      ],
+      "metrics": {
+        "stars": 357,
+        "age_days": 4.3,
+        "velocity_per_day": 82.2,
+        "velocity_avg_per_day": 82.2,
+        "velocity_recent_per_day": null,
+        "forks": 56
+      }
+    },
+    {
+      "repo": "huawei-csl/MACaQ",
+      "description": "SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch.",
+      "language": "C++",
+      "url": "https://github.com/huawei-csl/MACaQ",
+      "created_at": "2026-11-10T08:52:22Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_localllm_14d"
+      ],
+      "metrics": {
+        "stars": 311,
+        "age_days": 5.7,
+        "velocity_per_day": 54.9,
+        "velocity_avg_per_day": 54.9,
+        "velocity_recent_per_day": null,
+        "forks": 21
+      }
+    },
+    {
+      "repo": "MZULALI/xj-scanner",
+      "description": "Read a 1991-95 Jeep's engine computer from a laptop with a $3 Arduino Nano, and let an AI agent do the reading.",
+      "language": "Python",
+      "url": "https://github.com/MZULALI/xj-scanner",
+      "created_at": "2026-11-10T17:03:05Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_agent_7d"
+      ],
+      "metrics": {
+        "stars": 260,
+        "age_days": 5.3,
+        "velocity_per_day": 48.9,
+        "velocity_avg_per_day": 48.9,
+        "velocity_recent_per_day": null,
+        "forks": 32
+      }
+    },
+    {
+      "repo": "wici-ai/inferssd",
+      "description": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp.",
+      "language": "C++",
+      "url": "https://github.com/wici-ai/inferssd",
+      "created_at": "2026-10-22T10:40:45Z",
+      "tier": "rising",
+      "query_tags": [
+        "hot_llm_30d"
+      ],
+      "metrics": {
+        "stars": 1183,
+        "age_days": 24.6,
+        "velocity_per_day": 48.1,
+        "velocity_avg_per_day": 48.1,
+        "velocity_recent_per_day": null,
+        "forks": 99
+      }
+    },
+    {
+      "repo": "SAOS-3624/dsh-see-now",
+      "description": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
+      "language": "JavaScript",
+      "url": "https://github.com/SAOS-3624/dsh-see-now",
+      "created_at": "2026-11-01T13:32:34Z",
+      "tier": "rising",
+      "query_tags": [
+        "hot_llm_30d"
+      ],
+      "metrics": {
+        "stars": 661,
+        "age_days": 14.5,
+        "velocity_per_day": 45.7,
+        "velocity_avg_per_day": 45.7,
+        "velocity_recent_per_day": null,
+        "forks": 70
+      }
+    },
+    {
+      "repo": "threerocks/article2media",
+      "description": "把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。",
+      "language": "JavaScript",
+      "url": "https://github.com/threerocks/article2media",
+      "created_at": "2026-11-08T08:07:28Z",
+      "tier": "rising",
+      "query_tags": [
+        "new_tts_14d"
+      ],
+      "metrics": {
+        "stars": 349,
+        "age_days": 7.7,
+        "velocity_per_day": 45.4,
+        "velocity_avg_per_day": 45.4,
+        "velocity_recent_per_day": null,
+        "forks": 57
+      }
+    },
+    {
+      "repo": "Timaga/noda-local-ai-notes",
+      "description": "Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources.",
+      "language": "JavaScript",
+      "url": "https://github.com/Timaga/noda-local-ai-notes",
+      "created_at": "2026-11-13T17:28:15Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_rag_14d"
+      ],
+      "metrics": {
+        "stars": 104,
+        "age_days": 2.3,
+        "velocity_per_day": 45.1,
+        "velocity_avg_per_day": 45.1,
+        "velocity_recent_per_day": null,
+        "forks": 1
+      }
+    },
+    {
+      "repo": "sleepy-zone/ai-ref-library-cn",
+      "description": "AI 作图素材库 · 中文版（脸 / 姿势 / 服装）",
+      "language": "JavaScript",
+      "url": "https://github.com/sleepy-zone/ai-ref-library-cn",
+      "created_at": "2026-10-29T15:28:16Z",
+      "tier": "rising",
+      "query_tags": [
+        "hot_ai_30d"
+      ],
+      "metrics": {
+        "stars": 770,
+        "age_days": 17.4,
+        "velocity_per_day": 44.3,
+        "velocity_avg_per_day": 44.3,
+        "velocity_recent_per_day": null,
+        "forks": 185
+      }
+    },
+    {
+      "repo": "fendouai/ViralForge",
+      "description": "Agent-native viral video studio: one-click replicate viral short videos, deconstruct video hooks and scripts into a Viral DNA report, and ship 10 costed variants. Skill + MCP + CLI. Apache-2.0.",
+      "language": "TypeScript",
+      "url": "https://github.com/fendouai/ViralForge",
+      "created_at": "2026-11-11T07:13:59Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_agent_7d"
+      ],
+      "metrics": {
+        "stars": 206,
+        "age_days": 4.7,
+        "velocity_per_day": 43.5,
+        "velocity_avg_per_day": 43.5,
+        "velocity_recent_per_day": null,
+        "forks": 6
+      }
+    },
+    {
+      "repo": "claynicholson/copper-kicad-mcp",
+      "description": "MCP server that lets any AI app design real, orderable KiCad boards: schematic, LCSC parts, PCB routing, ERC/DRC, JLCPCB fab files.",
+      "language": "Python",
+      "url": "https://github.com/claynicholson/copper-kicad-mcp",
+      "created_at": "2026-11-12T18:44:11Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_mcp_7d"
+      ],
+      "metrics": {
+        "stars": 100,
+        "age_days": 3.3,
+        "velocity_per_day": 30.8,
+        "velocity_avg_per_day": 30.8,
+        "velocity_recent_per_day": null,
+        "forks": 5
+      }
+    },
+    {
+      "repo": "yasakani-dev/yasakani",
+      "description": "Local LLM engine for Windows and one NVIDIA RTX 5090, built for Qwen3.8-27B",
+      "language": "Python",
+      "url": "https://github.com/yasakani-dev/yasakani",
+      "created_at": "2026-11-12T13:12:17Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_localllm_14d"
+      ],
+      "metrics": {
+        "stars": 101,
+        "age_days": 3.5,
+        "velocity_per_day": 29.0,
+        "velocity_avg_per_day": 29.0,
+        "velocity_recent_per_day": null,
+        "forks": 21
+      }
+    },
+    {
+      "repo": "8hjkkwikl8/ai-portfolio",
+      "description": "三个可运行的 AI 工程项目：可追溯 RAG、提示词评测与受守护的 NL2SQL 分析",
+      "language": "Python",
+      "url": "https://github.com/8hjkkwikl8/ai-portfolio",
+      "created_at": "2026-11-11T05:28:14Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_rag_14d"
+      ],
+      "metrics": {
+        "stars": 105,
+        "age_days": 4.8,
+        "velocity_per_day": 21.9,
+        "velocity_avg_per_day": 21.9,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      }
+    }
+  ]
+}
