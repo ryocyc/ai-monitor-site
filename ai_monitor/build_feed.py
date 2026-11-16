@@ -35,6 +35,30 @@ INPUT_FILES = [
     "feeds_items.json",
 ]
 
+ENRICHMENT_CACHE = BASE_DIR / "state" / "enriched_cache.json"
+
+
+def apply_enrichment_cache(items: list[dict]) -> tuple[int, int]:
+    """Re-attach LLM bilingual enrichment from the persistent cache so a
+    rebuild never loses it (the old pipeline burned money then wiped zh
+    fields - this is the fix)."""
+    if not ENRICHMENT_CACHE.exists():
+        return 0, 0
+    try:
+        cache = json.loads(ENRICHMENT_CACHE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return 0, 0
+    applied = pending = 0
+    for item in items:
+        cached = cache.get(item.get("id", ""))
+        if cached:
+            item.update(cached)
+            item["enriched"] = True
+            applied += 1
+        elif not item.get("enriched"):
+            pending += 1
+    return applied, pending
+
 FEED_CAP = 60
 ARCHIVE_CAP = 2000
 
@@ -83,6 +107,9 @@ def main() -> int:
             previous = {}
 
     items = load_items()
+    applied, pending = apply_enrichment_cache(items)
+    if applied or pending:
+        print(f"enrichment cache: applied {applied} | pending API: {pending}")
     for item in items:
         previous[item["id"]] = item   # current run overrides (fresh metrics)
     items = sorted(previous.values(),

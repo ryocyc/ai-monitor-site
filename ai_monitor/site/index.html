@@ -45,6 +45,7 @@
     .pill.news     { background: #f0eee9; color: #586255; }
     .headline { margin: 0; font-size: 1.45rem; line-height: 1.18; letter-spacing: -0.02em; }
     .summary { margin: 0; color: var(--muted); line-height: 1.7; font-size: 1rem; }
+    .en-title { color: var(--muted); font-size: 0.88rem; line-height: 1.4; }
     a { color: var(--accent); text-decoration: none; font-weight: 700; }
     .empty { padding: 40px; text-align: center; color: var(--muted); }
     @keyframes pulse {
@@ -120,8 +121,11 @@
     function cardHTML(item) {
       const p = pillarOf(item.category);
       const url = item.target_url || item.source_url || '#';
-      const title = item.headline_en || 'Untitled';
-      const summary = item.summary_en || '';
+      // bilingual: zh (user-perspective) preferred, en as fallback/subtitle
+      const title = item.headline_zh || item.headline_en || 'Untitled';
+      const summary = item.summary_zh || item.summary_en || '';
+      const enLine = item.headline_zh && item.headline_en && item.headline_en !== item.headline_zh
+        ? item.headline_en : '';
       return `
         <article class="card" data-pillar="${p.label}">
           <div class="card-top">
@@ -129,6 +133,7 @@
             <time title="${item.timestamp || ''}">${relativeTime(item.timestamp)}</time>
           </div>
           <h2 class="headline"><a href="${url}" rel="noopener">${title}</a></h2>
+          ${enLine ? `<div class="en-title">${enLine}</div>` : ''}
           <p class="summary">${summary}</p>
           <div class="card-bottom">
             <span>${item.source_name || ''}</span>
