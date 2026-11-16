@@ -40,7 +40,8 @@ LOCK_PORT = 8615
 # (label, argv relative to BASE_DIR, timeout_seconds)
 STEPS = [
     ("trending",  [sys.executable, str(BASE_DIR / "discover_trending.py")], 120),
-    ("hn",        [sys.executable, str(BASE_DIR / "discover_hn.py")],       90),
+    # HN source removed (user directive 2026-11-16): HN is itself a news
+    # aggregator - reposting its content adds no value for our readers.
     ("status",    [sys.executable, str(BASE_DIR / "collect" / "collect_status.py")], 90),
     ("prices",    [sys.executable, str(BASE_DIR / "collect" / "collect_prices.py")], 120),
     ("feeds",     [sys.executable, str(BASE_DIR / "collect" / "collect_feeds.py")], 180),

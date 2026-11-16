@@ -272,19 +272,26 @@ def build_items(candidates: list[dict]) -> list[dict]:
         stars = metrics["stars"]
         per_day = metrics["velocity_per_day"]
         days = metrics["age_days"]
-        headline = (
-            f"{repo}: {stars:,} GitHub stars in {days:.0f} days "
-            f"(~{per_day:.0f}/day)"
-        )
+        # Human-editor headline: lead with WHAT THE TOOL DOES (its
+        # description), not the star metadata. Stars/velocity are trailing
+        # evidence in the summary, never the headline. (User directive:
+        # 'threerocks/article2media: 351 stars in 8 days' says nothing;
+        # '一鍵將文章/視頻做成小紅書圖文、AI 配音短片嘅開源工具' does.)
+        description = (c["description"] or "").strip()
+        first_sentence = re.split(r"(?<=[.!?。!?])\s", description, maxsplit=1)[0]
+        headline = first_sentence[:110] if first_sentence else f"{repo}: trending AI tool"
         items.append({
             "id": "gh-" + hashlib.sha1(repo.encode("utf-8")).hexdigest()[:12],
             "timestamp": utc_now(),
             "category": "trending",
-            "source_name": "GitHub Search",
+            "source_name": "GitHub",
             "source_url": f"https://github.com/{repo}",
             "target_url": f"https://github.com/{repo}",
             "headline_en": headline,
-            "summary_en": c["description"] or f"{repo} is trending in AI-related GitHub topics.",
+            "summary_en": (
+                f"{repo} - {description or 'AI-related project'} "
+                f"Gained {stars:,} GitHub stars in {days:.0f} days (~{per_day:.0f}/day)."
+            ),
             "tier": c["tier"],
             "metrics": metrics,
         })

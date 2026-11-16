@@ -114,8 +114,9 @@ INPUT_FILES = [
     "prices_items.json",
     "rankings_items.json",
     "trending_items.json",
-    "hn_items.json",
     "feeds_items.json",
+    # hn_items.json removed with the HN source (user directive: HN is an
+    # aggregator; reposting it adds no value)
 ]
 
 ENRICHMENT_CACHE = BASE_DIR / "state" / "enriched_cache.json"
