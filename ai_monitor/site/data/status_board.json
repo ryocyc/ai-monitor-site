@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-11-16T10:34:06+00:00",
+  "providers": {
+    "OpenAI": {
+      "indicator": "none",
+      "description": "All Systems Operational",
+      "updated_at": "2026-11-16T10:33:17+00:00"
+    },
+    "Claude": {
+      "indicator": "minor",
+      "description": "Minor Service Outage",
+      "updated_at": "2026-11-16T10:33:18+00:00"
+    },
+    "Cohere": {
+      "indicator": "none",
+      "description": "All Systems Operational",
+      "updated_at": "2026-11-16T10:33:19+00:00"
+    },
+    "Mistral AI": {
+      "indicator": "none",
+      "description": "All Systems Operational",
+      "updated_at": "2026-11-16T10:33:21+00:00"
+    },
+    "Groq": {
+      "indicator": "none",
+      "description": "All Systems Operational",
+      "updated_at": "2026-11-16T10:33:22+00:00"
+    },
+    "Perplexity": {
+      "indicator": "unknown",
+      "description": "",
+      "updated_at": null
+    }
+  }
+}

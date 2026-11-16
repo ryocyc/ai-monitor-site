@@ -47,6 +47,21 @@
     .filters button.active { background: var(--accent); color: white; border-color: var(--accent); }
     .list { display: grid; gap: 18px; }
     @media (min-width: 920px) { .list { grid-template-columns: 1fr 1fr; } }
+    .status-board { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+    .status-chip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-weight: 700; font-size: 0.9rem; box-shadow: var(--shadow); }
+    .status-dot { width: 10px; height: 10px; border-radius: 999px; }
+    .status-dot.ok { background: #1da159; }
+    .status-dot.warn { background: #d97706; animation: pulse 1.8s infinite; }
+    .status-dot.down { background: #b3261e; animation: pulse 1.2s infinite; }
+    .status-dot.unknown { background: #9ca3af; }
+    .card.feature { grid-column: 1 / -1; padding: 28px 30px; border-left: 6px solid var(--accent); }
+    .card.feature .headline { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
+    .card.feature .summary { font-size: 1.08rem; }
+    .dev-section { margin-top: 40px; }
+    .dev-section summary { cursor: pointer; padding: 14px 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; font-weight: 700; color: var(--muted); list-style: none; }
+    .dev-section summary::before { content: "▸ "; }
+    .dev-section[open] summary::before { content: "▾ "; }
+    .dev-section .list { margin-top: 14px; }
     .card { display: grid; gap: 14px; padding: 22px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }
     .card-top, .card-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--muted); font-size: 0.86rem; }
     .pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 0.74rem; }
@@ -87,6 +102,10 @@
       </div>
     </section>
 
+    <section class="status-board" id="status-board" aria-label="AI 服務狀態">
+      <div class="status-chip"><span class="status-dot unknown"></span>載入狀態中…</div>
+    </section>
+
     <section id="refresh-banner" class="refresh-banner">
       <div>New updates are available.</div>
       <div>
@@ -100,6 +119,11 @@
     </section>
 
     <section id="feed" class="list"><div class="empty">載入中…</div></section>
+
+    <details class="dev-section" id="dev-section">
+      <summary>開發者版本更新（<span id="dev-count">…</span>）— llama.cpp / vLLM / Ollama 等開源項目發佈</summary>
+      <div class="list" id="dev-list"></div>
+    </details>
 
     <footer style="margin-top:48px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted);font-size:.88rem;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;">
       <span>AI Signal Feed — 自動監察 50+ AI 來源,每 2 小時更新。內容由 AI 根據官方來源編寫,標明出處。</span>
@@ -141,7 +165,26 @@
       return Math.round(hours / 24) + 'd ago';
     }
 
-    function cardHTML(item) {
+    const DOT_CLASS = {
+      none: 'ok', minor: 'warn', partial: 'warn', degraded: 'warn',
+      maintenance: 'warn', major: 'down', critical: 'down',
+    };
+
+    async function loadStatusBoard() {
+      try {
+        const resp = await fetch(`./data/status_board.json?ts=${Date.now()}`, { cache: 'no-store' });
+        if (!resp.ok) return;
+        const data = await resp.json();
+        const board = document.getElementById('status-board');
+        board.innerHTML = Object.entries(data.providers || {}).map(([name, s]) => {
+          const cls = DOT_CLASS[s.indicator] || 'unknown';
+          return `<span class="status-chip" title="${s.description || ''}">
+            <span class="status-dot ${cls}"></span>${name}</span>`;
+        }).join('') || '';
+      } catch (e) { /* board is optional */ }
+    }
+
+    function cardHTML(item, feature = false) {
       const p = pillarOf(item.category);
       const url = item.target_url || item.source_url || '#';
       // bilingual: zh (user-perspective) preferred, en as fallback/subtitle
@@ -151,7 +194,7 @@
         ? item.headline_en : '';
       const slug = articleMap[item.id];
       return `
-        <article class="card" data-pillar="${p.label}">
+        <article class="card${feature ? ' feature' : ''}" data-pillar="${p.label}">
           <div class="card-top">
             <span class="pill ${p.cls}">${p.label}</span>
             <time title="${item.timestamp || ''}">${relativeTime(item.timestamp)}</time>
@@ -171,16 +214,34 @@
     }
 
     function render() {
-      const listNode = document.getElementById('feed');
-      const visible = activeFilter
-        ? currentItems.filter((i) => pillarOf(i.category).label === activeFilter)
-        : currentItems;
-      listNode.innerHTML = visible.length
-        ? visible.map(cardHTML).join('')
-        : '<div class="empty">Nothing in this category yet.</div>';
+      // dev releases live in their own collapsed section, not the main feed
+      const isDevRelease = (i) => i.category === 'release';
+      const mainPool = currentItems.filter((i) => !isDevRelease(i));
+      const devPool = currentItems.filter(isDevRelease);
 
-      // filter bar (single occurrence per pillar label)
-      const labels = [...new Set(currentItems.map((i) => pillarOf(i.category).label))];
+      const visible = activeFilter
+        ? mainPool.filter((i) => pillarOf(i.category).label === activeFilter)
+        : mainPool;
+
+      // 今日重點: top 3 (newest first, no filter active) get feature cards
+      const featureCount = activeFilter ? 0 : Math.min(3, visible.length);
+      const cards = [
+        ...visible.slice(0, featureCount).map((i) => cardHTML(i, true)),
+        ...visible.slice(featureCount).map((i) => cardHTML(i, false)),
+      ];
+
+      const listNode = document.getElementById('feed');
+      listNode.innerHTML = cards.length
+        ? cards.join('')
+        : '<div class="empty">這個分類暫時未有內容。</div>';
+
+      const devNode = document.getElementById('dev-list');
+      const devCount = document.getElementById('dev-count');
+      if (devNode) devNode.innerHTML = devPool.map((i) => cardHTML(i)).join('');
+      if (devCount) devCount.textContent = devPool.length;
+
+      // filter bar (single occurrence per pillar label, main feed only)
+      const labels = [...new Set(mainPool.map((i) => pillarOf(i.category).label))];
       const bar = document.getElementById('filter-bar');
       bar.innerHTML = '';
       ['全部', ...labels].forEach((label) => {
@@ -230,7 +291,9 @@
     });
 
     loadFeed();
+    loadStatusBoard();
     setInterval(loadFeed, 5 * 60 * 1000);
+    setInterval(loadStatusBoard, 5 * 60 * 1000);
   </script>
 </body>
 </html>
