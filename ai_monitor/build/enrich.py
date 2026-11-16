@@ -26,6 +26,7 @@ which build_feed.py applies on every rebuild so enrichment survives patrols).
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 import pathlib
 import re
@@ -51,15 +52,54 @@ PROVIDER_RETRIES = 2
 PROVIDER_BACKOFF_SECONDS = 30
 BATCH_SIZE = 8
 CACHE_CAP = 2000
-# DeepSeek fallback is DISABLED until the user approves it (2026-11-16:
-# user never authorized using the DeepSeek pay-as-you-go key as fallback;
-# MiniMax 529 that day proved transient and fully recovered).
-USE_DEEPSEEK_FALLBACK = False
+
+# Fallback policy (user directive 2026-11-16): the MiniMax TokenPlanPlus is
+# effectively unlimited (verified in console: 5h quota 2% used, weekly 0%,
+# M3 rate limit 200 RPM / 10M TPM vs our ~72K tokens/day). The day's 529s
+# were cluster-side overload shedding ("overloaded_error 2064"), NOT quota.
+#   - 529 overloaded  -> NO fallback; queue waits for the next patrol.
+#   - explicit quota/limit error (403/429/quota wording) -> treat as the
+#     5h window being exhausted: fallback allowed, back to MiniMax after
+#     5h (state/minimax_quota.json).
+QUOTA_BLOCK_FILE = BASE_DIR / "state" / "minimax_quota.json"
+QUOTA_BLOCK_HOURS = 5
+QUOTA_MARKERS = ("配额", "额度", "限額", "已用完", "exceeded", "quota", "insufficient")
+
+
+def load_quota_block_until() -> dt.datetime | None:
+    if QUOTA_BLOCK_FILE.exists():
+        try:
+            data = json.loads(QUOTA_BLOCK_FILE.read_text(encoding="utf-8"))
+            until = dt.datetime.fromisoformat(data.get("block_until", ""))
+            if until > dt.datetime.now(dt.timezone.utc):
+                return until
+        except (json.JSONDecodeError, ValueError):
+            pass
+    return None
+
+
+def mark_quota_exhausted() -> None:
+    """Explicit quota error from MiniMax -> trust the 5h window: block
+    MiniMax and let the fallback serve until it auto-expires."""
+    QUOTA_BLOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
+    until = dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=QUOTA_BLOCK_HOURS)
+    QUOTA_BLOCK_FILE.write_text(json.dumps(
+        {"block_until": until.isoformat(), "marked_at": utc_now()},
+        ensure_ascii=False), encoding="utf-8")
+    print(f"    MiniMax quota window exhausted -> fallback until {until.isoformat()}")
+
+
+def is_quota_error(status: int, body: str) -> bool:
+    if status in (403, 429):
+        return True
+    lowered = body.lower()
+    return status == 529 and any(m in body or m in lowered for m in QUOTA_MARKERS) \
+        and not any(m in body for m in ("负载", "overloaded"))
 
 
 def load_providers() -> list[dict]:
-    """MiniMax first (subscription = prepaid, user preference), DeepSeek as
-    the paid fallback. Chain order is explicit, not config-file order."""
+    """MiniMax primary (prepaid plan, user preference). DeepSeek serves ONLY
+    while an explicit quota-exhaustion window is active (5h)."""
     cfg = json.loads(ZCODE_PROVIDER_CONFIG.read_text(encoding="utf-8"))
     minimax = deepseek = None
     for rule in cfg["config"]["providerConfigRules"]["providerRules"]:
@@ -77,7 +117,12 @@ def load_providers() -> list[dict]:
             deepseek = {"name": name, "url": base + "/chat/completions",
                         "key": key, "model": "deepseek-v4-flash", "retries": 2,
                         "backoff": 15}
-    providers = [p for p in (minimax, deepseek if USE_DEEPSEEK_FALLBACK else None) if p]
+    blocked_until = load_quota_block_until()
+    if blocked_until is not None:
+        print(f"MiniMax quota window active until {blocked_until.isoformat()} - fallback serving")
+        providers = [p for p in (deepseek,) if p]
+    else:
+        providers = [p for p in (minimax,) if p]
     if not providers:
         raise RuntimeError("no usable provider (Minimax/deepseek) in ZCode provider config")
     return providers
@@ -133,7 +178,10 @@ def call_provider(provider: dict, prompt: str) -> dict:
                 raise ValueError("empty content (reasoning spent all tokens?)")
             return parse_items_json(content)
         except urllib.error.HTTPError as exc:
-            last_error = f"HTTP {exc.code}: {exc.read().decode(errors='replace')[:120]}"
+            body_text = exc.read().decode(errors="replace")
+            last_error = f"HTTP {exc.code}: {body_text[:120]}"
+            if provider["name"].startswith("MiniMax") and is_quota_error(exc.code, body_text):
+                mark_quota_exhausted()
         except (urllib.error.URLError, TimeoutError, ValueError) as exc:
             last_error = f"{type(exc).__name__}: {exc}"
         print(f"    {provider['name']} attempt {attempt}/{provider['retries']} failed: {last_error[:110]}")
