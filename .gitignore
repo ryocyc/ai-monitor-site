@@ -7,3 +7,6 @@ web-build/
 
 # Site output - generated during CI or by publish_to_github.py locally
 ai_monitor/site/
+
+# Patrol state (big snapshot)
+ai_monitor/state/prices_snapshot.json
