@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-11-16T01:09:21+00:00",
+  "chrome_processes_before": 39,
+  "chrome_processes_after": 39,
+  "elapsed_seconds": 19,
+  "results": [
+    {
+      "name": "OpenAI Newsroom",
+      "url": "https://openai.com/newsroom/",
+      "fetcher_status": null,
+      "stealthy_status": 200,
+      "engine": "StealthyFetcher",
+      "usable": true,
+      "evidence": {
+        "title": "",
+        "sample_links": []
+      }
+    },
+    {
+      "name": "Perplexity Blog",
+      "url": "https://www.perplexity.ai/hub/blog",
+      "fetcher_status": null,
+      "stealthy_status": 200,
+      "engine": "StealthyFetcher",
+      "usable": true,
+      "evidence": {
+        "title": "",
+        "sample_links": []
+      }
+    },
+    {
+      "name": "Cohere Blog",
+      "url": "https://cohere.com/blog",
+      "fetcher_status": 200,
+      "stealthy_status": null,
+      "engine": "Fetcher",
+      "usable": true,
+      "evidence": {
+        "title": "",
+        "sample_links": []
+      }
+    },
+    {
+      "name": "Microsoft AI Blog",
+      "url": "https://blogs.microsoft.com/ai/",
+      "fetcher_status": 200,
+      "stealthy_status": null,
+      "engine": "Fetcher",
+      "usable": true,
+      "evidence": {
+        "title": "",
+        "sample_links": [
+          {
+            "text": "Europe, Middle East and Africa",
+            "href": "https://news.microsoft.com/europe/"
+          },
+          {
+            "text": "Moving from Skype to Teams",
+            "href": "https://support.microsoft.com/en-us/office/moving-from-skype-to-microsoft-teams-free-3c0caa26-d9db-4179-bcb3-930ae2c87570?icid=DSM_All_Skype"
+          },
+          {
+            "text": "Microsoft 365 for business",
+            "href": "https://www.microsoft.com/en-us/microsoft-365/business"
+          }
+        ]
+      }
+    }
+  ]
+}
