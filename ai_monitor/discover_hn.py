@@ -62,6 +62,30 @@ EXCLUDE_PATTERNS = [
     "hiring", "who is hiring", "job", "salary",
 ]
 
+# Curation rule (user directive 2026-11-16): the feed carries UPDATES,
+# not forum chatter. An HN story qualifies only if it points at something
+# concrete: a Show HN project, a named model/product, a version number,
+# or measurable benchmark figures. Opinion threads / Ask HN are dropped
+# ("all AI code should be open source" had 1108 points and zero news value).
+CONCRETE_SIGNAL_RE = re.compile(
+    r"\bv?\d+(\.\d+)+\b"                    # version numbers (v0.5.23, GPT-6)
+    r"|\b(GPT|Claude|Gemini|Grok|DeepSeek|Kimi|Qwen|GLM|Llama|Mistral"
+    r"|Llama|ERNIE|Hunyuan|Ollama|llama\.cpp|vLLM|Whisper|SGLang"
+    r"|MiniMax|Copilot|Cursor|Sora|Hailuo)\b"
+    r"|\b\d+(\.\d+)?\s*(tok/s|tokens/s|tokens?/(sec|s)|TFLOPS|GB|TB|%\s+(faster|cheaper|slower))\b"
+    r"|\b(launch(es|ed)?|release[ds]?|ships|open-sourced|benchmark(ed|s)?)\b",
+    re.IGNORECASE,
+)
+
+
+def is_update_story(title: str) -> bool:
+    lowered = title.strip().lower()
+    if lowered.startswith("ask hn"):
+        return False
+    if lowered.startswith("show hn"):
+        return True
+    return bool(CONCRETE_SIGNAL_RE.search(title))
+
 HOT_MIN_POINTS = 150        # within window -> hot
 RISING_MIN_POINTS = 50      # within window -> rising
 RISING_MIN_PER_HOUR = 1.0   # and fast enough
@@ -213,6 +237,9 @@ def main() -> int:
             filtered += 1
             continue
         if not word_match(story["title"], AI_KEYWORDS):
+            filtered += 1
+            continue
+        if not is_update_story(story["title"]):
             filtered += 1
             continue
         tier = classify(story)
