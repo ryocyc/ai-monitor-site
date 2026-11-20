@@ -1,0 +1,540 @@
+[
+  {
+    "n": 1,
+    "slug": "fd-719a73c5da5f",
+    "source": "Vercel AI Blog",
+    "h1": "Vercel Daemons 新增 OTel 追蹤",
+    "chars": 724,
+    "page_fetched": 497,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 2,
+    "slug": "fd-9a43fed6987c",
+    "source": "NVIDIA AI Blog",
+    "h1": "AI Day Seoul聚首聚焦實體AI及智能代理",
+    "chars": 447,
+    "page_fetched": 2970,
+    "unknown_numbers": [
+      "5"
+    ],
+    "issues": [
+      "未證實數字 x1: 5"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 3,
+    "slug": "fd-b57fcdc61a2c",
+    "source": "llama.cpp Releases",
+    "h1": "llama.cpp 為 Jinja 補上四項缺失功能",
+    "chars": 444,
+    "page_fetched": 253,
+    "unknown_numbers": [
+      "32352",
+      "24.04",
+      "26.0",
+      "390",
+      "64"
+    ],
+    "issues": [
+      "未證實數字 x5: 32352, 24.04, 26.0, 390, 64"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 4,
+    "slug": "fd-c83c3153b641",
+    "source": "Mistral News",
+    "h1": "Mistral Studio新增受管理代理與部署功能",
+    "chars": 597,
+    "page_fetched": 9890,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 5,
+    "slug": "fd-cf3c3070a55b",
+    "source": "llama.cpp Releases",
+    "h1": "llama.cpp 更新 Qwen3-VL 設定",
+    "chars": 491,
+    "page_fetched": 253,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 6,
+    "slug": "gh-208cf56cbec0",
+    "source": "GitHub",
+    "h1": "Nüwa sapper-v2：可無人值守自主滲透測試",
+    "chars": 452,
+    "page_fetched": 6514,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 7,
+    "slug": "gh-2a6097a81847",
+    "source": "GitHub",
+    "h1": "gpucanvas：GPU 繪製無限畫布互動 DOM",
+    "chars": 446,
+    "page_fetched": 10207,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 8,
+    "slug": "gh-4a8c6b949250",
+    "source": "GitHub",
+    "h1": "STE80：把 AI 技術文本改得更易讀",
+    "chars": 683,
+    "page_fetched": 7038,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 9,
+    "slug": "gh-593f999f8400",
+    "source": "GitHub",
+    "h1": "Capri 把本機優先 AI 代理帶到 Windows",
+    "chars": 496,
+    "page_fetched": 0,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 10,
+    "slug": "gh-609f5454f49c",
+    "source": "GitHub",
+    "h1": "trnrt：Trainium 推論支援 OpenAI API",
+    "chars": 890,
+    "page_fetched": 3549,
+    "unknown_numbers": [
+      "1634",
+      "100",
+      "11"
+    ],
+    "issues": [
+      "未證實數字 x3: 1634, 100, 11"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 11,
+    "slug": "gh-778a31b372c6",
+    "source": "GitHub",
+    "h1": "Mika：Android 本機 AI 代理操作應用與網頁",
+    "chars": 596,
+    "page_fetched": 6131,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 12,
+    "slug": "gh-8bf9033285b8",
+    "source": "GitHub",
+    "h1": "AI Agent Lens 將蠟燭轉為代理可讀 JSON",
+    "chars": 438,
+    "page_fetched": 5947,
+    "unknown_numbers": [
+      "278"
+    ],
+    "issues": [
+      "未證實數字 x1: 278"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 13,
+    "slug": "gh-944dd6d24f46",
+    "source": "GitHub",
+    "h1": "Blender AI 助手整合 MCP 與多代理流程",
+    "chars": 448,
+    "page_fetched": 0,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 14,
+    "slug": "gh-959a4e69bc6c",
+    "source": "GitHub",
+    "h1": "Agentes Chat：AI 代理加入團隊聊天工作台",
+    "chars": 446,
+    "page_fetched": 8304,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 15,
+    "slug": "gh-a24e623842eb",
+    "source": "GitHub",
+    "h1": "Yogurt：本機 AI 會議筆記工具",
+    "chars": 447,
+    "page_fetched": 5128,
+    "unknown_numbers": [
+      "1851"
+    ],
+    "issues": [
+      "未證實數字 x1: 1851"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 16,
+    "slug": "gh-f74c9a85d87d",
+    "source": "GitHub",
+    "h1": "MACaQ：模型無關量化支援多媒體模型",
+    "chars": 456,
+    "page_fetched": 2504,
+    "unknown_numbers": [
+      "362",
+      "44"
+    ],
+    "issues": [
+      "未證實數字 x2: 362, 44"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 17,
+    "slug": "gh-fadd3383ed0a",
+    "source": "GitHub",
+    "h1": "AnyModelBot 用單 Key 接 70+ 模型",
+    "chars": 440,
+    "page_fetched": 5216,
+    "unknown_numbers": [
+      "4726",
+      "23"
+    ],
+    "issues": [
+      "未證實數字 x2: 4726, 23"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 18,
+    "slug": "pr-0856d26b5ef4",
+    "source": "LiteLLM Price Registry",
+    "h1": "Clef Flash 輸入價格下調約 10%",
+    "chars": 465,
+    "page_fetched": 343,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 19,
+    "slug": "pr-0c66d0df62f6",
+    "source": "LiteLLM Price Registry",
+    "h1": "Liquid D1 API 輸入價格減半",
+    "chars": 441,
+    "page_fetched": 343,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 20,
+    "slug": "pr-4da860de193d",
+    "source": "LiteLLM Price Registry",
+    "h1": "Mistral大型模型API輸入價升40%",
+    "chars": 440,
+    "page_fetched": 343,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 21,
+    "slug": "pr-5002c939e6db",
+    "source": "LiteLLM Price Registry",
+    "h1": "Mistral Large API 輸出價升四成",
+    "chars": 447,
+    "page_fetched": 343,
+    "unknown_numbers": [
+      "100"
+    ],
+    "issues": [
+      "未證實數字 x1: 100"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 22,
+    "slug": "pr-5420a67150b5",
+    "source": "LiteLLM Price Registry",
+    "h1": "Llama 3.1 8B API 降價 8%",
+    "chars": 447,
+    "page_fetched": 343,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 23,
+    "slug": "pr-5da368287a4e",
+    "source": "LiteLLM Price Registry",
+    "h1": "GPT-6-Rosalind輸出價下調33%",
+    "chars": 432,
+    "page_fetched": 343,
+    "unknown_numbers": [
+      "100"
+    ],
+    "issues": [
+      "未證實數字 x1: 100"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 24,
+    "slug": "pr-640d7dbe7176",
+    "source": "LiteLLM Price Registry",
+    "h1": "Kimi API 輸入價下調 33%",
+    "chars": 443,
+    "page_fetched": 343,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 25,
+    "slug": "pr-6572560dcd66",
+    "source": "LiteLLM Price Registry",
+    "h1": "LiteLLM：GPT-5 Nano 輸出價降 27%",
+    "chars": 450,
+    "page_fetched": 343,
+    "unknown_numbers": [
+      "100"
+    ],
+    "issues": [
+      "未證實數字 x1: 100"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 26,
+    "slug": "pr-7750743a5568",
+    "source": "LiteLLM Price Registry",
+    "h1": "Qwen4-Max輸出費下調26.3%",
+    "chars": 414,
+    "page_fetched": 343,
+    "unknown_numbers": [
+      "100"
+    ],
+    "issues": [
+      "未證實數字 x1: 100"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 27,
+    "slug": "pr-79a0f507731e",
+    "source": "LiteLLM Price Registry",
+    "h1": "LiteLLM：GPT-5 Nano 輸入價下調",
+    "chars": 440,
+    "page_fetched": 343,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 28,
+    "slug": "pr-aa5b56e0a590",
+    "source": "LiteLLM Price Registry",
+    "h1": "OpenRouter等三API輸入價下調兩成",
+    "chars": 438,
+    "page_fetched": 343,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 29,
+    "slug": "pr-cfbefbc47352",
+    "source": "LiteLLM Price Registry",
+    "h1": "GPT-5 Mini API 輸入價下調 17%",
+    "chars": 549,
+    "page_fetched": 343,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 30,
+    "slug": "pr-d374a92acfb3",
+    "source": "LiteLLM Price Registry",
+    "h1": "Snowflake GPT-5 mini輸出價升67%",
+    "chars": 444,
+    "page_fetched": 343,
+    "unknown_numbers": [
+      "100"
+    ],
+    "issues": [
+      "未證實數字 x1: 100"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 31,
+    "slug": "pr-dd3bfe14d56d",
+    "source": "LiteLLM Price Registry",
+    "h1": "Fireworks AI Kimi輸出價降33.3%",
+    "chars": 438,
+    "page_fetched": 343,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 32,
+    "slug": "pr-f6551479cbc4",
+    "source": "LiteLLM Price Registry",
+    "h1": "Qwen4-Max API 輸入價下調26%",
+    "chars": 501,
+    "page_fetched": 343,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 33,
+    "slug": "pr-facec13205db",
+    "source": "LiteLLM Price Registry",
+    "h1": "Snowflake Llama 3.1 8B輸出價降8%",
+    "chars": 572,
+    "page_fetched": 343,
+    "unknown_numbers": [
+      "100"
+    ],
+    "issues": [
+      "未證實數字 x1: 100"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 34,
+    "slug": "pr-fd64cf125b01",
+    "source": "LiteLLM Price Registry",
+    "h1": "gpt-6-rosalind 輸入價格下調 33.3%",
+    "chars": 446,
+    "page_fetched": 343,
+    "unknown_numbers": [
+      "100"
+    ],
+    "issues": [
+      "未證實數字 x1: 100"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 35,
+    "slug": "st-401752b166e3",
+    "source": "Mistral Status",
+    "h1": "Mistral 服務中斷已解除，全部系統回復正常",
+    "chars": 414,
+    "page_fetched": 246,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 36,
+    "slug": "st-4b7bc44c650e",
+    "source": "Claude Status",
+    "h1": "Claude 官方狀態頁顯示輕微服務中斷",
+    "chars": 445,
+    "page_fetched": 212,
+    "unknown_numbers": [
+      "39.808",
+      "16"
+    ],
+    "issues": [
+      "未證實數字 x2: 39.808, 16"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 37,
+    "slug": "st-57b3ecc4a964",
+    "source": "Mistral Status",
+    "h1": "Mistral 輕微服務中斷 官方快照顯示已正常",
+    "chars": 435,
+    "page_fetched": 246,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 38,
+    "slug": "st-6c1d6a7dee13",
+    "source": "Claude Status",
+    "h1": "Claude 部分服務降級 官方列輕微事故",
+    "chars": 440,
+    "page_fetched": 212,
+    "unknown_numbers": [
+      "22.697",
+      "16",
+      "49"
+    ],
+    "issues": [
+      "未證實數字 x3: 22.697, 16, 49"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 39,
+    "slug": "st-6f1190551db3",
+    "source": "DeepSeek Status",
+    "h1": "DeepSeek 部分服務降級 現時顯示運作正常",
+    "chars": 440,
+    "page_fetched": 0,
+    "unknown_numbers": [
+      "100.00",
+      "99.56",
+      "99.74",
+      "99.92",
+      "99.82",
+      "2026",
+      "4.1",
+      "3",
+      "4"
+    ],
+    "issues": [
+      "未證實數字 x9: 100.00, 99.56, 99.74, 99.92, 99.82, 2026"
+    ],
+    "verdict": "SUSPECT"
+  },
+  {
+    "n": 40,
+    "slug": "st-b82da1d02c85",
+    "source": "Copilot Status",
+    "h1": "GitHub Copilot 模型供應商效能降級",
+    "chars": 416,
+    "page_fetched": 4197,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  },
+  {
+    "n": 41,
+    "slug": "st-c0f0debbf305",
+    "source": "Claude Status",
+    "h1": "Claude 服務完全恢復 官方稱系統全正常",
+    "chars": 477,
+    "page_fetched": 212,
+    "unknown_numbers": [],
+    "issues": [],
+    "verdict": "PASS"
+  }
+]
