@@ -264,7 +264,7 @@ def classify(repo: dict, velocity_per_day: float) -> str | None:
     return None
 
 
-def build_items(candidates: list[dict]) -> list[dict]:
+def build_items(candidates: list[dict], first_seen: dict[str, str]) -> list[dict]:
     items = []
     for c in candidates[:MAX_ITEMS]:
         repo = c["repo"]
@@ -282,7 +282,11 @@ def build_items(candidates: list[dict]) -> list[dict]:
         headline = first_sentence[:110] if first_sentence else f"{repo}: trending AI tool"
         items.append({
             "id": "gh-" + hashlib.sha1(repo.encode("utf-8")).hexdigest()[:12],
-            "timestamp": utc_now(),
+            # News semantics: published ONCE at first discovery. Later
+            # patrols refresh stars in the summary but must NOT bump the
+            # timestamp, or a hot repo would squat the top of the feed
+            # (and 今日重點) for days as if it were fresh news.
+            "timestamp": first_seen.get(repo, utc_now()),
             "category": "trending",
             "source_name": "GitHub",
             "source_url": f"https://github.com/{repo}",
@@ -482,10 +486,13 @@ def main() -> int:
 
     review = build_review_list(candidates)
 
-    items = build_items(candidates)
+    first_seen = {full: (prev_repos.get(full) or {}).get("first_seen") or utc_now()
+                  for full in raw}
+    items = build_items(candidates, first_seen)
 
     # ---- update velocity snapshot ----
-    new_repos = {full: {"stars": r.get("stargazers_count", 0), "updated_at": utc_now()}
+    new_repos = {full: {"stars": r.get("stargazers_count", 0), "updated_at": utc_now(),
+                        "first_seen": first_seen.get(full, utc_now())}
                  for full, r in raw.items()}
     save_stars_state({"updated_at": utc_now(), "repos": {**prev_repos, **new_repos}})
 
