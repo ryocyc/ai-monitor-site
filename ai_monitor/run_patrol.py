@@ -49,6 +49,7 @@ STEPS = [
     ("build",     [sys.executable, str(BASE_DIR / "build_feed.py")],        60),
     ("enrich",    [sys.executable, str(BASE_DIR / "build" / "enrich.py"),
                  "--max-calls", "20"],                                    1800),
+    ("subscriptions", [sys.executable, str(BASE_DIR / "collect" / "collect_subscriptions.py")], 240),
     ("articles",  [sys.executable, str(BASE_DIR / "build" / "generate_articles.py"),
                  "--limit", "4"],                                         1500),
 ]

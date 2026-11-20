@@ -63,8 +63,57 @@ def fetch_visible_text() -> str:
 
 RANK_LINE_RE = re.compile(r"^(\d{1,2})$")
 PCT_RE = re.compile(r"^(\d{1,3}(?:\.\d{1,2})?)%$")
+HEADER_RE = re.compile(r"^(Best [A-Za-z ]+|Top \d+ [A-Za-z ]+)$")
+BOARD_WHITELIST = ("best overall", "best coding", "best webdev", "best aligned")
 
 
+def extract_boards(text: str) -> dict[str, list[dict]]:
+    """Parse every 'Best X' board on the page. Layout (verified 11/16):
+    header line -> rank
+[org]
+model
+NN.NN% runs. Sessions sometimes
+    render different boards or none - whatever parses cleanly wins."""
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    boards: dict[str, list[dict]] = {}
+    header = ""
+    i = 0
+    while i < len(lines):
+        if HEADER_RE.match(lines[i]):
+            header = lines[i]
+            i += 1
+            continue
+        if RANK_LINE_RE.match(lines[i]) and lines[i] == "1":
+            run: list[dict] = []
+            expected = 1
+            j = i + 1
+            while j < len(lines) and expected <= MAX_RANKS:
+                name = None
+                pct = None
+                for k in range(j, min(j + 4, len(lines))):
+                    if name is None and (k == j or not RANK_LINE_RE.match(lines[k]))                             and any(f in lines[k] for f in MODEL_FAMILIES)                             and not PCT_RE.match(lines[k]):
+                        name = lines[k]
+                    pct_match = PCT_RE.match(lines[k])
+                    if pct_match and name is not None:
+                        pct = float(pct_match.group(1))
+                        j = k + 1
+                        break
+                if name is None or pct is None:
+                    break
+                run.append({"name": name[:80], "score": pct})
+                expected += 1
+                while j < len(lines) and not RANK_LINE_RE.match(lines[j]):
+                    j += 1
+                if j < len(lines) and int(RANK_LINE_RE.match(lines[j]).group(1)) != expected:
+                    break
+            if len(run) >= 5 and header:
+                key = header.lower()
+                if any(w in key for w in BOARD_WHITELIST) and header not in boards:
+                    boards[header] = run
+            i += 1
+        else:
+            i += 1
+    return boards
 def extract_top(text: str) -> list[dict]:
     """Parse the 'Top 10 Agents / Best Overall' table. Live-verified layout
     (2026-11-16): rank\n[org]\nmodel name\nNN.NN%  - consecutive rank lines."""
@@ -120,15 +169,16 @@ def load_state() -> dict:
     return {}
 
 
-def make_item(event: str, detail: str, prev: dict | None, curr: dict) -> dict:
+def make_item(event: str, board: str, prev: dict | None, curr: dict) -> dict:
+    board_txt = f"（{board}）" if board and board != "Best Overall" else ""
     if event == "new_no1":
-        headline = f"LMArena: {curr['name']} takes the #1 spot (Elo {curr['score']})"
-        summary = (f"The community leaderboard has a new leader: {curr['name']} at "
-                   f"{curr['score']} Elo, overtaking {prev['name']} ({prev['score']}).")
+        headline = f"LMArena{board_txt}: {curr['name']} 登頂第 1（勝率 {curr['score']}%）"
+        summary = (f"社區排行榜 {board or 'Best Overall'} 有新霸主：{curr['name']} 以 "
+                   f"{curr['score']}% 勝率超越 {prev['name']}（{prev['score']}%）。")
     else:  # climbed
-        headline = f"LMArena: {curr['name']} now #{curr['rank']} (Elo {curr['score']})"
-        summary = (f"{curr['name']} moved to rank {curr['rank']} on the community "
-                   f"leaderboard (Elo {curr['score']}, was {prev['score'] if prev else 'n/a'}).")
+        headline = f"LMArena{board_txt}: {curr['name']} 升至第 {curr['rank']} 位（{curr['score']}%）"
+        summary = (f"{curr['name']} 喺 {board or 'Best Overall'} 排行榜升到第 {curr['rank']} 位"
+                   f"（勝率 {curr['score']}%，之前 {prev['score'] if prev else 'n/a'}%）。")
     return {
         "id": "rk-" + hashlib.sha1(f"{event}|{curr['name']}|{curr['score']}".encode()).hexdigest()[:12],
         "timestamp": utc_now(),
@@ -141,7 +191,7 @@ def make_item(event: str, detail: str, prev: dict | None, curr: dict) -> dict:
     }
 
 
-def diff(previous_top: list[dict], current_top: list[dict]) -> list[dict]:
+def diff(board: str, previous_top: list[dict], current_top: list[dict]) -> list[dict]:
     items: list[dict] = []
     if not previous_top or not current_top:
         return items
@@ -149,14 +199,14 @@ def diff(previous_top: list[dict], current_top: list[dict]) -> list[dict]:
     prev_names = {r["name"]: r for r in previous_top}
 
     if curr_no1["name"] != prev_no1["name"]:
-        items.append(make_item("new_no1", "", prev_no1, {**curr_no1, "rank": 1}))
+        items.append(make_item("new_no1", board, prev_no1, {**curr_no1, "rank": 1}))
 
     for rank, row in enumerate(current_top, start=1):
         before = prev_names.get(row["name"])
         if before is None:
-            items.append(make_item("climbed", "", before, {**row, "rank": rank}))
+            items.append(make_item("climbed", board, before, {**row, "rank": rank}))
         elif abs(row["score"] - before["score"]) >= SCORE_DELTA_THRESHOLD and rank > 1:
-            items.append(make_item("climbed", "", before, {**row, "rank": rank}))
+            items.append(make_item("climbed", board, before, {**row, "rank": rank}))
     return items[:MAX_RANKS]
 
 
@@ -174,11 +224,12 @@ def main() -> int:
                        ensure_ascii=False, indent=2), encoding="utf-8")
         return 0  # scraping miss is not a patrol failure
 
-    current_top = extract_top(text)
+    boards = extract_boards(text)
     state = load_state()
-    previous_top = state.get("top", [])
+    prev_boards: dict[str, list[dict]] = state.get("boards") or (
+        {"Best Overall": state["top"]} if state.get("top") else {})
 
-    if not current_top:
+    if not boards:
         print(f"[warn] extraction empty (page structure changed? see {DUMP_FILE.name}); "
               f"state untouched.")
         (DATA_DIR / "rankings_items.json").write_text(
@@ -186,24 +237,29 @@ def main() -> int:
                        ensure_ascii=False, indent=2), encoding="utf-8")
         return 0
 
-    if not previous_top:
-        items: list[dict] = []
-        print(f"SEED: recorded top {len(current_top)}; no items emitted.")
-    else:
-        items = diff(previous_top, current_top)
-        for item in items:
+    items: list[dict] = []
+    for board, rows in boards.items():
+        previous_top = prev_boards.get(board, [])
+        if not previous_top:
+            print(f"  SEED   {board}: leader {rows[0]['name']} {rows[0]['score']}%")
+            continue
+        board_items = diff(board, previous_top, rows)
+        items.extend(board_items)
+        for item in board_items:
             print(f"  {item['headline_en']}")
 
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     STATE_FILE.write_text(json.dumps(
-        {"checked_at": utc_now(), "top": current_top}, ensure_ascii=False, indent=2),
+        {"checked_at": utc_now(), "boards": boards}, ensure_ascii=False, indent=2),
         encoding="utf-8")
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "rankings_items.json").write_text(
         json.dumps({"generated_at": utc_now(), "item_count": len(items), "items": items},
                    ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Top-{'10'} snapshot: {current_top[0]['name'] if current_top else '?'} "
+    first_board = next(iter(boards.values()), [])
+    print(f"boards parsed: {list(boards)} | leader: "
+          f"{first_board[0]['name'] if first_board else '?'} "
           f"| changes: {len(items)} -> data/rankings_items.json")
     return 0
 

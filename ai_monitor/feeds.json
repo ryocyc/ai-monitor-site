@@ -1,31 +1,197 @@
 {
   "_comment": "Structured feed sources for collect_feeds.py. All URLs verified 2026-11-16 via probe_rss.py / legacy sources.json. releases = GitHub Atom (version releases, pillar 1+5); news = company blogs RSS/Atom (pillar 1).",
   "releases": [
-    {"id": "gh_ollama",       "name": "Ollama Releases",      "url": "https://github.com/ollama/ollama/releases.atom"},
-    {"id": "gh_llamacpp",     "name": "llama.cpp Releases",   "url": "https://github.com/ggml-org/llama.cpp/releases.atom"},
-    {"id": "gh_vllm",         "name": "vLLM Releases",        "url": "https://github.com/vllm-project/vllm/releases.atom"},
-    {"id": "gh_openwebui",    "name": "Open WebUI Releases",  "url": "https://github.com/open-webui/open-webui/releases.atom"},
-    {"id": "gh_litellm",      "name": "LiteLLM Releases",     "url": "https://github.com/BerriAI/litellm/releases.atom"},
-    {"id": "gh_langgraph",    "name": "LangGraph Releases",   "url": "https://github.com/langchain-ai/langgraph/releases.atom"},
-    {"id": "gh_openhands",    "name": "OpenHands Releases",   "url": "https://github.com/All-Hands-AI/OpenHands/releases.atom"},
-    {"id": "gh_n8n",          "name": "n8n Releases",         "url": "https://github.com/n8n-io/n8n/releases.atom"},
-    {"id": "gh_dify",         "name": "Dify Releases",        "url": "https://github.com/langgenius/dify/releases.atom"},
-    {"id": "gh_aider",        "name": "Aider Releases",       "url": "https://github.com/Aider-AI/aider/releases.atom"},
-    {"id": "gh_continue",     "name": "Continue Releases",    "url": "https://github.com/continuedev/continue/releases.atom"},
-    {"id": "gh_sglang",       "name": "SGLang Releases",      "url": "https://github.com/sgl-project/sglang/releases.atom"},
-    {"id": "gh_codex",        "name": "Codex Releases",       "url": "https://github.com/openai/codex/releases.atom"},
-    {"id": "gh_qwen",         "name": "Qwen Releases",        "url": "https://github.com/QwenLM/Qwen/releases.atom"}
+    {
+      "id": "gh_ollama",
+      "name": "Ollama Releases",
+      "url": "https://github.com/ollama/ollama/releases.atom"
+    },
+    {
+      "id": "gh_llamacpp",
+      "name": "llama.cpp Releases",
+      "url": "https://github.com/ggml-org/llama.cpp/releases.atom"
+    },
+    {
+      "id": "gh_vllm",
+      "name": "vLLM Releases",
+      "url": "https://github.com/vllm-project/vllm/releases.atom"
+    },
+    {
+      "id": "gh_openwebui",
+      "name": "Open WebUI Releases",
+      "url": "https://github.com/open-webui/open-webui/releases.atom"
+    },
+    {
+      "id": "gh_litellm",
+      "name": "LiteLLM Releases",
+      "url": "https://github.com/BerriAI/litellm/releases.atom"
+    },
+    {
+      "id": "gh_langgraph",
+      "name": "LangGraph Releases",
+      "url": "https://github.com/langchain-ai/langgraph/releases.atom"
+    },
+    {
+      "id": "gh_openhands",
+      "name": "OpenHands Releases",
+      "url": "https://github.com/All-Hands-AI/OpenHands/releases.atom"
+    },
+    {
+      "id": "gh_n8n",
+      "name": "n8n Releases",
+      "url": "https://github.com/n8n-io/n8n/releases.atom"
+    },
+    {
+      "id": "gh_dify",
+      "name": "Dify Releases",
+      "url": "https://github.com/langgenius/dify/releases.atom"
+    },
+    {
+      "id": "gh_aider",
+      "name": "Aider Releases",
+      "url": "https://github.com/Aider-AI/aider/releases.atom"
+    },
+    {
+      "id": "gh_continue",
+      "name": "Continue Releases",
+      "url": "https://github.com/continuedev/continue/releases.atom"
+    },
+    {
+      "id": "gh_sglang",
+      "name": "SGLang Releases",
+      "url": "https://github.com/sgl-project/sglang/releases.atom"
+    },
+    {
+      "id": "gh_codex",
+      "name": "Codex Releases",
+      "url": "https://github.com/openai/codex/releases.atom"
+    },
+    {
+      "id": "gh_qwen",
+      "name": "Qwen Releases",
+      "url": "https://github.com/QwenLM/Qwen/releases.atom"
+    },
+    {
+      "id": "gh_comfyui",
+      "name": "ComfyUI Releases",
+      "url": "https://github.com/comfyanonymous/ComfyUI/releases.atom"
+    },
+    {
+      "id": "gh_lobechat",
+      "name": "LobeChat Releases",
+      "url": "https://github.com/lobehub/lobe-chat/releases.atom"
+    },
+    {
+      "id": "gh_nextchat",
+      "name": "NextChat Releases",
+      "url": "https://github.com/ChatGPTNextWeb/NextChat/releases.atom"
+    },
+    {
+      "id": "gh_openmanus",
+      "name": "OpenManus Releases",
+      "url": "https://github.com/FoundationAgents/OpenManus/releases.atom"
+    },
+    {
+      "id": "gh_browseruse",
+      "name": "Browser-Use Releases",
+      "url": "https://github.com/browser-use/browser-use/releases.atom"
+    },
+    {
+      "id": "gh_cline",
+      "name": "Cline Releases",
+      "url": "https://github.com/cline/cline/releases.atom"
+    },
+    {
+      "id": "gh_flowise",
+      "name": "Flowise Releases",
+      "url": "https://github.com/FlowiseAI/Flowise/releases.atom"
+    },
+    {
+      "id": "gh_librechat",
+      "name": "LibreChat Releases",
+      "url": "https://github.com/danny-avila/LibreChat/releases.atom"
+    },
+    {
+      "id": "gh_langchain",
+      "name": "LangChain Releases",
+      "url": "https://github.com/langchain-ai/langchain/releases.atom"
+    },
+    {
+      "id": "gh_transformers",
+      "name": "Transformers Releases",
+      "url": "https://github.com/huggingface/transformers/releases.atom"
+    },
+    {
+      "id": "gh_autogpt",
+      "name": "AutoGPT Releases",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases.atom"
+    },
+    {
+      "id": "gh_anythingllm",
+      "name": "AnythingLLM Releases",
+      "url": "https://github.com/Mintplex-Labs/anything-llm/releases.atom"
+    }
   ],
   "news": [
-    {"id": "news_nvidia",     "name": "NVIDIA AI Blog",       "url": "https://blogs.nvidia.com/feed/",                      "category": "blog"},
-    {"id": "news_mistral",    "name": "Mistral News",         "url": "https://mistral.ai/news/rss",                         "category": "news"},
-    {"id": "news_huggingface","name": "Hugging Face Blog",    "url": "https://huggingface.co/blog/feed.xml",                "category": "blog"},
-    {"id": "news_stability",  "name": "Stability AI News",    "url": "https://stability.ai/news-updates?format=rss",        "category": "news"},
-    {"id": "news_together",   "name": "Together AI Blog",     "url": "https://www.together.ai/blog/rss.xml",                "category": "blog"},
-    {"id": "news_openrouter", "name": "OpenRouter Changelog", "url": "https://openrouter.ai/docs/changelog/rss.xml",        "category": "changelog"},
-    {"id": "news_vercel",     "name": "Vercel AI Blog",       "url": "https://vercel.com/blog/feed.xml",                    "category": "blog"},
-    {"id": "news_cloudflare", "name": "Cloudflare AI Blog",   "url": "https://blog.cloudflare.com/tag/ai/rss",              "category": "blog"},
-    {"id": "news_aws_ml",     "name": "AWS ML Blog",          "url": "https://aws.amazon.com/blogs/machine-learning/feed/", "category": "blog"},
-    {"id": "news_microsoft",  "name": "Microsoft AI Blog",    "url": "https://news.microsoft.com/source/feed/",             "category": "blog"}
+    {
+      "id": "news_nvidia",
+      "name": "NVIDIA AI Blog",
+      "url": "https://blogs.nvidia.com/feed/",
+      "category": "blog"
+    },
+    {
+      "id": "news_mistral",
+      "name": "Mistral News",
+      "url": "https://mistral.ai/news/rss",
+      "category": "news"
+    },
+    {
+      "id": "news_huggingface",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "category": "blog"
+    },
+    {
+      "id": "news_stability",
+      "name": "Stability AI News",
+      "url": "https://stability.ai/news-updates?format=rss",
+      "category": "news"
+    },
+    {
+      "id": "news_together",
+      "name": "Together AI Blog",
+      "url": "https://www.together.ai/blog/rss.xml",
+      "category": "blog"
+    },
+    {
+      "id": "news_openrouter",
+      "name": "OpenRouter Changelog",
+      "url": "https://openrouter.ai/docs/changelog/rss.xml",
+      "category": "changelog"
+    },
+    {
+      "id": "news_vercel",
+      "name": "Vercel AI Blog",
+      "url": "https://vercel.com/blog/feed.xml",
+      "category": "blog"
+    },
+    {
+      "id": "news_cloudflare",
+      "name": "Cloudflare AI Blog",
+      "url": "https://blog.cloudflare.com/tag/ai/rss",
+      "category": "blog"
+    },
+    {
+      "id": "news_aws_ml",
+      "name": "AWS ML Blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "category": "blog"
+    },
+    {
+      "id": "news_microsoft",
+      "name": "Microsoft AI Blog",
+      "url": "https://news.microsoft.com/source/feed/",
+      "category": "blog"
+    }
   ]
 }

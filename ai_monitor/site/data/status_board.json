@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-11-16T11:30:10+00:00",
+  "generated_at": "2026-11-20T00:46:42+00:00",
   "providers": {
     "ChatGPT": {
       "indicator": "none",
       "description": "All Systems Operational",
-      "updated_at": "2026-11-16T10:45:13+00:00"
+      "updated_at": "2026-11-19T23:58:46+00:00"
     },
     "Claude": {
-      "indicator": "minor",
-      "description": "Minor Service Outage",
-      "updated_at": "2026-11-16T10:45:14+00:00"
+      "indicator": "none",
+      "description": "All Systems Operational",
+      "updated_at": "2026-11-19T23:58:47+00:00"
     },
     "Gemini": {
       "indicator": "none",
       "description": "All Systems Operational",
-      "updated_at": "2026-11-16T10:45:15+00:00"
+      "updated_at": "2026-11-19T23:58:48+00:00"
     },
     "Copilot": {
       "indicator": "none",
       "description": "All Systems Operational",
-      "updated_at": "2026-11-16T10:45:17+00:00"
+      "updated_at": "2026-11-19T23:58:49+00:00"
     },
     "Perplexity": {
       "indicator": "none",
       "description": "All Systems Operational",
-      "updated_at": "2026-11-16T10:45:18+00:00"
+      "updated_at": "2026-11-19T23:58:50+00:00"
     },
     "DeepSeek": {
       "indicator": "minor",
       "description": "Degraded Performance (some components)",
-      "updated_at": "2026-11-16T10:45:19+00:00"
+      "updated_at": "2026-11-19T23:58:51+00:00"
     },
     "Mistral": {
-      "indicator": "none",
-      "description": "All Systems Operational",
-      "updated_at": "2026-11-16T10:45:20+00:00"
+      "indicator": "minor",
+      "description": "Minor service outage",
+      "updated_at": "2026-11-19T23:58:53+00:00"
     },
     "Groq": {
       "indicator": "none",
       "description": "All Systems Operational",
-      "updated_at": "2026-11-16T10:45:21+00:00"
+      "updated_at": "2026-11-19T23:58:54+00:00"
     },
     "Cohere": {
       "indicator": "none",
       "description": "All Systems Operational",
-      "updated_at": "2026-11-16T10:45:22+00:00"
+      "updated_at": "2026-11-19T23:58:55+00:00"
     }
   }
 }

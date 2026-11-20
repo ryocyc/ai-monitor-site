@@ -1,5 +1,156 @@
 {
-  "generated_at": "2026-11-16T10:33:25+00:00",
-  "item_count": 0,
-  "items": []
+  "generated_at": "2026-11-19T23:58:56+00:00",
+  "item_count": 10,
+  "items": [
+    {
+      "id": "pr-1720f8167c11",
+      "timestamp": "2026-11-19T23:58:56+00:00",
+      "category": "pricing",
+      "source_name": "LiteLLM Price Registry",
+      "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast API input price cut 50% ($2.40 -> $1.20 per 1M input tokens)",
+      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast's input price moved from $2.40 to $1.20 per 1M tokens (-50.0%). Worth checking before your next API bill.",
+      "metrics": {
+        "pct": -50.0,
+        "old_per_m": 2.4,
+        "new_per_m": 1.2
+      }
+    },
+    {
+      "id": "pr-9b84b70b0f36",
+      "timestamp": "2026-11-19T23:58:56+00:00",
+      "category": "pricing",
+      "source_name": "LiteLLM Price Registry",
+      "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast API output price cut 50% ($9.60 -> $4.80 per 1M output tokens)",
+      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast's output price moved from $9.60 to $4.80 per 1M tokens (-50.0%). Worth checking before your next API bill.",
+      "metrics": {
+        "pct": -50.0,
+        "old_per_m": 9.6,
+        "new_per_m": 4.8
+      }
+    },
+    {
+      "id": "pr-69a40764409b",
+      "timestamp": "2026-11-19T23:58:56+00:00",
+      "category": "pricing",
+      "source_name": "LiteLLM Price Registry",
+      "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "headline_en": "fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash API input price cut 33% ($0.10 -> $0.07 per 1M input tokens)",
+      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash's input price moved from $0.10 to $0.07 per 1M tokens (-33.3%). Worth checking before your next API bill.",
+      "metrics": {
+        "pct": -33.3,
+        "old_per_m": 0.105,
+        "new_per_m": 0.07
+      }
+    },
+    {
+      "id": "pr-ace89441f4c4",
+      "timestamp": "2026-11-19T23:58:56+00:00",
+      "category": "pricing",
+      "source_name": "LiteLLM Price Registry",
+      "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "headline_en": "fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash API output price cut 33% ($0.21 -> $0.14 per 1M output tokens)",
+      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash's output price moved from $0.21 to $0.14 per 1M tokens (-33.3%). Worth checking before your next API bill.",
+      "metrics": {
+        "pct": -33.3,
+        "old_per_m": 0.21,
+        "new_per_m": 0.14
+      }
+    },
+    {
+      "id": "pr-f9d349e2104f",
+      "timestamp": "2026-11-19T23:58:56+00:00",
+      "category": "pricing",
+      "source_name": "LiteLLM Price Registry",
+      "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "headline_en": "fireworks_ai/accounts/fireworks/routers/glm-5p3-spot API input price cut 29% ($0.98 -> $0.70 per 1M input tokens)",
+      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/glm-5p3-spot's input price moved from $0.98 to $0.70 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "metrics": {
+        "pct": -28.6,
+        "old_per_m": 0.98,
+        "new_per_m": 0.7
+      }
+    },
+    {
+      "id": "pr-6ea906393e55",
+      "timestamp": "2026-11-19T23:58:56+00:00",
+      "category": "pricing",
+      "source_name": "LiteLLM Price Registry",
+      "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "headline_en": "fireworks_ai/accounts/fireworks/routers/glm-5p3-spot API output price cut 29% ($3.08 -> $2.20 per 1M output tokens)",
+      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/glm-5p3-spot's output price moved from $3.08 to $2.20 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "metrics": {
+        "pct": -28.6,
+        "old_per_m": 3.08,
+        "new_per_m": 2.2
+      }
+    },
+    {
+      "id": "pr-6024750d92d7",
+      "timestamp": "2026-11-19T23:58:56+00:00",
+      "category": "pricing",
+      "source_name": "LiteLLM Price Registry",
+      "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot API input price cut 29% ($0.21 -> $0.15 per 1M input tokens)",
+      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot's input price moved from $0.21 to $0.15 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "metrics": {
+        "pct": -28.6,
+        "old_per_m": 0.21,
+        "new_per_m": 0.15
+      }
+    },
+    {
+      "id": "pr-4cdb3eacb8b4",
+      "timestamp": "2026-11-19T23:58:56+00:00",
+      "category": "pricing",
+      "source_name": "LiteLLM Price Registry",
+      "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot API output price cut 29% ($0.84 -> $0.60 per 1M output tokens)",
+      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot's output price moved from $0.84 to $0.60 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "metrics": {
+        "pct": -28.6,
+        "old_per_m": 0.84,
+        "new_per_m": 0.6
+      }
+    },
+    {
+      "id": "pr-e13ef2121a4a",
+      "timestamp": "2026-11-19T23:58:56+00:00",
+      "category": "pricing",
+      "source_name": "LiteLLM Price Registry",
+      "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot API input price cut 29% ($0.21 -> $0.15 per 1M input tokens)",
+      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot's input price moved from $0.21 to $0.15 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "metrics": {
+        "pct": -28.6,
+        "old_per_m": 0.21,
+        "new_per_m": 0.15
+      }
+    },
+    {
+      "id": "pr-d19ff1a73c18",
+      "timestamp": "2026-11-19T23:58:56+00:00",
+      "category": "pricing",
+      "source_name": "LiteLLM Price Registry",
+      "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot API output price cut 29% ($0.84 -> $0.60 per 1M output tokens)",
+      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot's output price moved from $0.84 to $0.60 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "metrics": {
+        "pct": -28.6,
+        "old_per_m": 0.84,
+        "new_per_m": 0.6
+      }
+    }
+  ]
 }

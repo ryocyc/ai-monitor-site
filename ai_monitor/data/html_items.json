@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-11-20T00:44:25+00:00",
+  "item_count": 15,
+  "items": [
+    {
+      "id": "ht-b15c828dbddd",
+      "timestamp": "2026-11-20T00:44:01+00:00",
+      "category": "news",
+      "source_name": "DeepSeek",
+      "source_url": "https://www.deepseek.com/news/deepseek-v4-1-flash/",
+      "target_url": "https://www.deepseek.com/news/deepseek-v4-1-flash/",
+      "headline_en": "DeepSeek V4.1 DeepSeek V4 DeepSeek V3.2 DeepSeek V3.1 DeepSeek R1 DeepSeek V3 更多",
+      "summary_en": "New post on DeepSeek: DeepSeek V4.1 DeepSeek V4 DeepSeek V3.2 DeepSeek V3.1 DeepSeek R1 DeepSeek V3 更多"
+    },
+    {
+      "id": "ht-f7b6ee5c18e0",
+      "timestamp": "2026-11-20T00:44:02+00:00",
+      "category": "news",
+      "source_name": "MiniMax Blog",
+      "source_url": "https://www.minimax.io/blog/minimax-h3",
+      "target_url": "https://www.minimax.io/blog/minimax-h3",
+      "headline_en": "Video & Image MiniMax H3 MiniMax H3 Image",
+      "summary_en": "New post on MiniMax Blog: Video & Image MiniMax H3 MiniMax H3 Image"
+    },
+    {
+      "id": "ht-46002919294d",
+      "timestamp": "2026-11-20T00:44:04+00:00",
+      "category": "news",
+      "source_name": "Zhipu News",
+      "source_url": "https://www.zhipuai.cn/zh/zsrc",
+      "target_url": "https://www.zhipuai.cn/zh/zsrc",
+      "headline_en": "中国大型独立大模型厂商 国产原创 GLM 大模型架构 注册立享 2000万 tokens 免费试用 发现安全问题？ 向 ZSRC 报告漏洞 →",
+      "summary_en": "New post on Zhipu News: 中国大型独立大模型厂商 国产原创 GLM 大模型架构 注册立享 2000万 tokens 免费试用 发现安全问题？ 向 ZSRC 报告漏洞 →"
+    },
+    {
+      "id": "ht-a997ad03a050",
+      "timestamp": "2026-11-20T00:44:07+00:00",
+      "category": "news",
+      "source_name": "StepFun News",
+      "source_url": "https://www.stepfun.com/",
+      "target_url": "https://www.stepfun.com/",
+      "headline_en": "模型 API 开放平台 AI Studio 关于我们",
+      "summary_en": "New post on StepFun News: 模型 API 开放平台 AI Studio 关于我们"
+    },
+    {
+      "id": "ht-159025b28c96",
+      "timestamp": "2026-11-20T00:44:08+00:00",
+      "category": "news",
+      "source_name": "ByteDance Seed",
+      "source_url": "https://team.doubao.com/en/?view_from=homepage_tab",
+      "target_url": "https://team.doubao.com/en/?view_from=homepage_tab",
+      "headline_en": "Home Models Blog & Publication Seed Edge Join Us",
+      "summary_en": "New post on ByteDance Seed: Home Models Blog & Publication Seed Edge Join Us"
+    },
+    {
+      "id": "ht-d7b12a2a611a",
+      "timestamp": "2026-11-20T00:44:09+00:00",
+      "category": "news",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "target_url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "headline_en": "Opening the datasets behind our AI weather models November 2026 Science Learn more",
+      "summary_en": "New post on Google DeepMind: Opening the datasets behind our AI weather models November 2026 Science Learn more"
+    },
+    {
+      "id": "ht-af32d8368b2b",
+      "timestamp": "2026-11-20T00:44:13+00:00",
+      "category": "news",
+      "source_name": "Google AI Blog",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "target_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "headline_en": "AI The latest AI news we announced in October 2026 Here are Google’s latest AI updates from October 2026",
+      "summary_en": "New post on Google AI Blog: AI The latest AI news we announced in October 2026 Here are Google’s latest AI updates from October 2026"
+    },
+    {
+      "id": "ht-f0b46b0ef500",
+      "timestamp": "2026-11-20T00:44:16+00:00",
+      "category": "news",
+      "source_name": "Anthropic News",
+      "source_url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "target_url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "headline_en": "Anthropic prices initial public offering",
+      "summary_en": "New post on Anthropic News: Anthropic prices initial public offering"
+    },
+    {
+      "id": "ht-fefc754dcc83",
+      "timestamp": "2026-11-20T00:44:17+00:00",
+      "category": "news",
+      "source_name": "AI21 Blog",
+      "source_url": "https://www.ai21.com/blog/teel-turbo-efficient-execution-library/",
+      "target_url": "https://www.ai21.com/blog/teel-turbo-efficient-execution-library/",
+      "headline_en": "Nov 5, 2026 Introducing Teel – Turbo-Efficient Execution Library for Agents (but not only)",
+      "summary_en": "New post on AI21 Blog: Nov 5, 2026 Introducing Teel – Turbo-Efficient Execution Library for Agents (but not only)"
+    },
+    {
+      "id": "ht-bf4602432295",
+      "timestamp": "2026-11-20T00:44:18+00:00",
+      "category": "news",
+      "source_name": "Fireworks AI",
+      "source_url": "https://fireworks.ai/blog/ember-1",
+      "target_url": "https://fireworks.ai/blog/ember-1",
+      "headline_en": "23 SEP, 2026 Introducing Ember-1",
+      "summary_en": "New post on Fireworks AI: 23 SEP, 2026 Introducing Ember-1"
+    },
+    {
+      "id": "ht-457add569c93",
+      "timestamp": "2026-11-20T00:44:19+00:00",
+      "category": "news",
+      "source_name": "Groq News",
+      "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+      "target_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+      "headline_en": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud Read more >",
+      "summary_en": "New post on Groq News: Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud Read more >"
+    },
+    {
+      "id": "ht-c53aace427c1",
+      "timestamp": "2026-11-20T00:44:22+00:00",
+      "category": "news",
+      "source_name": "Cerebras Blog",
+      "source_url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "target_url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "headline_en": "Cerebras launches disaggregated inference >>",
+      "summary_en": "New post on Cerebras Blog: Cerebras launches disaggregated inference >>"
+    },
+    {
+      "id": "ht-be5c5737a69d",
+      "timestamp": "2026-11-20T00:44:23+00:00",
+      "category": "news",
+      "source_name": "Google Cloud AI",
+      "source_url": "https://cloud.google.com/blog/products/application-development",
+      "target_url": "https://cloud.google.com/blog/products/application-development",
+      "headline_en": "Application Development",
+      "summary_en": "New post on Google Cloud AI: Application Development"
+    },
+    {
+      "id": "ht-9d2c41aae8dc",
+      "timestamp": "2026-11-20T00:44:24+00:00",
+      "category": "news",
+      "source_name": "Cognition Blog",
+      "source_url": "https://cognition.ai/blog/swe-2-flash",
+      "target_url": "https://cognition.ai/blog/swe-2-flash",
+      "headline_en": "Introducing SWE-2 Flash 2026.11.04 We’re introducing SWE-2 Flash, a fully American coding model that sets a new bar for intelligence at low cost and high speed.",
+      "summary_en": "New post on Cognition Blog: Introducing SWE-2 Flash 2026.11.04 We’re introducing SWE-2 Flash, a fully American coding model that sets a new bar for intelligence at low cost and high speed."
+    },
+    {
+      "id": "ht-2435e513717c",
+      "timestamp": "2026-11-20T00:44:24+00:00",
+      "category": "news",
+      "source_name": "World Labs",
+      "source_url": "https://www.worldlabs.ai/labs",
+      "target_url": "https://www.worldlabs.ai/labs",
+      "headline_en": "Resources Community Showcase Case Studies Learn",
+      "summary_en": "New post on World Labs: Resources Community Showcase Case Studies Learn"
+    }
+  ]
+}

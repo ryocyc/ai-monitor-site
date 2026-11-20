@@ -1,7 +1,177 @@
 {
-  "generated_at": "2026-11-20T00:10:28+00:00",
+  "generated_at": "2026-11-20T00:46:42+00:00",
   "item_count": 60,
   "items": [
+    {
+      "id": "ht-9d2c41aae8dc",
+      "timestamp": "2026-11-20T00:44:24+00:00",
+      "category": "news",
+      "source_name": "Cognition Blog",
+      "source_url": "https://cognition.ai/blog/swe-2-flash",
+      "target_url": "https://cognition.ai/blog/swe-2-flash",
+      "headline_en": "Introducing SWE-2 Flash 2026.11.04 We’re introducing SWE-2 Flash, a fully American coding model that sets a new bar for intelligence at low cost and high speed.",
+      "summary_en": "New post on Cognition Blog: Introducing SWE-2 Flash 2026.11.04 We’re introducing SWE-2 Flash, a fully American coding model that sets a new bar for intelligence at low cost and high speed."
+    },
+    {
+      "id": "ht-2435e513717c",
+      "timestamp": "2026-11-20T00:44:24+00:00",
+      "category": "news",
+      "source_name": "World Labs",
+      "source_url": "https://www.worldlabs.ai/labs",
+      "target_url": "https://www.worldlabs.ai/labs",
+      "headline_en": "Resources Community Showcase Case Studies Learn",
+      "summary_en": "New post on World Labs: Resources Community Showcase Case Studies Learn"
+    },
+    {
+      "id": "ht-be5c5737a69d",
+      "timestamp": "2026-11-20T00:44:23+00:00",
+      "category": "news",
+      "source_name": "Google Cloud AI",
+      "source_url": "https://cloud.google.com/blog/products/application-development",
+      "target_url": "https://cloud.google.com/blog/products/application-development",
+      "headline_en": "Application Development",
+      "summary_en": "New post on Google Cloud AI: Application Development"
+    },
+    {
+      "id": "ht-c53aace427c1",
+      "timestamp": "2026-11-20T00:44:22+00:00",
+      "category": "news",
+      "source_name": "Cerebras Blog",
+      "source_url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "target_url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "headline_en": "Cerebras launches disaggregated inference >>",
+      "summary_en": "New post on Cerebras Blog: Cerebras launches disaggregated inference >>"
+    },
+    {
+      "id": "ht-457add569c93",
+      "timestamp": "2026-11-20T00:44:19+00:00",
+      "category": "news",
+      "source_name": "Groq News",
+      "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+      "target_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
+      "headline_en": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud Read more >",
+      "summary_en": "New post on Groq News: Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud Read more >"
+    },
+    {
+      "id": "ht-bf4602432295",
+      "timestamp": "2026-11-20T00:44:18+00:00",
+      "category": "news",
+      "source_name": "Fireworks AI",
+      "source_url": "https://fireworks.ai/blog/ember-1",
+      "target_url": "https://fireworks.ai/blog/ember-1",
+      "headline_en": "23 SEP, 2026 Introducing Ember-1",
+      "summary_en": "New post on Fireworks AI: 23 SEP, 2026 Introducing Ember-1"
+    },
+    {
+      "id": "ht-fefc754dcc83",
+      "timestamp": "2026-11-20T00:44:17+00:00",
+      "category": "news",
+      "source_name": "AI21 Blog",
+      "source_url": "https://www.ai21.com/blog/teel-turbo-efficient-execution-library/",
+      "target_url": "https://www.ai21.com/blog/teel-turbo-efficient-execution-library/",
+      "headline_en": "Nov 5, 2026 Introducing Teel – Turbo-Efficient Execution Library for Agents (but not only)",
+      "summary_en": "New post on AI21 Blog: Nov 5, 2026 Introducing Teel – Turbo-Efficient Execution Library for Agents (but not only)"
+    },
+    {
+      "id": "ht-f0b46b0ef500",
+      "timestamp": "2026-11-20T00:44:16+00:00",
+      "category": "news",
+      "source_name": "Anthropic News",
+      "source_url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "target_url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "headline_en": "Anthropic prices initial public offering",
+      "summary_en": "New post on Anthropic News: Anthropic prices initial public offering"
+    },
+    {
+      "id": "ht-af32d8368b2b",
+      "timestamp": "2026-11-20T00:44:13+00:00",
+      "category": "news",
+      "source_name": "Google AI Blog",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "target_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "headline_en": "AI The latest AI news we announced in October 2026 Here are Google’s latest AI updates from October 2026",
+      "summary_en": "New post on Google AI Blog: AI The latest AI news we announced in October 2026 Here are Google’s latest AI updates from October 2026"
+    },
+    {
+      "id": "ht-d7b12a2a611a",
+      "timestamp": "2026-11-20T00:44:09+00:00",
+      "category": "news",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "target_url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "headline_en": "Opening the datasets behind our AI weather models November 2026 Science Learn more",
+      "summary_en": "New post on Google DeepMind: Opening the datasets behind our AI weather models November 2026 Science Learn more"
+    },
+    {
+      "id": "ht-159025b28c96",
+      "timestamp": "2026-11-20T00:44:08+00:00",
+      "category": "news",
+      "source_name": "ByteDance Seed",
+      "source_url": "https://team.doubao.com/en/?view_from=homepage_tab",
+      "target_url": "https://team.doubao.com/en/?view_from=homepage_tab",
+      "headline_en": "Home Models Blog & Publication Seed Edge Join Us",
+      "summary_en": "New post on ByteDance Seed: Home Models Blog & Publication Seed Edge Join Us"
+    },
+    {
+      "id": "ht-a997ad03a050",
+      "timestamp": "2026-11-20T00:44:07+00:00",
+      "category": "news",
+      "source_name": "StepFun News",
+      "source_url": "https://www.stepfun.com/",
+      "target_url": "https://www.stepfun.com/",
+      "headline_en": "模型 API 开放平台 AI Studio 关于我们",
+      "summary_en": "New post on StepFun News: 模型 API 开放平台 AI Studio 关于我们"
+    },
+    {
+      "id": "ht-46002919294d",
+      "timestamp": "2026-11-20T00:44:04+00:00",
+      "category": "news",
+      "source_name": "Zhipu News",
+      "source_url": "https://www.zhipuai.cn/zh/zsrc",
+      "target_url": "https://www.zhipuai.cn/zh/zsrc",
+      "headline_en": "中国大型独立大模型厂商 国产原创 GLM 大模型架构 注册立享 2000万 tokens 免费试用 发现安全问题？ 向 ZSRC 报告漏洞 →",
+      "summary_en": "New post on Zhipu News: 中国大型独立大模型厂商 国产原创 GLM 大模型架构 注册立享 2000万 tokens 免费试用 发现安全问题？ 向 ZSRC 报告漏洞 →"
+    },
+    {
+      "id": "ht-f7b6ee5c18e0",
+      "timestamp": "2026-11-20T00:44:02+00:00",
+      "category": "news",
+      "source_name": "MiniMax Blog",
+      "source_url": "https://www.minimax.io/blog/minimax-h3",
+      "target_url": "https://www.minimax.io/blog/minimax-h3",
+      "headline_en": "Video & Image MiniMax H3 MiniMax H3 Image",
+      "summary_en": "New post on MiniMax Blog: Video & Image MiniMax H3 MiniMax H3 Image"
+    },
+    {
+      "id": "ht-b15c828dbddd",
+      "timestamp": "2026-11-20T00:44:01+00:00",
+      "category": "news",
+      "source_name": "DeepSeek",
+      "source_url": "https://www.deepseek.com/news/deepseek-v4-1-flash/",
+      "target_url": "https://www.deepseek.com/news/deepseek-v4-1-flash/",
+      "headline_en": "DeepSeek V4.1 DeepSeek V4 DeepSeek V3.2 DeepSeek V3.1 DeepSeek R1 DeepSeek V3 更多",
+      "summary_en": "New post on DeepSeek: DeepSeek V4.1 DeepSeek V4 DeepSeek V3.2 DeepSeek V3.1 DeepSeek R1 DeepSeek V3 更多"
+    },
+    {
+      "id": "fd-7254dbbd457d",
+      "timestamp": "2026-11-20T00:34:07+00:00",
+      "category": "blog",
+      "source_name": "AWS ML Blog",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "target_url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+      "headline_en": "Amazon SageMaker Inference: 2026 launches in review, part 2",
+      "summary_en": "This second installment reviews 13 more Amazon SageMaker AI inference launches from 2026, spanning configuration recommendations, fitting more models onto each GPU, serving models too large for one instance, cross-Region routing, and post-launch tuning, bringing the year's total to 26."
+    },
+    {
+      "id": "fd-3bf001ac47aa",
+      "timestamp": "2026-11-20T00:25:30+00:00",
+      "category": "release",
+      "source_name": "Ollama Releases",
+      "source_url": "https://github.com/ollama/ollama/releases.atom",
+      "target_url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc2",
+      "headline_en": "v0.40.17",
+      "summary_en": "What's Changed Improve ChatGPT CLI restore and graceful restart by @hoyyeva in #19583 cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in #19409 llm: use mmap for Vulkan integrated GPUs by @dhiltgen in #19640 rpreslar4765/Ollama by @rpreslar4765 in #17163 mlx: support concurrent generation by @dhiltgen in #19197 llama.cpp: version bump b12257 by @dhiltgen in #19646 MLX, MLX-C: version bump by @dhiltgen in #19647 New Contributors @rpreslar4765 made their first contribution in #"
+    },
     {
       "id": "gh-778a31b372c6",
       "timestamp": "2026-11-20T00:09:13+00:00",
@@ -9,8 +179,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/wangzan101/Mika",
       "target_url": "https://github.com/wangzan101/Mika",
-      "headline_en": "Mika: On-Device AI Agent for Android",
-      "summary_en": "Mika is an on-device AI agent for Android that operates apps and the web to complete tasks for users. It lets users hand app and web actions to an agent instead of handling each step manually; the GitHub repository gained 9,160 stars in 21 days.",
+      "headline_en": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "summary_en": "wangzan101/Mika - An on-device AI agent for Android that operates apps and the web to get things done for you. Gained 9,177 GitHub stars in 21 days (~429/day).",
       "tier": "rising",
       "metrics": {
         "stars": 9177,
@@ -19,10 +189,7 @@
         "velocity_avg_per_day": 428.8,
         "velocity_recent_per_day": null,
         "forks": 2072
-      },
-      "headline_zh": "Mika：Android 裝置端 AI 代理",
-      "summary_zh": "Mika（Android 裝置端 AI 代理）可操作手機應用及網頁，完成指定事項；過往要逐項點擊，現可交由代理處理。GitHub 專案 21 日獲 9,160 星。一般 Android 自動化可比較 Tasker。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-959a4e69bc6c",
@@ -31,8 +198,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/agentes-chat/agentes-chat",
       "target_url": "https://github.com/agentes-chat/agentes-chat",
-      "headline_en": "AI Team Chat",
-      "summary_en": "Agentes Chat is an open-source, self-hosted Slack alternative where teams and AI agents collaborate in channels and direct messages. Instead of switching between team chat and separate AI tools, users can run Claude, ChatGPT/Codex, Gemini, or Grok agents with MCP tools, browser and computer control, routines, memory, approvals, and web, desktop, and phone apps in one workspace.",
+      "headline_en": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs.",
+      "summary_en": "agentes-chat/agentes-chat - Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0. Gained 1,757 GitHub stars in 11 days (~160/day).",
       "tier": "rising",
       "metrics": {
         "stars": 1757,
@@ -41,10 +208,7 @@
         "velocity_avg_per_day": 160.1,
         "velocity_recent_per_day": null,
         "forks": 329
-      },
-      "headline_zh": "Agentes Chat 自架 AI 協作平台",
-      "summary_zh": "Agentes Chat（開源、自架的 Slack 替代品）讓團隊與 AI 代理在頻道及私訊協作，代理可運行於 Claude、ChatGPT/Codex、Gemini 或 Grok，並具 MCP 工具、瀏覽器與電腦操作、例程、記憶和審批。用戶毋須在團隊聊天與個別 AI 工具間切換，現可把人與 AI 工作集中在同一自架空間，並使用網頁、桌面和手機程式。同類選擇可看 Mattermost。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-fadd3383ed0a",
@@ -53,8 +217,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/modelflare-ai/AnyModelBot",
       "target_url": "https://github.com/modelflare-ai/AnyModelBot",
-      "headline_en": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet.",
-      "summary_en": "modelflare-ai/AnyModelBot - 🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use. Gained 4,792 GitHub stars in 24 days (~203/day).",
+      "headline_en": "AnyModelBot Connects 70+ AI Models",
+      "summary_en": "AnyModelBot is an open-source, local-first platform that lets users run personal bots across 70+ models, including GPT, Claude and Gemini, through one Modelflare key. Bots are reachable in the app, WeChat or Feishu, can remember users, work in the background, run commands and use the user's computer, giving users one-key access to multiple models with pay-per-use billing; Grok Bot is a similar alternative.",
       "tier": "rising",
       "metrics": {
         "stars": 4792,
@@ -63,7 +227,10 @@
         "velocity_avg_per_day": 202.7,
         "velocity_recent_per_day": null,
         "forks": 109
-      }
+      },
+      "headline_zh": "AnyModelBot 整合 70+ AI 模型",
+      "summary_zh": "AnyModelBot（開源本機優先 AI 助理）以單一 key 接通 70+ 模型，可經 App、微信或飛書。用戶毋須逐款配置，可讓 bot 記憶、後台工作、執行指令及操作電腦，按用量付費；同類選擇有 Grok Bot。",
+      "enriched": true
     },
     {
       "id": "gh-208cf56cbec0",
@@ -72,8 +239,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/N1nEmAn/sapper-v2",
       "target_url": "https://github.com/N1nEmAn/sapper-v2",
-      "headline_en": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B token",
-      "summary_en": "N1nEmAn/sapper-v2 - The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History). Gained 2,491 GitHub stars in 20 days (~122/day).",
+      "headline_en": "Sapper v2, an AI Pentest System, Wins 634-Team Challenge",
+      "summary_en": "Sapper v2 is an autonomous, evolvable AI pentesting system from Nüwa Foundation’s Create, Language and History components, and it won a challenge among 634 teams after eight unattended hours. Users can grow and evolve their own agents for unattended testing instead of manually chaining every step, and the project gained 2,491 GitHub stars in 20 days.",
       "tier": "rising",
       "metrics": {
         "stars": 2491,
@@ -82,7 +249,10 @@
         "velocity_avg_per_day": 122.3,
         "velocity_recent_per_day": null,
         "forks": 1214
-      }
+      },
+      "headline_zh": "Sapper v2奪634隊AI滲透挑戰冠軍",
+      "summary_zh": "Sapper v2（Nüwa Foundation的AI滲透測試專案）可建立、演化並支援8小時無人值守運行的代理，在634隊挑戰中奪冠。用戶毋須再自行串接流程，可讓代理持續工作；同類選擇可比較PentestGPT。",
+      "enriched": true
     },
     {
       "id": "gh-4a8c6b949250",
@@ -91,8 +261,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/Dodaios/ste80-humanizer",
       "target_url": "https://github.com/Dodaios/ste80-humanizer",
-      "headline_en": "STE80 Humanizer Moves AI Text 80% Toward STE100",
-      "summary_en": "STE80 Humanizer is a GitHub agent skill that removes common signs of AI writing and rewrites text 80% of the way toward ASD-STE100 Simplified Technical English, a method Andrej Karpathy shared. It lets users turn AI-assisted drafts into clearer technical writing instead of editing every line by hand; the repository gained 960 GitHub stars in 10 days, and Grammarly is a similar general writing option.",
+      "headline_en": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified ",
+      "summary_en": "Dodaios/ste80-humanizer - STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared. Gained 980 GitHub stars in 10 days (~95/day).",
       "tier": "rising",
       "metrics": {
         "stars": 980,
@@ -101,10 +271,7 @@
         "velocity_avg_per_day": 95.3,
         "velocity_recent_per_day": null,
         "forks": 68
-      },
-      "headline_zh": "STE80 Humanizer 改寫 AI 草稿",
-      "summary_zh": "STE80 Humanizer 是 GitHub 文字改寫技能，可移除 AI 痕跡，將內容改寫至 ASD-STE100 簡化技術英文的八成程度。用戶毋須整理草稿，可更快取得清晰技術文字；同類可選 Grammarly。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-609f5454f49c",
@@ -113,8 +280,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/RunanywhereAI/trnrt",
       "target_url": "https://github.com/RunanywhereAI/trnrt",
-      "headline_en": "The open LLM inference engine for AWS Trainium: NKI megakernels, 1M-token context, OpenAI-compatible API.",
-      "summary_en": "RunanywhereAI/trnrt - The open LLM inference engine for AWS Trainium: NKI megakernels, 1M-token context, OpenAI-compatible API. By RunAnywhere. Gained 1,638 GitHub stars in 20 days (~81/day).",
+      "headline_en": "trnrt Enables LLM Inference on AWS Trainium",
+      "summary_en": "trnrt is an open LLM inference engine for AWS Trainium with NKI megakernels, 1M-token context, and an OpenAI-compatible API. Developers can use a familiar API on Trainium instead of building a custom integration while handling long contexts; the repository gained 1,638 GitHub stars in 20 days.",
       "tier": "rising",
       "metrics": {
         "stars": 1638,
@@ -123,7 +290,10 @@
         "velocity_avg_per_day": 80.9,
         "velocity_recent_per_day": null,
         "forks": 24
-      }
+      },
+      "headline_zh": "trnrt 支援 Trainium 大模型推理",
+      "summary_zh": "trnrt 是 AWS Trainium 的開源推理引擎，採用 NKI megakernels、百萬 token 上下文及 OpenAI 相容 API。用戶可沿用接口部署，減少整合並處理長上下文；同類選擇有 vLLM。",
+      "enriched": true
     },
     {
       "id": "gh-1003a20d9074",
@@ -132,8 +302,8 @@
       "source_name": "GitHub",
       "source_url": "https://github.com/wici-ai/inferssd",
       "target_url": "https://github.com/wici-ai/inferssd",
-      "headline_en": "Inferssd Runs Large AI Models From SSD",
-      "summary_en": "Inferssd is a llama.cpp-based tool that streams Mixture-of-Experts model experts from SSD, allowing models larger than available RAM or VRAM to run. Users can run larger AI models on memory-constrained computers without first upgrading their memory.",
+      "headline_en": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD.",
+      "summary_en": "wici-ai/inferssd - Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp. Gained 1,255 GitHub stars in 29 days (~44/day).",
       "tier": "rising",
       "metrics": {
         "stars": 1255,
@@ -142,10 +312,7 @@
         "velocity_avg_per_day": 43.9,
         "velocity_recent_per_day": null,
         "forks": 112
-      },
-      "headline_zh": "Inferssd 從 SSD 運行大型 AI 模型",
-      "summary_zh": "Inferssd 是建基於 llama.cpp 的 AI 推理工具，可從 SSD 串流 MoE 混合專家模型，讓模型在 RAM 或 VRAM 不足時仍可運行。用戶毋須預先擴充記憶體，也能在電腦上跑較大型模型；同類選擇包括 llama.cpp。",
-      "enriched": true
+      }
     },
     {
       "id": "gh-5b9c260a87a0",
@@ -600,19 +767,32 @@
       }
     },
     {
+      "id": "fd-5dcb5363d574",
+      "timestamp": "2026-11-20T00:03:31+00:00",
+      "category": "release",
+      "source_name": "LiteLLM Releases",
+      "source_url": "https://github.com/BerriAI/litellm/releases.atom",
+      "target_url": "https://github.com/BerriAI/litellm/releases/tag/v1.112.0-dev.1",
+      "headline_en": "v1.112.0-dev.1",
+      "summary_en": "Verify Docker Image Signature cosign verify \\ --certificate-identity https://github.com/BerriAI/project-releaser/.github/workflows/release.yml@refs/heads/main \\ --certificate-oidc-issuer https://token.actions.githubusercontent.com \\ ghcr.io/berriai/litellm:v1.112.0-dev.1 What's Changed test(database): expect no native pool in proxy lifespan cleanup by @devin-ai-integration [bot] in #51911 fix(ui): clarify customer usage periods and preserve date ranges by @moe-berri in #51899 feat(ui): reuse usa"
+    },
+    {
       "id": "pr-1720f8167c11",
       "timestamp": "2026-11-19T23:58:56+00:00",
       "category": "pricing",
       "source_name": "LiteLLM Price Registry",
       "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast API input price cut 50% ($2.40 -> $1.20 per 1M input tokens)",
-      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast's input price moved from $2.40 to $1.20 per 1M tokens (-50.0%). Worth checking before your next API bill.",
+      "headline_en": "DeepSeek V4P1 Flash API input price halved",
+      "summary_en": "Fireworks AI’s DeepSeek V4P1 Flash 1017 Ultrafast API—an endpoint developers use to access the model—is listed with a 50% input-price cut, from $2.40 to $1.20 per 1 million tokens, in LiteLLM’s community price registry. Developers using this endpoint can check their next bill for lower input costs and compare other model APIs as alternatives.",
       "metrics": {
         "pct": -50.0,
         "old_per_m": 2.4,
         "new_per_m": 1.2
-      }
+      },
+      "headline_zh": "DeepSeek V4P1 API輸入價減半",
+      "summary_zh": "Fireworks的DeepSeek V4P1 Flash 1017 Ultrafast AI介面供程式呼叫；LiteLLM價格庫顯示，輸入價由每百萬詞元2.40美元降至1.20美元，減半。用戶可減成本，可選同類API。",
+      "enriched": true
     },
     {
       "id": "pr-9b84b70b0f36",
@@ -621,13 +801,16 @@
       "source_name": "LiteLLM Price Registry",
       "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast API output price cut 50% ($9.60 -> $4.80 per 1M output tokens)",
-      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast's output price moved from $9.60 to $4.80 per 1M tokens (-50.0%). Worth checking before your next API bill.",
+      "headline_en": "Fireworks DeepSeek API price cut",
+      "summary_en": "The LiteLLM Price Registry records a 50% output-price cut for Fireworks AI’s DeepSeek V4P1 Flash Ultrafast API route, from $9.60 to $4.80 per 1M output tokens. The same output volume now costs less, and other DeepSeek API routes are worth comparing.",
       "metrics": {
         "pct": -50.0,
         "old_per_m": 9.6,
         "new_per_m": 4.8
-      }
+      },
+      "headline_zh": "Fireworks AI DeepSeek 降價",
+      "summary_zh": "Fireworks AI DeepSeek API 路由降價，每百萬 token 由 9.60 美元降至 4.80 美元。以前成本較高，而家輸出量不變，用戶帳單可望減少；同類選擇可比較其他 DeepSeek 路由。",
+      "enriched": true
     },
     {
       "id": "pr-69a40764409b",
@@ -636,13 +819,16 @@
       "source_name": "LiteLLM Price Registry",
       "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-      "headline_en": "fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash API input price cut 33% ($0.10 -> $0.07 per 1M input tokens)",
-      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash's input price moved from $0.10 to $0.07 per 1M tokens (-33.3%). Worth checking before your next API bill.",
+      "headline_en": "Fireworks AI Cuts DeepSeek API Input Price by 33%",
+      "summary_en": "The LiteLLM community price registry shows Fireworks AI’s spot-deepseek-v4-flash input price falling from $0.10 to $0.07 per 1 million tokens. Developers using that route can spend about one-third less on input tokens for the same workload at the listed rate.",
       "metrics": {
         "pct": -33.3,
         "old_per_m": 0.105,
         "new_per_m": 0.07
-      }
+      },
+      "headline_zh": "Fireworks AI DeepSeek 降價",
+      "summary_zh": "LiteLLM 顯示，Fireworks AI（API 服務）的 DeepSeek 路由，每百萬輸入 token 價由 0.10 美元降至 0.07 美元。開發者可少付三成輸入費，亦可比較其他 DeepSeek 路由。",
+      "enriched": true
     },
     {
       "id": "pr-ace89441f4c4",
@@ -651,13 +837,16 @@
       "source_name": "LiteLLM Price Registry",
       "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-      "headline_en": "fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash API output price cut 33% ($0.21 -> $0.14 per 1M output tokens)",
-      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash's output price moved from $0.21 to $0.14 per 1M tokens (-33.3%). Worth checking before your next API bill.",
+      "headline_en": "Fireworks AI Cuts Spot DeepSeek V4 Flash API Output Price by 33%",
+      "summary_en": "LiteLLM’s community price registry shows Fireworks AI’s Spot DeepSeek V4 Flash API output price fell 33%, from $0.21 to $0.14 per 1 million output tokens. Users can check the new rate before their next API bill to potentially reduce output costs.",
       "metrics": {
         "pct": -33.3,
         "old_per_m": 0.21,
         "new_per_m": 0.14
-      }
+      },
+      "headline_zh": "DeepSeek V4 Flash輸出費下調33%",
+      "summary_zh": "LiteLLM價格庫顯示，模型API服務商Fireworks AI的Spot DeepSeek V4 Flash輸出價下調33%，每百萬token由0.21美元降至0.14美元。用戶查新價省支出；可比較OpenRouter。",
+      "enriched": true
     },
     {
       "id": "pr-f9d349e2104f",
@@ -666,13 +855,16 @@
       "source_name": "LiteLLM Price Registry",
       "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-      "headline_en": "fireworks_ai/accounts/fireworks/routers/glm-5p3-spot API input price cut 29% ($0.98 -> $0.70 per 1M input tokens)",
-      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/glm-5p3-spot's input price moved from $0.98 to $0.70 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "headline_en": "Fireworks AI GLM Input Price Falls 29%",
+      "summary_en": "The LiteLLM Price Registry, a catalog of model API prices, shows Fireworks AI’s glm-5p3-spot input route falling from $0.98 to $0.70 per 1M tokens, a 29% cut. At the same usage, developers on this route will pay less for input on future API bills.",
       "metrics": {
         "pct": -28.6,
         "old_per_m": 0.98,
         "new_per_m": 0.7
-      }
+      },
+      "headline_zh": "Fireworks AI GLM輸入價降29%",
+      "summary_zh": "Fireworks AI 的 glm-5p3-spot 是 API 輸入路由；LiteLLM 價格表顯示，每百萬 token 由 $0.98 降至 $0.70，減幅 29%。沿用它，帳單成本可降低；同類可選 GLM 路由。",
+      "enriched": true
     },
     {
       "id": "pr-6ea906393e55",
@@ -681,13 +873,16 @@
       "source_name": "LiteLLM Price Registry",
       "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-      "headline_en": "fireworks_ai/accounts/fireworks/routers/glm-5p3-spot API output price cut 29% ($3.08 -> $2.20 per 1M output tokens)",
-      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/glm-5p3-spot's output price moved from $3.08 to $2.20 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "headline_en": "GLM-5p3 Spot output price cut",
+      "summary_en": "Fireworks’ glm-5p3-spot API route has cut output-token prices by 28.6%, according to LiteLLM’s Price Registry. At the listed rate, developers pay $2.20 instead of $3.08 per million output tokens and can compare other model APIs for alternatives.",
       "metrics": {
         "pct": -28.6,
         "old_per_m": 3.08,
         "new_per_m": 2.2
-      }
+      },
+      "headline_zh": "Fireworks GLM-5p3 Spot降價",
+      "summary_zh": "Fireworks的glm-5p3-spot API路由在LiteLLM API價格庫顯示輸出token降價28.6%。開發者每百萬輸出 token由原本3.08美元降至2.20美元，節省API成本；亦可比較其他API。",
+      "enriched": true
     },
     {
       "id": "pr-6024750d92d7",
@@ -696,13 +891,16 @@
       "source_name": "LiteLLM Price Registry",
       "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot API input price cut 29% ($0.21 -> $0.15 per 1M input tokens)",
-      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot's input price moved from $0.21 to $0.15 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "headline_en": "Fireworks' DeepSeek Input Price Drops 29%",
+      "summary_en": "DeepSeek V4.1 Flash Spot is a Fireworks AI API route, and LiteLLM's Price Registry records a 29% input-price cut, from $0.21 to $0.15 per million tokens. Developers can now pay less for the same volume of input tokens through this route; a comparable alternative is DeepSeek's official API.",
       "metrics": {
         "pct": -28.6,
         "old_per_m": 0.21,
         "new_per_m": 0.15
-      }
+      },
+      "headline_zh": "DeepSeek 路由輸入價降 29%",
+      "summary_zh": "DeepSeek V4.1 Flash Spot 是 Fireworks AI 供開發者呼叫模型的 API 端點；LiteLLM Price Registry 顯示，其輸入價由每百萬詞元 0.21 美元降至 0.15 美元，減約 29%。過往相同輸入量須付較高價格，現時經此端點呼叫可降低輸入成本；同類選擇可比較 DeepSeek 官方 API。",
+      "enriched": true
     },
     {
       "id": "pr-4cdb3eacb8b4",
@@ -711,13 +909,16 @@
       "source_name": "LiteLLM Price Registry",
       "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot API output price cut 29% ($0.84 -> $0.60 per 1M output tokens)",
-      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot's output price moved from $0.84 to $0.60 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "headline_en": "Registry Shows Fireworks DeepSeek Price Cut",
+      "summary_en": "Fireworks AI (an AI model API service) offers a DeepSeek v4p1 Flash Spot route priced at $0.60 per million output tokens in LiteLLM’s Price Registry, down 29% from $0.84. Developers can check the lower rate before their next API bill.",
       "metrics": {
         "pct": -28.6,
         "old_per_m": 0.84,
         "new_per_m": 0.6
-      }
+      },
+      "headline_zh": "Fireworks下調DeepSeek輸出價",
+      "summary_zh": "Fireworks AI（模型API服務）的DeepSeek v4p1 Flash Spot輸出價下調29%，每百萬個輸出token由0.84降至0.60美元。API帳單成本可望降低；同類可選DeepSeek官方API",
+      "enriched": true
     },
     {
       "id": "pr-e13ef2121a4a",
@@ -726,13 +927,16 @@
       "source_name": "LiteLLM Price Registry",
       "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot API input price cut 29% ($0.21 -> $0.15 per 1M input tokens)",
-      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot's input price moved from $0.21 to $0.15 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "headline_en": "Fireworks Cuts DeepSeek API Price",
+      "summary_en": "Fireworks AI's DeepSeek v4p1 Flash 1017 Spot router has cut its input price 28.6%, from $0.21 to $0.15 per 1 million input tokens, according to the LiteLLM Price Registry. Developers can expect a lower API bill for the same input-token volume, and other similar routes are worth comparing.",
       "metrics": {
         "pct": -28.6,
         "old_per_m": 0.21,
         "new_per_m": 0.15
-      }
+      },
+      "headline_zh": "Fireworks DeepSeek API降價",
+      "summary_zh": "DeepSeek v4p1 Flash 1017 Spot是Fireworks的API路由，輸入價下調28.6%，每百萬token由$0.21降至$0.15。過往同用量成本較高，現在帳單可減；其他同類路由亦可比價。",
+      "enriched": true
     },
     {
       "id": "pr-d19ff1a73c18",
@@ -741,13 +945,16 @@
       "source_name": "LiteLLM Price Registry",
       "source_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "target_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-      "headline_en": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot API output price cut 29% ($0.84 -> $0.60 per 1M output tokens)",
-      "summary_en": "The LiteLLM community price registry shows fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot's output price moved from $0.84 to $0.60 per 1M tokens (-28.6%). Worth checking before your next API bill.",
+      "headline_en": "DeepSeek-V4 Flash Output Price Falls 29%",
+      "summary_en": "DeepSeek-V4 Flash, an AI model API served through Fireworks AI, has cut its output price 29%, from $0.84 to $0.60 per million tokens, according to LiteLLM. At the same usage volume, users can spend less on API output.",
       "metrics": {
         "pct": -28.6,
         "old_per_m": 0.84,
         "new_per_m": 0.6
-      }
+      },
+      "headline_zh": "DeepSeek-V4 Flash輸出價降29%",
+      "summary_zh": "DeepSeek-V4 Flash 是 Fireworks AI 的模型 API。LiteLLM 顯示，每百萬 token 輸出價由 0.84 美元降至 0.60 美元。用量不變，支出可少約29%。同類可選其他 API。",
+      "enriched": true
     },
     {
       "id": "st-1dc6ac4f92ff",
@@ -756,10 +963,13 @@
       "source_name": "Mistral Status",
       "source_url": "https://status.mistral.ai/api/v2/status.json",
       "target_url": "https://status.mistral.ai/api/v2/status.json",
-      "headline_en": "Mistral status: Minor service outage",
-      "summary_en": "Mistral's status page reports 'minor' — Minor service outage. Check the status page before blaming your prompts.",
+      "headline_en": "Mistral Reports Minor Service Outage",
+      "summary_en": "Mistral's status page reports a minor service outage. Users may see temporary disruptions, so checking the status page can help distinguish a service issue from prompt problems.",
       "severity": "minor",
-      "event": "issue"
+      "event": "issue",
+      "headline_zh": "Mistral 報告輕微服務中斷",
+      "summary_zh": "Mistral（AI模型及API服務商）提供AI模型與API服務；狀態頁回報輕微服務中斷，相關服務可能短暫受阻。使用者以往可能先排查提示詞，現在可查看狀態頁，較快判斷是否服務故障；替代方案可看 OpenAI API。",
+      "enriched": true
     },
     {
       "id": "st-307af3f8a33b",
@@ -768,229 +978,13 @@
       "source_name": "Copilot Status",
       "source_url": "https://www.githubstatus.com/api/v2/components.json",
       "target_url": "https://www.githubstatus.com/api/v2/components.json",
-      "headline_en": "Copilot status back to normal: All Systems Operational",
-      "summary_en": "Copilot's status returned to normal — the earlier issue is resolved.",
+      "headline_en": "Copilot Service Restored",
+      "summary_en": "Microsoft Copilot, an AI assistant, has returned to normal operations after an earlier service issue. Users can generally use it again, though the cause and affected features were not specified.",
       "severity": "none",
-      "event": "resolved"
-    },
-    {
-      "id": "gh-8bf9033285b8",
-      "timestamp": "2026-11-19T23:58:46+00:00",
-      "category": "trending",
-      "source_name": "GitHub",
-      "source_url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
-      "target_url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
-      "headline_en": "TradingView Indicator Targets AI Agents",
-      "summary_en": "The GitHub project roan-maverick/tradingview-indicator-for-ai-agents provides a TradingView indicator built for AI agents. Developers can use the existing component instead of building an agent-to-indicator integration from scratch; it gained 320 GitHub stars in six days.",
-      "tier": "hot_new",
-      "metrics": {
-        "stars": 326,
-        "age_days": 6.6,
-        "velocity_per_day": 49.3,
-        "velocity_avg_per_day": 49.3,
-        "velocity_recent_per_day": 18.0,
-        "forks": 53
-      },
-      "headline_zh": "AI agents 專用 TradingView 指標",
-      "summary_zh": "GitHub 上的 TradingView（圖表分析平台）指標專案供 AI agents 使用，讓代理程式可處理圖表指標。開發者毋須再由零設計整合，可直接採用現成元件；同類選擇亦可比較 Pine Script 自訂指標。",
+      "event": "resolved",
+      "headline_zh": "Copilot服務恢復正常",
+      "summary_zh": "Microsoft Copilot係一款AI助手，早前服務異常後，狀態已回復全部系統正常。用戶現可重新使用服務，毋須再受先前中斷影響；不過原始原因及受影響功能未有交代。同類選擇有ChatGPT。",
       "enriched": true
-    },
-    {
-      "id": "gh-1ea29bb419ef",
-      "timestamp": "2026-11-19T23:58:46+00:00",
-      "category": "trending",
-      "source_name": "GitHub",
-      "source_url": "https://github.com/ysunyang4/Nexus",
-      "target_url": "https://github.com/ysunyang4/Nexus",
-      "headline_en": "Connect web AI assistants to local files, terminals, Git, and desktop tools through MCP, with user-controlled ",
-      "summary_en": "ysunyang4/Nexus - Connect web AI assistants to local files, terminals, Git, and desktop tools through MCP, with user-controlled permissions. Gained 431 GitHub stars in 6 days (~67/day).",
-      "tier": "hot_new",
-      "metrics": {
-        "stars": 431,
-        "age_days": 6.4,
-        "velocity_per_day": 67.1,
-        "velocity_avg_per_day": 67.1,
-        "velocity_recent_per_day": 6.0,
-        "forks": 76
-      }
-    },
-    {
-      "id": "gh-51a1130f1c8f",
-      "timestamp": "2026-11-19T23:58:46+00:00",
-      "category": "trending",
-      "source_name": "GitHub",
-      "source_url": "https://github.com/alexsergivan/kwant",
-      "target_url": "https://github.com/alexsergivan/kwant",
-      "headline_en": "Your own team of AI bots in one self-hosted binary: spaces, every account you have, handoffs, approvals and ro",
-      "summary_en": "alexsergivan/kwant - Your own team of AI bots in one self-hosted binary: spaces, every account you have, handoffs, approvals and routines. Open-source, self-hosted alternative to Grok Bot, Claude Duet and OpenAI dots. Rust + React. Gained 682 GitHub stars in 28 days (~48/day).",
-      "tier": "rising",
-      "metrics": {
-        "stars": 682,
-        "age_days": 28.2,
-        "velocity_per_day": 48.0,
-        "velocity_avg_per_day": 24.2,
-        "velocity_recent_per_day": 48.0,
-        "forks": 69
-      }
-    },
-    {
-      "id": "gh-d4278c985925",
-      "timestamp": "2026-11-19T23:58:46+00:00",
-      "category": "trending",
-      "source_name": "GitHub",
-      "source_url": "https://github.com/jasonsutter87/sketchcraft",
-      "target_url": "https://github.com/jasonsutter87/sketchcraft",
-      "headline_en": "Draw an outline.",
-      "summary_en": "jasonsutter87/sketchcraft - Draw an outline. Pull it up. Open-source push/pull 3D modeler in Rust: desktop app, CLI and MCP server. Gained 98 GitHub stars in 7 days (~42/day).",
-      "tier": "rising",
-      "metrics": {
-        "stars": 98,
-        "age_days": 6.7,
-        "velocity_per_day": 42.0,
-        "velocity_avg_per_day": 14.7,
-        "velocity_recent_per_day": 42.0,
-        "forks": 11
-      }
-    },
-    {
-      "id": "fd-3bf001ac47aa",
-      "timestamp": "2026-11-19T23:41:42+00:00",
-      "category": "release",
-      "source_name": "Ollama Releases",
-      "source_url": "https://github.com/ollama/ollama/releases.atom",
-      "target_url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc2",
-      "headline_en": "v0.40.17-rc2: mlxrunner: adapt saved history to memory pressure (#19678)",
-      "summary_en": "mlxrunner: adapt saved history to memory pressure Retain Metal prefix history using observed memory headroom and execution workspace rather than a fixed 8 GiB allowance. Release unused buffers and cold history when system compression grows, preserving reusable paths and active requests. Cover pressure reclamation, snapshot ownership, memory observation, and cacheless request isolation. address comments address comments"
-    },
-    {
-      "id": "fd-00ba4510f32a",
-      "timestamp": "2026-11-19T23:17:27+00:00",
-      "category": "release",
-      "source_name": "llama.cpp Releases",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12556",
-      "headline_en": "b12556",
-      "summary_en": "model : hrm : do not compute slot count as uint32_t ( #32601 ) load_arch_hparams multiplies n_hrm_layers_per_stack, n_hrm_h_cycles and (n_hrm_l_cycles + 1) into a uint32_t, then asserts the product equals block_count. Any factors whose true product is block_count + k*2^32 still pass the assert; 1073741825 * 2 * 2 = 2^32 + 4 compares equal to block_count = 4. load_arch_tensors iterates the same three values in int and writes past the end of the block_count-sized layers vector. Website: https://ll"
-    },
-    {
-      "id": "fd-0255d63a2a60",
-      "timestamp": "2026-11-19T23:07:37+00:00",
-      "category": "release",
-      "source_name": "Codex Releases",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
-      "headline_en": "rust-v0.171.0",
-      "summary_en": "Release 0.171.0"
-    },
-    {
-      "id": "fd-033d14433335",
-      "timestamp": "2026-11-19T23:02:16+00:00",
-      "category": "blog",
-      "source_name": "AWS ML Blog",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "target_url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/",
-      "headline_en": "Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments",
-      "summary_en": "Amazon Bedrock AgentCore payments now supports AWS Marketplace, so agents can discover and buy x402-enabled products, APIs, data, and content and pay in USD on the developer's AWS bill, with no stablecoin wallets or API keys. This post walks through a research agent that finds a tool, pays per request through AWS Billing, and answers with sources."
-    },
-    {
-      "id": "fd-c23c31ceec30",
-      "timestamp": "2026-11-19T22:59:01+00:00",
-      "category": "release",
-      "source_name": "llama.cpp Releases",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12555",
-      "headline_en": "b12555",
-      "summary_en": "opencl: support dp4a for KQ mm in decomposed FA ( #32577 ) opencl: support int8 KQ for DK = 512 Co-authored-by: Shaofei Qi shaoqi@qti.qualcomm.com Co-authored-by: Hongqiang Wang wangh@qti.qualcomm.com Assisted-by: Codex opencl: allow query chunk up to 96 for int8 KQ Co-authored-by: Shaofei Qi shaoqi@qti.qualcomm.com Co-authored-by: Hongqiang Wang wangh@qti.qualcomm.com Assisted-by: Codex opencl: extend build_program_from_source to allow non-fatal failure Assisted-by: Codex opencl: add int8 KQ fo"
-    },
-    {
-      "id": "fd-24af7cfb9e14",
-      "timestamp": "2026-11-19T22:23:11+00:00",
-      "category": "release",
-      "source_name": "llama.cpp Releases",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12554",
-      "headline_en": "b12554",
-      "summary_en": "ggml : add BF16 support to ROPE and SET_ROWS (CPU, CUDA) ( #32387 ) ggml : add BF16 support to ROPE and SET_ROWS (CPU, CUDA) cuda : SET_ROWS from BF16 into quantized types and F8_E4M3 cuda : fuse BF16 rope into a BF16 cache tests : trim the BF16 rope cases to one per code path Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/69881950 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFra"
-    },
-    {
-      "id": "fd-12da44c4cf0e",
-      "timestamp": "2026-11-19T22:21:24+00:00",
-      "category": "release",
-      "source_name": "llama.cpp Releases",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12557",
-      "headline_en": "b12557: CUDA: implement support for duplicate expert IDs (#32505)",
-      "summary_en": "implement support for duplicate expert IDs"
-    },
-    {
-      "id": "fd-ab9a00b0b31b",
-      "timestamp": "2026-11-19T22:20:23+00:00",
-      "category": "blog",
-      "source_name": "AWS ML Blog",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "target_url": "https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers/",
-      "headline_en": "How the BMW Group governs hundreds of agents across thousands of developers",
-      "summary_en": "When hundreds of agents serve thousands of developers, governance cannot be an afterthought. The BMW Group shares the practices and patterns its R&amp;D teams use to build, govern, and operate AI agents at enterprise scale without sacrificing speed, quality, or compliance."
-    },
-    {
-      "id": "fd-ff646d8a3938",
-      "timestamp": "2026-11-19T22:16:22+00:00",
-      "category": "blog",
-      "source_name": "AWS ML Blog",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "target_url": "https://aws.amazon.com/blogs/machine-learning/run-your-whole-selling-business-in-aws-quick/",
-      "headline_en": "Run your whole selling business in AWS Quick",
-      "summary_en": "Most sellers do not need another AI product to learn. They need the tools and information they already use brought together, so they can see what is happening in their business and act on it."
-    },
-    {
-      "id": "fd-54794b1e0ba2",
-      "timestamp": "2026-11-19T22:14:18+00:00",
-      "category": "blog",
-      "source_name": "Microsoft AI Blog",
-      "source_url": "https://news.microsoft.com/source/feed/",
-      "target_url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
-      "headline_en": "The future of medicine: Could AI help predict and prevent disease?",
-      "summary_en": "The post The future of medicine: Could AI help predict and prevent disease? appeared first on Source ."
-    },
-    {
-      "id": "fd-39666b508f34",
-      "timestamp": "2026-11-19T22:10:10+00:00",
-      "category": "release",
-      "source_name": "llama.cpp Releases",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12553",
-      "headline_en": "b12553",
-      "summary_en": "mtmd : fix YuE2 projector loading ( #32606 ) Allow cls.output.weight to be absent from the mmproj. It is an optional Qwen3 reranking head that the YuE2 NAR decoder never uses. Without this fix, mtmd_init_from_file() fails with \"tensor cls.output.weight is missing from the mmproj\", preventing audio generation from starting. Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/69877272 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiA"
-    },
-    {
-      "id": "fd-2e9ea7f5ab19",
-      "timestamp": "2026-11-19T22:07:59+00:00",
-      "category": "release",
-      "source_name": "Codex Releases",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1",
-      "headline_en": "0.171.0-alpha.13.1",
-      "summary_en": "Release 0.171.0-alpha.13.1"
-    },
-    {
-      "id": "fd-a43c01f38e5b",
-      "timestamp": "2026-11-19T21:28:18+00:00",
-      "category": "blog",
-      "source_name": "AWS ML Blog",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "target_url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-detects-latency-drift-idle-gpus-and-missed-optimizations-on-your-inference-endpoints/",
-      "headline_en": "Amazon SageMaker AI now detects latency drift, idle GPUs, and missed optimizations on your inference endpoints",
-      "summary_en": "Amazon SageMaker AI now monitors your generative AI inference endpoints by default and tells you when a change could improve performance or lower cost. It tracks latency, GPU utilization, and serving configuration, then sends a finding through AWS Health with a one-click path to benchmark alternatives in SageMaker Studio before you apply any change."
-    },
-    {
-      "id": "fd-5af447ea0d2e",
-      "timestamp": "2026-11-19T21:23:20+00:00",
-      "category": "blog",
-      "source_name": "AWS ML Blog",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "target_url": "https://aws.amazon.com/blogs/machine-learning/inside-amazon-connect-talent-the-science-of-structured-ai-interviews/",
-      "headline_en": "Inside Amazon Connect Talent: The science of structured AI interviews",
-      "summary_en": "For organizations hiring hundreds or thousands of people, every interview presents the same challenge: How do you give candidates a consistent opportunity to demonstrate their skills while gathering the evidence needed to make informed hiring decisions?&nbsp; Structured behavioral interviews offer a research-backed approach to this challenge. They use consistent, job-related questions and clear scoring criteria […]"
     }
   ]
 }

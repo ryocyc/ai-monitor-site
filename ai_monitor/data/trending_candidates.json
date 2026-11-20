@@ -1,48 +1,82 @@
 {
-  "generated_at": "2026-11-16T10:33:17+00:00",
+  "generated_at": "2026-11-20T00:10:28+00:00",
   "queries_run": 12,
-  "raw_unique": 132,
-  "spam_ring_dropped": 59,
-  "filtered_out": 21,
+  "raw_unique": 130,
+  "spam_ring_dropped": 39,
+  "filtered_out": 26,
   "review": {
-    "flagged_count": 5,
+    "flagged_count": 9,
     "owner_checks": {
-      "hitkeeen": 38.1,
-      "Outpostkrewhirl86": 153.6,
-      "roan-maverick": 18.0,
-      "Timaga": 1360.8,
-      "8hjkkwikl8": 11.1
+      "bookwjitchieni1986": 6.2,
+      "lizhenjie137": 218.5,
+      "bigtee9999": 524.5,
+      "bhukyabalu12": 2535.5,
+      "shani-hamer": 826.7,
+      "SamaEk111": 576.6,
+      "buiquangvu235": 711.9,
+      "AI4XE": 640.0,
+      "Timaga": 1364.4
     },
     "auto_excluded": [
       {
-        "repo": "8hjkkwikl8/ai-portfolio",
-        "stars": 105,
-        "owner_account_age_days": 11.1,
+        "repo": "bookwjitchieni1986/blender-ai-mcp-addon",
+        "stars": 490,
+        "owner_account_age_days": 6.2,
         "flags": [
+          "owner_year_suffix",
+          "no_language",
           "hot_but_no_forks"
         ]
       }
     ],
     "suspects": [
       {
-        "repo": "hitkeeen/blender-ai-mcp-addon",
-        "stars": 1903,
+        "repo": "lizhenjie137/intelligent-organization",
+        "stars": 209,
         "flags": [
-          "no_language"
+          "hot_but_no_forks"
         ]
       },
       {
-        "repo": "Outpostkrewhirl86/Capri-AI",
-        "stars": 346,
+        "repo": "bigtee9999/viruagent-cli",
+        "stars": 153,
         "flags": [
-          "no_language"
+          "hot_but_no_forks"
         ]
       },
       {
-        "repo": "roan-maverick/tradingview-indicator-for-ai-agents",
-        "stars": 240,
+        "repo": "bhukyabalu12/repdix-telegram-bot",
+        "stars": 153,
         "flags": [
-          "no_language"
+          "hot_but_no_forks"
+        ]
+      },
+      {
+        "repo": "shani-hamer/riverse-ai-agent",
+        "stars": 153,
+        "flags": [
+          "hot_but_no_forks"
+        ]
+      },
+      {
+        "repo": "SamaEk111/exasol-agent-skills",
+        "stars": 153,
+        "flags": [
+          "hot_but_no_forks"
+        ]
+      },
+      {
+        "repo": "buiquangvu235/antigravity-skills-engine",
+        "stars": 153,
+        "flags": [
+          "hot_but_no_forks"
+        ]
+      },
+      {
+        "repo": "AI4XE/Parallax",
+        "stars": 136,
+        "flags": [
+          "hot_but_no_forks"
         ]
       },
       {
@@ -54,30 +88,26 @@
       }
     ]
   },
-  "candidate_count": 24,
+  "candidate_count": 30,
   "candidates": [
     {
-      "repo": "hitkeeen/blender-ai-mcp-addon",
-      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
-      "language": "",
-      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
-      "created_at": "2026-11-12T14:32:15Z",
+      "repo": "iamajmeena/neonclipping",
+      "description": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
+      "language": "Python",
+      "url": "https://github.com/iamajmeena/neonclipping",
+      "created_at": "2026-11-19T10:00:43Z",
       "tier": "hot_new",
       "query_tags": [
-        "new_llm_7d"
+        "kw_localllm_14d"
       ],
       "metrics": {
-        "stars": 1903,
-        "age_days": 3.8,
-        "velocity_per_day": 496.3,
-        "velocity_avg_per_day": 496.3,
+        "stars": 357,
+        "age_days": 0.6,
+        "velocity_per_day": 605.0,
+        "velocity_avg_per_day": 605.0,
         "velocity_recent_per_day": null,
-        "forks": 52
-      },
-      "review_flags": [
-        "no_language"
-      ],
-      "owner_account_age_days": 38.1
+        "forks": 18
+      }
     },
     {
       "repo": "wangzan101/Mika",
@@ -90,73 +120,50 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 8798,
-        "age_days": 17.8,
-        "velocity_per_day": 493.4,
-        "velocity_avg_per_day": 493.4,
+        "stars": 9177,
+        "age_days": 21.4,
+        "velocity_per_day": 428.8,
+        "velocity_avg_per_day": 428.8,
         "velocity_recent_per_day": null,
-        "forks": 2003
+        "forks": 2072
       }
     },
     {
-      "repo": "FrigadeHQ/yogurt",
-      "description": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
-      "language": "TypeScript",
-      "url": "https://github.com/FrigadeHQ/yogurt",
-      "created_at": "2026-11-10T20:01:01Z",
+      "repo": "sybil-solutions/inference-optimisation-skill",
+      "description": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+      "language": "Python",
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "created_at": "2026-11-16T18:40:04Z",
       "tier": "hot_new",
       "query_tags": [
-        "new_mcp_7d"
+        "new_llm_7d"
       ],
       "metrics": {
-        "stars": 1745,
-        "age_days": 5.6,
-        "velocity_per_day": 311.3,
-        "velocity_avg_per_day": 311.3,
+        "stars": 1259,
+        "age_days": 3.2,
+        "velocity_per_day": 389.9,
+        "velocity_avg_per_day": 389.9,
         "velocity_recent_per_day": null,
-        "forks": 103
+        "forks": 114
       }
     },
     {
-      "repo": "Outpostkrewhirl86/Capri-AI",
-      "description": "Capri: a local-first desktop AI agent with a cyberpunk HUD. Your personal Jarvis for Windows. Controls files, apps, terminal and browser, powered by Claude Code, Codex, Antigravity or any backend. Inspired by Cyberpunk: Edgerunners.",
-      "language": "",
-      "url": "https://github.com/Outpostkrewhirl86/Capri-AI",
-      "created_at": "2026-11-14T21:34:40Z",
+      "repo": "boringmarketer/boring-marketing-skills",
+      "description": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
+      "language": "Python",
+      "url": "https://github.com/boringmarketer/boring-marketing-skills",
+      "created_at": "2026-11-16T15:09:46Z",
       "tier": "hot_new",
       "query_tags": [
         "new_agent_7d"
       ],
       "metrics": {
-        "stars": 346,
-        "age_days": 1.5,
-        "velocity_per_day": 224.6,
-        "velocity_avg_per_day": 224.6,
+        "stars": 718,
+        "age_days": 3.4,
+        "velocity_per_day": 212.7,
+        "velocity_avg_per_day": 212.7,
         "velocity_recent_per_day": null,
-        "forks": 54
-      },
-      "review_flags": [
-        "no_language"
-      ],
-      "owner_account_age_days": 153.6
-    },
-    {
-      "repo": "agentes-chat/agentes-chat",
-      "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
-      "language": "TypeScript",
-      "url": "https://github.com/agentes-chat/agentes-chat",
-      "created_at": "2026-11-09T00:50:28Z",
-      "tier": "rising",
-      "query_tags": [
-        "hot_llm_30d"
-      ],
-      "metrics": {
-        "stars": 1584,
-        "age_days": 7.4,
-        "velocity_per_day": 213.9,
-        "velocity_avg_per_day": 213.9,
-        "velocity_recent_per_day": null,
-        "forks": 278
+        "forks": 261
       }
     },
     {
@@ -170,31 +177,31 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 4182,
-        "age_days": 20.1,
-        "velocity_per_day": 208.4,
-        "velocity_avg_per_day": 208.4,
+        "stars": 4792,
+        "age_days": 23.6,
+        "velocity_per_day": 202.7,
+        "velocity_avg_per_day": 202.7,
         "velocity_recent_per_day": null,
-        "forks": 84
+        "forks": 109
       }
     },
     {
-      "repo": "berkantay/gpucanvas",
-      "description": "Put thousands of live DOM nodes on an infinite canvas: the GPU draws them, an editor selects, moves and resizes them, shaders and transitions run on them, and an AI agent can read them and point at them.",
+      "repo": "agentes-chat/agentes-chat",
+      "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
       "language": "TypeScript",
-      "url": "https://github.com/berkantay/gpucanvas",
-      "created_at": "2026-11-12T23:19:42Z",
-      "tier": "hot_new",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "created_at": "2026-11-09T00:50:28Z",
+      "tier": "rising",
       "query_tags": [
-        "new_agent_7d"
+        "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 498,
-        "age_days": 3.5,
-        "velocity_per_day": 143.6,
-        "velocity_avg_per_day": 143.6,
+        "stars": 1757,
+        "age_days": 11.0,
+        "velocity_per_day": 160.1,
+        "velocity_avg_per_day": 160.1,
         "velocity_recent_per_day": null,
-        "forks": 31
+        "forks": 329
       }
     },
     {
@@ -208,12 +215,50 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 2128,
-        "age_days": 16.8,
-        "velocity_per_day": 126.6,
-        "velocity_avg_per_day": 126.6,
+        "stars": 2491,
+        "age_days": 20.4,
+        "velocity_per_day": 122.3,
+        "velocity_avg_per_day": 122.3,
         "velocity_recent_per_day": null,
-        "forks": 1082
+        "forks": 1214
+      }
+    },
+    {
+      "repo": "setyamickala/airdrop-agent",
+      "description": "Autonomous airdrop operator: identities, wallets, socials, testnets, quests, radar — guarded CLI + MCP",
+      "language": "Python",
+      "url": "https://github.com/setyamickala/airdrop-agent",
+      "created_at": "2026-11-19T07:56:28Z",
+      "tier": "rising",
+      "query_tags": [
+        "new_mcp_7d"
+      ],
+      "metrics": {
+        "stars": 80,
+        "age_days": 0.7,
+        "velocity_per_day": 118.3,
+        "velocity_avg_per_day": 118.3,
+        "velocity_recent_per_day": null,
+        "forks": 32
+      }
+    },
+    {
+      "repo": "JosssphZhou/poki",
+      "description": "Poki uses your iPhone like you do. An open-source agent app that runs on your iPhone, reads the screen, and taps, types and swipes in real apps with your own model account.",
+      "language": "Swift",
+      "url": "https://github.com/JosssphZhou/poki",
+      "created_at": "2026-11-05T15:04:31Z",
+      "tier": "rising",
+      "query_tags": [
+        "hot_llm_30d"
+      ],
+      "metrics": {
+        "stars": 1651,
+        "age_days": 14.4,
+        "velocity_per_day": 114.8,
+        "velocity_avg_per_day": 114.8,
+        "velocity_recent_per_day": null,
+        "forks": 261
       }
     },
     {
@@ -222,17 +267,17 @@
       "language": "Python",
       "url": "https://github.com/Dodaios/ste80-humanizer",
       "created_at": "2026-11-09T17:18:59Z",
-      "tier": "hot_new",
+      "tier": "rising",
       "query_tags": [
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 710,
-        "age_days": 6.7,
-        "velocity_per_day": 105.7,
-        "velocity_avg_per_day": 105.7,
+        "stars": 980,
+        "age_days": 10.3,
+        "velocity_per_day": 95.3,
+        "velocity_avg_per_day": 95.3,
         "velocity_recent_per_day": null,
-        "forks": 51
+        "forks": 68
       }
     },
     {
@@ -246,92 +291,149 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 1585,
-        "age_days": 16.7,
-        "velocity_per_day": 95.1,
-        "velocity_avg_per_day": 95.1,
+        "stars": 1638,
+        "age_days": 20.2,
+        "velocity_per_day": 80.9,
+        "velocity_avg_per_day": 80.9,
         "velocity_recent_per_day": null,
-        "forks": 19
+        "forks": 24
       }
     },
     {
-      "repo": "roan-maverick/tradingview-indicator-for-ai-agents",
-      "description": "Tradingview IndicatorBuilt for AI agents",
-      "language": "",
-      "url": "https://github.com/roan-maverick/tradingview-indicator-for-ai-agents",
-      "created_at": "2026-11-13T09:20:32Z",
+      "repo": "dmitrykurash/holospot",
+      "description": "The holographic materials of holo.spot for your own three.js scenes, made to be handed to an AI agent",
+      "language": "TypeScript",
+      "url": "https://github.com/dmitrykurash/holospot",
+      "created_at": "2026-11-17T13:38:59Z",
       "tier": "hot_new",
       "query_tags": [
         "kw_agent_7d"
       ],
       "metrics": {
-        "stars": 240,
-        "age_days": 3.1,
-        "velocity_per_day": 78.7,
-        "velocity_avg_per_day": 78.7,
+        "stars": 184,
+        "age_days": 2.4,
+        "velocity_per_day": 75.5,
+        "velocity_avg_per_day": 75.5,
         "velocity_recent_per_day": null,
-        "forks": 39
-      },
-      "review_flags": [
-        "no_language"
-      ],
-      "owner_account_age_days": 18.0
-    },
-    {
-      "repo": "op7418/guizang-game-skill",
-      "description": "歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.",
-      "language": "JavaScript",
-      "url": "https://github.com/op7418/guizang-game-skill",
-      "created_at": "2026-11-11T16:28:54Z",
-      "tier": "hot_new",
-      "query_tags": [
-        "new_agent_7d"
-      ],
-      "metrics": {
-        "stars": 372,
-        "age_days": 4.8,
-        "velocity_per_day": 78.3,
-        "velocity_avg_per_day": 78.3,
-        "velocity_recent_per_day": null,
-        "forks": 58
+        "forks": 14
       }
     },
     {
-      "repo": "Tthanh2k6/turbo-browser-mcp",
-      "description": "Playwright MCP server built to cut agent turns and tokens: one-call form filling, delta snapshots, batched steps, and a submit guard on by default",
+      "repo": "kenzz-devv/open-webui-talora-ai-workspace",
+      "description": "Streamlined workspace for organizing and running AI workflows in one place.",
+      "language": "TypeScript",
+      "url": "https://github.com/kenzz-devv/open-webui-talora-ai-workspace",
+      "created_at": "2026-11-18T14:18:51Z",
+      "tier": "rising",
+      "query_tags": [
+        "new_mcp_7d"
+      ],
+      "metrics": {
+        "stars": 94,
+        "age_days": 1.4,
+        "velocity_per_day": 66.6,
+        "velocity_avg_per_day": 66.6,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      }
+    },
+    {
+      "repo": "diego3g/craft",
+      "description": "Design skills for AI agents: /craft-setup writes your design brief, /craft designs screens with every state from your design system and reviews them. Works with Paper, pen.dev, Figma or HTML.",
       "language": "JavaScript",
-      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
-      "created_at": "2026-11-14T12:11:07Z",
+      "url": "https://github.com/diego3g/craft",
+      "created_at": "2026-11-15T20:08:15Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_agent_7d"
+      ],
+      "metrics": {
+        "stars": 273,
+        "age_days": 4.2,
+        "velocity_per_day": 65.5,
+        "velocity_avg_per_day": 65.5,
+        "velocity_recent_per_day": null,
+        "forks": 14
+      }
+    },
+    {
+      "repo": "lizhenjie137/intelligent-organization",
+      "description": "智能组织 · Intelligent Organization | 人与 AI Agent 按原子能力协作，连接目标、分工、进展、成果、验收与交接，减少重复沟通与返工。当前支持本机多账号，跨设备协作为后续方向。",
+      "language": "Python",
+      "url": "https://github.com/lizhenjie137/intelligent-organization",
+      "created_at": "2026-11-15T15:32:16Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_agent_7d"
+      ],
+      "metrics": {
+        "stars": 209,
+        "age_days": 4.4,
+        "velocity_per_day": 47.9,
+        "velocity_avg_per_day": 47.9,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      },
+      "review_flags": [
+        "hot_but_no_forks"
+      ],
+      "owner_account_age_days": 218.5
+    },
+    {
+      "repo": "thejarasal780-ship-it/ollama-local-ai-offline",
+      "description": "Ollama Local AI Offline: Run Local LLMs Fully Offline on Desktop",
+      "language": "Python",
+      "url": "https://github.com/thejarasal780-ship-it/ollama-local-ai-offline",
+      "created_at": "2026-11-17T23:15:50Z",
+      "tier": "rising",
+      "query_tags": [
+        "kw_localllm_14d"
+      ],
+      "metrics": {
+        "stars": 95,
+        "age_days": 2.0,
+        "velocity_per_day": 46.6,
+        "velocity_avg_per_day": 46.6,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      }
+    },
+    {
+      "repo": "mdexa-ai/mdexa-ai-native-database",
+      "description": "Verified license and provenance records for datasets behind medical AI: information cards, JSON Schema, decision rules and evidence index (hashes only). Cards CC BY 4.0, scripts MIT.",
+      "language": "JavaScript",
+      "url": "https://github.com/mdexa-ai/mdexa-ai-native-database",
+      "created_at": "2026-11-15T12:20:17Z",
       "tier": "hot_new",
       "query_tags": [
         "new_mcp_7d"
       ],
       "metrics": {
-        "stars": 119,
-        "age_days": 1.9,
-        "velocity_per_day": 61.6,
-        "velocity_avg_per_day": 61.6,
+        "stars": 201,
+        "age_days": 4.5,
+        "velocity_per_day": 44.7,
+        "velocity_avg_per_day": 44.7,
         "velocity_recent_per_day": null,
-        "forks": 6
+        "forks": 11
       }
     },
     {
-      "repo": "huawei-csl/MACaQ",
-      "description": "SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch.",
-      "language": "C++",
-      "url": "https://github.com/huawei-csl/MACaQ",
-      "created_at": "2026-11-10T08:52:22Z",
-      "tier": "hot_new",
+      "repo": "zadazddq/lm-studio-private-ai",
+      "description": "LM Studio: Local LLM Desktop Runtime with Offline Inference and Model Management",
+      "language": "Rust",
+      "url": "https://github.com/zadazddq/lm-studio-private-ai",
+      "created_at": "2026-11-17T22:05:16Z",
+      "tier": "rising",
       "query_tags": [
         "kw_localllm_14d"
       ],
       "metrics": {
-        "stars": 318,
-        "age_days": 6.1,
-        "velocity_per_day": 52.4,
-        "velocity_avg_per_day": 52.4,
+        "stars": 92,
+        "age_days": 2.1,
+        "velocity_per_day": 44.1,
+        "velocity_avg_per_day": 44.1,
         "velocity_recent_per_day": null,
-        "forks": 21
+        "forks": 0
       }
     },
     {
@@ -345,124 +447,224 @@
         "hot_llm_30d"
       ],
       "metrics": {
-        "stars": 1196,
-        "age_days": 25.0,
-        "velocity_per_day": 47.8,
-        "velocity_avg_per_day": 47.8,
+        "stars": 1255,
+        "age_days": 28.6,
+        "velocity_per_day": 43.9,
+        "velocity_avg_per_day": 43.9,
         "velocity_recent_per_day": null,
-        "forks": 100
+        "forks": 112
       }
     },
     {
-      "repo": "MZULALI/xj-scanner",
-      "description": "Read a 1991-95 Jeep's engine computer from a laptop with a $3 Arduino Nano, and let an AI agent do the reading.",
-      "language": "Python",
-      "url": "https://github.com/MZULALI/xj-scanner",
-      "created_at": "2026-11-10T17:03:05Z",
-      "tier": "hot_new",
-      "query_tags": [
-        "kw_agent_7d"
-      ],
-      "metrics": {
-        "stars": 272,
-        "age_days": 5.7,
-        "velocity_per_day": 47.5,
-        "velocity_avg_per_day": 47.5,
-        "velocity_recent_per_day": null,
-        "forks": 36
-      }
-    },
-    {
-      "repo": "threerocks/article2media",
-      "description": "把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。",
-      "language": "JavaScript",
-      "url": "https://github.com/threerocks/article2media",
-      "created_at": "2026-11-08T08:07:28Z",
-      "tier": "rising",
-      "query_tags": [
-        "new_tts_14d"
-      ],
-      "metrics": {
-        "stars": 371,
-        "age_days": 8.1,
-        "velocity_per_day": 45.8,
-        "velocity_avg_per_day": 45.8,
-        "velocity_recent_per_day": null,
-        "forks": 58
-      }
-    },
-    {
-      "repo": "SAOS-3624/dsh-see-now",
-      "description": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
-      "language": "JavaScript",
-      "url": "https://github.com/SAOS-3624/dsh-see-now",
-      "created_at": "2026-11-01T13:32:34Z",
-      "tier": "rising",
-      "query_tags": [
-        "hot_llm_30d"
-      ],
-      "metrics": {
-        "stars": 666,
-        "age_days": 14.9,
-        "velocity_per_day": 44.8,
-        "velocity_avg_per_day": 44.8,
-        "velocity_recent_per_day": null,
-        "forks": 69
-      }
-    },
-    {
-      "repo": "mdexa-ai/mdexa-ai-native-database",
-      "description": "Verified license and provenance records for datasets behind medical AI: information cards, JSON Schema, decision rules and evidence index (hashes only). Cards CC BY 4.0, scripts MIT.",
-      "language": "JavaScript",
-      "url": "https://github.com/mdexa-ai/mdexa-ai-native-database",
-      "created_at": "2026-11-15T12:20:17Z",
-      "tier": "rising",
-      "query_tags": [
-        "new_mcp_7d"
-      ],
-      "metrics": {
-        "stars": 41,
-        "age_days": 0.9,
-        "velocity_per_day": 44.3,
-        "velocity_avg_per_day": 44.3,
-        "velocity_recent_per_day": null,
-        "forks": 0
-      }
-    },
-    {
-      "repo": "sleepy-zone/ai-ref-library-cn",
-      "description": "AI 作图素材库 · 中文版（脸 / 姿势 / 服装）",
-      "language": "JavaScript",
-      "url": "https://github.com/sleepy-zone/ai-ref-library-cn",
-      "created_at": "2026-10-29T15:28:16Z",
-      "tier": "rising",
-      "query_tags": [
-        "hot_ai_30d"
-      ],
-      "metrics": {
-        "stars": 772,
-        "age_days": 17.8,
-        "velocity_per_day": 43.4,
-        "velocity_avg_per_day": 43.4,
-        "velocity_recent_per_day": null,
-        "forks": 185
-      }
-    },
-    {
-      "repo": "fendouai/ViralForge",
-      "description": "Agent-native viral video studio: one-click replicate viral short videos, deconstruct video hooks and scripts into a Viral DNA report, and ship 10 costed variants. Skill + MCP + CLI. Apache-2.0.",
-      "language": "TypeScript",
-      "url": "https://github.com/fendouai/ViralForge",
-      "created_at": "2026-11-11T07:13:59Z",
+      "repo": "jackson-cmd/claude-multi-desktop",
+      "description": "Run multiple Claude Desktop accounts at the same time on Mac: separate sign-ins, custom icons, one shared Claude Code setup, and sessions that message each other across accounts. brew install jackson-cmd/tap/claude-multi-desktop",
+      "language": "HTML",
+      "url": "https://github.com/jackson-cmd/claude-multi-desktop",
+      "created_at": "2026-11-16T04:23:02Z",
       "tier": "hot_new",
       "query_tags": [
         "new_agent_7d"
       ],
       "metrics": {
-        "stars": 208,
-        "age_days": 5.1,
-        "velocity_per_day": 40.5,
-        "velocity_avg_per_day": 40.5,
+        "stars": 148,
+        "age_days": 3.8,
+        "velocity_per_day": 38.7,
+        "velocity_avg_per_day": 38.7,
+        "velocity_recent_per_day": null,
+        "forks": 6
+      }
+    },
+    {
+      "repo": "bigtee9999/viruagent-cli",
+      "description": "AI agent CLI for blog, Naver Cafe, Instagram, X and Reddit automation - /viruagent-cli",
+      "language": "TypeScript",
+      "url": "https://github.com/bigtee9999/viruagent-cli",
+      "created_at": "2026-11-15T20:53:50Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_agent_7d"
+      ],
+      "metrics": {
+        "stars": 153,
+        "age_days": 4.1,
+        "velocity_per_day": 37.0,
+        "velocity_avg_per_day": 37.0,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      },
+      "review_flags": [
+        "hot_but_no_forks"
+      ],
+      "owner_account_age_days": 524.5
+    },
+    {
+      "repo": "bhukyabalu12/repdix-telegram-bot",
+      "description": "Repdix Telegram Bot: Community-Driven Natural Language Database Orchestrator with Local LLM Support",
+      "language": "HTML",
+      "url": "https://github.com/bhukyabalu12/repdix-telegram-bot",
+      "created_at": "2026-11-15T20:31:40Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_localllm_14d"
+      ],
+      "metrics": {
+        "stars": 153,
+        "age_days": 4.2,
+        "velocity_per_day": 36.9,
+        "velocity_avg_per_day": 36.9,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      },
+      "review_flags": [
+        "hot_but_no_forks"
+      ],
+      "owner_account_age_days": 2535.5
+    },
+    {
+      "repo": "shani-hamer/riverse-ai-agent",
+      "description": "Riverse AI Agent: On-Device Personal Agent with Persistent Memory and Offline Cognition",
+      "language": "HTML",
+      "url": "https://github.com/shani-hamer/riverse-ai-agent",
+      "created_at": "2026-11-15T20:32:46Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_agent_7d"
+      ],
+      "metrics": {
+        "stars": 153,
+        "age_days": 4.2,
+        "velocity_per_day": 36.9,
+        "velocity_avg_per_day": 36.9,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      },
+      "review_flags": [
+        "hot_but_no_forks"
+      ],
+      "owner_account_age_days": 826.7
+    },
+    {
+      "repo": "SamaEk111/exasol-agent-skills",
+      "description": "Exasol Agent Skills: Code-first AI agent skills Exasol",
+      "language": "Python",
+      "url": "https://github.com/SamaEk111/exasol-agent-skills",
+      "created_at": "2026-11-15T19:51:45Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_agent_7d"
+      ],
+      "metrics": {
+        "stars": 153,
+        "age_days": 4.2,
+        "velocity_per_day": 36.6,
+        "velocity_avg_per_day": 36.6,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      },
+      "review_flags": [
+        "hot_but_no_forks"
+      ],
+      "owner_account_age_days": 576.6
+    },
+    {
+      "repo": "buiquangvu235/antigravity-skills-engine",
+      "description": "Antigravity Skills Engine: Industrial-grade Claude Skills library for AI agents",
+      "language": "CSS",
+      "url": "https://github.com/buiquangvu235/antigravity-skills-engine",
+      "created_at": "2026-11-15T19:29:26Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_agent_7d"
+      ],
+      "metrics": {
+        "stars": 153,
+        "age_days": 4.2,
+        "velocity_per_day": 36.5,
+        "velocity_avg_per_day": 36.5,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      },
+      "review_flags": [
+        "hot_but_no_forks"
+      ],
+      "owner_account_age_days": 711.9
+    },
+    {
+      "repo": "AI4XE/Parallax",
+      "description": "A lightweight workflow plugin for hands-off AI coding with DeepSeek Harness, Claude Code, GitHub Copilot, and more.",
+      "language": "Python",
+      "url": "https://github.com/AI4XE/Parallax",
+      "created_at": "2026-11-15T10:31:00Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_agent_7d"
+      ],
+      "metrics": {
+        "stars": 136,
+        "age_days": 4.6,
+        "velocity_per_day": 29.8,
+        "velocity_avg_per_day": 29.8,
+        "velocity_recent_per_day": null,
+        "forks": 0
+      },
+      "review_flags": [
+        "hot_but_no_forks"
+      ],
+      "owner_account_age_days": 640.0
+    },
+    {
+      "repo": "manuelgscom/inside-llm",
+      "description": "See inside any GGUF: where two quantizations part ways, token by token, and what each sampler cuts. Live in your browser, powered by llama.cpp (CUDA or Vulkan).",
+      "language": "TypeScript",
+      "url": "https://github.com/manuelgscom/inside-llm",
+      "created_at": "2026-11-15T18:46:30Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "kw_localllm_14d"
+      ],
+      "metrics": {
+        "stars": 107,
+        "age_days": 4.2,
+        "velocity_per_day": 25.3,
+        "velocity_avg_per_day": 25.3,
+        "velocity_recent_per_day": null,
+        "forks": 9
+      }
+    },
+    {
+      "repo": "Renakoni/Voicebox",
+      "description": "最好用的 Android 离线语音克隆与三语 TTS（误）——基于 GPT-SoVITS，支持中日英。 | The best offline voice cloning & trilingual TTS on Android (jk) — powered by GPT-SoVITS (ZH/JA/EN).",
+      "language": "Kotlin",
+      "url": "https://github.com/Renakoni/Voicebox",
+      "created_at": "2026-11-14T13:55:51Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_tts_14d"
+      ],
+      "metrics": {
+        "stars": 136,
+        "age_days": 5.4,
+        "velocity_per_day": 25.1,
+        "velocity_avg_per_day": 25.1,
+        "velocity_recent_per_day": null,
+        "forks": 38
+      }
+    },
+    {
+      "repo": "Tthanh2k6/turbo-browser-mcp",
+      "description": "Playwright MCP server built to cut agent turns and tokens: one-call form filling, delta snapshots, batched steps, and a submit guard on by default",
+      "language": "JavaScript",
+      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+      "created_at": "2026-11-14T12:11:07Z",
+      "tier": "hot_new",
+      "query_tags": [
+        "new_agent_7d"
+      ],
+      "metrics": {
+        "stars": 133,
+        "age_days": 5.5,
+        "velocity_per_day": 24.2,
+        "velocity_avg_per_day": 24.2,
         "velocity_recent_per_day": null,
         "forks": 6
       }
@@ -479,54 +681,16 @@
       ],
       "metrics": {
         "stars": 104,
-        "age_days": 2.7,
-        "velocity_per_day": 38.4,
-        "velocity_avg_per_day": 38.4,
+        "age_days": 6.3,
+        "velocity_per_day": 16.6,
+        "velocity_avg_per_day": 16.6,
         "velocity_recent_per_day": null,
         "forks": 1
       },
       "review_flags": [
         "hot_but_no_forks"
       ],
-      "owner_account_age_days": 1360.8
-    },
-    {
-      "repo": "claynicholson/copper-kicad-mcp",
-      "description": "MCP server that lets any AI app design real, orderable KiCad boards: schematic, LCSC parts, PCB routing, ERC/DRC, JLCPCB fab files.",
-      "language": "Python",
-      "url": "https://github.com/claynicholson/copper-kicad-mcp",
-      "created_at": "2026-11-12T18:44:11Z",
-      "tier": "hot_new",
-      "query_tags": [
-        "new_mcp_7d"
-      ],
-      "metrics": {
-        "stars": 102,
-        "age_days": 3.7,
-        "velocity_per_day": 27.9,
-        "velocity_avg_per_day": 27.9,
-        "velocity_recent_per_day": null,
-        "forks": 5
-      }
-    },
-    {
-      "repo": "yasakani-dev/yasakani",
-      "description": "Local LLM engine for Windows and one NVIDIA RTX 5090, built for Qwen3.8-27B",
-      "language": "Python",
-      "url": "https://github.com/yasakani-dev/yasakani",
-      "created_at": "2026-11-12T13:12:17Z",
-      "tier": "hot_new",
-      "query_tags": [
-        "kw_localllm_14d"
-      ],
-      "metrics": {
-        "stars": 107,
-        "age_days": 3.9,
-        "velocity_per_day": 27.5,
-        "velocity_avg_per_day": 27.5,
-        "velocity_recent_per_day": null,
-        "forks": 22
-      }
+      "owner_account_age_days": 1364.4
     }
   ]
 }

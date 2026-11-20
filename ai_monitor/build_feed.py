@@ -137,8 +137,10 @@ def write_sitemap() -> None:
 INPUT_FILES = [
     "status_items.json",    # outages first in priority if timestamps tie
     "prices_items.json",
+    "subscriptions_items.json",
     "rankings_items.json",
     "trending_items.json",
+    "html_items.json",
     "feeds_items.json",
     # hn_items.json removed with the HN source (user directive: HN is an
     # aggregator; reposting it adds no value)

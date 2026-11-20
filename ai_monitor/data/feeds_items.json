@@ -1,76 +1,356 @@
 {
-  "generated_at": "2026-11-16T10:34:00+00:00",
-  "item_count": 7,
+  "generated_at": "2026-11-20T00:38:23+00:00",
+  "item_count": 35,
   "items": [
     {
-      "id": "fd-1b62ef559289",
-      "timestamp": "2026-11-16T09:52:09+00:00",
+      "id": "fd-3bf001ac47aa",
+      "timestamp": "2026-11-20T00:25:30+00:00",
       "category": "release",
-      "source_name": "llama.cpp Releases",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12432",
-      "headline_en": "b12432",
-      "summary_en": "kv-cells: avoid an O(n_cells) scan per sequence removal ( #32380 )"
+      "source_name": "Ollama Releases",
+      "source_url": "https://github.com/ollama/ollama/releases.atom",
+      "target_url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc2",
+      "headline_en": "v0.40.17",
+      "summary_en": "What's Changed Improve ChatGPT CLI restore and graceful restart by @hoyyeva in #19583 cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in #19409 llm: use mmap for Vulkan integrated GPUs by @dhiltgen in #19640 rpreslar4765/Ollama by @rpreslar4765 in #17163 mlx: support concurrent generation by @dhiltgen in #19197 llama.cpp: version bump b12257 by @dhiltgen in #19646 MLX, MLX-C: version bump by @dhiltgen in #19647 New Contributors @rpreslar4765 made their first contribution in #"
     },
     {
-      "id": "fd-c68a52acebb4",
-      "timestamp": "2026-11-16T09:24:51+00:00",
+      "id": "fd-12da44c4cf0e",
+      "timestamp": "2026-11-19T22:21:24+00:00",
       "category": "release",
       "source_name": "llama.cpp Releases",
       "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12431",
-      "headline_en": "b12431",
-      "summary_en": "server: answer reasoning_effort levels the template rejects with 400 ( #32332 ) The reasoning effort probe already renders every candidate level, but it dropped the ones the template raises on, so a request with such a level (e.g. max on Qwen3.8) reached the template and came back as a 500 on /v1/chat/completions, /v1/responses and /v1/messages. Keep the raising levels in reasoning_effort_rejected and reject them in oaicompat_chat_params_parse with an invalid_argument, which the server answers w"
-    },
-    {
-      "id": "fd-af086867b5a6",
-      "timestamp": "2026-11-16T06:39:21+00:00",
-      "category": "release",
-      "source_name": "llama.cpp Releases",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12430",
-      "headline_en": "b12430",
-      "summary_en": "ggml-cuda: fix MoE regression on HIP with #29948 ( #32344 ) Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/67993871 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu "
-    },
-    {
-      "id": "fd-6c81c60c95d8",
-      "timestamp": "2026-11-15T23:47:27+00:00",
-      "category": "release",
-      "source_name": "llama.cpp Releases",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases.atom",
-      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12429",
-      "headline_en": "b12429: convert: fix ripple dflash2 NoPE metadata (#32363)",
-      "summary_en": "convert: fix ripple dflash2 NoPE metadata was wrong https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2/blob/743c4669f7daa11d3ca350b9a057c059481b1afd/config.json#L45-L47 Update conversion/base.py Co-authored-by: Sigbjørn Skjæret sigbjorn.skjaeret@huggingface.co Co-authored-by: Sigbjørn Skjæret sigbjorn.skjaeret@huggingface.co"
+      "target_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12557",
+      "headline_en": "b12557: CUDA: implement support for duplicate expert IDs (#32505)",
+      "summary_en": "implement support for duplicate expert IDs"
     },
     {
       "id": "fd-4ed9358d24f4",
-      "timestamp": "2026-11-16T04:27:15+00:00",
+      "timestamp": "2026-11-18T21:02:33+00:00",
       "category": "release",
       "source_name": "vLLM Releases",
       "source_url": "https://github.com/vllm-project/vllm/releases.atom",
       "target_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
       "headline_en": "v0.34.0",
-      "summary_en": "v0.34.0"
+      "summary_en": "v0.34.0 1,061 commits from 412 contributors (120 new). Thank you! TL;DR 10 new models (Mistral Large 4, MiniMax-M3.1-Flash, Nemotron-3.5-Transcribe, and more!) Extensible KV cache is on by default: vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache and more throughput - in most cases you should now remove gpu_memory_utilization from your configs. Model Runner V1 is gone. Model Runner V2 is now the only GPU runner. Big speedups on Blackwell and MI355"
     },
     {
-      "id": "fd-22a168cf2abb",
-      "timestamp": "2026-11-16T08:37:54+00:00",
+      "id": "fd-91905c1516c9",
+      "timestamp": "2026-11-17T14:46:26+00:00",
+      "category": "release",
+      "source_name": "Open WebUI Releases",
+      "source_url": "https://github.com/open-webui/open-webui/releases.atom",
+      "target_url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.4",
+      "headline_en": "v0.13.4",
+      "summary_en": "Added Bring your own computer with Tether. Tether turns your own computer into part of Open WebUI: models from Ollama, LM Studio or any OpenAI-compatible server, OpenAPI and MCP tool servers and Open Terminal servers that you add in the Tether app now show up just for you in the model selector, the Tools list of the + menu and the terminal menu of any Open WebUI you connect, from whatever device you open it on, and Open WebUI reaches them through Tether, so their addresses, commands and keys nev"
+    },
+    {
+      "id": "fd-5dcb5363d574",
+      "timestamp": "2026-11-20T00:03:31+00:00",
+      "category": "release",
+      "source_name": "LiteLLM Releases",
+      "source_url": "https://github.com/BerriAI/litellm/releases.atom",
+      "target_url": "https://github.com/BerriAI/litellm/releases/tag/v1.112.0-dev.1",
+      "headline_en": "v1.112.0-dev.1",
+      "summary_en": "Verify Docker Image Signature cosign verify \\ --certificate-identity https://github.com/BerriAI/project-releaser/.github/workflows/release.yml@refs/heads/main \\ --certificate-oidc-issuer https://token.actions.githubusercontent.com \\ ghcr.io/berriai/litellm:v1.112.0-dev.1 What's Changed test(database): expect no native pool in proxy lifespan cleanup by @devin-ai-integration [bot] in #51911 fix(ui): clarify customer usage periods and preserve date ranges by @moe-berri in #51899 feat(ui): reuse usa"
+    },
+    {
+      "id": "fd-fe7b932b7232",
+      "timestamp": "2026-11-19T05:33:06+00:00",
+      "category": "release",
+      "source_name": "LangGraph Releases",
+      "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
+      "target_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.23",
+      "headline_en": "langgraph==1.2.23",
+      "summary_en": "Changes since 1.2.22 release(langgraph): 1.2.23 ( #9742 ) release(prebuilt): 1.1.3 ( #9741 ) fix(langgraph,prebuilt): give Send-dispatched tool calls the same state as an edge ( #9728 ) chore(deps): bump opentelemetry-api from 1.45.1 to 1.45.2 in /libs/langgraph ( #9696 ) fix(langgraph): avoid warning races in dynamic schemas ( #9716 )"
+    },
+    {
+      "id": "fd-b794c69ba5d3",
+      "timestamp": "2026-11-18T16:46:40+00:00",
+      "category": "release",
+      "source_name": "OpenHands Releases",
+      "source_url": "https://github.com/All-Hands-AI/OpenHands/releases.atom",
+      "target_url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.42.0",
+      "headline_en": "v1.42.0",
+      "summary_en": "1.42.0 (2026-11-18) What's Changed Features feat(cloud): pick the exact connected git provider for repositories by @tofarr in #19762 feat(verify-openhands): every run has a non-loopback plain-HTTP origin by @enyst in #19756 Bug Fixes fix(filters): close EnumFilterDropdown menus on Escape by @enyst in #19817 fix(automations): restore native webhook source validation by @1kailas in #19600 fix(clipboard): support fallback when Clipboard API is unavailable by @lx3133584 in #18583 Documentation docs("
+    },
+    {
+      "id": "fd-9743c64181c8",
+      "timestamp": "2026-11-19T08:18:19+00:00",
       "category": "release",
       "source_name": "n8n Releases",
       "source_url": "https://github.com/n8n-io/n8n/releases.atom",
-      "target_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.97",
-      "headline_en": "n8n@1.123.97",
-      "summary_en": "1.123.97 (2026-11-16)"
+      "target_url": "https://github.com/n8n-io/n8n/releases/tag/v1",
+      "headline_en": "v1: :rocket: Release 1.123.99 (#44433)",
+      "summary_en": "Co-authored-by: n8n-release-helper[bot] &lt;265227495+n8n-release-helper[bot]@users.noreply.github.com&gt;"
     },
     {
-      "id": "fd-d58a098adfef",
-      "timestamp": "2026-11-15T20:00:00+00:00",
+      "id": "fd-b5c9e27933c5",
+      "timestamp": "2026-11-18T09:56:56+00:00",
+      "category": "release",
+      "source_name": "Dify Releases",
+      "source_url": "https://github.com/langgenius/dify/releases.atom",
+      "target_url": "https://github.com/langgenius/dify/releases/tag/1.20.0",
+      "headline_en": "v1.20.0",
+      "summary_en": "Dify 1.20.0 keeps your traces flowing and your knowledge bases safer. Export traces to any OpenTelemetry collector, keep Langfuse working after its legacy ingestion endpoint retirement, and scan uploaded knowledge files for malware before they are indexed. Chatflows can show Agent tool activity as it happens, and personal access tokens let scripts and agents call the Dify OpenAPI on your behalf. The bundled plugin daemon is upgraded to 0.6.15-local . New Features · Configuration and Integration "
+    },
+    {
+      "id": "fd-c58e4b8cd2b9",
+      "timestamp": "2026-02-12T00:42:25+00:00",
+      "category": "release",
+      "source_name": "Aider Releases",
+      "source_url": "https://github.com/Aider-AI/aider/releases.atom",
+      "target_url": "https://github.com/Aider-AI/aider/releases/tag/v0.86.3.dev",
+      "headline_en": "v0.86.3.dev",
+      "summary_en": "set version to 0.86.3.dev"
+    },
+    {
+      "id": "fd-65bba15109b9",
+      "timestamp": "2026-06-19T00:24:00+00:00",
+      "category": "release",
+      "source_name": "Continue Releases",
+      "source_url": "https://github.com/continuedev/continue/releases.atom",
+      "target_url": "https://github.com/continuedev/continue/releases/tag/v2.1.0-vscode",
+      "headline_en": "v2.1.0-vscode",
+      "summary_en": "chore: vscode 2.1.0 Co-authored-by: Cursor &lt;cursoragent@cursor.com&gt;"
+    },
+    {
+      "id": "fd-a0066fe37d99",
+      "timestamp": "2026-11-18T00:34:15+00:00",
+      "category": "release",
+      "source_name": "SGLang Releases",
+      "source_url": "https://github.com/sgl-project/sglang/releases.atom",
+      "target_url": "https://github.com/sgl-project/sglang/releases/tag/router-v0.1.0",
+      "headline_en": "router-v0.1.0",
+      "summary_en": "[CI] sgl-router: Release the router image and PyPI wheel from router-…"
+    },
+    {
+      "id": "fd-beab25cd9e03",
+      "timestamp": "2026-11-19T15:49:51+00:00",
+      "category": "release",
+      "source_name": "Codex Releases",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "target_url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.2",
+      "headline_en": "0.172.0-alpha.2",
+      "summary_en": "Release 0.172.0-alpha.2"
+    },
+    {
+      "id": "fd-f414e218a927",
+      "timestamp": "2026-11-19T21:33:50+00:00",
+      "category": "release",
+      "source_name": "ComfyUI Releases",
+      "source_url": "https://github.com/comfyanonymous/ComfyUI/releases.atom",
+      "target_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.1",
+      "headline_en": "v0.46.1",
+      "summary_en": "ComfyUI v0.46.1"
+    },
+    {
+      "id": "fd-40b057033126",
+      "timestamp": "2026-11-19T20:05:23+00:00",
+      "category": "release",
+      "source_name": "LobeChat Releases",
+      "source_url": "https://github.com/lobehub/lobe-chat/releases.atom",
+      "target_url": "https://github.com/lobehub/lobehub/releases/tag/cli-release%2Fv0.0.140",
+      "headline_en": "cli-release/v0.0.140",
+      "summary_en": "✨ feat(channel): show a failed reply as a card under its Agent, and s…"
+    },
+    {
+      "id": "fd-041177436bab",
+      "timestamp": "2025-07-29T06:40:25+00:00",
+      "category": "release",
+      "source_name": "NextChat Releases",
+      "source_url": "https://github.com/ChatGPTNextWeb/NextChat/releases.atom",
+      "target_url": "https://github.com/ChatGPTNextWeb/NextChat/releases/tag/v2.16.1",
+      "headline_en": "v2.16.1",
+      "summary_en": "What's Changed Translation to danish by @rasmuserik in #6235 Fix: Improve Mistral icon detection and remove redundant code. by @rexkyng in #6295 claude 3.7 support by @hyiip in #6293 fix: enforce that the first message (excluding system messages) is a … by @Kadxy in #6311 Remove duplicate links by @umar-mq in #6310 2025年2月28日 by @Telis-Tao in #6307 feat(alibaba): Added alibaba vision model and omni model support by @Little-LittleProgrammer in #6292 test: fix unit test failures by @vangie in #634"
+    },
+    {
+      "id": "fd-2b322755827b",
+      "timestamp": "2025-04-10T02:47:41+00:00",
+      "category": "release",
+      "source_name": "OpenManus Releases",
+      "source_url": "https://github.com/FoundationAgents/OpenManus/releases.atom",
+      "target_url": "https://github.com/FoundationAgents/OpenManus/releases/tag/v0.3.0",
+      "headline_en": "v0.3.0",
+      "summary_en": "No content."
+    },
+    {
+      "id": "fd-cc8404f4e1c1",
+      "timestamp": "2026-11-16T00:51:24+00:00",
+      "category": "release",
+      "source_name": "Browser-Use Releases",
+      "source_url": "https://github.com/browser-use/browser-use/releases.atom",
+      "target_url": "https://github.com/browser-use/browser-use/releases/tag/1.0.6",
+      "headline_en": "browser-use 1.0.6",
+      "summary_en": "pip install 'browser-use==1.0.6' BU 4.0 is the default model. Agent(task) and ChatBrowserUse() now run bu-4.0 on the Browser Use gateway instead of bu-fast . Pass llm='bu-4.0-mini' for simple tasks at the lowest cost, or llm='bu-4.0-pro' for the hardest tasks ( #6430 ). This costs more if you pass no llm . BU 4.0 tokens cost 15 times as much as bu-fast ($1.80 / $9.00 per 1M input / output tokens, against $0.12 / $0.60), and it runs at high instead of medium reasoning in the default mode. A short"
+    },
+    {
+      "id": "fd-5102d30b9a69",
+      "timestamp": "2026-11-04T21:08:20+00:00",
+      "category": "release",
+      "source_name": "Cline Releases",
+      "source_url": "https://github.com/cline/cline/releases.atom",
+      "target_url": "https://github.com/cline/cline/releases/tag/desktop-nightly-20261104233655",
+      "headline_en": "desktop-nightly-20261104233655: feat(core): delegate UX verification to subagents (#15523)",
+      "summary_en": "feat(core): delegate UX verification to a subagent fix(agents): preserve delegated tool approval policies fix(core): preserve worker identity and proxied execution mode fix(core): preserve child identity across Hub event projection"
+    },
+    {
+      "id": "fd-f91da579c723",
+      "timestamp": "2026-07-29T09:59:33+00:00",
+      "category": "release",
+      "source_name": "Flowise Releases",
+      "source_url": "https://github.com/FlowiseAI/Flowise/releases.atom",
+      "target_url": "https://github.com/FlowiseAI/Flowise/releases/tag/flowise-ui%403.1.4",
+      "headline_en": "flowise-ui@3.1.4: Release/3.1.4 (#6681)",
+      "summary_en": "flowise@3.1.4"
+    },
+    {
+      "id": "fd-73ee011a1624",
+      "timestamp": "2026-11-17T14:25:11+00:00",
+      "category": "release",
+      "source_name": "LibreChat Releases",
+      "source_url": "https://github.com/danny-avila/LibreChat/releases.atom",
+      "target_url": "https://github.com/LibreChat-AI/LibreChat/releases/tag/v0.8.9",
+      "headline_en": "v0.8.9",
+      "summary_en": "https://www.librechat.ai/changelog/v0.8.9 🏞️ Highlights Gemini 4 Hydrogen, GPT-6.1 Terra, Claude Fable 5.2, GPT Image 2.6 Sunburst/Flare, and restricted-access Mythos 5.2/GPT-6 Cyber MCP Apps, clearer tool approvals, and deferred system tools through Tool Search Faster chat loading, deferred MCP UI/export libraries, and fewer composer re-renders Chat Projects with shared instructions and reference files Passkeys, email changes, and stronger account protection Deployment themes and polished chat "
+    },
+    {
+      "id": "fd-2123f7a55bdb",
+      "timestamp": "2026-11-19T15:03:21+00:00",
+      "category": "release",
+      "source_name": "LangChain Releases",
+      "source_url": "https://github.com/langchain-ai/langchain/releases.atom",
+      "target_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.3.0",
+      "headline_en": "langchain-openrouter==0.3.0",
+      "summary_en": "langchain-openrouter 0.3.0 drops support for Python 3.10 , which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum langchain-core version is now 1.8.3. Users on Python 3.10 will continue to resolve langchain-openrouter 0.2.x. Changes since langchain-openrouter==0.2.9 release(openrouter): 0.3.0 ( #41957 ) chore(model-profiles): refresh model profile data ( #41934 ) chore(model-profiles): refresh model profile data ( #41917 ) chore(model-profiles): refresh "
+    },
+    {
+      "id": "fd-fc892243f12b",
+      "timestamp": "2026-11-13T14:10:57+00:00",
+      "category": "release",
+      "source_name": "Transformers Releases",
+      "source_url": "https://github.com/huggingface/transformers/releases.atom",
+      "target_url": "https://github.com/huggingface/transformers/releases/tag/v5.23.0",
+      "headline_en": "Release v5.23.0",
+      "summary_en": "Release v5.23.0 New Model additions Inkling2 Inkling 2 Small is a multimodal model from Thinking Machines Lab that accepts text and image inputs and generates text outputs, and it is intended for use in English and other languages and across multiple coding languages. Its language backbone has 48 mixture-of-experts decoder layers, each routing tokens to 8 of 384 experts, for 594B total and 17B active parameters. It keeps the Inkling decoder (learned relative attention, short causal convolutions,"
+    },
+    {
+      "id": "fd-6d9a3e62fb91",
+      "timestamp": "2026-11-19T18:03:33+00:00",
+      "category": "release",
+      "source_name": "AutoGPT Releases",
+      "source_url": "https://github.com/Significant-Gravitas/AutoGPT/releases.atom",
+      "target_url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.12.0",
+      "headline_en": "🚀 AutoGPT Platform v0.12.0",
+      "summary_en": "⚠️ Breaking change The frontend no longer reads TRUST_X_FORWARDED_FOR ( #16530 , @Pwuts ). A self-hosted frontend that set it by hand gets no client IP from X-Forwarded-For for the sign-in IP log, IP blocks and per-visitor store search until TRUSTED_PROXIES lists the proxy in front of it. The single-container image and Vercel need nothing. What to do: if your frontend sets TRUST_X_FORWARDED_FOR , remove it and set TRUSTED_PROXIES to a comma-separated list of the addresses or CIDR ranges of the p"
+    },
+    {
+      "id": "fd-6476ada793d7",
+      "timestamp": "2026-11-18T19:05:45+00:00",
+      "category": "release",
+      "source_name": "AnythingLLM Releases",
+      "source_url": "https://github.com/Mintplex-Labs/anything-llm/releases.atom",
+      "target_url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.20.0",
+      "headline_en": "AnythingLLM v1.20.0",
+      "summary_en": "Updated browser extension The browser extension has been improved beyond its original function of just collecting documents to now a full fledged UI chat bar with the ability to right click -&gt; Add context (text and image) and chat directly in Chrome. This sidebar should have mostly full parity for tooling and more with the traditional chat UI. While it is backward and forward compatible, only full functionality is expected when the server and extension are on version 1.20.0 or later. The Chro"
+    },
+    {
+      "id": "fd-0ae9ac31c965",
+      "timestamp": "2026-11-19T20:00:15+00:00",
+      "category": "blog",
+      "source_name": "NVIDIA AI Blog",
+      "source_url": "https://blogs.nvidia.com/feed/",
+      "target_url": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
+      "headline_en": "NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs",
+      "summary_en": "NVIDIA and Microsoft are extending their full-stack collaboration to help organizations build, customize and deploy intelligent applications — from next-generation infrastructure on Azure to industrial systems and Windows PCs. At Microsoft Ignite, the companies are expanding access to Azure virtual machines powered by NVIDIA Vera Rubin NVL72 systems, as well as adding customer availability to [&#8230;] NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs"
+    },
+    {
+      "id": "fd-c83c3153b641",
+      "timestamp": "2026-11-05T12:00:14+00:00",
+      "category": "news",
+      "source_name": "Mistral News",
+      "source_url": "https://mistral.ai/news/rss",
+      "target_url": "https://mistral.ai/news/build-with-studio/",
+      "headline_en": "Le Chonk brings the brains. Studio puts it to work.",
+      "summary_en": "Build and deploy enterprise agents, workflows and apps faster with Mistral Studio and Le Chonk full control over your models, data and infrastructure."
+    },
+    {
+      "id": "fd-c5acfa634c2a",
+      "timestamp": "2026-11-18T19:54:56+00:00",
+      "category": "blog",
+      "source_name": "Hugging Face Blog",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "target_url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+      "headline_en": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+      "summary_en": "New entry from Hugging Face Blog: DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency"
+    },
+    {
+      "id": "fd-c8cd05d3ae5e",
+      "timestamp": "2026-08-25T14:59:22+00:00",
+      "category": "news",
+      "source_name": "Stability AI News",
+      "source_url": "https://stability.ai/news-updates?format=rss",
+      "target_url": "https://stability.ai/news-updates/stability-ai-latest-funding-backed-by-entertainment-industry-biggest-names",
+      "headline_en": "The Entertainment Industry’s Biggest Names Back Stability AI in Latest Funding Round",
+      "summary_en": "We've closed our Series B, bringing total funding to $232M under new leadership. This round welcomes entertainment titans Electronic Arts, Sony Music Group, Universal Music Group, Warner Music Group, and more. The Entertainment Industry’s Biggest Names Back Stability AI in Latest Funding Round"
+    },
+    {
+      "id": "fd-b552fc82a92f",
+      "timestamp": "2026-11-19T00:00:00+00:00",
+      "category": "blog",
+      "source_name": "Together AI Blog",
+      "source_url": "https://www.together.ai/blog/rss.xml",
+      "target_url": "https://www.together.ai/blog/tencent-hy4",
+      "headline_en": "Tencent Hy4 is live on Together AI",
+      "summary_en": "Tencent Hy4 is live on Together AI. We tested its image input by extracting and rebuilding a chart, then tried its coding with a browser game generated from one prompt."
+    },
+    {
+      "id": "fd-b28d418b0a71",
+      "timestamp": "2026-11-19T15:23:57+00:00",
+      "category": "changelog",
+      "source_name": "OpenRouter Changelog",
+      "source_url": "https://openrouter.ai/docs/changelog/rss.xml",
+      "target_url": "https://openrouter.ai/docs/changelog#november-19-2026",
+      "headline_en": "November 19, 2026",
+      "summary_en": "New entry from OpenRouter Changelog: November 19, 2026"
+    },
+    {
+      "id": "fd-33b4c867f0cb",
+      "timestamp": "2026-11-19T05:00:00+00:00",
       "category": "blog",
       "source_name": "Vercel AI Blog",
       "source_url": "https://vercel.com/blog/feed.xml",
-      "target_url": "https://vercel.com/changelog/qwen4-max-now-available-on-ai-gateway",
-      "headline_en": "Qwen4-Max now available on AI Gateway",
-      "summary_en": "Qwen4-Max from Alibaba is now available on AI Gateway. It is the first model in the Qwen4 series: a reasoning model with native vision and a 1M-token context window, built for coding, professional work, and long-running agent tasks.Qwen4-Max is better at working with professional tools. It can build 3D scenes in Blender and playable games in Unity, Unreal Engine, and Godot, running what it builds and using visual feedback to fix camera, animation, and lighting issues. For finance, legal, and hea"
+      "target_url": "https://vercel.com/changelog/vercel-billing-cli-is-now-available",
+      "headline_en": "Vercel Billing CLI is now available",
+      "summary_en": "You can now check your team’s billing overview, review and download invoices, and preview upcoming charges with the Vercel CLI. All billing commands, including usage, contracts, and budgets, are now grouped under vercel billing.Billing overview and invoice history are available on all plans, subject to your team’s existing billing permissions. Upcoming invoice estimates require an active paid subscription.Billing overviewCheck your team’s plan, billing status, billing cycle, balance due, and ove"
+    },
+    {
+      "id": "fd-cfdf7fe5ac3e",
+      "timestamp": "2026-11-18T22:00:00+00:00",
+      "category": "blog",
+      "source_name": "Cloudflare AI Blog",
+      "source_url": "https://blog.cloudflare.com/tag/ai/rss",
+      "target_url": "https://blog.cloudflare.com/open-clairic/",
+      "headline_en": "An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team",
+      "summary_en": "Clairic graduates from preview, while Clairic-flash joins the repertoire on Workers AI. We’re doing an open-weight release for both extraction models."
+    },
+    {
+      "id": "fd-7254dbbd457d",
+      "timestamp": "2026-11-20T00:34:07+00:00",
+      "category": "blog",
+      "source_name": "AWS ML Blog",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "target_url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+      "headline_en": "Amazon SageMaker Inference: 2026 launches in review, part 2",
+      "summary_en": "This second installment reviews 13 more Amazon SageMaker AI inference launches from 2026, spanning configuration recommendations, fitting more models onto each GPU, serving models too large for one instance, cross-Region routing, and post-launch tuning, bringing the year's total to 26."
+    },
+    {
+      "id": "fd-54794b1e0ba2",
+      "timestamp": "2026-11-19T22:14:18+00:00",
+      "category": "blog",
+      "source_name": "Microsoft AI Blog",
+      "source_url": "https://news.microsoft.com/source/feed/",
+      "target_url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+      "headline_en": "The future of medicine: Could AI help predict and prevent disease?",
+      "summary_en": "The post The future of medicine: Could AI help predict and prevent disease? appeared first on Source ."
     }
   ]
 }
