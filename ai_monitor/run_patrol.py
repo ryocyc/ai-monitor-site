@@ -50,7 +50,7 @@ STEPS = [
     ("enrich",    [sys.executable, str(BASE_DIR / "build" / "enrich.py"),
                  "--max-calls", "20"],                                    1800),
     ("articles",  [sys.executable, str(BASE_DIR / "build" / "generate_articles.py"),
-                 "--limit", "6"],                                         1200),
+                 "--limit", "4"],                                         1500),
 ]
 
 
