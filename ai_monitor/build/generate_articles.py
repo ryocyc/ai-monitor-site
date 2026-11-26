@@ -234,6 +234,9 @@ def main() -> int:
 
     feed = json.loads((SITE_DATA / "feed.json").read_text(encoding="utf-8"))
     items = feed.get("items", [])
+    # releases live in the dev section; article effort goes to
+    # general-user pillars (release articles were 60% of output)
+    items = [i for i in items if i.get("category") != "release"]
     if args.only:
         items = [i for i in items if i.get("id") == args.only]
 

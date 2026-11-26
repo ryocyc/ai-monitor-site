@@ -214,6 +214,24 @@ def main() -> int:
     if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+    # cooldown: arena.ai CF-blocked our fingerprint since 11/20; retrying
+    # every 2h aggravates it. Attempt at most every 8h.
+    attempt_file = STATE_DIR / "rankings_last_attempt.json"
+    try:
+        last = json.loads(attempt_file.read_text(encoding="utf-8")).get("ts", "")
+        last_dt = dt.datetime.fromisoformat(last)
+        hours_since = (dt.datetime.now(dt.timezone.utc) - last_dt).total_seconds() / 3600
+        if hours_since < 8:
+            print(f"[skip] rankings cooldown ({hours_since:.1f}h since last attempt)")
+            (DATA_DIR / "rankings_items.json").write_text(
+                json.dumps({"generated_at": utc_now(), "item_count": 0, "items": []},
+                           ensure_ascii=False, indent=2), encoding="utf-8")
+            return 0
+    except (FileNotFoundError, ValueError, json.JSONDecodeError):
+        pass
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    attempt_file.write_text(json.dumps({"ts": utc_now()}), encoding="utf-8")
+
     try:
         text = fetch_visible_text()
     except Exception as exc:  # noqa: BLE001
