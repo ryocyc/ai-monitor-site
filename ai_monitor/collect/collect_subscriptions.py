@@ -113,8 +113,7 @@ def main() -> int:
         try:
             text = page_text(url)
             prices = price_strings(text)
-        except (urllib.error.URLError, TimeoutError, ConnectionError,
-                ValueError) as exc:
+        except Exception as exc:  # noqa: BLE001 - any page failure = skip page
             print(f"  ?      {name}: fetch failed ({type(exc).__name__})")
             time.sleep(SLEEP_SECONDS)
             continue

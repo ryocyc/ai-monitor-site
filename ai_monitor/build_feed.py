@@ -177,7 +177,8 @@ def apply_enrichment_cache(items: list[dict]) -> tuple[int, int]:
             pending += 1
     return applied, pending
 
-FEED_CAP = 60
+FEED_CAP = 60          # main feed (non-release categories)
+RELEASE_CAP = 40       # dev releases live in their own collapsed section
 ARCHIVE_CAP = 2000
 
 
@@ -234,7 +235,10 @@ def main() -> int:
                    key=lambda i: i.get("timestamp", ""), reverse=True)
     print(f"merged unique (incl. archive memory): {len(items)}")
 
-    feed_items = items[:FEED_CAP]
+    main_items = [i for i in items if i.get("category") != "release"][:FEED_CAP]
+    release_items = [i for i in items if i.get("category") == "release"][:RELEASE_CAP]
+    feed_items = sorted(main_items + release_items,
+                        key=lambda i: i.get("timestamp", ""), reverse=True)
     (SITE_DATA_DIR / "feed.json").write_text(
         json.dumps({"generated_at": utc_now(),
                     "item_count": len(feed_items), "items": feed_items},
@@ -253,7 +257,8 @@ def main() -> int:
     write_sitemap()
     write_status_board()
     print("feed.json categories:", by_category or "{}")
-    print(f"feed: {len(feed_items)} items | archive: {len(archive_items)} items "
+    print(f"feed: {len(feed_items)} items (main {len(main_items)} + release {len(release_items)}) "
+          f"| archive: {len(archive_items)} items "
           f"-> site/data/")
     return 0
 
